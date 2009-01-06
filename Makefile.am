@@ -26,6 +26,8 @@ lojs_DATA = \
 	main.js \
 	score.js
 
+CLEANFILES = $(lojs_DATA)
+
 bin_SCRIPTS = \
 	lightsoff
 
