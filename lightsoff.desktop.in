@@ -1,5 +1,5 @@
 [Desktop Entry]
-_Name=Lightsoff
+_Name=Lights Off
 _Comment=Turn off all the lights
 Icon=gnome-lightsoff
 Exec=lightsoff
