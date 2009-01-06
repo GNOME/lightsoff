@@ -1,0 +1,13 @@
+[Desktop Entry]
+_Name=Lightsoff
+_Comment=Turn off all the lights
+Icon=gnome-lightsoff
+Exec=lightsoff
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Game;PuzzleGame;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-games
+X-GNOME-Bugzilla-Component=lightsoff
+X-GNOME-Bugzilla-Version=2.25.4
+StartupNotify=true

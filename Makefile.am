@@ -29,6 +29,11 @@ lojs_DATA = \
 bin_SCRIPTS = \
 	lightsoff
 
+desktop_in_files = lightsoff.desktop.in
+desktopdir = $(datadir)/applications
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+@INTLTOOL_DESKTOP_RULE@
+
 EXTRA_DIST = \
 	board.js.in \
 	light.js.in \
