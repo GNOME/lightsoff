@@ -27,7 +27,8 @@ var black = Clutter.Color._new();
 Clutter.color_parse("Black", black);
 
 var stage = new Clutter.Stage();
-stage.title = Lightsoff";
+// Needs to be translatable..I haven't figure this out yet.
+stage.title = "Lightsoff";
 stage.signal.hide.connect(function () { Clutter.main_quit(); });
 stage.color = black;
 
