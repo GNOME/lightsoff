@@ -1,2 +1,2 @@
-#!/usr/local/bin/seed
+#!/usr/bin/env seed
 Seed.include('@prefix@'+"/share/gnome-games/lightsoff/main.js");
