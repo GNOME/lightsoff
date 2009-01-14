@@ -10,7 +10,7 @@ var off_pixbuf = new GdkPixbuf.Pixbuf.from_file_at_size('@prefix@'+"/share/pixma
 var on_svg = GtkClutter.texture_new_from_pixbuf(on_pixbuf);
 var off_svg = GtkClutter.texture_new_from_pixbuf(off_pixbuf);
 
-on_svg.filter_quality = off_svg.filter_quality = Clutter.TextureQuality.High;
+on_svg.filter_quality = off_svg.filter_quality = Clutter.TextureQuality.HIGH;
 
 Light = new GType({
 	parent: Clutter.Group.type,

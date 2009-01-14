@@ -25,7 +25,7 @@ Arrow = new GType({
 			var bkg = new Clutter.Texture.from_file("@prefix@"+"/share/pixmaps/lightsoff/arrow-" + 
 													(dir ? "r" : "l") + ".svg");
 			
-			bkg.filter_quality = Clutter.TextureQuality.High;
+			bkg.filter_quality = Clutter.TextureQuality.HIGH;
 			this.add_actor(bkg);
 			bkg.show();
 		}

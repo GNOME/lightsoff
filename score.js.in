@@ -1,7 +1,7 @@
 var bkg_top = new Clutter.Texture.from_file('@prefix@'+"/share/pixmaps/lightsoff/lcd-front.svg");
 var bkg = new Clutter.Texture.from_file('@prefix@'+"/share/pixmaps/lightsoff/lcd-back.svg");
 
-bkg_top.filter_quality = bkg.filter_quality = Clutter.TextureQuality.High;
+bkg_top.filter_quality = bkg.filter_quality = Clutter.TextureQuality.HIGH;
 
 var num_margin = 7;
 
@@ -21,7 +21,7 @@ Score = new GType({
 		var num_textures = new Array();
 		
 		var off_svg = new Clutter.Texture.from_file('@prefix@'+"/share/pixmaps/lightsoff/lcd-off.svg");
-		off_svg.filter_quality = Clutter.TextureQuality.High;
+		off_svg.filter_quality = Clutter.TextureQuality.HIGH;
 		
 		// Public
 		this.get_value = function ()
@@ -92,7 +92,7 @@ Score = new GType({
 		for(var i = 0; i <= 9; i++)
 		{
 			num_textures[i] = new Clutter.Texture.from_file('@prefix@'+"/share/pixmaps/lightsoff/"+i+".svg");
-			num_textures[i].filter_quality = Clutter.TextureQuality.High;
+			num_textures[i].filter_quality = Clutter.TextureQuality.HIGH;
 		}
 		
 		bkg_top.set_position(1, 1);
