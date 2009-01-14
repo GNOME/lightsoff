@@ -140,7 +140,7 @@ function flip_region (act, evt, light)
 Board = new GType({
 	parent: Clutter.Group.type,
 	name: "Board",
-	instance_init: function(klass)
+	init: function(klass)
 	{
 		// Global
 		animating_board = false;

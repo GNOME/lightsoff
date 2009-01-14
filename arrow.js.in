@@ -1,7 +1,7 @@
 Arrow = new GType({
 	parent: Clutter.Group.type,
 	name: "Arrow",
-	instance_init: function(klass)
+	init: function(klass)
 	{
 		// Private
 		var direction = 0;

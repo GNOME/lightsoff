@@ -15,7 +15,7 @@ on_svg.filter_quality = off_svg.filter_quality = Clutter.TextureQuality.HIGH;
 Light = new GType({
 	parent: Clutter.Group.type,
 	name: "Light",
-	instance_init: function(klass)
+	init: function(klass)
 	{
 		// Private
 		var state = false;

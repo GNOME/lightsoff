@@ -8,7 +8,7 @@ var num_margin = 7;
 Score = new GType({
 	parent: Clutter.Group.type,
 	name: "Score",
-	instance_init: function(klass)
+	init: function(klass)
 	{
 		// Private
 		var value = 0;
