@@ -26,15 +26,15 @@ lojs_DATA = \
 	main.js \
 	score.js
 
-CLEANFILES = $(lojs_DATA)
-
 bin_SCRIPTS = \
 	lightsoff
 
-desktop_in_files = lightsoff.desktop.in
+desktop_in_files = lightsoff.desktop.in.in
 desktopdir = $(datadir)/applications
-desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
+
+CLEANFILES = $(lojs_DATA) $(desktop_DATA)
 
 EXTRA_DIST = \
 	board.js.in \
@@ -60,6 +60,3 @@ EXTRA_DIST = \
 	arrow-r.svg \
 	lightsoff.in \
 	arrow.js.in
-
-
-
