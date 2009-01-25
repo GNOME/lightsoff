@@ -5,8 +5,8 @@ var tiles = 5;
 var tile_size = 75;
 
 Seed.import_namespace("Gtk");
-Seed.import_namespace("Clutter");
-Seed.import_namespace("GtkClutter");
+Seed.import_namespace("Clutter", "0.8");
+Seed.import_namespace("GtkClutter", "0.8");
 Seed.import_namespace("GdkPixbuf");
 Seed.import_namespace("GConf");
 Seed.import_namespace("GLib");
