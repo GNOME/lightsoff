@@ -168,6 +168,9 @@ Board = new GType({
 		{
 			in_setup = true;
 			
+			if(score.get_value() == 0)
+				score.set_value(1);
+			
 			GLib.random_set_seed(score.get_value());
 			
 			do
