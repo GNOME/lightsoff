@@ -92,6 +92,9 @@ function check_won (timeline, light)
 {
 	in_fade = false;
 	
+	if(!light.get_parent())
+		return;
+	
 	if(light.get_parent().cleared() && !in_setup && !animating_board)
 	{
 		score.set_value(score.get_value() + 1);
