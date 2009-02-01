@@ -4,7 +4,7 @@ Arrow = new GType({
 	init: function(klass)
 	{
 		// Private
-		var direction = 0;
+		var direction = -1;
 		
 		var toggle_arrow = function (actor, event)
 		{
@@ -18,19 +18,23 @@ Arrow = new GType({
 		}
 		
 		// Public
-		this.set_arrow_direction = function (dir)
+		this.flip = function ()
 		{
-			direction = dir ? 1 : -1;
-			
-			var bkg = new Clutter.Texture.from_file("@prefix@"+"/share/pixmaps/lightsoff/arrow-" + 
-													(dir ? "r" : "l") + ".svg");
-			
-			bkg.filter_quality = Clutter.TextureQuality.HIGH;
-			this.add_actor(bkg);
-			bkg.show();
+			bkg.rotation_angle_z = 180;
+			direction = 1;
 		}
 
 		// Implementation
+		var bkg = new Clutter.Texture.from_file("@prefix@"+"/share/pixmaps/lightsoff/arrow.svg");
+			
+		bkg.filter_quality = Clutter.TextureQuality.HIGH;
+		this.add_actor(bkg);
+		bkg.show();
+		
+		bkg.set_anchor_point_from_gravity(Clutter.Gravity.CENTER);
+		bkg.x += bkg.width/2;
+		bkg.y += bkg.height/2;
+			
 		this.reactive = true;
 		this.signal.button_press_event.connect(toggle_arrow);
 	}

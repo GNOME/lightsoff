@@ -27,7 +27,7 @@ var black = new Clutter.Color();
 Clutter.color_parse("Black", black);
 
 var stage = new Clutter.Stage();
-// Needs to be translatable..I haven't figure this out yet.
+// Needs to be translatable. I haven't figured this out yet.
 stage.title = "Lights Off";
 stage.signal.hide.connect(function () { Clutter.main_quit(); });
 stage.color = black;
@@ -44,11 +44,10 @@ stage.set_size(board_size, board_size + score.height + margin * 3);
 rect.set_position(0, board_size);
 rect.set_size(stage.width, stage.height);
 
-back.set_arrow_direction(0);
 back.set_position(score.x - back.width - 2*margin,
 				  score.y + (.5 * score.height) - (.5 * back.height));
 
-forward.set_arrow_direction(1);
+forward.flip();
 forward.set_position(score.x + score.width + 2*margin,
 					 score.y + (.5 * score.height) - (.5 * forward.height));
 

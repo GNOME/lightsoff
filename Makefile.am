@@ -15,8 +15,7 @@ losvg_DATA = \
 	lcd-back.svg \
 	lcd-front.svg \
 	lcd-off.svg \
-	arrow-l.svg \
-	arrow-r.svg
+	arrow.svg
 
 lojsdir = $(pkgdatadir)/lightsoff
 lojs_DATA = \
@@ -56,7 +55,6 @@ EXTRA_DIST = \
 	lcd-front.svg \
 	score.js.in \
 	lcd-off.svg \
-	arrow-l.svg \
-	arrow-r.svg \
+	arrow.svg \
 	lightsoff.in \
 	arrow.js.in
