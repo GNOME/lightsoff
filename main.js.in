@@ -4,8 +4,8 @@
 var tiles = 5;
 var tile_size = 75;
 
-imports.gi.versions.Clutter = "0.9";
-imports.gi.versions.GtkClutter = "0.9";
+imports.gi.versions.Clutter = "0.8";
+imports.gi.versions.GtkClutter = "0.8";
 
 Gtk = imports.gi.Gtk;
 Clutter = imports.gi.Clutter;
