@@ -4,12 +4,17 @@
 var tiles = 5;
 var tile_size = 75;
 
-Seed.import_namespace("Gtk");
-Seed.import_namespace("Clutter", "0.8");
-Seed.import_namespace("GtkClutter", "0.8");
-Seed.import_namespace("GdkPixbuf");
-Seed.import_namespace("GConf");
-Seed.import_namespace("GLib");
+imports.gi.versions.Clutter = "0.9";
+imports.gi.versions.GtkClutter = "0.9";
+
+Gtk = imports.gi.Gtk;
+Clutter = imports.gi.Clutter;
+GtkClutter = imports.gi.GtkClutter;
+GdkPixbuf = imports.gi.GdkPixbuf;
+GConf = imports.gi.GConf;
+GLib = imports.gi.GLib;
+Pango = imports.gi.Pango;
+GObject = imports.gi.GObject;
 
 Clutter.init(null, null);
 GConf.init(null, null);
