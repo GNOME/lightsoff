@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="219.58447"
+   height="44.222527"
+   id="svg3343"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="led-front.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs3345">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3169"
+       id="linearGradient2412"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.8770329,0,0,0.9140096,112.31402,469.99832)"
+       x1="245.37199"
+       y1="48.383003"
+       x2="245.37199"
+       y2="-5.6843419e-14" />
+    <linearGradient
+       id="linearGradient3169">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.024;"
+         offset="0"
+         id="stop3171" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.35833332;"
+         offset="1"
+         id="stop3173" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3169"
+       id="linearGradient2534"
+       gradientUnits="userSpaceOnUse"
+       x1="557.08765"
+       y1="115.03713"
+       x2="557.08765"
+       y2="5.6843419e-14"
+       gradientTransform="translate(96.45619,474.84362)" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3351" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2017858"
+     inkscape:cx="58.870731"
+     inkscape:cy="51.468405"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="817"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5070"
+       visible="true"
+       enabled="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3348">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-112.31402,-469.99832)">
+    <path
+       style="fill:url(#linearGradient2412);fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+       d="M 120.12875,469.99832 L 324.08379,469.99832 C 328.41317,469.99832 331.8985,473.42735 331.8985,477.68669 L 331.8985,500.15037 C 311.16548,514.87262 115.96837,522.55968 112.31402,500.15037 L 112.31402,477.68669 C 112.31402,473.42735 115.7994,469.99832 120.12875,469.99832 z"
+       id="path2532"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/home/hortont/seed/examples/lightsoff/bkg_top.png"
+       inkscape:export-xdpi="48.143238"
+       inkscape:export-ydpi="48.143238" />
+  </g>
+</svg>

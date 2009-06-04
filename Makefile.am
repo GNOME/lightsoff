@@ -1,29 +1,16 @@
-losvgdir = $(datadir)/pixmaps/lightsoff
-losvg_DATA = \
-	light-off.svg \
-	light-on.svg \
-	0.svg \
-	1.svg \
-	2.svg \
-	3.svg \
-	4.svg \
-	5.svg \
-	6.svg \
-	7.svg \
-	8.svg \
-	9.svg \
-	lcd-back.svg \
-	lcd-front.svg \
-	lcd-off.svg \
-	arrow.svg
+SUBDIRS = themes
 
 lojsdir = $(pkgdatadir)/lightsoff
 lojs_DATA = \
-	arrow.js \
-	board.js \
-	light.js \
+	Arrow.js \
+	Board.js \
+	Light.js \
 	main.js \
-	score.js
+	Game.js \
+	LED.js \
+	Settings.js \
+	settings.ui \
+	main-window.ui
 
 bin_SCRIPTS = \
 	lightsoff
@@ -36,25 +23,12 @@ desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 CLEANFILES = $(lojs_DATA) $(desktop_DATA)
 
 EXTRA_DIST = \
-	board.js.in \
-	light.js.in \
+	Arrow.js.in \
+	Board.js.in \
+	Light.js.in \
 	main.js.in \
-	light-off.svg \
-	light-on.svg \
-	0.svg \
-	1.svg \
-	2.svg \
-	3.svg \
-	4.svg \
-	5.svg \
-	6.svg \
-	7.svg \
-	8.svg \
-	9.svg \
-	lcd-back.svg \
-	lcd-front.svg \
-	score.js.in \
-	lcd-off.svg \
-	arrow.svg \
-	lightsoff.in \
-	arrow.js.in
+	Game.js.in \
+	LED.js.in \
+	Settings.js.in \
+	settings.ui \
+	main-window.ui

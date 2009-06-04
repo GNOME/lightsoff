@@ -1,2 +1,7 @@
 #!/usr/bin/env seed
-Seed.include('@prefix@'+"/share/gnome-games/lightsoff/main.js");
+
+file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
+imports.searchPath.unshift(file_prefix);
+
+main = imports.main;
+

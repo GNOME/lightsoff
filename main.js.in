@@ -1,67 +1,43 @@
 #!/usr/bin/env seed
 
-// Configuration
-var tiles = 5;
-var tile_size = 75;
+file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
+imports.searchPath.unshift(file_prefix);
 
-imports.gi.versions.Clutter = "0.8";
-imports.gi.versions.GtkClutter = "0.8";
-
-Gtk = imports.gi.Gtk;
-Clutter = imports.gi.Clutter;
 GtkClutter = imports.gi.GtkClutter;
-GdkPixbuf = imports.gi.GdkPixbuf;
-GConf = imports.gi.GConf;
-GLib = imports.gi.GLib;
-Pango = imports.gi.Pango;
-GObject = imports.gi.GObject;
+Clutter = imports.gi.Clutter;
+Gtk = imports.gi.Gtk;
+GtkBuilder = imports.gtkbuilder;
 
-Clutter.init(null, null);
-GConf.init(null, null);
+GtkClutter.init(Seed.argv);
 
-var margin = 5;
-var in_setup = false;
-var board_size = (tile_size + margin) * tiles + margin;
+Game = imports.Game;
+Settings = imports.Settings;
 
-Seed.include('@prefix@'+"/share/gnome-games/lightsoff/score.js");
-Seed.include('@prefix@'+"/share/gnome-games/lightsoff/light.js");
-Seed.include('@prefix@'+"/share/gnome-games/lightsoff/board.js");
-Seed.include('@prefix@'+"/share/gnome-games/lightsoff/arrow.js");
+handlers = {
+	show_settings: function(selector, ud)
+	{
+		Settings.show_settings();
+	}
+};
 
-var black = new Clutter.Color();
-Clutter.color_parse("Black", black);
+b = new Gtk.Builder();
+b.add_from_file(file_prefix + "/main-window.ui");
+b.connect_signals(handlers);
 
-var stage = new Clutter.Stage();
-// Needs to be translatable. I haven't figured this out yet.
-stage.title = "Lights Off";
-stage.signal.hide.connect(function () { Clutter.main_quit(); });
-stage.color = black;
+var window = b.get_object("window1");
+var clutter_embed = new GtkClutter.Embed();
+window.signal.hide.connect(Gtk.main_quit);
+b.get_object("vbox1").pack_start(clutter_embed, true, true);
 
-score = new Score();
-board = new Board();
-rect = new Clutter.Rectangle({color:black});
-forward = new Arrow();
-back = new Arrow();
+var stage = clutter_embed.get_stage();
+stage.color = {alpha:255};
 
-score.set_position((board_size / 2) - (score.width / 2), board_size + margin);
-stage.set_size(board_size, board_size + score.height + margin * 3);
+var game = new Game.GameView();
+stage.add_actor(game);
+stage.set_size(game.width, game.height);
+clutter_embed.set_size_request(stage.width, stage.height);
 
-rect.set_position(0, board_size);
-rect.set_size(stage.width, stage.height);
-
-back.set_position(score.x - back.width - 2*margin,
-				  score.y + (.5 * score.height) - (.5 * back.height));
-
-forward.flip();
-forward.set_position(score.x + score.width + 2*margin,
-					 score.y + (.5 * score.height) - (.5 * forward.height));
-
-stage.add_actor(board);
-stage.add_actor(rect);
-stage.add_actor(score);
-stage.add_actor(forward);
-stage.add_actor(back);
 stage.show_all();
+window.show_all();
 
-Clutter.main();
-
+Gtk.main();
