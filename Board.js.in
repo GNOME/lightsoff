@@ -18,6 +18,7 @@ BoardView = new GType({
 		var self = this;
 		var playable = true;
 		var lights = [];
+		var loading_level = false;
 		
 		// Create a two-dimensional array of 'tiles*tiles' lights,
 		// connect to their clicked signals, and display them.
@@ -47,8 +48,13 @@ BoardView = new GType({
 			if(!playable)
 				return;
 			
-			var timeline = new Clutter.Timeline({duration: 300});
-			timeline.signal.completed.connect(check_won);
+			var timeline = null;
+			
+			if(!loading_level)
+			{
+				timeline = new Clutter.Timeline({duration: 300});
+				timeline.signal.completed.connect(check_won);
+			}
 			
 			if(x + 1 < tiles)
 				lights[x + 1][y].toggle(timeline);
@@ -61,7 +67,8 @@ BoardView = new GType({
 
 			lights[x][y].toggle(timeline);
 			
-			timeline.start();
+			if(!loading_level)
+				timeline.start();
 		}
 		
 		// Check if the game was won; if so, emit the game_won signal
@@ -101,6 +108,12 @@ BoardView = new GType({
 		// symmetry for some levels.
 		this.load_level = function(level)
 		{
+			loading_level = true;
+			
+			for(var x = 0; x < tiles; x++)
+				for(var y = 0; y < tiles; y++)
+					lights[x][y].set_state(0, 0);
+			
 			GLib.random_set_seed(level);
 			
 			do
@@ -129,6 +142,8 @@ BoardView = new GType({
 				}
 			}
 			while(cleared());
+			
+			loading_level = false;
 		}
 		
 		this.set_playable = function(p)

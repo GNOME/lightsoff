@@ -32,6 +32,8 @@ b.get_object("vbox1").pack_start(clutter_embed, true, true);
 var stage = clutter_embed.get_stage();
 stage.color = {alpha:255};
 
+Settings.theme.map_stuff(stage);
+
 var game = new Game.GameView();
 stage.add_actor(game);
 stage.set_size(game.width, game.height);

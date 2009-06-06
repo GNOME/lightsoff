@@ -36,7 +36,6 @@ GameView = new GType({
 			new_board_view.set_playable(false);
 			self.add_actor(new_board_view);
 			new_board_view.lower_bottom();
-
 		}
 		
 		// The boards have finished transitioning; delete the old one!
@@ -46,8 +45,6 @@ GameView = new GType({
 			board_view = new_board_view;
 			board_view.set_playable(true);
 			timeline = 0;
-			
-			create_next_board();
 		}
 		
 		// The player won the game; create a new board, update the level count,
@@ -72,8 +69,10 @@ GameView = new GType({
 			last_sign = sign;
 			
 			timeline = new Clutter.Timeline({duration: 1500});
-		
+			
+			create_next_board();
 			new_board_view.show();
+			
 			new_board_view.animate_in(direction, sign, timeline);
 			board_view.animate_out(direction, sign, timeline);
 			timeline.signal.completed.connect(board_transition_complete);
@@ -98,8 +97,11 @@ GameView = new GType({
 			
 			timeline = new Clutter.Timeline({duration: 500});
 			
+			create_next_board();
+			
 			new_board_view.depth = context.direction * -250;
 			new_board_view.opacity = 0;
+			
 			new_board_view.show();
 			
 			new_board_view.swap_in(context.direction, timeline);
@@ -113,6 +115,7 @@ GameView = new GType({
 		
 		var theme_changed = function()
 		{
+			// TODO: only animate if theme changes!
 			timeline = new Clutter.Timeline({duration: 1500});
 			
 			create_next_board();
@@ -169,3 +172,4 @@ GameView = new GType({
 		Settings.Watcher.signal.theme_changed.connect(theme_changed);
 	}
 });
+

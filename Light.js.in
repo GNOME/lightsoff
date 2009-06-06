@@ -24,23 +24,33 @@ LightView = new GType({
 		{
 			state = new_state;
 			
-			// Animate the opacity of the 'off' tile to match the state.
-			off.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_SINE, timeline,
+			if(timeline)
 			{
-				opacity: (state ? 0 : 255)
-			});
+				// Animate the opacity of the 'off' tile to match the state.
+				off.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_SINE, timeline,
+				{
+					opacity: (state ? 0 : 255)
+				});
 			
-			on.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_SINE, timeline,
-			{
-				opacity: (state ? 255 : 0)
-			});
+				on.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_SINE, timeline,
+				{
+					opacity: (state ? 255 : 0)
+				});
 			
-			// Animate the tile to be smaller when in the 'off' state.
-			self.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_SINE, timeline,
+				// Animate the tile to be smaller when in the 'off' state.
+				self.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_SINE, timeline,
+				{
+					scale_x: (state ? 1 : 0.9),
+					scale_y: (state ? 1 : 0.9)
+				});
+			}
+			else
 			{
-				scale_x: (state ? 1 : 0.9),
-				scale_y: (state ? 1 : 0.9)
-			});
+				off.opacity = (state ? 0 : 255);
+				on.opacity = (state ? 255 : 0);
+				self.scale_x = (state ? 1 : 0.9);
+				self.scale_y = (state ? 1 : 0.9);
+			}
 		}
 		
 		this.get_state = function()
@@ -57,6 +67,8 @@ LightView = new GType({
 		
 		this.add_actor(on);
 		this.add_actor(off);
+		
+		off.raise_top();
 		
 		this.set_scale(0.9, 0.9);
 		this.reactive = true;
