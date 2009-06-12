@@ -1,7 +1,5 @@
-#!/usr/bin/env seed
+#!/usr/bin/env sh
 
-file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
-imports.searchPath.unshift(file_prefix);
-
-main = imports.main;
+export LD_LIBRARY_PATH=@prefix@/share/gnome-games-common:$LD_LIBRARY_PATH
+/usr/bin/env seed @prefix@/share/gnome-games/lightsoff/main.js
 

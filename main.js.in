@@ -7,8 +7,11 @@ GtkClutter = imports.gi.GtkClutter;
 Clutter = imports.gi.Clutter;
 Gtk = imports.gi.Gtk;
 GtkBuilder = imports.gtkbuilder;
+GnomeGamesSupport = imports.gi.GnomeGamesSupport;
 
 GtkClutter.init(Seed.argv);
+GnomeGamesSupport.runtime_init("lightsoff");
+GnomeGamesSupport.stock_init();
 
 Game = imports.Game;
 Settings = imports.Settings;
