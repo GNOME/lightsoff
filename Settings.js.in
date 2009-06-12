@@ -44,7 +44,13 @@ var Watcher = new SettingsWatcher();
 handlers = {
 	select_theme: function(selector, ud)
 	{
-		theme = imports.themes[selector.get_active_text()].theme;
+		new_theme = imports.themes[selector.get_active_text()].theme;
+		
+		if(new_theme == theme)
+			return;
+		
+		theme = new_theme;
+		theme.map_stuff(main.stage);
 		
 		try
 		{

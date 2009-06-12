@@ -1,9 +1,9 @@
-file_prefix = '/usr/local' + "/share/gnome-games/lightsoff/";
+file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
 
 Clutter = imports.gi.Clutter;
 
 var name = "tango";
-
+var mapped = false;
 var light = [ load_svg("off.svg"), load_svg("on.svg") ];
 var arrow = load_svg("arrow.svg");
 var backing = load_svg("backing.svg");
@@ -14,6 +14,10 @@ var led_front = load_svg("led-front.svg");
 
 function map_stuff(a)
 {
+	if(mapped)
+		return;
+	mapped = true;
+	
 	a.add_actor(light[0]);
 	a.add_actor(light[1]);
 	a.add_actor(arrow);
