@@ -18,8 +18,10 @@ function show_about_dialog()
 	about_dialog.logo_icon_name = "gnome-lightsoff";
 	about_dialog.website = "http://www.gnome.org/projects/gnome-games/";
 	about_dialog.website_label = _("GNOME Games web site"); // this doesn't work for anyone
+	about_dialog.translator_credits = _("translator-credits");
 
 	about_dialog.set_authors(["Tim Horton"]);
+	about_dialog.set_artists(["Tim Horton", "Ulisse Perusin"]);
 
 	// TODO: some form of wrapper so we can use gtk_show_about_dialog instead
 	// of faking all of its window-management-related stuff
