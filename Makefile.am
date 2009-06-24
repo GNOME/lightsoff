@@ -20,7 +20,7 @@ desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-CLEANFILES = $(lojs_DATA) $(desktop_DATA)
+CLEANFILES = main.js $(desktop_DATA)
 
 EXTRA_DIST = \
 	Arrow.js \
