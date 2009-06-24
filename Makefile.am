@@ -2,6 +2,7 @@ SUBDIRS = themes
 
 lojsdir = $(pkgdatadir)/lightsoff
 lojs_DATA = \
+	About.js \
 	Arrow.js \
 	Board.js \
 	Light.js \
@@ -23,6 +24,7 @@ desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 CLEANFILES = main.js $(desktop_DATA)
 
 EXTRA_DIST = \
+	About.js \
 	Arrow.js \
 	Board.js \
 	Light.js \

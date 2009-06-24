@@ -14,11 +14,16 @@ GnomeGamesSupport.stock_init();
 
 Game = imports.Game;
 Settings = imports.Settings;
+About = imports.About;
 
 handlers = {
 	show_settings: function(selector, ud)
 	{
 		Settings.show_settings();
+	},
+	show_about: function(selector, ud)
+	{
+		About.show_about_dialog();
 	}
 };
 
