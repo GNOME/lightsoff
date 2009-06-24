@@ -1,6 +1,3 @@
-file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
-imports.searchPath.unshift(file_prefix);
-
 Settings = imports.Settings;
 GLib = imports.gi.GLib;
 Clutter = imports.gi.Clutter;

@@ -1,7 +1,6 @@
 #!/usr/bin/env seed
 
 file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
-imports.searchPath.unshift(file_prefix);
 
 GtkClutter = imports.gi.GtkClutter;
 Clutter = imports.gi.Clutter;

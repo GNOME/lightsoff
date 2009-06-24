@@ -1,6 +1,3 @@
-file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
-imports.searchPath.unshift(file_prefix);
-
 Gtk = imports.gi.Gtk;
 Gio = imports.gi.Gio;
 GtkBuilder = imports.gtkbuilder;
@@ -74,7 +71,7 @@ handlers = {
 function show_settings()
 {
 	b = new Gtk.Builder();
-	b.add_from_file(file_prefix+"/settings.ui");
+	b.add_from_file(main.file_prefix+"/settings.ui");
 	b.connect_signals(handlers);
 
 	populate_theme_selector(b.get_object("theme-selector"));
@@ -95,7 +92,7 @@ function populate_theme_selector(selector)
 	selector.pack_start(cell, true);
 	selector.add_attribute(cell, "text", 0);
 
-	file = Gio.file_new_for_path(file_prefix+"/themes");
+	file = Gio.file_new_for_path(main.file_prefix+"/themes");
 	enumerator = file.enumerate_children("standard::name");
 	
 	var i = 0;

@@ -23,12 +23,12 @@ desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 CLEANFILES = $(lojs_DATA) $(desktop_DATA)
 
 EXTRA_DIST = \
-	Arrow.js.in \
-	Board.js.in \
-	Light.js.in \
+	Arrow.js \
+	Board.js \
+	Light.js \
 	main.js.in \
-	Game.js.in \
-	LED.js.in \
-	Settings.js.in \
+	Game.js \
+	LED.js \
+	Settings.js \
 	settings.ui \
 	main-window.ui
