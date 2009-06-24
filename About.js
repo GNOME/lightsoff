@@ -3,20 +3,21 @@ GnomeGamesSupport = imports.gi.GnomeGamesSupport;
 
 main = imports.main;
 
-// How do we do translation from Seed?
+// Not sure that this is acceptable; if it is, should it be in a Seed extension?
+var _ = imports.gettext.i18n;
 
 function show_about_dialog()
 {
 	var about_dialog = new Gtk.AboutDialog();
-	about_dialog.program_name = "Lights Off";
+	about_dialog.program_name = _("Lights Off");
 	about_dialog.version = "1.0";
-	about_dialog.comments = "Turn off all the lights\n\nLights Off is a part of GNOME Games.";
-	about_dialog.copyright = "Copyright \xa9 2009 Tim Horton";
-	about_dialog.license = GnomeGamesSupport.get_license("Gnometris"); // FIXME
+	about_dialog.comments = _("Turn off all the lights\n\nLights Off is a part of GNOME Games.");
+	about_dialog.copyright = _("Copyright \xa9 2009 Tim Horton");
+	about_dialog.license = GnomeGamesSupport.get_license(_("Lights Off"));
 	about_dialog.wrap_license = true;
 	about_dialog.logo_icon_name = "gnome-lightsoff";
 	about_dialog.website = "http://www.gnome.org/projects/gnome-games/";
-	about_dialog.website_label = "GNOME Games web site"; // this doesn't work for anyone
+	about_dialog.website_label = _("GNOME Games web site"); // this doesn't work for anyone
 
 	about_dialog.set_authors(["Tim Horton"]);
 
