@@ -2,7 +2,7 @@ file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
 
 Clutter = imports.gi.Clutter;
 
-var name = "tango";
+var name = "Tango";
 var mapped = false;
 var light = [ load_svg("off.svg"), load_svg("on.svg") ];
 var arrow = load_svg("arrow.svg");
@@ -38,7 +38,7 @@ function load_svg(file)
 	// TODO: either imports should set the cwd (and this can go away),
 	// or we need some quick way to compose paths. Really, we need that anyway.
 	
-	var tx = new Clutter.Texture({filename: file_prefix + "themes/" + name + "/" + file});
+	var tx = new Clutter.Texture({filename: file_prefix + "themes/tango/" + file});
 	tx.filter_quality = Clutter.TextureQuality.HIGH;
 	return tx;
 }

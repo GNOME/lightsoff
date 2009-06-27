@@ -9,23 +9,40 @@ GConf.init(Seed.argv);
 // Defaults
 var theme, score;
 
+// Map theme names to themes
+var themes = {};
+
+load_themes();
+
 try
 {
 	gconf_client = GConf.Client.get_default();
 	score = gconf_client.get_int("/apps/lightsoff/score");
-	theme = imports.themes[gconf_client.get_string("/apps/lightsoff/theme")].theme;
+	theme = themes[gconf_client.get_string("/apps/lightsoff/theme")];
 }
 catch(e)
 {
 	print("Couldn't load settings from GConf.");
-	theme = imports.themes["tango"].theme;
+	theme = themes["Tango"];
 	score = 1;
+}
+
+function load_themes()
+{
+	file = Gio.file_new_for_path(main.file_prefix + "/themes");
+	enumerator = file.enumerate_children("standard::name");
+	
+	while((child = enumerator.next_file()))
+	{
+		var c_theme = imports.themes[child.get_name()].theme;
+		themes[c_theme.name] = c_theme;
+	}
 }
 
 // Settings Event Handler
 
 SettingsWatcher = new GType({
-	parent: Gtk.Button.type, // Can I make something inherit directly from GObject?!
+	parent: Gtk.Button.type, // TODO: Can I make something inherit directly from GObject?!
 	name: "SettingsWatcher",
 	signals: [{name: "theme_changed"}],
 	init: function()
@@ -41,7 +58,7 @@ var Watcher = new SettingsWatcher();
 handlers = {
 	select_theme: function(selector, ud)
 	{
-		new_theme = imports.themes[selector.get_active_text()].theme;
+		new_theme = themes[selector.get_active_text()];
 		
 		if(new_theme == theme)
 			return;
@@ -59,10 +76,6 @@ handlers = {
 		}
 	
 		Watcher.signal.theme_changed.emit();
-	},
-	close_settings: function()
-	{
-		//settings_dialog.hide_all();
 	}
 };
 
@@ -92,17 +105,13 @@ function populate_theme_selector(selector)
 	selector.pack_start(cell, true);
 	selector.add_attribute(cell, "text", 0);
 
-	file = Gio.file_new_for_path(main.file_prefix+"/themes");
-	enumerator = file.enumerate_children("standard::name");
-	
 	var i = 0;
 
-	while((child = enumerator.next_file()))
+	for(var th in themes)
 	{
-		var fname = child.get_name();
-		selector.append_text(fname);
+		selector.append_text(themes[th].name);
 		
-		if(fname == theme.name)
+		if(themes[th].name == theme.name)
 			selector.set_active(i);
 		
 		i++;
