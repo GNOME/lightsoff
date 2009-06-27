@@ -17,7 +17,7 @@ try
 }
 catch(e)
 {
-	Seed.print("Couldn't load settings from GConf.");
+	print("Couldn't load settings from GConf.");
 	theme = imports.themes["tango"].theme;
 	score = 1;
 }

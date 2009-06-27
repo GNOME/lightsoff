@@ -52,7 +52,8 @@ GameView = new GType({
 				return false;
 			
 			var direction, sign;
-			score_view.set_value(++current_level);
+			
+			score_changed(++current_level);
 			
 			// Make sure the board transition is different than the previous.
 			do
@@ -90,7 +91,7 @@ GameView = new GType({
 				return false;
 			}
 			
-			score_view.set_value(current_level);
+			score_changed(current_level);
 			
 			timeline = new Clutter.Timeline({duration: 500});
 			
@@ -127,16 +128,31 @@ GameView = new GType({
 			timeline.start();
 		}
 		
+		var score_changed = function(new_score)
+		{
+			current_level = new_score;
+			
+			try
+			{
+				Settings.gconf_client.set_int("/apps/lightsoff/score",
+				                              current_level);
+			}
+			catch(e)
+			{
+				print("Couldn't save score to GConf.");
+			}
+			
+			score_view.set_value(current_level);
+		}
+		
 		// Public
 		
 		this.reset_game = function ()
 		{
 			if(timeline && timeline.is_playing())
 				return false;
-
-			current_level = 1;
 			
-			score_view.set_value(current_level);
+			score_changed(1);
 			
 			timeline = new Clutter.Timeline({duration: 500});
 			
@@ -160,8 +176,8 @@ GameView = new GType({
 		
 		// TODO: wrong::
 		
-		current_level = Settings.score;
-		Seed.print(current_level);
+		score_view.set_width(5);
+		score_changed(Settings.score);
 		
 		// Set up and show the initial board
 		board_view.signal.game_won.connect(game_won);
@@ -187,9 +203,6 @@ GameView = new GType({
 		
 		left_arrow.signal.button_release_event.connect(swap_board, {direction: -1});
 		right_arrow.signal.button_release_event.connect(swap_board, {direction: 1});
-		
-		score_view.set_width(5);
-		score_view.set_value(current_level);
 		
 		this.set_size(board_view.width, score_view.y + score_view.height);
 

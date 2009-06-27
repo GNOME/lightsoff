@@ -168,16 +168,6 @@ LEDView = new GType({
 				digits[i].set_value(Math.floor(d_val % 10));
 				d_val /= 10;
 			}
-			
-			// TODO: this is a /really/ bad place to do this...
-			try
-			{
-				Settings.gconf_client.set_int("/apps/lightsoff/score", value);
-			}
-			catch(e)
-			{
-				Seed.print("Couldn't save score to GConf.");
-			}
 		}
 		
 		this.get_value = function()
