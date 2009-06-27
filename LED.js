@@ -73,7 +73,7 @@ LEDDigit = new GType({
 			cr.fill();
 		}
 		
-		// Creates and arranges segments of the LEDDigit, lit based on the
+		// Draws each segment of the LEDDigit, lit based on the
 		// represented digit.
 		var draw_leds = function(group)
 		{
@@ -81,6 +81,7 @@ LEDDigit = new GType({
 			context = self.create();
 			cr = new cairo.Context.steal(context);
 		
+			// TODO: I can't find the cairo enums...
 			cr.operator = 0;
 			cr.paint();
 			cr.operator = 2;
@@ -129,7 +130,6 @@ LEDView = new GType({
 		var inner_y_margin = -1;
 		
 		back = new Clutter.Clone({source: Settings.theme.led_back});
-		//front = new Clutter.Clone({source: Settings.theme.led_front});
 		
 		// Public
 		
@@ -142,7 +142,6 @@ LEDView = new GType({
 			digits = [];
 			
 			this.add_actor(back);
-			//this.add_actor(front);
 			
 			for(var i = 0; i < width; i++)
 			{
@@ -154,7 +153,6 @@ LEDView = new GType({
 			}
 			
 			back.lower_bottom();
-			//this.raise_child(front, null);
 		}
 		
 		// Set the value represented by the LEDView, and update its
@@ -178,7 +176,6 @@ LEDView = new GType({
 		// Implementation
 		
 		this.add_actor(back);
-		//this.add_actor(front);
 	}
 });
 

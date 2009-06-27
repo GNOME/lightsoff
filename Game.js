@@ -113,7 +113,6 @@ GameView = new GType({
 		
 		var theme_changed = function()
 		{
-			// TODO: only animate if theme changes!
 			timeline = new Clutter.Timeline({duration: 1500});
 			
 			create_next_board();
@@ -173,9 +172,7 @@ GameView = new GType({
 		}
 		
 		// Implementation
-		
-		// TODO: wrong::
-		
+				
 		score_view.set_width(5);
 		score_changed(Settings.score);
 		
@@ -192,13 +189,15 @@ GameView = new GType({
 		score_view.set_position(board_view.width / 2, board_view.height + 18);
 		this.add_actor(score_view);
 		
+		// TODO: The -10 term in the next two Y locations makes me sad.
+		
 		left_arrow.set_position((score_view.x - score_view.anchor_x) / 2,
-		                        score_view.y + (score_view.height / 2));
+		                        score_view.y + (score_view.height / 2) - 10);
 		this.add_actor(left_arrow);
 		
 		right_arrow.flip_arrow();
 		right_arrow.set_position(board_view.width - left_arrow.x,
-		                         score_view.y + (score_view.height / 2));
+		                         score_view.y + (score_view.height / 2) - 10);
 		this.add_actor(right_arrow);
 		
 		left_arrow.signal.button_release_event.connect(swap_board, {direction: -1});
