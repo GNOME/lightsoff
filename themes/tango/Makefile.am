@@ -5,6 +5,7 @@ theme_DATA = \
 	led-back.svg \
 	off.svg \
 	on.svg \
+	highlight.svg \
 	theme.js
 
 EXTRA_DIST = \
@@ -13,4 +14,5 @@ EXTRA_DIST = \
 	led-back.svg \
 	off.svg \
 	on.svg \
+	highlight.svg \
 	theme.js.in

@@ -20,8 +20,10 @@ GameView = new GType({
 		var backing_view = new Clutter.Clone({source:Settings.theme.backing});
 		var left_arrow = new Arrow.ArrowView();
 		var right_arrow = new Arrow.ArrowView();
+		var keycursor_view = new Clutter.Clone({source:Settings.theme.highlight});
 		var new_board_view = null;
 		var timeline;
+		var keycursor = {x:0, y:0, ready: false};
 		
 		// Set up a new board.
 		var create_next_board = function()
@@ -41,6 +43,7 @@ GameView = new GType({
 			self.remove_actor(board_view);
 			board_view = new_board_view;
 			board_view.set_playable(true);
+			keycursor_view.raise_top();
 			timeline = 0;
 		}
 		
@@ -171,6 +174,68 @@ GameView = new GType({
 			return false;
 		}
 		
+		// Change the currently selected tile with the keyboard
+		this.update_keyboard_selection = function (actor, event, ud)
+		{
+			// TODO: this is wrong. but, they're defines...
+			var kUp = 65362, kDown = 65364, kLeft = 65361, kRight = 65363, kEnter = 65293, kEsc = 65307;
+			
+			if(event.key.keyval == kEsc)
+			{
+				keycursor_view.animate(Clutter.AnimationMode.EASE_OUT_SINE, 250,
+				{
+					opacity: 0
+				});
+				
+				keycursor.ready = false;
+			}
+			
+			if(keycursor.ready)
+			{
+				if(event.key.keyval == kUp && keycursor.y > 0)
+					keycursor.y--;
+				else if(event.key.keyval == kDown && keycursor.y < 4)
+					keycursor.y++;
+				else if(event.key.keyval == kLeft && keycursor.x > 0)
+					keycursor.x--;
+				else if(event.key.keyval == kRight && keycursor.x < 4)
+					keycursor.x++;
+				else if(event.key.keyval == kEnter)
+					board_view.light_toggle(keycursor.x, keycursor.y);
+			}
+			
+			if(event.key.keyval != kDown &&
+				event.key.keyval != kUp &&
+				event.key.keyval != kLeft &&
+				event.key.keyval != kRight)
+				return false;
+		
+			var loc = board_view.position_for_light(keycursor.x, keycursor.y);
+			
+			if(keycursor.ready)
+			{
+				keycursor_view.animate(Clutter.AnimationMode.EASE_OUT_SINE, 250,
+				{
+					x: loc.x,
+					y: loc.y
+				});
+			}
+			else
+			{
+				keycursor_view.opacity = 0;
+				keycursor_view.set_position(loc.x, loc.y);
+				
+				keycursor_view.animate(Clutter.AnimationMode.EASE_OUT_SINE, 250,
+				{
+					opacity: 255
+				});
+			}
+			
+			keycursor.ready = true;
+	
+			return false;
+		}
+		
 		// Implementation
 				
 		score_view.set_width(5);
@@ -204,6 +269,10 @@ GameView = new GType({
 		right_arrow.signal.button_release_event.connect(swap_board, {direction: 1});
 		
 		this.set_size(board_view.width, score_view.y + score_view.height);
+		
+		keycursor_view.set_position(-100, -100);
+		keycursor_view.anchor_gravity = Clutter.Gravity.CENTER;
+		this.add_actor(keycursor_view);
 
 		Settings.Watcher.signal.theme_changed.connect(theme_changed);
 	}

@@ -9,7 +9,7 @@ BoardView = new GType({
 	parent: Clutter.Group.type,
 	name: "BoardView",
 	signals: [{name: "game_won"}],
-	init: function()
+	init: function(self)
 	{
 		// Private
 		var self = this;
@@ -28,7 +28,8 @@ BoardView = new GType({
 				for(var y = 0; y < tiles; y++)
 				{
 					var l = new Light.LightView();
-					l.set_position((x + 0.5) * l.width, (y + 0.5) * l.height);
+					var loc = self.position_for_light(x, y);
+					l.set_position(loc.x, loc.y);
 					l.signal.button_release_event.connect(light_clicked, {"x":x, "y":y});
 					
 					lights[x][y] = l;
@@ -39,8 +40,39 @@ BoardView = new GType({
 			}
 		}
 		
+		// Check if the game was won; if so, emit the game_won signal
+		// in order to notify the Game controller.
+		
+		var check_won = function()
+		{
+			if(cleared())
+				self.signal.game_won.emit();
+		}
+		
+		// Callback for button_release_event from each light; user_data
+		// is an object containing the coordinates of the clicked light.
+		var light_clicked = function(light, event, coords)
+		{
+			self.light_toggle(coords.x, coords.y);
+			
+			return false;
+		}
+		
+		// Returns whether or not the board is entirely 'off' (i.e. game is won)
+		var cleared = function()
+		{
+			for(var x = 0; x < tiles; x++)
+				for(var y = 0; y < tiles; y++)
+					if(lights[x][y].get_state())
+						return false;
+			
+			return true;
+		}
+		
+		// Public
+		
 		// Toggle a light and those in each cardinal direction around it.
-		var light_toggle = function(x, y)
+		this.light_toggle = function(x, y)
 		{
 			if(!playable)
 				return;
@@ -68,36 +100,13 @@ BoardView = new GType({
 				timeline.start();
 		}
 		
-		// Check if the game was won; if so, emit the game_won signal
-		// in order to notify the Game controller.
-		
-		var check_won = function()
+		this.position_for_light = function(x, y)
 		{
-			if(cleared())
-				self.signal.game_won.emit();
-		}
-		
-		// Callback for button_release_event from each light; user_data
-		// is an object containing the coordinates of the clicked light.
-		var light_clicked = function(light, event, coords)
-		{
-			light_toggle(coords.x, coords.y);
+			var p_l = {x: (x + 0.5) * Settings.theme.light[0].width,
+			           y: (y + 0.5) * Settings.theme.light[0].height};
 			
-			return false;
+			return p_l;
 		}
-		
-		// Returns whether or not the board is entirely 'off' (i.e. game is won)
-		var cleared = function()
-		{
-			for(var x = 0; x < tiles; x++)
-				for(var y = 0; y < tiles; y++)
-					if(lights[x][y].get_state())
-						return false;
-			
-			return true;
-		}
-		
-		// Public
 		
 		// Pseudorandomly generates and sets the state of each light based on
 		// a level number; hopefully this is stable between machines, but that
@@ -124,18 +133,18 @@ BoardView = new GType({
 					i = Math.round((tiles - 1) * GLib.random_double());
 					j = Math.round((tiles - 1) * GLib.random_double());
 					
-					light_toggle(i, j);
+					self.light_toggle(i, j);
 					
 					// Ensure some level of "symmetry"
 					var x_sym = Math.abs(i - (tiles - 1));
 					var y_sym = Math.abs(j - (tiles - 1));
 					
 					if(sym == 0)
-						light_toggle(x_sym, j);
+						self.light_toggle(x_sym, j);
 					else if(sym == 1)
-						light_toggle(x_sym, y_sym);
+						self.light_toggle(x_sym, y_sym);
 					else
-						light_toggle(i, y_sym);
+						self.light_toggle(i, y_sym);
 				}
 			}
 			while(cleared());

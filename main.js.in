@@ -54,6 +54,8 @@ stage.add_actor(game);
 stage.set_size(game.width, game.height);
 clutter_embed.set_size_request(stage.width, stage.height);
 
+stage.signal.key_release_event.connect(game.update_keyboard_selection);
+
 stage.show_all();
 window.show_all();
 
