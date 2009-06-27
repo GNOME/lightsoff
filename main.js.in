@@ -24,6 +24,14 @@ handlers = {
 	show_about: function(selector, ud)
 	{
 		About.show_about_dialog();
+	},
+	reset_score: function(selector, ud)
+	{
+		game.reset_game();
+	},
+	quit: function(selector, ud)
+	{
+		Gtk.main_quit();
 	}
 };
 

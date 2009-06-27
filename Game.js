@@ -129,6 +129,33 @@ GameView = new GType({
 		
 		// Public
 		
+		this.reset_game = function ()
+		{
+			if(timeline && timeline.is_playing())
+				return false;
+
+			current_level = 1;
+			
+			score_view.set_value(current_level);
+			
+			timeline = new Clutter.Timeline({duration: 500});
+			
+			create_next_board();
+			
+			new_board_view.depth = 250;
+			new_board_view.opacity = 0;
+			
+			new_board_view.show();
+			
+			new_board_view.swap_in(-1, timeline);
+			board_view.swap_out(-1, timeline);
+			timeline.signal.completed.connect(board_transition_complete);
+			
+			timeline.start();
+			
+			return false;
+		}
+		
 		// Implementation
 		
 		// TODO: wrong::
