@@ -6,9 +6,9 @@ const HORIZONTAL = 0;
 const VERTICAL = 1;
 
 LEDDigit = new GType({
-	parent: Clutter.Group.type,
+	parent: Clutter.CairoTexture.type,
 	name: "LEDDigit",
-	init: function()
+	init: function(self)
 	{
 		// Private
 		
@@ -19,6 +19,7 @@ LEDDigit = new GType({
 		var margin = Math.floor(Math.log(scale));
 		var segments = [];
 		var s;
+		var cr, context;
 		
 		// The state of each segment for each representable digit.
 		var segment_states = { 0: [ 1, 1, 1, 1, 1, 0, 1],
@@ -40,16 +41,8 @@ LEDDigit = new GType({
 		                           6: VERTICAL };
 		
 		// Draw a single section, in either direction, at the given position
-		var create_segment = function(num, x, y, alpha)
+		var draw_segment = function(num, x, y, alpha)
 		{
-			var texture = segments[num];
-					
-			var context = texture.create();
-			var cr = new cairo.Context.steal(context);
-			
-			cr.set_source_rgba(1, 1, 1, 0);
-			cr.paint();
-
 			if(alpha)
 				cr.set_source_rgba(0.145, 0.541, 1, 1);
 			else
@@ -59,58 +52,51 @@ LEDDigit = new GType({
 			
 			if(segment_directions[num] == VERTICAL)
 			{
-				cr.move_to(thickness / 2, 0);
-				cr.line_to(0, pointy);
-				cr.line_to(0, scale - pointy);
-				cr.line_to(thickness / 2, scale);
-				cr.line_to(thickness, scale - pointy);
-				cr.line_to(thickness, pointy);
+				cr.move_to(x + (thickness / 2), y + 0);
+				cr.line_to(x + 0, y + pointy);
+				cr.line_to(x + 0, y + (scale - pointy));
+				cr.line_to(x + (thickness / 2), y + scale);
+				cr.line_to(x + thickness, y + (scale - pointy));
+				cr.line_to(x + thickness, y + pointy);
 			}
 			else if(segment_directions[num] == HORIZONTAL)
 			{
-				cr.move_to(0, thickness / 2);
-				cr.line_to(pointy, 0);
-				cr.line_to(scale - pointy, 0);
-				cr.line_to(scale, thickness / 2);
-				cr.line_to(scale - pointy, thickness);
-				cr.line_to(pointy, thickness);
+				cr.move_to(x + 0, y + (thickness / 2));
+				cr.line_to(x + pointy, y + 0);
+				cr.line_to(x + (scale - pointy), y + 0);
+				cr.line_to(x + scale, y + (thickness / 2));
+				cr.line_to(x + (scale - pointy), y + thickness);
+				cr.line_to(x + pointy, y + thickness);
 			}
 			
 			cr.close_path();
 			cr.fill();
-			cr.destroy();
-
-			texture.set_position(x, y);
-
-			return texture;
 		}
 		
 		// Creates and arranges segments of the LEDDigit, lit based on the
 		// represented digit.
 		var draw_leds = function(group)
 		{
+			self.set_surface_size(37, 65);
+			context = self.create();
+			cr = new cairo.Context.steal(context);
+		
+			cr.operator = 0;
+			cr.paint();
+			cr.operator = 2;
+		
 			var side = pointy + margin;
 			
-			for(var i = 0; i < 7; i++)
-			{
-				segments[i] = new Clutter.CairoTexture();
-				
-				if(segment_directions[i] == VERTICAL)
-					segments[i].set_surface_size(thickness, scale);
-				else if(segment_directions[i] == HORIZONTAL)
-					segments[i].set_surface_size(scale, thickness);
-				
-				group.add_actor(segments[i]);
-			}
+			draw_segment(0, side, 0, s[0]);
+			draw_segment(1, 0, side, s[1]);
+			draw_segment(2, 0, side + scale + (margin*2), s[2]);
+			draw_segment(3, side, (2*scale) + (4*margin), s[3]);
+			draw_segment(4, scale + (2*margin),
+			             side + scale + (margin*2), s[4]);
+			draw_segment(5, side, scale + (2*margin), s[5]);
+			draw_segment(6, scale + (2*margin), side, s[6]);
 			
-			create_segment(0, side, 0, s[0]);
-			create_segment(1, 0, side, s[1]);
-			create_segment(2, 0, side + scale + (margin*2), s[2]);
-			create_segment(3, side, (2*scale) + (4*margin), s[3]);
-			create_segment(4, scale + (2*margin),
-			                   side + scale + (margin*2), s[4]);
-			create_segment(5, side, scale + (2*margin), s[5]);
-			create_segment(6, scale + (2*margin), side, s[6]);
+			cr.destroy();
 		}
 		
 		// Public
@@ -136,11 +122,11 @@ LEDView = new GType({
 		
 		var value = 0;
 		var width = 0;
-		var margin = 5;
+		var margin = 4;
 		var digits = [];
 		var back, front;
 		var inner_x_margin = 10;
-		var inner_y_margin = -2;
+		var inner_y_margin = -1;
 		
 		back = new Clutter.Clone({source: Settings.theme.led_back});
 		//front = new Clutter.Clone({source: Settings.theme.led_front});
