@@ -8,7 +8,6 @@ var light = [ load_svg("off.svg"), load_svg("on.svg") ];
 var arrow = load_svg("arrow.svg");
 var backing = load_svg("backing.svg");
 var led_back = load_svg("led-back.svg");
-var led_front = load_svg("led-front.svg");
 
 // TODO: figure out how to fix this new offscreen cloning thing. this is a hack.
 
@@ -23,7 +22,6 @@ function map_stuff(a)
 	a.add_actor(arrow);
 	a.add_actor(backing);
 	a.add_actor(led_back);
-	a.add_actor(led_front);
 	a.show_all();
 	
 	light[0].set_position(-500, -500);
@@ -31,7 +29,6 @@ function map_stuff(a)
 	arrow.set_position(-500, -500);
 	backing.set_position(-500, -500);
 	led_back.set_position(-500, -500);
-	led_front.set_position(-500, -500);
 }
 
 // helper functions should be put somewhere global
