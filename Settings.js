@@ -8,6 +8,7 @@ GConf.init(Seed.argv);
 
 // Defaults
 var theme, score;
+var default_theme = "Tango";
 
 // Map theme names to themes
 var themes = {};
@@ -19,11 +20,14 @@ try
 	gconf_client = GConf.Client.get_default();
 	score = gconf_client.get_int("/apps/lightsoff/score");
 	theme = themes[gconf_client.get_string("/apps/lightsoff/theme")];
+	
+	if(theme == null)
+		theme = themes[default_theme];
 }
 catch(e)
 {
 	print("Couldn't load settings from GConf.");
-	theme = themes["Tango"];
+	theme = themes[default_theme];
 	score = 1;
 }
 
