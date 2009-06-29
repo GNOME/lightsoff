@@ -4,6 +4,9 @@
   <!-- interface-naming-policy project-wide -->
   <object class="GtkWindow" id="window1">
     <property name="title" translatable="yes">Lights Off</property>
+    <accel-groups>
+      <group name="accelgroup1"/>
+    </accel-groups>
     <child>
       <object class="GtkVBox" id="vbox1">
         <property name="visible">True</property>
@@ -26,6 +29,7 @@
                         <property name="visible">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                       </object>
                     </child>
                     <child>
@@ -35,6 +39,7 @@
                         <property name="visible">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                       </object>
                     </child>
                     <child>
@@ -44,6 +49,7 @@
                         <property name="visible">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                       </object>
                     </child>
                   </object>
@@ -65,6 +71,7 @@
                         <property name="visible">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                       </object>
                     </child>
                   </object>
@@ -83,4 +90,5 @@
       </object>
     </child>
   </object>
+  <object class="GtkAccelGroup" id="accelgroup1"/>
 </interface>
