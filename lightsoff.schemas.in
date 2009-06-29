@@ -1,0 +1,30 @@
+<gconfschemafile>
+    <schemalist>    
+
+      <schema>
+        <key>/schemas/apps/lightsoff/theme</key>
+        <applyto>/apps/lightsoff/theme</applyto>
+        <owner>lightsoff</owner>
+        <type>string</type>
+        <default>Tango</default>
+        <locale name="C">
+          <short>The theme to use</short>
+          <long>The title of the tile theme to use.</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/lightsoff/score</key>
+        <applyto>/apps/lightsoff/score</applyto>
+        <owner>lightsoff</owner>
+        <type>int</type>
+        <default>1</default>
+        <locale name="C">
+          <short>The current score</short>
+          <long>The users's most recent score.</long>
+        </locale>
+      </schema>
+
+  </schemalist>
+  
+</gconfschemafile>
