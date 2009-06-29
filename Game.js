@@ -64,7 +64,7 @@ GameView = new GType({
 				direction = Math.floor(2 * Math.random());
 				sign = Math.floor(2 * Math.random()) ? 1 : -1;
 			}
-			while(last_direction == direction && last_sign != sign);
+			while(last_direction == direction || last_sign == sign);
 	
 			last_direction = direction;
 			last_sign = sign;
