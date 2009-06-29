@@ -35,6 +35,10 @@ GameView = new GType({
 			new_board_view.set_playable(false);
 			self.add_actor(new_board_view);
 			new_board_view.lower_bottom();
+			backing_view.raise_top();
+			score_view.raise_top();
+			left_arrow.raise_top();
+			right_arrow.raise_top();
 		}
 		
 		// The boards have finished transitioning; delete the old one!
@@ -65,7 +69,7 @@ GameView = new GType({
 				sign = Math.floor(2 * Math.random()) ? 1 : -1;
 			}
 			while(last_direction == direction || last_sign == sign);
-	
+				
 			last_direction = direction;
 			last_sign = sign;
 			
@@ -241,12 +245,6 @@ GameView = new GType({
 		score_view.set_width(5);
 		score_changed(Settings.score);
 		
-		// Set up and show the initial board
-		board_view.signal.game_won.connect(game_won);
-		board_view.load_level(current_level);
-		this.add_actor(board_view);
-		create_next_board();
-		
 		backing_view.set_position(0, board_view.height);
 		this.add_actor(backing_view);
 		
@@ -275,6 +273,12 @@ GameView = new GType({
 		this.add_actor(keycursor_view);
 
 		Settings.Watcher.signal.theme_changed.connect(theme_changed);
+		
+		// Set up and show the initial board
+		board_view.signal.game_won.connect(game_won);
+		board_view.load_level(current_level);
+		this.add_actor(board_view);
+		create_next_board();
 	}
 });
 
