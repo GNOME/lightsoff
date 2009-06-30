@@ -1,20 +1,20 @@
-SUBDIRS = themes
+SUBDIRS = data/themes
 
-lojsdir = $(pkgdatadir)/lightsoff
-lojs_DATA = \
-	About.js \
-	Arrow.js \
-	Board.js \
-	Light.js \
-	main.js \
-	Game.js \
-	LED.js \
-	Settings.js \
-	settings.ui \
-	main-window.ui
+lightsoffdir = $(pkgdatadir)/lightsoff
+lightsoff_DATA = \
+	src/About.js \
+	src/Arrow.js \
+	src/Board.js \
+	src/Light.js \
+	src/main.js \
+	src/Game.js \
+	src/LED.js \
+	src/Settings.js \
+	data/settings.ui \
+	data/main-window.ui
 
 bin_SCRIPTS = \
-	lightsoff
+	src/lightsoff
 
 schema_in_files = lightsoff.schemas.in
 schemadir = $(GCONF_SCHEMA_FILE_DIR)
@@ -25,19 +25,19 @@ desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-CLEANFILES = main.js $(desktop_DATA)
+CLEANFILES = src/main.js $(desktop_DATA)
 
 EXTRA_DIST = \
-	About.js \
-	Arrow.js \
-	Board.js \
-	Light.js \
-	main.js.in \
-	Game.js \
-	LED.js \
-	Settings.js \
-	settings.ui \
-	main-window.ui
+	src/About.js \
+	src/Arrow.js \
+	src/Board.js \
+	src/Light.js \
+	src/main.js.in \
+	src/Game.js \
+	src/LED.js \
+	src/Settings.js \
+	data/settings.ui \
+	data/main-window.ui
 
 install-schemas-local: $(schema_DATA)
 if GCONF_SCHEMAS_INSTALL

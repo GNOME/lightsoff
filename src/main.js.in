@@ -39,10 +39,10 @@ b = new Gtk.Builder();
 b.add_from_file(file_prefix + "/main-window.ui");
 b.connect_signals(handlers);
 
-var window = b.get_object("window1");
+var window = b.get_object("game_window");
 var clutter_embed = new GtkClutter.Embed();
 window.signal.hide.connect(Gtk.main_quit);
-b.get_object("vbox1").pack_start(clutter_embed, true, true);
+b.get_object("game_vbox").pack_start(clutter_embed, true, true);
 
 var stage = clutter_embed.get_stage();
 stage.color = {alpha:255};

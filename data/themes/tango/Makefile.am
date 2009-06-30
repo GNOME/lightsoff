@@ -16,3 +16,6 @@ EXTRA_DIST = \
 	on.svg \
 	highlight.svg \
 	theme.js.in
+
+CLEANFILES = theme.js
+
