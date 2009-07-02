@@ -181,10 +181,7 @@ GameView = new GType({
 		// Change the currently selected tile with the keyboard
 		this.update_keyboard_selection = function (actor, event, ud)
 		{
-			// TODO: this is wrong. but, they're defines...
-			var kUp = 65362, kDown = 65364, kLeft = 65361, kRight = 65363, kEnter = 65293, kEsc = 65307;
-			
-			if(event.key.keyval == kEsc)
+			if(event.key.keyval == Clutter.Escape)
 			{
 				keycursor_view.animate(Clutter.AnimationMode.EASE_OUT_SINE, 250,
 				{
@@ -196,22 +193,22 @@ GameView = new GType({
 			
 			if(keycursor.ready)
 			{
-				if(event.key.keyval == kUp && keycursor.y > 0)
+				if(event.key.keyval == Clutter.Up && keycursor.y > 0)
 					keycursor.y--;
-				else if(event.key.keyval == kDown && keycursor.y < 4)
+				else if(event.key.keyval == Clutter.Down && keycursor.y < 4)
 					keycursor.y++;
-				else if(event.key.keyval == kLeft && keycursor.x > 0)
+				else if(event.key.keyval == Clutter.Left && keycursor.x > 0)
 					keycursor.x--;
-				else if(event.key.keyval == kRight && keycursor.x < 4)
+				else if(event.key.keyval == Clutter.Right && keycursor.x < 4)
 					keycursor.x++;
-				else if(event.key.keyval == kEnter)
+				else if(event.key.keyval == Clutter.Return)
 					board_view.light_toggle(keycursor.x, keycursor.y);
 			}
 			
-			if(event.key.keyval != kDown &&
-				event.key.keyval != kUp &&
-				event.key.keyval != kLeft &&
-				event.key.keyval != kRight)
+			if(event.key.keyval != Clutter.Down &&
+				event.key.keyval != Clutter.Up &&
+				event.key.keyval != Clutter.Left &&
+				event.key.keyval != Clutter.Right)
 				return false;
 		
 			var loc = board_view.position_for_light(keycursor.x, keycursor.y);
