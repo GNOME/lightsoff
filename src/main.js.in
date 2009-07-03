@@ -47,6 +47,11 @@ b.get_object("game_vbox").pack_start(clutter_embed, true, true);
 var stage = clutter_embed.get_stage();
 stage.color = {alpha:255};
 
+// TODO: determine size of window before we show it
+// NOTE: show the window before the stage, and the stage before any children
+window.show_all();
+stage.show_all();
+
 Settings.theme.map_stuff(stage);
 
 var game = new Game.GameView();
@@ -55,8 +60,5 @@ stage.set_size(game.width, game.height);
 clutter_embed.set_size_request(stage.width, stage.height);
 
 stage.signal.key_release_event.connect(game.update_keyboard_selection);
-
-stage.show_all();
-window.show_all();
 
 Gtk.main();
