@@ -25,7 +25,7 @@ desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-CLEANFILES = src/main.js $(desktop_DATA)
+CLEANFILES = $(desktop_DATA)
 
 EXTRA_DIST = \
 	src/About.js \
