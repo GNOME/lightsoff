@@ -68,7 +68,7 @@ handlers = {
 			return;
 		
 		theme = new_theme;
-		theme.map_stuff(main.stage);
+		theme.setup(main.stage);
 		
 		try
 		{

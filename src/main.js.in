@@ -52,7 +52,7 @@ stage.color = {alpha:255};
 window.show_all();
 stage.show_all();
 
-Settings.theme.map_stuff(stage);
+Settings.theme.setup(stage);
 
 var game = new Game.GameView();
 stage.add_actor(game);
