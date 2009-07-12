@@ -42,7 +42,7 @@ handlers = {
 };
 
 b = new Gtk.Builder();
-b.add_from_file(file_prefix + "/main-window.ui");
+b.add_from_file(file_prefix + "/lightsoff.ui");
 b.connect_signals(handlers);
 
 var window = b.get_object("game_window");

@@ -7,12 +7,12 @@ lightsoff_DATA = \
 	src/Board.js \
 	src/Light.js \
 	src/main.js \
-	src/path.js \
+	src/Path.js \
 	src/Game.js \
 	src/LED.js \
 	src/Settings.js \
 	data/settings.ui \
-	data/main-window.ui \
+	data/lightsoff.ui \
 	src/ThemeLoader.js
 
 bin_SCRIPTS = \
@@ -35,12 +35,12 @@ EXTRA_DIST = \
 	src/Board.js \
 	src/Light.js \
 	src/main.js \
-	src/path.js.in \
+	src/Path.js.in \
 	src/Game.js \
 	src/LED.js \
 	src/Settings.js \
 	data/settings.ui \
-	data/main-window.ui \
+	data/lightsoff.ui \
 	src/ThemeLoader.js
 
 install-schemas-local: $(schema_DATA)
