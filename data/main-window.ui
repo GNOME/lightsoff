@@ -65,6 +65,16 @@
 									<object class="GtkMenu" id="help_menu">
 										<property name="visible">True</property>
 										<child>
+											<object class="GtkImageMenuItem" id="show_help_item">
+												<signal name="activate" handler="show_help"/>
+												<property name="label">games-contents</property>
+												<property name="visible">True</property>
+												<property name="use_underline">True</property>
+												<property name="use_stock">True</property>
+												<property name="accel_group">accel_group</property>
+											</object>
+										</child>
+										<child>
 											<object class="GtkImageMenuItem" id="show_about_item">
 												<signal name="activate" handler="show_about"/>
 												<property name="label">gtk-about</property>

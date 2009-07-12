@@ -3,7 +3,6 @@ GnomeGamesSupport = imports.gi.GnomeGamesSupport;
 
 main = imports.main;
 
-// Not sure that this is acceptable; if it is, should it be in a Seed extension?
 var _ = imports.gettext.gettext;
 
 function show_about_dialog()
@@ -17,7 +16,7 @@ function show_about_dialog()
 	about_dialog.wrap_license = true;
 	about_dialog.logo_icon_name = "gnome-lightsoff";
 	about_dialog.website = "http://www.gnome.org/projects/gnome-games/";
-	about_dialog.website_label = _("GNOME Games web site"); // this doesn't work for anyone
+	about_dialog.website_label = _("GNOME Games web site");
 	about_dialog.translator_credits = _("translator-credits");
 
 	about_dialog.set_authors(["Tim Horton"]);

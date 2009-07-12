@@ -7,6 +7,7 @@ Clutter = imports.gi.Clutter;
 Gtk = imports.gi.Gtk;
 GtkBuilder = imports.gtkbuilder;
 GnomeGamesSupport = imports.gi.GnomeGamesSupport;
+var _ = imports.gettext.gettext;
 
 GtkClutter.init(Seed.argv);
 GnomeGamesSupport.runtime_init("lightsoff");
@@ -24,6 +25,10 @@ handlers = {
 	show_about: function(selector, ud)
 	{
 		About.show_about_dialog();
+	},
+	show_help: function(selector, ud)
+	{
+		GnomeGamesSupport.help_display(window, _("lightsoff"), null);
 	},
 	reset_score: function(selector, ud)
 	{
