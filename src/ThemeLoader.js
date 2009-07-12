@@ -1,4 +1,5 @@
 Clutter = imports.gi.Clutter;
+Gio = imports.gi.Gio;
 
 function load_svg(theme, file)
 {
@@ -18,4 +19,20 @@ function load_theme(stage, theme)
 
 	for(actor in theme.textures)
 		stage.add_actor(theme.textures[actor]);
+}
+
+function load_themes()
+{
+	themes = {};
+	
+	file = Gio.file_new_for_path(imports.path.file_prefix + "/themes");
+	enumerator = file.enumerate_children("standard::name");
+	
+	while((child = enumerator.next_file()))
+	{
+		var c_theme = imports.themes[child.get_name()].theme;
+		themes[c_theme.name] = c_theme;
+	}
+	
+	return themes;
 }

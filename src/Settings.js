@@ -12,9 +12,7 @@ var theme, score;
 var default_theme = "Tango";
 
 // Map theme names to themes
-var themes = {};
-
-load_themes();
+var themes = ThemeLoader.load_themes();
 
 try
 {
@@ -30,18 +28,6 @@ catch(e)
 	print("Couldn't load settings from GConf.");
 	theme = themes[default_theme];
 	score = 1;
-}
-
-function load_themes()
-{
-	file = Gio.file_new_for_path(main.file_prefix + "/themes");
-	enumerator = file.enumerate_children("standard::name");
-	
-	while((child = enumerator.next_file()))
-	{
-		var c_theme = imports.themes[child.get_name()].theme;
-		themes[c_theme.name] = c_theme;
-	}
 }
 
 // Settings Event Handler
