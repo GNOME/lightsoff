@@ -85,6 +85,10 @@ GameView = new GType({
 			return false;
 		}
 		
+		// The player asked to swap to a different level without completing
+		// the one in progress; this can occur either by clicking an arrow
+		// or by requesting a new game from the menu. Animate the new board
+		// in, depthwise, in the direction indicated by 'context'.
 		var swap_board = function(arrow, event, context)
 		{
 			if(timeline && timeline.is_playing())
@@ -118,8 +122,12 @@ GameView = new GType({
 			return false;
 		}
 		
+		// The player changed the theme from within the preferences window
 		var theme_changed = function()
 		{
+			if(timeline)
+				return;
+			
 			timeline = new Clutter.Timeline({duration: 1500});
 			
 			create_next_board();
@@ -134,6 +142,7 @@ GameView = new GType({
 			timeline.start();
 		}
 		
+		// The current level changed; update the score in GConf and the LEDView 
 		var score_changed = function(new_score)
 		{
 			current_level = new_score;
