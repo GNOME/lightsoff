@@ -12,7 +12,8 @@ lightsoff_DATA = \
 	src/LED.js \
 	src/Settings.js \
 	data/settings.ui \
-	data/main-window.ui
+	data/main-window.ui \
+	src/ThemeLoader.js
 
 bin_SCRIPTS = \
 	src/lightsoff
@@ -39,7 +40,8 @@ EXTRA_DIST = \
 	src/LED.js \
 	src/Settings.js \
 	data/settings.ui \
-	data/main-window.ui
+	data/main-window.ui \
+	src/ThemeLoader.js
 
 install-schemas-local: $(schema_DATA)
 if GCONF_SCHEMAS_INSTALL

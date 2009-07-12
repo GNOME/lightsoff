@@ -3,6 +3,7 @@ Gio = imports.gi.Gio;
 GtkBuilder = imports.gtkbuilder;
 main = imports.main;
 GConf = imports.gi.GConf;
+ThemeLoader = imports.ThemeLoader;
 
 GConf.init(Seed.argv);
 
@@ -68,7 +69,7 @@ handlers = {
 			return;
 		
 		theme = new_theme;
-		theme.setup(main.stage);
+		ThemeLoader.load_theme(main.stage, theme);
 		
 		try
 		{

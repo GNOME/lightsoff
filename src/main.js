@@ -16,6 +16,7 @@ GnomeGamesSupport.stock_init();
 Game = imports.Game;
 Settings = imports.Settings;
 About = imports.About;
+themes = imports.ThemeLoader;
 
 handlers = {
 	show_settings: function(selector, ud)
@@ -57,7 +58,7 @@ stage.color = {alpha:255};
 window.show_all();
 stage.show_all();
 
-Settings.theme.setup(stage);
+themes.load_theme(stage, Settings.theme);
 
 var game = new Game.GameView();
 stage.add_actor(game);
