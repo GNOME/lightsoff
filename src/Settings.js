@@ -88,7 +88,7 @@ handlers = {
 function show_settings()
 {
 	b = new Gtk.Builder();
-	b.add_from_file(main.file_prefix+"/settings.ui");
+	b.add_from_file(main.file_prefix + "/settings.ui");
 	b.connect_signals(handlers);
 
 	populate_theme_selector(b.get_object("theme-selector"));

@@ -3,7 +3,7 @@ GnomeGamesSupport = imports.gi.GnomeGamesSupport;
 
 main = imports.main;
 
-var _ = imports.gettext.gettext;
+_ = imports.gettext.gettext;
 
 function show_about_dialog()
 {

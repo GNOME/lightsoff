@@ -7,6 +7,7 @@ lightsoff_DATA = \
 	src/Board.js \
 	src/Light.js \
 	src/main.js \
+	src/path.js \
 	src/Game.js \
 	src/LED.js \
 	src/Settings.js \
@@ -32,7 +33,8 @@ EXTRA_DIST = \
 	src/Arrow.js \
 	src/Board.js \
 	src/Light.js \
-	src/main.js.in \
+	src/main.js \
+	src/path.js.in \
 	src/Game.js \
 	src/LED.js \
 	src/Settings.js \

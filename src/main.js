@@ -1,13 +1,13 @@
 #!/usr/bin/env seed
 
-file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
+file_prefix = imports.path.file_prefix;
 
 GtkClutter = imports.gi.GtkClutter;
 Clutter = imports.gi.Clutter;
 Gtk = imports.gi.Gtk;
 GtkBuilder = imports.gtkbuilder;
 GnomeGamesSupport = imports.gi.GnomeGamesSupport;
-var _ = imports.gettext.gettext;
+_ = imports.gettext.gettext;
 
 GtkClutter.init(Seed.argv);
 GnomeGamesSupport.runtime_init("lightsoff");
