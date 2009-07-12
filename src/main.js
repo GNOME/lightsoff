@@ -53,6 +53,7 @@ b.get_object("game_vbox").pack_start(clutter_embed, true, true);
 
 var stage = clutter_embed.get_stage();
 stage.color = {alpha:255};
+stage.set_use_fog(false);
 
 // TODO: determine size of window before we show it
 // NOTE: show the window before the stage, and the stage before any children
