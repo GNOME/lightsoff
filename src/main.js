@@ -9,6 +9,7 @@ GtkBuilder = imports.gtkbuilder;
 GnomeGamesSupport = imports.gi.GnomeGamesSupport;
 _ = imports.gettext.gettext;
 
+Gtk.init(Seed.argv);
 GtkClutter.init(Seed.argv);
 GnomeGamesSupport.runtime_init("lightsoff");
 GnomeGamesSupport.stock_init();

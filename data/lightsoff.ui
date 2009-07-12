@@ -43,6 +43,9 @@
 											</object>
 										</child>
 										<child>
+											<object class="GtkSeparatorMenuItem" id="separator1" />
+										</child>
+										<child>
 											<object class="GtkImageMenuItem" id="quit_item">
 												<signal name="activate" handler="quit"/>
 												<property name="label">gtk-quit</property>
