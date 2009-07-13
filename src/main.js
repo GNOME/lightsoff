@@ -1,6 +1,6 @@
 #!/usr/bin/env seed
 
-file_prefix = imports.path.file_prefix;
+file_prefix = imports.Path.file_prefix;
 
 GtkClutter = imports.gi.GtkClutter;
 Clutter = imports.gi.Clutter;

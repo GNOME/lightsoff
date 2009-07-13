@@ -3,7 +3,7 @@ Gio = imports.gi.Gio;
 
 function load_svg(theme, file)
 {
-	var tx = new Clutter.Texture({filename: imports.path.file_prefix + "themes/"
+	var tx = new Clutter.Texture({filename: imports.Path.file_prefix + "themes/"
 	                                        + theme + "/" + file});
 	tx.filter_quality = Clutter.TextureQuality.HIGH;
 	tx.hide();
@@ -25,7 +25,7 @@ function load_themes()
 {
 	themes = {};
 	
-	file = Gio.file_new_for_path(imports.path.file_prefix + "/themes");
+	file = Gio.file_new_for_path(imports.Path.file_prefix + "/themes");
 	enumerator = file.enumerate_children("standard::name");
 	
 	while((child = enumerator.next_file()))
