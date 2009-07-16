@@ -5,6 +5,7 @@
   <object class="GtkDialog" id="dialog1">
     <property name="title" translatable="yes">Lights Off</property>
     <property name="border_width">5</property>
+    <property name="icon_name">gnome-lightsoff</property>
     <property name="type_hint">normal</property>
     <property name="has_separator">False</property>
     <child internal-child="vbox">
