@@ -82,8 +82,10 @@
                   <object class="GtkLabel" id="label5">
                     <property name="visible">True</property>
                     <property name="ypad">5</property>
-                    <property name="label" translatable="yes">&lt;b&gt;Look &amp;amp; Feel&lt;/b&gt;</property>
-                    <property name="use_markup">True</property>
+                    <property name="label" translatable="yes">Look &amp; Feel</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
                   </object>
                 </child>
               </object>
@@ -104,7 +106,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="close-button">
-                <property name="label" translatable="yes">gtk-close</property>
+                <property name="label">gtk-close</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
