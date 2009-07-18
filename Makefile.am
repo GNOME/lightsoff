@@ -1,4 +1,8 @@
-SUBDIRS = data/themes help
+SUBDIRS = data/themes
+
+if BUILD_HELP
+SUBDIRS += help
+endif
 
 lightsoffdir = $(pkgdatadir)/lightsoff
 lightsoff_DATA = \

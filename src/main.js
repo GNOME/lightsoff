@@ -7,7 +7,6 @@ Clutter = imports.gi.Clutter;
 Gtk = imports.gi.Gtk;
 GtkBuilder = imports.gtkbuilder;
 GnomeGamesSupport = imports.gi.GnomeGamesSupport;
-_ = imports.gettext.gettext;
 
 Gtk.init(Seed.argv);
 GtkClutter.init(Seed.argv);
@@ -30,7 +29,7 @@ handlers = {
 	},
 	show_help: function(selector, ud)
 	{
-		GnomeGamesSupport.help_display(window, _("lightsoff"), null);
+		GnomeGamesSupport.help_display(window, "lightsoff", null);
 	},
 	reset_score: function(selector, ud)
 	{
