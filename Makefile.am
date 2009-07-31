@@ -23,8 +23,10 @@ bin_SCRIPTS = \
 	src/lightsoff
 
 schema_in_files = lightsoff.schemas.in
+if HAVE_GNOME
 schemadir = $(GCONF_SCHEMA_FILE_DIR)
 schema_DATA = $(schema_in_files:.schemas.in=.schemas)
+endif
 
 desktop_in_files = lightsoff.desktop.in.in
 desktopdir = $(datadir)/applications
@@ -45,7 +47,8 @@ EXTRA_DIST = \
 	src/Settings.js \
 	data/settings.ui \
 	data/lightsoff.ui \
-	src/ThemeLoader.js
+	src/ThemeLoader.js \
+	$(schema_in_files)
 
 install-schemas-local: $(schema_DATA)
 if GCONF_SCHEMAS_INSTALL
