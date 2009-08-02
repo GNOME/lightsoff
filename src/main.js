@@ -1,7 +1,5 @@
 #!/usr/bin/env seed
 
-file_prefix = imports.Path.file_prefix;
-
 GtkClutter = imports.gi.GtkClutter;
 Clutter = imports.gi.Clutter;
 Gtk = imports.gi.Gtk;
@@ -33,7 +31,7 @@ handlers = {
 };
 
 b = new Gtk.Builder();
-b.add_from_file(file_prefix + "/lightsoff.ui");
+b.add_from_file(imports.Path.file_prefix + "/lightsoff.ui");
 b.connect_signals(handlers);
 
 var window = b.get_object("game_window");
@@ -59,3 +57,6 @@ stage.signal.key_release_event.connect(game.update_keyboard_selection);
 window.show_all();
 
 Gtk.main();
+
+GnomeGamesSupport.runtime_shutdown();
+

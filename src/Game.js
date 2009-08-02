@@ -48,7 +48,7 @@ GameView = new GType({
 			board_view = new_board_view;
 			board_view.set_playable(true);
 			keycursor_view.raise_top();
-			timeline = 0;
+			new_board_view = timeline = 0;
 		}
 		
 		// The player won the game; create a new board, update the level count,

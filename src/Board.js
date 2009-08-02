@@ -207,6 +207,9 @@ BoardView = new GType({
 			loading_level = false;
 		}
 		
+		// Set whether or not clicks on the gameboard should respond;
+		// this is used to prevent clicks from registering while the board is
+		// animating.
 		this.set_playable = function(p)
 		{
 			playable = p;
