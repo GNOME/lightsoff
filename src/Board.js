@@ -3,16 +3,79 @@ GLib = imports.gi.GLib;
 Clutter = imports.gi.Clutter;
 Light = imports.Light;
 
-var tiles = 5; // fix this
+var tiles = 5;
+
+// All lights need to be shifted down and right by half a light,
+// as lights have center gravity.
+function position_for_light(x, y)
+{
+	var p_l = {x: (x + 0.5) * Settings.theme.light[0].width,
+	           y: (y + 0.5) * Settings.theme.light[0].height};
+	
+	return p_l;
+}
 
 BoardView = new GType({
 	parent: Clutter.Group.type,
 	name: "BoardView",
 	signals: [{name: "game_won"}],
+	class_init: function(klass, prototype)
+	{
+		function fade(out)
+		{
+			return function(timeline)
+			{
+				this.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_SINE, 
+			                               timeline,
+				{
+					opacity: out ? 0 : 255
+				});
+			}
+		}
+	
+		prototype.fade_in = fade(false);
+		prototype.fade_out = fade(true);
+		
+		function slide(out)
+		{
+			return function(direction, sign, timeline)
+			{
+				this.x = out ? 0 : (-sign) * direction * this.width;
+				this.y = out ? 0 : (-sign) * !direction * this.height;
+				
+				this.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_BOUNCE, 
+					                       timeline,
+				{
+					x: out ? sign * direction * this.width : 0,
+					y: out ? sign * !direction * this.height : 0
+				});
+			}
+		}
+		
+		prototype.slide_in = slide(false);
+		prototype.slide_out = slide(true);
+		
+		function swap(out)
+		{
+			return function(direction, timeline)
+			{
+				this.animate_with_timeline(Clutter.AnimationMode.EASE_IN_SINE, 
+					                       timeline,
+				{
+					depth: out ? (250 * direction) : 0,
+					x: 0,
+					y: 0,
+					opacity: out ? 0 : 255
+				});
+			}
+		}
+		
+		prototype.swap_in = swap(false);
+		prototype.swap_out = swap(true);
+	},
 	init: function(self)
 	{
 		// Private
-		var self = this;
 		var playable = true;
 		var lights = [];
 		var loading_level = false;
@@ -28,7 +91,7 @@ BoardView = new GType({
 				for(var y = 0; y < tiles; y++)
 				{
 					var l = new Light.LightView();
-					var loc = self.position_for_light(x, y);
+					var loc = position_for_light(x, y);
 					l.set_position(loc.x, loc.y);
 					l.signal.button_release_event.connect(light_clicked, {"x":x, "y":y});
 					
@@ -42,7 +105,6 @@ BoardView = new GType({
 		
 		// Check if the game was won; if so, emit the game_won signal
 		// in order to notify the Game controller.
-		
 		var check_won = function()
 		{
 			if(cleared())
@@ -100,14 +162,6 @@ BoardView = new GType({
 				timeline.start();
 		}
 		
-		this.position_for_light = function(x, y)
-		{
-			var p_l = {x: (x + 0.5) * Settings.theme.light[0].width,
-			           y: (y + 0.5) * Settings.theme.light[0].height};
-			
-			return p_l;
-		}
-		
 		// Pseudorandomly generates and sets the state of each light based on
 		// a level number; hopefully this is stable between machines, but that
 		// depends on GLib's PRNG stability. Also, provides some semblance of 
@@ -124,7 +178,8 @@ BoardView = new GType({
 			
 			do
 			{
-				// log(level^2) gives a reasonable progression of difficulty
+				// Simulate log(level^2) clicks; this seems to give
+				// a reasonable progression of difficulty
 				var count = Math.floor(Math.log(level * level) + 1);
 				var sym = Math.floor(3 * GLib.random_double());
 
@@ -155,71 +210,6 @@ BoardView = new GType({
 		this.set_playable = function(p)
 		{
 			playable = p;
-		}
-		
-		this.fade_out = function(timeline)
-		{
-			self.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_SINE, 
-			                           timeline,
-			{
-				opacity: 0
-			});
-		}
-		
-		this.fade_in = function(timeline)
-		{
-			self.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_SINE, 
-			                           timeline,
-			{
-				opacity: 255
-			});
-		}
-		
-		this.animate_out = function(direction, sign, timeline)
-		{
-			self.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_BOUNCE, 
-			                           timeline,
-			{
-				x: sign * direction * self.width,
-				y: sign * !direction * self.height
-			});
-		}
-		
-		this.animate_in = function(direction, sign, timeline)
-		{
-			self.x = (-sign) * direction * self.width;
-			self.y = (-sign) * !direction * self.height;
-			
-			self.animate_with_timeline(Clutter.AnimationMode.EASE_OUT_BOUNCE, 
-			                           timeline,
-			{
-				x: 0,
-				y: 0
-			});
-		}
-		
-		this.swap_in = function(direction, timeline)
-		{
-			self.animate_with_timeline(Clutter.AnimationMode.EASE_IN_SINE, 
-			                           timeline,
-			{
-				depth: 0,
-				x: 0,
-				y: 0,
-				opacity: 255
-			});
-		}
-		
-		this.swap_out = function(direction, timeline)
-		{
-			self.animate_with_timeline(Clutter.AnimationMode.EASE_IN_SINE, 
-			                           timeline,
-			{
-				depth: 250 * direction,
-				x: 0,
-				y: 0,
-				opacity: 0
-			});
 		}
 		
 		// Implementation

@@ -78,8 +78,8 @@ GameView = new GType({
 			create_next_board();
 			new_board_view.show();
 			
-			new_board_view.animate_in(direction, sign, timeline);
-			board_view.animate_out(direction, sign, timeline);
+			new_board_view.slide_in(direction, sign, timeline);
+			board_view.slide_out(direction, sign, timeline);
 			timeline.signal.completed.connect(board_transition_complete);
 				
 			return false;
@@ -215,12 +215,12 @@ GameView = new GType({
 			}
 			
 			if(event.key.keyval != Clutter.Down &&
-				event.key.keyval != Clutter.Up &&
-				event.key.keyval != Clutter.Left &&
-				event.key.keyval != Clutter.Right)
+			   event.key.keyval != Clutter.Up &&
+			   event.key.keyval != Clutter.Left &&
+			   event.key.keyval != Clutter.Right)
 				return false;
 		
-			var loc = board_view.position_for_light(keycursor.x, keycursor.y);
+			var loc = Board.position_for_light(keycursor.x, keycursor.y);
 			
 			if(keycursor.ready)
 			{

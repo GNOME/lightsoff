@@ -4,10 +4,16 @@ Clutter = imports.gi.Clutter;
 LightView = new GType({
 	parent: Clutter.Group.type,
 	name: "LightView",
-	init: function()
+	class_init: function(klass, prototype)
+	{
+		prototype.toggle = function(timeline)
+		{
+			this.set_state(!this.get_state(), timeline);
+		};
+	},
+	init: function(self)
 	{
 		// Private
-		var self = this; // Robb promises something better
 		var on = new Clutter.Clone({source: Settings.theme.light[1],
 		                            anchor_gravity: Clutter.Gravity.CENTER});
 		var off = new Clutter.Clone({source: Settings.theme.light[0],
@@ -53,11 +59,6 @@ LightView = new GType({
 		this.get_state = function()
 		{
 			return state;
-		}
-		
-		this.toggle = function(timeline)
-		{
-			self.set_state(!self.get_state(), timeline);
 		}
 		
 		// Implementation

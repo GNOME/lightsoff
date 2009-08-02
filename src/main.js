@@ -19,14 +19,8 @@ About = imports.About;
 themes = imports.ThemeLoader;
 
 handlers = {
-	show_settings: function(selector, ud)
-	{
-		Settings.show_settings();
-	},
-	show_about: function(selector, ud)
-	{
-		About.show_about_dialog();
-	},
+	show_settings: Settings.show_settings,
+	show_about: About.show_about_dialog,
 	show_help: function(selector, ud)
 	{
 		GnomeGamesSupport.help_display(window, "lightsoff", null);
@@ -35,10 +29,7 @@ handlers = {
 	{
 		game.reset_game();
 	},
-	quit: function(selector, ud)
-	{
-		Gtk.main_quit();
-	}
+	quit: Gtk.main_quit
 };
 
 b = new Gtk.Builder();
@@ -54,9 +45,6 @@ var stage = clutter_embed.get_stage();
 stage.color = {alpha:255};
 stage.set_use_fog(false);
 
-// TODO: determine size of window before we show it
-// NOTE: show the window before the stage, and the stage before any children
-window.show_all();
 stage.show_all();
 
 themes.load_theme(stage, Settings.theme);
@@ -67,5 +55,7 @@ stage.set_size(game.width, game.height);
 clutter_embed.set_size_request(stage.width, stage.height);
 
 stage.signal.key_release_event.connect(game.update_keyboard_selection);
+
+window.show_all();
 
 Gtk.main();

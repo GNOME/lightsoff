@@ -22,9 +22,6 @@ function show_about_dialog()
 	about_dialog.set_authors(["Tim Horton"]);
 	about_dialog.set_artists(["Tim Horton", "Ulisse Perusin"]);
 
-	// TODO: some form of wrapper so we can use gtk_show_about_dialog instead
-	// of faking all of its window-management-related stuff
-
 	about_dialog.set_transient_for(main.window);
 	about_dialog.run();
 	
