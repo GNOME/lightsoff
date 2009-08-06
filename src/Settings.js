@@ -30,6 +30,14 @@ catch(e)
 	score = 1;
 }
 
+// If (machine isn't restarted?) after schema is installed, defaults
+// from GConf aren't set, so revert to defaults...
+if(score == 0)
+{
+	theme = themes[default_theme];
+	score = 1;
+}
+
 // Settings Event Handler
 
 SettingsWatcher = new GType({

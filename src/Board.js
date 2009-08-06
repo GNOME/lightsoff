@@ -170,6 +170,13 @@ BoardView = new GType({
 		{
 			loading_level = true;
 			
+			// We *must* not have level < 1, as the following assumes
+			// a nonzero, nonnegative number
+			if(level < 1)
+			{
+				level = 1;
+			}
+			
 			for(var x = 0; x < tiles; x++)
 				for(var y = 0; y < tiles; y++)
 					lights[x][y].set_state(0, 0);
