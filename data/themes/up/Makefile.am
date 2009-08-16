@@ -16,4 +16,3 @@ EXTRA_DIST = \
 	on.svg \
 	highlight.svg \
 	theme.js
-
