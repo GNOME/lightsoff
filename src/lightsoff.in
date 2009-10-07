@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-export LD_LIBRARY_PATH=@prefix@/lib/gnome-games:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=@libdir@/gnome-games:$LD_LIBRARY_PATH
 /usr/bin/env seed @prefix@/share/gnome-games/lightsoff/main.js
 
