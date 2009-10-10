@@ -18,7 +18,10 @@ function load_theme(stage, theme)
 	theme.loaded = true;
 
 	for(actor in theme.textures)
+	{
 		stage.add_actor(theme.textures[actor]);
+		theme.textures[actor].hide();
+	}
 }
 
 function load_themes()
