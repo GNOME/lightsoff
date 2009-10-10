@@ -9,8 +9,8 @@ var tiles = 5;
 // as lights have center gravity.
 function position_for_light(x, y)
 {
-	var p_l = {x: (x + 0.5) * Settings.theme.light[0].width,
-	           y: (y + 0.5) * Settings.theme.light[0].height};
+	var p_l = {x: (x + 0.5) * Settings.theme.light[0].width + 2,
+	           y: (y + 0.5) * Settings.theme.light[0].height + 2};
 	
 	return p_l;
 }
