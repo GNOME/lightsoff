@@ -4,6 +4,7 @@ Clutter = imports.gi.Clutter;
 LED = imports.LED;
 Board = imports.Board;
 Arrow = imports.Arrow;
+main = imports.main;
 
 var last_direction, last_sign;
 
@@ -15,6 +16,8 @@ GameView = new GType({
 		// Private
 		var self = this;
 		var current_level = 1;
+		var queue_theme_change = 0;
+		var actor_remove_queue = [];
 		var score_view = new LED.LEDView();
 		var board_view = new Board.BoardView();
 		var backing_view = new Clutter.Clone({source:Settings.theme.backing});
@@ -44,11 +47,28 @@ GameView = new GType({
 		// The boards have finished transitioning; delete the old one!
 		var board_transition_complete = function()
 		{
+		    queue_theme_change--;
+		    
 			self.remove_actor(board_view);
 			board_view = new_board_view;
 			board_view.set_playable(true);
 			keycursor_view.raise_top();
 			new_board_view = timeline = 0;
+			
+			if(queue_theme_change)
+			{
+			    queue_theme_change = 0;
+			    theme_changed();
+			}
+			
+			// Remove all of the queued-for-removal actors
+			while(actor_remove_queue.length > 0)
+			{
+			    act = actor_remove_queue.pop();
+
+			    if(act && act.get_parent())
+    			    act.get_parent().remove_actor(act);
+			}
 		}
 		
 		// The player won the game; create a new board, update the level count,
@@ -125,6 +145,8 @@ GameView = new GType({
 		// The player changed the theme from within the preferences window
 		var theme_changed = function()
 		{
+		    queue_theme_change++;
+		    
 			if(timeline)
 				return;
 			
@@ -161,6 +183,12 @@ GameView = new GType({
 		}
 		
 		// Public
+		
+		// Queue an actor to be removed after the board is finished reloading
+		this.queue_actor_remove = function (actor)
+		{
+		    actor_remove_queue.push(actor);
+		}
 		
 		this.reset_game = function ()
 		{

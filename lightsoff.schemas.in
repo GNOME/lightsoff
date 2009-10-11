@@ -24,6 +24,19 @@
           <long>The users's most recent score.</long>
         </locale>
       </schema>
+      
+      <schema>
+        <key>/schemas/apps/lightsoff/use_theme_colors</key>
+        <applyto>/apps/lightsoff/use_theme_colors</applyto>
+        <owner>lightsoff</owner>
+        <type>bool</type>
+        <default>0</default>
+        <locale name="C">
+          <short>Whether or not to use the GNOME theme colors</short>
+          <long>If enabled, the default background color from the user's 
+          default GNOME theme is used to draw the tiles.</long>
+        </locale>
+      </schema>
 
   </schemalist>
   

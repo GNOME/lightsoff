@@ -8,40 +8,56 @@ ThemeLoader = imports.ThemeLoader;
 GConf.init(Seed.argv);
 
 // Defaults
-var theme, score;
-var default_theme = "Tango";
+var theme, score, use_theme_colors, theme_name;
+var themes;
+var default_theme_name = "Tango";
+var default_use_theme_colors = false;
 
-// Map theme names to themes
-var themes = ThemeLoader.load_themes();
-
+// Load settings from GConf
 try
 {
 	gconf_client = GConf.Client.get_default();
 	score = gconf_client.get_int("/apps/lightsoff/score");
-	theme = themes[gconf_client.get_string("/apps/lightsoff/theme")];
+	theme_name = gconf_client.get_string("/apps/lightsoff/theme")
+	use_theme_colors = gconf_client.get_bool("/apps/lightsoff/use_theme_colors");
 	
 	if(theme == null)
-		theme = themes[default_theme];
+		theme = default_theme_name;
 }
 catch(e)
 {
 	print("Couldn't load settings from GConf.");
-	theme = themes[default_theme];
+	theme_name = default_theme_name;
 	score = 1;
+	use_theme_colors = default_use_theme_colors;
 }
 
 // If (machine isn't restarted?) after schema is installed, defaults
 // from GConf aren't set, so revert to defaults...
+// TODO: this seems unacceptable and wrong
 if(score == 0)
 {
-	theme = themes[default_theme];
+	theme_name = default_theme_name;
 	score = 1;
+}
+
+try
+{
+    // Map theme names to themes
+    themes = ThemeLoader.load_themes();
+    
+    // Load selected theme
+    theme = themes[theme_name];
+}
+catch(e)
+{
+    print("Couldn't load selected theme...");
 }
 
 // Settings Event Handler
 
 SettingsWatcher = new GType({
-	parent: Gtk.Button.type, // TODO: Can I make something inherit directly from GObject?!
+	parent: Gtk.Button.type,
 	name: "SettingsWatcher",
 	signals: [{name: "theme_changed"}],
 	init: function()
@@ -65,16 +81,39 @@ handlers = {
 		theme = new_theme;
 		ThemeLoader.load_theme(main.stage, theme);
 		
+		b.get_object("use-gnome-theme-checkbox").sensitive = theme.theme_colorable;
+		
+		if(!theme.theme_colorable)
+		    b.get_object("use-gnome-theme-checkbox").active = false;
+		
 		try
 		{
 			gconf_client.set_string("/apps/lightsoff/theme", selector.get_active_text());
 		}
 		catch(e)
 		{
-			Seed.print("Couldn't save settings to GConf.");
+			print("Couldn't save settings to GConf.");
 		}
 	
 		Watcher.signal.theme_changed.emit();
+	},
+	set_use_theme_colors: function(widget, ud)
+	{
+	    use_theme_colors = widget.active;
+	    
+	    theme.reload_theme();
+	    ThemeLoader.load_theme(main.stage, theme);
+	    
+	    try
+	    {
+	        gconf_client.set_bool("/apps/lightsoff/use_theme_colors", use_theme_colors);
+        }
+        catch(e)
+        {
+            print("Couldn't save settings to GConf.");
+        }
+        
+        Watcher.signal.theme_changed.emit();
 	}
 };
 
@@ -87,6 +126,10 @@ function show_settings()
 	b.connect_signals(handlers);
 
 	populate_theme_selector(b.get_object("theme-selector"));
+
+    // Set current values
+    b.get_object("use-gnome-theme-checkbox").active = use_theme_colors;
+    b.get_object("use-gnome-theme-checkbox").sensitive = theme.theme_colorable;
 
 	settings_dialog = b.get_object("dialog1");
 	settings_dialog.set_transient_for(main.window);

@@ -67,6 +67,7 @@
                             <property name="can_focus">True</property>
                             <property name="receives_default">False</property>
                             <property name="draw_indicator">True</property>
+                            <signal name="toggled" handler="set_use_theme_colors"/>
                           </object>
                           <packing>
                             <property name="expand">False</property>
