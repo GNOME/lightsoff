@@ -68,6 +68,22 @@ SettingsWatcher = new GType({
 
 var Watcher = new SettingsWatcher();
 
+// Watch for Gtk theme change, reload theme!
+
+function reload_on_theme_change(widget, last_style, user_data)
+{
+    if(main.game.is_animating())
+        return;
+
+    theme.reload_theme();
+    ThemeLoader.load_theme(main.stage, theme);
+    Watcher.signal.theme_changed.emit();
+}
+
+var fakeWindow = new Gtk.Window();
+fakeWindow.realize();
+fakeWindow.signal.style_set.connect(reload_on_theme_change);
+
 // Settings UI
 
 handlers = {

@@ -100,7 +100,7 @@ function reload_theme()
     var gtk_settings = Gtk.Settings.get_default();
     var gtk_color_scheme = gtk_settings.gtk_color_scheme;
     var c = new Clutter.Color();
-    c.from_string(gtk_color_scheme.match(/selected_bg_color: (.*)/)[1]);
+    c.from_string(gtk_color_scheme.match(/selected_bg_color: (.*);?/)[1]);
     
     // Remove the previous theme's cached lights
     if(light.length > 0)

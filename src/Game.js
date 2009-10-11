@@ -53,7 +53,7 @@ GameView = new GType({
 			board_view = new_board_view;
 			board_view.set_playable(true);
 			keycursor_view.raise_top();
-			new_board_view = timeline = 0;
+			new_board_view = timeline = null;
 			
 			if(queue_theme_change)
 			{
@@ -183,6 +183,11 @@ GameView = new GType({
 		}
 		
 		// Public
+		
+		this.is_animating = function ()
+		{
+		    return (timeline != null);
+		}
 		
 		// Queue an actor to be removed after the board is finished reloading
 		this.queue_actor_remove = function (actor)
