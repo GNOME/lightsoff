@@ -10,3 +10,5 @@ DOC_ENTITIES = \
 DOC_FIGURES =
 
 dist-hook: doc-dist-hook
+
+-include $(top_srcdir)/git.mk

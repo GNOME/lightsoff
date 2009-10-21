@@ -16,3 +16,5 @@ EXTRA_DIST = \
 	on.svg \
 	highlight.svg \
 	theme.js
+
+-include $(top_srcdir)/git.mk
