@@ -1,1 +1,1 @@
-file_prefix = '@prefix@' + "/share/gnome-games/lightsoff/";
+file_prefix = '%pkgdatadir%' + "/lightsoff/";

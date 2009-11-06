@@ -22,6 +22,12 @@ lightsoff_DATA = \
 bin_SCRIPTS = \
 	src/lightsoff
 
+src/lightsoff: src/lightsoff.in Makefile
+	$(AM_V_GEN) $(SED) -e "s|%pkglibdir%|$(pkglibdir)|" -e "s|%pkgdatadir%|$(pkgdatadir)|" $< > $@
+
+src/Path.js: src/Path.js.in
+	$(AM_V_GEN) $(SED) -e "s|%pkgdatadir%|$(pkgdatadir)|" $< > $@
+
 schema_in_files = lightsoff.schemas.in
 if HAVE_GNOME
 schemadir = $(GCONF_SCHEMA_FILE_DIR)
