@@ -43,6 +43,7 @@ CLEANFILES = $(desktop_DATA) $(schema_DATA)
 DISTCLEANFILES = $(desktop_DATA) $(schema_DATA)
 
 EXTRA_DIST = \
+	src/lightsoff.in \
 	src/About.js \
 	src/Arrow.js \
 	src/Board.js \
