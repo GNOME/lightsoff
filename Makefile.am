@@ -1,32 +1,13 @@
 SUBDIRS = data/themes
 
 if BUILD_HELP
-SUBDIRS += help
+SUBDIRS += src help
 endif
 
 lightsoffdir = $(pkgdatadir)/lightsoff
 lightsoff_DATA = \
-	src/About.js \
-	src/Arrow.js \
-	src/Board.js \
-	src/Light.js \
-	src/main.js \
-	src/Path.js \
-	src/Game.js \
-	src/LED.js \
-	src/Settings.js \
 	data/settings.ui \
-	data/lightsoff.ui \
-	src/ThemeLoader.js
-
-bin_SCRIPTS = \
-	src/lightsoff
-
-src/lightsoff: src/lightsoff.in Makefile
-	$(AM_V_GEN) $(SED) -e "s|%pkglibdir%|$(pkglibdir)|" -e "s|%pkgdatadir%|$(pkgdatadir)|" $< > $@
-
-src/Path.js: src/Path.js.in
-	$(AM_V_GEN) $(SED) -e "s|%pkgdatadir%|$(pkgdatadir)|" $< > $@
+	data/lightsoff.ui
 
 schema_in_files = lightsoff.schemas.in
 if HAVE_GNOME
@@ -43,19 +24,8 @@ CLEANFILES = $(desktop_DATA) $(schema_DATA)
 DISTCLEANFILES = $(desktop_DATA) $(schema_DATA)
 
 EXTRA_DIST = \
-	src/lightsoff.in \
-	src/About.js \
-	src/Arrow.js \
-	src/Board.js \
-	src/Light.js \
-	src/main.js \
-	src/Path.js.in \
-	src/Game.js \
-	src/LED.js \
-	src/Settings.js \
 	data/settings.ui \
 	data/lightsoff.ui \
-	src/ThemeLoader.js \
 	$(schema_in_files)
 
 install-schemas-local: $(schema_DATA)
