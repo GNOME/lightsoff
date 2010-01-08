@@ -47,27 +47,24 @@ GameView = new GType({
 		// The boards have finished transitioning; delete the old one!
 		var board_transition_complete = function()
 		{
-		    queue_theme_change--;
-		    
 			self.remove_actor(board_view);
 			board_view = new_board_view;
 			board_view.set_playable(true);
 			keycursor_view.raise_top();
 			new_board_view = timeline = null;
+
+			if(queue_theme_change > 0)
+				theme_changed();
 			
-			if(queue_theme_change)
-			{
-			    queue_theme_change = 0;
-			    theme_changed();
-			}
+			queue_theme_change = 0;
 			
 			// Remove all of the queued-for-removal actors
 			while(actor_remove_queue.length > 0)
 			{
-			    act = actor_remove_queue.pop();
+				act = actor_remove_queue.pop();
 
-			    if(act && act.get_parent())
-    			    act.get_parent().remove_actor(act);
+				if(act && act.get_parent())
+					act.get_parent().remove_actor(act);
 			}
 		}
 		
@@ -145,10 +142,11 @@ GameView = new GType({
 		// The player changed the theme from within the preferences window
 		var theme_changed = function()
 		{
-		    queue_theme_change++;
-		    
 			if(timeline)
+			{
+				queue_theme_change++;
 				return;
+			}
 			
 			timeline = new Clutter.Timeline({duration: 1500});
 			
@@ -172,7 +170,7 @@ GameView = new GType({
 			try
 			{
 				Settings.gconf_client.set_int("/apps/lightsoff/score",
-				                              current_level);
+											  current_level);
 			}
 			catch(e)
 			{
@@ -186,13 +184,13 @@ GameView = new GType({
 		
 		this.is_animating = function ()
 		{
-		    return (timeline != null);
+			return (timeline != null);
 		}
 		
 		// Queue an actor to be removed after the board is finished reloading
 		this.queue_actor_remove = function (actor)
 		{
-		    actor_remove_queue.push(actor);
+			actor_remove_queue.push(actor);
 		}
 		
 		this.reset_game = function ()
@@ -294,12 +292,12 @@ GameView = new GType({
 		// TODO: The -10 term in the next two Y locations makes me sad.
 		
 		left_arrow.set_position((score_view.x - score_view.anchor_x) / 2,
-		                        score_view.y + (score_view.height / 2) - 10);
+								score_view.y + (score_view.height / 2) - 10);
 		this.add_actor(left_arrow);
 		
 		right_arrow.flip_arrow();
 		right_arrow.set_position(board_view.width - left_arrow.x,
-		                         score_view.y + (score_view.height / 2) - 10);
+								 score_view.y + (score_view.height / 2) - 10);
 		this.add_actor(right_arrow);
 		
 		left_arrow.signal.button_release_event.connect(swap_board, {direction: -1});
