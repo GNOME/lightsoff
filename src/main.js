@@ -7,7 +7,17 @@ GtkBuilder = imports.gtkbuilder;
 GnomeGamesSupport = imports.gi.GnomeGamesSupport;
 
 Gtk.init(Seed.argv);
-GtkClutter.init(Seed.argv);
+
+try
+{
+	GtkClutter.init_with_args(Seed.argv.length, Seed.argv);
+}
+catch(e)
+{
+	print("Failed to initialise clutter: " + e.message);
+	Seed.quit(1);
+}
+
 GnomeGamesSupport.runtime_init("lightsoff");
 GnomeGamesSupport.stock_init();
 
