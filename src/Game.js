@@ -231,6 +231,8 @@ GameView = new GType({
 				keycursor.ready = false;
 			}
 			
+			keycursor_view.raise_top();
+			
 			if(keycursor.ready)
 			{
 				if(event.key.keyval == Clutter.Up && keycursor.y > 0)
