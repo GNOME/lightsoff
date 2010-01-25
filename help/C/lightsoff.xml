@@ -28,13 +28,15 @@
 
     <abstract role="description">
       <para>
-	Lights Off is ...
+	Lights Off is a puzzle game, where the objective is to turn off all
+	of the tiles on the board. Each click toggles the state of the
+	clicked tile and its non-diagonal neighbors.
       </para>
     </abstract>
 
     <copyright>
-      <year>2009</year>
-      <holder>John Doe</holder>
+      <year>2010</year>
+      <holder>Tim Horton</holder>
     </copyright>
 
   <!-- translators: uncomment this:
@@ -60,10 +62,10 @@ and
 	
     <authorgroup> 
       <author role="maintainer"> 
-	<firstname>John</firstname> 
-	<surname>Doe</surname> 
+	<firstname>Tim</firstname> 
+	<surname>Horton</surname> 
 	<affiliation> 
-	  <address> <email>email@example.com</email> </address> 
+	  <address> <email>hortont@gnome.org</email> </address> 
 	</affiliation> 
       </author> 
 <!-- This is appropriate place for other contributors: translators,
@@ -80,15 +82,15 @@ and
 -->
     </authorgroup>
 	
-	<releaseinfo revision="2.26" role="review"/>
+	<releaseinfo revision="2.29" role="review"/>
 
     <revhistory>
       <revision> 
 	<revnumber>&appname; Manual V&manrevision;</revnumber> 
-	<date>&date;</date> 
+	<date>January 2010</date> 
 	<revdescription> 
-	  <para role="author">???
-	    <email>email@example.com</email>
+	  <para role="author">Tim Horton
+	    <email>hortont@gnome.org</email>
 	  </para>
 	  <para role="publisher">GNOME Documentation Project</para>
 	</revdescription> 
@@ -124,7 +126,7 @@ application or
  <title>Introduction</title>
 
 <!--synopsis of game-->
-  <para><application>Lights Off</application> ...</para>
+  <para><application>Lights Off</application> is a puzzle game, where the objective is to turn off all of the tiles on the board. Each click toggles the state of the clicked tile and its non-diagonal neighbors.</para>
 
 <!--running game-->
    <para>To run <application>Lights Off</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type <command>lightsoff</command> in the command line.</para>
@@ -135,25 +137,15 @@ application or
 
 <sect1 id="s1-playing">
  <title>Playing <application>Lights Off</application></title>
-  <para>You can score through two actions: completing lines and dropping blocks quickly. </para>
+  <para>You progress through the levels either by turning off all of the tiles in a particular level, or using the arrow-shaped buttons near the bottom of the game. These buttons allow you to skip levels, or return to previous levels, without restriction.</para>
    <sect2 id="s2-block-moving">
-     <title> Moving the Blocks</title>
-      <para>To play the game, you only need the four arrow keys.</para>
-       <itemizedlist>
-        <listitem>
-         <para><keycap>Left</keycap> and <keycap>Right</keycap> move the block correspondingly across the screen.</para>
-        </listitem>
-        <listitem>
-         <para><keycap>Up</keycap> rotates the block. The default rotation is counterclockwise. You can change the rotation under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice> and deselecting <guilabel>Rotate blocks counterclockwise</guilabel>.</para>
-        </listitem>
-        <listitem>
-         <para><keycap>Down</keycap> and the <keycap>Space Bar</keycap> move the block down the screen faster.<keycap>Down</keycap> moves the block down faster. <keycap>Space-bar</keycap> moves the block directly to the bottom.</para>
-        </listitem>
-       </itemizedlist> 
+     <title> Manipulating the Board</title>
+      <para>There is only one action available in <application>Lights Off</application>: clicking a tile on the board. You can either click on the tile with the mouse, or use the arrow keys to choose it. The first time you press an arrow key during a game of <application>Lights Off</application>, a cursor will appear, which you can move with the keyboard; pressing enter will click the light below the cursor.</para>
+      <para>When a tile is clicked, both it and all of its non-diagonal neighbors will toggle their state. The objective is to turn all of the tiles on the board off.</para>
    </sect2>
    <sect2 id="s2-newgame">
      <title>Starting a New Game</title>
-      <para>To begin a new game, go to <menuchoice><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The game will begin dropping blocks from the center of the top of the window. The default start-up of the game has no blocks in the game window and shows the next block that will fall in the upper right hand corner. <guilabel>Score</guilabel> shows the number of points you have earned. <guilabel>Lines</guilabel> shows the number of lines you have completed. <guilabel>Level</guilabel> shows the level of difficulty you are on.</para>
+      <para>To begin a new game, go to <menuchoice><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The progression of levels will be the same between games and between computers, so <menuchoice><guimenuitem>New Game</guimenuitem></menuchoice> should only be chosen if you actually want to return to the beginning of the game.</para>
     </sect2>
 </sect1>
 
@@ -162,20 +154,7 @@ application or
  <title>Customizing <application>Lights Off</application></title>
    <sect2 id="s2-customlook">
     <title>Customizing the Look of <application>Lights Off</application></title>
-    <para>Under <menuchoice><guimenu>Settings</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize the look of <application>Lights Off</application>: images for the blocks.</para>
-     <sect3 id="s3-blockimage">
-      <title>Block Image</title>
-       <para>You can change the style of the blocks, including image and size. There are a variety of pre-made styles.</para>
-     </sect3>
-     <sect3 id="s3-background">
-       <title>Background</title> <para>If you drag your favorite image
-       into the <application>Lights Off</application> window it will be
-       used as the background. If you want a solid color as the
-       background drag one in from either the color picker or from
-       <application>nautlilus'</application> <guimenuitem>Backgrounds
-       and Emblems</guimenuitem> dialog (the reset item from that
-       dialog also works).</para>
-     </sect3>
+    <para>Under <menuchoice><guimenu>Game</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>, you can customize the look of the tiles in <application>Lights Off</application>. There are a variety of styles included, some of which make use of the color of your theme. This can be disabled with the <guilabel>Use colors from GNOME Theme</guilabel> option in the Preferences window.</para>
     </sect2>
    </sect1>
 
@@ -183,8 +162,8 @@ application or
   <title>Authors</title>
   <para>
    <application>Lights Off</application> was written by Tim Horton
-   in 2009 and maintained by Gnome Games Team since then. This manual was
-   written by ?.
+   in 2009 and maintained by the Gnome Games Team since then. This manual was
+   written by Tim Horton.
    To report a bug or make a suggestion regarding this application or
    this manual, follow the directions in this
    <ulink url="ghelp:user-guide?feedback-bugs" type="help">document</ulink>.
