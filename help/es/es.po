@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.lightsoff.master\n"
-"POT-Creation-Date: 2010-01-31 12:50+0000\n"
-"PO-Revision-Date: 2010-01-31 23:32+0100\n"
+"POT-Creation-Date: 2010-03-28 15:37+0000\n"
+"PO-Revision-Date: 2010-03-29 20:44+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: C/lightsoff.xml:27(title)
 msgid "<application>Lights Off</application> Manual"
-msgstr "Manual de <application>Lights Off</application>"
+msgstr "Manual de <application>Luces fuera</application>"
 
 #: C/lightsoff.xml:30(para)
 msgid ""
@@ -26,7 +26,7 @@ msgid ""
 "tiles on the board. Each click toggles the state of the clicked tile and its "
 "non-diagonal neighbors."
 msgstr ""
-"Lights Off es un juego tipo puzle donde el objetivo es cambiar todas las "
+"Luces fuera es un juego tipo puzle donde el objetivo es cambiar todas las "
 "fichas en el tablero. Cada pulsación cambia el estado de la ficha pulsada y "
 "sus vecinos no diagonales."
 
@@ -163,7 +163,7 @@ msgstr "hortont@gnome.org"
 
 #: C/lightsoff.xml:89(revnumber)
 msgid "Lights Off Manual V1.0"
-msgstr "Manual de Lights Off V1.0"
+msgstr "Manual de Luces fuera V1.0"
 
 #: C/lightsoff.xml:90(date)
 msgid "January 2010"
@@ -175,7 +175,7 @@ msgstr "Tim Horton <email>hortont@gnome.org</email>"
 
 #: C/lightsoff.xml:100(releaseinfo)
 msgid "This manual describes version 2.28 of Lights Off."
-msgstr "Este manual describe la versión 2.28 de Lights Off."
+msgstr "Este manual describe la versión 2.28 de Luces fuera."
 
 #: C/lightsoff.xml:107(title)
 msgid "Feedback"
@@ -189,7 +189,7 @@ msgid ""
 "ulink>."
 msgstr ""
 "Para informar de un fallo, o hacer alguna sugerencia concerniente la "
-"aplicación <application>Lights Off</application> o este manual, siga las "
+"aplicación <application>Luces fuera</application> o este manual, siga las "
 "indicaciones en la <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
 "\">Página de comentarios de GNOME</ulink>."
 
@@ -208,7 +208,7 @@ msgid ""
 "is to turn off all of the tiles on the board. Each click toggles the state "
 "of the clicked tile and its non-diagonal neighbors."
 msgstr ""
-"<application>Lights Off</application> es un juego tipo puzle, donde el "
+"<application>Luces fuera</application> es un juego tipo puzle, donde el "
 "objetivo es cambiar todas las fichas en el tablero. Cada pulsación cambia el "
 "estado de la ficha pulsada y sus vecinos no diagonales."
 
@@ -220,9 +220,9 @@ msgid ""
 "guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type "
 "<command>lightsoff</command> in the command line."
 msgstr ""
-"Para ejecutar <application>Lights Off</application> seleccione "
+"Para ejecutar <application>Luces fuera</application> seleccione "
 "<menuchoice><guimenu>Aplicaciones</guimenu><guisubmenu>Juegos</"
-"guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice> o escriba "
+"guisubmenu><guimenuitem>Luces fuera</guimenuitem></menuchoice> o escriba "
 "<command>lightsoff</command> en la línea de comandos."
 
 #. part of gnome-games
@@ -232,14 +232,14 @@ msgid ""
 "games</filename> package, which is part of the GNOME desktop environment. "
 "This document describes version 1.0 of <application>Lights Off</application>."
 msgstr ""
-"<application>Lights Off</application> está incluido en el paquete "
+"<application>Luces fuera</application> está incluido en el paquete "
 "<filename>gnome-games</filename>, que es parte del entorno de escritorio "
-"GNOME. Este documento describe la versión 1.0 de <application>Lights Off</"
+"GNOME. Este documento describe la versión 1.0 de <application>Luces fuera</"
 "application>."
 
 #: C/lightsoff.xml:139(title)
 msgid "Playing <application>Lights Off</application>"
-msgstr "Jugar a <application>Lights Off</application>"
+msgstr "Jugar a <application>Luces fuera</application>"
 
 #: C/lightsoff.xml:140(para)
 msgid ""
@@ -266,12 +266,12 @@ msgid ""
 "appear, which you can move with the keyboard; pressing enter will click the "
 "light below the cursor."
 msgstr ""
-"Sólo hay una acción disponible en <application>Lights Off</application>: "
+"Sólo hay una acción disponible en <application>Luces fuera</application>: "
 "pulsar sobre una ficha del tablero. Puede pulsar una ficha con el ratón o "
 "usar las teclas de flechas para seleccionarla. La primera vez que pulsa una "
-"tecla de flecha durante una partida de <application>Lights Off</application> "
-"aparecerá un cursor que puede mover con el teclado; pulsando intro se "
-"apagará la luz bajo el cursor."
+"tecla de flecha durante una partida de <application>Luces fuera</"
+"application> aparecerá un cursor que puede mover con el teclado; pulsando "
+"intro se apagará la luz bajo el cursor."
 
 #: C/lightsoff.xml:144(para)
 msgid ""
@@ -302,11 +302,11 @@ msgstr ""
 
 #: C/lightsoff.xml:154(title)
 msgid "Customizing <application>Lights Off</application>"
-msgstr "Personalizar <application>Lights Off</application>"
+msgstr "Personalizar <application>Luces fuera</application>"
 
 #: C/lightsoff.xml:156(title)
 msgid "Customizing the Look of <application>Lights Off</application>"
-msgstr "Personalizar la apariencia de <application>Lights Off</application>"
+msgstr "Personalizar la apariencia de <application>Luces fuera</application>"
 
 #: C/lightsoff.xml:157(para)
 msgid ""
@@ -319,7 +319,7 @@ msgid ""
 msgstr ""
 "Bajo <menuchoice><guimenu>Juego</guimenu><guimenuitem>Preferencias</"
 "guimenuitem></menuchoice> puede personalizar el aspecto de las fichas en "
-"<application>Lights Off</application>. Existe una variedad de estilos "
+"<application>Luces fuera</application>. Existe una variedad de estilos "
 "incluida, algunos de los cuales usan el color de su tema. Esto se puede "
 "desactivar con la opción <guilabel>Usar los colores del tema de GNOME</"
 "guilabel> en la ventana de Preferencias."
@@ -336,7 +336,7 @@ msgid ""
 "or this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
 "feedback-bugs\" type=\"help\">document</ulink>."
 msgstr ""
-"Tim Horton escribió <application>Lights Off</application> en 2009 y desde "
+"Tim Horton escribió <application>Luces fuera</application> en 2009 y desde "
 "entonces el Equipo de Juegos de GNOME lo mantiene. Tim Horton escribió este "
 "manual. Para informar de un fallo, o hacer alguna sugerencia concerniente a "
 "esta aplicación o este manual, siga las indicaciones en este <ulink url="
