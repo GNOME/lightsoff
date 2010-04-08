@@ -83,7 +83,7 @@
                   <object class="GtkLabel" id="label5">
                     <property name="visible">True</property>
                     <property name="ypad">5</property>
-                    <property name="label" translatable="yes">Look &amp; Feel</property>
+                    <property name="label" translatable="yes">Appearance</property>
                     <attributes>
                       <attribute name="weight" value="bold"/>
                     </attributes>
