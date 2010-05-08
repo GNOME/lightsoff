@@ -280,15 +280,19 @@ GameView = new GType({
 		}
 		
 		// Implementation
-				
+		
+		board_view.show_all();
+		var real_board_width = 5 * Settings.theme.light[0].width + 4;
+		var real_board_height = 5 * Settings.theme.light[0].height + 4;
+		
 		score_view.set_width(5);
 		score_changed(Settings.score);
 		
-		backing_view.set_position(0, board_view.height);
+		backing_view.set_position(0, real_board_height);
 		this.add_actor(backing_view);
 		
 		score_view.set_anchor_point(score_view.width / 2, 0);
-		score_view.set_position(board_view.width / 2, board_view.height + 18);
+		score_view.set_position(real_board_width / 2, real_board_height + 18);
 		this.add_actor(score_view);
 		
 		// TODO: The -10 term in the next two Y locations makes me sad.
@@ -298,14 +302,14 @@ GameView = new GType({
 		this.add_actor(left_arrow);
 		
 		right_arrow.flip_arrow();
-		right_arrow.set_position(board_view.width - left_arrow.x,
+		right_arrow.set_position(real_board_width - left_arrow.x,
 								 score_view.y + (score_view.height / 2) - 10);
 		this.add_actor(right_arrow);
 		
 		left_arrow.signal.button_release_event.connect(swap_board, {direction: -1});
 		right_arrow.signal.button_release_event.connect(swap_board, {direction: 1});
 		
-		this.set_size(board_view.width, score_view.y + score_view.height);
+		this.set_size(real_board_width, score_view.y + score_view.height);
 		
 		keycursor_view.set_position(-100, -100);
 		keycursor_view.anchor_gravity = Clutter.Gravity.CENTER;
