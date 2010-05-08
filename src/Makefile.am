@@ -9,6 +9,7 @@ lightsoff_DATA = \
 	Path.js \
 	Game.js \
 	LED.js \
+	Puzzle.js \
 	Settings.js \
 	ThemeLoader.js
 
