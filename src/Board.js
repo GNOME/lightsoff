@@ -2,8 +2,10 @@ Settings = imports.Settings;
 GLib = imports.gi.GLib;
 Clutter = imports.gi.Clutter;
 Light = imports.Light;
+Puzzle = imports.Puzzle;
 
 var tiles = 5;
+var puzzle_gen = new Puzzle.Gen(tiles);
 
 // All lights need to be shifted down and right by half a light,
 // as lights have center gravity.
@@ -93,7 +95,7 @@ BoardView = new GType({
 					var l = new Light.LightView();
 					var loc = position_for_light(x, y);
 					l.set_position(loc.x, loc.y);
-					l.signal.button_press_event.connect(light_clicked, {"x":x, "y":y});
+					l.signal.button_release_event.connect(light_clicked, {"x":x, "y":y});
 					
 					lights[x][y] = l;
 					self.add_actor(l);
@@ -111,7 +113,7 @@ BoardView = new GType({
 				self.signal.game_won.emit();
 		}
 		
-		// Callback for button_press_event from each light; user_data
+		// Callback for button_release_event from each light; user_data
 		// is an object containing the coordinates of the clicked light.
 		var light_clicked = function(light, event, coords)
 		{
@@ -183,33 +185,15 @@ BoardView = new GType({
 			
 			GLib.random_set_seed(level);
 			
-			do
-			{
-				// Simulate log(level^2) clicks; this seems to give
-				// a reasonable progression of difficulty
-				var count = Math.floor(Math.log(level * level) + 1);
-				var sym = Math.floor(3 * GLib.random_double());
+			// Determine the solution length (number of clicks required)
+			// based on the level number.
+			var solution_length = Math.floor(2 * Math.log(level) + 1);
+			var sol = puzzle_gen.minimal_solution(solution_length);
 
-				for (var q = 0; q < count; ++q)
-				{
-					i = Math.round((tiles - 1) * GLib.random_double());
-					j = Math.round((tiles - 1) * GLib.random_double());
-					
-					self.light_toggle(i, j);
-					
-					// Ensure some level of "symmetry"
-					var x_sym = Math.abs(i - (tiles - 1));
-					var y_sym = Math.abs(j - (tiles - 1));
-					
-					if(sym == 0)
-						self.light_toggle(x_sym, j);
-					else if(sym == 1)
-						self.light_toggle(x_sym, y_sym);
-					else
-						self.light_toggle(i, y_sym);
-				}
-			}
-			while(cleared());
+			for(var x = 0; x < tiles; x++)
+				for(var y = 0; y < tiles; y++)
+					if(sol[tiles * y + x])
+						self.light_toggle(x, y);
 			
 			loading_level = false;
 		}
