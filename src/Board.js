@@ -95,7 +95,7 @@ BoardView = new GType({
 					var l = new Light.LightView();
 					var loc = position_for_light(x, y);
 					l.set_position(loc.x, loc.y);
-					l.signal.button_release_event.connect(light_clicked, {"x":x, "y":y});
+					l.signal.button_press_event.connect(light_clicked, {"x":x, "y":y});
 					
 					lights[x][y] = l;
 					self.add_actor(l);
@@ -113,7 +113,7 @@ BoardView = new GType({
 				self.signal.game_won.emit();
 		}
 		
-		// Callback for button_release_event from each light; user_data
+		// Callback for button_press_event from each light; user_data
 		// is an object containing the coordinates of the clicked light.
 		var light_clicked = function(light, event, coords)
 		{
