@@ -32,6 +32,7 @@ EXTRA_DIST = \
 	Path.js.in \
 	Game.js \
 	LED.js \
+	Puzzle.js \
 	Settings.js \
 	ThemeLoader.js
 
