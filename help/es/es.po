@@ -3,11 +3,12 @@
 # Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-games package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.lightsoff.master\n"
-"POT-Creation-Date: 2010-03-28 15:37+0000\n"
-"PO-Revision-Date: 2010-03-29 20:44+0200\n"
+"POT-Creation-Date: 2010-06-13 19:37+0000\n"
+"PO-Revision-Date: 2010-06-16 07:07+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -347,18 +348,24 @@ msgid "License"
 msgstr "Licencia"
 
 #: C/lightsoff.xml:188(para)
+#| msgid ""
+#| "This program is free software; you can redistribute it and/or modify it "
+#| "under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
+#| "\"><citetitle>GNU General Public License</citetitle></ulink> as published "
+#| "by the Free Software Foundation; either version 2 of the License, or (at "
+#| "your option) any later version."
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
-"under the terms of the <ulink type=\"help\" url=\"gnome-help:gpl"
-"\"><citetitle>GNU General Public License</citetitle></ulink> as published by "
-"the Free Software Foundation; either version 2 of the License, or (at your "
-"option) any later version."
+"under the terms of the <citetitle><ulink type=\"help\" url=\"gnome-help:gpl"
+"\">GNU General Public License</ulink></citetitle> as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
 msgstr ""
 "Este programa es software libre; puede redistribuirlo y/o modificarlo bajo "
 "los términos de la <citetitle><ulink type=\"help\" url=\"gnome-help:gpl"
-"\">Licencia Pública General GNU</ulink></citetitle> tal como se "
-"publica por la Free Software Foundation; ya sea la versión 2 de la Licencia, "
-"o (a su elección) cualquier versión posterior."
+"\">Licencia Pública General GNU</ulink></citetitle> tal como se publica por "
+"la Free Software Foundation; ya sea la versión 2 de la Licencia, o (a su "
+"elección) cualquier versión posterior."
 
 #: C/lightsoff.xml:190(para)
 msgid ""
