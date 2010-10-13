@@ -100,7 +100,7 @@ BoardView = new GType({
 					lights[x][y] = l;
 					self.add_actor(l);
 					
-					GLib.main_context_iteration(null, false);
+					// GLib.main_context_iteration(null, false);
 				}
 			}
 		}
