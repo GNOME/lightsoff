@@ -97,10 +97,11 @@ function draw_glow(color)
 function reload_theme()
 {
     // TODO: there must be a better way to get the Gtk selection color
-    var gtk_settings = Gtk.Settings.get_default();
-    var gtk_color_scheme = gtk_settings.gtk_color_scheme;
-    var c = new Clutter.Color();
-    c.from_string(gtk_color_scheme.match(/selected_bg_color: (.*);?/)[1]);
+    // FIXME: this is now broken, with Gtk3
+    //var gtk_settings = Gtk.Settings.get_default();
+    //var gtk_color_scheme = gtk_settings.gtk_color_scheme;
+    //var c = new Clutter.Color();
+    //c.from_string(gtk_color_scheme.match(/selected_bg_color: (.*);?/)[1]);
     
     // Remove the previous theme's cached lights
     if(light.length > 0)
@@ -109,16 +110,16 @@ function reload_theme()
         main.game.queue_actor_remove(light[1]);
     }
 
-    if(Settings.use_theme_colors)
+    /*if(Settings.use_theme_colors)
     {
         light = [ draw_tile({red: 32, green: 32, blue: 32, alpha: 255}),
                   draw_tile(c) ];
     }
     else
-    {
-        light = [ ThemeLoader.load_svg("tango", "off.svg"),
-                  ThemeLoader.load_svg("tango", "on.svg") ];
-    }
+    {*/
+    light = [ ThemeLoader.load_svg("tango", "off.svg"),
+              ThemeLoader.load_svg("tango", "on.svg") ];
+    //}
     
     textures = [light[0], light[1], arrow, backing, led_back, highlight];
     loaded = false;
