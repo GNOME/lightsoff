@@ -1,6 +1,6 @@
 include $(top_srcdir)/gnome-doc-utils.make
 
-DOC_LINGUAS = de el es fi fr ro sl
+DOC_LINGUAS = de el es fi fr ro sl zh_CN
 
 DOC_MODULE = lightsoff
 
