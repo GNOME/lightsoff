@@ -6,8 +6,6 @@ Gtk = imports.gi.Gtk;
 GtkBuilder = imports.gtkbuilder;
 GnomeGamesSupport = imports.gi.GnomeGamesSupport;
 
-Gtk.init(Seed.argv);
-
 try
 {
 	GtkClutter.init(Seed.argv.length, Seed.argv);

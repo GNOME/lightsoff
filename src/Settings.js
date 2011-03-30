@@ -22,7 +22,7 @@ try
 	use_theme_colors = gconf_client.get_bool("/apps/lightsoff/use_theme_colors");
 	
 	if(theme == null)
-		theme = default_theme_name;
+		theme_name = default_theme_name;
 }
 catch(e)
 {
