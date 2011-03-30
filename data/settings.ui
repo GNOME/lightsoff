@@ -7,7 +7,6 @@
     <property name="border_width">5</property>
     <property name="icon_name">gnome-lightsoff</property>
     <property name="type_hint">normal</property>
-    <property name="has_separator">False</property>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox1">
         <property name="visible">True</property>
@@ -44,9 +43,10 @@
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkComboBox" id="theme-selector">
+                              <object class="GtkComboBoxText" id="theme-selector">
                                 <property name="visible">True</property>
-                                <property name="model">liststore1</property>
+                                <property name="entry-text-column">0</property>
+                                <property name="id-column">1</property>
                                 <signal name="changed" handler="select_theme"/>
                               </object>
                               <packing>
@@ -131,11 +131,5 @@
     <action-widgets>
       <action-widget response="0">close-button</action-widget>
     </action-widgets>
-  </object>
-  <object class="GtkListStore" id="liststore1">
-    <columns>
-      <!-- column-name str -->
-      <column type="gchararray"/>
-    </columns>
   </object>
 </interface>
