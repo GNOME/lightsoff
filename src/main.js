@@ -1,10 +1,13 @@
 #!/usr/bin/env seed
 
+const GLib = imports.gi.GLib;
 GtkClutter = imports.gi.GtkClutter;
 Clutter = imports.gi.Clutter;
 Gtk = imports.gi.Gtk;
 GtkBuilder = imports.gtkbuilder;
 GnomeGamesSupport = imports.gi.GnomeGamesSupport;
+
+GLib.set_prgname('lightsoff');
 
 try
 {
