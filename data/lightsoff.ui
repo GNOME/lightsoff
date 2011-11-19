@@ -25,18 +25,8 @@
 										<property name="visible">True</property>
 										<child>
 											<object class="GtkImageMenuItem" id="new_game_item">
-												<signal name="activate" handler="reset_score"/>
+												<signal name="activate" handler="new_game_cb"/>
 												<property name="label">games-new-game</property>
-												<property name="visible">True</property>
-												<property name="use_underline">True</property>
-												<property name="use_stock">True</property>
-												<property name="accel_group">accel_group</property>
-											</object>
-										</child>
-										<child>
-											<object class="GtkImageMenuItem" id="show_preferences_item">
-												<signal name="activate" handler="show_settings"/>
-												<property name="label">gtk-preferences</property>
 												<property name="visible">True</property>
 												<property name="use_underline">True</property>
 												<property name="use_stock">True</property>
@@ -48,7 +38,7 @@
 										</child>
 										<child>
 											<object class="GtkImageMenuItem" id="quit_item">
-												<signal name="activate" handler="quit"/>
+												<signal name="activate" handler="quit_cb"/>
 												<property name="label">gtk-quit</property>
 												<property name="visible">True</property>
 												<property name="use_underline">True</property>
@@ -70,7 +60,7 @@
 										<property name="visible">True</property>
 										<child>
 											<object class="GtkImageMenuItem" id="show_help_item">
-												<signal name="activate" handler="show_help"/>
+												<signal name="activate" handler="help_cb"/>
 												<property name="label">games-contents</property>
 												<property name="visible">True</property>
 												<property name="use_underline">True</property>
@@ -80,7 +70,7 @@
 										</child>
 										<child>
 											<object class="GtkImageMenuItem" id="show_about_item">
-												<signal name="activate" handler="show_about"/>
+												<signal name="activate" handler="about_cb"/>
 												<property name="label">gtk-about</property>
 												<property name="visible">True</property>
 												<property name="use_underline">True</property>

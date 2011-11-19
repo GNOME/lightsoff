@@ -1,47 +1,34 @@
-lightsoffdir = $(pkgdatadir)/lightsoff
+bin_PROGRAMS = lightsoff
 
-lightsoff_DATA = \
-	About.js \
-	Arrow.js \
-	Board.js \
-	Light.js \
-	main.js \
-	Path.js \
-	Game.js \
-	LED.js \
-	Puzzle.js \
-	Settings.js \
-	ThemeLoader.js
+lightsoff_SOURCES = \
+	board-view.vala \
+	config.vapi \
+	fixes.vapi \
+	lightsoff.vala \
+	led-array.vala \
+	puzzle-generator.vala \
+	game-view.vala
 
-bin_SCRIPTS = \
-	lightsoff
+lightsoff_VALAFLAGS = \
+	--pkg posix \
+    --pkg gmodule-2.0 \
+	--pkg clutter-gtk-1.0 \
+	--vapidir $(top_srcdir)/libgames-support \
+	--pkg GnomeGamesSupport-1.0
 
-lightsoff: lightsoff.in Makefile
-	$(AM_V_GEN) $(SED) -e "s|%pkglibdir%|$(pkglibdir)|" -e "s|%pkgdatadir%|$(pkgdatadir)|" $< > $@
+lightsoff_CFLAGS = \
+	-I$(top_srcdir)/libgames-support \
+	-DVERSION=\"$(VERSION)\" \
+	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
+	$(GMODULE_CFLAGS) \
+	$(GTK_CFLAGS)	\
+	$(CLUTTER_GTK_CFLAGS)
 
-Path.js: Path.js.in
-	$(AM_V_GEN) $(SED) -e "s|%pkgdatadir%|$(pkgdatadir)|" $< > $@
-
-EXTRA_DIST = \
-	lightsoff.in \
-	About.js \
-	Arrow.js \
-	Board.js \
-	Light.js \
-	main.js \
-	Path.js.in \
-	Game.js \
-	LED.js \
-	Puzzle.js \
-	Settings.js \
-	ThemeLoader.js
-
-CLEANFILES = \
-	lightsoff \
-	Path.js
-
-DISTCLEANFILES = \
-	lightsoff \
-	Path.js
+lightsoff_LDADD =	\
+	$(top_builddir)/libgames-support/libgames-support.la \
+	$(GMODULE_LIBS) \
+	$(GTK_LIBS)	\
+	$(CLUTTER_GTK_LIBS)	\
+	$(INTLLIBS)
 
 -include $(top_srcdir)/git.mk

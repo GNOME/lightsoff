@@ -1,0 +1,9 @@
+<schemalist>
+  <schema id="org.gnome.lightsoff" path="/org/gnome/lightsoff/">
+    <key name="level" type="i">
+      <default>1</default>
+      <_summary>The current level</_summary>
+      <_description>The users's most recent level.</_description>
+    </key>
+  </schema>
+</schemalist>
