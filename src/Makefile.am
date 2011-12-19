@@ -20,12 +20,14 @@ lightsoff_CFLAGS = \
 	-I$(top_srcdir)/libgames-support \
 	-DVERSION=\"$(VERSION)\" \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
+	$(GHTREAD_CFLAGS) \
 	$(GMODULE_CFLAGS) \
-	$(GTK_CFLAGS)	\
+	$(GTK_CFLAGS) \
 	$(CLUTTER_GTK_CFLAGS)
 
 lightsoff_LDADD =	\
 	$(top_builddir)/libgames-support/libgames-support.la \
+	$(GTHREAD_LIBS)	\
 	$(GMODULE_LIBS) \
 	$(GTK_LIBS)	\
 	$(CLUTTER_GTK_LIBS)	\
