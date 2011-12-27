@@ -10,7 +10,14 @@ public class LightsOff
         settings = new Settings ("org.gnome.lightsoff");
 
         ui = new Gtk.Builder();
-        ui.add_from_file ("data/lightsoff.ui");
+        try
+        {
+            ui.add_from_file (Path.build_filename (Config.PKGDATADIR, "lightsoff.ui"));
+        }
+        catch (Error e)
+        {
+            warning ("Could not load UI: %s", e.message);
+        }
         ui.connect_signals (this);
 
         window = (Gtk.Window) ui.get_object ("game_window");
@@ -116,7 +123,7 @@ public class LightsOff
 
         Gtk.show_about_dialog (window,
                                "program-name", _("Lights Off"),
-                               "version", VERSION,
+                               "version", Config.VERSION,
                                "comments",
                                _("Turn off all the lights\n\nLights Off is a part of GNOME Games."),
                                "copyright", "Copyright \xa9 2009 Tim Horton",

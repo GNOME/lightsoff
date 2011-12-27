@@ -34,12 +34,12 @@ public class GameView : Clutter.Group
     {
         try
         {
-            backing_texture = new Clutter.Texture.from_file ("data/backing.svg");
-            highlight_texture = new Clutter.Texture.from_file ("data/highlight.svg");
-            off_texture = new Clutter.Texture.from_file ("data/off.svg");
-            on_texture = new Clutter.Texture.from_file ("data/on.svg");
-            led_back_texture = new Clutter.Texture.from_file ("data/led-back.svg");
-            arrow_texture = new Clutter.Texture.from_file ("data/arrow.svg");
+            backing_texture = new Clutter.Texture.from_file (Path.build_filename (Config.PKGDATADIR, "backing.svg"));
+            highlight_texture = new Clutter.Texture.from_file (Path.build_filename (Config.PKGDATADIR, "highlight.svg"));
+            off_texture = new Clutter.Texture.from_file (Path.build_filename (Config.PKGDATADIR, "off.svg"));
+            on_texture = new Clutter.Texture.from_file (Path.build_filename (Config.PKGDATADIR, "on.svg"));
+            led_back_texture = new Clutter.Texture.from_file (Path.build_filename (Config.PKGDATADIR, "led-back.svg"));
+            arrow_texture = new Clutter.Texture.from_file (Path.build_filename (Config.PKGDATADIR, "arrow.svg"));
         }
         catch (Clutter.TextureError e)
         {
