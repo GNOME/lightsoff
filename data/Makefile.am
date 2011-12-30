@@ -26,6 +26,8 @@ DISTCLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
 
 EXTRA_DIST = \
 	$(lightsoff_DATA) \
-	$(gsettings_in_file)
+	$(icon_DATA) \
+	$(gsettings_in_file) \
+	$(desktop_in_file)
 
 -include $(top_srcdir)/git.mk
