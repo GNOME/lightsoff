@@ -4,7 +4,7 @@
 	<object class="GtkWindow" id="game_window">
 		<property name="title" translatable="yes">Lights Off</property>
 		<property name="resizable">False</property>
-		<property name="icon_name">gnome-lightsoff</property>
+		<property name="icon_name">lightsoff</property>
 		<accel-groups>
 			<group name="accel_group"/>
 		</accel-groups>

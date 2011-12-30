@@ -133,7 +133,7 @@ public class LightsOff
                                "artists", artists,
                                "documenters", documenters,
                                "translator-credits", _("translator-credits"),
-                               "logo-icon-name", "gnome-lightsoff",
+                               "logo-icon-name", "lightsoff",
                                "website", "http://www.gnome.org/projects/gnome-games",
                                "website-label", _("GNOME Games web site"),
                                null);
