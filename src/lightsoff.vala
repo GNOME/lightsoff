@@ -95,7 +95,14 @@ public class LightsOff
     [CCode (cname = "G_MODULE_EXPORT help_cb", instance_pos = -1)]
     public void help_cb (Gtk.Widget widget)
     {
-        GnomeGamesSupport.help_display (window, "lightsoff", null);
+        try
+        {
+            Gtk.show_uri (window.get_screen (), "ghelp:lightsoff", Gtk.get_current_event_time ());
+        }
+        catch (Error e)
+        {
+            warning ("Failed to show help: %s", e.message);
+        }
     }
 
     [CCode (cname = "G_MODULE_EXPORT about_cb", instance_pos = -1)]
