@@ -156,7 +156,6 @@ public class LightsOff
             return Posix.EXIT_FAILURE;
         }
 
-        GnomeGamesSupport.runtime_init ("lightsoff");
         GnomeGamesSupport.stock_init ();
 
         LightsOff app;
@@ -172,8 +171,6 @@ public class LightsOff
         }
 
         Gtk.main ();
-
-        GnomeGamesSupport.runtime_shutdown();
 
         return Posix.EXIT_SUCCESS;
     }
