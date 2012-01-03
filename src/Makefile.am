@@ -28,7 +28,6 @@ lightsoff_CFLAGS = \
 
 lightsoff_LDADD =	\
 	$(top_builddir)/libgames-support/libgames-support.la \
-	$(GTHREAD_LIBS)	\
 	$(GMODULE_LIBS) \
 	$(GTK_LIBS)	\
 	$(CLUTTER_GTK_LIBS)	\
