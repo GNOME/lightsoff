@@ -1,4 +1,4 @@
-public class LightsOff
+public class LightsOff : Gtk.Application
 {
     private Settings settings;
     private Gtk.Builder ui;
@@ -7,6 +7,8 @@ public class LightsOff
     
     private LightsOff () throws Error
     {
+        Object (application_id: "org.gnome.lightsoff", flags: ApplicationFlags.FLAGS_NONE);
+        
         settings = new Settings ("org.gnome.lightsoff");
 
         ui = new Gtk.Builder();
@@ -21,7 +23,7 @@ public class LightsOff
         ui.connect_signals (this);
 
         window = (Gtk.Window) ui.get_object ("game_window");
-        window.hide.connect (Gtk.main_quit);
+        add_window (window);
 
         var box = (Gtk.Box) ui.get_object ("game_vbox");
 
@@ -40,7 +42,7 @@ public class LightsOff
         stage.add_actor (game_view);
 
         stage.set_size (game_view.width, game_view.height);
-        clutter_embed.set_size_request ((int) stage.width, (int) stage.height);        
+        clutter_embed.set_size_request ((int) stage.width, (int) stage.height);
     }
     
     private void level_changed_cb (int level)
@@ -75,7 +77,7 @@ public class LightsOff
         }
     }
 
-    public void show ()
+    public override void activate ()
     {
         window.show ();
     }
@@ -89,7 +91,7 @@ public class LightsOff
     [CCode (cname = "G_MODULE_EXPORT quit_cb", instance_pos = -1)]
     public void quit_cb (Gtk.Widget widget)
     {
-        Gtk.main_quit ();
+        window.destroy ();
     }
 
     [CCode (cname = "G_MODULE_EXPORT help_cb", instance_pos = -1)]
@@ -162,16 +164,15 @@ public class LightsOff
         try
         {
             app = new LightsOff ();
-            app.show ();
+            
+            var result = app.run ();
+            
+            return result;
         }
         catch (Error e)
         {
             warning ("Failed to create application: %s", e.message);
             return Posix.EXIT_FAILURE;
         }
-
-        Gtk.main ();
-
-        return Posix.EXIT_SUCCESS;
     }
 }
