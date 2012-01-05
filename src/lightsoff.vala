@@ -164,10 +164,7 @@ public class LightsOff : Gtk.Application
         try
         {
             app = new LightsOff ();
-            
-            var result = app.run ();
-            
-            return result;
+            return app.run ();
         }
         catch (Error e)
         {
