@@ -33,4 +33,8 @@ lightsoff_LDADD =	\
 	$(CLUTTER_GTK_LIBS)	\
 	$(INTLLIBS)
 
+CLEANFILES = \
+	$(patsubst %.vala,%.c,$(filter %.vala, $(SOURCES))) \
+	*_vala.stamp
+
 -include $(top_srcdir)/git.mk
