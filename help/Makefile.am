@@ -1,14 +1,12 @@
-include $(top_srcdir)/gnome-doc-utils.make
+@YELP_HELP_RULES@
+HELP_ID = lightsoff
 
-DOC_LINGUAS = de el es fi fr gl ko ro ru sl sv zh_CN
+HELP_MEDIA = 
 
-DOC_MODULE = lightsoff
+HELP_FILES = \
+	legal.xml \
+	lightsoff.xml
 
-DOC_ENTITIES = \
-	legal.xml
-
-DOC_FIGURES =
-
-dist-hook: doc-dist-hook
+HELP_LINGUAS = de el es fi fr gl ko ro ru sl sv zh_CN
 
 -include $(top_srcdir)/git.mk

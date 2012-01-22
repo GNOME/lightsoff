@@ -112,7 +112,7 @@ msgstr "<application>Valot pois</application> on pulmapeli, jossa tavoitteena on
 #. running game
 #: C/lightsoff.xml:132(para)
 msgid "To run <application>Lights Off</application>, select <menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type <command>lightsoff</command> in the command line."
-msgstr "Voit käynnistää <application>Valot pois<application> -pelin, valitsemalla <menuchoice><guimenu>Sovellukset</guimenu><guisubmenu>Pelit</guisubmenu><guimenuitem>Valot pois</guimenuitem></menuchoice>, tai kirjoittamalla komentoriville <command>lightsoff</command>."
+msgstr "Voit käynnistää <application>Valot pois</application> -pelin, valitsemalla <menuchoice><guimenu>Sovellukset</guimenu><guisubmenu>Pelit</guisubmenu><guimenuitem>Valot pois</guimenuitem></menuchoice>, tai kirjoittamalla komentoriville <command>lightsoff</command>."
 
 #. part of gnome-games
 #: C/lightsoff.xml:135(para)
