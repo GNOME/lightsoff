@@ -21,6 +21,7 @@ lightsoff_CFLAGS = \
 	-DVERSION=\"$(VERSION)\" \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	-DPKGDATADIR=\""$(pkgdatadir)/lightsoff"\" \
+	-DLOCALEDIR=\"$(datadir)/locale\" \
 	$(GHTREAD_CFLAGS) \
 	$(GMODULE_CFLAGS) \
 	$(GTK_CFLAGS) \
