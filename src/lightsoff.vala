@@ -14,7 +14,7 @@ public class LightsOff : Gtk.Application
         ui = new Gtk.Builder();
         try
         {
-            ui.add_from_file (Path.build_filename (Config.PKGDATADIR, "lightsoff.ui"));
+            ui.add_from_file (Path.build_filename (Config.DATADIR, "lightsoff.ui"));
         }
         catch (Error e)
         {

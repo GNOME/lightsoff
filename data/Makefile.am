@@ -1,4 +1,4 @@
-lightsoffdir = $(pkgdatadir)/lightsoff
+lightsoffdir = $(datadir)/lightsoff
 lightsoff_DATA = \
 	lightsoff.ui \
 	arrow.svg \

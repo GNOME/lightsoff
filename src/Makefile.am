@@ -20,7 +20,7 @@ lightsoff_CFLAGS = \
 	-I$(top_srcdir)/libgames-support \
 	-DVERSION=\"$(VERSION)\" \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
-	-DPKGDATADIR=\""$(pkgdatadir)/lightsoff"\" \
+	-DDATADIR=\""$(datadir)/lightsoff"\" \
 	-DLOCALEDIR=\"$(datadir)/locale\" \
 	$(GHTREAD_CFLAGS) \
 	$(GMODULE_CFLAGS) \
