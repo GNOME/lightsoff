@@ -5,10 +5,15 @@ public class LightsOff : Gtk.Application
     private Gtk.Window window;
     private GameView game_view;
     
-    private LightsOff () throws Error
+    private LightsOff ()
     {
         Object (application_id: "org.gnome.lightsoff", flags: ApplicationFlags.FLAGS_NONE);
-        
+    }
+    
+    protected override void startup ()
+    {
+        base.startup ();
+
         settings = new Settings ("org.gnome.lightsoff");
 
         ui = new Gtk.Builder();
@@ -165,16 +170,7 @@ public class LightsOff : Gtk.Application
 
         GnomeGamesSupport.stock_init ();
 
-        LightsOff app;
-        try
-        {
-            app = new LightsOff ();
-            return app.run ();
-        }
-        catch (Error e)
-        {
-            warning ("Failed to create application: %s", e.message);
-            return Posix.EXIT_FAILURE;
-        }
+        var app = new LightsOff ();
+        return app.run ();
     }
 }
