@@ -1,6 +1,5 @@
 lightsoffdir = $(datadir)/lightsoff
 lightsoff_DATA = \
-	lightsoff.ui \
 	arrow.svg \
 	backing.svg \
 	led-back.svg \

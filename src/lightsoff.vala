@@ -1,40 +1,35 @@
 public class LightsOff : Gtk.Application
 {
     private Settings settings;
-    private Gtk.Builder ui;
     private Gtk.Window window;
     private GameView game_view;
+
+    private const GLib.ActionEntry[] action_entries =
+    {
+        { "new-game",      new_game_cb },
+        { "quit",          quit_cb     },
+        { "help",          help_cb     },
+        { "about",         about_cb    }
+    };
     
     private LightsOff ()
     {
         Object (application_id: "org.gnome.lightsoff", flags: ApplicationFlags.FLAGS_NONE);
     }
-    
+
     protected override void startup ()
     {
         base.startup ();
 
+        add_action_entries (action_entries, this);
+
         settings = new Settings ("org.gnome.lightsoff");
 
-        ui = new Gtk.Builder();
-        try
-        {
-            ui.add_from_file (Path.build_filename (Config.DATADIR, "lightsoff.ui"));
-        }
-        catch (Error e)
-        {
-            warning ("Could not load UI: %s", e.message);
-        }
-        ui.connect_signals (this);
-
-        window = (Gtk.Window) ui.get_object ("game_window");
-        add_window (window);
-
-        var box = (Gtk.Box) ui.get_object ("game_vbox");
+        window = new Gtk.ApplicationWindow (this);
 
         var clutter_embed = new GtkClutter.Embed ();
         clutter_embed.show ();
-        box.pack_start (clutter_embed, true, true);
+        window.add (clutter_embed);
 
         var stage = (Clutter.Stage) clutter_embed.get_stage ();
         stage.key_release_event.connect (key_release_event_cb);
@@ -84,23 +79,20 @@ public class LightsOff : Gtk.Application
 
     public override void activate ()
     {
-        window.show ();
+        window.present ();
     }
 
-    [CCode (cname = "G_MODULE_EXPORT new_game_cb", instance_pos = -1)]
-    public void new_game_cb (Gtk.Widget widget)
+    private void new_game_cb ()
     {
         game_view.reset_game();
     }
 
-    [CCode (cname = "G_MODULE_EXPORT quit_cb", instance_pos = -1)]
-    public void quit_cb (Gtk.Widget widget)
+    private void quit_cb ()
     {
         window.destroy ();
     }
 
-    [CCode (cname = "G_MODULE_EXPORT help_cb", instance_pos = -1)]
-    public void help_cb (Gtk.Widget widget)
+    private void help_cb ()
     {
         try
         {
@@ -112,8 +104,7 @@ public class LightsOff : Gtk.Application
         }
     }
 
-    [CCode (cname = "G_MODULE_EXPORT about_cb", instance_pos = -1)]
-    public void about_cb (Gtk.Widget widget)
+    private void about_cb ()
     {
         string[] authors =
         {
