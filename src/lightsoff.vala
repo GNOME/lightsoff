@@ -23,6 +23,19 @@ public class LightsOff : Gtk.Application
 
         add_action_entries (action_entries, this);
 
+        var menu = new Menu ();
+        var section = new Menu ();
+        menu.append_section (null, section);
+        section.append (_("_New Game"), "app.new-game");
+        section = new Menu ();
+        menu.append_section (null, section);
+        section.append (_("_Help"), "app.help");
+        section.append (_("_About"), "app.about");
+        section = new Menu ();
+        menu.append_section (null, section);
+        section.append (_("_Quit"), "app.quit");
+        set_app_menu (menu);
+
         settings = new Settings ("org.gnome.lightsoff");
 
         window = new Gtk.ApplicationWindow (this);
