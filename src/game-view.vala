@@ -12,6 +12,7 @@ public class GameView : Clutter.Group
     private List<Clutter.Actor> actor_remove_queue = null;
 
     private LEDArray score_view;
+    private Clutter.Group board_group;
     private BoardView board_view;
     private BoardView? new_board_view = null;
     private Clutter.Actor backing_view;
@@ -63,10 +64,13 @@ public class GameView : Clutter.Group
         var real_board_width = 5 * off_texture.width + 4;
         var real_board_height = 5 * off_texture.height + 4;
 
+        board_group = new Clutter.Group ();
+        add_actor (board_group);
+
         current_level = level;
         board_view = create_board_view (current_level);
         board_view.playable = true;
-        add_actor (board_view);
+        board_group.add_actor (board_view);
 
         backing_view = new Clutter.Clone (backing_texture);
         backing_view.set_position (0, real_board_height);
@@ -114,21 +118,15 @@ public class GameView : Clutter.Group
     // The boards have finished transitioning; delete the old one!
     private void transition_complete_cb ()
     {
-        remove_actor (board_view);
+        board_view.destroy ();
         board_view = new_board_view;
         board_view.playable = true;
-        key_cursor_view.raise_top ();
         new_board_view = null;
         timeline = null;
 
         // Remove all of the queued-for-removal actors
         foreach (var actor in actor_remove_queue)
-        {
-            if (actor.get_parent () == null)
-                continue;
-            var group = (Clutter.Group) actor.get_parent ();
-            group.remove_actor (actor);
-        }
+            actor.destroy ();
         actor_remove_queue = null;
     }
 
@@ -155,8 +153,7 @@ public class GameView : Clutter.Group
         last_sign = sign;
 
         new_board_view = create_board_view (current_level);
-        add_actor (new_board_view);
-        new_board_view.lower (board_view);
+        board_group.add_actor (new_board_view);
 
         timeline = new Clutter.Timeline (1500);
         new_board_view.slide_in (direction, sign, timeline);
@@ -199,8 +196,7 @@ public class GameView : Clutter.Group
         timeline = new Clutter.Timeline (500);
 
         new_board_view = create_board_view (current_level);
-        add_actor (new_board_view);
-        new_board_view.lower (board_view);
+        board_group.add_actor (new_board_view);
         new_board_view.depth = -250 * direction;
         new_board_view.opacity = 0;
 
@@ -213,7 +209,6 @@ public class GameView : Clutter.Group
 
     public void hide_cursor ()
     {
-        key_cursor_view.raise_top ();
         key_cursor_view.animate (Clutter.AnimationMode.EASE_OUT_SINE, 250, "opacity", 0);
         key_cursor_ready = false;
     }
@@ -262,8 +257,7 @@ public class GameView : Clutter.Group
         timeline = new Clutter.Timeline (500);
 
         new_board_view = create_board_view (current_level);
-        add_actor (new_board_view);
-        new_board_view.lower (board_view);
+        board_group.add_actor (new_board_view);
         new_board_view.depth = 250;
         new_board_view.opacity = 0;
 

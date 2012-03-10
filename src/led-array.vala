@@ -127,7 +127,5 @@ public class LEDArray : Clutter.Group
             add_actor (d);
             digits.prepend (d);
         }
-
-        back.lower_bottom ();
     }
 }

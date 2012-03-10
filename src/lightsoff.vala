@@ -47,7 +47,6 @@ public class LightsOff : Gtk.Application
         var stage = (Clutter.Stage) clutter_embed.get_stage ();
         stage.key_release_event.connect (key_release_event_cb);
         stage.color = Clutter.Color.from_string ("#000000");
-        stage.use_fog = false;
 
         game_view = new GameView (settings.get_int ("level"));
         game_view.level_changed.connect (level_changed_cb);
