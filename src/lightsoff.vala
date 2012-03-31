@@ -163,7 +163,7 @@ public class LightsOff : Gtk.Application
         Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain (Config.GETTEXT_PACKAGE);
 
-        Environment.set_prgname ("lightsoff");
+        Environment.set_application_name (_("Lights Off"));
 
         if (GtkClutter.init (ref args) != Clutter.InitError.SUCCESS)
         {
