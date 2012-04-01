@@ -5,7 +5,7 @@ HELP_MEDIA =
 
 HELP_FILES = \
 	legal.xml \
-	lightsoff.xml
+	index.docbook
 
 HELP_LINGUAS = ca de el es fi fr gl ko ro ru sl sv zh_CN
 
