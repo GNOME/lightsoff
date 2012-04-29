@@ -1,0 +1,34 @@
+<page xmlns="http://projectmallard.org/1.0/"
+	type="guide" style="task"
+	id="index">
+
+  <info>
+    <title type='link' role="trail"><media type="image" src="figures/lightsoff_logo.jpg"/></title>
+    <title type='link'>Lights Off</title>
+    <title type='text'>Lights Off</title>
+    <revision pkgversion="3.4" version="0.1" date="2012-03-08" status="review"/>
+    <credit type="author">
+      <name>Perumal Viravan</name>
+      <email>perumalv18@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+
+<title><media type="image" src="figures/lightsoff.jpg">Iagno logo</media>Lightsoff</title>
+
+   <p><app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn off all the lights. Each click on a tile toggles the state of the clicked tile and its non-diagonal neighbors. 
+   </p>
+
+   <section id="play" style="2column">
+    <title>Game Play</title>
+   </section>
+
+   <section id="get-involved" style="2column">
+    <title>Get Involved</title>
+   </section>
+
+
+</page>

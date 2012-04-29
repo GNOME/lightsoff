@@ -1,0 +1,26 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic" style="task"
+      id="rules">
+  <info>
+    <link type="guide" xref="index#play" />
+    <revision version="0.1" date="2012-03-08" status="review"/>
+
+    <credit type="author copyright">
+      <name>Perumal Viravan</name>
+      <email>perumalv18@gmail.com</email>
+      <years>2012</years>
+    </credit>
+    <desc></desc>
+  </info>
+
+  <title>Rules</title>
+
+  <p>In order to complete the <app>Lights Off</app> puzzle, you must turn off all the lights in the board. This will get you to advance to the next level.</p>
+  <steps>
+    <item><p>The game begins with a pattern of lights on the 5x5 grid.</p></item>
+    <item><p>Select a tile to toggle its state and its non-diagonal neighbors state.</p></item>
+    <item><p>Once you have successfully turned off all the lights, you complete that level and move on to the next.</p>
+    </item>
+  </steps>
+
+</page>

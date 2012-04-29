@@ -1,0 +1,51 @@
+<page xmlns="http://projectmallard.org/1.0/"
+	type="topic" style="task"
+	id="strategy">
+	<info>
+          <revision version="3.4" date="2012-03-08" status="review"/>
+	  <link type="guide" xref="index#play"/>
+	  <credit type="author copyright">
+	    <name>Perumal Viravan</name>
+	    <email>perumalv18@gmail.com</email>
+	  <years>2012</years>
+	  </credit>
+	  <license>
+		<p>Creative Commons Share Alike 3.0</p>
+	  </license>
+	</info>
+
+	<title>Strategy</title>
+        <p>This is a simple strategy to solve the <app>Lights Off</app> puzzle by using the method called "Chase the Lights".</p>
+	  <steps>
+	    <item><p>Chase the lights starting from the first row. To chase the lights in the first row, click the tile on the second row corresponding to the light in the first row. This will turn off that light in the first row.</p>
+                  <note><p>This method can be used in the same way to chase the lights in other rows as well, i.e., if you want to chase the lights in the second row, click the corresponding tile in the third row.</p></note>
+            </item>
+	    <item><p>In the same way continue to chase the lights in the second, third and fourth row. At the end of this you will be only left with the lights in the fifth row.</p></item>
+
+	    <item><p>Now depending on which lights are remaining in the fifth row, click the tiles in the first row using the table given below. </p>
+
+<table frame="all" shade="all" rules="all">
+  <tr>
+    <td><p>Lights Left on the fifth Row</p></td> <td><p> Tiles to Click on the First Row</p></td>
+  </tr>
+  <tr>
+    <td><p>1, 2, 3</p></td> <td><p>2</p></td>
+  </tr><tr>
+    <td><p>1, 2, 4, 5</p></td> <td><p>3</p></td>
+  </tr><tr>
+    <td><p>1, 3, 4</p></td> <td><p>5</p></td>
+  </tr><tr>
+    <td><p>1, 5</p></td> <td><p>1, 2</p></td>
+  </tr><tr>
+    <td><p>2, 3, 5</p></td> <td><p>1</p></td>
+  </tr><tr>
+    <td><p>2, 4</p></td> <td><p>1, 4</p></td>
+  </tr><tr>
+    <td><p>3, 4, 5</p></td> <td><p>4</p></td>
+  </tr>
+</table>
+</item>
+	    <item><p>Now again chase the lights starting from the first row. After chasing the lights this time your puzzle will be solved.</p></item>
+	   </steps>
+            <note><p>This strategy doesn't always produce the optimal solution, it may take more moves.</p></note>
+</page>
