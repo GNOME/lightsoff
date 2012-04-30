@@ -17,7 +17,7 @@
   </info>
 
 
-<title><media type="image" src="figures/lightsoff.jpg">Iagno logo</media>Lightsoff</title>
+<title><media type="image" src="figures/lightsoff.jpg">Iagno logo</media>Lights Off</title>
 
    <p><app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn off all the lights. Each click on a tile toggles the state of the clicked tile and its non-diagonal neighbors. 
    </p>
