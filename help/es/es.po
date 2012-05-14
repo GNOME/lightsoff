@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.lightsoff.master\n"
-"POT-Creation-Date: 2012-05-06 14:50+0000\n"
-"PO-Revision-Date: 2012-05-08 11:47+0200\n"
+"POT-Creation-Date: 2012-05-08 09:50+0000\n"
+"PO-Revision-Date: 2012-05-14 12:03+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -92,10 +92,6 @@ msgstr ""
 "media>Luces fuera"
 
 #: C/index.page:22(page/p)
-#| msgid ""
-#| "<application>Lights Off</application> is a puzzle game, where the "
-#| "objective is to turn off all of the tiles on the board. Each click "
-#| "toggles the state of the clicked tile and its non-diagonal neighbors."
 msgid ""
 "<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
 "off all the lights. Each click on a tile toggles the state of the clicked "
@@ -159,7 +155,6 @@ msgstr ""
 "luz hasta la casilla y pulse la tecla <key>Intro</key>."
 
 #: C/basic.page:24(item/p) C/basic.page:32(item/p)
-#, fuzzy
 #| msgid ""
 #| "Lights Off is a puzzle game, where the objective is to turn off all of "
 #| "the tiles on the board. Each click toggles the state of the clicked tile "
@@ -168,9 +163,8 @@ msgid ""
 "Once a tile is selected it will toggle the state of the selected tile and "
 "its non-diagonal neighbors."
 msgstr ""
-"Luces fuera es un juego tipo puzle donde el objetivo es cambiar todas las "
-"fichas en el tablero. Cada pulsación cambia el estado de la ficha pulsada y "
-"sus vecinos no diagonales."
+"Cuando seleccione una ficha, cambiará su estado y el de sus vecinos no "
+"diagonales."
 
 #: C/basic.page:29(section/title)
 msgid "Using the mouse"
@@ -179,13 +173,14 @@ msgstr "Usando el ratón"
 #: C/basic.page:31(item/p)
 msgid "To select a tile move the mouse pointer over the tile and click it."
 msgstr ""
+"Para seleccionar una ficha, mueva el puntero del ratón sobre la fiche y "
+"púlsela."
 
 #: C/basic.page:37(section/title)
 msgid "Progress through the levels"
-msgstr ""
+msgstr "Progreso a través de los niveles"
 
 #: C/basic.page:39(item/p)
-#, fuzzy
 #| msgid ""
 #| "You progress through the levels either by turning off all of the tiles in "
 #| "a particular level, or using the arrow-shaped buttons near the bottom of "
@@ -195,10 +190,9 @@ msgid ""
 "The progress through the levels is either by turning off all the lights in "
 "that level or using the arrow shaped buttons in the bottom of the game."
 msgstr ""
-"Progresará a través de los niveles desactivando todas las fichas de cada "
-"nivel o usando los botones en forma de flecha junto a la parte inferior del "
-"juego. Esos botones le permitirán saltarse niveles o volver a niveles "
-"anteriores, sin restricción."
+"El progreso a través de los niveles se consigue desactivando todas las "
+"fichas de cada nivel o usando los botones en forma de flecha junto a la "
+"parte inferior del juego."
 
 #: C/basic.page:40(item/p)
 msgid ""
@@ -206,12 +200,17 @@ msgid ""
 "levels or return to the previous levels. The current level is shown at the "
 "bottom of the game."
 msgstr ""
+"Los botones en forma de flecha de la parte inferior de la pantalla le "
+"permitirán saltarse niveles o volver a niveles anteriores. El nivel actual "
+"se muestra en la parte inferior del juego."
 
 #: C/basic.page:44(figure/desc)
 msgid ""
 "This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
 "shaped buttons at the bottom."
 msgstr ""
+"Esto muestra el patrón de <app>Luces fuera</app> para el nivel 3, con los "
+"botones en forma de flechas en la parte inferior."
 
 #: C/basic.page:50(section/title)
 msgid "Video Demonstration"
@@ -308,6 +307,8 @@ msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
 msgstr ""
+"Se le asignará un número de ID a su informe y su estado se actualizará a "
+"medida que se trate. Gracias por ayudar a mejorar <app>Luces fuera</app>."
 
 #: C/develop.page:23(page/title)
 msgid "Help develop"
@@ -465,20 +466,26 @@ msgid ""
 "In order to complete the <app>Lights Off</app> puzzle, you must turn off all "
 "the lights in the board. This will get you to advance to the next level."
 msgstr ""
+"Para completar el puzle <app>Luces fuera</app>, debe apagar todas las luces "
+"del tablero. Esto le permitirá pasar al siguiente nivel."
 
 #: C/rules.page:20(item/p)
 msgid "The game begins with a pattern of lights on the 5x5 grid."
-msgstr ""
+msgstr "El juego comienza con un patrón de luces en un tablero de 5x5."
 
 #: C/rules.page:21(item/p)
 msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
 msgstr ""
+"Seleccione una ficha para cambiar su estado y el de sus vecinos no "
+"diagonales."
 
 #: C/rules.page:22(item/p)
 msgid ""
 "Once you have successfully turned off all the lights, you complete that "
 "level and move on to the next."
 msgstr ""
+"Una vez que haya cambiado el estado de todas las luces, habrá completado ese "
+"nivel y podrá pasar al siguiente."
 
 #: C/strategy.page:17(page/title)
 msgid "Strategy"
@@ -489,6 +496,8 @@ msgid ""
 "This is a simple strategy to solve the <app>Lights Off</app> puzzle by using "
 "the method called \"Chase the Lights\"."
 msgstr ""
+"Esta es una estrategia sencilla para resolver el puzle <app>Luces fuera</"
+"app> usando el método \"Cazar las luces\"."
 
 #: C/strategy.page:20(item/p)
 msgid ""
@@ -496,6 +505,9 @@ msgid ""
 "first row, click the tile on the second row corresponding to the light in "
 "the first row. This will turn off that light in the first row."
 msgstr ""
+"Cace las luces empezando por la primera fila. Para cazar las luces de la "
+"primera fila, pulse en la casilla de la segunda fila que se corresponde con "
+"la luz de la primera fila. Esto hará que se apague la luz de la primera fila."
 
 #: C/strategy.page:21(note/p)
 msgid ""
@@ -503,6 +515,9 @@ msgid ""
 "well, i.e., if you want to chase the lights in the second row, click the "
 "corresponding tile in the third row."
 msgstr ""
+"Este método se puede usar de la misma manera para cazar las luces en otras "
+"filas. Por ejemplo, si quiere cazar las luces de la segunda fila, pulse en "
+"la ficha correspondiente en la tercera fila."
 
 #: C/strategy.page:23(item/p)
 msgid ""
@@ -510,20 +525,24 @@ msgid ""
 "row. At the end of this you will be only left with the lights in the fifth "
 "row."
 msgstr ""
+"Continúe del mismo modo para cazar todas las luces de las filas segunda, "
+"tercera y cuarta. Al terminar, sólo le quedarán las luces de la quinta fila."
 
 #: C/strategy.page:25(item/p)
 msgid ""
 "Now depending on which lights are remaining in the fifth row, click the "
 "tiles in the first row using the table given below."
 msgstr ""
+"Ahora, dependiendo de qué luces quedan en la quinta fila, pulse en las "
+"fichas de la primera fila usando la siguiente tabla."
 
 #: C/strategy.page:29(td/p)
 msgid "Lights Left on the fifth Row"
-msgstr ""
+msgstr "Luces restantes en la quinta fila"
 
 #: C/strategy.page:29(td/p)
 msgid "Tiles to Click on the First Row"
-msgstr ""
+msgstr "Fichas que pulsar en la primera fila"
 
 #: C/strategy.page:32(td/p)
 msgid "1, 2, 3"
@@ -586,12 +605,16 @@ msgid ""
 "Now again chase the lights starting from the first row. After chasing the "
 "lights this time your puzzle will be solved."
 msgstr ""
+"Ahora, cace de nuevo las luces empezando por la primera fila. Después de "
+"cazar las luces, habrá resuelto el puzle."
 
 #: C/strategy.page:50(note/p)
 msgid ""
 "This strategy doesn't always produce the optimal solution, it may take more "
 "moves."
 msgstr ""
+"Esta estrategia no siempre produce la solución óptima, ya que se hacen más "
+"movimientos."
 
 #: C/translate.page:23(page/title)
 msgid "Help translate"
