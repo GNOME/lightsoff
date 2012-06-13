@@ -13,7 +13,7 @@ HELP_FILES = \
 	develop.page		\
 	documentation.page	\
 	index.page		\
-	legal.xml		\ 
+	legal.xml		\
 	license.page		\
 	rules.page		\
 	strategy.page		\
