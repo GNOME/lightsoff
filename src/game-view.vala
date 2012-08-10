@@ -148,7 +148,7 @@ public class GameView : Clutter.Group
             direction = Random.int_range (0, 2); // x or y
             sign = Random.boolean () ? 1 : -1; // left/right up/down
         }
-        while (last_direction == direction || last_sign == sign);
+        while (last_direction == direction && last_sign == sign);
         last_direction = direction;
         last_sign = sign;
 
