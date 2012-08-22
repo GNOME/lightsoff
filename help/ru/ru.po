@@ -40,8 +40,8 @@ msgid "GNOME Documentation Project"
 msgstr "Проект документирования GNOME"
 
 #: C/lightsoff.xml:2(para)
-msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
-msgstr "Разрешается копировать, распространять и/или изменять этот документ на условиях лицензии GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней версии, опубликованной Фондом свободного программного обеспечения (Free Software Foundation), без неизменяемых частей и без текстов на обложках. Вы можете найти копию лицензии GFDL по  <ulink type=\"help\" url=\"ghelp:fdl\">этой ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом."
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"help:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+msgstr "Разрешается копировать, распространять и/или изменять этот документ на условиях лицензии GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней версии, опубликованной Фондом свободного программного обеспечения (Free Software Foundation), без неизменяемых частей и без текстов на обложках. Вы можете найти копию лицензии GFDL по  <ulink type=\"help\" url=\"help:fdl\">этой ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом."
 
 #: C/lightsoff.xml:12(para)
 msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
@@ -175,7 +175,7 @@ msgid "License"
 msgstr "Лицензия"
 
 #: C/lightsoff.xml:188(para)
-msgid "This program is free software; you can redistribute it and/or modify it under the terms of the <citetitle><ulink type=\"help\" url=\"gnome-help:gpl\">GNU General Public License</ulink></citetitle> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
+msgid "This program is free software; you can redistribute it and/or modify it under the terms of the <citetitle><ulink type=\"help\" url=\"help:gpl\">GNU General Public License</ulink></citetitle> as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 msgstr "Данное программное обеспечение является свободным. Вы можете распространять его и/или изменять его на условиях лицензии <citetitle>GNU General Public License</citetitle>, опубликованной Фондом свободного программного обеспечения, второй версии или (по вашему желанию) любой более поздней версии."
 
 #: C/lightsoff.xml:190(para)
