@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2010-03-26 00:32+0000\n"
-"PO-Revision-Date: 2010-03-26 10:08+0200\n"
-"Last-Translator: Marios Zindilis <m.zindilis@dmajor.org>\n"
+"POT-Creation-Date: 2012-05-01 10:51+0000\n"
+"PO-Revision-Date: 2012-08-22 01:06+0200\n"
+"Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,386 +16,969 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: C/lightsoff.xml:27(title)
-msgid "<application>Lights Off</application> Manual"
-msgstr "Εγχειρίδιο του <application>Σβήστε τα φώτα</application>"
-
-#: C/lightsoff.xml:30(para)
-msgid ""
-"Lights Off is a puzzle game, where the objective is to turn off all of the "
-"tiles on the board. Each click toggles the state of the clicked tile and its "
-"non-diagonal neighbors."
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#| msgid "translator-credits"
+msgctxt "_"
+msgid "translator-credits"
 msgstr ""
-"Το Σβήστε τα φώτα είναι ένα παιχνίδι γρίφου, ο σκοπός του οποίου είναι να "
-"σβήσετε όλα τα τετράγωνα στο ταμπλώ. Κάθε πάτημα εναλλάσσει την κατάσταση "
-"του πατημένου τετραγώνου και των μη διαγώνια γειτονικών του τετραγώνων."
+"Ελληνική μεταφραστική ομάδα GNOME\n"
+" Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2010\n"
+" Θάνος Τρυφωνίδης <tomtryf@gmail.com>, 2012\n"
+"\n"
+"Για περισσότερα δείτε: http://gnome.gr"
 
-#: C/lightsoff.xml:38(year)
-msgid "2010"
-msgstr "2010"
-
-#: C/lightsoff.xml:39(holder)
-msgid "Tim Horton"
-msgstr "Tim Horton"
-
-#: C/lightsoff.xml:54(publishername) C/lightsoff.xml:95(para)
-msgid "GNOME Documentation Project"
-msgstr "Έργο τεκμηρίωσης του GNOME"
-
-#: C/lightsoff.xml:2(para)
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:6(media)
+msgctxt "_"
 msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
-"in the file COPYING-DOCS distributed with this manual."
+"external ref='figures/lightsoff_logo.jpg' "
+"md5='8d8b8efd7f0cfb455cb7fba261433455'"
 msgstr ""
-"Επιτρέπεται η αντιγραφή, διανομή και/ή τροποποίηση αυτού του εγγράφου υπό "
-"τους όρους της Ελεύθερης άδειας τεκμηρίωσης GNU (GFDL), στην έκδοση 1.1 ή "
-"νεότερη, όπως δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς "
-"Αμετάβλητα τμήματα, και χωρίς Κείμενα Οπισθοφύλλο και Εξωφύλλου. Μπορείτε να "
-"βρείτε ένα αντίγραφο της GFDL σε αυτό το <ulink type=\"help\" "
-"url=\"ghelp:fdl\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανέμεται "
-"μαζί με αυτό το εγχειρίδιο."
+"external ref='figures/lightsoff_logo.jpg' "
+"md5='8d8b8efd7f0cfb455cb7fba261433455'"
 
-#: C/lightsoff.xml:12(para)
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#.
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.page:20(media)
+msgctxt "_"
 msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
-"GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in "
-"section 6 of the license."
+"external ref='figures/lightsoff.jpg' md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
 msgstr ""
-"Αυτό το εγχειρίδιο είναι μέρος μιας συλλογής από εγχειρίδια του GNOME τα "
-"οποία διανέμονται υπό την GFDL. Αν θέλετε να διανείμετε αυτό το εγχειρίδιο "
-"ξεχωριστά από τη συλλογή, μπορείτε να το κάνετε προσθέτοντας ένα αντίγραφο "
-"της άδειας στο εγχειρίδιο, όπως περιγράφεται στο τμήμα 6 της άδειας."
+"external ref='figures/lightsoff.jpg' md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
 
-#: C/lightsoff.xml:19(para)
-msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
-msgstr ""
-"Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρείες για να ξεχωρίζουν τα "
-"προϊόντα και τις υπηρεσίες τους είναι κατατεθέντα σήματα. Όπου εμφανίζονται "
-"αυτά τα ονόματα στην τεκμηρίωση του GNOME, και τα μέλη του Έργου τεκμηρίωσης "
-"του GNOME το γνωρίζουν, αναγράφονται με κεφαλαία γράμματα ή με κεφαλαίο το "
-"αρχικό τους γράμμα."
-
-#: C/lightsoff.xml:35(para)
-msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
-msgstr ""
-"ΤΟ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ «ΩΣ ΕΧΕΙ», ΧΩΡΙΣ ΚΑΝΕΝΟΣ ΕΙΔΟΥΣ ΕΓΓΥΗΣΗ, ΡΗΤΗ Ή "
-"ΝΟΟΥΜΕΝΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΜΗ ΑΠΟΚΛΕΙΣΤΙΚΑ, ΕΓΓΥΗΣΕΩΝ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ 'Η "
-"ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΕΙΝΑΙ ΕΛΕΥΘΕΡΟ ΟΠΟΙΩΝΔΗΠΟΤΕ "
-"ΕΛΑΤΤΩΜΑΤΩΝ, ΕΜΠΟΡΕΥΣΙΜΟ, ΚΑΤΑΛΛΗΛΟ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ, Ή ΜΗ ΠΑΡΑΒΑΤΙΚΟ. "
-"ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΩΣ ΠΡΟΣ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ, ΚΑΙ ΑΠΟΔΟΣΗ ΤΩΝ ΕΓΓΡΑΦΩΝ Ή "
-"ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΤΟΥΣ ΕΙΝΑΙ ΔΙΚΗ ΣΑΣ. ΑΝ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ "
-"ΑΠΟΔΕΙΧΘΕΙ ΕΛΑΤΤΩΜΑΤΙΚΟ ΜΕ ΟΠΟΙΟΔΗΠΟΤΕ ΤΡΟΠΟ, ΕΣΕΙΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ "
-"ΣΥΓΓΡΑΦΕΑΣ, ΔΗΜΙΟΥΡΓΟΣ Η ΑΛΛΟΣ ΣΥΝΕΙΣΦΕΡΟΝΤΑΣ) ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΟ ΚΟΣΤΟΣ "
-"ΟΠΟΙΟΝΔΗΠΟΤΕ ΑΝΑΓΚΑΙΩΝ ΣΥΝΤΗΡΗΣΕΩΝ, ΕΠΙΔΙΟΡΘΩΣΕΩΝ Ή ΔΙΟΡΘΩΣΕΩΝ. ΑΥΤΗ Η "
-"ΑΠΟΠΟΙΗΣΗ ΕΥΘΥΝΗΣ ΑΠΟΤΕΛΕΙ ΟΥΣΙΩΔΕΣ ΜΕΡΟΣ ΑΥΤΗΣ ΤΗΣ ΑΔΕΙΑΣ. ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ "
-"ΚΑΜΙΑ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΑΥΤΟΥ ΕΚΤΟΣ ΑΠΟ ΑΥΤΗ ΤΗΝ "
-"ΑΠΟΠΟΙΗΣΗ, ΚΑΙ"
-
-#: C/lightsoff.xml:55(para)
-msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
-msgstr ""
-"ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
-"ΑΛΛΙΩΣ (ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ ΠΑΡΑΛΗΨΕΩΝ), ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο "
-"ΔΙΑΝΟΜΕΑΣ, Ή ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ "
-"Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗ ΧΡΗΣΗ ΤΗΣ "
-"ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ "
-"ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
-
-#: C/lightsoff.xml:28(para)
-msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
-msgstr ""
-"ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ "
-"ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU ΜΕ ΤΗΝ ΕΠΙΠΛΕΟΝ ΚΑΤΑΝΟΗΣΗ ΟΤΙ: <"
-"placeholder-1/>"
-
-#: C/lightsoff.xml:65(firstname)
-msgid "Tim"
-msgstr "Tim"
-
-#: C/lightsoff.xml:66(surname)
-msgid "Horton"
-msgstr "Horton"
-
-#: C/lightsoff.xml:68(email)
-msgid "hortont@gnome.org"
-msgstr "hortont@gnome.org"
-
-#: C/lightsoff.xml:89(revnumber)
-msgid "Lights Off Manual V1.0"
-msgstr "Εγχειρίδιο του Σβήστε τα φώτα, έκδοση 1.0"
-
-#: C/lightsoff.xml:90(date)
-msgid "January 2010"
-msgstr "Ιανουάριος 2010"
-
-#: C/lightsoff.xml:92(para)
-msgid "Tim Horton <email>hortont@gnome.org</email>"
-msgstr "Tim Horton <email>hortont@gnome.org</email>"
-
-#: C/lightsoff.xml:100(releaseinfo)
-msgid "This manual describes version 2.28 of Lights Off."
-msgstr "Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.28 του Σβήστε τα φώτα."
-
-#: C/lightsoff.xml:107(title)
-msgid "Feedback"
-msgstr "Ανάδραση"
-
-#: C/lightsoff.xml:108(para)
-msgid ""
-"To report a bug or make a suggestion regarding the <application>Lights Off</"
-"application> application or this manual, follow the directions in the <ulink "
-"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
-"ulink>."
-msgstr ""
-"Για να αναφέρετε ένα σφάλμα ή να κάνετε μια εισήγηση σχετικά με την εφαρμογή "
-"<application>Σβήστε τα φώτα</application> ή με αυτό το εγχειρίδιο, "
-"ακολουθήστε τις οδηγίες στη <ulink url=\"ghelp:user-guide?feedback-bugs\" "
-"type=\"help\">σελίδα ανάδρασης του GNOME</ulink>."
-
-#: C/lightsoff.xml:120(primary)
+#: C/index.page:7(info/title)
+#| msgid "Lights Off"
+msgctxt "link"
 msgid "Lights Off"
 msgstr "Σβήστε τα φώτα"
 
-#: C/lightsoff.xml:126(title)
-msgid "Introduction"
-msgstr "Εισαγωγή"
+#: C/index.page:8(info/title)
+#| msgid "Lights Off"
+msgctxt "text"
+msgid "Lights Off"
+msgstr "Σβήστε τα φώτα"
 
-#. synopsis of game
-#: C/lightsoff.xml:129(para)
+#: C/index.page:11(credit/name) C/basic.page:8(credit/name)
+#: C/bug-filing.page:15(credit/name) C/develop.page:15(credit/name)
+#: C/documentation.page:13(credit/name) C/rules.page:9(credit/name)
+#: C/strategy.page:8(credit/name) C/translate.page:15(credit/name)
+msgid "Perumal Viravan"
+msgstr "Perumal Viravan"
+
+#: C/index.page:15(license/p) C/basic.page:13(license/p)
+#: C/bug-filing.page:19(license/p) C/develop.page:19(license/p)
+#: C/documentation.page:17(license/p) C/strategy.page:13(license/p)
+#: C/translate.page:19(license/p)
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#: C/index.page:20(page/title)
 msgid ""
-"<application>Lights Off</application> is a puzzle game, where the objective "
-"is to turn off all of the tiles on the board. Each click toggles the state "
-"of the clicked tile and its non-diagonal neighbors."
+"<media type=\"image\" src=\"figures/lightsoff.jpg\">Lights Off logo</"
+"media>Lights Off"
 msgstr ""
-"Το <application>Το Σβήστε τα φώτα</application> είναι ένα παιχνίδι γρίφου, ο "
-"σκοπός του οποίου είναι να σβήσετε όλα τα τετράγωνα στο ταμπλώ. Κάθε πάτημα "
-"εναλλάσσει την κατάσταση του πατημένου τετραγώνου και των μη διαγώνια "
-"εφαπτόμενών του τετραγώνων."
+"<media type=\"image\" src=\"figures/lightsoff.jpg\">Λογότυπο του Σβήστε τα "
+"φώτα</media>Σβήστε τα φώτα"
 
-#. running game
-#: C/lightsoff.xml:132(para)
+#: C/index.page:22(page/p)
+#| msgid ""
+#| "<application>Lights Off</application> is a puzzle game, where the "
+#| "objective is to turn off all of the tiles on the board. Each click "
+#| "toggles the state of the clicked tile and its non-diagonal neighbors."
 msgid ""
-"To run <application>Lights Off</application>, select "
-"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
-"guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type "
-"<command>lightsoff</command> in the command line."
+"<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
+"off all the lights. Each click on a tile toggles the state of the clicked "
+"tile and its non-diagonal neighbors."
 msgstr ""
-"Για να ξεκινήσετε το <application>Σβήστε τα φώτα</application>, επιλέξτε <"
-"menuchoice><guimenu>Εφαρμογές</guimenu><guisubmenu>Παιχνίδια</guisubmenu><"
-"guimenuitem>Σβήστε τα φώτα</guimenuitem></menuchoice>, ή πληκτρολογήστε <"
-"command>lightsoff</command> στη γραμμή εντολών."
+"Το <application>Σβήστε τα φώτα</application> είναι ένα παιχνίδι γρίφου που "
+"παίζεται σε πλέγμα 5x5, ο σκοπός του οποίου είναι να σβήσετε όλα τα "
+"τετράγωνα στο ταμπλό. Κάθε πάτημα εναλλάσσει την κατάσταση του πατημένου "
+"τετραγώνου και των μη διαγώνια εφαπτόμενων του τετραγώνων."
 
-#. part of gnome-games
-#: C/lightsoff.xml:135(para)
+#: C/index.page:26(section/title)
+msgid "Game Play"
+msgstr "Παιχνίδι"
+
+#: C/index.page:30(section/title)
+msgid "Get Involved"
+msgstr "Συμμετοχή"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/basic.page:45(media)
+msgctxt "_"
+msgid "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
+msgstr "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/basic.page:51(media)
+msgctxt "_"
 msgid ""
-"<application>Lights Off</application> is included in the <filename>gnome-"
-"games</filename> package, which is part of the GNOME desktop environment. "
-"This document describes version 1.0 of <application>Lights Off</application>."
+"external ref='figures/lightsoff.ogv' md5='61b453a759cd54689b3a321089290bf8'"
 msgstr ""
-"Το <application>Σβήστε τα φώτα</application> συμπεριλαμβάνεται στο πακέτο <"
-"filename>gnome-games</filename>, το οποίο είναι μέρος του περιβάλλοντος "
-"επιφάνειας εργασίας του GNOME. Αυτό το εγχειρίδιο περιγράφει την έκδοση 1.0 "
-"του <application>Σβήστε τα φώτα</application>."
+"external ref='figures/lightsoff.ogv' md5='61b453a759cd54689b3a321089290bf8'"
 
-#: C/lightsoff.xml:139(title)
-msgid "Playing <application>Lights Off</application>"
-msgstr "Παίζοντας <application>Σβήστε τα φώτα</application>"
+#: C/basic.page:10(credit/years) C/rules.page:11(credit/years)
+#: C/strategy.page:10(credit/years)
+#| msgid "2010"
+msgid "2012"
+msgstr "2012"
 
-#: C/lightsoff.xml:140(para)
+#: C/basic.page:17(page/title)
+msgid "Basics"
+msgstr "Βασικά"
+
+#: C/basic.page:18(page/p)
+msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
+msgstr ""
+"Το <app>Σβήστε τα φώτα</app> μπορεί να παιχτεί χρησιμοποιώντας το "
+"πληκτρολόγιο ή το ποντίκι."
+
+#: C/basic.page:21(section/title)
+#| msgid "Manipulating the Board"
+msgid "Using the keyboard"
+msgstr "Χρησιμοποιώντας το πληκτρολόγιο"
+
+#: C/basic.page:23(item/p)
 msgid ""
-"You progress through the levels either by turning off all of the tiles in a "
-"particular level, or using the arrow-shaped buttons near the bottom of the "
-"game. These buttons allow you to skip levels, or return to previous levels, "
-"without restriction."
+"To select a tile, use the arrow keys to move the spotlight on to that tile "
+"and press the <key>Enter</key> key."
+msgstr ""
+"Για να επιλέξετε ένα τετράγωνο, χρησιμοποιήστε τα βέλη για να μετακινηθείτε "
+"στο τετράγωνο και πατήστε το πλήκτρο <key>Enter</key>."
+
+#: C/basic.page:24(item/p) C/basic.page:32(item/p)
+#| msgid ""
+#| "Lights Off is a puzzle game, where the objective is to turn off all of "
+#| "the tiles on the board. Each click toggles the state of the clicked tile "
+#| "and its non-diagonal neighbors."
+msgid ""
+"Once a tile is selected it will toggle the state of the selected tile and "
+"its non-diagonal neighbors."
+msgstr ""
+"Όταν επιλεχθεί ένα τετράγωνο θα αλλάξει η κατάσταση του καθώς και των μη "
+"διαγώνιων γειτονικών του τετραγώνων."
+
+#: C/basic.page:29(section/title)
+msgid "Using the mouse"
+msgstr "Χρησιμοποιώντας το ποντίκι"
+
+#: C/basic.page:31(item/p)
+msgid "To select a tile move the mouse pointer over the tile and click it."
+msgstr ""
+"Για να επιλέξετε ένα τετράγωνο μετακινήστε τον δρομέα του ποντικιού πάνω από "
+"το τετράγωνο και κάντε κλικ σε αυτό."
+
+#: C/basic.page:37(section/title)
+msgid "Progress through the levels"
+msgstr "Πρόοδος μεταξύ των επιπέδων"
+
+#: C/basic.page:39(item/p)
+#| msgid ""
+#| "You progress through the levels either by turning off all of the tiles in "
+#| "a particular level, or using the arrow-shaped buttons near the bottom of "
+#| "the game. These buttons allow you to skip levels, or return to previous "
+#| "levels, without restriction."
+msgid ""
+"The progress through the levels is either by turning off all the lights in "
+"that level or using the arrow shaped buttons in the bottom of the game."
 msgstr ""
 "Προχωράτε ανάμεσα στα επίπεδα του παιχνιδιού είτε σβήνοντας όλα τα φωτισμένα "
-"τετράγωνα σε ένα συγκεκριμένο επίπεδο, είτε χρησιμοποιώντας τα κουμπιά σε "
-"σχήμα βέλους στο κάτω μέρος του παιχνιδιού. Αυτά τα κουμπιά σας επιτρέπουν "
-"να παρακάμπτετε επίπεδα, ή να επιστρέφετε σε προηγούμενα επίπεδα, χωρίς "
-"περιορισμό."
+"τετράγωνα σε ένα συγκεκριμένο επίπεδο είτε χρησιμοποιώντας τα κουμπιά σε "
+"σχήμα βέλους στο κάτω μέρος του παιχνιδιού. "
 
-#: C/lightsoff.xml:142(title)
-msgid "Manipulating the Board"
-msgstr "Χειρισμός του ταμπλώ"
-
-#: C/lightsoff.xml:143(para)
+#: C/basic.page:40(item/p)
 msgid ""
-"There is only one action available in <application>Lights Off</application>: "
-"clicking a tile on the board. You can either click on the tile with the "
-"mouse, or use the arrow keys to choose it. The first time you press an arrow "
-"key during a game of <application>Lights Off</application>, a cursor will "
-"appear, which you can move with the keyboard; pressing enter will click the "
-"light below the cursor."
+"The arrow shaped buttons at the bottom of the game allow you to skip the "
+"levels or return to the previous levels. The current level is shown at the "
+"bottom of the game."
 msgstr ""
-"Υπάρχει μόνο μια διαθέσιμη ενέργεια στο <application>Σβήστε τα φώτα<"
-"/application>: το πάτημα ενός τετραγώνου στο ταμπλώ. Μπορείτε είτε να "
-"πατήσετε το τετράγωνο με το ποντίκι, είτε να χρησιμοποιήσετε τα βελάκια του "
-"πληκτρολογίου για να το επιλέξετε. Την πρώτη φορά που θα πατήσετε ένα "
-"πλήκτρο βελάκι κατά τη διάρκεια ενός παιχνιδιού <application>Σβήστε τα φώτα<"
-"/application>, θα εμφανιστεί ένας δείκτης τον οποίο μπορείτε να μετακινείτε "
-"από το πληκτρολόγιο. Πιέζοντας το Enter θα πατήσετε το φως κάτω από το "
-"δείκτη."
+"Τα κουμπιά σε σχήμα βέλους στο κάτω μέρος του παιχνιδιού σας επιτρέπουν να "
+"παρακάμπτετε επίπεδα ή να επιστρέφετε σε προηγούμενα επίπεδα. Το τρέχον "
+"επίπεδο εμφανίζεται στο κάτω μέρος του παιχνιδιού."
 
-#: C/lightsoff.xml:144(para)
+#: C/basic.page:44(figure/desc)
 msgid ""
-"When a tile is clicked, both it and all of its non-diagonal neighbors will "
-"toggle their state. The objective is to turn all of the tiles on the board "
-"off."
+"This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
+"shaped buttons at the bottom."
 msgstr ""
-"Όταν πατηθεί ένα τετράγωνο, τόσο αυτό όσο και τα μη διαγώνια γειτονικά του "
-"θα εναλλάξουν την κατάστασή τους. Ο σκοπός είναι να σβήσετε όλα τα φώτα στο "
-"ταμπλώ."
+"Δείχνει το μοτίβο του <app>Σβήστε τα φώτα</app> για το επίπεδο 3, με τα "
+"κουμπιά σε σχήμα βέλους στο κάτω μέρος."
 
-#: C/lightsoff.xml:147(title)
-msgid "Starting a New Game"
-msgstr "Εκκίνηση νέου παιχνιδιού"
+#: C/basic.page:50(section/title)
+msgid "Video Demonstration"
+msgstr "Βίντεο επίδειξης"
 
-#: C/lightsoff.xml:148(para)
+#: C/bug-filing.page:10(credit/name) C/develop.page:10(credit/name)
+#: C/documentation.page:8(credit/name) C/translate.page:10(credit/name)
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#: C/bug-filing.page:12(credit/years) C/develop.page:12(credit/years)
+#: C/documentation.page:10(credit/years) C/translate.page:12(credit/years)
+#| msgid "2010"
+msgid "2011"
+msgstr "2011"
+
+#: C/bug-filing.page:23(page/title)
+msgid "Help make <app>Lights Off</app> better"
+msgstr "Βοηθήστε να κάνουμε καλύτερο το <app>Σβήστε τα Φώτα</app>"
+
+#: C/bug-filing.page:26(section/title)
+msgid "Report a bug or suggest an improvement"
+msgstr "Αναφορά σφάλματος ή πρόταση βελτίωσης"
+
+#: C/bug-filing.page:27(section/p)
 msgid ""
-"To begin a new game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The progression of "
-"levels will be the same between games and between computers, so "
-"<menuchoice><guimenuitem>New Game</guimenuitem></menuchoice> should only be "
-"chosen if you actually want to return to the beginning of the game."
+"<app>Lights Off</app> is maintained by a volunteer community. You are "
+"welcome to participate. If you notice a problem you can file a <em>bug "
+"report</em>. To file a bug, go to <link href=\"https://bugzilla.gnome.org/\"/"
+">."
 msgstr ""
-"Για να εκκινήσετε ένα νέο παιχνίδι, επιλέξτε <menuchoice><guimenu>Παιχνίδι<"
-"/guimenu><guimenuitem>Νέο παιχνίδι</guimenuitem></menuchoice>. Η διαδοχή των "
-"επιπέδων θα είναι ίδια μεταξύ παιχνιδιών και υπολογιστών, οπότε το <"
-"menuchoice><guimenuitem>Νέο παιχνίδι</guimenuitem></menuchoice> θα πρέπει να "
-"επιλέγεται μόνο αν πραγματικά θέλετε να επιστρέψετε στην αρχή του παιχνιδιού."
+"Το <app>Σβήστε τα φώτα</app> διατηρείται από μια εθελοντική κοινότητα. Είστε "
+"ευπρόσδεκτοι να συμμετάσχετε. Αν παρατηρήσετε κάποιο πρόβλημα μπορείτε να "
+"κάνετε μια <em>αναφορά σφάλματος (bug report)</em>. Για να κάνετε αναφορά "
+"σφάλματος πηγαίνετε <link href=\"https://bugzilla.gnome.org/\"/>."
 
-#: C/lightsoff.xml:154(title)
-msgid "Customizing <application>Lights Off</application>"
-msgstr "Παραμετροποίηση του <application>Σβήστε τα φώτα</application>"
-
-#: C/lightsoff.xml:156(title)
-msgid "Customizing the Look of <application>Lights Off</application>"
-msgstr ""
-"Τροποποίηση της εμφάνισης του <application>Σβήστε τα φώτα</application>"
-
-#: C/lightsoff.xml:157(para)
+#: C/bug-filing.page:30(section/p)
 msgid ""
-"Under <menuchoice><guimenu>Game</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize the look of the tiles in "
-"<application>Lights Off</application>. There are a variety of styles "
-"included, some of which make use of the color of your theme. This can be "
-"disabled with the <guilabel>Use colors from GNOME Theme</guilabel> option in "
-"the Preferences window."
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
 msgstr ""
-"Στο μενού <menuchoice><guimenu>Παιχνίδι</guimenu><guimenuitem>Προτιμήσεις<"
-"/guimenuitem></menuchoice>, μπορείτε να τροποποιήσετε την εμφάνιση των "
-"τετραγώνων στο <application>Σβήστε τα φώτα</application>. Διατίθεται μια "
-"ποικιλία από στυλ, μερικά από τα οποία θα χρησιμοποιούν τα χρώματα του "
-"οπτικού θέματος της επιφάνειας εργασίας σας. Αυτό μπορεί να απενεργοποιηθεί "
-"με την επιλογή <guilabel>Χρήση των χρωμάτων του θέματος GNOME</guilabel> στο "
-"παράθυρο Προτιμήσεις."
+"Αυτό είναι ένα σύστημα καταγραφής σφαλμάτων όπου χρήστες και προγραμματιστές "
+"μπορούν να κάνουν αναφορές για σφάλματα, «κρασαρίσματα» και βελτιώσεις."
 
-#: C/lightsoff.xml:162(title)
-msgid "Authors"
-msgstr "Συγγραφείς"
-
-#: C/lightsoff.xml:163(para)
+#: C/bug-filing.page:33(section/p)
 msgid ""
-"<application>Lights Off</application> was written by Tim Horton in 2009 and "
-"maintained by the Gnome Games Team since then. This manual was written by "
-"Tim Horton. To report a bug or make a suggestion regarding this application "
-"or this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
-"feedback-bugs\" type=\"help\">document</ulink>."
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>New Account</gui> link to create one."
 msgstr ""
-"Το <application>Σβήστε τα φώτα</application> γράφτηκε από τον Tim Horton το "
-"2009 και έκτοτε συντηρείται από την Ομάδα παιχνιδιών του GNOME. Αυτό το "
-"εγχειρίδιο γράφτηκε από τον Tim Horton. Για να αναφέρετε ένα σφάλμα ή να "
-"κάνετε μια εισήγηση σχετικά με αυτή την εφαρμογή ή αυτό το εγχειρίδιο, "
-"ακολουθήστε τις οδηγίες σε αυτό το <ulink "
-"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">έγγραφο</ulink>."
+"Για να λάβετε μέρος χρειάζεστε ένα λογαριασμό που θα σας δώσει πρόσβαση, να "
+"κάνετε αναφορές σφαλμάτων καθώς και σχόλια. Επίσης, πρέπει να εγγραφείτε για "
+"να δέχεστε ενημερώσεις μέσω ηλεκτρονικού ταχυδρομείου για την κατάσταση του "
+"σφάλματος σας. Εάν δεν έχετε ήδη λογαριασμό, απλά πατήστε <gui>Νέος "
+"λογαριασμός</gui> για να δημιουργήσετε."
 
-#: C/lightsoff.xml:187(title)
+#: C/bug-filing.page:36(section/p)
+msgid ""
+"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
+"gui><gui>Applications</gui><gui>gnome-games</gui></guiseq>. Before reporting "
+"a bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?"
+"id=bug-writing.html\">bug writing guidelines</link>, and please <link href="
+"\"https://bugzilla.gnome.org/browse.cgi?product=gnome-games\">browse</link> "
+"for the bug to see if it already exists."
+msgstr ""
+"Μόλις δημιουργήσετε λογαριασμό, συνδεθείτε, πατήστε στο <guiseq><gui>File a "
+"Bug</gui><gui>Applications</gui><gui>gnome-games</gui></guiseq>. Πριν "
+"αναφέρετε ένα σφάλμα, παρακαλώ διαβάστε το <link href=\"https://bugzilla."
+"gnome.org/page.cgi?id=bug-writing.html\">bug writing guidelines</link>, και "
+"παρακαλώ κάντε <link href=\"https://bugzilla.gnome.org/browse.cgi?"
+"product=gnome-games\">αναζήτηση</link> για να δείτε αν υπάρχει η ίδια "
+"αναφορά ήδη."
+
+#: C/bug-filing.page:40(section/p)
+msgid ""
+"To file your bug, choose the component <gui>lightsoff</gui> in the "
+"<gui>Component</gui> menu."
+msgstr ""
+"Για να αναφέρετε το σφάλμα, διαλέξτε το συστατικό <gui>lightsoff</gui> στο "
+"μενού <gui>Component</gui>."
+
+#: C/bug-filing.page:43(section/p)
+msgid ""
+"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
+"click <gui>Commit</gui>."
+msgstr ""
+"Αν θέλετε κάποιο καινούργιο χαρακτηριστικό, διαλέξτε <gui>enhancement</gui> "
+"στο μενού <gui>Severity</gui>. Συμπληρώστε την Περίληψη και την Περιγραφή "
+"και πατήστε <gui>Commit</gui>."
+
+#: C/bug-filing.page:47(section/p)
+msgid ""
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
+msgstr ""
+"Στην αναφορά σας θα δοθεί ένας αριθμός ID και η κατάστασή της θα ενημερωθεί "
+"όταν θα επεξεργαστεί. Ευχαριστούμε για τη βοήθειά σας να κάνουμε το "
+"<app>Σβήστε τα φώτα</app> καλύτερο!"
+
+#: C/develop.page:23(page/title)
+msgid "Help develop"
+msgstr "Βοήθεια στην ανάπτυξη"
+
+#: C/develop.page:24(page/p)
+msgid ""
+"The <app>GNOME Games</app> are developed and maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"Τα <app>παιχνίδια του GNOME</app> αναπτύσσονται και συντηρούνται από μια "
+"εθελοντική κοινότητα. Είσαστε καλοδεχούμενοι να συμμετάσχετε."
+
+#: C/develop.page:27(page/p)
+msgid ""
+"If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"link>."
+msgstr ""
+"Εάν θα θέλατε να <link href=\"https://live.gnome.org/GnomeGames/Contributing"
+"\">βοηθήσετε στην ανάπτυξη των <app>Παιχνιδιών του GNOME</app></link>, "
+"μπορείτε να επικοινωνήσετε με τους προγραμματιστές χρησιμοποιώντας το <link "
+"href=\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-"
+"games\">irc</link>, ή μέσα από τη <link href=\"http://mail.gnome.org/mailman/"
+"listinfo/games-list\">λίστα αλληλογραφίας μας</link>."
+
+#: C/documentation.page:21(page/title)
+msgid "Help write documentation"
+msgstr "Βοήθεια συγγραφής τεκμηρίωσης"
+
+#: C/documentation.page:23(page/p)
+msgid ""
+"The <app>GNOME Games</app> documentation is maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"Η τεκμηρίωση των <app>παιχνιδιών του GNOME</app> αναπτύσσεται και "
+"συντηρείται από μια εθελοντική κοινότητα. Είσαστε καλοδεχούμενοι να "
+"συμμετάσχετε."
+
+#: C/documentation.page:26(page/p)
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">mailing list</link>."
+msgstr ""
+"Για συμμετοχή στο έργο τεκμηρίωσης, επικοινωνήστε μαζί μας χρησιμοποιώντας "
+"το <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org"
+"%2Fdocs\">irc</link>, ή μέσα από την <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">λίστα αλληλογραφίας μας</link>"
+
+#: C/documentation.page:28(page/p)
+msgid ""
+"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> page contains useful information."
+msgstr ""
+"Το <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> μας περιέχει χρήσιμες πληροφορίες."
+
+#: C/legal.xml:3(p/link)
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#: C/legal.xml:3(license/p)
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Αυτό το έργο έχει αδειοδοτηθεί υπό την <_:link-1/>."
+
+#: C/license.page:8(info/desc)
+msgid "Legal information."
+msgstr "Νομικές πληροφορίες."
+
+#: C/license.page:11(page/title)
 msgid "License"
 msgstr "Άδεια"
 
-#: C/lightsoff.xml:188(para)
+#: C/license.page:12(page/p)
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the <citetitle><ulink type=\"help\" url=\"gnome-help:gpl"
-"\">GNU General Public License</ulink></citetitle> as published by "
-"the Free Software Foundation; either version 2 of the License, or (at your "
-"option) any later version."
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
 msgstr ""
-"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανείμετε "
-"και/ή να το τροποποιήσετε υπό τους όρους της <citetitle><ulink "
-"type=\"help\" url=\"gnome-help:gpl\">Γενικής δημόσιας άδειας GNU<"
-"/ulink></citetitle> όπως δημοσιεύεται από το Ίδρυμα ελεύθερου λογισμικού, "
-"στην έκδοση 2 της Άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση."
+"Αυτό το έργο διανέμεται υπό την άδεια CreativeCommons Attribution-Share "
+"Alike 3.0 Unported."
 
-#: C/lightsoff.xml:190(para)
+#: C/license.page:20(page/p)
+msgid "You are free:"
+msgstr "Μπορείτε ελεύθερα:"
+
+#: C/license.page:25(item/title)
+msgid "<em>To share</em>"
+msgstr "<em>Να μοιραστείτε</em>"
+
+#: C/license.page:26(item/p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Να αντιγράψετε, να διανείμετε και να μεταδόσετε το έργο."
+
+#: C/license.page:29(item/title)
+msgid "<em>To remix</em>"
+msgstr "<em>Να τροποιήσετε</em>"
+
+#: C/license.page:30(item/p)
+msgid "To adapt the work."
+msgstr "Να προσαρμόσετε το έργο."
+
+#: C/license.page:33(page/p)
+msgid "Under the following conditions:"
+msgstr "Υπό τους εξής όρους:"
+
+#: C/license.page:38(item/title)
+msgid "<em>Attribution</em>"
+msgstr "<em>Απόδοση</em>"
+
+#: C/license.page:39(item/p)
 msgid ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
-"License</citetitle> for more details."
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
 msgstr ""
-"Αυτό το πρόγραμμα διανείμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
-"ΚΑΜΜΙΑ ΕΓΓΥΗΣΗ, χωρίς καν την νοούμενη εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή "
-"ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε τη <citetitle>Γενική δημόσια "
-"άδεια GNU</citetitle> για περισσότερες λεπτομέρειες."
+"Πρέπει να αναφέρετε την πηγή του έργου με τον τρόπο που καθορίζεται από το "
+"δημιουργό του ή αυτόν που παρέχει την άδεια (αλλά όχι με τρόπο που να εννοεί "
+"ότι εγκρίνουν εσάς ή τη δική σας χρήση του έργου)."
 
-#: C/lightsoff.xml:192(para)
+#: C/license.page:46(item/title)
+msgid "<em>Share Alike</em>"
+msgstr "<em>Παρόμοια διανομή</em>"
+
+#: C/license.page:47(item/p)
 msgid ""
-"A copy of the <citetitle>GNU General Public License</citetitle> is included "
-"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
-"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
-"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
-"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
-"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
-"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
-"postcode><country>USA</country></address>"
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
 msgstr ""
-"Στον <citetitle>Οδηγό χρήστη του GNOME</citetitle> συμπεριλαμβάνεται ένα "
-"παράρτημα με τη <citetitle>Γενική δημόσια άδεια GNU</citetitle>. Μπορείτε "
-"επίσης να λάβετε ένα αντίγραφο της <citetitle>Γενικής δημόσιας άδειας GNU<"
-"/citetitle> από το Ίδρυμα ελεύθερου λογισμικού όταν επισκεφθείτε <ulink "
-"type=\"http\" url=\"http://www.fsf.org\">τον ιστότοπό τους</ulink> ή "
-"γράφοντας στο <address> Free "
-"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
-"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
-"postcode><country>USA</country></address>."
+"Αν μετατρέψετε, μετασχηματίσετε ή επεκτείνετε αυτό το έργο, μπορείτε να "
+"αναδιανείμετε το αποτέλεσμα υπό την ίδια, παρόμοια ή συμβατή άδεια χρήσης."
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/lightsoff.xml:0(None)
-msgid "translator-credits"
-msgstr "Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2010"
+#: C/license.page:53(page/p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Για το πλήρες κείμενο της άδειας, δείτε τον <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">ιστότοπο CreativeCommons</"
+"link>, ή διαβάστε όλη την <link href=\"http://creativecommons.org/licenses/"
+"by-sa/3.0/\">Πράξη Commons</link>."
 
+#: C/rules.page:16(page/title)
+msgid "Rules"
+msgstr "Κανόνες"
+
+#: C/rules.page:18(page/p)
+msgid ""
+"In order to complete the <app>Lights Off</app> puzzle, you must turn off all "
+"the lights in the board. This will get you to advance to the next level."
+msgstr ""
+"Για να ολοκληρώσετε το παζλ του <app>Σβήστε τα φώτα</app>, πρέπει να σβήσετε "
+"όλα τα φώτα στο ταμπλό. Έτσι θα προχωρήσετε στο επόμενο επίπεδο."
+
+#: C/rules.page:20(item/p)
+msgid "The game begins with a pattern of lights on the 5x5 grid."
+msgstr "Το παιχνίδι ξεκινά με ένα μοτίβο από φώτα σε πλέγμα 5x5."
+
+#: C/rules.page:21(item/p)
+msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
+msgstr ""
+"Επιλέξτε ένα τετράγωνο για να αλλάξετε την κατάσταση του καθώς και των μη-"
+"διαγώνιων γειτόνων του."
+
+#: C/rules.page:22(item/p)
+msgid ""
+"Once you have successfully turned off all the lights, you complete that "
+"level and move on to the next."
+msgstr ""
+"Μόλις σβήσετε με επιτυχία όλα τα φώτα, ολοκληρώνετε το επίπεδο και προχωράτε "
+"στο επόμενο."
+
+#: C/strategy.page:17(page/title)
+msgid "Strategy"
+msgstr "Στρατηγική"
+
+#: C/strategy.page:18(page/p)
+msgid ""
+"This is a simple strategy to solve the <app>Lights Off</app> puzzle by using "
+"the method called \"Chase the Lights\"."
+msgstr ""
+"Αυτή είναι μια απλή στρατηγική για να λύσετε το παζλ του <app>Σβήστε τα "
+"φώτα</app> χρησιμοποιώντας τη μέθοδο \"Κυνηγήστε τα φώτα\"."
+
+#: C/strategy.page:20(item/p)
+msgid ""
+"Chase the lights starting from the first row. To chase the lights in the "
+"first row, click the tile on the second row corresponding to the light in "
+"the first row. This will turn off that light in the first row."
+msgstr ""
+"Η μέθοδος Κυνηγήστε τα φώτα ξεκινάει από την πρώτη γραμμή.  Για να "
+"κυνηγήσετε τα φώτα στην πρώτη γραμμή, κάντε κλικ στο τετράγωνο της δεύτερης "
+"γραμμής που ανταποκρίνεται στο φως της πρώτης γραμμής. Αυτή η διαδικασία θα "
+"σβήσει το φως στην πρώτη γραμμή."
+
+#: C/strategy.page:21(note/p)
+msgid ""
+"This method can be used in the same way to chase the lights in other rows as "
+"well, i.e., if you want to chase the lights in the second row, click the "
+"corresponding tile in the third row."
+msgstr ""
+"Αυτή η μέθοδος μπορεί να χρησιμοποιηθεί για να κυνηγήσει τα φώτα και σε "
+"άλλες γραμμές, π.χ αν θέλετε να κυνηγήσετε τα φώτα στη δεύτερη γραμμή, κάντε "
+"κλικ στο ανταποκρινόμενο τετράγωνο της τρίτης γραμμής."
+
+#: C/strategy.page:23(item/p)
+msgid ""
+"In the same way continue to chase the lights in the second, third and fourth "
+"row. At the end of this you will be only left with the lights in the fifth "
+"row."
+msgstr ""
+"Με τον ίδιο τρόπο συνεχίζετε να κυνηγάτε τα φώτα στη δεύτερη, τρίτη και "
+"τέταρτη γραμμή. Στο τέλος θα μείνετε με τα φώτα στην πέμπτη σειρά."
+
+#: C/strategy.page:25(item/p)
+msgid ""
+"Now depending on which lights are remaining in the fifth row, click the "
+"tiles in the first row using the table given below."
+msgstr ""
+"Τώρα ανάλογα με ποια φώτα παραμένουν στην πέμπτη σειρά, κάντε κλικ στα "
+"τετράγωνα της πρώτης σειράς χρησιμοποιώντας τον πίνακα που ακολουθεί."
+
+#: C/strategy.page:29(td/p)
+msgid "Lights Left on the fifth Row"
+msgstr "Φώτα αριστερά στην πέμπτη γραμμή"
+
+#: C/strategy.page:29(td/p)
+msgid "Tiles to Click on the First Row"
+msgstr "Τετράγωνα για να πατήσετε στην πρώτη γραμμή"
+
+#: C/strategy.page:32(td/p)
+msgid "1, 2, 3"
+msgstr "1, 2, 3"
+
+#: C/strategy.page:32(td/p)
+msgid "2"
+msgstr "2"
+
+#: C/strategy.page:34(td/p)
+msgid "1, 2, 4, 5"
+msgstr "1, 2, 4, 5"
+
+#: C/strategy.page:34(td/p)
+msgid "3"
+msgstr "3"
+
+#: C/strategy.page:36(td/p)
+msgid "1, 3, 4"
+msgstr "1, 3, 4"
+
+#: C/strategy.page:36(td/p)
+msgid "5"
+msgstr "5"
+
+#: C/strategy.page:38(td/p)
+msgid "1, 5"
+msgstr "1, 5"
+
+#: C/strategy.page:38(td/p)
+msgid "1, 2"
+msgstr "1, 2"
+
+#: C/strategy.page:40(td/p)
+msgid "2, 3, 5"
+msgstr "2, 3, 5"
+
+#: C/strategy.page:40(td/p)
+msgid "1"
+msgstr "1"
+
+#: C/strategy.page:42(td/p)
+msgid "2, 4"
+msgstr "2, 4"
+
+#: C/strategy.page:42(td/p)
+msgid "1, 4"
+msgstr "1, 4"
+
+#: C/strategy.page:44(td/p)
+msgid "3, 4, 5"
+msgstr "3, 4, 5"
+
+#: C/strategy.page:44(td/p)
+msgid "4"
+msgstr "4"
+
+#: C/strategy.page:48(item/p)
+msgid ""
+"Now again chase the lights starting from the first row. After chasing the "
+"lights this time your puzzle will be solved."
+msgstr ""
+"Τώρα κυνηγήστε ξανά τα φώτα ξεκινώντας από την πρώτη γραμμή. Μετά από αυτό "
+"το κυνηγητό το παζλ σας θα λυθεί."
+
+#: C/strategy.page:50(note/p)
+msgid ""
+"This strategy doesn't always produce the optimal solution, it may take more "
+"moves."
+msgstr ""
+"Αυτή η στρατηγική δεν αναπαράγει πάντα τη βέλτιστη λύση, μπορεί να "
+"χρειαστούν περισσότερες κινήσεις."
+
+#: C/translate.page:23(page/title)
+msgid "Help translate"
+msgstr "Βοήθεια στη μετάφραση"
+
+#: C/translate.page:24(page/p)
+msgid ""
+"The <app>GNOME Games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community. You are welcome to "
+"participate."
+msgstr ""
+"Η διεπαφή και η τεκμηρίωση των <app>παιχνιδιών του GNOME</app>  "
+"μεταφράζονται από μια εθελοντική κοινότητα. Είσαστε καλοδεχούμενοι να "
+"συμμετάσχετε."
+
+#: C/translate.page:27(page/p)
+msgid ""
+"There are <link href=\"http://l10n.gnome.org/module/gnome-games/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"Υπάρχουν <link href=\"http://l10n.gnome.org/module/gnome-games/\">πολλές "
+"γλώσσες</link> για τις οποίες απαιτούνται μεταφράσεις."
+
+#: C/translate.page:30(page/p)
+msgid ""
+"To start translating you will need to <link href=\"http://l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"teams/\">translation team</link> for your language. This will give you the "
+"ability to upload new translations."
+msgstr ""
+"Για να ξεκινήσετε να μεταφράζετε πρέπει να <link href=\"http://l10n.gnome.org"
+"\">δημιουργήσετε έναν λογαριασμό</link> και να συμμετάσχετε στην <link href="
+"\"http://l10n.gnome.org/teams/\">ομάδα μετάφρασης</link> της γλώσσας σας. "
+"Αυτό θα σας δώσει την δυνατότητα να ανεβάσετε νέες μεταφράσεις."
+
+#: C/translate.page:34(page/p)
+msgid ""
+"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
+"channel are located worldwide, so you may not get an immediate response as a "
+"result of timezone differences."
+msgstr ""
+"Μπορείτε να συζητήσετε με μεταφραστές του GNOME χρησιμοποιώντας το <link "
+"href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n"
+"\">irc</link>. Άνθρωποι στο κανάλι βρίσκονται παντού, έτσι μπορείτε να "
+"πάρετε μια άμεση απάντηση ως αποτέλεσμα των διαφορών ώρας."
+
+#: C/translate.page:37(page/p)
+msgid ""
+"Alternatively, you can contact the Internationalization Team using their "
+"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"list</link>."
+msgstr ""
+"Εναλλακτικά, μπορείτε να επικοινωνήσετε με την ομάδα διεθνοποίησης "
+"χρησιμοποιώντας την <link href=\"http://mail.gnome.org/mailman/listinfo/"
+"gnome-i18n\">λίστα αλληλογραφίας</link> τους."
+
+#~ msgid "<application>Lights Off</application> Manual"
+#~ msgstr "Εγχειρίδιο του <application>Σβήστε τα φώτα</application>"
+
+#~ msgid "Tim Horton"
+#~ msgstr "Tim Horton"
+
+#~ msgid "GNOME Documentation Project"
+#~ msgstr "Έργο τεκμηρίωσης του GNOME"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Επιτρέπεται η αντιγραφή, διανομή και/ή τροποποίηση αυτού του εγγράφου υπό "
+#~ "τους όρους της Ελεύθερης άδειας τεκμηρίωσης GNU (GFDL), στην έκδοση 1.1 ή "
+#~ "νεότερη, όπως δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς "
+#~ "Αμετάβλητα τμήματα, και χωρίς Κείμενα Οπισθοφύλλο και Εξωφύλλου. Μπορείτε "
+#~ "να βρείτε ένα αντίγραφο της GFDL σε αυτό το <ulink type=\"help\" url="
+#~ "\"ghelp:fdl\">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανέμεται "
+#~ "μαζί με αυτό το εγχειρίδιο."
+
+#~ msgid ""
+#~ "This manual is part of a collection of GNOME manuals distributed under "
+#~ "the GFDL. If you want to distribute this manual separately from the "
+#~ "collection, you can do so by adding a copy of the license to the manual, "
+#~ "as described in section 6 of the license."
+#~ msgstr ""
+#~ "Αυτό το εγχειρίδιο είναι μέρος μιας συλλογής από εγχειρίδια του GNOME τα "
+#~ "οποία διανέμονται υπό την GFDL. Αν θέλετε να διανείμετε αυτό το "
+#~ "εγχειρίδιο ξεχωριστά από τη συλλογή, μπορείτε να το κάνετε προσθέτοντας "
+#~ "ένα αντίγραφο της άδειας στο εγχειρίδιο, όπως περιγράφεται στο τμήμα 6 "
+#~ "της άδειας."
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρείες για να ξεχωρίζουν "
+#~ "τα προϊόντα και τις υπηρεσίες τους είναι κατατεθέντα σήματα. Όπου "
+#~ "εμφανίζονται αυτά τα ονόματα στην τεκμηρίωση του GNOME, και τα μέλη του "
+#~ "Έργου τεκμηρίωσης του GNOME το γνωρίζουν, αναγράφονται με κεφαλαία "
+#~ "γράμματα ή με κεφαλαίο το αρχικό τους γράμμα."
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+#~ msgstr ""
+#~ "ΤΟ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ «ΩΣ ΕΧΕΙ», ΧΩΡΙΣ ΚΑΝΕΝΟΣ ΕΙΔΟΥΣ ΕΓΓΥΗΣΗ, ΡΗΤΗ Ή "
+#~ "ΝΟΟΥΜΕΝΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΜΗ ΑΠΟΚΛΕΙΣΤΙΚΑ, ΕΓΓΥΗΣΕΩΝ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ "
+#~ "'Η ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΕΙΝΑΙ ΕΛΕΥΘΕΡΟ ΟΠΟΙΩΝΔΗΠΟΤΕ "
+#~ "ΕΛΑΤΤΩΜΑΤΩΝ, ΕΜΠΟΡΕΥΣΙΜΟ, ΚΑΤΑΛΛΗΛΟ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ, Ή ΜΗ "
+#~ "ΠΑΡΑΒΑΤΙΚΟ. ΟΛΟΚΛΗΡΗ Η ΕΥΘΥΝΗ ΩΣ ΠΡΟΣ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΑΚΡΙΒΕΙΑ, ΚΑΙ ΑΠΟΔΟΣΗ "
+#~ "ΤΩΝ ΕΓΓΡΑΦΩΝ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΤΟΥΣ ΕΙΝΑΙ ΔΙΚΗ ΣΑΣ. ΑΝ "
+#~ "ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ ΑΠΟΔΕΙΧΘΕΙ ΕΛΑΤΤΩΜΑΤΙΚΟ ΜΕ ΟΠΟΙΟΔΗΠΟΤΕ ΤΡΟΠΟ, ΕΣΕΙΣ "
+#~ "(ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΔΗΜΙΟΥΡΓΟΣ Η ΑΛΛΟΣ ΣΥΝΕΙΣΦΕΡΟΝΤΑΣ) "
+#~ "ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΟ ΚΟΣΤΟΣ ΟΠΟΙΟΝΔΗΠΟΤΕ ΑΝΑΓΚΑΙΩΝ ΣΥΝΤΗΡΗΣΕΩΝ, ΕΠΙΔΙΟΡΘΩΣΕΩΝ "
+#~ "Ή ΔΙΟΡΘΩΣΕΩΝ. ΑΥΤΗ Η ΑΠΟΠΟΙΗΣΗ ΕΥΘΥΝΗΣ ΑΠΟΤΕΛΕΙ ΟΥΣΙΩΔΕΣ ΜΕΡΟΣ ΑΥΤΗΣ ΤΗΣ "
+#~ "ΑΔΕΙΑΣ. ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΚΑΜΙΑ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ "
+#~ "ΑΥΤΟΥ ΕΚΤΟΣ ΑΠΟ ΑΥΤΗ ΤΗΝ ΑΠΟΠΟΙΗΣΗ, ΚΑΙ"
+
+#~ msgid ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
+#~ "ΑΛΛΙΩΣ (ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ ΠΑΡΑΛΗΨΕΩΝ), ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο "
+#~ "ΔΙΑΝΟΜΕΑΣ, Ή ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ ΤΗ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ "
+#~ "ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ "
+#~ "ΤΗ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ "
+#~ "ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+#~ msgstr ""
+#~ "ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ "
+#~ "ΤΗΣ ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU ΜΕ ΤΗΝ ΕΠΙΠΛΕΟΝ ΚΑΤΑΝΟΗΣΗ ΟΤΙ: "
+#~ "<placeholder-1/>"
+
+#~ msgid "Tim"
+#~ msgstr "Tim"
+
+#~ msgid "Horton"
+#~ msgstr "Horton"
+
+#~ msgid "hortont@gnome.org"
+#~ msgstr "hortont@gnome.org"
+
+#~ msgid "Lights Off Manual V1.0"
+#~ msgstr "Εγχειρίδιο του Σβήστε τα φώτα, έκδοση 1.0"
+
+#~ msgid "January 2010"
+#~ msgstr "Ιανουάριος 2010"
+
+#~ msgid "Tim Horton <email>hortont@gnome.org</email>"
+#~ msgstr "Tim Horton <email>hortont@gnome.org</email>"
+
+#~ msgid "This manual describes version 2.28 of Lights Off."
+#~ msgstr "Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.28 του Σβήστε τα φώτα."
+
+#~ msgid "Feedback"
+#~ msgstr "Ανάδραση"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the <application>Lights "
+#~ "Off</application> application or this manual, follow the directions in "
+#~ "the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME "
+#~ "Feedback Page</ulink>."
+#~ msgstr ""
+#~ "Για να αναφέρετε ένα σφάλμα ή να κάνετε μια εισήγηση σχετικά με την "
+#~ "εφαρμογή <application>Σβήστε τα φώτα</application> ή με αυτό το "
+#~ "εγχειρίδιο, ακολουθήστε τις οδηγίες στη <ulink url=\"ghelp:user-guide?"
+#~ "feedback-bugs\" type=\"help\">σελίδα ανάδρασης του GNOME</ulink>."
+
+#~ msgid "Introduction"
+#~ msgstr "Εισαγωγή"
+
+#~ msgid ""
+#~ "To run <application>Lights Off</application>, select "
+#~ "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+#~ "guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type "
+#~ "<command>lightsoff</command> in the command line."
+#~ msgstr ""
+#~ "Για να ξεκινήσετε το <application>Σβήστε τα φώτα</application>, επιλέξτε "
+#~ "<menuchoice><guimenu>Εφαρμογές</guimenu><guisubmenu>Παιχνίδια</"
+#~ "guisubmenu><guimenuitem>Σβήστε τα φώτα</guimenuitem></menuchoice>, ή "
+#~ "πληκτρολογήστε <command>lightsoff</command> στη γραμμή εντολών."
+
+#~ msgid ""
+#~ "<application>Lights Off</application> is included in the <filename>gnome-"
+#~ "games</filename> package, which is part of the GNOME desktop environment. "
+#~ "This document describes version 1.0 of <application>Lights Off</"
+#~ "application>."
+#~ msgstr ""
+#~ "Το <application>Σβήστε τα φώτα</application> συμπεριλαμβάνεται στο πακέτο "
+#~ "<filename>gnome-games</filename>, το οποίο είναι μέρος του περιβάλλοντος "
+#~ "επιφάνειας εργασίας του GNOME. Αυτό το εγχειρίδιο περιγράφει την έκδοση "
+#~ "1.0 του <application>Σβήστε τα φώτα</application>."
+
+#~ msgid "Playing <application>Lights Off</application>"
+#~ msgstr "Παίζοντας <application>Σβήστε τα φώτα</application>"
+
+#~ msgid ""
+#~ "There is only one action available in <application>Lights Off</"
+#~ "application>: clicking a tile on the board. You can either click on the "
+#~ "tile with the mouse, or use the arrow keys to choose it. The first time "
+#~ "you press an arrow key during a game of <application>Lights Off</"
+#~ "application>, a cursor will appear, which you can move with the keyboard; "
+#~ "pressing enter will click the light below the cursor."
+#~ msgstr ""
+#~ "Υπάρχει μόνο μια διαθέσιμη ενέργεια στο <application>Σβήστε τα φώτα</"
+#~ "application>: το πάτημα ενός τετραγώνου στο ταμπλώ. Μπορείτε είτε να "
+#~ "πατήσετε το τετράγωνο με το ποντίκι, είτε να χρησιμοποιήσετε τα βελάκια "
+#~ "του πληκτρολογίου για να το επιλέξετε. Την πρώτη φορά που θα πατήσετε ένα "
+#~ "πλήκτρο βελάκι κατά τη διάρκεια ενός παιχνιδιού <application>Σβήστε τα "
+#~ "φώτα</application>, θα εμφανιστεί ένας δείκτης τον οποίο μπορείτε να "
+#~ "μετακινείτε από το πληκτρολόγιο. Πιέζοντας το Enter θα πατήσετε το φως "
+#~ "κάτω από το δείκτη."
+
+#~ msgid ""
+#~ "When a tile is clicked, both it and all of its non-diagonal neighbors "
+#~ "will toggle their state. The objective is to turn all of the tiles on the "
+#~ "board off."
+#~ msgstr ""
+#~ "Όταν πατηθεί ένα τετράγωνο, τόσο αυτό όσο και τα μη διαγώνια γειτονικά "
+#~ "του θα εναλλάξουν την κατάστασή τους. Ο σκοπός είναι να σβήσετε όλα τα "
+#~ "φώτα στο ταμπλώ."
+
+#~ msgid "Starting a New Game"
+#~ msgstr "Εκκίνηση νέου παιχνιδιού"
+
+#~ msgid ""
+#~ "To begin a new game, go to <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The progression "
+#~ "of levels will be the same between games and between computers, so "
+#~ "<menuchoice><guimenuitem>New Game</guimenuitem></menuchoice> should only "
+#~ "be chosen if you actually want to return to the beginning of the game."
+#~ msgstr ""
+#~ "Για να εκκινήσετε ένα νέο παιχνίδι, επιλέξτε "
+#~ "<menuchoice><guimenu>Παιχνίδι</guimenu><guimenuitem>Νέο παιχνίδι</"
+#~ "guimenuitem></menuchoice>. Η διαδοχή των επιπέδων θα είναι ίδια μεταξύ "
+#~ "παιχνιδιών και υπολογιστών, οπότε το <menuchoice><guimenuitem>Νέο "
+#~ "παιχνίδι</guimenuitem></menuchoice> θα πρέπει να επιλέγεται μόνο αν "
+#~ "πραγματικά θέλετε να επιστρέψετε στην αρχή του παιχνιδιού."
+
+#~ msgid "Customizing <application>Lights Off</application>"
+#~ msgstr "Παραμετροποίηση του <application>Σβήστε τα φώτα</application>"
+
+#~ msgid "Customizing the Look of <application>Lights Off</application>"
+#~ msgstr ""
+#~ "Τροποποίηση της εμφάνισης του <application>Σβήστε τα φώτα</application>"
+
+#~ msgid ""
+#~ "Under <menuchoice><guimenu>Game</guimenu><guimenuitem>Preferences</"
+#~ "guimenuitem></menuchoice>, you can customize the look of the tiles in "
+#~ "<application>Lights Off</application>. There are a variety of styles "
+#~ "included, some of which make use of the color of your theme. This can be "
+#~ "disabled with the <guilabel>Use colors from GNOME Theme</guilabel> option "
+#~ "in the Preferences window."
+#~ msgstr ""
+#~ "Στο μενού <menuchoice><guimenu>Παιχνίδι</"
+#~ "guimenu><guimenuitem>Προτιμήσεις</guimenuitem></menuchoice>, μπορείτε να "
+#~ "τροποποιήσετε την εμφάνιση των τετραγώνων στο <application>Σβήστε τα "
+#~ "φώτα</application>. Διατίθεται μια ποικιλία από στυλ, μερικά από τα οποία "
+#~ "θα χρησιμοποιούν τα χρώματα του οπτικού θέματος της επιφάνειας εργασίας "
+#~ "σας. Αυτό μπορεί να απενεργοποιηθεί με την επιλογή <guilabel>Χρήση των "
+#~ "χρωμάτων του θέματος GNOME</guilabel> στο παράθυρο Προτιμήσεις."
+
+#~ msgid "Authors"
+#~ msgstr "Συγγραφείς"
+
+#~ msgid ""
+#~ "<application>Lights Off</application> was written by Tim Horton in 2009 "
+#~ "and maintained by the Gnome Games Team since then. This manual was "
+#~ "written by Tim Horton. To report a bug or make a suggestion regarding "
+#~ "this application or this manual, follow the directions in this <ulink url="
+#~ "\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+#~ msgstr ""
+#~ "Το <application>Σβήστε τα φώτα</application> γράφτηκε από τον Tim Horton "
+#~ "το 2009 και έκτοτε συντηρείται από την Ομάδα παιχνιδιών του GNOME. Αυτό "
+#~ "το εγχειρίδιο γράφτηκε από τον Tim Horton. Για να αναφέρετε ένα σφάλμα ή "
+#~ "να κάνετε μια εισήγηση σχετικά με αυτή την εφαρμογή ή αυτό το εγχειρίδιο, "
+#~ "ακολουθήστε τις οδηγίες σε αυτό το <ulink url=\"ghelp:user-guide?feedback-"
+#~ "bugs\" type=\"help\">έγγραφο</ulink>."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the <citetitle><ulink type=\"help\" url=\"gnome-help:"
+#~ "gpl\">GNU General Public License</ulink></citetitle> as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανείμετε "
+#~ "και/ή να το τροποποιήσετε υπό τους όρους της <citetitle><ulink type=\"help"
+#~ "\" url=\"gnome-help:gpl\">Γενικής δημόσιας άδειας GNU</ulink></citetitle> "
+#~ "όπως δημοσιεύεται από το Ίδρυμα ελεύθερου λογισμικού, στην έκδοση 2 της "
+#~ "Άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the "
+#~ "<citetitle>GNU General Public License</citetitle> for more details."
+#~ msgstr ""
+#~ "Αυτό το πρόγραμμα διανείμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά "
+#~ "ΧΩΡΙΣ ΚΑΜΜΙΑ ΕΓΓΥΗΣΗ, χωρίς καν την νοούμενη εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή "
+#~ "ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε τη <citetitle>Γενική δημόσια "
+#~ "άδεια GNU</citetitle> για περισσότερες λεπτομέρειες."
+
+#~ msgid ""
+#~ "A copy of the <citetitle>GNU General Public License</citetitle> is "
+#~ "included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. "
+#~ "You may also obtain a copy of the <citetitle>GNU General Public License</"
+#~ "citetitle> from the Free Software Foundation by visiting <ulink type="
+#~ "\"http\" url=\"http://www.fsf.org\">their Web site</ulink> or by writing "
+#~ "to <address> Free Software Foundation, Inc. <street>59 Temple Place</"
+#~ "street> - Suite 330 <city>Boston</city>, <state>MA</"
+#~ "state><postcode>02111-1307</postcode><country>USA</country></address>"
+#~ msgstr ""
+#~ "Στον <citetitle>Οδηγό χρήστη του GNOME</citetitle> συμπεριλαμβάνεται ένα "
+#~ "παράρτημα με τη <citetitle>Γενική δημόσια άδεια GNU</citetitle>. Μπορείτε "
+#~ "επίσης να λάβετε ένα αντίγραφο της <citetitle>Γενικής δημόσιας άδειας "
+#~ "GNU</citetitle> από το Ίδρυμα ελεύθερου λογισμικού όταν επισκεφθείτε "
+#~ "<ulink type=\"http\" url=\"http://www.fsf.org\">τον ιστότοπό τους</ulink> "
+#~ "ή γράφοντας στο <address> Free Software Foundation, Inc. <street>59 "
+#~ "Temple Place</street> - Suite 330 <city>Boston</city>, <state>MA</"
+#~ "state><postcode>02111-1307</postcode><country>USA</country></address>."
