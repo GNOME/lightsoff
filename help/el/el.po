@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "POT-Creation-Date: 2012-05-01 10:51+0000\n"
-"PO-Revision-Date: 2012-08-22 01:06+0200\n"
+"PO-Revision-Date: 2012-08-23 13:46+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
@@ -424,7 +424,7 @@ msgstr "Να αντιγράψετε, να διανείμετε και να με�
 
 #: C/license.page:29(item/title)
 msgid "<em>To remix</em>"
-msgstr "<em>Να τροποιήσετε</em>"
+msgstr "<em>Να τροποποιήσετε</em>"
 
 #: C/license.page:30(item/p)
 msgid "To adapt the work."
@@ -949,8 +949,8 @@ msgstr ""
 #~ msgstr ""
 #~ "Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανείμετε "
 #~ "και/ή να το τροποποιήσετε υπό τους όρους της <citetitle><ulink type=\"help"
-#~ "\" url=\"help:gpl\">Γενικής δημόσιας άδειας GNU</ulink></citetitle> "
-#~ "όπως δημοσιεύεται από το Ίδρυμα ελεύθερου λογισμικού, στην έκδοση 2 της "
+#~ "\" url=\"help:gpl\">Γενικής δημόσιας άδειας GNU</ulink></citetitle> όπως "
+#~ "δημοσιεύεται από το Ίδρυμα ελεύθερου λογισμικού, στην έκδοση 2 της "
 #~ "Άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση."
 
 #~ msgid ""
