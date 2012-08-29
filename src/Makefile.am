@@ -12,12 +12,9 @@ lightsoff_SOURCES = \
 lightsoff_VALAFLAGS = \
 	--pkg posix \
 	--pkg gmodule-2.0 \
-	--pkg clutter-gtk-1.0 \
-	--vapidir $(top_srcdir)/libgames-support \
-	--pkg GnomeGamesSupport-1.0
+	--pkg clutter-gtk-1.0
 
 lightsoff_CFLAGS = \
-	-I$(top_srcdir)/libgames-support \
 	-DVERSION=\"$(VERSION)\" \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	-DDATADIR=\""$(datadir)/lightsoff"\" \
@@ -28,7 +25,6 @@ lightsoff_CFLAGS = \
 	$(CLUTTER_GTK_CFLAGS)
 
 lightsoff_LDADD =	\
-	$(top_builddir)/libgames-support/libgames-support.la \
 	$(GMODULE_LIBS) \
 	$(GTK_LIBS)	\
 	$(CLUTTER_GTK_LIBS)	\
