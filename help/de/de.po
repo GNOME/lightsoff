@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
-"POT-Creation-Date: 2012-08-05 09:25+0000\n"
-"PO-Revision-Date: 2012-08-09 22:55+0100\n"
+"POT-Creation-Date: 2012-09-05 23:40+0000\n"
+"PO-Revision-Date: 2012-09-06 13:48+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -20,7 +20,9 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2010, 2012"
+msgstr ""
+"Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2010, 2012\n"
+"Christian Kirbach <Christian.Kirbach@gmail.com>, 2012"
 
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
@@ -88,6 +90,7 @@ msgstr ""
 "<media type=\"image\" src=\"figures/lightsoff.jpg\">Lichter-aus-Logo</"
 "media>Lichter aus"
 
+# http://www.duden.de/suchen/dudenonline/puzzle
 #: C/index.page:22(page/p)
 msgid ""
 "<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
@@ -96,8 +99,8 @@ msgid ""
 msgstr ""
 "<app>Lichter aus</app> ist ein Puzzlespiel mit 5 mal 5 Feldern, dessen Ziel "
 "es ist, alle »beleuchteten« Spielsteine vom Spielfeld zu entfernen. Jeder "
-"Klick schaltet den Status des angeklickten Spielsteins und dessen "
-"nichtdiagonalen Nachbarn um."
+"Klick schaltet den Status des angeklickten Spielsteins und dessen nicht-"
+"diagonalen Nachbarn um."
 
 #: C/index.page:26(section/title)
 msgid "Game Play"
@@ -157,11 +160,11 @@ msgstr ""
 
 #: C/basic.page:24(item/p) C/basic.page:32(item/p)
 msgid ""
-"Once a tile is selected it will toggle the state of the selected tile and its "
-"non-diagonal neighbors."
+"Once a tile is selected it will toggle the state of the selected tile and "
+"its non-diagonal neighbors."
 msgstr ""
 "Jede Auswahl eines Spielsteins schaltet dessen Status und den Status der "
-"nichtdiagonalen Nachbarn um."
+"nicht-diagonalen Nachbarn um."
 
 #: C/basic.page:29(section/title)
 msgid "Using the mouse"
@@ -182,10 +185,11 @@ msgid ""
 "The progress through the levels is either by turning off all the lights in "
 "that level or using the arrow shaped buttons in the bottom of the game."
 msgstr ""
-"Sie gelangen in die jeweils nächsthöhere Spielstufe, indem Sie alle Steine in "
-"der jeweiligen Spielstufe entfernen. Alternativ können Sie die pfeilförmigen "
-"Knöpfe am unteren Rand des Spielfelds benutzen, um ohne Einschränkung "
-"Spielstufen zu überspringen oder zu vorherigen Spielstufen zurückzukehren."
+"Sie gelangen in die jeweils nächsthöhere Spielstufe, indem Sie alle Steine "
+"in der jeweiligen Spielstufe entfernen. Alternativ können Sie die "
+"pfeilförmigen Knöpfe am unteren Rand des Spielfelds benutzen, um ohne "
+"Einschränkung Spielstufen zu überspringen oder zu vorherigen Spielstufen "
+"zurückzukehren."
 
 #: C/basic.page:40(item/p)
 msgid ""
@@ -229,14 +233,15 @@ msgstr "Einen Fehler melden oder einen Verbesserungsvorschlag einreichen"
 
 #: C/bug-filing.page:27(section/p)
 msgid ""
-"<app>Lights Off</app> is maintained by a volunteer community. You are welcome "
-"to participate. If you notice a problem you can file a <em>bug report</em>. "
-"To file a bug, go to <link href=\"https://bugzilla.gnome.org/\"/>."
+"<app>Lights Off</app> is maintained by a volunteer community. You are "
+"welcome to participate. If you notice a problem you can file a <em>bug "
+"report</em>. To file a bug, go to <link href=\"https://bugzilla.gnome.org/\"/"
+">."
 msgstr ""
 "<app>Lichter aus</app> wird von einer Gemeinschaft aus Freiwilligen "
-"entwickelt. Sie sind herzlich eingeladen, sich daran zu beteiligen. Falls Sie "
-"ein Problem entdecken, können Sie einen <em>Fehlerbericht erstellen</em>. "
-"Besuchen Sie hierzu <link href=\"https://bugzilla.gnome.org/\"/>."
+"entwickelt. Sie sind herzlich eingeladen, sich daran zu beteiligen. Falls "
+"Sie ein Problem entdecken, können Sie einen <em>Fehlerbericht erstellen</"
+"em>. Besuchen Sie hierzu <link href=\"https://bugzilla.gnome.org/\"/>."
 
 #: C/bug-filing.page:30(section/p)
 msgid ""
@@ -273,16 +278,16 @@ msgstr ""
 "guiseq>. Bevor Sie einen Fehler melden, lesen Sie bitte die <link href="
 "\"https://bugzilla.gnome.org/page.cgi?id=bug-writing.html\">bug writing "
 "guidelines</link> und <link href=\"https://bugzilla.gnome.org/browse.cgi?"
-"product=gnome-games\">schauen Sie bitte nach</link>, ob der Fehler vielleicht "
-"schon gemeldet wurde."
+"product=gnome-games\">schauen Sie bitte nach</link>, ob der Fehler "
+"vielleicht schon gemeldet wurde."
 
 #: C/bug-filing.page:40(section/p)
 msgid ""
 "To file your bug, choose the component <gui>lightsoff</gui> in the "
 "<gui>Component</gui> menu."
 msgstr ""
-"Um einen Fehler zu melden, wählen Sie <gui>lightsoff</gui> im <gui>Component</"
-"gui>-Menü."
+"Um einen Fehler zu melden, wählen Sie <gui>lightsoff</gui> im "
+"<gui>Component</gui>-Menü."
 
 #: C/bug-filing.page:43(section/p)
 msgid ""
@@ -327,8 +332,8 @@ msgid ""
 msgstr ""
 "Falls Sie <link href=\"https://live.gnome.org/GnomeGames/Contributing\">bei "
 "der Entwicklung der <app>GNOME Games</app> helfen möchten</link>, können Sie "
-"mit den Entwicklern im <link href=\"https://cbe005.chat.mibbit.com/?url=irc%3A"
-"%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link> oder über deren <link href="
+"mit den Entwicklern im <link href=\"https://cbe005.chat.mibbit.com/?url=irc"
+"%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link> oder über deren <link href="
 "\"http://mail.gnome.org/mailman/listinfo/games-list\">Mailingliste</link> "
 "Kontakt aufnehmen."
 
@@ -346,15 +351,15 @@ msgstr ""
 
 #: C/documentation.page:26(page/p)
 msgid ""
-"To contribute to the Documentation Project, feel free to get in touch with us "
-"using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome."
-"org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
 "mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
 "Falls Sie sich am Dokumentationsprojekt beteiligen wollen, nehmen Sie im "
 "<link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org"
-"%2Fdocs\">IRC</link> oder über die <link href=\"http://mail.gnome.org/mailman/"
-"listinfo/gnome-doc-list\">Mailingliste</link> mit uns Kontakt auf."
+"%2Fdocs\">IRC</link> oder über die <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">Mailingliste</link> mit uns Kontakt auf."
 
 #: C/documentation.page:28(page/p)
 msgid ""
@@ -420,13 +425,13 @@ msgstr "<em>Weitergabe</em>"
 
 #: C/license.page:39(item/p)
 msgid ""
-"You must attribute the work in the manner specified by the author or licensor "
-"(but not in any way that suggests that they endorse you or your use of the "
-"work)."
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
 msgstr ""
 "Sie dürfen das Werk nur unter gleichen Bedingungen weitergeben, wie Sie vom "
-"Autor oder Lizenzgeber festgelegt wurden (aber nicht so, dass es wie Ihr Werk "
-"aussieht)."
+"Autor oder Lizenzgeber festgelegt wurden (aber nicht so, dass es wie Ihr "
+"Werk aussieht)."
 
 #: C/license.page:46(item/title)
 msgid "<em>Share Alike</em>"
@@ -445,10 +450,10 @@ msgstr ""
 
 #: C/license.page:53(page/p)
 msgid ""
-"For the full text of the license, see the <link href=\"http://creativecommons."
-"org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</link>, or read "
-"the full <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
-"\">Commons Deed</link>."
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
 msgstr ""
 "Den vollständigen Text der Lizenz finden Sie auf der <link href=\"http://"
 "creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons-Webseite</"
@@ -477,13 +482,13 @@ msgstr ""
 #: C/rules.page:21(item/p)
 msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
 msgstr ""
-"Wählen Sie einen Spielstein aus, um dessen Status und den Status der "
-"nichtdiagonalen Nachbarn umzuschalten."
+"Wählen Sie einen Spielstein aus, um dessen Status und den Status der nicht-"
+"diagonalen Nachbarn umzuschalten."
 
 #: C/rules.page:22(item/p)
 msgid ""
-"Once you have successfully turned off all the lights, you complete that level "
-"and move on to the next."
+"Once you have successfully turned off all the lights, you complete that "
+"level and move on to the next."
 msgstr ""
 "Sobald Sie erfolgreich alle Lichter ausgeschaltet haben, ist die Spielstufe "
 "beendet und die nächste wird eröffnet."
@@ -497,13 +502,18 @@ msgid ""
 "This is a simple strategy to solve the <app>Lights Off</app> puzzle by using "
 "the method called \"Chase the Lights\"."
 msgstr ""
+"Dies ist eine einfache Strategie, um das Rätsel <app>Lichter aus</app> zu "
+"lösen, indem die Methode »Die Lichter verfolgen« angewendet wird."
 
 #: C/strategy.page:20(item/p)
 msgid ""
 "Chase the lights starting from the first row. To chase the lights in the "
-"first row, click the tile on the second row corresponding to the light in the "
-"first row. This will turn off that light in the first row."
+"first row, click the tile on the second row corresponding to the light in "
+"the first row. This will turn off that light in the first row."
 msgstr ""
+"Verfolgen Sie die Lichter beginnend mit der ersten Reihe. Klicken Sie dazu "
+"auf die Kachel in der zweiten Reihe, die zu dem Licht in der ersten Reihe "
+"gehört. Damit wird das Licht in der ersten Reihe ausgeschaltet."
 
 #: C/strategy.page:21(note/p)
 msgid ""
@@ -511,6 +521,10 @@ msgid ""
 "well, i.e., if you want to chase the lights in the second row, click the "
 "corresponding tile in the third row."
 msgstr ""
+"Mit dieser Methode können ebenso auf gleiche Art und Weise Lichter in "
+"anderen Zeilen verfolgt werden, d.h. wenn Sie Lichter in der zweiten Reihe "
+"verfolgen möchten, so klicken Sie auf die entsprechende Kachel in der "
+"dritten Reihe."
 
 #: C/strategy.page:23(item/p)
 msgid ""
@@ -518,20 +532,26 @@ msgid ""
 "row. At the end of this you will be only left with the lights in the fifth "
 "row."
 msgstr ""
+"Setzen Sie auf gleiche Weise fort, um die Lichter in der dritten, dann in "
+"der vierten Reihe zu verfolgen. Zum Schluss werden nur noch die Lichter in "
+"der fünften Reihe übrig bleiben."
 
 #: C/strategy.page:25(item/p)
 msgid ""
-"Now depending on which lights are remaining in the fifth row, click the tiles "
-"in the first row using the table given below."
+"Now depending on which lights are remaining in the fifth row, click the "
+"tiles in the first row using the table given below."
 msgstr ""
+"Abhängig davon, wieviele Lichter noch in der fünften Reihe verbleiben, "
+"klicken Sie auf die Kacheln der ersten Reihe anhand der unten aufgeführten "
+"Tabelle."
 
 #: C/strategy.page:29(td/p)
 msgid "Lights Left on the fifth Row"
-msgstr ""
+msgstr "Verbliebene Lichter in der fünften Reihe"
 
 #: C/strategy.page:29(td/p)
 msgid "Tiles to Click on the First Row"
-msgstr ""
+msgstr "Diese Kacheln in der ersten Reihe anklicken"
 
 #: C/strategy.page:32(td/p)
 msgid "1, 2, 3"
@@ -594,6 +614,8 @@ msgid ""
 "Now again chase the lights starting from the first row. After chasing the "
 "lights this time your puzzle will be solved."
 msgstr ""
+"Verfolgen Sie nun wieder die Lichter beginnend mit der ersten Reihe. Nachdem "
+"Sie die Lichter dieses Mal verfolgt haben wird das Rätsel gelöst."
 
 #: C/strategy.page:50(note/p)
 msgid ""
@@ -614,8 +636,8 @@ msgid ""
 "participate."
 msgstr ""
 "Die Benutzeroberfläche und die Dokumentation der <app>GNOME Games</app> "
-"werden von einer weltweiten Gemeinschaft aus Freiwilligen übersetzt. Sie sind "
-"herzlich eingeladen, sich daran zu beteiligen."
+"werden von einer weltweiten Gemeinschaft aus Freiwilligen übersetzt. Sie "
+"sind herzlich eingeladen, sich daran zu beteiligen."
 
 #: C/translate.page:27(page/p)
 msgid ""
