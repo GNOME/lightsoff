@@ -6,10 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2012-05-01 10:51+0000\n"
-"PO-Revision-Date: 2012-08-23 13:46+0200\n"
+"POT-Creation-Date: 2012-09-24 23:50+0000\n"
+"PO-Revision-Date: 2012-09-29 13:00+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,7 +18,6 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
-#| msgid "translator-credits"
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
@@ -62,13 +62,11 @@ msgstr ""
 "external ref='figures/lightsoff.jpg' md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
 
 #: C/index.page:7(info/title)
-#| msgid "Lights Off"
 msgctxt "link"
 msgid "Lights Off"
 msgstr "Σβήστε τα φώτα"
 
 #: C/index.page:8(info/title)
-#| msgid "Lights Off"
 msgctxt "text"
 msgid "Lights Off"
 msgstr "Σβήστε τα φώτα"
@@ -96,10 +94,6 @@ msgstr ""
 "φώτα</media>Σβήστε τα φώτα"
 
 #: C/index.page:22(page/p)
-#| msgid ""
-#| "<application>Lights Off</application> is a puzzle game, where the "
-#| "objective is to turn off all of the tiles on the board. Each click "
-#| "toggles the state of the clicked tile and its non-diagonal neighbors."
 msgid ""
 "<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
 "off all the lights. Each click on a tile toggles the state of the clicked "
@@ -140,7 +134,6 @@ msgstr ""
 
 #: C/basic.page:10(credit/years) C/rules.page:11(credit/years)
 #: C/strategy.page:10(credit/years)
-#| msgid "2010"
 msgid "2012"
 msgstr "2012"
 
@@ -155,7 +148,6 @@ msgstr ""
 "πληκτρολόγιο ή το ποντίκι."
 
 #: C/basic.page:21(section/title)
-#| msgid "Manipulating the Board"
 msgid "Using the keyboard"
 msgstr "Χρησιμοποιώντας το πληκτρολόγιο"
 
@@ -168,10 +160,6 @@ msgstr ""
 "στο τετράγωνο και πατήστε το πλήκτρο <key>Enter</key>."
 
 #: C/basic.page:24(item/p) C/basic.page:32(item/p)
-#| msgid ""
-#| "Lights Off is a puzzle game, where the objective is to turn off all of "
-#| "the tiles on the board. Each click toggles the state of the clicked tile "
-#| "and its non-diagonal neighbors."
 msgid ""
 "Once a tile is selected it will toggle the state of the selected tile and "
 "its non-diagonal neighbors."
@@ -194,11 +182,6 @@ msgid "Progress through the levels"
 msgstr "Πρόοδος μεταξύ των επιπέδων"
 
 #: C/basic.page:39(item/p)
-#| msgid ""
-#| "You progress through the levels either by turning off all of the tiles in "
-#| "a particular level, or using the arrow-shaped buttons near the bottom of "
-#| "the game. These buttons allow you to skip levels, or return to previous "
-#| "levels, without restriction."
 msgid ""
 "The progress through the levels is either by turning off all the lights in "
 "that level or using the arrow shaped buttons in the bottom of the game."
@@ -236,7 +219,6 @@ msgstr "Tiffany Antopolski"
 
 #: C/bug-filing.page:12(credit/years) C/develop.page:12(credit/years)
 #: C/documentation.page:10(credit/years) C/translate.page:12(credit/years)
-#| msgid "2010"
 msgid "2011"
 msgstr "2011"
 
@@ -375,16 +357,16 @@ msgid ""
 msgstr ""
 "Για συμμετοχή στο έργο τεκμηρίωσης, επικοινωνήστε μαζί μας χρησιμοποιώντας "
 "το <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org"
-"%2Fdocs\">irc</link>, ή μέσα από την <link href=\"http://mail.gnome.org/"
-"mailman/listinfo/gnome-doc-list\">λίστα αλληλογραφίας μας</link>"
+"%2Fdocs\">irc</link>, ή μέσα από τη <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">λίστα αλληλογραφίας</link> μας."
 
 #: C/documentation.page:28(page/p)
 msgid ""
 "Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"Το <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
-"\">wiki</link> μας περιέχει χρήσιμες πληροφορίες."
+"Επίσης το <link href=\"https://live.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> μας περιέχει χρήσιμες πληροφορίες."
 
 #: C/legal.xml:3(p/link)
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
