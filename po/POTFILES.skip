@@ -1,0 +1,6 @@
+lightsoff/data/lightsoff.desktop.in
+lightsoff/src/board-view.c
+lightsoff/src/game-view.c
+lightsoff/src/led-array.c
+lightsoff/src/lightsoff.c
+lightsoff/src/puzzle-generator.c

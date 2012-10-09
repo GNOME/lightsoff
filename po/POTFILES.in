@@ -1,0 +1,10 @@
+# List of source files containing translatable strings.
+# Please keep this file in alphabetical order.
+[encoding: UTF-8]
+lightsoff/data/lightsoff.desktop.in.in
+lightsoff/data/org.gnome.lightsoff.gschema.xml.in
+lightsoff/src/board-view.vala
+lightsoff/src/game-view.vala
+lightsoff/src/led-array.vala
+lightsoff/src/lightsoff.vala
+lightsoff/src/puzzle-generator.vala
