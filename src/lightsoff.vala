@@ -142,7 +142,7 @@ public class LightsOff : Gtk.Application
 
         Gtk.show_about_dialog (window,
                                "program-name", _("Lights Off"),
-                               "version", Config.VERSION,
+                               "version", VERSION,
                                "comments",
                                _("Turn off all the lights\n\nLights Off is a part of GNOME Games."),
                                "copyright", "Copyright © 2009 Tim Horton",
@@ -161,9 +161,9 @@ public class LightsOff : Gtk.Application
     public static int main (string[] args)
     {
         Intl.setlocale (LocaleCategory.ALL, "");
-        Intl.bindtextdomain (Config.GETTEXT_PACKAGE, Config.LOCALEDIR);
-        Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
-        Intl.textdomain (Config.GETTEXT_PACKAGE);
+        Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+        Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (GETTEXT_PACKAGE);
 
         Environment.set_application_name (_("Lights Off"));
 

@@ -19,16 +19,10 @@ lightsoff_CFLAGS = \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	-DDATADIR=\""$(datadir)/lightsoff"\" \
 	-DLOCALEDIR=\"$(datadir)/locale\" \
-	$(GHTREAD_CFLAGS) \
-	$(GMODULE_CFLAGS) \
-	$(GTK_CFLAGS) \
-	$(CLUTTER_GTK_CFLAGS)
+	$(LIGHTSOFF_CFLAGS)
 
 lightsoff_LDADD =	\
-	$(GMODULE_LIBS) \
-	$(GTK_LIBS)	\
-	$(CLUTTER_GTK_LIBS)	\
-	$(INTLLIBS)
+	$(LIGHTSOFF_LIBS)
 
 CLEANFILES = \
 	$(patsubst %.vala,%.c,$(filter %.vala, $(SOURCES))) \
