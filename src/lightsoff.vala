@@ -22,6 +22,9 @@ public class LightsOff : Gtk.Application
         base.startup ();
 
         add_action_entries (action_entries, this);
+        add_accelerator ("<Primary>n", "app.new-game", null);
+        add_accelerator ("F1", "app.help", null);
+        add_accelerator ("<Primary>q", "app.quit", null);
 
         var menu = new Menu ();
         var section = new Menu ();
