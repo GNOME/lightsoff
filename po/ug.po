@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-28 23:11+0000\n"
-"PO-Revision-Date: 2013-02-02 12:34+0900\n"
+"POT-Creation-Date: 2013-02-02 03:35+0000\n"
+"PO-Revision-Date: 2013-02-13 19:47+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: \n"
@@ -30,7 +30,7 @@ msgstr "بارلىق چىراغلارنى ئۆچۈرۈش"
 
 #: ../data/lightsoff.desktop.in.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "game؛logic؛board؛same؛matching؛ئويۇن؛لوگىكىلىق؛تاختا؛كاھىش؛تېپىشماق؛"
+msgstr "game;logic;board;same;matching;ئويۇن;لوگىكىلىق;تاختا;كاھىش;تېپىشماق;"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
 msgid "The current level"
@@ -74,4 +74,3 @@ msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
 #: ../src/lightsoff.vala:160
 msgid "GNOME Games web site"
 msgstr "گىنوم ئويۇنلىرى تورتۇراسى"
-
