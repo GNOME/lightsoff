@@ -7,9 +7,6 @@ lightsoff_DATA = \
 	on.svg \
 	highlight.svg
 
-icondir=$(datadir)/icons/hicolor/scalable/apps
-icon_DATA = lightsoff.svg
-
 gsettings_in_file = org.gnome.lightsoff.gschema.xml.in
 gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
 @INTLTOOL_XML_NOMERGE_RULE@
@@ -25,7 +22,6 @@ DISTCLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
 
 EXTRA_DIST = \
 	$(lightsoff_DATA) \
-	$(icon_DATA) \
 	$(gsettings_in_file) \
 	$(desktop_in_file)
 
