@@ -1,3 +1,5 @@
+SUBDIRS = icons
+
 lightsoffdir = $(datadir)/lightsoff
 lightsoff_DATA = \
 	arrow.svg \
