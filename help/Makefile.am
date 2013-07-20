@@ -19,6 +19,6 @@ HELP_FILES = \
 	strategy.page		\
 	translate.page
 
-HELP_LINGUAS = ca de el es fi fr gl hu ko ro ru sl sv zh_CN
+HELP_LINGUAS = ca cs de el es fi fr gl hu ko ro ru sl sv zh_CN
 
 -include $(top_srcdir)/git.mk
