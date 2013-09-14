@@ -19,10 +19,14 @@ desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
+appdatadir = $(datadir)/appdata
+appdata_DATA = lightsoff.appdata.xml
+
 CLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
 DISTCLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
 
 EXTRA_DIST = \
+	$(appdata_DATA) \
 	$(lightsoff_DATA) \
 	$(gsettings_in_file) \
 	$(desktop_in_file)
