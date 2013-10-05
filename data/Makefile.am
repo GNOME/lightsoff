@@ -31,4 +31,8 @@ EXTRA_DIST = \
 	$(gsettings_in_file) \
 	$(desktop_in_file)
 
+check-local: $(appdata_DATA) $(desktop_DATA)
+	$(APPDATA_VALIDATE) $(appdata_DATA)
+	$(DESKTOP_FILE_VALIDATE) $(desktop_DATA)
+
 -include $(top_srcdir)/git.mk
