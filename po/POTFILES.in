@@ -2,7 +2,7 @@
 # Please keep this file in alphabetical order.
 [encoding: UTF-8]
 data/lightsoff.desktop.in
-data/org.gnome.lightsoff.gschema.xml.in
+data/org.gnome.lightsoff.gschema.xml
 src/board-view.vala
 src/game-view.vala
 src/led-array.vala

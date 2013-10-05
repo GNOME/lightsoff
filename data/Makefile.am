@@ -9,9 +9,7 @@ lightsoff_DATA = \
 	on.svg \
 	highlight.svg
 
-gsettings_in_file = org.gnome.lightsoff.gschema.xml.in
-gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
-@INTLTOOL_XML_NOMERGE_RULE@
+gsettings_SCHEMAS = org.gnome.lightsoff.gschema.xml
 @GSETTINGS_RULES@
 
 desktop_in_files = lightsoff.desktop.in
@@ -22,13 +20,12 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 appdatadir = $(datadir)/appdata
 appdata_DATA = lightsoff.appdata.xml
 
-CLEANFILES = $(desktop_DATA) $(gsettings_SCHEMAS)
-DISTCLEANFILES = $(gsettings_SCHEMAS)
+CLEANFILES = $(desktop_DATA)
 
 EXTRA_DIST = \
 	$(appdata_DATA) \
 	$(lightsoff_DATA) \
-	$(gsettings_in_file) \
+	$(gsettings_SCHEMAS) \
 	$(desktop_in_files)
 
 check-local: $(appdata_DATA) $(desktop_DATA)
