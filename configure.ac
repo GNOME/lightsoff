@@ -49,7 +49,6 @@ AC_OUTPUT([
 Makefile
 po/Makefile.in
 data/Makefile
-data/lightsoff.desktop.in
 data/icons/Makefile
 data/icons/hicolor/Makefile
 data/icons/HighContrast/Makefile
