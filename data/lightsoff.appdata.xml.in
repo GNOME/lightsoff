@@ -9,6 +9,10 @@
    toggles it either on or off, but also toggles all the surrounding lights,
    too. Your objective is simple: turn off all the lights!
   </_p>
+  <_p>
+   Players who delight in turning off lights will enjoy the huge number of
+   levels.
+  </_p>
  </description>
  <screenshots>
   <_screenshot type="default" width="381" height="543">https://people.gnome.org/~mcatanzaro/lightsoff.png</_screenshot>
