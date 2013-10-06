@@ -52,6 +52,7 @@ public class LightsOff : Gtk.Application
         settings = new Settings ("org.gnome.lightsoff");
 
         window = new Gtk.ApplicationWindow (this);
+	window.resizable = false;
 
         var clutter_embed = new GtkClutter.Embed ();
         clutter_embed.show ();
