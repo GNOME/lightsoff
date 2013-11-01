@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games-master-po-gl-54590\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-07 00:11+0100\n"
-"PO-Revision-Date: 2013-02-07 00:12+0200\n"
+"POT-Creation-Date: 2013-11-01 13:47+0100\n"
+"PO-Revision-Date: 2013-11-01 13:50+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -27,44 +27,62 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
+#: ../data/lightsoff.appdata.xml.in.h:1
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"Luces fora é unha colección de quebracabezas de apagar luces. Ao premer "
+"sobre unha luz apágaa ou encéndea, pero tamén troca todas as luces "
+"adxacentes. O seu obxectivo é simple: apagar todas as luces!"
+
+#: ../data/lightsoff.appdata.xml.in.h:2
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"Os xogadores aos que lle gusta apagar luces gozaran da garn cantidade de "
+"niveis."
+
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:158
+#: ../src/lightsoff.vala:182
 msgid "Lights Off"
 msgstr "Apagar as luces"
 
-#: ../data/lightsoff.desktop.in.in.h:2
+#: ../data/lightsoff.desktop.in.h:2
 msgid "Turn off all the lights"
 msgstr "Apagar todas as luces"
 
-#: ../data/lightsoff.desktop.in.in.h:3
+#: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "xogo;lóxica;taboleiro;celas;adxacente;quebracabezas;"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
 msgstr "O nivel actual"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
 msgid "The users's most recent level."
 msgstr "O nivel máis recente do usuario."
 
-#: ../src/lightsoff.vala:32
+#: ../src/lightsoff.vala:42
 msgid "_New Game"
 msgstr "Xogo _novo"
 
-#: ../src/lightsoff.vala:35
+#: ../src/lightsoff.vala:45
 msgid "_Help"
 msgstr "_Axuda"
 
-#: ../src/lightsoff.vala:36
+#: ../src/lightsoff.vala:46
 msgid "_About"
 msgstr "So_bre"
 
-#: ../src/lightsoff.vala:39
+#: ../src/lightsoff.vala:49
 msgid "_Quit"
 msgstr "_Saír"
 
-#: ../src/lightsoff.vala:150
+#: ../src/lightsoff.vala:161
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -74,20 +92,20 @@ msgstr ""
 "\n"
 "Luces fora é parte dos Xogos de GNOME."
 
-#: ../src/lightsoff.vala:157
+#: ../src/lightsoff.vala:168
 msgid "translator-credits"
 msgstr ""
 "Fran Diéguez <frandieguez@ubuntu.com>, 2009-2013;\n"
 "Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.\n"
 "Antón Méixome <meixome@mancomun.org>, 2009.\n"
 "Suso Baleato <suso.baleato@xunta.es>, 2009.\n"
-"Mancomún - Centro de Referencia e Servizos de Software Libre "
-"<g11n@mancomun.org>, 2009.\n"
+"Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun."
+"org>, 2009.\n"
 "Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.\n"
 "Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.\n"
 "Jesús Bravo Álvarez <jba@pobox.com>, 2000."
 
-#: ../src/lightsoff.vala:160
+#: ../src/lightsoff.vala:171
 msgid "GNOME Games web site"
 msgstr "Sitio web do GNOME Games"
 
