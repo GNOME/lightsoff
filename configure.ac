@@ -23,8 +23,6 @@ PKG_CHECK_MODULES(LIGHTSOFF, [
   clutter-gtk-1.0 >= $CLUTTER_REQUIRED
 ])
 
-AC_CHECK_LIB([m],[floor])
-
 AC_PATH_PROG(APPDATA_VALIDATE, appdata-validate)
 AC_PATH_PROG(DESKTOP_FILE_VALIDATE, desktop-file-validate)
 
