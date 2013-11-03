@@ -3,7 +3,6 @@ bin_PROGRAMS = lightsoff
 lightsoff_SOURCES = \
 	board-view.vala \
 	config.vapi \
-	fixes.vapi \
 	lightsoff.vala \
 	led-array.vala \
 	puzzle-generator.vala \
