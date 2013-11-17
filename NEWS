@@ -1,3 +1,12 @@
+Lights Off 3.11.2
+=================
+
+* Fix compilation in Fedora 19
+* Drop fixes.vapi
+* appdata: adjust screenshot size
+* Check for *-validate before using them, run autoupdate
+* Translation updates (Spanish, Galician)
+
 Lights Off 3.11.1
 =================
 
