@@ -80,22 +80,22 @@ public class LightsOff : Gtk.Application
     {
         switch (event.keyval)
         {
-        case Clutter.KEY_Escape:
+        case Clutter.Key.Escape:
             game_view.hide_cursor ();
             return true;
-        case Clutter.KEY_Down:
+        case Clutter.Key.Down:
             game_view.move_cursor (0, 1);
             return true;
-        case Clutter.KEY_Up:
+        case Clutter.Key.Up:
             game_view.move_cursor (0, -1);
             return true;
-        case Clutter.KEY_Left:
+        case Clutter.Key.Left:
             game_view.move_cursor (-1, 0);
             return true;
-        case Clutter.KEY_Right:
+        case Clutter.Key.Right:
             game_view.move_cursor (1, 0);
             return true;
-        case Clutter.KEY_Return:
+        case Clutter.Key.Return:
             game_view.activate_cursor ();
             return true;
         default:

@@ -11,6 +11,7 @@ lightsoff_SOURCES = \
 lightsoff_VALAFLAGS = \
 	--pkg posix \
 	--pkg gmodule-2.0 \
+	--pkg clutter-1.0 \
 	--pkg clutter-gtk-1.0
 
 lightsoff_CFLAGS = \
