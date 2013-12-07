@@ -17,6 +17,6 @@
  <screenshots>
   <screenshot type="default" width="752" height="506">https://people.gnome.org/~mcatanzaro/lightsoff.png</screenshot>
  </screenshots>
- <url type="homepage">https://wiki.gnome.org/Lightsoff</url>
+ <url type="homepage">https://wiki.gnome.org/Apps/Lightsoff</url>
  <updatecontact>games_list_at_gnome.org</updatecontact>
 </application>
