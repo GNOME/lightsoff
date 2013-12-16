@@ -31,6 +31,8 @@ public class LightsOff : Gtk.Application
     {
         base.startup ();
 
+        Gtk.Settings.get_default ().set ("gtk-application-prefer-dark-theme", true);
+
         add_action_entries (action_entries, this);
         add_accelerator ("<Primary>n", "app.new-game", null);
         add_accelerator ("F1", "app.help", null);
