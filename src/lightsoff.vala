@@ -50,7 +50,14 @@ public class LightsOff : Gtk.Application
         settings = new Settings ("org.gnome.lightsoff");
 
         window = new Gtk.ApplicationWindow (this);
+        window.icon_name = "lightsoff";
 	window.resizable = false;
+
+        var headerbar = new Gtk.HeaderBar ();
+        headerbar.show_close_button = true;
+        headerbar.set_title (_("Lights Off"));
+        headerbar.show ();
+        window.set_titlebar (headerbar);
 
         var clutter_embed = new GtkClutter.Embed ();
         clutter_embed.show ();
