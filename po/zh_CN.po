@@ -47,7 +47,7 @@ msgstr "关闭所有的灯"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr ""
+msgstr "game;logic;board;tiles;adjacent;puzzle;逻辑;游戏;棋牌;谜"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
