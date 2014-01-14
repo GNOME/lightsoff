@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-19 15:17+0000\n"
+"POT-Creation-Date: 2013-12-27 14:45+0000\n"
 "PO-Revision-Date: 2012-03-23 17:59+0800\n"
 "Last-Translator: tuhaihe <wangdianjin@linuxdeepin.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -29,7 +29,7 @@ msgstr "关闭所有的灯"
 
 #: ../data/lightsoff.desktop.in.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "game;logic;board;tiles;adjacent;puzzle;逻辑;游戏;棋牌;谜"
+msgstr "game;logic;board;tiles;adjacent;puzzle;逻辑;游戏;棋牌;谜;"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
 msgid "The current level"
