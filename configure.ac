@@ -1,4 +1,6 @@
-AC_INIT([lightsoff],[3.11.4])
+AC_PREREQ([2.63])
+AC_INIT([Lights Off], [3.11.4], [https://bugzilla.gnome.org/],
+        [lightsoff], [https://wiki.gnome.org/Apps/Lightsoff])
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz foreign])
 AM_SILENT_RULES([yes])
 AM_MAINTAINER_MODE
