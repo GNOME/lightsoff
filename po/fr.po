@@ -21,15 +21,16 @@
 # Didier Vidal <didier-devel@melix.net>, 2007.
 # Pierre Lemaire <pierre.lemaire@kamick.org>, 2008.
 # Laurent Coudeur <laurentc@iol.ie>, 2009.
-# Bruno Brouard <annoa.b@gmail.com>, 2012
+# Bruno Brouard <annoa.b@gmail.com>, 2012.
+# Bruno Cauet <brunocauet@gmail.com>, 2014
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-28 23:11+0000\n"
-"PO-Revision-Date: 2013-03-15 16:03+0100\n"
+"POT-Creation-Date: 2014-03-15 10:46+0000\n"
+"PO-Revision-Date: 2014-03-15 16:02+0100\n"
 "Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: \n"
@@ -38,44 +39,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
-msgid "Lights Off"
-msgstr "Lights Off"
+#: ../data/lightsoff.appdata.xml.in.h:1
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"Toutéteint est une collection de puzzles d'interrupteurs. Cliquer sur une "
+"lumière bascule son état, mais aussi celui des lumières tout autour. Votre "
+"objectif est simple : éteindre toutes les lumières !"
 
-#: ../data/lightsoff.desktop.in.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:2
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"Les joueurs qui se réjouissent d'éteindre toutes les lumières apprécieront "
+"le grand nombre de niveaux."
+
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
+#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
+msgid "Lights Off"
+msgstr "Toutéteint"
+
+#: ../data/lightsoff.desktop.in.h:2
 msgid "Turn off all the lights"
 msgstr "Éteindre toutes les lumières"
 
-#: ../data/lightsoff.desktop.in.in.h:3
+#: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "jeu;logique;plateau;tuiles;adjacentes;énigmes;"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
 msgstr "Le niveau actuel"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
 msgid "The users's most recent level."
 msgstr "Le niveau le plus récent des utilisateurs."
 
-#: ../src/lightsoff.vala:32
+#: ../src/lightsoff.vala:44
 msgid "_New Game"
 msgstr "_Nouvelle partie"
 
-#: ../src/lightsoff.vala:35
+#: ../src/lightsoff.vala:47
 msgid "_Help"
 msgstr "Aid_e"
 
-#: ../src/lightsoff.vala:36
+#: ../src/lightsoff.vala:48
 msgid "_About"
 msgstr "À _propos"
 
-#: ../src/lightsoff.vala:39
+#: ../src/lightsoff.vala:49
 msgid "_Quit"
 msgstr "_Quitter"
 
-#: ../src/lightsoff.vala:150
+#: ../src/lightsoff.vala:166
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -83,9 +102,9 @@ msgid ""
 msgstr ""
 "Éteignez toutes les lumières\n"
 "\n"
-"Lights Off fait partie des jeux GNOME."
+"Toutéteint fait partie des jeux GNOME."
 
-#: ../src/lightsoff.vala:157
+#: ../src/lightsoff.vala:172
 msgid "translator-credits"
 msgstr ""
 "Christophe Merlet <redfox@redfoxcenter.org>\n"
@@ -98,11 +117,11 @@ msgstr ""
 "Claude Paroz <claude@2xlibre.net>\n"
 "Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
 "Didier Vidal <didier-devel@melix.net>\n"
-"Pierre Lemaire <pierre.lemaire@kamick.org>"
+"Pierre Lemaire <pierre.lemaire@kamick.org>\n"
+"Bruno Cauet <brunocauet@gmail.com>"
 
-#: ../src/lightsoff.vala:160
-msgid "GNOME Games web site"
-msgstr "Site Web des jeux GNOME"
+#~ msgid "GNOME Games web site"
+#~ msgstr "Site Web des jeux GNOME"
 
 #~ msgid "Chess"
 #~ msgstr "Jeu d'échecs"
@@ -1364,8 +1383,8 @@ msgstr "Site Web des jeux GNOME"
 #~ msgid "Fast"
 #~ msgstr "Rapide"
 
-# sans doute faudrait-il trouver un terme commun pour ces « feintes » 
-# (cette entrée et les suivantes) et les « faux bonus » 
+# sans doute faudrait-il trouver un terme commun pour ces « feintes »
+# (cette entrée et les suivantes) et les « faux bonus »
 # (quelques entrées plus loin) : dans tous les cas, ce sont des « fake ».
 #~ msgctxt "game speed"
 #~ msgid "Beginner with Fakes"
