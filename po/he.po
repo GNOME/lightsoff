@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-02 14:20+0200\n"
-"PO-Revision-Date: 2013-02-02 14:24+0200\n"
+"POT-Creation-Date: 2014-03-16 16:26+0200\n"
+"PO-Revision-Date: 2014-03-16 16:28+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Gezer (Hebrew)\n"
 "Language: he\n"
@@ -21,45 +21,54 @@ msgstr ""
 "X-Launchpad-Export-Date: 2008-01-13 04:36+0000\n"
 "X-Poedit-Language: Hebrew\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1
-#: ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
+#: ../data/lightsoff.appdata.xml.in.h:1
+msgid "Lights Off is a collection of light switch puzzles. Clicking on a light toggles it either on or off, but also toggles all the surrounding lights, too. Your objective is simple: turn off all the lights!"
+msgstr "האורות כבויים הוא מאגר של משחקי חשיבה והפעלת מתגים. לחיצה על מנורה מפעילה או מכבה אותה אך גם עושה זאת למנורות הסמוכות. מטרתך היא פשוטה: לכבות את כל האורות!"
+
+#: ../data/lightsoff.appdata.xml.in.h:2
+msgid "Players who delight in turning off lights will enjoy the huge number of levels."
+msgstr "משחקים שנהנים לכבות אורות יענו ממספר רב של שלבים."
+
+#: ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:60
+#: ../src/lightsoff.vala:163
+#: ../src/lightsoff.vala:185
 msgid "Lights Off"
 msgstr "האורות כבויים"
 
-#: ../data/lightsoff.desktop.in.in.h:2
+#: ../data/lightsoff.desktop.in.h:2
 msgid "Turn off all the lights"
-msgstr "כבה את כל האורות"
+msgstr "כיבוי כל האורות"
 
-#: ../data/lightsoff.desktop.in.in.h:3
+#: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "משחק;הגיון;היגיון;לוח;משבצות;סמוך;סמוכים;פאזל;פזל;תצרף;"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
 msgstr "The current level"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
 msgid "The users's most recent level."
 msgstr "The users's most recent level."
 
-#: ../src/lightsoff.vala:32
+#: ../src/lightsoff.vala:44
 msgid "_New Game"
 msgstr "_משחק חדש"
 
-#: ../src/lightsoff.vala:35
+#: ../src/lightsoff.vala:47
 msgid "_Help"
 msgstr "ע_זרה"
 
-#: ../src/lightsoff.vala:36
+#: ../src/lightsoff.vala:48
 msgid "_About"
 msgstr "על _אודות"
 
-#: ../src/lightsoff.vala:39
+#: ../src/lightsoff.vala:49
 msgid "_Quit"
 msgstr "י_ציאה"
 
-#: ../src/lightsoff.vala:150
+#: ../src/lightsoff.vala:166
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -69,7 +78,7 @@ msgstr ""
 "\n"
 "כיבוי אורות חלק מחבילת משחקי GNOME."
 
-#: ../src/lightsoff.vala:157
+#: ../src/lightsoff.vala:172
 msgid "translator-credits"
 msgstr ""
 "גיל אשר <dolfin@rpg.org.il>\n"
@@ -83,9 +92,8 @@ msgstr ""
 "פרויקט תרגום GNOME לעברית:\n"
 "‏http://gnome-il.berlios.de"
 
-#: ../src/lightsoff.vala:160
-msgid "GNOME Games web site"
-msgstr "אתר משחקי GNOME"
+#~ msgid "GNOME Games web site"
+#~ msgstr "אתר משחקי GNOME"
 
 #~ msgid "Chess"
 #~ msgstr "שחמט"
