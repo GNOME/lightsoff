@@ -1,5 +1,5 @@
 # Danish translation of gnome-games.
-# Copyright (C) 1998-2012 Free Software Foundation, Inc.
+# Copyright (C) 1998-2014 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-games package.
 # Anders Wegge Jakobsen <wegge@wegge.dk>, 1998.
 # Kenneth Christiansen <kenneth@ripen.dk>, 1998-2001
@@ -7,7 +7,7 @@
 # Ole Laursen <olau@hardworking.dk>, 2001, 02, 03, 04.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
 # flemming christensen <fc@stromata.dk>, 2011.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 12.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007-2014.
 #
 # RETMIG: en eller anden med forstand på kabaler skal have oversat
 # navnene på spillene. Der er en kommentar til hver af dem der
@@ -34,8 +34,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-17 08:48+0100\n"
-"PO-Revision-Date: 2013-03-16 18:47+0100\n"
+"POT-Creation-Date: 2014-03-19 22:54+0100\n"
+"PO-Revision-Date: 2014-03-15 16:59+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -44,44 +44,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
+#: ../data/lightsoff.appdata.xml.in.h:1
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"Sluk Lyset er en samling tænkespil med lyskontakter. Klik på et lys for at "
+"tænde eller slukke det - men dette tænder eller slukker også alle de "
+"omgivende lys. Dit mål er enkelt: Sluk alle lysene!"
+
+#: ../data/lightsoff.appdata.xml.in.h:2
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"De lysslukningslystne spillere vil bestemt nyde det enorme antal baner."
+
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
+#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
 msgid "Lights Off"
 msgstr "Sluk lyset"
 
-#: ../data/lightsoff.desktop.in.in.h:2
+#: ../data/lightsoff.desktop.in.h:2
 msgid "Turn off all the lights"
 msgstr "Sluk alle lysene"
 
-#: ../data/lightsoff.desktop.in.in.h:3
+#: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "spil;logik;bræt;brikker;tilstødende;omgivende;hjernebryder;"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
 msgstr "Den nuværende bane"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
 msgid "The users's most recent level."
 msgstr "Brugerens sidste bane."
 
-#: ../src/lightsoff.vala:32
+#: ../src/lightsoff.vala:44
 msgid "_New Game"
 msgstr "_Nyt spil"
 
-#: ../src/lightsoff.vala:35
+#: ../src/lightsoff.vala:47
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: ../src/lightsoff.vala:36
+#: ../src/lightsoff.vala:48
 msgid "_About"
 msgstr "_Om"
 
-#: ../src/lightsoff.vala:39
+#: ../src/lightsoff.vala:49
 msgid "_Quit"
 msgstr "_Afslut"
 
-#: ../src/lightsoff.vala:150
+#: ../src/lightsoff.vala:166
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -91,7 +108,7 @@ msgstr ""
 "\n"
 "Lights Off er en del af GNOME Games."
 
-#: ../src/lightsoff.vala:157
+#: ../src/lightsoff.vala:172
 msgid "translator-credits"
 msgstr ""
 "Anders Wegge Jakobsen\n"
@@ -104,9 +121,8 @@ msgstr ""
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
 
-#: ../src/lightsoff.vala:160
-msgid "GNOME Games web site"
-msgstr "Hjemmeside for GNOME Games"
+#~ msgid "GNOME Games web site"
+#~ msgstr "Hjemmeside for GNOME Games"
 
 #~ msgid "Chess"
 #~ msgstr "Skak"
