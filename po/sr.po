@@ -1,19 +1,19 @@
 # Serbian translation of gnome-games
-# Courtesy of Prevod.org team (http://prevod.org/) -- 2003—2012.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003 — 2014.
 # This file is distributed under the same license as the gnome-games package.
 # Maintainer: Душан Марјановић <madafaka@bsd.org.yu>
 # Reviewed on 2005-08-03 by: Игор Несторовић <igor@prevod.org>
 # Translated by: Милош Поповић <gpopac@gmail.com>
 # Translated on 2010-08-25 by: Бранко Кокановић <branko.kokanovic@gmail.com>
 # Милош Поповић <gpopac@gmai, 2010.
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011—2013.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2011 — 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: Гномове игре\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=lights"
 "off&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-28 23:11+0000\n"
-"PO-Revision-Date: 2013-01-30 10:03+0200\n"
+"POT-Creation-Date: 2014-01-12 18:03+0000\n"
+"PO-Revision-Date: 2014-03-21 03:14+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -24,54 +24,70 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
+#: ../data/lightsoff.appdata.xml.in.h:1
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"Погаси светла је збирка слагалица гашења светла. Притисак на светло га или "
+"пали или гаси, али такође и сва околна светла. Ваш задатак је једноставан: "
+"погасити сва светла."
+
+#: ../data/lightsoff.appdata.xml.in.h:2
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr "Играчи који буду што дуже гасили светла уживаће у већем броју нивоа."
+
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
+#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
 msgid "Lights Off"
 msgstr "Погаси светла"
 
-#: ../data/lightsoff.desktop.in.in.h:2
+#: ../data/lightsoff.desktop.in.h:2
 msgid "Turn off all the lights"
-msgstr "Угасите сва светла"
+msgstr "Погасите сва светла"
 
-#: ../data/lightsoff.desktop.in.in.h:3
+#: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "игра;логика;табла;плочице;слагалица;"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
 msgstr "Тренутни ниво"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
 msgid "The users's most recent level."
-msgstr "Најскорији ниво који је одиграо корисник."
+msgstr "Најскорији корисников ниво."
 
-#: ../src/lightsoff.vala:32
+#: ../src/lightsoff.vala:44
 msgid "_New Game"
 msgstr "_Нова игра"
 
-#: ../src/lightsoff.vala:35
+#: ../src/lightsoff.vala:47
 msgid "_Help"
 msgstr "По_моћ"
 
-#: ../src/lightsoff.vala:36
+#: ../src/lightsoff.vala:48
 msgid "_About"
 msgstr "_О програму"
 
-#: ../src/lightsoff.vala:39
+#: ../src/lightsoff.vala:49
 msgid "_Quit"
 msgstr "_Изађи"
 
-#: ../src/lightsoff.vala:150
+#: ../src/lightsoff.vala:166
 msgid ""
 "Turn off all the lights\n"
 "\n"
 "Lights Off is a part of GNOME Games."
 msgstr ""
-"Угаси сва светла\n"
+"Погасите сва светла\n"
 "\n"
 "Погаси светла је део Гномових игара."
 
-#: ../src/lightsoff.vala:157
+#: ../src/lightsoff.vala:172
 msgid "translator-credits"
 msgstr ""
 "Душан Марјановић <madafaka@root.co.yu>\n"
@@ -81,6 +97,5 @@ msgstr ""
 "\n"
 "http://prevod.org — превод на српски језик"
 
-#: ../src/lightsoff.vala:160
-msgid "GNOME Games web site"
-msgstr "Веб сајт Гномових игара"
+#~ msgid "GNOME Games web site"
+#~ msgstr "Веб сајт Гномових игара"
