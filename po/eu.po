@@ -1,15 +1,15 @@
-# translation of eu.po to Basque
+# Basque translation of lightsoff.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2009, 2010, 2011, 2012, 2013.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2013.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2011, 2012, 2013.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2013, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: eu\n"
+"Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:23+0100\n"
-"PO-Revision-Date: 2013-02-28 22:40+0100\n"
+"POT-Creation-Date: 2014-03-24 20:23+0100\n"
+"PO-Revision-Date: 2014-03-24 20:22+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "Language: eu\n"
@@ -17,46 +17,64 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.4\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
+#: ../data/lightsoff.appdata.xml.in.h:1
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"'Argiak itzali' jokoa argia itzaltzeko puzzleen bilduma bat da. Egin klik "
+"argi batean pizteko/itzaltzeko, baina inguruko argien egoera ere aldatzen "
+"ditu. Helburua nabarmena da: itzali argi guztiak!"
+
+#: ../data/lightsoff.appdata.xml.in.h:2
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"Argiak itzaltzea gogoko duten jokalariek maila kopuru handiarekin gozatuko "
+"dute."
+
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
+#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
 msgid "Lights Off"
 msgstr "Argiak itzali"
 
-#: ../data/lightsoff.desktop.in.in.h:2
+#: ../data/lightsoff.desktop.in.h:2
 msgid "Turn off all the lights"
 msgstr "Itzali argi guztiak"
 
-#: ../data/lightsoff.desktop.in.in.h:3
+#: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "jokoa;logika;taula;fitxak;ondokoa;puzzle;"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
 msgstr "Uneko maila"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
 msgid "The users's most recent level."
 msgstr "Erabiltzailearen azken maila."
 
-#: ../src/lightsoff.vala:32
+#: ../src/lightsoff.vala:44
 msgid "_New Game"
 msgstr "_Joko berria"
 
-#: ../src/lightsoff.vala:35
+#: ../src/lightsoff.vala:47
 msgid "_Help"
 msgstr "La_guntza"
 
-#: ../src/lightsoff.vala:36
+#: ../src/lightsoff.vala:48
 msgid "_About"
 msgstr "Honi _buruz"
 
-#: ../src/lightsoff.vala:39
+#: ../src/lightsoff.vala:49
 msgid "_Quit"
 msgstr "_Irten"
 
-#: ../src/lightsoff.vala:150
+#: ../src/lightsoff.vala:166
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -66,13 +84,12 @@ msgstr ""
 "\n"
 "GNOME Games-ekoa da 'Argiak itzali'."
 
-#: ../src/lightsoff.vala:157
+#: ../src/lightsoff.vala:172
 msgid "translator-credits"
 msgstr "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>"
 
-#: ../src/lightsoff.vala:160
-msgid "GNOME Games web site"
-msgstr "GNOME Games webgunea"
+#~ msgid "GNOME Games web site"
+#~ msgstr "GNOME Games webgunea"
 
 #~ msgid "Chess"
 #~ msgstr "Xakea"
