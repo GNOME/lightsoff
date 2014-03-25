@@ -95,7 +95,9 @@ public class BoardView : Clutter.Group
                 var l = new Light (off_texture, on_texture);
 
                 l.reactive = true;
-                l.button_press_event.connect (light_button_press_cb);
+                var tap = new Clutter.TapAction ();
+                l.add_action (tap);
+                tap.tap.connect (light_button_press_cb);
 
                 float xx, yy;
                 get_light_position (x, y, out xx, out yy);
@@ -169,12 +171,11 @@ public class BoardView : Clutter.Group
                     return;
     }
 
-    private bool light_button_press_cb (Clutter.Actor actor, Clutter.ButtonEvent event)
+    private void light_button_press_cb (Clutter.TapAction tap, Clutter.Actor actor)
     {
         int x, y;
         find_light ((Light) actor, out x, out y);
         toggle_light (x, y);
-        return false;
     }
 
     // Toggle a light and those in each cardinal direction around it.
