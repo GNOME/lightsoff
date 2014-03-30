@@ -1,9 +1,10 @@
 <page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
 	type="guide" style="task"
 	id="index">
 
   <info>
-    <title type='link' role="trail"><media type="image" src="figures/lightsoff_logo.jpg"/></title>
+    <title type='link' role="trail"><media type="image" src="figures/lightsoff_logo.jpg" its:translate="no"/></title>
     <title type='link'>Lights Off</title>
     <title type='text'>Lights Off</title>
     <revision pkgversion="3.4" version="0.1" date="2012-03-08" status="review"/>
@@ -17,7 +18,7 @@
   </info>
 
 
-<title><media type="image" src="figures/lightsoff.jpg">Lights Off logo</media> Lights Off</title>
+<title><media type="image" src="figures/lightsoff.jpg" its:translate="no"><span its:translate="yes">Lights Off logo</span></media> Lights Off</title>
 
    <p><app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn off all the lights. Each click on a tile toggles the state of the clicked tile and its non-diagonal neighbors. 
    </p>

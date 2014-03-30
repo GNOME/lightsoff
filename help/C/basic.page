@@ -1,4 +1,5 @@
 <page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
 	type="topic" style="task"
 	id="basic">
   <info>
@@ -42,13 +43,13 @@
 </list>	
 <figure>
   <desc>This shows the <app>Lights Off</app> pattern for level 3, with the arrow shaped buttons at the bottom.</desc>
-  <media type="image" mime="image/jpg" src="figures/lo1.jpg" width="300" ></media>
+  <media type="image" mime="image/jpg" src="figures/lo1.jpg" width="300" its:translate="no"></media>
 </figure>
 </section>
 
 <section id="usage-video">
       <title>Video Demonstration</title>
-       <media type="video" mime="application/ogv" src="figures/lightsoff.ogv">
+       <media type="video" mime="application/ogv" src="figures/lightsoff.ogv" its:translate="no">
         </media>
     </section>
 </page>
