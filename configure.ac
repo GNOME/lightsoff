@@ -1,5 +1,5 @@
 AC_PREREQ([2.63])
-AC_INIT([Lights Off], [3.12.0], [https://bugzilla.gnome.org/],
+AC_INIT([Lights Off], [3.12.1], [https://bugzilla.gnome.org/],
         [lightsoff], [https://wiki.gnome.org/Apps/Lightsoff])
 AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-xz foreign])
 AM_SILENT_RULES([yes])
@@ -17,7 +17,7 @@ dnl ###########################################################################
 
 GTK_REQUIRED=3.10.0
 CLUTTER_REQUIRED=1.14.0
-CLUTTER_GTK_REQUIRED=1.5.0
+CLUTTER_GTK_REQUIRED=1.4.0
 
 PKG_CHECK_MODULES(LIGHTSOFF, [
   gtk+-3.0 >= $GTK_REQUIRED

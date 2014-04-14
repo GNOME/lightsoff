@@ -1,3 +1,9 @@
+Lights Off 3.12.1
+=================
+* Translation updates (Basque)
+* Fixed touch screen issue where taping didnt work
+* Bump clutter dep to 1.14.0, clutter-gtk to 1.4.0
+
 Lights Off 3.12.0
 =================
 * Translation updates (Indonesian, Danish, Portuguese, Hungarian, Russian, Serbian)
