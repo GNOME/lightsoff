@@ -126,7 +126,7 @@ public class LEDArray : Clutter.Group
         var inner_y_margin = -1;
 
         back = new Clutter.Clone (back_texture);
-        add_actor (back);
+        add_child (back);
 
         for (var i = 0; i < n_digits; i++)
         {
@@ -134,7 +134,7 @@ public class LEDArray : Clutter.Group
             d.set_anchor_point (0, d.height / 2);
             d.x = i * (d.width + margin) + inner_x_margin;
             d.y = back.height / 2 + inner_y_margin;
-            add_actor (d);
+            add_child (d);
             digits.prepend (d);
         }
     }

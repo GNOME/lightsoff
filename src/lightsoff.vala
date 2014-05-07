@@ -53,7 +53,7 @@ public class LightsOff : Gtk.Application
 
         window = new Gtk.ApplicationWindow (this);
         window.icon_name = "lightsoff";
-	window.resizable = false;
+        window.resizable = false;
 
         var headerbar = new Gtk.HeaderBar ();
         headerbar.show_close_button = true;
@@ -67,12 +67,12 @@ public class LightsOff : Gtk.Application
 
         var stage = (Clutter.Stage) clutter_embed.get_stage ();
         stage.key_release_event.connect (key_release_event_cb);
-        stage.color = Clutter.Color.from_string ("#000000");
+        stage.background_color = Clutter.Color.from_string ("#000000");
 
         game_view = new GameView (settings.get_int ("level"));
         game_view.level_changed.connect (level_changed_cb);
         game_view.show ();
-        stage.add_actor (game_view);
+        stage.add_child (game_view);
 
         stage.set_size (game_view.width, game_view.height);
         clutter_embed.set_size_request ((int) stage.width, (int) stage.height);

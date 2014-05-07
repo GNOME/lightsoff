@@ -31,12 +31,12 @@ private class Light : Clutter.Group
 
         off = new Clutter.Clone (off_actor);
         off.anchor_gravity = Clutter.Gravity.CENTER;
-        add_actor (off);
+        add_child (off);
 
         on = new Clutter.Clone (on_actor);
         on.anchor_gravity = Clutter.Gravity.CENTER;
         on.opacity = 0;
-        add_actor (on);
+        add_child (on);
 
         // Add a 2 px margin around the tile image, center tiles within it.
         width += 4;
@@ -72,7 +72,7 @@ private class Light : Clutter.Group
 
 public class BoardView : Clutter.Group
 {
-    private const int size = 5;
+    private new const int size = 5;
     private PuzzleGenerator puzzle_generator;
     private Clutter.Texture off_texture;
     private Clutter.Texture on_texture;
@@ -105,7 +105,7 @@ public class BoardView : Clutter.Group
                 l.set_position (xx, yy);
 
                 lights[x, y] = l;
-                add_actor (l);
+                add_child (l);
             }
         }
     }
@@ -151,14 +151,14 @@ public class BoardView : Clutter.Group
         /* Bring into foreground and make visible */
         animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
                                "opacity", 255,
-                               "depth", 0.0);
+                               "z_position", 0.0);
     }
 
     public void swap_out (float direction, Clutter.Timeline timeline)
     {
         /* Fade into background or drop down */
         animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
-                               "depth", 250.0 * direction,
+                               "z_position", 250.0 * direction,
                                "opacity", 0);
     }
 

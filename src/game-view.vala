@@ -8,6 +8,11 @@
  * license.
  */
 
+public void setup_animation (Clutter.Actor actor, Clutter.AnimationMode mode, uint duration) {
+    actor.set_easing_duration (duration);
+    actor.set_easing_mode (mode);
+}
+
 public class GameView : Clutter.Group
 {
     private Clutter.Texture backing_texture;
@@ -22,7 +27,7 @@ public class GameView : Clutter.Group
     private List<Clutter.Actor> actor_remove_queue = null;
 
     private LEDArray score_view;
-    private Clutter.Group board_group;
+    private Clutter.Actor board_group;
     private BoardView board_view;
     private BoardView? new_board_view = null;
     private Clutter.Actor backing_view;
@@ -59,38 +64,38 @@ public class GameView : Clutter.Group
 
         /* Add textures onto the scene so they can be cloned */
         backing_texture.hide ();
-        add_actor (backing_texture);
+        add_child (backing_texture);
         highlight_texture.hide ();
-        add_actor (highlight_texture);
+        add_child (highlight_texture);
         off_texture.hide ();
-        add_actor (off_texture);
+        add_child (off_texture);
         on_texture.hide ();
-        add_actor (on_texture);
+        add_child (on_texture);
         led_back_texture.hide ();
-        add_actor (led_back_texture);
+        add_child (led_back_texture);
         arrow_texture.hide ();
-        add_actor (arrow_texture);
+        add_child (arrow_texture);
 
         var real_board_width = 5 * off_texture.width + 4;
         var real_board_height = 5 * off_texture.height + 4;
 
-        board_group = new Clutter.Group ();
-        add_actor (board_group);
+        board_group = new Clutter.Actor ();
+        add_child (board_group);
 
         current_level = level;
         board_view = create_board_view (current_level);
         board_view.playable = true;
-        board_group.add_actor (board_view);
+        board_group.add_child (board_view);
 
         backing_view = new Clutter.Clone (backing_texture);
         backing_view.set_position (0, real_board_height);
-        add_actor (backing_view);
+        add_child (backing_view);
 
         score_view = new LEDArray (5, led_back_texture);
         score_view.value = current_level;
         score_view.set_anchor_point (score_view.width / 2, 0);
         score_view.set_position (real_board_width / 2, real_board_height + 18);
-        add_actor (score_view);
+        add_child (score_view);
 
         set_size (real_board_width, score_view.y + score_view.height);
 
@@ -99,7 +104,7 @@ public class GameView : Clutter.Group
         left_arrow.reactive = true;
         left_arrow.button_release_event.connect (left_arrow_button_release_cb);
         left_arrow.set_position ((score_view.x - score_view.anchor_x) / 2, score_view.y + (score_view.height / 2) - 10);
-        add_actor (left_arrow);
+        add_child (left_arrow);
 
         right_arrow = new Clutter.Clone (arrow_texture);
         right_arrow.anchor_gravity = Clutter.Gravity.CENTER;
@@ -107,12 +112,12 @@ public class GameView : Clutter.Group
         right_arrow.button_release_event.connect (right_arrow_button_release_cb);
         right_arrow.rotation_angle_y = 180;
         right_arrow.set_position (real_board_width - left_arrow.x, score_view.y + (score_view.height / 2) - 10);
-        add_actor (right_arrow);
+        add_child (right_arrow);
 
         key_cursor_view = new Clutter.Clone (highlight_texture);
         key_cursor_view.set_position (-100, -100);
         key_cursor_view.anchor_gravity = Clutter.Gravity.CENTER;
-        add_actor (key_cursor_view);
+        add_child (key_cursor_view);
     }
 
     private BoardView create_board_view (int level)
@@ -163,7 +168,7 @@ public class GameView : Clutter.Group
         last_sign = sign;
 
         new_board_view = create_board_view (current_level);
-        board_group.add_actor (new_board_view);
+        board_group.add_child (new_board_view);
 
         timeline = new Clutter.Timeline (1500);
         new_board_view.slide_in (direction, sign, timeline);
@@ -206,8 +211,8 @@ public class GameView : Clutter.Group
         timeline = new Clutter.Timeline (500);
 
         new_board_view = create_board_view (current_level);
-        board_group.add_actor (new_board_view);
-        new_board_view.depth = -250 * direction;
+        board_group.add_child (new_board_view);
+        new_board_view.z_position = -250 * direction;
         new_board_view.opacity = 0;
 
         new_board_view.swap_in (direction, timeline);
@@ -219,7 +224,8 @@ public class GameView : Clutter.Group
 
     public void hide_cursor ()
     {
-        key_cursor_view.animate (Clutter.AnimationMode.EASE_OUT_SINE, 250, "opacity", 0);
+        setup_animation (key_cursor_view, Clutter.AnimationMode.EASE_OUT_SINE, 250);
+        key_cursor_view.set_opacity (0);
         key_cursor_ready = false;
     }
 
@@ -239,12 +245,16 @@ public class GameView : Clutter.Group
         board_view.get_light_position (key_cursor_x, key_cursor_y, out x, out y);
 
         if (key_cursor_ready)
-            key_cursor_view.animate (Clutter.AnimationMode.EASE_OUT_SINE, 250, "x", x, "y", y);
+        {
+            setup_animation (key_cursor_view, Clutter.AnimationMode.EASE_OUT_SINE, 250);
+            key_cursor_view.set_position (x, y);
+        }
         else
         {
             key_cursor_view.opacity = 0;
             key_cursor_view.set_position (x, y);
-            key_cursor_view.animate (Clutter.AnimationMode.EASE_OUT_SINE, 250, "opacity", 255);
+            setup_animation (key_cursor_view, Clutter.AnimationMode.EASE_OUT_SINE, 250);
+            key_cursor_view.set_opacity (255);
         }
 
         key_cursor_ready = true;
@@ -267,8 +277,8 @@ public class GameView : Clutter.Group
         timeline = new Clutter.Timeline (500);
 
         new_board_view = create_board_view (current_level);
-        board_group.add_actor (new_board_view);
-        new_board_view.depth = 250;
+        board_group.add_child (new_board_view);
+        new_board_view.z_position = 250;
         new_board_view.opacity = 0;
 
         new_board_view.swap_in (-1, timeline);
