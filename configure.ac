@@ -18,11 +18,13 @@ dnl ###########################################################################
 GTK_REQUIRED=3.10.0
 CLUTTER_REQUIRED=1.14.0
 CLUTTER_GTK_REQUIRED=1.5.0
+RSVG_REQUIRED=2.32.0
 
 PKG_CHECK_MODULES(LIGHTSOFF, [
   gtk+-3.0 >= $GTK_REQUIRED
   clutter-1.0 >= $CLUTTER_REQUIRED
   clutter-gtk-1.0 >= $CLUTTER_GTK_REQUIRED
+  librsvg-2.0 >= $RSVG_REQUIRED
 ])
 
 AC_CHECK_LIB([m],[floor])
