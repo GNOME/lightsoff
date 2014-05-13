@@ -103,6 +103,7 @@ public class GameView : Clutter.Group
         left_arrow.anchor_gravity = Clutter.Gravity.CENTER;
         left_arrow.reactive = true;
         left_arrow.button_release_event.connect (left_arrow_button_release_cb);
+        left_arrow.touch_event.connect (left_arrow_touch_event_cb);
         left_arrow.set_position ((score_view.x - score_view.anchor_x) / 2, score_view.y + (score_view.height / 2) - 10);
         add_child (left_arrow);
 
@@ -110,6 +111,7 @@ public class GameView : Clutter.Group
         right_arrow.anchor_gravity = Clutter.Gravity.CENTER;
         right_arrow.reactive = true;
         right_arrow.button_release_event.connect (right_arrow_button_release_cb);
+        right_arrow.touch_event.connect (right_arrow_touch_event_cb);
         right_arrow.rotation_angle_y = 180;
         right_arrow.set_position (real_board_width - left_arrow.x, score_view.y + (score_view.height / 2) - 10);
         add_child (right_arrow);
@@ -176,6 +178,18 @@ public class GameView : Clutter.Group
         timeline.completed.connect (transition_complete_cb);
 
         level_changed (current_level);
+    }
+
+    private bool left_arrow_touch_event_cb (Clutter.Actor actor, Clutter.Event event)
+    {
+        swap_board (-1);
+        return false;
+    }
+	
+    private bool right_arrow_touch_event_cb (Clutter.Actor actor, Clutter.Event event)
+    {
+        swap_board (1);
+        return false;
     }
 
     private bool left_arrow_button_release_cb (Clutter.Actor actor, Clutter.ButtonEvent event)
