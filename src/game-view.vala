@@ -182,13 +182,15 @@ public class GameView : Clutter.Group
 
     private bool left_arrow_touch_event_cb (Clutter.Actor actor, Clutter.Event event)
     {
-        swap_board (-1);
+        if (event.type == Clutter.EventType.TOUCH_END)
+            swap_board (-1);
         return false;
     }
 	
     private bool right_arrow_touch_event_cb (Clutter.Actor actor, Clutter.Event event)
     {
-        swap_board (1);
+        if (event.type == Clutter.EventType.TOUCH_END)
+            swap_board (1);
         return false;
     }
 
