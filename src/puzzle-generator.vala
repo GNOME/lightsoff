@@ -31,7 +31,7 @@
 // (Certainly, on average, at most half the lights which belong to at least
 // one null set may be used.)
 
-public class PuzzleGenerator
+public class PuzzleGenerator : Object
 {
     private int size;
     private int max_solution_length;
