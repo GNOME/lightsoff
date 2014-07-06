@@ -1,4 +1,3 @@
-data/lightsoff.desktop.in
 src/board-view.c
 src/game-view.c
 src/led-array.c
