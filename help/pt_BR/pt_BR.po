@@ -1,0 +1,689 @@
+# Brazilian Portuguese translation for lightsoff.
+# Copyright (C) 2014 lightsoff's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lightsoff package.
+# Antonio Fernando Santos Ladeia <contato@antonioladeia.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lightsoff master\n"
+"POT-Creation-Date: 2014-07-08 09:40+0000\n"
+"PO-Revision-Date: 2014-06-25 16:04-0300\n"
+"Last-Translator: Antonio Fernando Santos Ladeia <contato@antonioladeia.com>\n"
+"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Antonio Fernando Santos Ladeia <contato@antonioladeia.com>, 2014"
+
+#. (itstool) path: credit/name
+#: C/basic.page:9 C/bug-filing.page:14 C/develop.page:15
+#: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
+#: C/translate.page:15
+msgid "Perumal Viravan"
+msgstr "Perumal Viravan"
+
+#. (itstool) path: credit/years
+#: C/basic.page:11 C/rules.page:11 C/strategy.page:10
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: license/p
+#: C/basic.page:14 C/bug-filing.page:18 C/develop.page:19
+#: C/documentation.page:17 C/index.page:16 C/strategy.page:13
+#: C/translate.page:19
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Atribuição compartilhada 3.0"
+
+#. (itstool) path: page/title
+#: C/basic.page:18
+msgid "Basics"
+msgstr "Básico"
+
+#. (itstool) path: page/p
+#: C/basic.page:19
+msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
+msgstr ""
+"<app>Luzes desligadas</app> pode ser jogado usando o teclado ou o mouse."
+
+#. (itstool) path: section/title
+#: C/basic.page:22
+msgid "Using the keyboard"
+msgstr "Usando o teclado"
+
+#. (itstool) path: item/p
+#: C/basic.page:24
+msgid ""
+"To select a tile, use the arrow keys to move the spotlight on to that tile "
+"and press the <key>Enter</key> key."
+msgstr ""
+"Para selecionar uma pedra, use as teclas de seta para mover o holofote entre "
+"as pedras e pressione a tecla <key>Enter</key>."
+
+#. (itstool) path: item/p
+#: C/basic.page:25 C/basic.page:33
+msgid ""
+"Once a tile is selected it will toggle the state of the selected tile and "
+"its non-diagonal neighbors."
+msgstr ""
+"Uma vez que a pedra é selecionada, ela vai alternar o estado da pedra "
+"selecionada e das pedras vizinhas não diagonais."
+
+#. (itstool) path: section/title
+#: C/basic.page:30
+msgid "Using the mouse"
+msgstr "Usando o mouse"
+
+#. (itstool) path: item/p
+#: C/basic.page:32
+msgid "To select a tile move the mouse pointer over the tile and click it."
+msgstr ""
+"Para selecionar uma pedra, mova o ponteiro do mouse para cima da pedra e "
+"clique nela."
+
+#. (itstool) path: section/title
+#: C/basic.page:38
+msgid "Progress through the levels"
+msgstr "Progresso através dos níveis"
+
+#. (itstool) path: item/p
+#: C/basic.page:40
+msgid ""
+"The progress through the levels is either by turning off all the lights in "
+"that level or using the arrow shaped buttons in the bottom of the game."
+msgstr ""
+"O progresso através dos níveis se dá desligando todas as luzes naquele nível "
+"ou usando os botões em forma de seta na parte inferior do jogo."
+
+#. (itstool) path: item/p
+#: C/basic.page:41
+msgid ""
+"The arrow shaped buttons at the bottom of the game allow you to skip the "
+"levels or return to the previous levels. The current level is shown at the "
+"bottom of the game."
+msgstr ""
+"Os botões em forma de seta na parte inferior do jogo permitem que você pule "
+"os níveis ou retorne aos níveis anteriores. O nível atual é mostrado na "
+"parte inferior do jogo."
+
+#. (itstool) path: figure/desc
+#: C/basic.page:45
+msgid ""
+"This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
+"shaped buttons at the bottom."
+msgstr ""
+"Isto mostra o <app>Luzes desligadas</app> padrão para o nível 3, com os "
+"botões em forma de seta na parte inferior."
+
+#. (itstool) path: section/title
+#: C/basic.page:51
+msgid "Video Demonstration"
+msgstr "Demonstração em vídeo"
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:9 C/develop.page:10 C/documentation.page:8
+#: C/translate.page:10
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#. (itstool) path: credit/years
+#: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
+#: C/translate.page:12
+msgid "2011"
+msgstr "2011"
+
+#. (itstool) path: page/title
+#: C/bug-filing.page:22
+msgid "Help make <app>Lights Off</app> better"
+msgstr "Ajudando a melhorar o <app>Luzes desligadas</app>"
+
+#. (itstool) path: section/title
+#: C/bug-filing.page:25
+msgid "Report a bug or suggest an improvement"
+msgstr "Relatando um erro ou sugirindo uma melhoria"
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:26
+msgid ""
+"<app>Lights Off</app> is maintained by a volunteer community. You are "
+"welcome to participate. If you notice a problem you can file a <em>bug "
+"report</em>. To file a bug, go to <link href=\"https://bugzilla.gnome.org/\"/"
+">."
+msgstr ""
+"<app>Luzes desligadas</app> é mantido por uma comunidade de voluntários. "
+"Você é bem-vindo para participar. Se você notar um problema, você pode "
+"enviar um <em>relatório de erros</em>. Para registrar um erro, vá para <link "
+"href=\"https://bugzilla.gnome.org/\"/>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:29
+msgid ""
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
+msgstr ""
+"Este é um sistema de rastreamento de erros, onde os usuários e os "
+"desenvolvedores podem apresentar detalhes sobre os erros, falhas e "
+"solicitação de melhorias."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:32
+msgid ""
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>New Account</gui> link to create one."
+msgstr ""
+"Para participar, você precisa de uma conta que lhe dará a habilidade de "
+"ganhar acesso, arquivos de erros e fazer comentários. Além disso, você "
+"precisa se registrar para que você possa receber atualizações por e-mail "
+"sobre o status do seu erro. Se você ainda não tem uma conta, basta clicar no "
+"link para criar uma <gui>New Account</gui>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:36
+msgid ""
+"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
+"gui><gui>Applications</gui><gui>lightsoff</gui></guiseq>. Before reporting a "
+"bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-"
+"writing.html\">bug writing guidelines</link>, and please <link href="
+"\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff\">browse</link> "
+"for the bug to see if it already exists."
+msgstr ""
+"Assim que possuir uma conta, faça login, clique em <guiseq><gui>File a Bug</"
+"gui><gui>Applications</gui><gui>lightsoff</gui></guiseq>. Antes de relatar "
+"um erro, por favor, leia as <link href=\"https://bugzilla.gnome.org/page.cgi?"
+"id=bug-writing.html\">diretrizes de escrita de erros</link>, e por favor "
+"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff"
+"\">procure</link> pelo erro para ver se ele já existe."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:44
+msgid ""
+"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
+"click <gui>Commit</gui>."
+msgstr ""
+"Se você está requisitando uma novo recurso, escolha <gui>enhancement</gui> "
+"no menu <gui>Severity</gui>. Preencha as seções Summary e Description e "
+"clique em <gui>Commit</gui>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:48
+msgid ""
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
+msgstr ""
+"Seu relatório receberá um número de identificação, e seu status será "
+"atualizado de forma como está sendo tratado. Obrigado por ajudar a fazer o "
+"<app>Luzes desligadas</app> melhor!"
+
+#. (itstool) path: page/title
+#: C/develop.page:23
+msgid "Help develop"
+msgstr "Ajudando a desenvolver"
+
+#. (itstool) path: page/p
+#: C/develop.page:24
+msgid ""
+"The <app>GNOME Games</app> are developed and maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"Os <app>GNOME Games</app> são desenvolvidos e mantidos por uma comunidade "
+"voluntária. Você é bem-vindo para participar."
+
+#. (itstool) path: page/p
+#: C/develop.page:27
+msgid ""
+"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"link>."
+msgstr ""
+"Se você gostaria de <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contributing\">ajudar o desenvolvimento dos <app>GNOME Games</app></link>, "
+"você pode entrar em contato com os desenvolvedores usando o <link href="
+"\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games"
+"\">irc</link>, ou via nossa <link href=\"http://mail.gnome.org/mailman/"
+"listinfo/games-list\">lista de discussão</link>."
+
+#. (itstool) path: page/title
+#: C/documentation.page:21
+msgid "Help write documentation"
+msgstr "Ajudando a escrever a documentação"
+
+#. (itstool) path: page/p
+#: C/documentation.page:23
+msgid ""
+"The <app>GNOME Games</app> documentation is maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"A documentação dos <app>GNOME Games</app> é mantida por uma comunidade de "
+"voluntários. Você é bem-vindo para participar."
+
+#. (itstool) path: page/p
+#: C/documentation.page:26
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">mailing list</link>."
+msgstr ""
+"Para contribuir com o Projeto de Documentação, não hesite em entrar em "
+"contato conosco usando o <link href=\"https://cbe003.chat.mibbit.com/?url=irc"
+"%3A%2F%2Firc.gnome.org%2Fdocs\">irc</link>, ou via nossa <link href=\"http://"
+"mail.gnome.org/mailman/listinfo/gnome-doc-list\">lista de discussão</link>."
+
+#. (itstool) path: page/p
+#: C/documentation.page:28
+msgid ""
+"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> page contains useful information."
+msgstr ""
+"Nossas páginas na <link href=\"https://live.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> contêm informações úteis."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Lights Off"
+msgstr "Luzes desligadas"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Lights Off"
+msgstr "Luzes desligadas"
+
+#. (itstool) path: media/span
+#: C/index.page:21
+msgid "Lights Off logo"
+msgstr "logo do Luzes desligadas"
+
+#. (itstool) path: page/title
+#: C/index.page:21
+msgid "<_:media-1/> Lights Off"
+msgstr "<_:media-1/> Luzes desligadas"
+
+#. (itstool) path: page/p
+#: C/index.page:23
+msgid ""
+"<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
+"off all the lights. Each click on a tile toggles the state of the clicked "
+"tile and its non-diagonal neighbors."
+msgstr ""
+"<app>Luzes desligadas</app> é um quebra-cabeça jogado numa matriz 5X5 com o "
+"objetivo de apagar todas as luzes. Cada clique em uma pedra alterna o estado "
+"da pedra clicada e dos seus vizinhos não-diagonais."
+
+#. (itstool) path: section/title
+#: C/index.page:27
+msgid "Game Play"
+msgstr "O jogo"
+
+#. (itstool) path: section/title
+#: C/index.page:31
+msgid "Get Involved"
+msgstr "Envolva-se"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr ""
+"Licença Creative Commons Atribuição-Compartilhada Igual 3.0 Não adaptada"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Esta obra é licenciada sobre uma <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Informação legal."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Licença"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Esta obra é distribuída sobre a licença Creative Commons Atribuição-"
+"Compartilhada Igual 3.0 Não adaptada."
+
+# https://creativecommons.org/licenses/by/3.0/br/
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Você tem o direito de:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Para compartilhar</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Para copiar, distribuir e transmitir a obra."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Para remixar</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Para adaptar o trabalho."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "De acordo com as seguintes condições:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Atribuição</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Você precisa atribuir o trabalho da forma especificada pelo autor ou "
+"licenciante (mas não de alguma forma sugerir que estes endossem você ou o "
+"seu uso da obra)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Atribuição compartilhada</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Se você alterar, transformar, ou ampliar esta obra, você somente poderá "
+"distribuir a obra resultante sob uma licença igual, similar ou compatível."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Para o texto completo da licença, veja o <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/legalcode\">website do CreativeCommons</link>, ou "
+"leia o completo <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"\">Ações Comuns</link>."
+
+#. (itstool) path: page/title
+#: C/rules.page:16
+msgid "Rules"
+msgstr "Regras"
+
+#. (itstool) path: page/p
+#: C/rules.page:18
+msgid ""
+"In order to complete the <app>Lights Off</app> puzzle, you must turn off all "
+"the lights in the board. This will get you to advance to the next level."
+msgstr ""
+"Para completar o quebra-cabeça do <app>Luzes desligadas</app>, você precisa "
+"apagar todas as luzes no tabuleiro. Isto irá levar você a avançar para o "
+"próximo nível."
+
+#. (itstool) path: item/p
+#: C/rules.page:20
+msgid "The game begins with a pattern of lights on the 5x5 grid."
+msgstr "O jogo inicia com um padrão de luzes em uma matriz 5x5."
+
+#. (itstool) path: item/p
+#: C/rules.page:21
+msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
+msgstr ""
+"Selecione uma pedra para alternar seu estado e dos seus vizinhos não-"
+"diagonais."
+
+#. (itstool) path: item/p
+#: C/rules.page:22
+msgid ""
+"Once you have successfully turned off all the lights, you complete that "
+"level and move on to the next."
+msgstr ""
+"Uma vez que você tenha apagado todas as luzes com sucesso, você completou "
+"este nível e vai para o próximo."
+
+#. (itstool) path: page/title
+#: C/strategy.page:17
+msgid "Strategy"
+msgstr "Estratégia"
+
+#. (itstool) path: page/p
+#: C/strategy.page:18
+msgid ""
+"This is a simple strategy to solve the <app>Lights Off</app> puzzle by using "
+"the method called \"Chase the Lights\"."
+msgstr ""
+"Esta é uma simples estratégia para resolver o quebra-cabeças <app>Luzes "
+"desligadas</app> usando o método chamado \"Perseguindo as Luzes\"."
+
+#. (itstool) path: item/p
+#: C/strategy.page:20
+msgid ""
+"Chase the lights starting from the first row. To chase the lights in the "
+"first row, click the tile on the second row corresponding to the light in "
+"the first row. This will turn off that light in the first row."
+msgstr ""
+"Persiga as luzes iniciando na primeira linha. Para perseguir as luzes na "
+"primeira linha, clique na pedra da segunda linha que corresponde a luz na "
+"primeira linha. Isto irá apagar a luz na primeira linha."
+
+#. (itstool) path: note/p
+#: C/strategy.page:21
+msgid ""
+"This method can be used in the same way to chase the lights in other rows as "
+"well, i.e., if you want to chase the lights in the second row, click the "
+"corresponding tile in the third row."
+msgstr ""
+"Este método pode ser usado da mesma forma para perseguir as luzes em outras "
+"linhas também, i.e., se você precisar perseguir as luzes na segunda linha, "
+"clique na pedra correspondente na terceira linha."
+
+#. (itstool) path: item/p
+#: C/strategy.page:23
+msgid ""
+"In the same way continue to chase the lights in the second, third and fourth "
+"row. At the end of this you will be only left with the lights in the fifth "
+"row."
+msgstr ""
+"Da mesma forma, continue a perseguir as luzes da segunda, terceira e quarta "
+"linha. No final disso você só terá as luzes na quinta linha."
+
+#. (itstool) path: item/p
+#: C/strategy.page:25
+msgid ""
+"Now depending on which lights are remaining in the fifth row, click the "
+"tiles in the first row using the table given below."
+msgstr ""
+"Agora, dependendo de quais luzes estão permanecendo na quinta linha, clique "
+"nas pedras na primeira linha usando a tabela apresentada abaixo."
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Lights Left on the fifth Row"
+msgstr "Luzes à esquerda na quinta linha"
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Tiles to Click on the First Row"
+msgstr "Pedras para clicar na primeira linha"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "1, 2, 3"
+msgstr "1, 2, 3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "2"
+msgstr "2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "1, 2, 4, 5"
+msgstr "1, 2, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "3"
+msgstr "3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "1, 3, 4"
+msgstr "1, 3, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "5"
+msgstr "5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 5"
+msgstr "1, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 2"
+msgstr "1, 2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "2, 3, 5"
+msgstr "2, 3, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "1"
+msgstr "1"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "2, 4"
+msgstr "2, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "1, 4"
+msgstr "1, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "3, 4, 5"
+msgstr "3, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "4"
+msgstr "4"
+
+#. (itstool) path: item/p
+#: C/strategy.page:48
+msgid ""
+"Now again chase the lights starting from the first row. After chasing the "
+"lights this time your puzzle will be solved."
+msgstr ""
+"Agora novamente persiga as luzes a partir da primeira linha. Depois de "
+"perseguir as luzes desta vez seu quebra-cabeça será resolvido."
+
+#. (itstool) path: note/p
+#: C/strategy.page:50
+msgid ""
+"This strategy doesn't always produce the optimal solution, it may take more "
+"moves."
+msgstr ""
+"Esta estratégia nem sempre produz a solução ideal, ela pode demandar mais "
+"movimentos."
+
+#. (itstool) path: page/title
+#: C/translate.page:23
+msgid "Help translate"
+msgstr "Ajudando a traduzir"
+
+#. (itstool) path: page/p
+#: C/translate.page:24
+msgid ""
+"The <app>GNOME Games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community. You are welcome to "
+"participate."
+msgstr ""
+"As interfaces de usuário e documentações dos <app>GNOME Games</app> estão "
+"sendo traduzidas por uma comunidade de voluntários em todo o mundo. Você é "
+"bem-vindo para participar."
+
+#. (itstool) path: page/p
+#: C/translate.page:27
+msgid ""
+"There are <link href=\"http://l10n.gnome.org/module/lightsoff/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"Existem <link href=\"http://l10n.gnome.org/module/lightsoff/\">muitos "
+"idiomas</link> que necessitam de tradução."
+
+#. (itstool) path: page/p
+#: C/translate.page:30
+msgid ""
+"To start translating you will need to <link href=\"http://l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"teams/\">translation team</link> for your language. This will give you the "
+"ability to upload new translations."
+msgstr ""
+"Para começar a traduzir, você vai precisar <link href=\"http://l10n.gnome.org"
+"\">criar uma conta</link> e entrar na <link href=\"http://l10n.gnome.org/"
+"teams/\">equipe de tradução</link> do seu idioma. Isto lhe dará a capacidade "
+"de enviar novas traduções."
+
+#. (itstool) path: page/p
+#: C/translate.page:34
+msgid ""
+"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
+"channel are located worldwide, so you may not get an immediate response as a "
+"result of timezone differences."
+msgstr ""
+"Você pode conversar com os tradutores do GNOME usando o <link href=\"https://"
+"cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. "
+"As pessoas no canal estão espalhados pelo mundo, de modo que você pode não "
+"obter uma resposta imediatamente, por causa das diferenças de fuso horário."
+
+#. (itstool) path: page/p
+#: C/translate.page:37
+msgid ""
+"Alternatively, you can contact the Internationalization Team using their "
+"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"list</link>."
+msgstr ""
+"Alternativamente, você pode contactar a equipe de internacionalização usando "
+"sua <link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">lista "
+"de discussão</link>."
