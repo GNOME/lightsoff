@@ -1,0 +1,92 @@
+# Scottish Gaelic translation for lightsoff.
+# Copyright (C) 2014 lightsoff's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lightsoff package.
+# GunChleoc <fios@foramnagaidhlig.net>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: lightsoff gnome-3-12\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=lights"
+"off&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-07-11 09:35+0000\n"
+"PO-Revision-Date: 2014-07-11 12:24+0100\n"
+"Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
+"Language-Team: Fòram na Gàidhlig http://www.foramnagaidhlig.net\n"
+"Language: gd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/lightsoff.appdata.xml.in.h:1
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"'S e cruinneachadh de thòimhseachain suidsichean solais a tha sa \"Cuir na "
+"solasan dheth\". thèid an solas air no dheth nuair a bhriogas tu air suidse "
+"ach cuiridh e an solas dheth airson na solasan timcheall air cuideachd. Tha "
+"an t-amas simplidh: cuid na solasan uile dheth!"
+
+#: ../data/lightsoff.appdata.xml.in.h:2
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"Còrdaidh an àireamh mhòr de leibheilean ris na cluicheadairean leis an toil "
+"cur sholasan dheth."
+
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
+#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
+msgid "Lights Off"
+msgstr "Cuir na solasan dheth"
+
+#: ../data/lightsoff.desktop.in.h:2
+msgid "Turn off all the lights"
+msgstr "Cuir na solasan uile dheth"
+
+#: ../data/lightsoff.desktop.in.h:3
+msgid "game;logic;board;tiles;adjacent;puzzle;"
+msgstr ""
+"game;logic;board;tiles;adjacent;puzzle;geama;loidsig;bòrd,leacan;tòmhseachan"
+
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+msgid "The current level"
+msgstr "An leibheil làithreach"
+
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+msgid "The users's most recent level."
+msgstr "An leibheil às ùire aig a' chleachdaiche."
+
+#: ../src/lightsoff.vala:44
+msgid "_New Game"
+msgstr "Geama ù_r"
+
+#: ../src/lightsoff.vala:47
+msgid "_Help"
+msgstr "Cob_hair"
+
+#: ../src/lightsoff.vala:48
+msgid "_About"
+msgstr "_Mu dhèidhinn"
+
+#: ../src/lightsoff.vala:49
+msgid "_Quit"
+msgstr "_Fàg an-seo"
+
+#: ../src/lightsoff.vala:166
+msgid ""
+"Turn off all the lights\n"
+"\n"
+"Lights Off is a part of GNOME Games."
+msgstr ""
+"Cuir na solasan uile dheth\n"
+"\n"
+"Tha \"Cuir na solasan dheth\" 'na phàirt dhe Geamannan GNOME."
+
+#: ../src/lightsoff.vala:172
+msgid "translator-credits"
+msgstr "GunChleoc fios@foramnagaidhlig.net"
