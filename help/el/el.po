@@ -6,157 +6,66 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2014-01-06 08:34+0000\n"
-"PO-Revision-Date: 2014-01-11 18:04+0300\n"
-"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
+"POT-Creation-Date: 2014-07-18 21:41+0000\n"
+"PO-Revision-Date: 2014-08-02 17:14+0200\n"
+"Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: www.gnome.gr\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Project-Style: gnome\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Ελληνική μεταφραστική ομάδα GNOME\n"
-" Δημήτρης Σπίγγος <dmtrs32@gmail.com>, 2014\n"
-" Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2010\n"
-" Θάνος Τρυφωνίδης <tomtryf@gmail.com>, 2012\n"
-"\n"
-"Για περισσότερα δείτε: http://gnome.gr"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:6
-msgctxt "_"
-msgid ""
-"external ref='figures/lightsoff_logo.jpg' "
-"md5='8d8b8efd7f0cfb455cb7fba261433455'"
-msgstr ""
-"external ref='figures/lightsoff_logo.jpg' "
-"md5='8d8b8efd7f0cfb455cb7fba261433455'"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:20
-msgctxt "_"
-msgid ""
-"external ref='figures/lightsoff.jpg' md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
-msgstr ""
-"external ref='figures/lightsoff.jpg' md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
-
-#. (itstool) path: info/title
-#: C/index.page:7
-msgctxt "link"
-msgid "Lights Off"
-msgstr "Σβήστε τα φώτα"
-
-#. (itstool) path: info/title
-#: C/index.page:8
-msgctxt "text"
-msgid "Lights Off"
-msgstr "Σβήστε τα φώτα"
+"Για την Ελληνική μεταφραστική ομάδα GNOME <team@gnome.gr>,2010, 2012, 2014\n"
+"Δημήτρης Σπίγγος <dmtrs32@gmail.com>, 2014\n"
+"Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2010\n"
+"Θάνος Τρυφωνίδης <tomtryf@gmail.com>, 2012\n"
+"Mαρία Μαυρίδου <mavridou@gmail.com>, 2014"
 
 #. (itstool) path: credit/name
-#: C/index.page:11 C/basic.page:8 C/bug-filing.page:15 C/develop.page:15
-#: C/documentation.page:13 C/rules.page:9 C/strategy.page:8
+#: C/basic.page:9 C/bug-filing.page:14 C/develop.page:15
+#: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
 #: C/translate.page:15
 msgid "Perumal Viravan"
 msgstr "Perumal Viravan"
 
+#. (itstool) path: credit/years
+#: C/basic.page:11 C/rules.page:11 C/strategy.page:10
+msgid "2012"
+msgstr "2012"
+
 #. (itstool) path: license/p
-#: C/index.page:15 C/basic.page:13 C/bug-filing.page:19 C/develop.page:19
-#: C/documentation.page:17 C/strategy.page:13 C/translate.page:19
+#: C/basic.page:14 C/bug-filing.page:18 C/develop.page:19
+#: C/documentation.page:17 C/index.page:16 C/strategy.page:13
+#: C/translate.page:19
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Share Alike 3.0"
 
 #. (itstool) path: page/title
-#: C/index.page:20
-msgid ""
-"<media type=\"image\" src=\"figures/lightsoff.jpg\">Lights Off logo</media> "
-"Lights Off"
-msgstr ""
-"<media type=\"image\" src=\"figures/lightsoff.jpg\">Λογότυπος του Σβήστε τα "
-"φώτα</media> Σβήστε τα φώτα"
-
-#. (itstool) path: page/p
-#: C/index.page:22
-msgid ""
-"<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
-"off all the lights. Each click on a tile toggles the state of the clicked "
-"tile and its non-diagonal neighbors."
-msgstr ""
-"Το <application>Σβήστε τα φώτα</application> είναι ένα παιχνίδι γρίφου που "
-"παίζεται σε πλέγμα 5x5, ο σκοπός του οποίου είναι να σβήσετε όλα τα "
-"τετράγωνα στο ταμπλό. Κάθε πάτημα εναλλάσσει την κατάσταση του πατημένου "
-"τετραγώνου και των μη διαγώνια εφαπτόμενων του τετραγώνων."
-
-#. (itstool) path: section/title
-#: C/index.page:26
-msgid "Game Play"
-msgstr "Παιχνίδι"
-
-#. (itstool) path: section/title
-#: C/index.page:30
-msgid "Get Involved"
-msgstr "Συμμετοχή"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/basic.page:45
-msgctxt "_"
-msgid "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
-msgstr "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/basic.page:51
-msgctxt "_"
-msgid ""
-"external ref='figures/lightsoff.ogv' md5='61b453a759cd54689b3a321089290bf8'"
-msgstr ""
-"external ref='figures/lightsoff.ogv' md5='61b453a759cd54689b3a321089290bf8'"
-
-#. (itstool) path: credit/years
-#: C/basic.page:10 C/rules.page:11 C/strategy.page:10
-msgid "2012"
-msgstr "2012"
-
-#. (itstool) path: page/title
-#: C/basic.page:17
+#: C/basic.page:18
 msgid "Basics"
 msgstr "Βασικά"
 
 #. (itstool) path: page/p
-#: C/basic.page:18
+#: C/basic.page:19
 msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
 msgstr ""
 "Το <app>Σβήστε τα φώτα</app> μπορεί να παιχτεί χρησιμοποιώντας το "
 "πληκτρολόγιο ή το ποντίκι."
 
 #. (itstool) path: section/title
-#: C/basic.page:21
+#: C/basic.page:22
 msgid "Using the keyboard"
 msgstr "Χρησιμοποιώντας το πληκτρολόγιο"
 
 #. (itstool) path: item/p
-#: C/basic.page:23
+#: C/basic.page:24
 msgid ""
 "To select a tile, use the arrow keys to move the spotlight on to that tile "
 "and press the <key>Enter</key> key."
@@ -165,7 +74,7 @@ msgstr ""
 "στο τετράγωνο και πατήστε το πλήκτρο <key>Enter</key>."
 
 #. (itstool) path: item/p
-#: C/basic.page:24 C/basic.page:32
+#: C/basic.page:25 C/basic.page:33
 msgid ""
 "Once a tile is selected it will toggle the state of the selected tile and "
 "its non-diagonal neighbors."
@@ -174,24 +83,24 @@ msgstr ""
 "διαγώνιων γειτονικών του τετραγώνων."
 
 #. (itstool) path: section/title
-#: C/basic.page:29
+#: C/basic.page:30
 msgid "Using the mouse"
 msgstr "Χρησιμοποιώντας το ποντίκι"
 
 #. (itstool) path: item/p
-#: C/basic.page:31
+#: C/basic.page:32
 msgid "To select a tile move the mouse pointer over the tile and click it."
 msgstr ""
 "Για να επιλέξετε ένα τετράγωνο μετακινήστε τον δρομέα του ποντικιού πάνω από "
 "το τετράγωνο και κάντε κλικ σε αυτό."
 
 #. (itstool) path: section/title
-#: C/basic.page:37
+#: C/basic.page:38
 msgid "Progress through the levels"
 msgstr "Πρόοδος μεταξύ των επιπέδων"
 
 #. (itstool) path: item/p
-#: C/basic.page:39
+#: C/basic.page:40
 msgid ""
 "The progress through the levels is either by turning off all the lights in "
 "that level or using the arrow shaped buttons in the bottom of the game."
@@ -201,7 +110,7 @@ msgstr ""
 "σχήμα βέλους στο κάτω μέρος του παιχνιδιού. "
 
 #. (itstool) path: item/p
-#: C/basic.page:40
+#: C/basic.page:41
 msgid ""
 "The arrow shaped buttons at the bottom of the game allow you to skip the "
 "levels or return to the previous levels. The current level is shown at the "
@@ -212,43 +121,43 @@ msgstr ""
 "επίπεδο εμφανίζεται στο κάτω μέρος του παιχνιδιού."
 
 #. (itstool) path: figure/desc
-#: C/basic.page:44
+#: C/basic.page:45
 msgid ""
 "This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
 "shaped buttons at the bottom."
 msgstr ""
-"Δείχνει το μοτίβο του <app>Σβήστε τα φώτα</app> για το επίπεδο 3, με τα "
+"Εμφανίζει το μοτίβο του <app>Σβήστε τα φώτα</app> για το επίπεδο 3, με τα "
 "κουμπιά σε σχήμα βέλους στο κάτω μέρος."
 
 #. (itstool) path: section/title
-#: C/basic.page:50
+#: C/basic.page:51
 msgid "Video Demonstration"
 msgstr "Βίντεο επίδειξης"
 
 #. (itstool) path: credit/name
-#: C/bug-filing.page:10 C/develop.page:10 C/documentation.page:8
+#: C/bug-filing.page:9 C/develop.page:10 C/documentation.page:8
 #: C/translate.page:10
 msgid "Tiffany Antopolski"
 msgstr "Tiffany Antopolski"
 
 #. (itstool) path: credit/years
-#: C/bug-filing.page:12 C/develop.page:12 C/documentation.page:10
+#: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
 #: C/translate.page:12
 msgid "2011"
 msgstr "2011"
 
 #. (itstool) path: page/title
-#: C/bug-filing.page:23
+#: C/bug-filing.page:22
 msgid "Help make <app>Lights Off</app> better"
 msgstr "Βοηθήστε να κάνουμε καλύτερο το <app>Σβήστε τα Φώτα</app>"
 
 #. (itstool) path: section/title
-#: C/bug-filing.page:26
+#: C/bug-filing.page:25
 msgid "Report a bug or suggest an improvement"
 msgstr "Αναφορά σφάλματος ή πρόταση βελτίωσης"
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:27
+#: C/bug-filing.page:26
 msgid ""
 "<app>Lights Off</app> is maintained by a volunteer community. You are "
 "welcome to participate. If you notice a problem you can file a <em>bug "
@@ -257,11 +166,11 @@ msgid ""
 msgstr ""
 "Το <app>Σβήστε τα φώτα</app> διατηρείται από μια εθελοντική κοινότητα. Είστε "
 "ευπρόσδεκτοι να συμμετάσχετε. Αν παρατηρήσετε κάποιο πρόβλημα μπορείτε να "
-"κάνετε μια <em>αναφορά σφάλματος (bug report)</em>. Για να κάνετε αναφορά "
-"σφάλματος πηγαίνετε <link href=\"https://bugzilla.gnome.org/\"/>."
+"κάνετε μια <em>αναφορά σφάλματος</em>. Για να κάνετε αναφορά σφάλματος "
+"πηγαίνετε <link href=\"https://bugzilla.gnome.org/\"/>."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:30
+#: C/bug-filing.page:29
 msgid ""
 "This is a bug tracking system where users and developers can file details "
 "about bugs, crashes and request enhancements."
@@ -270,21 +179,21 @@ msgstr ""
 "μπορούν να κάνουν αναφορές για σφάλματα, «κρασαρίσματα» και βελτιώσεις."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:33
+#: C/bug-filing.page:32
 msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
 "receive updates by e-mail about the status of your bug. If you don't already "
 "have an account, just click on the <gui>New Account</gui> link to create one."
 msgstr ""
-"Για να λάβετε μέρος χρειάζεστε ένα λογαριασμό που θα σας δώσει πρόσβαση, να "
+"Για να συμμετάσχετε χρειάζεστε ένα λογαριασμό που θα σας δώσει πρόσβαση, να "
 "κάνετε αναφορές σφαλμάτων καθώς και σχόλια. Επίσης, πρέπει να εγγραφείτε για "
 "να δέχεστε ενημερώσεις μέσω ηλεκτρονικού ταχυδρομείου για την κατάσταση του "
-"σφάλματος σας. Εάν δεν έχετε ήδη λογαριασμό, απλά πατήστε <gui>Νέος "
-"λογαριασμός</gui> για να δημιουργήσετε."
+"σφάλματός σας. Εάν δεν έχετε ήδη λογαριασμό, απλά πατήστε στον σύνδεσμο "
+"<gui>Νέος λογαριασμός</gui> για να δημιουργήσετε έναν."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:37
+#: C/bug-filing.page:36
 msgid ""
 "Once you have an account, log in, click on <guiseq><gui>File a Bug</"
 "gui><gui>Applications</gui><gui>lightsoff</gui></guiseq>. Before reporting a "
@@ -302,25 +211,25 @@ msgstr ""
 "ίδια αναφορά ήδη."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:45
+#: C/bug-filing.page:44
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
 "click <gui>Commit</gui>."
 msgstr ""
-"Αν θέλετε κάποιο καινούργιο χαρακτηριστικό, διαλέξτε <gui>enhancement</gui> "
-"στο μενού <gui>Severity</gui>. Συμπληρώστε την Περίληψη και την Περιγραφή "
-"και πατήστε <gui>Commit</gui>."
+"Αν θέλετε κάποια νέα λειτουργία, διαλέξτε <gui>enhancement</gui> στο μενού "
+"<gui>Severity</gui>. Συμπληρώστε την περίληψη και την περιγραφή και πατήστε "
+"<gui>Commit</gui>."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:49
+#: C/bug-filing.page:48
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
 msgstr ""
-"Στην αναφορά σας θα δοθεί ένας αριθμός ID και η κατάστασή της θα ενημερωθεί "
-"όταν θα επεξεργαστεί. Ευχαριστούμε για τη βοήθειά σας να κάνουμε το "
-"<app>Σβήστε τα φώτα</app> καλύτερο!"
+"Στην αναφορά σας θα δοθεί ένας αριθμός ταυτότητας και η κατάστασή της θα "
+"ενημερωθεί όταν θα επεξεργαστεί. Ευχαριστούμε για τη βοήθειά σας να κάνουμε "
+"το <app>Σβήστε τα φώτα</app> καλύτερο!"
 
 #. (itstool) path: page/title
 #: C/develop.page:23
@@ -339,14 +248,14 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/develop.page:27
 msgid ""
-"If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
+"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
 "touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
 "url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
 "href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
-"Εάν θα θέλατε να <link href=\"https://live.gnome.org/GnomeGames/Contributing"
+"Εάν θα θέλατε να <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
 "\">βοηθήσετε στην ανάπτυξη των <app>Παιχνιδιών του GNOME</app></link>, "
 "μπορείτε να επικοινωνήσετε με τους προγραμματιστές χρησιμοποιώντας το <link "
 "href=\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-"
@@ -390,10 +299,54 @@ msgstr ""
 "Επίσης το <link href=\"https://live.gnome.org/DocumentationProject/"
 "Contributing\">wiki</link> μας περιέχει χρήσιμες πληροφορίες."
 
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Lights Off"
+msgstr "Σβήστε τα φώτα"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Lights Off"
+msgstr "Σβήστε τα φώτα"
+
+#. (itstool) path: media/span
+#: C/index.page:21
+msgid "Lights Off logo"
+msgstr "Λογότυπο Σβήστε τα φώτα"
+
+#. (itstool) path: page/title
+#: C/index.page:21
+msgid "<_:media-1/> Lights Off"
+msgstr "<_:media-1/> Σβήστε τα φώτα"
+
+#. (itstool) path: page/p
+#: C/index.page:23
+msgid ""
+"<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
+"off all the lights. Each click on a tile toggles the state of the clicked "
+"tile and its non-diagonal neighbors."
+msgstr ""
+"Το <app>Σβήστε τα φώτα</app> είναι ένα παιχνίδι γρίφου που παίζεται σε "
+"πλέγμα 5x5, ο σκοπός του οποίου είναι να σβήσετε όλα τα τετράγωνα στο "
+"ταμπλό. Κάθε πάτημα εναλλάσσει την κατάσταση του πατημένου τετραγώνου και "
+"των μη διαγώνια εφαπτόμενων γειτονικών του τετραγώνων."
+
+#. (itstool) path: section/title
+#: C/index.page:27
+msgid "Game Play"
+msgstr "Παιχνίδι"
+
+#. (itstool) path: section/title
+#: C/index.page:31
+msgid "Get Involved"
+msgstr "Συμμετοχή"
+
 #. (itstool) path: p/link
 #: C/legal.xml:3
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Άδεια Creative Commons Attribution-ShareAlike 3.0 Unported"
 
 #. (itstool) path: license/p
 #: C/legal.xml:3
@@ -437,12 +390,12 @@ msgstr "Να αντιγράψετε, να διανείμετε και να με�
 #. (itstool) path: item/title
 #: C/license.page:29
 msgid "<em>To remix</em>"
-msgstr "<em>Να τροποποιήσετε</em>"
+msgstr "<em>Να διασκευάσετε</em>"
 
 #. (itstool) path: item/p
 #: C/license.page:30
 msgid "To adapt the work."
-msgstr "Να προσαρμόσετε το έργο."
+msgstr "Να τροποποιήσετε το έργο."
 
 #. (itstool) path: page/p
 #: C/license.page:33
@@ -503,8 +456,8 @@ msgid ""
 "In order to complete the <app>Lights Off</app> puzzle, you must turn off all "
 "the lights in the board. This will get you to advance to the next level."
 msgstr ""
-"Για να ολοκληρώσετε το παζλ του <app>Σβήστε τα φώτα</app>, πρέπει να σβήσετε "
-"όλα τα φώτα στο ταμπλό. Έτσι θα προχωρήσετε στο επόμενο επίπεδο."
+"Για να ολοκληρώσετε τον γρίφο του <app>Σβήστε τα φώτα</app>, πρέπει να "
+"σβήσετε όλα τα φώτα στον πίνακα. Έτσι θα προχωρήσετε στο επόμενο επίπεδο."
 
 #. (itstool) path: item/p
 #: C/rules.page:20
@@ -516,7 +469,7 @@ msgstr "Το παιχνίδι ξεκινά με ένα μοτίβο από φώ�
 msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
 msgstr ""
 "Επιλέξτε ένα τετράγωνο για να αλλάξετε την κατάσταση του καθώς και των μη-"
-"διαγώνιων γειτόνων του."
+"διαγώνιων γειτονικών του."
 
 #. (itstool) path: item/p
 #: C/rules.page:22
@@ -538,7 +491,7 @@ msgid ""
 "This is a simple strategy to solve the <app>Lights Off</app> puzzle by using "
 "the method called \"Chase the Lights\"."
 msgstr ""
-"Αυτή είναι μια απλή στρατηγική για να λύσετε το παζλ του <app>Σβήστε τα "
+"Αυτή είναι μια απλή στρατηγική για να λύσετε τον γρίφο του <app>Σβήστε τα "
 "φώτα</app> χρησιμοποιώντας τη μέθοδο \"Κυνηγήστε τα φώτα\"."
 
 #. (itstool) path: item/p
@@ -670,7 +623,7 @@ msgid ""
 "lights this time your puzzle will be solved."
 msgstr ""
 "Τώρα κυνηγήστε ξανά τα φώτα ξεκινώντας από την πρώτη γραμμή. Μετά από αυτό "
-"το κυνηγητό το παζλ σας θα λυθεί."
+"το κυνηγητό ο γρίφος σας θα λυθεί."
 
 #. (itstool) path: note/p
 #: C/strategy.page:50
@@ -693,9 +646,8 @@ msgid ""
 "translated by a world-wide volunteer community. You are welcome to "
 "participate."
 msgstr ""
-"Η διεπαφή και η τεκμηρίωση των <app>παιχνιδιών του GNOME</app>  "
-"μεταφράζονται από μια εθελοντική κοινότητα. Είσαστε καλοδεχούμενοι να "
-"συμμετάσχετε."
+"Η διεπαφή και η τεκμηρίωση των <app>παιχνιδιών του GNOME</app> μεταφράζονται "
+"από μια εθελοντική κοινότητα. Είσαστε καλοδεχούμενοι να συμμετάσχετε."
 
 #. (itstool) path: page/p
 #: C/translate.page:27
@@ -742,6 +694,43 @@ msgstr ""
 "Εναλλακτικά, μπορείτε να επικοινωνήσετε με την ομάδα διεθνοποίησης "
 "χρησιμοποιώντας την <link href=\"http://mail.gnome.org/mailman/listinfo/"
 "gnome-i18n\">λίστα αλληλογραφίας</link> τους."
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/lightsoff_logo.jpg' "
+#~ "md5='8d8b8efd7f0cfb455cb7fba261433455'"
+#~ msgstr ""
+#~ "external ref='figures/lightsoff_logo.jpg' "
+#~ "md5='8d8b8efd7f0cfb455cb7fba261433455'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/lightsoff.jpg' "
+#~ "md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
+#~ msgstr ""
+#~ "external ref='figures/lightsoff.jpg' "
+#~ "md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
+
+#~ msgid ""
+#~ "<media type=\"image\" src=\"figures/lightsoff.jpg\">Lights Off logo</"
+#~ "media> Lights Off"
+#~ msgstr ""
+#~ "<media type=\"image\" src=\"figures/lightsoff.jpg\">Λογότυπος του Σβήστε "
+#~ "τα φώτα</media> Σβήστε τα φώτα"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
+#~ msgstr ""
+#~ "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/lightsoff.ogv' "
+#~ "md5='61b453a759cd54689b3a321089290bf8'"
+#~ msgstr ""
+#~ "external ref='figures/lightsoff.ogv' "
+#~ "md5='61b453a759cd54689b3a321089290bf8'"
 
 #~ msgid ""
 #~ "To file your bug, choose the component <gui>lightsoff</gui> in the "
