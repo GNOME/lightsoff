@@ -15,6 +15,7 @@ lightsoff_VALAFLAGS = \
 	--pkg clutter-gtk-1.0
 
 lightsoff_CFLAGS = \
+	-w \
 	-DVERSION=\"$(VERSION)\" \
 	-DGETTEXT_PACKAGE=\"$(GETTEXT_PACKAGE)\" \
 	-DDATADIR=\""$(datadir)/lightsoff"\" \
