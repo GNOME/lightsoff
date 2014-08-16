@@ -2,9 +2,6 @@ SUBDIRS = icons
 
 lightsoffdir = $(datadir)/lightsoff
 lightsoff_DATA = \
-	arrow.svg \
-	backing.svg \
-	led-back.svg \
 	off.svg \
 	on.svg \
 	highlight.svg

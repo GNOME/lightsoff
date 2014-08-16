@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2010-2013 Robert Ancell
+ * Copyright (C) 2014 Michael Catanzaro
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -11,15 +12,22 @@
 public class LightsOff : Gtk.Application
 {
     private Settings settings;
-    private Gtk.Window window;
+    private Gtk.ApplicationWindow window;
+    private Gtk.HeaderBar headerbar;
     private GameView game_view;
 
     private const GLib.ActionEntry[] action_entries =
     {
-        { "new-game",      new_game_cb },
         { "quit",          quit_cb     },
         { "help",          help_cb     },
         { "about",         about_cb    }
+    };
+
+    private const ActionEntry[] window_actions =
+    {
+        { "new-game",       new_game_cb },
+        { "previous-level", previous_level_cb },
+        { "next-level",     next_level_cb }
     };
     
     private LightsOff ()
@@ -34,14 +42,14 @@ public class LightsOff : Gtk.Application
         Gtk.Settings.get_default ().set ("gtk-application-prefer-dark-theme", true);
 
         add_action_entries (action_entries, this);
-        add_accelerator ("<Primary>n", "app.new-game", null);
+        add_accelerator ("<Primary>n", "win.new-game", null);
         add_accelerator ("F1", "app.help", null);
         add_accelerator ("<Primary>q", "app.quit", null);
 
         var menu = new Menu ();
         var section = new Menu ();
         menu.append_section (null, section);
-        section.append (_("_New Game"), "app.new-game");
+        section.append (_("_New Game"), "win.new-game");
         section = new Menu ();
         menu.append_section (null, section);
         section.append (_("_Help"), "app.help");
@@ -52,13 +60,28 @@ public class LightsOff : Gtk.Application
         settings = new Settings ("org.gnome.lightsoff");
 
         window = new Gtk.ApplicationWindow (this);
+        window.add_action_entries (window_actions, this);
         window.icon_name = "lightsoff";
         window.resizable = false;
 
-        var headerbar = new Gtk.HeaderBar ();
+        var left_button = new Gtk.Button.from_icon_name ("go-previous-symbolic", Gtk.IconSize.BUTTON);
+        left_button.valign = Gtk.Align.CENTER;
+        left_button.action_name = "win.previous-level";
+        left_button.set_tooltip_text (_("Return to the previous level"));
+        left_button.show ();
+
+        var right_button = new Gtk.Button.from_icon_name ("go-next-symbolic", Gtk.IconSize.BUTTON);
+        right_button.valign = Gtk.Align.CENTER;
+        right_button.action_name = "win.next-level";
+        right_button.set_tooltip_text (_("Proceed to the next level"));
+        right_button.show ();
+
+        headerbar = new Gtk.HeaderBar ();
         headerbar.show_close_button = true;
-        headerbar.set_title (_("Lights Off"));
+        headerbar.pack_start (left_button);
+        headerbar.pack_end (right_button);
         headerbar.show ();
+        level_changed_cb (settings.get_int ("level"));
         window.set_titlebar (headerbar);
 
         var clutter_embed = new GtkClutter.Embed ();
@@ -77,10 +100,31 @@ public class LightsOff : Gtk.Application
         stage.set_size (game_view.width, game_view.height);
         clutter_embed.set_size_request ((int) stage.width, (int) stage.height);
     }
-    
+
+    private void update_title (int level)
+    {
+        /* The title of the window, %d is the level number */
+        headerbar.title = _("Level %d".printf (level));
+        /* Subtitle of the window when playing level one. */
+        headerbar.subtitle = level == 1 ? _("Turn off all the lights!") : null;
+    }
+
+    private void previous_level_cb ()
+    {
+        game_view.swap_board (-1);
+    }
+
+    private void next_level_cb ()
+    {
+        game_view.swap_board (1);
+    }
+
     private void level_changed_cb (int level)
     {
-        settings.set_int ("level", level);
+        ((SimpleAction) (window.lookup_action ("previous-level"))).set_enabled (level > 1);
+        update_title (level);
+	if (level != settings.get_int ("level"))
+            settings.set_int ("level", level);
     }
 
     private bool key_release_event_cb (Clutter.Actor actor, Clutter.KeyEvent event)

@@ -15,24 +15,17 @@ public void setup_animation (Clutter.Actor actor, Clutter.AnimationMode mode, ui
 
 public class GameView : Clutter.Group
 {
-    private Clutter.Texture backing_texture;
     private Clutter.Texture highlight_texture;
     private Clutter.Texture off_texture;
     private Clutter.Texture on_texture;
-    private Clutter.Texture led_back_texture;
-    private Clutter.Texture arrow_texture;
 
     private int current_level;
 
     private List<Clutter.Actor> actor_remove_queue = null;
 
-    private LEDArray score_view;
     private Clutter.Actor board_group;
     private BoardView board_view;
     private BoardView? new_board_view = null;
-    private Clutter.Actor backing_view;
-    private Clutter.Actor left_arrow;
-    private Clutter.Actor right_arrow;
     private Clutter.Actor key_cursor_view;
 
     private Clutter.Timeline timeline;
@@ -50,12 +43,9 @@ public class GameView : Clutter.Group
     {
         try
         {
-            backing_texture = new Clutter.Texture.from_file (Path.build_filename (DATADIR, "backing.svg"));
             highlight_texture = new Clutter.Texture.from_file (Path.build_filename (DATADIR, "highlight.svg"));
             off_texture = new Clutter.Texture.from_file (Path.build_filename (DATADIR, "off.svg"));
             on_texture = new Clutter.Texture.from_file (Path.build_filename (DATADIR, "on.svg"));
-            led_back_texture = new Clutter.Texture.from_file (Path.build_filename (DATADIR, "led-back.svg"));
-            arrow_texture = new Clutter.Texture.from_file (Path.build_filename (DATADIR, "arrow.svg"));
         }
         catch (Clutter.TextureError e)
         {
@@ -63,21 +53,12 @@ public class GameView : Clutter.Group
         }
 
         /* Add textures onto the scene so they can be cloned */
-        backing_texture.hide ();
-        add_child (backing_texture);
         highlight_texture.hide ();
         add_child (highlight_texture);
         off_texture.hide ();
         add_child (off_texture);
         on_texture.hide ();
         add_child (on_texture);
-        led_back_texture.hide ();
-        add_child (led_back_texture);
-        arrow_texture.hide ();
-        add_child (arrow_texture);
-
-        var real_board_width = 5 * off_texture.width + 4;
-        var real_board_height = 5 * off_texture.height + 4;
 
         board_group = new Clutter.Actor ();
         add_child (board_group);
@@ -87,34 +68,9 @@ public class GameView : Clutter.Group
         board_view.playable = true;
         board_group.add_child (board_view);
 
-        backing_view = new Clutter.Clone (backing_texture);
-        backing_view.set_position (0, real_board_height);
-        add_child (backing_view);
-
-        score_view = new LEDArray (5, led_back_texture);
-        score_view.value = current_level;
-        score_view.set_anchor_point (score_view.width / 2, 0);
-        score_view.set_position (real_board_width / 2, real_board_height + 18);
-        add_child (score_view);
-
-        set_size (real_board_width, score_view.y + score_view.height);
-
-        left_arrow = new Clutter.Clone (arrow_texture);
-        left_arrow.anchor_gravity = Clutter.Gravity.CENTER;
-        left_arrow.reactive = true;
-        left_arrow.button_release_event.connect (left_arrow_button_release_cb);
-        left_arrow.touch_event.connect (left_arrow_touch_event_cb);
-        left_arrow.set_position ((score_view.x - score_view.anchor_x) / 2, score_view.y + (score_view.height / 2) - 10);
-        add_child (left_arrow);
-
-        right_arrow = new Clutter.Clone (arrow_texture);
-        right_arrow.anchor_gravity = Clutter.Gravity.CENTER;
-        right_arrow.reactive = true;
-        right_arrow.button_release_event.connect (right_arrow_button_release_cb);
-        right_arrow.touch_event.connect (right_arrow_touch_event_cb);
-        right_arrow.rotation_angle_y = 180;
-        right_arrow.set_position (real_board_width - left_arrow.x, score_view.y + (score_view.height / 2) - 10);
-        add_child (right_arrow);
+        var real_board_width = 5 * off_texture.width + 4;
+        var real_board_height = 5 * off_texture.height + 4;
+        set_size (real_board_width, real_board_height);
 
         key_cursor_view = new Clutter.Clone (highlight_texture);
         key_cursor_view.set_position (-100, -100);
@@ -155,7 +111,6 @@ public class GameView : Clutter.Group
             return;
 
         current_level++;
-        score_view.value = current_level;
 
         // Make sure the board transition is different than the previous.
         var direction = 0;
@@ -180,37 +135,11 @@ public class GameView : Clutter.Group
         level_changed (current_level);
     }
 
-    private bool left_arrow_touch_event_cb (Clutter.Actor actor, Clutter.Event event)
-    {
-        if (event.type == Clutter.EventType.TOUCH_END)
-            swap_board (-1);
-        return false;
-    }
-	
-    private bool right_arrow_touch_event_cb (Clutter.Actor actor, Clutter.Event event)
-    {
-        if (event.type == Clutter.EventType.TOUCH_END)
-            swap_board (1);
-        return false;
-    }
-
-    private bool left_arrow_button_release_cb (Clutter.Actor actor, Clutter.ButtonEvent event)
-    {
-        swap_board (-1);
-        return false;
-    }
-
-    private bool right_arrow_button_release_cb (Clutter.Actor actor, Clutter.ButtonEvent event)
-    {
-        swap_board (1);
-        return false;
-    }
-
     // The player asked to swap to a different level without completing
     // the one in progress; this can occur either by clicking an arrow
     // or by requesting a new game from the menu. Animate the new board
     // in, depthwise, in the direction indicated by 'context'.
-    private void swap_board (int direction)
+    public void swap_board (int direction)
     {
         if (timeline != null && timeline.is_playing ())
             return;
@@ -221,8 +150,6 @@ public class GameView : Clutter.Group
             current_level = 1;
             return;
         }
-
-        score_view.value = current_level;
 
         timeline = new Clutter.Timeline (500);
 
@@ -288,7 +215,6 @@ public class GameView : Clutter.Group
             return;
 
         current_level = 1;
-        score_view.value = current_level;
 
         timeline = new Clutter.Timeline (500);
 

@@ -4,7 +4,6 @@ lightsoff_SOURCES = \
 	board-view.vala \
 	config.vapi \
 	lightsoff.vala \
-	led-array.vala \
 	puzzle-generator.vala \
 	game-view.vala
 

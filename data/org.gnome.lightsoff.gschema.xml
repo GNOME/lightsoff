@@ -2,6 +2,7 @@
   <schema id="org.gnome.lightsoff" path="/org/gnome/lightsoff/" gettext-domain="lightsoff">
     <key name="level" type="i">
       <default>1</default>
+      <range min="1" />
       <summary>The current level</summary>
       <description>The users's most recent level.</description>
     </key>
