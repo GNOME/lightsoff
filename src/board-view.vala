@@ -120,12 +120,12 @@ public class BoardView : Clutter.Group
     
     public void fade_in (Clutter.Timeline timeline)
     {
-        animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opactity", 0);
+        animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", 0);
     }
 
     public void fade_out (Clutter.Timeline timeline)
     {
-        animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opactity", 255);
+        animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", 255);
     }
    
     public void slide_in (int direction, int sign, Clutter.Timeline timeline)
