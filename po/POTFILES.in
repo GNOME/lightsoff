@@ -6,6 +6,5 @@ data/lightsoff.desktop.in
 data/org.gnome.lightsoff.gschema.xml
 src/board-view.vala
 src/game-view.vala
-src/led-array.vala
 src/lightsoff.vala
 src/puzzle-generator.vala
