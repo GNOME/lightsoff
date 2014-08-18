@@ -1,3 +1,11 @@
+Lights Off 3.13.90
+=================
+
+* Translation updates (Norwegian bokmål, Greek)
+* doap changes
+* removed level changer LED in favor of proper buttons (Michael Catanzaro)
+* GTK+ requirement bumped (3.13.2)
+
 Lights Off 3.13.4
 =================
 * Translation updates (Swedish, Brazilian Portuguese, Catalan (Valencian), German, Spanish, Catalan, Greek)
