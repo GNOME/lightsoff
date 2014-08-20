@@ -104,7 +104,7 @@ public class LightsOff : Gtk.Application
     private void update_title (int level)
     {
         /* The title of the window, %d is the level number */
-        headerbar.title = _("Level %d".printf (level));
+        headerbar.title = _("Level %d").printf (level);
         /* Subtitle of the window when playing level one. */
         headerbar.subtitle = level == 1 ? _("Turn off all the lights!") : null;
     }
