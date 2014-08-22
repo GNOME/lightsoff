@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-12 18:03+0000\n"
-"PO-Revision-Date: 2014-01-16 20:59+0100\n"
+"POT-Creation-Date: 2014-08-22 09:45+0000\n"
+"PO-Revision-Date: 2014-08-22 11:51+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -52,8 +52,8 @@ msgid ""
 msgstr ""
 "Hráči, které baví zhasínat světla, se mohou těšit na velké množství úrovní."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
+#: ../src/lightsoff.vala:229
 msgid "Lights Off"
 msgstr "Zhasněte světla"
 
@@ -73,23 +73,42 @@ msgstr "Současná úroveň"
 msgid "The users's most recent level."
 msgstr "Uživatelova poslední úroveň."
 
-#: ../src/lightsoff.vala:44
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "_Nová hra"
 
-#: ../src/lightsoff.vala:47
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: ../src/lightsoff.vala:48
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "O _aplikaci"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "U_končit"
 
-#: ../src/lightsoff.vala:166
+#: ../src/lightsoff.vala:70
+msgid "Return to the previous level"
+msgstr "Vrátit se do předchozí úrovně"
+
+#: ../src/lightsoff.vala:76
+msgid "Proceed to the next level"
+msgstr "Postoupit do následující úrovně"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "Level %d"
+msgstr "Úroveň %d"
+
+#. Subtitle of the window when playing level one.
+#: ../src/lightsoff.vala:109
+msgid "Turn off all the lights!"
+msgstr "Zhasněte všechna světla!"
+
+#: ../src/lightsoff.vala:210
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -99,7 +118,7 @@ msgstr ""
 "\n"
 "Zhasněte světla je součástí her GNOME."
 
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:216
 msgid "translator-credits"
 msgstr ""
 "Jirka Lébl\n"
