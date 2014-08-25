@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: gnome-games HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-15 10:46+0000\n"
+"POT-Creation-Date: 2014-08-25 09:48+0000\n"
 "PO-Revision-Date: 2014-03-15 16:02+0100\n"
 "Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -57,8 +57,8 @@ msgstr ""
 "Les joueurs qui se réjouissent d'éteindre toutes les lumières apprécieront "
 "le grand nombre de niveaux."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
+#: ../src/lightsoff.vala:229
 msgid "Lights Off"
 msgstr "Toutéteint"
 
@@ -78,23 +78,42 @@ msgstr "Le niveau actuel"
 msgid "The users's most recent level."
 msgstr "Le niveau le plus récent des utilisateurs."
 
-#: ../src/lightsoff.vala:44
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "_Nouvelle partie"
 
-#: ../src/lightsoff.vala:47
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "Aid_e"
 
-#: ../src/lightsoff.vala:48
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "À _propos"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "_Quitter"
 
-#: ../src/lightsoff.vala:166
+#: ../src/lightsoff.vala:70
+msgid "Return to the previous level"
+msgstr "Retourner au niveau précédent"
+
+#: ../src/lightsoff.vala:76
+msgid "Proceed to the next level"
+msgstr "Avancer vers le niveau suivant"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "Level %d"
+msgstr "Niveau %d :"
+
+#. Subtitle of the window when playing level one.
+#: ../src/lightsoff.vala:109
+msgid "Turn off all the lights!"
+msgstr "Éteignez toutes les lumières !"
+
+#: ../src/lightsoff.vala:210
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -104,7 +123,7 @@ msgstr ""
 "\n"
 "Toutéteint fait partie des jeux GNOME."
 
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:216
 msgid "translator-credits"
 msgstr ""
 "Christophe Merlet <redfox@redfoxcenter.org>\n"
@@ -161,12 +180,6 @@ msgstr ""
 
 #~ msgid "Rewind to the game start"
 #~ msgstr "Revenir au début de la partie"
-
-#~ msgid "Show the previous move"
-#~ msgstr "Afficher le coup précédent"
-
-#~ msgid "Show the next move"
-#~ msgstr "Afficher le coup suivant"
 
 #~ msgid "Show the current move"
 #~ msgstr "Afficher le coup en cours"
@@ -1803,9 +1816,6 @@ msgstr ""
 
 #~ msgid "Safe Teleports:"
 #~ msgstr "Téléportations sans danger :"
-
-#~ msgid "Level:"
-#~ msgstr "Niveau :"
 
 #~ msgid "Remaining:"
 #~ msgstr "Restant :"
