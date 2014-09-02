@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of gnome-games.
-# Copyright (C) 1999-2013 Free Software Foundation, Inc.
+# Copyright (C) 1999-2014 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-games package.
 # Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
 # Cândida Nunes da Silva <candida@zaz.com.br>, 2000-2001.
@@ -21,15 +21,15 @@
 # Rodrigo Padula de Oliveira <contato@rodrigopadula.com>, 2011.
 # Flamarion Jorge <jorge.flamarion@gmail.com>, 2011.
 # Djavan Fagundes <djavan@comum.org>, 2012.
-# Enrico Nicoletto <liverig@gmail.com>, 2013.
+# Enrico Nicoletto <liverig@gmail.com>, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-19 15:18+0000\n"
-"PO-Revision-Date: 2013-12-27 08:28-0300\n"
+"POT-Creation-Date: 2014-09-02 09:49+0000\n"
+"PO-Revision-Date: 2014-09-02 09:50-0300\n"
 "Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -37,7 +37,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1
@@ -57,8 +57,8 @@ msgid ""
 msgstr ""
 "Jogadores que gostam de apagar luzes irão apreciar o vasto número de níveis."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:186
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
+#: ../src/lightsoff.vala:229
 msgid "Lights Off"
 msgstr "Luzes desligadas"
 
@@ -78,23 +78,46 @@ msgstr "O nível atual"
 msgid "The users's most recent level."
 msgstr "Os níveis mais recentes dos usuários."
 
-#: ../src/lightsoff.vala:44
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "_Novo jogo"
 
-#: ../src/lightsoff.vala:47
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "A_juda"
 
-#: ../src/lightsoff.vala:48
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "_Sobre"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "Sai_r"
 
-#: ../src/lightsoff.vala:166
+#: ../src/lightsoff.vala:70
+#| msgid "Show the previous move"
+msgid "Return to the previous level"
+msgstr "Retornar ao nível anterior"
+
+#: ../src/lightsoff.vala:76
+#| msgid "Show the next move"
+msgid "Proceed to the next level"
+msgstr "Avançar para o próximo nível"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:107
+#, c-format
+#| msgid "Level:"
+msgid "Level %d"
+msgstr "Nível %d"
+
+#. Subtitle of the window when playing level one.
+#: ../src/lightsoff.vala:109
+#| msgid "Turn off all the lights"
+msgid "Turn off all the lights!"
+msgstr "Apague todas as luzes!"
+
+#: ../src/lightsoff.vala:210
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -104,7 +127,7 @@ msgstr ""
 "\n"
 "O jogo Luzes desligadas faz parte do GNOME Games."
 
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:216
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
@@ -124,9 +147,8 @@ msgstr ""
 "Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Enrico Nicoletto <liverig@gmail.com>"
 
-#: ../src/lightsoff.vala:175
-msgid "GNOME Games web site"
-msgstr "Site do GNOME Games"
+#~ msgid "GNOME Games web site"
+#~ msgstr "Site do GNOME Games"
 
 #~ msgid "Chess"
 #~ msgstr "Xadrez"
@@ -166,12 +188,6 @@ msgstr "Site do GNOME Games"
 
 #~ msgid "Rewind to the game start"
 #~ msgstr "Retorna ao início do jogo"
-
-#~ msgid "Show the previous move"
-#~ msgstr "Mostra o último movimento"
-
-#~ msgid "Show the next move"
-#~ msgstr "Mostra o próximo movimento"
 
 #~ msgid "Show the current move"
 #~ msgstr "Mostra o movimento atual"
@@ -1793,9 +1809,6 @@ msgstr "Site do GNOME Games"
 
 #~ msgid "Safe Teleports:"
 #~ msgstr "Teletransportes seguros:"
-
-#~ msgid "Level:"
-#~ msgstr "Nível:"
 
 #~ msgid "Remaining:"
 #~ msgstr "Restantes:"
