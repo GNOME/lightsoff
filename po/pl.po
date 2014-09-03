@@ -21,8 +21,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-16 20:10+0100\n"
-"PO-Revision-Date: 2014-03-16 20:11+0100\n"
+"POT-Creation-Date: 2014-09-03 02:50+0200\n"
+"PO-Revision-Date: 2014-09-03 02:51+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -50,8 +50,8 @@ msgid ""
 "levels."
 msgstr "Gracze lubiący wyłączanie świateł polubią wielką liczbę poziomów."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
+#: ../src/lightsoff.vala:229
 msgid "Lights Off"
 msgstr "Lights Off"
 
@@ -71,23 +71,42 @@ msgstr "Bieżący poziom"
 msgid "The users's most recent level."
 msgstr "Ostatni poziom użytkownika."
 
-#: ../src/lightsoff.vala:44
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "_Nowa gra"
 
-#: ../src/lightsoff.vala:47
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "Pomo_c"
 
-#: ../src/lightsoff.vala:48
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "_O grze"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "Za_kończ"
 
-#: ../src/lightsoff.vala:166
+#: ../src/lightsoff.vala:70
+msgid "Return to the previous level"
+msgstr "Wraca do poprzedniego poziomu"
+
+#: ../src/lightsoff.vala:76
+msgid "Proceed to the next level"
+msgstr "Przechodzi do następnego poziomu"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "Level %d"
+msgstr "Poziom %d"
+
+#. Subtitle of the window when playing level one.
+#: ../src/lightsoff.vala:109
+msgid "Turn off all the lights!"
+msgstr "Wyłącz wszystkie światła!"
+
+#: ../src/lightsoff.vala:210
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -97,7 +116,7 @@ msgstr ""
 "\n"
 "Gra Lights Off jest częścią gier GNOME."
 
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:216
 msgid "translator-credits"
 msgstr ""
 "Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1998-2002\n"
