@@ -10,13 +10,13 @@
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2011, 2012, 2013.
+# Fran Dieguez <frandieguez@gnome.org>, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games-master-po-gl-54590\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-01 13:47+0100\n"
-"PO-Revision-Date: 2013-11-01 13:50+0200\n"
+"POT-Creation-Date: 2014-09-04 22:10+0200\n"
+"PO-Revision-Date: 2014-09-04 22:11+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -34,7 +34,7 @@ msgid ""
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
 "Luces fora é unha colección de quebracabezas de apagar luces. Ao premer "
-"sobre unha luz apágaa ou encéndea, pero tamén troca todas as luces "
+"sobre unha luz apágaa ou acéndea, pero tamén troca todas as luces "
 "adxacentes. O seu obxectivo é simple: apagar todas as luces!"
 
 #: ../data/lightsoff.appdata.xml.in.h:2
@@ -45,8 +45,8 @@ msgstr ""
 "Os xogadores aos que lle gusta apagar luces gozaran da garn cantidade de "
 "niveis."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:158
-#: ../src/lightsoff.vala:182
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
+#: ../src/lightsoff.vala:229
 msgid "Lights Off"
 msgstr "Apagar as luces"
 
@@ -66,23 +66,42 @@ msgstr "O nivel actual"
 msgid "The users's most recent level."
 msgstr "O nivel máis recente do usuario."
 
-#: ../src/lightsoff.vala:42
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "Xogo _novo"
 
-#: ../src/lightsoff.vala:45
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "_Axuda"
 
-#: ../src/lightsoff.vala:46
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "So_bre"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "_Saír"
 
-#: ../src/lightsoff.vala:161
+#: ../src/lightsoff.vala:70
+msgid "Return to the previous level"
+msgstr "Volver ao nivel anterior"
+
+#: ../src/lightsoff.vala:76
+msgid "Proceed to the next level"
+msgstr "Ir ao seguinte nivel"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "Level %d"
+msgstr "Nivel %d"
+
+#. Subtitle of the window when playing level one.
+#: ../src/lightsoff.vala:109
+msgid "Turn off all the lights!"
+msgstr "Apaga todas as luces!"
+
+#: ../src/lightsoff.vala:210
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -92,22 +111,21 @@ msgstr ""
 "\n"
 "Luces fora é parte dos Xogos de GNOME."
 
-#: ../src/lightsoff.vala:168
+#: ../src/lightsoff.vala:216
 msgid "translator-credits"
 msgstr ""
-"Fran Diéguez <frandieguez@ubuntu.com>, 2009-2013;\n"
+"Fran Diéguez <frandieguez@gnome.org>, 2009-2014;\n"
 "Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.\n"
 "Antón Méixome <meixome@mancomun.org>, 2009.\n"
 "Suso Baleato <suso.baleato@xunta.es>, 2009.\n"
-"Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun."
-"org>, 2009.\n"
+"Mancomún - Centro de Referencia e Servizos de Software Libre "
+"<g11n@mancomun.org>, 2009.\n"
 "Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.\n"
 "Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.\n"
 "Jesús Bravo Álvarez <jba@pobox.com>, 2000."
 
-#: ../src/lightsoff.vala:171
-msgid "GNOME Games web site"
-msgstr "Sitio web do GNOME Games"
+#~ msgid "GNOME Games web site"
+#~ msgstr "Sitio web do GNOME Games"
 
 #~ msgid "Chess"
 #~ msgstr "Xadrez"
@@ -147,12 +165,6 @@ msgstr "Sitio web do GNOME Games"
 
 #~ msgid "Rewind to the game start"
 #~ msgstr "Retroceder ao inicio da partida"
-
-#~ msgid "Show the previous move"
-#~ msgstr "Mostrar o movemento anterior"
-
-#~ msgid "Show the next move"
-#~ msgstr "Mostrar o seguinte movemento"
 
 #~ msgid "Show the current move"
 #~ msgstr "Mostrar o movemento actual"
@@ -1776,9 +1788,6 @@ msgstr "Sitio web do GNOME Games"
 
 #~ msgid "Safe Teleports:"
 #~ msgstr "Teleportacións seguras:"
-
-#~ msgid "Level:"
-#~ msgstr "Nivel:"
 
 #~ msgid "Remaining:"
 #~ msgstr "Restante:"
