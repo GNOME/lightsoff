@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-12 18:03+0000\n"
-"PO-Revision-Date: 2014-04-04 13:56+0100\n"
+"POT-Creation-Date: 2014-08-30 21:48+0000\n"
+"PO-Revision-Date: 2014-08-31 10:48+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -41,8 +41,8 @@ msgstr ""
 "Spelare som tycker om att släcka lampor kommer att uppskatta det mycket "
 "stora antalet nivåer."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
+#: ../src/lightsoff.vala:229
 msgid "Lights Off"
 msgstr "Släck lyset"
 
@@ -62,23 +62,43 @@ msgstr "Aktuella nivån"
 msgid "The users's most recent level."
 msgstr "Användarens senaste nivå."
 
-#: ../src/lightsoff.vala:44
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "_Nytt spel"
 
-#: ../src/lightsoff.vala:47
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: ../src/lightsoff.vala:48
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "_Om"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "A_vsluta"
 
-#: ../src/lightsoff.vala:166
+#: ../src/lightsoff.vala:70
+msgid "Return to the previous level"
+msgstr "Gå tillbaka till föregående nivå"
+
+#: ../src/lightsoff.vala:76
+msgid "Proceed to the next level"
+msgstr "Fortsätt till nästa nivå"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "Level %d"
+msgstr "Nivå %d"
+
+#. Subtitle of the window when playing level one.
+#: ../src/lightsoff.vala:109
+#| msgid "Turn off all the lights"
+msgid "Turn off all the lights!"
+msgstr "Släck alla ljus!"
+
+#: ../src/lightsoff.vala:210
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -88,7 +108,7 @@ msgstr ""
 "\n"
 "Släck lyset är en del av GNOME Games."
 
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:216
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
