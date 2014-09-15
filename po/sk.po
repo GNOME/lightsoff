@@ -11,9 +11,9 @@ msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-09 10:44+0000\n"
-"PO-Revision-Date: 2014-03-09 15:30+0100\n"
-"Last-Translator: Ján Kyselica <kyselica.jan@gmail.com>\n"
+"POT-Creation-Date: 2014-09-15 09:46+0000\n"
+"PO-Revision-Date: 2014-09-15 23:03+0100\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -40,8 +40,8 @@ msgstr ""
 "Hráči, ktorých baví zhasínanie svetiel sa môžu tešiť na veľké množstvo "
 "úrovní."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
+#: ../src/lightsoff.vala:229
 msgid "Lights Off"
 msgstr "Zhasnúť svetlá"
 
@@ -61,23 +61,47 @@ msgstr "Aktuálna úroveň"
 msgid "The users's most recent level."
 msgstr "Naposledy hraná úroveň."
 
-#: ../src/lightsoff.vala:44
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "_Nová hra"
 
-#: ../src/lightsoff.vala:47
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "_Pomocník"
 
-#: ../src/lightsoff.vala:48
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "_O tejto hre"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "_Ukončiť"
 
-#: ../src/lightsoff.vala:166
+# tooltip
+#: ../src/lightsoff.vala:70
+#| msgid "Show the previous move"
+msgid "Return to the previous level"
+msgstr "Vráti predošlú úroveň"
+
+# tooltip
+#: ../src/lightsoff.vala:76
+#| msgid "Show the next move"
+msgid "Proceed to the next level"
+msgstr "Prejde na ďalšiu úroveň"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "Level %d"
+msgstr "Úroveň %d"
+
+#. Subtitle of the window when playing level one.
+#: ../src/lightsoff.vala:109
+#| msgid "Turn off all the lights"
+msgid "Turn off all the lights!"
+msgstr "Zhasnite všetky svetlá!"
+
+#: ../src/lightsoff.vala:210
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -87,13 +111,14 @@ msgstr ""
 "\n"
 "Hra Zhasnúť svetlá je súčasťou Hier GNOME."
 
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:216
 msgid "translator-credits"
 msgstr ""
 "Stanislav Višňovský (visnovsky@nenya.ms.mff.cuni.cz)\n"
 "Marcel Telka <marcel@telka.sk>\n"
 "Peter Mráz <etkinator@gmail.com>\n"
-"Ján Kyselica <kyselica.jan@gmail.com>"
+"Ján Kyselica <kyselica.jan@gmail.com>\n"
+"Dušan Kazik <prescott66@gmail.com>"
 
 #~ msgid "GNOME Games web site"
 #~ msgstr "Webové stránky Hier GNOME"
@@ -136,12 +161,6 @@ msgstr ""
 
 #~ msgid "Rewind to the game start"
 #~ msgstr "Presunie hru na začiatok"
-
-#~ msgid "Show the previous move"
-#~ msgstr "Ukáže predchádzajúci ťah"
-
-#~ msgid "Show the next move"
-#~ msgstr "Ukáže ďalší ťah"
 
 #~ msgid "Show the current move"
 #~ msgstr "Ukáže aktuálny stav hry"
