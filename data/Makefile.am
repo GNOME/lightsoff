@@ -30,7 +30,7 @@ EXTRA_DIST = \
 	$(desktop_in_files)
 
 check-local: $(appdata_DATA) $(desktop_DATA)
-	/bin/true $(APPDATA_VALIDATE) $(appdata_DATA)
+	$(APPDATA_VALIDATE) --relax $(appdata_DATA)
 	$(DESKTOP_FILE_VALIDATE) $(desktop_DATA)
 
 -include $(top_srcdir)/git.mk
