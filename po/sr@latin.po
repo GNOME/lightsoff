@@ -1,19 +1,19 @@
 # Serbian translation of gnome-games
-# Courtesy of Prevod.org team (http://prevod.org/) -- 2003 — 2014.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003—2014.
 # This file is distributed under the same license as the gnome-games package.
 # Maintainer: Dušan Marjanović <madafaka@bsd.org.yu>
 # Reviewed on 2005-08-03 by: Igor Nestorović <igor@prevod.org>
 # Translated by: Miloš Popović <gpopac@gmail.com>
 # Translated on 2010-08-25 by: Branko Kokanović <branko.kokanovic@gmail.com>
 # Miloš Popović <gpopac@gmai, 2010.
-# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011 — 2014.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011—2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: Gnomove igre\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=lights"
 "off&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-12 18:03+0000\n"
-"PO-Revision-Date: 2014-03-21 03:14+0200\n"
+"POT-Creation-Date: 2014-09-25 21:52+0000\n"
+"PO-Revision-Date: 2014-09-26 11:08+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -40,8 +40,8 @@ msgid ""
 "levels."
 msgstr "Igrači koji budu što duže gasili svetla uživaće u većem broju nivoa."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
+#: ../src/lightsoff.vala:229
 msgid "Lights Off"
 msgstr "Pogasi svetla"
 
@@ -61,23 +61,43 @@ msgstr "Trenutni nivo"
 msgid "The users's most recent level."
 msgstr "Najskoriji korisnikov nivo."
 
-#: ../src/lightsoff.vala:44
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "_Nova igra"
 
-#: ../src/lightsoff.vala:47
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "Po_moć"
 
-#: ../src/lightsoff.vala:48
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "_O programu"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "_Izađi"
 
-#: ../src/lightsoff.vala:166
+#: ../src/lightsoff.vala:70
+msgid "Return to the previous level"
+msgstr "Vratite se na prethodni nivo"
+
+#: ../src/lightsoff.vala:76
+msgid "Proceed to the next level"
+msgstr "Nastavite do sledećeg nivoa"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "Level %d"
+msgstr "%d. nivo"
+
+#. Subtitle of the window when playing level one.
+#: ../src/lightsoff.vala:109
+#| msgid "Turn off all the lights"
+msgid "Turn off all the lights!"
+msgstr "Pogasite sva svetla!"
+
+#: ../src/lightsoff.vala:210
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -87,7 +107,7 @@ msgstr ""
 "\n"
 "Pogasi svetla je deo Gnomovih igara."
 
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:216
 msgid "translator-credits"
 msgstr ""
 "Dušan Marjanović <madafaka@root.co.yu>\n"
