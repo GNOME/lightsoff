@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-12 18:03+0000\n"
-"PO-Revision-Date: 2014-03-07 13:58+0200\n"
+"POT-Creation-Date: 2014-10-10 08:09+0000\n"
+"PO-Revision-Date: 2014-10-12 17:24+0300\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -43,8 +43,8 @@ msgstr ""
 "Tiem spēlētājiem, kuriem patīk izslēgt gaismas, būs pieejams milzīgs līmeņu "
 "skaits."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
+#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
+#: ../src/lightsoff.vala:229
 msgid "Lights Off"
 msgstr "Izslēgt gaismu"
 
@@ -64,23 +64,46 @@ msgstr "Pašreizējais līmenis"
 msgid "The users's most recent level."
 msgstr "Lietotāja pēdējais līmenis."
 
-#: ../src/lightsoff.vala:44
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "Jau_na spēle"
 
-#: ../src/lightsoff.vala:47
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "_Palīdzība"
 
-#: ../src/lightsoff.vala:48
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "P_ar"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "_Iziet"
 
-#: ../src/lightsoff.vala:166
+#: ../src/lightsoff.vala:70
+#| msgid "Show the previous move"
+msgid "Return to the previous level"
+msgstr "Atgriezties uz iepriekšējo līmeni"
+
+#: ../src/lightsoff.vala:76
+#| msgid "Show the next move"
+msgid "Proceed to the next level"
+msgstr "Iet uz nākamo līmeni"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:107
+#, c-format
+#| msgid "Level:"
+msgid "Level %d"
+msgstr "Līmenis %d"
+
+#. Subtitle of the window when playing level one.
+#: ../src/lightsoff.vala:109
+#| msgid "Turn off all the lights"
+msgid "Turn off all the lights!"
+msgstr "Izslēdziet visas gaismas!"
+
+#: ../src/lightsoff.vala:210
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -90,7 +113,7 @@ msgstr ""
 "\n"
 "“Izslēdz gaismas” ir daļa no GNOME spēlēm."
 
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:216
 msgid "translator-credits"
 msgstr ""
 "Raivis Dejus <orvils@gmail.com>\n"
@@ -138,12 +161,6 @@ msgstr ""
 
 #~ msgid "Rewind to the game start"
 #~ msgstr "Pārtīt uz spēles sākumu"
-
-#~ msgid "Show the previous move"
-#~ msgstr "Parādīt iepriekšējo gājienu"
-
-#~ msgid "Show the next move"
-#~ msgstr "Parādīt nākamo gājienu"
 
 #~ msgid "Show the current move"
 #~ msgstr "Parādīt pašreizējo gājienu"
@@ -1757,9 +1774,6 @@ msgstr ""
 
 #~ msgid "Safe Teleports:"
 #~ msgstr "Drošie teleporti:"
-
-#~ msgid "Level:"
-#~ msgstr "Līmenis:"
 
 #~ msgid "Remaining:"
 #~ msgstr "Atlicis:"
