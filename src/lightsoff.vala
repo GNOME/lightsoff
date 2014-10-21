@@ -161,7 +161,7 @@ public class LightsOff : Gtk.Application
 
     private void new_game_cb ()
     {
-        game_view.reset_game();
+        game_view.reset_game ();
     }
 
     private void quit_cb ()
