@@ -1,5 +1,5 @@
 # gnome-games Finnish Translation
-# Suomennos: http://www.gnome.fi/
+# Suomennos: https://l10n.gnome.org/teams/fi/
 # Copyright (C) 2002-2009 Free Software Foundation, Inc.
 #
 #
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-18 22:46+0000\n"
+"POT-Creation-Date: 2014-11-07 10:49+0000\n"
 "PO-Revision-Date: 2014-09-10 20:51+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
@@ -84,25 +84,21 @@ msgid "_Quit"
 msgstr "_Lopeta"
 
 #: ../src/lightsoff.vala:70
-#| msgid "Show the previous move"
 msgid "Return to the previous level"
 msgstr "Palaa edelliselle tasolle"
 
 #: ../src/lightsoff.vala:76
-#| msgid "Show the next move"
 msgid "Proceed to the next level"
 msgstr "Jatka seuraavalle tasolle"
 
 #. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
 #, c-format
-#| msgid "Level:"
 msgid "Level %d"
 msgstr "Taso %d"
 
 #. Subtitle of the window when playing level one.
 #: ../src/lightsoff.vala:109
-#| msgid "Turn off all the lights"
 msgid "Turn off all the lights!"
 msgstr "Sammuta kaikki valot!"
 
@@ -124,7 +120,7 @@ msgstr ""
 "Ilkka Tuohela, 2006-2009\n"
 "Sami Pesonen, 2002-2005\n"
 "\n"
-"http://www.gnome.fi/\n"
+"https://l10n.gnome.org/teams/fi/\n"
 "\n"
 "Launchpad Contributions:\n"
 "  Heikki Kulhia https://launchpad.net/~hessuk\n"
