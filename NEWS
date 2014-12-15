@@ -2,7 +2,7 @@ Lights Off 3.15.3
 =================
 
 * Translation updates (Danish, Hungarian, German)
-* appdata: updated screenshot size
+* Switch to appstream util validate from appdata validation (Robert Roth)
 
 Lights Off 3.14.0
 =================
