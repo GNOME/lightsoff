@@ -77,9 +77,10 @@ public class BoardView : Clutter.Group
     private Clutter.Texture off_texture;
     private Clutter.Texture on_texture;
     private Light[,] lights;
-    private int _moves = 0;
+
     public bool playable = true;
-    
+
+    private int _moves = 0;
     public int moves
     {
         get { return _moves;}

@@ -111,7 +111,12 @@ public class LightsOff : Gtk.Application
     {
         /* The title of the window, %d is the level number */
         headerbar.title = _("Level %d").printf (level);
-        update_subtitle (0);
+
+        /* Subtitle is a game hint when playing level one, the number of moves otherwise */
+        if (level == 1)
+            headerbar.subtitle = _("Turn off all the lights!");
+        else
+            update_subtitle (0);
     }
 
     private void previous_level_cb ()
