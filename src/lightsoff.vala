@@ -94,6 +94,7 @@ public class LightsOff : Gtk.Application
 
         game_view = new GameView (settings.get_int ("level"));
         game_view.level_changed.connect (level_changed_cb);
+        game_view.moves_changed.connect (update_subtitle);
         game_view.show ();
         stage.add_child (game_view);
 
@@ -101,12 +102,16 @@ public class LightsOff : Gtk.Application
         clutter_embed.set_size_request ((int) stage.width, (int) stage.height);
     }
 
+    private void update_subtitle (int moves)
+    {
+        headerbar.subtitle = ngettext ("%d move", "%d moves", moves).printf (moves);
+    }
+
     private void update_title (int level)
     {
         /* The title of the window, %d is the level number */
         headerbar.title = _("Level %d").printf (level);
-        /* Subtitle of the window when playing level one. */
-        headerbar.subtitle = level == 1 ? _("Turn off all the lights!") : null;
+        update_subtitle (0);
     }
 
     private void previous_level_cb ()

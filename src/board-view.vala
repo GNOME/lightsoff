@@ -77,10 +77,16 @@ public class BoardView : Clutter.Group
     private Clutter.Texture off_texture;
     private Clutter.Texture on_texture;
     private Light[,] lights;
-
+    private int _moves = 0;
     public bool playable = true;
     
+    public int moves
+    {
+        get { return _moves;}
+    }
+
     public signal void game_won ();
+    public signal void light_toggled ();
     
     public BoardView (Clutter.Texture off_texture, Clutter.Texture on_texture)
     {
@@ -108,6 +114,7 @@ public class BoardView : Clutter.Group
                 add_child (l);
             }
         }
+        _moves = 0;
     }
 
     public void get_light_position (int x, int y, out float xx, out float yy)
@@ -176,6 +183,8 @@ public class BoardView : Clutter.Group
         int x, y;
         find_light ((Light) actor, out x, out y);
         toggle_light (x, y);
+        _moves += 1;
+        light_toggled ();
     }
 
     // Toggle a light and those in each cardinal direction around it.

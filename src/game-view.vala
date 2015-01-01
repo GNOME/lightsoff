@@ -38,6 +38,7 @@ public class GameView : Clutter.Group
     private int last_sign = 0;
 
     public signal void level_changed (int level);
+    public signal void moves_changed (int moves);
 
     public GameView (int level)
     {
@@ -83,8 +84,8 @@ public class GameView : Clutter.Group
         var view = new BoardView (off_texture, on_texture);
         view.load_level (level);
         view.game_won.connect (game_won_cb);
+        view.light_toggled.connect (light_toggled_cb);
         view.playable = false;
-
         return view;
     }
 
@@ -101,6 +102,11 @@ public class GameView : Clutter.Group
         foreach (var actor in actor_remove_queue)
             actor.destroy ();
         actor_remove_queue = null;
+    }
+
+    private void light_toggled_cb ()
+    {
+        moves_changed (board_view.moves);
     }
 
     // The player won the game; create a new board, update the level count,
