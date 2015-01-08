@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2011, 2012, 2013.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2013, 2014.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2013, 2014, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-24 20:17+0100\n"
-"PO-Revision-Date: 2014-03-24 20:22+0100\n"
+"POT-Creation-Date: 2015-01-08 15:25+0100\n"
+"PO-Revision-Date: 2015-01-08 15:25+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
-"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,34 +21,32 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.4\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "Argiak itzali"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+msgid "Turn off all the lights"
+msgstr "Itzali argi guztiak"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
 "'Argiak itzali' jokoa argia itzaltzeko puzzleen bilduma bat da. Egin klik "
-"argi batean "
-"pizteko/itzaltzeko, baina inguruko argien egoera ere aldatzen ditu. Helburua "
-"nabarmena da: "
-"itzali argi guztiak!"
+"argi batean pizteko/itzaltzeko, baina inguruko argien egoera ere aldatzen "
+"ditu. Helburua nabarmena da: itzali argi guztiak!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
-"Argiak itzaltzea gogoko duten jokalariek maila kopuru handiarekin "
-"gozatuko dute."
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
-msgid "Lights Off"
-msgstr "Argiak itzali"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Itzali argi guztiak"
+"Argiak itzaltzea gogoko duten jokalariek maila kopuru handiarekin gozatuko "
+"dute."
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -61,23 +60,48 @@ msgstr "Uneko maila"
 msgid "The users's most recent level."
 msgstr "Erabiltzailearen azken maila."
 
-#: ../src/lightsoff.vala:44
+#: ../src/lightsoff.vala:52
 msgid "_New Game"
 msgstr "_Joko berria"
 
-#: ../src/lightsoff.vala:47
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "La_guntza"
 
-#: ../src/lightsoff.vala:48
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "Honi _buruz"
 
-#: ../src/lightsoff.vala:49
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "_Irten"
 
-#: ../src/lightsoff.vala:166
+#: ../src/lightsoff.vala:70
+msgid "Return to the previous level"
+msgstr "Itzuli aurreko mailara"
+
+#: ../src/lightsoff.vala:76
+msgid "Proceed to the next level"
+msgstr "Jarraitu hurrengo mailarekin"
+
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "Mugimendu %d"
+msgstr[1] "%d mugimendu"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
+#, c-format
+msgid "Level %d"
+msgstr "%d. maila"
+
+#: ../src/lightsoff.vala:117
+msgid "Turn off all the lights!"
+msgstr "Itzali argi guztiak!"
+
+#: ../src/lightsoff.vala:220
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -87,7 +111,7 @@ msgstr ""
 "\n"
 "GNOME Games-ekoa da 'Argiak itzali'."
 
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>"
 
@@ -132,12 +156,6 @@ msgstr "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>"
 
 #~ msgid "Rewind to the game start"
 #~ msgstr "Atzera egin, jokoaren hasieraraino"
-
-#~ msgid "Show the previous move"
-#~ msgstr "Erakutsi aurreko mugimendua"
-
-#~ msgid "Show the next move"
-#~ msgstr "Erakutsi hurrengo mugimendua"
 
 #~ msgid "Show the current move"
 #~ msgstr "Erakutsi uneko mugimendua"
@@ -1647,9 +1665,6 @@ msgstr "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>"
 #~ msgid "Safe Teleports:"
 #~ msgstr "Aldentze seguruak:"
 
-#~ msgid "Level:"
-#~ msgstr "Maila:"
-
 #~ msgid "Remaining:"
 #~ msgstr "Falta:"
 
@@ -1850,11 +1865,6 @@ msgstr "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>"
 #~ msgid_plural "You completed the puzzle in %d seconds"
 #~ msgstr[0] "Puzzlea osatzeko erabilitako denbora: %d"
 #~ msgstr[1] "Puzzlea osatzeko erabilitako denbora: %d"
-
-#~ msgid "%d minute"
-#~ msgid_plural "%d minutes"
-#~ msgstr[0] "minutu %d"
-#~ msgstr[1] "%d minutu"
 
 #~ msgid "%d second"
 #~ msgid_plural "%d seconds"
