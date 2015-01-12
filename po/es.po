@@ -5,15 +5,15 @@
 # Lucas Vieites <lucas@codexion.com>, 2007, 2008.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 # Chris Leonard <cjl@laptop.org>, 2012.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-19 09:44+0000\n"
-"PO-Revision-Date: 2014-08-19 12:44+0200\n"
+"POT-Creation-Date: 2015-01-11 22:48+0000\n"
+"PO-Revision-Date: 2015-01-12 12:12+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -24,7 +24,16 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "Luces fuera"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+msgid "Turn off all the lights"
+msgstr "Apagar todas las luces"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -34,22 +43,13 @@ msgstr ""
 "se enciende o se apaga, pero también cambia el estado de todas las luces de "
 "su alrededor. El objetivo es sencillo: apagar todas las luces."
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
 "Los jugadores a los que les gusta apagar las luces disfrutarán de la gran "
 "cantidad de niveles."
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "Luces fuera"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Apagar todas las luces"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -80,29 +80,33 @@ msgid "_Quit"
 msgstr "_Salir"
 
 #: ../src/lightsoff.vala:70
-#| msgid "Show the previous move"
 msgid "Return to the previous level"
 msgstr "Volver al movimiento anterior"
 
 #: ../src/lightsoff.vala:76
-#| msgid "Show the next move"
 msgid "Proceed to the next level"
 msgstr "Pasar al siguiente nivel"
 
-#. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
 #, c-format
-#| msgid "Level:"
+#| msgid "%d minute"
+#| msgid_plural "%d minutes"
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d movimiento"
+msgstr[1] "%d movimientos"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
+#, c-format
 msgid "Level %d"
 msgstr "Nivel %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
-#| msgid "Turn off all the lights"
+#: ../src/lightsoff.vala:117
 msgid "Turn off all the lights!"
 msgstr "Apagar todas las luces"
 
-#: ../src/lightsoff.vala:210
+#: ../src/lightsoff.vala:220
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -112,7 +116,7 @@ msgstr ""
 "\n"
 "Luces fuera es parte de los juegos de GNOME."
 
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr ""
 "Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2012\n"
@@ -2121,11 +2125,6 @@ msgstr ""
 #~ msgid_plural "You completed the puzzle in %d seconds"
 #~ msgstr[0] "Ha completado el puzle en %d segundo"
 #~ msgstr[1] "Ha completado el puzle en %d segundos"
-
-#~ msgid "%d minute"
-#~ msgid_plural "%d minutes"
-#~ msgstr[0] "%d minuto"
-#~ msgstr[1] "%d minutos"
 
 #~ msgid "%d second"
 #~ msgid_plural "%d seconds"
