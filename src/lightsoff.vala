@@ -217,7 +217,7 @@ public class LightsOff : Gtk.Application
                                "program-name", _("Lights Off"),
                                "version", VERSION,
                                "comments",
-                               _("Turn off all the lights\n\nLights Off is a part of GNOME Games."),
+                               _("Turn off all the lights"),
                                "copyright", "Copyright © 2009 Tim Horton",
                                "license-type", Gtk.License.GPL_2_0,
                                "authors", authors,
