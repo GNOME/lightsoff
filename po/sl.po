@@ -5,15 +5,15 @@
 # Matej Erman <matej.erman@guest.arnes.si>, 2002.
 # Tadej Janež <tadej_janez@email.si>, 2003.
 # Matic Žgur <mr.zgur@gmail.com>, 2006 - 2007.
-# Matej Urbančič <mateju@svn.gnome.org>, 2007-2013.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007-2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-14 09:48+0000\n"
-"PO-Revision-Date: 2014-09-14 20:30+0100\n"
+"POT-Creation-Date: 2015-02-16 19:44+0000\n"
+"PO-Revision-Date: 2015-02-16 21:37+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -25,7 +25,17 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "Ugasni luči"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
+msgid "Turn off all the lights"
+msgstr "Ugasni vse luči"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -35,20 +45,11 @@ msgstr ""
 "ali ugasne luč, vpliva pa tudi na vse ostale luči. Cilj igre je enostaven. "
 "Ugasniti je treba vse luči."
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr "Pri igri je na voljo veliko število postavitev različne zahtevnosti."
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "Ugasni luči"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Ugasni vse luči"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -63,8 +64,8 @@ msgid "The users's most recent level."
 msgstr "Uporabnikov najnovejši rezultat."
 
 #: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "_Nova Igra"
+msgid "_Start Over"
+msgstr "_Začni znova"
 
 #: ../src/lightsoff.vala:55
 msgid "_Help"
@@ -86,34 +87,44 @@ msgstr "Vrni se na predhodno raven"
 msgid "Proceed to the next level"
 msgstr "Nadaljuj na naslednjo raven"
 
-#. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d premikov"
+msgstr[1] "%d premik"
+msgstr[2] "%d premika"
+msgstr[3] "%d premiki"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
 #, c-format
 msgid "Level %d"
 msgstr "Raven %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
+#: ../src/lightsoff.vala:117
 msgid "Turn off all the lights!"
 msgstr "Ugasni vse luči"
 
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Ugasnite vse luči\n"
-"\n"
-"Igra Ugasni luči je del iger GNOME."
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr ""
 "Matic Žgur <mr.zgur@gmail.com>\n"
 "Matej Erman <matej.erman@guest.arnes.si>\n"
 "Tadej Janež <tadej_janez@email.si>\n"
 "Matej Urbančič <mateju@svn.gnome.org>"
+
+#~ msgid "_New Game"
+#~ msgstr "_Nova Igra"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Ugasnite vse luči\n"
+#~ "\n"
+#~ "Igra Ugasni luči je del iger GNOME."
 
 #~ msgid "GNOME Games web site"
 #~ msgstr "Spletna stran iger GNOME"
