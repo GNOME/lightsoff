@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.he\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-20 10:24+0300\n"
-"PO-Revision-Date: 2014-08-20 10:26+0300\n"
+"POT-Creation-Date: 2015-02-17 00:58+0200\n"
+"PO-Revision-Date: 2015-02-17 00:59+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: Gezer (Hebrew)\n"
 "Language: he\n"
@@ -21,7 +21,17 @@ msgstr ""
 "X-Launchpad-Export-Date: 2008-01-13 04:36+0000\n"
 "X-Poedit-Language: Hebrew\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "האורות כבויים"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
+msgid "Turn off all the lights"
+msgstr "כיבוי כל האורות"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -31,20 +41,11 @@ msgstr ""
 "מכבה אותה אך גם עושה זאת למנורות הסמוכות. מטרתך היא פשוטה: לכבות את כל "
 "האורות!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr "משחקים שנהנים לכבות אורות יענו ממספר רב של שלבים."
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "האורות כבויים"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "כיבוי כל האורות"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -59,8 +60,8 @@ msgid "The users's most recent level."
 msgstr "The users's most recent level."
 
 #: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "_משחק חדש"
+msgid "_Start Over"
+msgstr "ה_תחלה מחדש"
 
 #: ../src/lightsoff.vala:55
 msgid "_Help"
@@ -82,28 +83,24 @@ msgstr "חזרה לשלב הקודם"
 msgid "Proceed to the next level"
 msgstr "להתקדם לשלב הבא"
 
-#. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "מהלך אחד"
+msgstr[1] "%d מהלכים"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
 #, c-format
 msgid "Level %d"
 msgstr "שלב %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
+#: ../src/lightsoff.vala:117
 msgid "Turn off all the lights!"
 msgstr "כבו את כל האורות!"
 
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"כיבוי האורות\n"
-"\n"
-"כיבוי אורות חלק מחבילת משחקי GNOME."
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr ""
 "גיל אשר <dolfin@rpg.org.il>\n"
@@ -117,6 +114,18 @@ msgstr ""
 "\n"
 "פרויקט תרגום GNOME לעברית:\n"
 "‏http://gnome-il.berlios.de"
+
+#~ msgid "_New Game"
+#~ msgstr "_משחק חדש"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "כיבוי האורות\n"
+#~ "\n"
+#~ "כיבוי אורות חלק מחבילת משחקי GNOME."
 
 #~ msgid "GNOME Games web site"
 #~ msgstr "אתר משחקי GNOME"
@@ -2092,11 +2101,6 @@ msgstr ""
 #~ msgid_plural "You completed the puzzle in %d seconds"
 #~ msgstr[0] "השלמת את הלוח תוך שנייה %d "
 #~ msgstr[1] "השלמת את הלוח תוך %d שניות"
-
-#~ msgid "%d minute"
-#~ msgid_plural "%d minutes"
-#~ msgstr[0] "דקה %d"
-#~ msgstr[1] "%d דקות"
 
 #~ msgid "%d second"
 #~ msgid_plural "%d seconds"
@@ -5283,9 +5287,6 @@ msgstr ""
 
 #~ msgid "_Game name:"
 #~ msgstr "_שם המשחק:"
-
-#~ msgid "_Start"
-#~ msgstr "ה_תחלה"
 
 #~ msgid "_White:"
 #~ msgstr "_לבן:"
