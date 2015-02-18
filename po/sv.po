@@ -1,19 +1,19 @@
 # Swedish messages for gnome-games.
-# Copyright (C) 1999-2014 Free Software Foundation, Inc.
+# Copyright © 1999-2015 Free Software Foundation, Inc.
 # Andreas Persenius <ndap@swipnet.se>, 1999.
 # Andreas Hyden <a.hyden@cyberpoint.se>
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-30 21:48+0000\n"
-"PO-Revision-Date: 2014-08-31 10:48+0100\n"
+"POT-Creation-Date: 2015-01-26 22:57+0000\n"
+"PO-Revision-Date: 2015-01-27 16:55+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -21,34 +21,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.7.3\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
-msgid ""
-"Lights Off is a collection of light switch puzzles. Clicking on a light "
-"toggles it either on or off, but also toggles all the surrounding lights, "
-"too. Your objective is simple: turn off all the lights!"
-msgstr ""
-"Släck lyset är en samling av ljusknappspussel. Att klicka på en ruta slår på "
-"eller av ljuset där, men gör detsamma med alla intilliggande rutor också. "
-"Ditt mål är enkelt: släck alla ljus!"
-
-#: ../data/lightsoff.appdata.xml.in.h:2
-msgid ""
-"Players who delight in turning off lights will enjoy the huge number of "
-"levels."
-msgstr ""
-"Spelare som tycker om att släcka lampor kommer att uppskatta det mycket "
-"stora antalet nivåer."
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
 msgid "Lights Off"
 msgstr "Släck lyset"
 
-#: ../data/lightsoff.desktop.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
 msgid "Turn off all the lights"
 msgstr "Släck alla ljus"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light toggles "
+"it either on or off, but also toggles all the surrounding lights, too. Your "
+"objective is simple: turn off all the lights!"
+msgstr ""
+"Släck lyset är en samling av ljusknappspussel. Att klicka på en ruta slår på "
+"eller av ljuset där, men gör detsamma med alla intilliggande rutor också. Ditt "
+"mål är enkelt: släck alla ljus!"
+
+#: ../data/lightsoff.appdata.xml.in.h:4
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of levels."
+msgstr ""
+"Spelare som tycker om att släcka lampor kommer att uppskatta det mycket stora "
+"antalet nivåer."
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -63,8 +63,8 @@ msgid "The users's most recent level."
 msgstr "Användarens senaste nivå."
 
 #: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "_Nytt spel"
+msgid "_Start Over"
+msgstr "_Börja om"
 
 #: ../src/lightsoff.vala:55
 msgid "_Help"
@@ -86,29 +86,24 @@ msgstr "Gå tillbaka till föregående nivå"
 msgid "Proceed to the next level"
 msgstr "Fortsätt till nästa nivå"
 
-#. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d drag"
+msgstr[1] "%d drag"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
 #, c-format
 msgid "Level %d"
 msgstr "Nivå %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
-#| msgid "Turn off all the lights"
+#: ../src/lightsoff.vala:117
 msgid "Turn off all the lights!"
 msgstr "Släck alla ljus!"
 
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Släck alla lampor\n"
-"\n"
-"Släck lyset är en del av GNOME Games."
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
