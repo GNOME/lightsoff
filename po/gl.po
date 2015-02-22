@@ -10,13 +10,13 @@
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2011, 2012, 2013, 2014.
+# Fran Dieguez <frandieguez@gnome.org>, 2011, 2012, 2013, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games-master-po-gl-54590\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 22:10+0200\n"
-"PO-Revision-Date: 2014-09-04 22:11+0200\n"
+"POT-Creation-Date: 2015-02-22 02:20+0100\n"
+"PO-Revision-Date: 2015-02-22 02:21+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -27,7 +27,17 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "Apagar as luces"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
+msgid "Turn off all the lights"
+msgstr "Apagar todas as luces"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -37,22 +47,13 @@ msgstr ""
 "sobre unha luz apágaa ou acéndea, pero tamén troca todas as luces "
 "adxacentes. O seu obxectivo é simple: apagar todas as luces!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
 "Os xogadores aos que lle gusta apagar luces gozaran da garn cantidade de "
 "niveis."
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "Apagar as luces"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Apagar todas as luces"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -67,8 +68,8 @@ msgid "The users's most recent level."
 msgstr "O nivel máis recente do usuario."
 
 #: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "Xogo _novo"
+msgid "_Start Over"
+msgstr "_Iniciar de novo"
 
 #: ../src/lightsoff.vala:55
 msgid "_Help"
@@ -90,31 +91,27 @@ msgstr "Volver ao nivel anterior"
 msgid "Proceed to the next level"
 msgstr "Ir ao seguinte nivel"
 
-#. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d movemento"
+msgstr[1] "%d movementos"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
 #, c-format
 msgid "Level %d"
 msgstr "Nivel %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
+#: ../src/lightsoff.vala:117
 msgid "Turn off all the lights!"
 msgstr "Apaga todas as luces!"
 
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Apaga todas as luces\n"
-"\n"
-"Luces fora é parte dos Xogos de GNOME."
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr ""
-"Fran Diéguez <frandieguez@gnome.org>, 2009-2014;\n"
+"Fran Diéguez <frandieguez@gnome.org>, 2009-2015;\n"
 "Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.\n"
 "Antón Méixome <meixome@mancomun.org>, 2009.\n"
 "Suso Baleato <suso.baleato@xunta.es>, 2009.\n"
@@ -123,6 +120,18 @@ msgstr ""
 "Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.\n"
 "Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.\n"
 "Jesús Bravo Álvarez <jba@pobox.com>, 2000."
+
+#~ msgid "_New Game"
+#~ msgstr "Xogo _novo"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Apaga todas as luces\n"
+#~ "\n"
+#~ "Luces fora é parte dos Xogos de GNOME."
 
 #~ msgid "GNOME Games web site"
 #~ msgstr "Sitio web do GNOME Games"
@@ -2121,11 +2130,6 @@ msgstr ""
 #~ msgid_plural "You completed the puzzle in %d seconds"
 #~ msgstr[0] "Completou o quebracabezas en %d segundo"
 #~ msgstr[1] "Completou o quebracabezas en %d segundos."
-
-#~ msgid "%d minute"
-#~ msgid_plural "%d minutes"
-#~ msgstr[0] "%d minuto"
-#~ msgstr[1] "%d minutos"
 
 #~ msgid "%d second"
 #~ msgid_plural "%d seconds"
@@ -5421,9 +5425,6 @@ msgstr ""
 
 #~ msgid "_Game name:"
 #~ msgstr "Nome do _xogo:"
-
-#~ msgid "_Start"
-#~ msgstr "_Iniciar"
 
 #~ msgid "_White:"
 #~ msgstr "B_rancas:"
