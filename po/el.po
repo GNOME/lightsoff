@@ -30,24 +30,36 @@
 # Michael Kotsarinis <mk73628@hotmail.com>, 2010.
 # George Stefanakis <george.stefanakis@gmail.com>, 2011.
 # Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013, 2014.
+# Efstathios Iosifidis <iosifidis@opensuse.org>, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.el\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-27 09:46+0000\n"
-"PO-Revision-Date: 2014-08-27 16:48+0200\n"
-"Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
-"Language-Team: www.gnome.gr\n"
+"POT-Creation-Date: 2015-02-22 23:03+0000\n"
+"PO-Revision-Date: 2015-02-23 01:42+0200\n"
+"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
+"Language-Team: Greek, Modern (1453-) <opensuse-translation-el@opensuse.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Gtranslator 2.91.6\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "Σβήστε τα φώτα"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
+msgid "Turn off all the lights"
+msgstr "Σβήστε όλα τα φώτα"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -57,22 +69,13 @@ msgstr ""
 "ένα φως εναλλάσσεται σε αναμμένο ή σβηστό, αλλά αλλάζει επίσης και όλα τα "
 "περιβάλλοντα φώτα. Ο σκοπός σας είναι απλός: σβήστε όλα τα φώτα!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
 "Οι παίχτες που χαίρονται με το σβήσιμο των φώτων θα απολαύσουν ένα τεράστιο "
 "αριθμό επιπέδων. "
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "Σβήστε τα φώτα"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Σβήστε όλα τα φώτα"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -89,8 +92,8 @@ msgid "The users's most recent level."
 msgstr "Το πιο πρόσφατο επίπεδο του χρήστη."
 
 #: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "_Νέο παιχνίδι"
+msgid "_Start Over"
+msgstr "_Αρχίστε ξανά"
 
 #: ../src/lightsoff.vala:55
 msgid "_Help"
@@ -105,38 +108,31 @@ msgid "_Quit"
 msgstr "Έ_ξοδος"
 
 #: ../src/lightsoff.vala:70
-#| msgid "Show the previous move"
 msgid "Return to the previous level"
 msgstr "Επιστροφή στο προηγούμενο επίπεδο"
 
 #: ../src/lightsoff.vala:76
-#| msgid "Show the next move"
 msgid "Proceed to the next level"
 msgstr "Μετάβαση στο επόμενο επίπεδο"
 
-#. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d κίνηση"
+msgstr[1] "%d κινήσεις"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
 #, c-format
 msgid "Level %d"
 msgstr "Επίπεδο %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
-#| msgid "Turn off all the lights"
+#: ../src/lightsoff.vala:117
 msgid "Turn off all the lights!"
 msgstr "Σβήστε όλα τα φώτα!"
 
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Κλείστε όλα τα φώτα\n"
-"\n"
-"Το Σβήστε τα φώτα είναι μέρος των παιχνιδιών του GNOME."
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -146,6 +142,18 @@ msgstr ""
 "Κώστας Παπαδήμας <pkst@gmx.net>\n"
 "Τζένη Πετούμενου <epetoumenou@gmail.com>\n"
 "Για περισσότερα δείτε: http://gnome.gr"
+
+#~ msgid "_New Game"
+#~ msgstr "_Νέο παιχνίδι"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Κλείστε όλα τα φώτα\n"
+#~ "\n"
+#~ "Το Σβήστε τα φώτα είναι μέρος των παιχνιδιών του GNOME."
 
 #~ msgid "GNOME Games web site"
 #~ msgstr "Ιστοσελίδα των παιχνιδιών του GNOME"
