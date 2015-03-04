@@ -101,7 +101,7 @@ public class PuzzleGenerator : Object
         // free variable set to 1 (and the others to 0).
         var basis_for_ns = new int[non_pivot_cols.length (), size * size];
         var n = 0;
-        foreach (var col in non_pivot_cols)        
+        foreach (var col in non_pivot_cols)
         {
             for (var j = 0; j < size * size; j++)
                 basis_for_ns[n, j] = 0;

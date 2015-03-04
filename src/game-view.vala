@@ -208,7 +208,7 @@ public class GameView : Clutter.Group
 
         key_cursor_ready = true;
     }
-    
+
     public void activate_cursor ()
     {
         if (key_cursor_ready)

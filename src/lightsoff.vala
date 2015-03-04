@@ -30,7 +30,7 @@ public class LightsOff : Gtk.Application
         { "previous-level", previous_level_cb },
         { "next-level",     next_level_cb }
     };
-    
+
     private LightsOff ()
     {
         Object (application_id: "org.gnome.lightsoff", flags: ApplicationFlags.FLAGS_NONE);
@@ -107,7 +107,7 @@ public class LightsOff : Gtk.Application
     {
         previous_level.set_enabled (level > 1);
         update_title (level);
-	if (level != settings.get_int ("level"))
+        if (level != settings.get_int ("level"))
             settings.set_int ("level", level);
     }
 

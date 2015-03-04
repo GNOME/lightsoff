@@ -88,7 +88,7 @@ public class BoardView : Clutter.Group
 
     public signal void game_won ();
     public signal void light_toggled ();
-    
+
     public BoardView (Clutter.Texture off_texture, Clutter.Texture on_texture)
     {
         this.off_texture = off_texture;
@@ -125,7 +125,7 @@ public class BoardView : Clutter.Group
         xx = (x + 0.5f) * off_texture.width + 2;
         yy = (y + 0.5f) * off_texture.height + 2;
     }
-    
+
     public void fade_in (Clutter.Timeline timeline)
     {
         animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", 0);
@@ -135,7 +135,7 @@ public class BoardView : Clutter.Group
     {
         animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", 255);
     }
-   
+
     public void slide_in (int direction, int sign, Clutter.Timeline timeline)
     {
         /* Place offscreen */
@@ -153,7 +153,7 @@ public class BoardView : Clutter.Group
                                "x", sign * direction * width,
                                "y", sign * (1 - direction) * height);
     }
-   
+
     public void swap_in (float direction, Clutter.Timeline timeline)
     {
         /* Bring into foreground and make visible */
@@ -173,7 +173,7 @@ public class BoardView : Clutter.Group
     private void find_light (Light light, out int x, out int y)
     {
         x = y = 0;
-        for (x = 0; x < size; x++) 
+        for (x = 0; x < size; x++)
             for (y = 0; y < size; y++)
                 if (lights[x, y] == light)
                     return;
@@ -198,7 +198,7 @@ public class BoardView : Clutter.Group
     {
         if (!playable)
             return;
-            
+
         Clutter.Timeline? timeline = null;
         if (animate)
         {
@@ -232,10 +232,10 @@ public class BoardView : Clutter.Group
         if (cleared)
             game_won ();
     }
-        
+
     // Pseudorandomly generates and sets the state of each light based on
     // a level number; hopefully this is stable between machines, but that
-    // depends on GLib's PRNG stability. Also, provides some semblance of 
+    // depends on GLib's PRNG stability. Also, provides some semblance of
     // symmetry for some levels.
     public void load_level (int level)
     {
