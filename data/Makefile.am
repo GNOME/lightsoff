@@ -1,5 +1,8 @@
 SUBDIRS = icons
 
+dist_noinst_DATA = \
+	lightsoff-menus.ui
+
 lightsoffdir = $(datadir)/lightsoff
 lightsoff_DATA = \
 	off.svg \
