@@ -4,6 +4,7 @@
 data/lightsoff.appdata.xml.in
 data/lightsoff.desktop.in
 [type: gettext/glade]data/lightsoff-menus.ui
+[type: gettext/glade]data/lightsoff.ui
 data/org.gnome.lightsoff.gschema.xml
 src/board-view.vala
 src/game-view.vala

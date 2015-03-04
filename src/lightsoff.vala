@@ -15,6 +15,7 @@ public class LightsOff : Gtk.Application
     private Gtk.ApplicationWindow window;
     private Gtk.HeaderBar headerbar;
     private GameView game_view;
+    private SimpleAction previous_level;
 
     private const GLib.ActionEntry[] action_entries =
     {
@@ -39,36 +40,21 @@ public class LightsOff : Gtk.Application
     {
         base.startup ();
 
+        Gtk.Window.set_default_icon_name ("lightsoff");
         Gtk.Settings.get_default ().set ("gtk-application-prefer-dark-theme", true);
 
         add_action_entries (action_entries, this);
 
         settings = new Settings ("org.gnome.lightsoff");
 
-        window = new Gtk.ApplicationWindow (this);
+        Gtk.Builder builder = new Gtk.Builder.from_resource ("/org/gnome/lightsoff/ui/lightsoff.ui");
+        window = (Gtk.ApplicationWindow) builder.get_object ("window");
+        headerbar = (Gtk.HeaderBar) builder.get_object ("headerbar");
+
         window.add_action_entries (window_actions, this);
-        window.icon_name = "lightsoff";
-        window.resizable = false;
+        previous_level = (SimpleAction) window.lookup_action ("previous-level");
 
-        var left_button = new Gtk.Button.from_icon_name ("go-previous-symbolic", Gtk.IconSize.BUTTON);
-        left_button.valign = Gtk.Align.CENTER;
-        left_button.action_name = "win.previous-level";
-        left_button.set_tooltip_text (_("Return to the previous level"));
-        left_button.show ();
-
-        var right_button = new Gtk.Button.from_icon_name ("go-next-symbolic", Gtk.IconSize.BUTTON);
-        right_button.valign = Gtk.Align.CENTER;
-        right_button.action_name = "win.next-level";
-        right_button.set_tooltip_text (_("Proceed to the next level"));
-        right_button.show ();
-
-        headerbar = new Gtk.HeaderBar ();
-        headerbar.show_close_button = true;
-        headerbar.pack_start (left_button);
-        headerbar.pack_end (right_button);
-        headerbar.show ();
         level_changed_cb (settings.get_int ("level"));
-        window.set_titlebar (headerbar);
 
         var clutter_embed = new GtkClutter.Embed ();
         clutter_embed.show ();
@@ -86,6 +72,8 @@ public class LightsOff : Gtk.Application
 
         stage.set_size (game_view.width, game_view.height);
         clutter_embed.set_size_request ((int) stage.width, (int) stage.height);
+
+        add_window (window);
     }
 
     private void update_subtitle (int moves)
@@ -117,7 +105,7 @@ public class LightsOff : Gtk.Application
 
     private void level_changed_cb (int level)
     {
-        ((SimpleAction) (window.lookup_action ("previous-level"))).set_enabled (level > 1);
+        previous_level.set_enabled (level > 1);
         update_title (level);
 	if (level != settings.get_int ("level"))
             settings.set_int ("level", level);

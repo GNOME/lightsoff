@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <!-- <gresource prefix="/org/gnome/lightsoff/ui">
+  <gresource prefix="/org/gnome/lightsoff/ui">
     <file preprocess="xml-stripblanks" alias="lightsoff.ui">../data/lightsoff.ui</file>
-    <file alias="lightsoff.css">../data/lightsoff.css</file>
-  </gresource> -->
+    <!-- <file alias="lightsoff.css">../data/lightsoff.css</file> -->
+  </gresource>
   <gresource prefix="/org/gnome/lightsoff/gtk">
     <file preprocess="xml-stripblanks" alias="menus.ui">../data/lightsoff-menus.ui</file>
   </gresource>

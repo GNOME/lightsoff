@@ -1,7 +1,8 @@
 SUBDIRS = icons
 
 dist_noinst_DATA = \
-	lightsoff-menus.ui
+	lightsoff-menus.ui \
+	lightsoff.ui
 
 lightsoffdir = $(datadir)/lightsoff
 lightsoff_DATA = \
