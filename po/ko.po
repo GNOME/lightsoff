@@ -8,7 +8,7 @@
 #
 # Updated for lightsoff:
 #
-# Changwoo Ryu <cwryu@debian.org>, 2013-2014.
+# Changwoo Ryu <cwryu@debian.org>, 2013-2015.
 #
 #
 # 새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-06 09:46+0000\n"
-"PO-Revision-Date: 2014-09-06 20:58+0900\n"
+"POT-Creation-Date: 2015-03-07 11:04+0000\n"
+"PO-Revision-Date: 2015-03-08 04:57+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: Korean\n"
@@ -31,7 +31,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "불 끄기"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
+msgid "Turn off all the lights"
+msgstr "모든 불을 끄십시오"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -40,20 +50,11 @@ msgstr ""
 "불 끄기는 전등 스위치 퍼즐 모음입니다. 불을 누르면 켜거나 끕니다. 또 주위의 "
 "불도 같이 켜거나 끕니다. 목표는 간단합니다. 모든 불을 끄십시오!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr "여러 가지 불 끄기 게임이 있습니다."
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "불 끄기"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "모든 불을 끄십시오"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -69,8 +70,8 @@ msgid "The users's most recent level."
 msgstr "사용자의 최근 게임 단계."
 
 #: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "새 게임(_N)"
+msgid "_Start Over"
+msgstr "처음부터 시작(_S)"
 
 #: ../src/lightsoff.vala:55
 msgid "_Help"
@@ -92,27 +93,22 @@ msgstr "이전 단계로 돌아가기"
 msgid "Proceed to the next level"
 msgstr "다음 단계로 진행하기"
 
-#. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d번 움직임"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
 #, c-format
 msgid "Level %d"
 msgstr "단계 %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
+#: ../src/lightsoff.vala:117
 msgid "Turn off all the lights!"
 msgstr "모든 불을 끄십시오!"
 
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"모든 불을 끄십시오\n"
-"\n"
-"불 끄기는 그놈 게임의 일부입니다."
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr "류창우 <cwryu@debian.org>"
