@@ -8,15 +8,15 @@
 # Vytautas Povilaitis <punktyras@nkm.lt>, 2007.
 # Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007, 2008, 2010.
 # Algimantas Margevičius <gymka@mail.ru>, 2011.
-# Aurimas Černius <aurisc4@gmail.com>, 2010, 2013, 2014.
+# Aurimas Černius <aurisc4@gmail.com>, 2010, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-10 09:46+0000\n"
-"PO-Revision-Date: 2014-09-10 20:13+0300\n"
+"POT-Creation-Date: 2015-03-08 11:05+0000\n"
+"PO-Revision-Date: 2015-03-08 20:10+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -27,7 +27,17 @@ msgstr ""
 "%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "Šviesos išjungtos"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
+msgid "Turn off all the lights"
+msgstr "Išjungti visas šviesas"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -37,21 +47,12 @@ msgstr ""
 "šviesos ją išjungia arba įjungia, bet taip pat perjungia visas aplinkines "
 "šviesas. Uždavinys paprastas: išjungti visas šviesas!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
 "Žaidėjai, kurie mėgsta išjungti šviesas, mėgausis daugybe šio žaidimo lygių."
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "Šviesos išjungtos"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Išjungti visas šviesas"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -66,8 +67,8 @@ msgid "The users's most recent level."
 msgstr "Paskiausias žaidėjo lygis."
 
 #: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "_Naujas žaidimas"
+msgid "_Start Over"
+msgstr "_Pradėti iš naujo"
 
 #: ../src/lightsoff.vala:55
 msgid "_Help"
@@ -89,29 +90,25 @@ msgstr "Grįžti į ankstesnį lygį"
 msgid "Proceed to the next level"
 msgstr "Pereiti į kitą lygį"
 
-#. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d ėjimas"
+msgstr[1] "%d ėjimai"
+msgstr[2] "%d ėjimų"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
 #, c-format
 msgid "Level %d"
 msgstr "Lygis %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
-#| msgid "Turn off all the lights"
+#: ../src/lightsoff.vala:117
 msgid "Turn off all the lights!"
 msgstr "Išjungti visas šviesas!"
 
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Išjunkite visas šviesas\n"
-"\n"
-"Lights Off yra GNOME Games dalis."
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr ""
 "Paskutinieji vertėjai:\n"
@@ -122,3 +119,15 @@ msgstr ""
 "Ankstesnieji vertėjai:\n"
 "Tomas Kuliavas <tokul@users.sf.net>,\n"
 "Gediminas Paulauskas <menesis@chatsubo.lt>"
+
+#~ msgid "_New Game"
+#~ msgstr "_Naujas žaidimas"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Išjunkite visas šviesas\n"
+#~ "\n"
+#~ "Lights Off yra GNOME Games dalis."
