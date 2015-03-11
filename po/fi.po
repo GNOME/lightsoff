@@ -8,15 +8,15 @@
 # Sami Pesonen <sampeson@iki.fi>, 2002-2005.
 # Ilkka Tuohela <hile@iki.fi>, 2005-2009.
 # Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
-# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-18 22:46+0000\n"
-"PO-Revision-Date: 2014-09-10 20:51+0300\n"
+"POT-Creation-Date: 2015-03-09 11:06+0000\n"
+"PO-Revision-Date: 2015-03-09 17:31+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -28,7 +28,17 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 "X-POT-Import-Date: 2012-03-05 14:46:29+0000\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "Valot pois"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
+msgid "Turn off all the lights"
+msgstr "Kytke kaikki valot pois päältä"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -38,22 +48,13 @@ msgstr ""
 "sammuu tai syttyy, mutta vaikutus ulottuu myös valon vieressä oleviin muihin "
 "valoihin. Tehtäväsi on yksinkertainen: sammuta kaikki valot!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
 "Valojen sammuttamisesta nauttivat pelaajat pitävät suuresta määrästä eri "
 "tasoja."
-
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "Valot pois"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Kytke kaikki valot pois päältä"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -68,8 +69,9 @@ msgid "The users's most recent level."
 msgstr "Käyttäjän viimeisin taso."
 
 #: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "_Uusi peli"
+#| msgid "_Starting level:"
+msgid "_Start Over"
+msgstr "_Aloita uudelleen"
 
 #: ../src/lightsoff.vala:55
 msgid "_Help"
@@ -84,42 +86,36 @@ msgid "_Quit"
 msgstr "_Lopeta"
 
 #: ../src/lightsoff.vala:70
-#| msgid "Show the previous move"
 msgid "Return to the previous level"
 msgstr "Palaa edelliselle tasolle"
 
 #: ../src/lightsoff.vala:76
-#| msgid "Show the next move"
 msgid "Proceed to the next level"
 msgstr "Jatka seuraavalle tasolle"
 
-#. The title of the window, %d is the level number
 #: ../src/lightsoff.vala:107
 #, c-format
-#| msgid "Level:"
+#| msgid "%d minute"
+#| msgid_plural "%d minutes"
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d siirto"
+msgstr[1] "%d siirtoa"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
+#, c-format
 msgid "Level %d"
 msgstr "Taso %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
-#| msgid "Turn off all the lights"
+#: ../src/lightsoff.vala:117
 msgid "Turn off all the lights!"
 msgstr "Sammuta kaikki valot!"
 
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Sammuta kaikki valot\n"
-"\n"
-"”Lights Off” on osa Gnome-pelejä"
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr ""
-"Jiri Grönroos, 2012-2014\n"
+"Jiri Grönroos, 2012-2015\n"
 "Timo Jyrinki, 2008\n"
 "Ilkka Tuohela, 2006-2009\n"
 "Sami Pesonen, 2002-2005\n"
@@ -136,6 +132,18 @@ msgstr ""
 "  Saku Laukkanen https://launchpad.net/~nollapiste\n"
 "  Timo Jyrinki https://launchpad.net/~timo-jyrinki\n"
 "  eGetin https://launchpad.net/~egetin"
+
+#~ msgid "_New Game"
+#~ msgstr "_Uusi peli"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Sammuta kaikki valot\n"
+#~ "\n"
+#~ "”Lights Off” on osa Gnome-pelejä"
 
 #~ msgid "GNOME Games web site"
 #~ msgstr "GNOMEn pelien www-sivut"
@@ -1446,9 +1454,6 @@ msgstr ""
 #~ msgid "_Enable fake bonuses"
 #~ msgstr "_Huijausbonukset päälle"
 
-#~ msgid "_Starting level:"
-#~ msgstr "_Aloitustaso:"
-
 #~ msgid "Number of _human players:"
 #~ msgstr "_Ihmispelaajien määrä:"
 
@@ -2096,11 +2101,6 @@ msgstr ""
 #~ msgid_plural "You completed the puzzle in %d seconds"
 #~ msgstr[0] "Pulman ratkaisuun kului %d sekunti"
 #~ msgstr[1] "Pulman ratkaisuun kului %d sekuntia"
-
-#~ msgid "%d minute"
-#~ msgid_plural "%d minutes"
-#~ msgstr[0] "%d minuutti"
-#~ msgstr[1] "%d minuuttia"
 
 #~ msgid "%d second"
 #~ msgid_plural "%d seconds"
