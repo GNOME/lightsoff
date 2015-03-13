@@ -1,0 +1,106 @@
+# Bosnian translation for bosnianuniversetranslation
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the bosnianuniversetranslation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bosnianuniversetranslation\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=lightsoff&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-02-26 23:09+0000\n"
+"PO-Revision-Date: 2015-03-02 14:50+0100\n"
+"Last-Translator: Samir Ribić <Unknown>\n"
+"Language-Team: Bosnian <bs@li.org>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Launchpad-Export-Date: 2015-02-15 06:13+0000\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+msgid "Lights Off"
+msgstr "Pogasi svjetla"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
+msgid "Turn off all the lights"
+msgstr "Ugasite sva svjetla"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"Pogasi svjetla je zbirka slagalica gašenja svjetla. Pritisak na svjetlo ga "
+"ili pali ili gasi, ali takođe i sva okolna svjetla. Vaš zadatak je "
+"jednostavan: pogasiti sva svjetla."
+
+#: ../data/lightsoff.appdata.xml.in.h:4
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr "Igrači koji budu što duže gasili svjetla uživaće u većem broju nivoa."
+
+#: ../data/lightsoff.desktop.in.h:3
+msgid "game;logic;board;tiles;adjacent;puzzle;"
+msgstr "igra;logika;tabla;pločice;slagalica;"
+
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+msgid "The current level"
+msgstr "Trenutni nivo"
+
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+msgid "The users's most recent level."
+msgstr "Najskoriji nivo koji je odigrao korisnik."
+
+#: ../src/lightsoff.vala:52
+msgid "_Start Over"
+msgstr "_Započni Ispočetka"
+
+#: ../src/lightsoff.vala:55
+msgid "_Help"
+msgstr "_Pomoć"
+
+#: ../src/lightsoff.vala:56
+msgid "_About"
+msgstr "_O Programu"
+
+#: ../src/lightsoff.vala:57
+msgid "_Quit"
+msgstr "_Izlaz"
+
+#: ../src/lightsoff.vala:70
+msgid "Return to the previous level"
+msgstr "Vratite se na prethodni nivo"
+
+#: ../src/lightsoff.vala:76
+msgid "Proceed to the next level"
+msgstr "Nastavite do sljedećeg nivoa"
+
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d potez"
+msgstr[1] "%d poteza"
+msgstr[2] "%d poteza"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
+#, c-format
+msgid "Level %d"
+msgstr "Nivo %d"
+
+#: ../src/lightsoff.vala:117
+msgid "Turn off all the lights!"
+msgstr "Isključite sva svjetla!"
+
+#: ../src/lightsoff.vala:226
+msgid "translator-credits"
+msgstr "   Samir Ribić https://launchpad.net/~megaribi"
