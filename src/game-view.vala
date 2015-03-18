@@ -212,7 +212,7 @@ public class GameView : Clutter.Group
     public void activate_cursor ()
     {
         if (key_cursor_ready)
-            board_view.toggle_light (key_cursor_x, key_cursor_y);
+            board_view.move_to (key_cursor_x, key_cursor_y);
     }
 
     public void reset_game ()

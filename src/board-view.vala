@@ -183,13 +183,18 @@ public class BoardView : Clutter.Group
     {
         int x, y;
         find_light ((Light) actor, out x, out y);
+        move_to (x, y);
+    }
+
+    public void move_to (int x, int y)
+    {
         toggle_light (x, y);
         _moves += 1;
         light_toggled ();
     }
 
     // Toggle a light and those in each cardinal direction around it.
-    public void toggle_light (int x, int y, bool animate = true)
+    private void toggle_light (int x, int y, bool animate = true)
     {
         if (!playable)
             return;
