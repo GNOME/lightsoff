@@ -2,73 +2,121 @@
 # Copyright (C) 2013 lightsoff's COPYRIGHT HOLDER
 # This file is distributed under the same license as the lightsoff package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Daniel Martinez <entaltoaragon@gmail.com>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-02-19 12:18+0000\n"
-"PO-Revision-Date: 2013-02-19 22:50+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=lightsoff&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-01-25 21:37+0000\n"
+"PO-Revision-Date: 2015-03-19 23:48+0100\n"
 "Last-Translator: Daniel Martinez <entaltoaragon@gmail.com>\n"
-"Language-Team: Aragonese <softaragones@googlegroups.com>\n"
+"Language-Team: Aragonés <softaragones@googlegroups.com>\n"
 "Language: an\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1
-#: ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
 msgid "Lights Off"
 msgstr "Luces difuera"
 
-#: ../data/lightsoff.desktop.in.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:220
 msgid "Turn off all the lights"
 msgstr "Amortar todas as luces"
 
-#: ../data/lightsoff.desktop.in.in.h:3
+#: ../data/lightsoff.appdata.xml.in.h:3
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"Luces difuera ye una colección puzles ta amortar a luz. En pretar en una luz "
+"s'enciende u s'amorta, pero tamién cambeya o estau de todas as luces d'a "
+"suya arredol. L'obchectivo ye sencillo: amortar todas as luces!."
+
+#: ../data/lightsoff.appdata.xml.in.h:4
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"Os chugadors a os quals les fa goyo amortar as luces desfrutarán d'a gran "
+"cantidat de libels."
+
+#: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "chuego;lochica;tablero;fichas;adchacents;puzle;"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
-msgstr "O ran actual"
+msgstr "O libel actual"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
 msgid "The users's most recent level."
-msgstr "O ran mas recient de l'usuario."
+msgstr "O libel mas recient de l'usuario."
 
-#: ../src/lightsoff.vala:32
-msgid "_New Game"
-msgstr "Chuego _nuevo"
+#: ../src/lightsoff.vala:52
+msgid "_Start Over"
+msgstr "_Encetar"
 
-#: ../src/lightsoff.vala:35
+#: ../src/lightsoff.vala:55
 msgid "_Help"
 msgstr "Ad_uya"
 
-#: ../src/lightsoff.vala:36
+#: ../src/lightsoff.vala:56
 msgid "_About"
 msgstr "_Arredol"
 
-#: ../src/lightsoff.vala:39
+#: ../src/lightsoff.vala:57
 msgid "_Quit"
 msgstr "_Surtir"
 
-#: ../src/lightsoff.vala:150
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Amortar todas as luces\n"
-"\n"
-"Luces difuera ye parte d'os chuegos de GNOME."
+#: ../src/lightsoff.vala:70
+msgid "Return to the previous level"
+msgstr "Tornar a l'anterior libel"
 
-#: ../src/lightsoff.vala:157
+#: ../src/lightsoff.vala:76
+msgid "Proceed to the next level"
+msgstr "Pasar a o siguient libel"
+
+#: ../src/lightsoff.vala:107
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d movimiento"
+msgstr[1] "%d movimientos"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:113
+#, c-format
+msgid "Level %d"
+msgstr "Libel %d"
+
+#: ../src/lightsoff.vala:117
+#| msgid "Turn off all the lights"
+msgid "Turn off all the lights!"
+msgstr "Amorta todas as luces!"
+
+#: ../src/lightsoff.vala:226
 msgid "translator-credits"
-msgstr "Daniel Martinez <entaltoaragon@gmail.com>, 2013"
+msgstr "Daniel Martinez <entaltoaragon@gmail.com>, 2013, 2015"
 
-#: ../src/lightsoff.vala:160
-msgid "GNOME Games web site"
-msgstr "Pachina web d'os chuegos de GNOME"
+#~ msgid "_New Game"
+#~ msgstr "Chuego _nuevo"
 
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Amortar todas as luces\n"
+#~ "\n"
+#~ "Luces difuera ye parte d'os chuegos de GNOME."
+
+#~ msgid "GNOME Games web site"
+#~ msgstr "Pachina web d'os chuegos de GNOME"
