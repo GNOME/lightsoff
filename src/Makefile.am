@@ -28,7 +28,7 @@ lightsoff_LDADD =	\
 	$(LIGHTSOFF_LIBS)
 
 lightsoff-resources.c: $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies lightsoff.gresource.xml)
-	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source lightsoff.gresource.xml
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(srcdir) --generate-source $(srcdir)/lightsoff.gresource.xml
 
 CLEANFILES = \
 	$(patsubst %.vala,%.c,$(filter %.vala, $(SOURCES))) \
