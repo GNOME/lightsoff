@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "zûc;logjiche;board;taule;caselis;puzzle;berdei;gredei;lûs; "
+msgstr "zûc;logjiche;board;taule;caselis;puzzle;berdei;gredei;lûs;"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
