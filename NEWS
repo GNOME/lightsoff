@@ -1,3 +1,12 @@
+Lights Off 3.17.1
+=================
+
+* Translation updates (Basque, Swedish)
+* Updated moves' counter on keyboard mobve (Arnaud Bonatti)
+* Use GResource for loading the app-menu (Arnaud Bonatti)
+* Use GtkBuilder (Arnaud Bonatti)
+* Provide symbolic variant of app icon (Jakub Steiner)
+
 Lights Off 3.16.0
 =================
 
