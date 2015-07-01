@@ -4,32 +4,45 @@
 # Nuno Ferreira <nmrf@rnl.ist.utl.pt>, 1998.
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
 # 
+# Pedro Albuquerque <palbuquerque73@openmailbox.com>, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-01-12 18:03+0000\n"
-"PO-Revision-Date: 2014-03-18 07:55+0000\n"
-"Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
-"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"POT-Creation-Date: 2015-06-07 22:41+0000\n"
+"PO-Revision-Date: 2015-06-26 09:18+0100\n"
+"Last-Translator: Pedro Albuquerque <palbuquerque73@openmailbox.com>\n"
+"Language-Team: Português <palbuquerque73@openmailbox.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:191 ../src/lightsoff.vala:213
+msgid "Lights Off"
+msgstr "Luzes desligadas"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:194
+msgid "Turn off all the lights"
+msgstr "Desligue todas as luzes"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
-"Luzes Desligadas é uma coleção de quebra-cabeças de luzes. Ao clicar numa "
+"Luzes desligadas é uma coleção de quebra-cabeças de luzes. Ao clicar numa "
 "luz alterna o seu estado ligado ou desligado, mas também alterna o das luzes "
 "que a rodeiam. O seu objetivo é simples: desligar todas as luzes!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -37,18 +50,33 @@ msgstr ""
 "Jogadores que gostem de desligar luzes irão adorar a quantidade enorme de "
 "níveis disponível."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:60
-#: ../src/lightsoff.vala:163 ../src/lightsoff.vala:185
-msgid "Lights Off"
-msgstr "Luzes Desligadas"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Desligue todas as luzes"
-
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "jogo;lógica;tabuleiro;mosaicos;adjacente;puzzle;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "_Recomeçar"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "A_Juda"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "_Sobre"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Sair"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Voltar ao nível anterior"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Passar ao nível seguinte"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
@@ -58,32 +86,38 @@ msgstr "O nível atual"
 msgid "The users's most recent level."
 msgstr "O nível mais recente do utilizador."
 
-#: ../src/lightsoff.vala:44
-msgid "_New Game"
-msgstr "_Novo Jogo"
+#: ../src/lightsoff.vala:81
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d movimento"
+msgstr[1] "%d movimentos"
 
-#: ../src/lightsoff.vala:47
-msgid "_Help"
-msgstr "_Ajuda"
+#. The title of the window, %d is the level number
+#: ../src/lightsoff.vala:87
+#, c-format
+msgid "Level %d"
+msgstr "Nível %d"
 
-#: ../src/lightsoff.vala:48
-msgid "_About"
-msgstr "_Sobre"
+#: ../src/lightsoff.vala:91
+#| msgid "Turn off all the lights"
+msgid "Turn off all the lights!"
+msgstr "Desligue todas as luzes!"
 
-#: ../src/lightsoff.vala:49
-msgid "_Quit"
-msgstr "_Sair"
-
-#: ../src/lightsoff.vala:166
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Desligue todas as luzes\n"
-"\n"
-"Luzes Apagadas faz parte dos Jogos GNOME."
-
-#: ../src/lightsoff.vala:172
+#: ../src/lightsoff.vala:200
 msgid "translator-credits"
-msgstr "Duarte Loreto <happyguy_pt@hotmail.com>"
+msgstr ""
+"Duarte Loreto <happyguy_pt@hotmail.com>\n"
+"Pedro Albuquerque <palbuquerque73@gmail.com>"
+
+#~ msgid "_New Game"
+#~ msgstr "_Novo Jogo"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Desligue todas as luzes\n"
+#~ "\n"
+#~ "Luzes Apagadas faz parte dos Jogos GNOME."
