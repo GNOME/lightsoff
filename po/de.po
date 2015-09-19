@@ -18,14 +18,15 @@
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009-2012.
 # Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.
 # Benjamin Steinwender <b@stbe.at>, 2014.
+# Bernd Homuth <dev@hmt.im>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-20 21:47+0000\n"
-"PO-Revision-Date: 2014-09-21 23:05+0100\n"
+"POT-Creation-Date: 2015-09-18 11:04+0000\n"
+"PO-Revision-Date: 2015-09-18 20:59+0200\n"
 "Last-Translator: Bernd Homuth <dev@hmt.im>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de_DE\n"
@@ -33,9 +34,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:191 ../src/lightsoff.vala:213
+msgid "Lights Off"
+msgstr "Lichter aus"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:194
+msgid "Turn off all the lights"
+msgstr "Schalten Sie alle Lichter aus"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -43,10 +54,10 @@ msgid ""
 msgstr ""
 "»Lichter aus« ist eine Sammlung von Lichtschalter-Rätseln. Das Klicken auf "
 "ein Licht schaltet dieses entweder an oder aus, allerdings werden auch alle "
-"umliegenden Lichter umgeschalten. Ihr Ziel ist einfach: schalten Sie alle "
+"umliegenden Lichter umgeschaltet. Ihr Ziel ist einfach: schalten Sie alle "
 "Lichter aus!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -54,18 +65,33 @@ msgstr ""
 "Spieler, die es lieben Lichter auszuschalten, werden die riesige Anzahl an "
 "Spielstufen schätzen."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "Lichter aus"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Schalten Sie alle Lichter aus"
-
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "Spiel;Logik;Brettspiel;benachbart;Puzzle;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "Neu be_ginnen"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "_Info"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Beenden"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Zur vorherigen Spielstufe zurückkehren"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Weiter zur nächsten Spielstufe"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
@@ -75,52 +101,24 @@ msgstr "Aktuelle Spielstufe"
 msgid "The users's most recent level."
 msgstr "Die häufigste Spielstufe des Spielers."
 
-#: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "_Neues Spiel"
-
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "_Hilfe"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "_Info"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "_Beenden"
-
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "Zur vorherigen Spielstufe zurückkehren"
-
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "Weiter zur nächsten Spielstufe"
+#: ../src/lightsoff.vala:81
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d Zug"
+msgstr[1] "%d Züge"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:107
+#: ../src/lightsoff.vala:87
 #, c-format
 msgid "Level %d"
 msgstr "Spielstufe %d"
 
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
+#: ../src/lightsoff.vala:91
 msgid "Turn off all the lights!"
 msgstr "Schalten Sie alle Lichter aus!"
 
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Alle Lichter ausschalten\n"
-"\n"
-"»Lichter aus« ist ein Teil der GNOME-Spiele."
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:200
 msgid "translator-credits"
 msgstr ""
 "Karl Eichwalder <ke@suse.de>\n"
@@ -138,7 +136,20 @@ msgstr ""
 "Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
 "Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>\n"
-"Benjamin Steinwender <b@stbe.at>"
+"Benjamin Steinwender <b@stbe.at>\n"
+"Bernd Homuth <dev@hmt.im>"
+
+#~ msgid "_New Game"
+#~ msgstr "_Neues Spiel"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Alle Lichter ausschalten\n"
+#~ "\n"
+#~ "»Lichter aus« ist ein Teil der GNOME-Spiele."
 
 #~ msgid "GNOME Games web site"
 #~ msgstr "GNOME Games-Website"
