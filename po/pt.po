@@ -2,14 +2,16 @@
 # Copyright © 1998, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 gnome-games
 # Distributed under the same licence as the gnome-games package
 # Nuno Ferreira <nmrf@rnl.ist.utl.pt>, 1998.
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
-# 
+# Pedro Albuquerque <palbuquerque73@openmailbox.com>, 2015.
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.8\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-12 23:21+0000\n"
-"PO-Revision-Date: 2013-03-12 23:20+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=lightsoff&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-09-28 23:43+0000\n"
+"PO-Revision-Date: 2015-10-14 07:16+0100\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
@@ -17,11 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
+#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:158
+#: ../src/lightsoff.vala:182
 msgid "Lights Off"
-msgstr "Luzes Desligadas"
+msgstr "Luzes desligadas"
 
 #: ../data/lightsoff.desktop.in.in.h:2
 msgid "Turn off all the lights"
@@ -39,23 +42,23 @@ msgstr "O nível atual"
 msgid "The users's most recent level."
 msgstr "O nível mais recente do utilizador."
 
-#: ../src/lightsoff.vala:32
+#: ../src/lightsoff.vala:42
 msgid "_New Game"
-msgstr "_Novo Jogo"
+msgstr "_Novo jogo"
 
-#: ../src/lightsoff.vala:35
+#: ../src/lightsoff.vala:45
 msgid "_Help"
-msgstr "_Ajuda"
+msgstr "A_Juda"
 
-#: ../src/lightsoff.vala:36
+#: ../src/lightsoff.vala:46
 msgid "_About"
 msgstr "_Sobre"
 
-#: ../src/lightsoff.vala:39
+#: ../src/lightsoff.vala:49
 msgid "_Quit"
 msgstr "_Sair"
 
-#: ../src/lightsoff.vala:150
+#: ../src/lightsoff.vala:161
 msgid ""
 "Turn off all the lights\n"
 "\n"
@@ -63,13 +66,15 @@ msgid ""
 msgstr ""
 "Desligue todas as luzes\n"
 "\n"
-"Luzes Apagadas faz parte dos Jogos GNOME."
+"Luzes desligadas faz parte dos Jogos GNOME."
 
-#: ../src/lightsoff.vala:157
+#: ../src/lightsoff.vala:168
 msgid "translator-credits"
-msgstr "Duarte Loreto <happyguy_pt@hotmail.com>"
+msgstr ""
+"Duarte Loreto <happyguy_pt@hotmail.com>\n"
+"Pedro Albuquerque <palbuquerque73@gmail.com>"
 
-#: ../src/lightsoff.vala:160
+#: ../src/lightsoff.vala:171
 msgid "GNOME Games web site"
 msgstr "Página dos jogos GNOME"
 
@@ -7365,15 +7370,15 @@ msgstr "Página dos jogos GNOME"
 #~ "%(move)s White %(piece)s at %1$s takes the black %(victim_piece)s at %2$s "
 #~ "(%(result)s)"
 #~ msgstr ""
-#~ "%(move)s %(piece)s Branco em %1$s toma o %(victim_piece)s Preto em %(end)"
-#~ "s (%(result)s)"
+#~ "%(move)s %(piece)s Branco em %1$s toma o %(victim_piece)s Preto em "
+#~ "%(end)s (%(result)s)"
 
 #~ msgid ""
 #~ "%(move)s Black %(piece)s at %1$s takes the white %(victim_piece)s at %2$s "
 #~ "(%(result)s)"
 #~ msgstr ""
-#~ "%(move)s %(piece)s Preto em %1$s toma o %(victim_piece)s Branco em %(end)"
-#~ "s (%(result)s)"
+#~ "%(move)s %(piece)s Preto em %1$s toma o %(victim_piece)s Branco em "
+#~ "%(end)s (%(result)s)"
 
 #~ msgid "%(move)s White %(piece)s moves from %1$s to %2$s (%(result)s)"
 #~ msgstr "%(move)s %(piece)s Branco é movido de %1$s para %2$s (%(result)s)"
