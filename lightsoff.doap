@@ -16,13 +16,6 @@
 
   <maintainer>
     <foaf:Person>
-      <foaf:name>Thomas H.P. Andersen</foaf:name>
-      <foaf:mbox rdf:resource="mailto:phomes@gmail.com" />
-      <gnome:userid>thomashpa</gnome:userid>
-    </foaf:Person>
-  </maintainer>
-  <maintainer>
-    <foaf:Person>
       <foaf:name>Michael Catanzaro</foaf:name>
       <foaf:mbox rdf:resource="mailto:mcatanzaro@gnome.org" />
       <gnome:userid>mcatanzaro</gnome:userid>
@@ -30,9 +23,9 @@
   </maintainer>
   <maintainer>
     <foaf:Person>
-      <foaf:name>Mario Wenzel</foaf:name>
-      <foaf:mbox rdf:resource="mailto:maweki@gmail.com" />
-      <gnome:userid>mariowenzel</gnome:userid>
+      <foaf:name>Robert Roth</foaf:name>
+      <foaf:mbox rdf:resource="mailto:robertroth@gnome.org" />
+      <gnome:userid>robertroth</gnome:userid>
     </foaf:Person>
   </maintainer>
 </Project>
