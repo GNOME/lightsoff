@@ -1,3 +1,10 @@
+Lights Off 3.19.4
+==================
+
+* Updated translations (Bulgarian)
+* Stop using deprecated gnome-common
+* Add pre-commit and pre-applypatch hooks
+
 Lights Off 3.19.3
 =================
 

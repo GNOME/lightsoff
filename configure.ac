@@ -1,5 +1,5 @@
 AC_PREREQ([2.63])
-AC_INIT([Lights Off], [3.19.3], [https://bugzilla.gnome.org/],
+AC_INIT([Lights Off], [3.19.4], [https://bugzilla.gnome.org/],
         [lightsoff], [https://wiki.gnome.org/Apps/Lightsoff])
 AC_CONFIG_MACRO_DIR([m4])
 
