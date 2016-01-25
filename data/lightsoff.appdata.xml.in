@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2013 Michael Catanzaro -->
-<application>
- <id type="desktop">lightsoff.desktop</id>
- <metadata_license>CC0-1.0</metadata_license>
- <project_license>GPL-2.0+ and CC-BY-SA-3.0</project_license>
- <_name>Lights Off</_name>
- <_summary>Turn off all the lights</_summary>
- <description>
-  <_p>
-   Lights Off is a collection of light switch puzzles. Clicking on a light
-   toggles it either on or off, but also toggles all the surrounding lights,
-   too. Your objective is simple: turn off all the lights!
-  </_p>
-  <_p>
-   Players who delight in turning off lights will enjoy the huge number of
-   levels.
-  </_p>
- </description>
- <screenshots>
-  <screenshot type="default" width="379" height="426">https://people.gnome.org/~mcatanzaro/lightsoff.png</screenshot>
- </screenshots>
- <url type="homepage">https://wiki.gnome.org/Apps/Lightsoff</url>
- <updatecontact>mcatanzaro_at_gnome.org</updatecontact>
- <project_group>GNOME</project_group>
- <kudos>
-  <kudo>AppMenu</kudo>
-  <kudo>HiDpiIcon</kudo>
-  <kudo>ModernToolkit</kudo>
-  <kudo>UserDocs</kudo>
- </kudos>
-</application>
+<component type="desktop">
+  <id>lightsoff.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+ and CC-BY-SA-3.0</project_license>
+  <_name>Lights Off</_name>
+  <_summary>Turn off all the lights</_summary>
+  <description>
+    <_p>
+      Lights Off is a collection of light switch puzzles. Clicking on a light
+      toggles it either on or off, but also toggles all the surrounding lights,
+      too. Your objective is simple: turn off all the lights!
+    </_p>
+    <_p>
+     Players who delight in turning off lights will enjoy the huge number of
+     levels.
+    </_p>
+  </description>
+  <screenshots>
+    <screenshot type="default" width="379" height="426">
+      <image>https://people.gnome.org/~mcatanzaro/lightsoff.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://wiki.gnome.org/Apps/Lightsoff</url>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=lightsoff</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="help">https://help.gnome.org/users/lightsoff/stable/</url>
+  <update_contact>mcatanzaro_at_gnome.org</update_contact>
+  <project_group>GNOME</project_group>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <translation type="gettext">lightsoff</translation>
+</component>
