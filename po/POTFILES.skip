@@ -1,4 +1,5 @@
 src/board-view.c
 src/game-view.c
 src/lightsoff.c
+src/lightsoff-window.c
 src/puzzle-generator.c

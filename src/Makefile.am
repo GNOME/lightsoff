@@ -4,15 +4,19 @@ BUILT_SOURCES = lightsoff-resources.c
 
 lightsoff_SOURCES = \
 	board-view.vala \
-	config.vapi \
 	lightsoff.vala \
+	lightsoff-window.vala \
 	puzzle-generator.vala \
 	game-view.vala \
+	config.vapi \
 	$(BUILT_SOURCES)
 
 lightsoff_VALAFLAGS = \
 	--pkg posix \
+	--pkg gtk+-3.0 \
 	--pkg gmodule-2.0 \
+	--gresources lightsoff.gresource.xml \
+	--target-glib $(GLIB_REQUIRED) \
 	--pkg clutter-1.0 \
 	--pkg clutter-gtk-1.0
 

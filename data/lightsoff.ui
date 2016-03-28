@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk+" version="3.12"/>
-  <object class="GtkApplicationWindow" id="window">
+  <template class="LightsoffWindow" parent="GtkApplicationWindow">
     <property name="resizable">False</property>
     <child type="titlebar">
       <object class="GtkHeaderBar" id="headerbar">
@@ -49,5 +49,5 @@
         </child>
       </object>
     </child>
-  </object>
+  </template>
 </interface>
