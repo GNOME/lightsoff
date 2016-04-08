@@ -5,7 +5,7 @@
 # Elnaz Sarbar <elnaz@farsiweb.info>, 2005, 2006.
 # Meelad Zakaria <meelad@farsiweb.info>, 2005.
 # Farzaneh Sarafraz <farzaneh@farsiweb.info>, 2006.
-# Danial Behzadi <dani.behzi@gmail.com>, 2012.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2012, 2015.
 # Arash Mousavi <mousavi.arash@gmail.com>, 2012, 2013.
 #
 msgid ""
@@ -13,74 +13,118 @@ msgstr ""
 "Project-Id-Version: gnome-games HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-28 23:11+0000\n"
-"PO-Revision-Date: 2013-03-23 12:04+0330\n"
-"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
+"POT-Creation-Date: 2016-03-30 09:36+0000\n"
+"PO-Revision-Date: 2015-10-03 12:30+0330\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian\n"
 "Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.4\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "چراغ‌ها خاموش"
 
-#: ../data/lightsoff.desktop.in.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "تمامی چراغ‌ها را خاموش کنید"
 
-#: ../data/lightsoff.desktop.in.in.h:3
+#: ../data/lightsoff.appdata.xml.in.h:3
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"چراغ‌ها خاموش مجموعه‌ای از پازل‌های تغییر چراغ است. کلیک روی یک چراغ، آن و تمام "
+"چراغ‌های مجاورش را روشن یا خاموش می‌کند. هدف شما ساده است: تمام چراغ‌ها را "
+"خاموش کنید!"
+
+#: ../data/lightsoff.appdata.xml.in.h:4
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"بازیکنانی که از خاموش کردن چراغ‌ها لذّت می‌برند، از تعداد زیاد مراحل خوشحال "
+"خواهند شد."
+
+#: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "بازی;منطق;تخته;کاشی;مجاور;پازل;"
+msgstr "بازی;منطق;تخته;کاشی;مجاور;پازل;game;logic;board;tiles;adjacent;puzzle;"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
-msgid "The current level"
-msgstr "مرحله‌ی جاری"
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "_شروع مجدد"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
-msgid "The users's most recent level."
-msgstr "آخرین مرحله‌ی کاربر"
-
-#: ../src/lightsoff.vala:32
-msgid "_New Game"
-msgstr "بازی _جدید"
-
-#: ../src/lightsoff.vala:35
+#: ../data/lightsoff-menus.ui.h:2
 msgid "_Help"
 msgstr "_راهنما"
 
-#: ../src/lightsoff.vala:36
+#: ../data/lightsoff-menus.ui.h:3
 msgid "_About"
 msgstr "_درباره"
 
-#: ../src/lightsoff.vala:39
+#: ../data/lightsoff-menus.ui.h:4
 msgid "_Quit"
 msgstr "_خروج"
 
-#: ../src/lightsoff.vala:150
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"تمامی چراغ‌ها را خاموش کنید\n"
-"\n"
-"چراغ‌ها خاموش جزیی از بازی‌های گنوم است."
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "بازگشت به مرحلهٔ پیش"
 
-#: ../src/lightsoff.vala:157
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "گذار به مرحلهٔ بعد"
+
+#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+msgid "The current level"
+msgstr "مرحلهٔ جاری"
+
+#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+msgid "The users's most recent level."
+msgstr "آخرین مرحلهٔ کاربر"
+
+#: ../src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
-"دانیال بهزادی <dani.behzi@gmail.com>\n"
+"دانیال بهزادی <dani.behzi@ubuntu.com>\n"
 "آرش موسوی <mousavi.arash@gmail.com>"
 
-#: ../src/lightsoff.vala:160
-msgid "GNOME Games web site"
-msgstr "وب‌سایت بازی‌های گنوم"
+#: ../src/lightsoff-window.vala:60
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%Id حرکت"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff-window.vala:66
+#, c-format
+msgid "Level %d"
+msgstr "مرحلهٔ %Id"
+
+#: ../src/lightsoff-window.vala:70
+msgid "Turn off all the lights!"
+msgstr "تمامی چراغ‌ها را خاموش کنید!"
+
+#~ msgid "_New Game"
+#~ msgstr "بازی _جدید"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "تمامی چراغ‌ها را خاموش کنید\n"
+#~ "\n"
+#~ "چراغ‌ها خاموش جزیی از بازی‌های گنوم است."
+
+#~ msgid "GNOME Games web site"
+#~ msgstr "وب‌سایت بازی‌های گنوم"
 
 #~ msgid "Chess"
 #~ msgstr "شطرنج"
@@ -120,12 +164,6 @@ msgstr "وب‌سایت بازی‌های گنوم"
 
 #~ msgid "Rewind to the game start"
 #~ msgstr "بازگشت به شروع بازی"
-
-#~ msgid "Show the previous move"
-#~ msgstr "نمایش حرکت پیشین"
-
-#~ msgid "Show the next move"
-#~ msgstr "نمایش حرکت بعدی"
 
 #~ msgid "Show the current move"
 #~ msgstr "نمایش حرکت جاری"
@@ -1742,9 +1780,6 @@ msgstr "وب‌سایت بازی‌های گنوم"
 #~ msgid "Safe Teleports:"
 #~ msgstr "دوربرهای امن:"
 
-#~ msgid "Level:"
-#~ msgstr "مرحله:"
-
 #~ msgid "Remaining:"
 #~ msgstr "باقی‌مانده:"
 
@@ -2078,11 +2113,6 @@ msgstr "وب‌سایت بازی‌های گنوم"
 #~ msgid_plural "You completed the puzzle in %d seconds"
 #~ msgstr[0] "شما پازل را در %d ثانیه کامل کردید"
 #~ msgstr[1] "شما پازل را در %d ثانیه کامل کردید"
-
-#~ msgid "%d minute"
-#~ msgid_plural "%d minutes"
-#~ msgstr[0] "%d دقیقه"
-#~ msgstr[1] "%d دقیقه"
 
 #~ msgid "%d second"
 #~ msgid_plural "%d seconds"
@@ -4822,10 +4852,6 @@ msgstr "وب‌سایت بازی‌های گنوم"
 #, fuzzy
 #~ msgid "_Name:"
 #~ msgstr "نام"
-
-#, fuzzy
-#~ msgid "_Start"
-#~ msgstr "_شروع مجدد"
 
 #, fuzzy
 #~ msgid "_Type:"
