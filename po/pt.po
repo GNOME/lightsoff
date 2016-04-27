@@ -5,22 +5,23 @@
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
 # 
 # Pedro Albuquerque <palbuquerque73@openmailbox.com>, 2015.
+# Sérgio Cardeira <cardeira.sergio@gmail.com>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-06-07 22:41+0000\n"
-"PO-Revision-Date: 2015-06-26 09:18+0100\n"
-"Last-Translator: Pedro Albuquerque <palbuquerque73@openmailbox.com>\n"
-"Language-Team: Português <palbuquerque73@openmailbox.com>\n"
+"POT-Creation-Date: 2016-02-21 01:30+0000\n"
+"PO-Revision-Date: 2016-02-21 03:15-0100\n"
+"Last-Translator: Sérgio Cardeira <cardeira.sergio@gmail.com>\n"
+"Language-Team: Português <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
 #: ../src/lightsoff.vala:191 ../src/lightsoff.vala:213
@@ -60,7 +61,7 @@ msgstr "_Recomeçar"
 
 #: ../data/lightsoff-menus.ui.h:2
 msgid "_Help"
-msgstr "A_Juda"
+msgstr "A_juda"
 
 #: ../data/lightsoff-menus.ui.h:3
 msgid "_About"
@@ -100,7 +101,6 @@ msgid "Level %d"
 msgstr "Nível %d"
 
 #: ../src/lightsoff.vala:91
-#| msgid "Turn off all the lights"
 msgid "Turn off all the lights!"
 msgstr "Desligue todas as luzes!"
 
