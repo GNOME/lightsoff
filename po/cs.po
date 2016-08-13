@@ -16,32 +16,32 @@
 # Petr Pulc <petrpulc@gmail.com>, 2009.
 # Andre Klapper <ak-47@gmx.net>, 2009.
 # Petr Kovar <pknbe@volny.cz>, 2008, 2012.
-# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013, 2014, 2015.
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013, 2014, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-03 11:02+0000\n"
-"PO-Revision-Date: 2015-02-03 19:47+0100\n"
+"POT-Creation-Date: 2016-08-13 20:34+0000\n"
+"PO-Revision-Date: 2016-08-13 23:32+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
-"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Zhasněte světla"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:220
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Zhasněte všechna světla"
 
@@ -62,9 +62,37 @@ msgid ""
 msgstr ""
 "Hráči, které baví zhasínat světla, se mohou těšit na velké množství úrovní."
 
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
+
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "hra;logická;desková;políčka;hlavolam;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "_Začít znovu"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "_Nápověda"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "O _aplikaci"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "U_končit"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Vrátit se do předchozí úrovně"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Postoupit do následující úrovně"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
@@ -74,49 +102,7 @@ msgstr "Současná úroveň"
 msgid "The users's most recent level."
 msgstr "Uživatelova poslední úroveň."
 
-#: ../src/lightsoff.vala:52
-msgid "_Start Over"
-msgstr "_Začít znovu"
-
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "_Nápověda"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "O _aplikaci"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "U_končit"
-
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "Vrátit se do předchozí úrovně"
-
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "Postoupit do následující úrovně"
-
-#: ../src/lightsoff.vala:107
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d tah"
-msgstr[1] "%d tahy"
-msgstr[2] "%d tahů"
-
-#. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:113
-#, c-format
-msgid "Level %d"
-msgstr "Úroveň %d"
-
-#: ../src/lightsoff.vala:117
-msgid "Turn off all the lights!"
-msgstr "Zhasněte všechna světla!"
-
-#: ../src/lightsoff.vala:226
+#: ../src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Jirka Lébl\n"
@@ -132,6 +118,24 @@ msgstr ""
 "Marek Lisý <marek.lisy@centrum.cz>\n"
 "Petr Pulc <petrpulc@gmail.com>\n"
 "Marek Černocký <marek@manet.cz>"
+
+#: ../src/lightsoff-window.vala:60
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d tah"
+msgstr[1] "%d tahy"
+msgstr[2] "%d tahů"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff-window.vala:66
+#, c-format
+msgid "Level %d"
+msgstr "Úroveň %d"
+
+#: ../src/lightsoff-window.vala:70
+msgid "Turn off all the lights!"
+msgstr "Zhasněte všechna světla!"
 
 #~ msgid "_New Game"
 #~ msgstr "_Nová hra"
