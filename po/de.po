@@ -14,7 +14,7 @@
 # Philipp Kerling <k.philipp@gmail.com>, 2007-2008.
 # Björn Deiseroth <service@dual-creators.de>, 2007.
 # Andre Klapper <ak-47@gmx.net>, 2008-2009.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2013.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2013, 2016.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009-2012.
 # Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.
 # Benjamin Steinwender <b@stbe.at>, 2014.
@@ -25,24 +25,24 @@ msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-09-18 11:04+0000\n"
-"PO-Revision-Date: 2015-09-18 20:59+0200\n"
-"Last-Translator: Bernd Homuth <dev@hmt.im>\n"
+"POT-Creation-Date: 2016-08-13 20:34+0000\n"
+"PO-Revision-Date: 2016-08-14 20:12+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:191 ../src/lightsoff.vala:213
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Lichter aus"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:194
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Schalten Sie alle Lichter aus"
 
@@ -64,6 +64,10 @@ msgid ""
 msgstr ""
 "Spieler, die es lieben Lichter auszuschalten, werden die riesige Anzahl an "
 "Spielstufen schätzen."
+
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "Das GNOME-Projekt"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -101,24 +105,7 @@ msgstr "Aktuelle Spielstufe"
 msgid "The users's most recent level."
 msgstr "Die häufigste Spielstufe des Spielers."
 
-#: ../src/lightsoff.vala:81
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d Zug"
-msgstr[1] "%d Züge"
-
-#. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:87
-#, c-format
-msgid "Level %d"
-msgstr "Spielstufe %d"
-
-#: ../src/lightsoff.vala:91
-msgid "Turn off all the lights!"
-msgstr "Schalten Sie alle Lichter aus!"
-
-#: ../src/lightsoff.vala:200
+#: ../src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Karl Eichwalder <ke@suse.de>\n"
@@ -138,6 +125,23 @@ msgstr ""
 "Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>\n"
 "Benjamin Steinwender <b@stbe.at>\n"
 "Bernd Homuth <dev@hmt.im>"
+
+#: ../src/lightsoff-window.vala:60
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d Zug"
+msgstr[1] "%d Züge"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff-window.vala:66
+#, c-format
+msgid "Level %d"
+msgstr "Spielstufe %d"
+
+#: ../src/lightsoff-window.vala:70
+msgid "Turn off all the lights!"
+msgstr "Schalten Sie alle Lichter aus!"
 
 #~ msgid "_New Game"
 #~ msgstr "_Neues Spiel"
