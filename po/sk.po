@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-22 11:01+0000\n"
-"PO-Revision-Date: 2015-02-22 16:55+0100\n"
+"POT-Creation-Date: 2016-08-13 20:34+0000\n"
+"PO-Revision-Date: 2016-08-15 10:06+0200\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -20,35 +20,69 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 1.7.4\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Zhasnúť svetlá"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:220
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Zhasnite všetky svetlá"
 
 #: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
-"Lights Off is a collection of light switch puzzles. Clicking on a light toggles it "
-"either on or off, but also toggles all the surrounding lights, too. Your objective "
-"is simple: turn off all the lights!"
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
 msgstr ""
-"Zhasnúť svetlá je kolekcia hlavolamov s prepínaním svetiel. Kliknutím na svetlo ho "
-"zažnete alebo zhasnete, ale tiež prepnete svetlá okolo. Váš cieľ je jednoduchý: "
-"zhasnite všetky svetlá!"
+"Zhasnúť svetlá je kolekcia hlavolamov s prepínaním svetiel. Kliknutím na "
+"svetlo ho zažnete alebo zhasnete, ale tiež prepnete svetlá okolo. Váš cieľ "
+"je jednoduchý: zhasnite všetky svetlá!"
 
 #: ../data/lightsoff.appdata.xml.in.h:4
-msgid "Players who delight in turning off lights will enjoy the huge number of levels."
-msgstr "Hráči, ktorých baví zhasínanie svetiel sa môžu tešiť na veľké množstvo úrovní."
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"Hráči, ktorých baví zhasínanie svetiel sa môžu tešiť na veľké množstvo "
+"úrovní."
+
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "hra;logická;stolová;susediace dlaždice;hlavolam;logika;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "_Začať odznovu"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "_Pomocník"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "_O tejto hre"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Ukončiť"
+
+# tooltip
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Vráti predošlú úroveň"
+
+# tooltip
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Prejde na ďalšiu úroveň"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
@@ -58,33 +92,16 @@ msgstr "Aktuálna úroveň"
 msgid "The users's most recent level."
 msgstr "Naposledy hraná úroveň."
 
-#: ../src/lightsoff.vala:52
-msgid "_Start Over"
-msgstr "_Začať odznovu"
+#: ../src/lightsoff.vala:96
+msgid "translator-credits"
+msgstr ""
+"Stanislav Višňovský (visnovsky@nenya.ms.mff.cuni.cz)\n"
+"Marcel Telka <marcel@telka.sk>\n"
+"Peter Mráz <etkinator@gmail.com>\n"
+"Ján Kyselica <kyselica.jan@gmail.com>\n"
+"Dušan Kazik <prescott66@gmail.com>"
 
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "_Pomocník"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "_O tejto hre"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "_Ukončiť"
-
-# tooltip
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "Vráti predošlú úroveň"
-
-# tooltip
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "Prejde na ďalšiu úroveň"
-
-#: ../src/lightsoff.vala:107
+#: ../src/lightsoff-window.vala:60
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -93,23 +110,14 @@ msgstr[1] "%d ťah"
 msgstr[2] "%d ťahy"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:113
+#: ../src/lightsoff-window.vala:66
 #, c-format
 msgid "Level %d"
 msgstr "Úroveň %d"
 
-#: ../src/lightsoff.vala:117
+#: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Zhasnite všetky svetlá!"
-
-#: ../src/lightsoff.vala:226
-msgid "translator-credits"
-msgstr ""
-"Stanislav Višňovský (visnovsky@nenya.ms.mff.cuni.cz)\n"
-"Marcel Telka <marcel@telka.sk>\n"
-"Peter Mráz <etkinator@gmail.com>\n"
-"Ján Kyselica <kyselica.jan@gmail.com>\n"
-"Dušan Kazik <prescott66@gmail.com>"
 
 #~ msgid "_New Game"
 #~ msgstr "_Nová hra"
@@ -189,8 +197,10 @@ msgstr ""
 #~ msgid "The piece to promote pawns to"
 #~ msgstr "Figúrka, na ktorú premieňať pešiakov"
 
-#~ msgid "The piece to promote to when a human player moves a pawn to the far rank"
-#~ msgstr "Figúrka, na ktorú sa premení pešiak, keď ho hráč posunie na posledné pole"
+#~ msgid ""
+#~ "The piece to promote to when a human player moves a pawn to the far rank"
+#~ msgstr ""
+#~ "Figúrka, na ktorú sa premení pešiak, keď ho hráč posunie na posledné pole"
 
 #~ msgid "A flag to enable 3D mode"
 #~ msgstr "Príznak povoľujúci 3D režim"
@@ -235,12 +245,12 @@ msgstr ""
 #~ msgstr "Protihráč"
 
 #~ msgid ""
-#~ "Can be 'human' (play against another human player), '' (use the first available "
-#~ "chess engine) or the name of a specific engine to play against"
+#~ "Can be 'human' (play against another human player), '' (use the first "
+#~ "available chess engine) or the name of a specific engine to play against"
 #~ msgstr ""
-#~ "Môže byť 'human' (hra proti druhému človeku v úlohe protihráča), '' (použije prvý "
-#~ "dostupný šachový stroj) alebo názov konkrétneho šachového stroja, proti ktorému "
-#~ "sa bude hrať"
+#~ "Môže byť 'human' (hra proti druhému človeku v úlohe protihráča), "
+#~ "'' (použije prvý dostupný šachový stroj) alebo názov konkrétneho "
+#~ "šachového stroja, proti ktorému sa bude hrať"
 
 #~ msgid "Difficulty of the opponent chess engine"
 #~ msgstr "Obtiažnosť šachového stroja v úlohe protihráča"
