@@ -22,31 +22,31 @@
 # Flamarion Jorge <jorge.flamarion@gmail.com>, 2011.
 # Djavan Fagundes <djavan@comum.org>, 2012.
 # Enrico Nicoletto <liverig@gmail.com>, 2013, 2014, 2015.
-#
+# Rafael Fontenelle <rafaelff@gnome.org>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-03-23 11:07+0000\n"
-"PO-Revision-Date: 2015-03-23 16:46-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=lightso"
+"ff&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-08-13 20:34+0000\n"
+"PO-Revision-Date: 2016-08-22 01:08-0200\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.7.3\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Luzes desligadas"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:220
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Apague todas as luzes"
 
@@ -67,9 +67,37 @@ msgid ""
 msgstr ""
 "Jogadores que gostam de apagar luzes irão apreciar o vasto número de níveis."
 
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "O Projeto GNOME"
+
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "jogo;lógica;tabuleiro;ladrilhos;pedras;adjacente;quebra-cabeça;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "_Recomeçar"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "A_juda"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "_Sobre"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "Sai_r"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Retornar ao nível anterior"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Avançar para o próximo nível"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
@@ -79,48 +107,7 @@ msgstr "O nível atual"
 msgid "The users's most recent level."
 msgstr "Os níveis mais recentes dos usuários."
 
-#: ../src/lightsoff.vala:52
-msgid "_Start Over"
-msgstr "_Recomeçar"
-
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "A_juda"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "_Sobre"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "Sai_r"
-
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "Retornar ao nível anterior"
-
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "Avançar para o próximo nível"
-
-#: ../src/lightsoff.vala:107
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d jogada"
-msgstr[1] "%d jogadas"
-
-#. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:113
-#, c-format
-msgid "Level %d"
-msgstr "Nível %d"
-
-#: ../src/lightsoff.vala:117
-msgid "Turn off all the lights!"
-msgstr "Apague todas as luzes!"
-
-#: ../src/lightsoff.vala:226
+#: ../src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Sandro Nunes Henrique <sandro@conectiva.com.br>\n"
@@ -139,6 +126,23 @@ msgstr ""
 "Rodrigo Padula de Oliveira <contato@rodrigopadula.com>\n"
 "Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Enrico Nicoletto <liverig@gmail.com>"
+
+#: ../src/lightsoff-window.vala:60
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d jogada"
+msgstr[1] "%d jogadas"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff-window.vala:66
+#, c-format
+msgid "Level %d"
+msgstr "Nível %d"
+
+#: ../src/lightsoff-window.vala:70
+msgid "Turn off all the lights!"
+msgstr "Apague todas as luzes!"
 
 #~ msgid "_New Game"
 #~ msgstr "_Novo jogo"
