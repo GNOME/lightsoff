@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-15 16:19+0100\n"
+"POT-Creation-Date: 2016-09-12 02:13+0200\n"
 "PO-Revision-Date: 2015-03-15 15:57+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -25,12 +25,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Sluk lyset"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:220
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Sluk alle lysene"
 
@@ -51,9 +51,37 @@ msgid ""
 msgstr ""
 "De lysslukningslystne spillere vil bestemt nyde det enorme antal baner."
 
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "GNOME-projektet"
+
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "spil;logik;bræt;brikker;tilstødende;omgivende;hjernebryder;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "_Begynd forfra"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "_Om"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Afslut"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Tilbage til forrige bane"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Videre til næste bane"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
@@ -63,48 +91,7 @@ msgstr "Den nuværende bane"
 msgid "The users's most recent level."
 msgstr "Brugerens sidste bane."
 
-#: ../src/lightsoff.vala:52
-msgid "_Start Over"
-msgstr "_Begynd forfra"
-
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "_Hjælp"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "_Om"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "_Afslut"
-
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "Tilbage til forrige bane"
-
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "Videre til næste bane"
-
-#: ../src/lightsoff.vala:107
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d træk"
-msgstr[1] "%d træk"
-
-#. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:113
-#, c-format
-msgid "Level %d"
-msgstr "Bane %d"
-
-#: ../src/lightsoff.vala:117
-msgid "Turn off all the lights!"
-msgstr "Sluk alle lysene!"
-
-#: ../src/lightsoff.vala:226
+#: ../src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Anders Wegge Jakobsen\n"
@@ -116,6 +103,23 @@ msgstr ""
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
+
+#: ../src/lightsoff-window.vala:60
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d træk"
+msgstr[1] "%d træk"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff-window.vala:66
+#, c-format
+msgid "Level %d"
+msgstr "Bane %d"
+
+#: ../src/lightsoff-window.vala:70
+msgid "Turn off all the lights!"
+msgstr "Sluk alle lysene!"
 
 #~ msgid "_New Game"
 #~ msgstr "_Nyt spil"
