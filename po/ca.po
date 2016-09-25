@@ -13,19 +13,29 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-04 21:47+0000\n"
-"PO-Revision-Date: 2014-09-05 00:06+0200\n"
-"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-25 15:02+0200\n"
+"PO-Revision-Date: 2016-09-25 14:59+0200\n"
+"Last-Translator: Jordi Mas <jmas@softcatala.org>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
+msgid "Lights Off"
+msgstr "Apaga els llums"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:90
+msgid "Turn off all the lights"
+msgstr "Apaga tots els llums"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -36,7 +46,7 @@ msgstr ""
 "apaga els llums que l'envolten. L'objectiu és senzill: apagueu tots els "
 "llums!"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -44,18 +54,37 @@ msgstr ""
 "El jugadors que els agrada apagar els llums hi gaudiran molt gràcies al gran "
 "nombre de nivells."
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "Apaga els llums"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "Apaga tots els llums"
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "El projecte GNOME"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "joc;lògica;tauler;fitxes;adjacents;puzle;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "_Torna a començar"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "A_juda"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "_Quant a"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "S_urt"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Torna al nivell anterior"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Passa al nivell següent"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
@@ -65,52 +94,7 @@ msgstr "El nivell actual"
 msgid "The users's most recent level."
 msgstr "El nivell més recent de l'usuari."
 
-#: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "Partida _nova"
-
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "A_juda"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "_Quant a"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "S_urt"
-
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "Torna al nivell anterior"
-
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "Passa al nivell següent"
-
-#. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:107
-#, c-format
-msgid "Level %d"
-msgstr "Nivell %d"
-
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
-msgid "Turn off all the lights!"
-msgstr "Apaga tots els llums!"
-
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"Apaga tots els llums\n"
-"\n"
-"L'apaga els llums forma part dels jocs del GNOME."
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Jordi Vila <gnome@softcatala.net>\n"
@@ -119,3 +103,32 @@ msgstr ""
 "Jesús Corrius <jesus@softcatala.org>\n"
 "Josep Puigdemont <josep.puigdemont@gmail.com>\n"
 "David Planella <david.planella@gmail.com>"
+
+#: ../src/lightsoff-window.vala:60
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d moviment"
+msgstr[1] "%d moviments"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff-window.vala:66
+#, c-format
+msgid "Level %d"
+msgstr "Nivell %d"
+
+#: ../src/lightsoff-window.vala:70
+msgid "Turn off all the lights!"
+msgstr "Apaga tots els llums!"
+
+#~ msgid "_New Game"
+#~ msgstr "Partida _nova"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Apaga tots els llums\n"
+#~ "\n"
+#~ "L'apaga els llums forma part dels jocs del GNOME."
