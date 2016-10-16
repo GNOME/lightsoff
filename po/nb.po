@@ -1,14 +1,14 @@
 # Norwegian bokmål translation of lightsoff.
 # Copyright © 1998-2002 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@gnome.org>, 1998-2015.
-# Terance Edward Sola <terance@lyse.net>, 2005.
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2016
+# Edward Sola <terance@lyse.net>, 2005.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: lightsoff 3.17.x\n"
+"Project-Id-Version: lightsoff 3.22.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 20:08+0200\n"
-"PO-Revision-Date: 2015-08-11 20:09+0200\n"
+"POT-Creation-Date: 2016-10-16 12:20+0200\n"
+"PO-Revision-Date: 2016-10-16 12:20+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:191 ../src/lightsoff.vala:213
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Av med lysene"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:194
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Slå av alle lysese"
 
@@ -32,13 +32,22 @@ msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
-msgstr "Lights Off er en samling med lysbryterpuslespill. Når du klikker på et lys vil det gå av eller på, men slår også av eller på alle lysene rundt seg. Målet er enkelt: slå av alle lysene!"
+msgstr ""
+"Lights Off er en samling med lysbryterpuslespill. Når du klikker på et lys "
+"vil det gå av eller på, men slår også av eller på alle lysene rundt seg. "
+"Målet er enkelt: slå av alle lysene!"
 
 #: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
-msgstr "Spillere som liker å slå av lys vil kunne glede seg over et enormt antall nivåer."
+msgstr ""
+"Spillere som liker å slå av lys vil kunne glede seg over et enormt antall "
+"nivåer."
+
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "GNOME prosjektet"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -76,7 +85,14 @@ msgstr "Nåværende nivå"
 msgid "The users's most recent level."
 msgstr "Brukerens seneste nivå."
 
-#: ../src/lightsoff.vala:81
+#: ../src/lightsoff.vala:96
+msgid "translator-credits"
+msgstr ""
+"Kjartan Maraas <kmaraas@gnome.org>\n"
+"Espen Stefansen <espens@svn.gnome.org>\n"
+"Torstein Adolf Winterseth <kvikende@fsfe.org>"
+
+#: ../src/lightsoff-window.vala:60
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -84,18 +100,11 @@ msgstr[0] "%d trekk"
 msgstr[1] "%d trekk"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:87
+#: ../src/lightsoff-window.vala:66
 #, c-format
 msgid "Level %d"
 msgstr "Nivå %d"
 
-#: ../src/lightsoff.vala:91
+#: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Slå av alle lysene!"
-
-#: ../src/lightsoff.vala:200
-msgid "translator-credits"
-msgstr ""
-"Kjartan Maraas <kmaraas@gnome.org>\n"
-"Espen Stefansen <espens@svn.gnome.org>\n"
-"Torstein Adolf Winterseth <kvikende@fsfe.org>"
