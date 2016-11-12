@@ -4,7 +4,7 @@
       <default>1</default>
       <range min="1" />
       <summary>The current level</summary>
-      <description>The users's most recent level.</description>
+      <description>The users’s most recent level.</description>
     </key>
   </schema>
 </schemalist>
