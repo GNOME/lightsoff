@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-13 20:34+0000\n"
-"PO-Revision-Date: 2016-08-22 22:37+0200\n"
+"POT-Creation-Date: 2016-11-12 12:49+0000\n"
+"PO-Revision-Date: 2016-11-13 21:40+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -84,8 +84,8 @@ msgid "The current level"
 msgstr "Il nivel atuâl"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
-msgstr "Il nivel plui recent dai utents."
+msgid "The users’s most recent level."
+msgstr "Il nivel plui resint dai utents."
 
 #: ../src/lightsoff.vala:96
 msgid "translator-credits"
