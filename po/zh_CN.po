@@ -10,18 +10,28 @@ msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-09-24 09:50+0000\n"
-"PO-Revision-Date: 2014-09-24 23:46+0800\n"
-"Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
+"POT-Creation-Date: 2016-11-08 08:18+0000\n"
+"PO-Revision-Date: 2016-12-10 16:55+0800\n"
+"Last-Translator: Mandy Wang <wangmychn@gmail.com>\n"
 "Language-Team: Chinese Simplified <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1
+#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
+msgid "Lights Off"
+msgstr "关灯"
+
+#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
+#: ../src/lightsoff.vala:90
+msgid "Turn off all the lights"
+msgstr "关闭所有的灯"
+
+#: ../data/lightsoff.appdata.xml.in.h:3
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -30,24 +40,43 @@ msgstr ""
 "Lights Off 是关灯游戏的集合。点击一盏灯，将其切换为打开或关闭，周围的灯也会被"
 "切换。你的目标很简单：关闭所有的灯！"
 
-#: ../data/lightsoff.appdata.xml.in.h:2
+#: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr "成功关灯的玩家将会享受更多的关卡。"
 
-#: ../data/lightsoff.desktop.in.h:1 ../src/lightsoff.vala:207
-#: ../src/lightsoff.vala:229
-msgid "Lights Off"
-msgstr "关灯"
-
-#: ../data/lightsoff.desktop.in.h:2
-msgid "Turn off all the lights"
-msgstr "关闭所有的灯"
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "GNOME 项目"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "game;logic;board;tiles;adjacent;puzzle;逻辑;游戏;棋牌;谜;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "重新开始(_S)"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "帮助(_H)"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "关于(_A)"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "退出(_Q)"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "返回上一级别"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "前进到下一级别"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
@@ -57,57 +86,41 @@ msgstr "当前级别"
 msgid "The users's most recent level."
 msgstr "用户最近的级别。"
 
-#: ../src/lightsoff.vala:52
-msgid "_New Game"
-msgstr "新建游戏(_N)"
-
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "帮助(_H)"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "关于(_A)"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "退出(_Q)"
-
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "返回上一级别"
-
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "前进到下一级别"
-
-#. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:107
-#, c-format
-msgid "Level %d"
-msgstr "级别 %d"
-
-#. Subtitle of the window when playing level one.
-#: ../src/lightsoff.vala:109
-msgid "Turn off all the lights!"
-msgstr "关闭所有的灯！"
-
-#: ../src/lightsoff.vala:210
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"关闭所有的灯。\n"
-"\n"
-"关灯是 GNOME 游戏的一部分。"
-
-#: ../src/lightsoff.vala:216
+#: ../src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Yang Zhang <zyangmath@gmail.com>, 2007\n"
 "Ping Z <zpsigma@gmail.com>, 2007\n"
-"Xhacker Liu <liu.dongyuan@gmail.com>, 2010"
+"Xhacker Liu <liu.dongyuan@gmail.com>, 2010\n"
+"Mandy Wang <wangmychn@gmail.com>, 2016"
+
+#: ../src/lightsoff-window.vala:60
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "变化 %d 次"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff-window.vala:66
+#, c-format
+msgid "Level %d"
+msgstr "级别 %d"
+
+#: ../src/lightsoff-window.vala:70
+msgid "Turn off all the lights!"
+msgstr "关闭所有的灯！"
+
+#~ msgid "_New Game"
+#~ msgstr "新建游戏(_N)"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "关闭所有的灯。\n"
+#~ "\n"
+#~ "关灯是 GNOME 游戏的一部分。"
 
 #~ msgid "GNOME Games web site"
 #~ msgstr "GNOME 游戏网站"
@@ -1825,10 +1838,6 @@ msgstr ""
 #~ msgid "You completed the puzzle in %d second"
 #~ msgid_plural "You completed the puzzle in %d seconds"
 #~ msgstr[0] "您在 %d 秒内完成了谜题。"
-
-#~ msgid "%d minute"
-#~ msgid_plural "%d minutes"
-#~ msgstr[0] "%d 分钟"
 
 #~ msgid "%d second"
 #~ msgid_plural "%d seconds"
@@ -5178,9 +5187,6 @@ msgstr ""
 
 #~ msgid "_Game name:"
 #~ msgstr "游戏名称(_G)："
-
-#~ msgid "_Start"
-#~ msgstr "开始(_S)"
 
 #~ msgid "_White:"
 #~ msgstr "白方(_W)："
