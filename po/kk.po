@@ -1,15 +1,15 @@
 # Kazakh translation for gnome-games.
 # Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-games package.
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010-2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-01-25 21:37+0000\n"
-"PO-Revision-Date: 2015-09-21 16:39+0500\n"
+"POT-Creation-Date: 2016-11-12 12:49+0000\n"
+"PO-Revision-Date: 2017-02-17 13:13+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Жарықтарды сөндіру"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:220
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Барлық жарықтарды сөндіріңіз"
 
@@ -35,68 +35,79 @@ msgid ""
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
+"Жарықтарды сөндіру — бұл мақсаты барлық жарықтарды сөндіру болатын ойын. "
+"Жарыққа шерту оны іске қосады немесе сөндіреді, және де оның көрші "
+"жарықтарын да өзгертеді. Ұтып алу үшін барлық жарықтарды сөндіру керек!"
 
 #: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
+"Жарықтарды сөндіру ойынын ұнататын ойыншылар деңгейлердің үлкен санымен "
+"рахаттанады."
+
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "GNOME жобасы"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr ""
+"game;logic;board;tiles;adjacent;puzzle;ойын;логика;тақта;плитка;көрші;"
+"жұмбақ;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "Басынан ба_стау"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "_Көмек"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "О_сы туралы"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Шығу"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Алдыңғы деңгейге оралу"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Келесі деңгейге өту"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
 msgstr "Ағымдағы деңгейі"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
+msgid "The users’s most recent level."
 msgstr "Пайдаланушының соңғы деңгейі."
 
-#: ../src/lightsoff.vala:52
-msgid "_Start Over"
-msgstr "Басынан ба_стау"
+#: ../src/lightsoff.vala:96
+msgid "translator-credits"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "_Көмек"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "О_сы туралы"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "_Шығу"
-
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "Алдыңғы деңгейге оралу"
-
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "Келесі деңгейге өту"
-
-#: ../src/lightsoff.vala:107
+#: ../src/lightsoff-window.vala:60
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
 msgstr[0] "%d жылжыту"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:113
+#: ../src/lightsoff-window.vala:66
 #, c-format
 msgid "Level %d"
 msgstr "Деңгей %d"
 
-#: ../src/lightsoff.vala:117
+#: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Барлық жарықтарды сөндіріңіз!"
-
-#: ../src/lightsoff.vala:226
-msgid "translator-credits"
-msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
 #~ msgid "A list of recently played games."
 #~ msgstr "Соңғы ойналған ойындар тізімі."
