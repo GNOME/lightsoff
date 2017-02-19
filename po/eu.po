@@ -4,22 +4,22 @@
 #
 #
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2008, 2009, 2010, 2011, 2012, 2013.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2013, 2014, 2015, 2016.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2013, 2014, 2015, 2016, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=lightsof"
-"f&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-13 20:34+0000\n"
-"PO-Revision-Date: 2016-09-20 12:17+0100\n"
-"Last-Translator: dooteo <dooteo@zundan.com>\n"
-"Language-Team: Basque <librezale@librezale.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=lightsoff&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-11-12 12:49+0000\n"
+"PO-Revision-Date: 2017-02-19 13:32+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
 #: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
@@ -86,7 +86,8 @@ msgid "The current level"
 msgstr "Uneko maila"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
+#| msgid "The users's most recent level."
+msgid "The users’s most recent level."
 msgstr "Erabiltzailearen azken maila."
 
 #: ../src/lightsoff.vala:96
