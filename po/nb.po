@@ -1,14 +1,14 @@
 # Norwegian bokmål translation of lightsoff.
 # Copyright © 1998-2002 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@gnome.org>, 1998-2016
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2017
 # Edward Sola <terance@lyse.net>, 2005.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: lightsoff 3.22.x\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-16 12:20+0200\n"
-"PO-Revision-Date: 2016-10-16 12:20+0200\n"
+"Project-Id-Version: lightsoff 3.23.x\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=lightsoff&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-11-12 12:49+0000\n"
+"PO-Revision-Date: 2017-02-19 17:54+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -82,7 +82,7 @@ msgid "The current level"
 msgstr "Nåværende nivå"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
+msgid "The users’s most recent level."
 msgstr "Brukerens seneste nivå."
 
 #: ../src/lightsoff.vala:96
