@@ -1,20 +1,20 @@
 # Serbian translation of gnome-games
-# Courtesy of Prevod.org team (http://prevod.org/) -- 2003—2016.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003—2017.
 # This file is distributed under the same license as the gnome-games package.
 # Dušan Marjanović <madafaka@bsd.org.yu>
 # Igor Nestorović <igor@prevod.org>, 2005.
 # Miloš Popović <gpopac@gmai, 2010.
 # Branko Kokanović <branko.kokanovic@gmail.com>, 2010.
-# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011—2016.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2011—2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: Gnomove igre\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=lightso"
 "ff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-13 20:34+0000\n"
-"PO-Revision-Date: 2016-08-28 11:08+0200\n"
+"POT-Creation-Date: 2016-11-12 12:49+0000\n"
+"PO-Revision-Date: 2017-02-25 20:11+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
-"Language-Team: srpski <gnome-sr@googlegroups.org>\n"
+"Language-Team: Serbian <(nothing)>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,7 +41,7 @@ msgid ""
 msgstr ""
 "Pogasi svetla je zbirka slagalica gašenja svetla. Pritisak na svetlo ga ili "
 "pali ili gasi, ali takođe i sva okolna svetla. Vaš zadatak je jednostavan: "
-"pogasiti sva svetla."
+"pogasiti sva svetla!"
 
 #: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
@@ -86,7 +86,8 @@ msgid "The current level"
 msgstr "Trenutni nivo"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
+#| msgid "The users's most recent level."
+msgid "The users’s most recent level."
 msgstr "Najskoriji korisnikov nivo."
 
 #: ../src/lightsoff.vala:96
