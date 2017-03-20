@@ -4,13 +4,13 @@
 # Maxim Dziumanenko <dziumanenko@gmail.com>, 2004-2010
 # Wanderlust <wanderlust@ukr.net>, 2009.
 # Korostil Daniel <ted.korostiled@gmail.com>, 2011, 2012.
-# Daniel Korostil <ted.korostiled@gmail.com>, 2015.
+# Daniel Korostil <ted.korostiled@gmail.com>, 2015, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-14 12:19+0200\n"
-"PO-Revision-Date: 2015-03-14 12:29+0300\n"
+"POT-Creation-Date: 2017-03-20 13:54+0200\n"
+"PO-Revision-Date: 2017-03-20 13:55+0300\n"
 "Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
 "Language-Team: linux.org.ua\n"
 "Language: uk\n"
@@ -23,12 +23,12 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Без світла"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:220
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Вимкнути світло"
 
@@ -39,8 +39,8 @@ msgid ""
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
 "Без світла — збірка головоломок зі світлом. Натиск на ліхтар вмикає або "
-"вимикає світло, проте заодно перемикає всі навколишні ліхтарі. Ціль — проста:"
-" вимкнути всі ліхтарі!"
+"вимикає світло, проте заодно перемикає всі навколишні ліхтарі. Ціль — "
+"проста: вимкнути всі ліхтарі!"
 
 #: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
@@ -50,43 +50,55 @@ msgstr ""
 "Гравці, які захоплюються вимкненням світла, будуть раді великій кількості "
 "рівнів."
 
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "Проект GNOME"
+
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "гра;логічна;настільна;головоломка;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "_Почати заново"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "_Довідка"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "_Про програму"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "Ви_йти"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Повернутись до попереднього рівня"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Перейти до наступного рівня"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
 msgstr "Поточний рівень"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
+msgid "The users’s most recent level."
 msgstr "Останній рівень користувача."
 
-#: ../src/lightsoff.vala:52
-msgid "_Start Over"
-msgstr "_Почати заново"
+#: ../src/lightsoff.vala:96
+msgid "translator-credits"
+msgstr ""
+"Юрій Сирота\n"
+"Максим Дзюманенко <dziumanenko@gmail.com>\n"
+"Wanderlust <wanderlust@ukr.net\n"
+"Daniel Korostil <ted.korostiled@gmail.com>"
 
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "_Довідка"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "_Про програму"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "Ви_йти"
-
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "Повернутись до попереднього рівня"
-
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "Перейти до наступного рівня"
-
-#: ../src/lightsoff.vala:107
+#: ../src/lightsoff-window.vala:60
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -95,19 +107,11 @@ msgstr[1] "%d ходи"
 msgstr[2] "%d ходів"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:113
+#: ../src/lightsoff-window.vala:66
 #, c-format
 msgid "Level %d"
 msgstr "Рівень %d"
 
-#: ../src/lightsoff.vala:117
+#: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Вимкніть усі ліхтарі!"
-
-#: ../src/lightsoff.vala:226
-msgid "translator-credits"
-msgstr ""
-"Юрій Сирота\n"
-"Максим Дзюманенко <dziumanenko@gmail.com>\n"
-"Wanderlust <wanderlust@ukr.net\n"
-"Daniel Korostil <ted.korostiled@gmail.com>"
