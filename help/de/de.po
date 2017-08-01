@@ -1,20 +1,21 @@
 # German translation for the lightsoff manual.
 # Copyright (C) 2009 Tim Horton
 # This file is distributed under the same license as the lightsoff package.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2010, 2012.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2010, 2012, 2017.
+# Christian.Kirbach@gmail.com>, 2012, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
-"POT-Creation-Date: 2015-09-01 20:50+0000\n"
-"PO-Revision-Date: 2015-08-05 11:09+0200\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
+"POT-Creation-Date: 2017-07-31 12:22+0000\n"
+"PO-Revision-Date: 2017-08-01 22:44+0200\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -213,11 +214,12 @@ msgstr ""
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Commit</gui>."
+"click <gui>Submit Bug</gui>."
 msgstr ""
 "Falls Sie eine Anfrage nach einem neuen Funktionsmerkmal stellen, wählen Sie "
 "<gui>enhancement</gui> im Menü <gui>Severity</gui>. Füllen Sie die Felder "
-"»Summary« und »Description« aus und klicken Sie auf <gui>Commit</gui>."
+"»Summary« (Zusammenfassung) und »Description« (Beschreibung) aus und klicken "
+"Sie auf <gui>Submit Bug</gui>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:48
@@ -705,47 +707,3 @@ msgstr ""
 "Alternativ können Sie das Internationalisierungsteam über dessen <link href="
 "\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">Mailingliste</link> "
 "kontaktieren."
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/lightsoff_logo.jpg' "
-#~ "md5='8d8b8efd7f0cfb455cb7fba261433455'"
-#~ msgstr ""
-#~ "external ref='figures/lightsoff_logo.jpg' "
-#~ "md5='8d8b8efd7f0cfb455cb7fba261433455'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/lightsoff.jpg' "
-#~ "md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
-#~ msgstr ""
-#~ "external ref='figures/lightsoff.jpg' "
-#~ "md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
-
-#~ msgid ""
-#~ "<media type=\"image\" src=\"figures/lightsoff.jpg\">Lights Off logo</"
-#~ "media>Lights Off"
-#~ msgstr ""
-#~ "<media type=\"image\" src=\"figures/lightsoff.jpg\">Lichter-aus-Logo</"
-#~ "media>Lichter aus"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
-#~ msgstr ""
-#~ "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
-
-#~ msgctxt "_"
-#~ msgid ""
-#~ "external ref='figures/lightsoff.ogv' "
-#~ "md5='61b453a759cd54689b3a321089290bf8'"
-#~ msgstr ""
-#~ "external ref='figures/lightsoff.ogv' "
-#~ "md5='61b453a759cd54689b3a321089290bf8'"
-
-#~ msgid ""
-#~ "To file your bug, choose the component <gui>lightsoff</gui> in the "
-#~ "<gui>Component</gui> menu."
-#~ msgstr ""
-#~ "Um einen Fehler zu melden, wählen Sie <gui>lightsoff</gui> im "
-#~ "<gui>Component</gui>-Menü."
