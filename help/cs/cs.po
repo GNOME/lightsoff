@@ -1,13 +1,13 @@
 # Czech translation for lightsoff.
 # Copyright (C) 2013 lightsoff's COPYRIGHT HOLDER
 # This file is distributed under the same license as the lightsoff package.
-# Marek Černocký <marek@manet.cz>, 2013.
+# Marek Černocký <marek@manet.cz>, 2013, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"POT-Creation-Date: 2014-04-22 21:32+0000\n"
-"PO-Revision-Date: 2014-04-23 10:19+0100\n"
+"POT-Creation-Date: 2017-07-31 12:22+0000\n"
+"PO-Revision-Date: 2017-08-07 13:21+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -203,11 +203,11 @@ msgstr ""
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Commit</gui>."
+"click <gui>Submit Bug</gui>."
 msgstr ""
 "V případě, že žádáte o novou funkčnost, zvolte v nabídce <gui>Severity</gui> "
 "položku <gui>enhancement</gui>. Vyplňte pole Summary a Description a "
-"klikněte na <gui>Commit</gui>."
+"klikněte na <gui>Submit Bug</gui>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:48
