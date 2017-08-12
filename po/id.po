@@ -7,12 +7,12 @@
 # Dirgita <dirgitadevina@yahoo.co.id>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: lightsoff master\n"
+"Project-Id-Version: lightsoff gnome-3-22\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-11-29 13:19+0000\n"
-"PO-Revision-Date: 2015-11-29 21:08+0700\n"
-"Last-Translator: Andika Triwidada <atriwidada@gnome.org>\n"
+"POT-Creation-Date: 2017-02-13 07:45+0000\n"
+"PO-Revision-Date: 2017-08-12 20:53+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Rosetta-Export-Date: 2007-04-23 05:58:10+0000\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:217 ../src/lightsoff.vala:239
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Lights Off"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:220
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Matikan semua cahaya"
 
@@ -48,9 +48,37 @@ msgid ""
 "levels."
 msgstr "Pemain yang mampu mematikan lampu akan menikmati sejumlah besar level."
 
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "Proyek GNOME"
+
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "permainan;logika;papan;ubin;bersebelahan;teka-teki;"
+
+#: ../data/lightsoff-menus.ui.h:1
+msgid "_Start Over"
+msgstr "Ulangi _Lagi"
+
+#: ../data/lightsoff-menus.ui.h:2
+msgid "_Help"
+msgstr "_Bantuan"
+
+#: ../data/lightsoff-menus.ui.h:3
+msgid "_About"
+msgstr "Tent_ang"
+
+#: ../data/lightsoff-menus.ui.h:4
+msgid "_Quit"
+msgstr "_Keluar"
+
+#: ../data/lightsoff.ui.h:1
+msgid "Return to the previous level"
+msgstr "Kembali ke tingkat sebelumnya"
+
+#: ../data/lightsoff.ui.h:2
+msgid "Proceed to the next level"
+msgstr "Lanjutkan ke tingkat berikutnya"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:1
 msgid "The current level"
@@ -60,47 +88,7 @@ msgstr "Tingkat saat ini"
 msgid "The users's most recent level."
 msgstr "Tingkat terkini pengguna."
 
-#: ../src/lightsoff.vala:52
-msgid "_Start Over"
-msgstr "Ulangi _Lagi"
-
-#: ../src/lightsoff.vala:55
-msgid "_Help"
-msgstr "_Bantuan"
-
-#: ../src/lightsoff.vala:56
-msgid "_About"
-msgstr "Tent_ang"
-
-#: ../src/lightsoff.vala:57
-msgid "_Quit"
-msgstr "_Keluar"
-
-#: ../src/lightsoff.vala:70
-msgid "Return to the previous level"
-msgstr "Kembali ke tingkat sebelumnya"
-
-#: ../src/lightsoff.vala:76
-msgid "Proceed to the next level"
-msgstr "Lanjutkan ke tingkat berikutnya"
-
-#: ../src/lightsoff.vala:107
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d langkah"
-
-#. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:113
-#, c-format
-msgid "Level %d"
-msgstr "Tingkat %d"
-
-#: ../src/lightsoff.vala:117
-msgid "Turn off all the lights!"
-msgstr "Matikan semua cahaya!"
-
-#: ../src/lightsoff.vala:226
+#: ../src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>\n"
@@ -108,3 +96,19 @@ msgstr ""
 "Andika Triwidada <andika@gmail.com>, 2010, 2012, 2013, 2014, 2015.\n"
 "Vincent Sebastian The <vincent.s.the@gmail.com>, 2011, 2012.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2012."
+
+#: ../src/lightsoff-window.vala:60
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d langkah"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff-window.vala:66
+#, c-format
+msgid "Level %d"
+msgstr "Tingkat %d"
+
+#: ../src/lightsoff-window.vala:70
+msgid "Turn off all the lights!"
+msgstr "Matikan semua cahaya!"
