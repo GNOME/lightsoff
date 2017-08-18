@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the lightsoff package.
 #
 # László Ádám Kohajda <kla.kohi at gmail dot com>, 2012.
-# Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2012, 2013, 2017.
 # Balázs Úr <urbalazs at gmail dot com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"POT-Creation-Date: 2014-09-20 21:47+0000\n"
-"PO-Revision-Date: 2014-09-21 01:17+0200\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"POT-Creation-Date: 2017-07-31 12:22+0000\n"
+"PO-Revision-Date: 2017-08-18 10:38+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng at ubuntu dot com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.5\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -206,14 +206,18 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:44
+#| msgid ""
+#| "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+#| "<gui>Severity</gui> menu. Fill in the Summary and Description sections "
+#| "and click <gui>Commit</gui>."
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Commit</gui>."
+"click <gui>Submit Bug</gui>."
 msgstr ""
 "Ha új szolgáltatást kér, válassza az <gui>enhancement</gui> lehetőséget a "
 "<gui>Severity</gui> menüben. Töltse ki a Summary és Description szakaszokat, "
-"és kattintson a <gui>Commit</gui> gombra."
+"és kattintson a <gui>Submit Bug</gui> gombra."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:48
@@ -241,13 +245,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/develop.page:27
-#| msgid ""
-#| "If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
-#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
-#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our "
-#| "<link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing "
-#| "list</link>."
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
@@ -256,12 +253,12 @@ msgid ""
 "href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
-"Ha szeretne <link href=\"https://wiki.gnome.org/Apps/Games/Contributing\">"
-"közreműködni a <app>GNOME játékok</app> fejlesztésében</link>, akkor a "
-"fejlesztőkkel a kapcsolatot <link href=\"https://cbe005.chat.mibbit."
-"com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link>-n vagy a <link "
-"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">levelezőlistán<"
-"/link> veheti fel."
+"Ha szeretne <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
+"\">közreműködni a <app>GNOME játékok</app> fejlesztésében</link>, akkor a "
+"fejlesztőkkel a kapcsolatot <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link>-n vagy a <link href="
+"\"http://mail.gnome.org/mailman/listinfo/games-list\">levelezőlistán</link> "
+"veheti fel."
 
 #. (itstool) path: page/title
 #: C/documentation.page:21
@@ -313,15 +310,11 @@ msgstr "Fények le"
 
 #. (itstool) path: media/span
 #: C/index.page:21
-#| msgctxt "link"
-#| msgid "Lights Off"
 msgid "Lights Off logo"
 msgstr "Fények le logó"
 
 #. (itstool) path: page/title
 #: C/index.page:21
-#| msgctxt "link"
-#| msgid "Lights Off"
 msgid "<_:media-1/> Lights Off"
 msgstr "<_:media-1/> Fények le"
 
