@@ -1,10 +1,10 @@
 # Bulgarian translation of lightsoff po-file.
 # Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
-# Copyright (C) 2009, 2010, 2012, 2016 Free Software Foundation, Inc.
+# Copyright (C) 2009, 2010, 2012, 2016, 2017 Free Software Foundation, Inc.
 # Copyright (C) 2010, 2012 Krasimir Chonov <mk2616@abv.bg>.
 # Evgeni Boevski <linkej@yahoo.com>, 2002, 2003.
 # Rostislav "zbrox" Raykov <zbrox@i-space.org>, 2004, 2005, 2006.
-# Alexander Shopov <ash@kambanaria.org>, 2007, 2008, 2009, 2010, 2012, 2016.
+# Alexander Shopov <ash@kambanaria.org>, 2007, 2008, 2009, 2010, 2012, 2016, 2017.
 # Yavor Doganov <yavor@gnu.org>, 2008.
 # Krasimir Chonov <mk2616@abv.bg>, 2010, 2012.
 #
@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-13 20:23+0200\n"
-"PO-Revision-Date: 2016-01-13 14:48+0200\n"
+"POT-Creation-Date: 2017-09-02 08:59+0300\n"
+"PO-Revision-Date: 2017-08-18 21:54+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -23,12 +23,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:191 ../src/lightsoff.vala:213
+#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Га̀си лампи"
 
 #: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:194
+#: ../src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Изгасете всички лампи"
 
@@ -47,6 +47,10 @@ msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr "Ако обичате да превключвате електроуреди — това е вашата игра."
+
+#: ../data/lightsoff.appdata.xml.in.h:5
+msgid "The GNOME Project"
+msgstr "Проектът GNOME"
 
 #: ../data/lightsoff.desktop.in.h:3
 msgid "game;logic;board;tiles;adjacent;puzzle;"
@@ -83,27 +87,10 @@ msgid "The current level"
 msgstr "Текущото ниво"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
-msgstr "Последното ниво."
+msgid "The users’s most recent level."
+msgstr "Последно играно ниво."
 
-#: ../src/lightsoff.vala:81
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d ход"
-msgstr[1] "%d хода"
-
-#. The title of the window, %d is the level number
-#: ../src/lightsoff.vala:87
-#, c-format
-msgid "Level %d"
-msgstr "Ниво %d"
-
-#: ../src/lightsoff.vala:91
-msgid "Turn off all the lights!"
-msgstr "Изгасете всички лампи!"
-
-#: ../src/lightsoff.vala:200
+#: ../src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Ростислав „zbrox“ Райков <zbrox@i-space.org>\n"
@@ -116,3 +103,20 @@ msgstr ""
 "bg</a>\n"
 "Докладвайте за грешки на <a href=\"http://gnome.cult.bg/bugs\">http://gnome."
 "cult.bg/bugs</a>"
+
+#: ../src/lightsoff-window.vala:60
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d ход"
+msgstr[1] "%d хода"
+
+#. The title of the window, %d is the level number
+#: ../src/lightsoff-window.vala:66
+#, c-format
+msgid "Level %d"
+msgstr "Ниво %d"
+
+#: ../src/lightsoff-window.vala:70
+msgid "Turn off all the lights!"
+msgstr "Изгасете всички лампи!"
