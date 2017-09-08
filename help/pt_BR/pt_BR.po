@@ -2,20 +2,20 @@
 # Copyright (C) 2014 lightsoff's COPYRIGHT HOLDER
 # This file is distributed under the same license as the lightsoff package.
 # Antonio Fernando Santos Ladeia <contato@antonioladeia.com>, 2014.
-#
+# Rafael Fontenelle <rafaelff@gnome.org>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"POT-Creation-Date: 2014-07-08 09:40+0000\n"
-"PO-Revision-Date: 2014-06-25 16:04-0300\n"
-"Last-Translator: Antonio Fernando Santos Ladeia <contato@antonioladeia.com>\n"
+"POT-Creation-Date: 2017-07-31 12:22+0000\n"
+"PO-Revision-Date: 2017-09-08 19:11-0200\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Virtaal 1.0.0-beta1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -146,7 +146,7 @@ msgstr "Ajudando a melhorar o <app>Luzes desligadas</app>"
 #. (itstool) path: section/title
 #: C/bug-filing.page:25
 msgid "Report a bug or suggest an improvement"
-msgstr "Relatando um erro ou sugirindo uma melhoria"
+msgstr "Relatando um erro ou sugerindo uma melhoria"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:26
@@ -204,14 +204,18 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:44
+#| msgid ""
+#| "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+#| "<gui>Severity</gui> menu. Fill in the Summary and Description sections "
+#| "and click <gui>Commit</gui>."
 msgid ""
 "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 "<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Commit</gui>."
+"click <gui>Submit Bug</gui>."
 msgstr ""
 "Se você está requisitando uma novo recurso, escolha <gui>enhancement</gui> "
 "no menu <gui>Severity</gui>. Preencha as seções Summary e Description e "
-"clique em <gui>Commit</gui>."
+"clique em <gui>Submit Bug</gui>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:48
@@ -305,7 +309,7 @@ msgstr "Luzes desligadas"
 #. (itstool) path: media/span
 #: C/index.page:21
 msgid "Lights Off logo"
-msgstr "logo do Luzes desligadas"
+msgstr "Logo do Luzes desligadas"
 
 #. (itstool) path: page/title
 #: C/index.page:21
