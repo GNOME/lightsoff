@@ -6,15 +6,15 @@
 # Meelad Zakaria <meelad@farsiweb.info>, 2005.
 # Farzaneh Sarafraz <farzaneh@farsiweb.info>, 2006.
 # Danial Behzadi <dani.behzi@ubuntu.com>, 2012, 2015.
-# Arash Mousavi <mousavi.arash@gmail.com>, 2012, 2013.
+# Arash Mousavi <mousavi.arash@gmail.com>, 2012, 2013, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-13 20:34+0000\n"
-"PO-Revision-Date: 2016-09-14 10:07+0430\n"
+"POT-Creation-Date: 2017-04-06 10:07+0000\n"
+"PO-Revision-Date: 2017-09-22 23:18+0330\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
 #: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
@@ -89,8 +89,8 @@ msgid "The current level"
 msgstr "مرحلهٔ جاری"
 
 #: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
-msgstr "آخرین مرحلهٔ کاربر"
+msgid "The users’s most recent level."
+msgstr "آخرین مرحلهٔ کاربر."
 
 #: ../src/lightsoff.vala:96
 msgid "translator-credits"
