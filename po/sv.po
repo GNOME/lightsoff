@@ -1,19 +1,19 @@
 # Swedish messages for lightsoff.
-# Copyright © 1999-2016 Free Software Foundation, Inc.
+# Copyright © 1999-2017 Free Software Foundation, Inc.
 # Andreas Persenius <ndap@swipnet.se>, 1999.
 # Andreas Hyden <a.hyden@cyberpoint.se>
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2016.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2016, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-12 12:49+0000\n"
-"PO-Revision-Date: 2016-11-28 19:23+0100\n"
+"POT-Creation-Date: 2017-09-16 22:09+0000\n"
+"PO-Revision-Date: 2017-10-26 22:52+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -21,19 +21,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.4\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
+#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
+#: src/lightsoff.vala:87 src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Släck lyset"
 
-#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:90
+#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
+#: src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Släck alla ljus"
 
-#: ../data/lightsoff.appdata.xml.in.h:3
+#: data/lightsoff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -43,7 +43,7 @@ msgstr ""
 "eller av ljuset där, men gör detsamma med alla intilliggande rutor också. "
 "Ditt mål är enkelt: släck alla ljus!"
 
-#: ../data/lightsoff.appdata.xml.in.h:4
+#: data/lightsoff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -51,47 +51,54 @@ msgstr ""
 "Spelare som tycker om att släcka lampor kommer att uppskatta det mycket "
 "stora antalet nivåer."
 
-#: ../data/lightsoff.appdata.xml.in.h:5
+#: data/lightsoff.appdata.xml.in:39
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
 
-#: ../data/lightsoff.desktop.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/lightsoff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "spel;logik;brädspel;brickor;närliggande;pussel;"
 
-#: ../data/lightsoff-menus.ui.h:1
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/lightsoff.desktop.in:8
+#| msgid "Lights Off"
+msgid "lightsoff"
+msgstr "lightsoff"
+
+#: data/lightsoff-menus.ui:7
 msgid "_Start Over"
 msgstr "_Börja om"
 
-#: ../data/lightsoff-menus.ui.h:2
+#: data/lightsoff-menus.ui:14
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: ../data/lightsoff-menus.ui.h:3
+#: data/lightsoff-menus.ui:19
 msgid "_About"
 msgstr "_Om"
 
-#: ../data/lightsoff-menus.ui.h:4
+#: data/lightsoff-menus.ui:23
 msgid "_Quit"
 msgstr "A_vsluta"
 
-#: ../data/lightsoff.ui.h:1
+#: data/lightsoff.ui:15
 msgid "Return to the previous level"
 msgstr "Gå tillbaka till föregående nivå"
 
-#: ../data/lightsoff.ui.h:2
+#: data/lightsoff.ui:35
 msgid "Proceed to the next level"
 msgstr "Fortsätt till nästa nivå"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+#: data/org.gnome.lightsoff.gschema.xml:6
 msgid "The current level"
 msgstr "Aktuella nivån"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+#: data/org.gnome.lightsoff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Användarens senaste nivå."
 
-#: ../src/lightsoff.vala:96
+#: src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
@@ -104,7 +111,7 @@ msgstr ""
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>."
 
-#: ../src/lightsoff-window.vala:60
+#: src/lightsoff-window.vala:60
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -112,11 +119,11 @@ msgstr[0] "%d drag"
 msgstr[1] "%d drag"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:66
 #, c-format
 msgid "Level %d"
 msgstr "Nivå %d"
 
-#: ../src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Släck alla ljus!"
