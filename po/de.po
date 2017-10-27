@@ -14,7 +14,7 @@
 # Philipp Kerling <k.philipp@gmail.com>, 2007-2008.
 # Björn Deiseroth <service@dual-creators.de>, 2007.
 # Andre Klapper <ak-47@gmx.net>, 2008-2009.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2013, 2016.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2010-2013, 2016-2017.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009-2012.
 # Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>, 2012.
 # Benjamin Steinwender <b@stbe.at>, 2014.
@@ -23,10 +23,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-12 12:49+0000\n"
-"PO-Revision-Date: 2016-11-14 10:02+0100\n"
+"POT-Creation-Date: 2017-09-16 22:09+0000\n"
+"PO-Revision-Date: 2017-10-27 14:10+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -34,19 +34,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.3\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
+#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
+#: src/lightsoff.vala:87 src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Lichter aus"
 
-#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:90
+#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
+#: src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Schalten Sie alle Lichter aus"
 
-#: ../data/lightsoff.appdata.xml.in.h:3
+#: data/lightsoff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -54,10 +54,10 @@ msgid ""
 msgstr ""
 "»Lichter aus« ist eine Sammlung von Lichtschalter-Rätseln. Das Klicken auf "
 "ein Licht schaltet dieses entweder an oder aus, allerdings werden auch alle "
-"umliegenden Lichter umgeschaltet. Ihr Ziel ist einfach: schalten Sie alle "
+"umliegenden Lichter umgeschaltet. Ihr Ziel ist einfach: Schalten Sie alle "
 "Lichter aus!"
 
-#: ../data/lightsoff.appdata.xml.in.h:4
+#: data/lightsoff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -65,47 +65,54 @@ msgstr ""
 "Spieler, die es lieben Lichter auszuschalten, werden die riesige Anzahl an "
 "Spielstufen schätzen."
 
-#: ../data/lightsoff.appdata.xml.in.h:5
+#: data/lightsoff.appdata.xml.in:39
 msgid "The GNOME Project"
 msgstr "Das GNOME-Projekt"
 
-#: ../data/lightsoff.desktop.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/lightsoff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "Spiel;Logik;Brettspiel;benachbart;Puzzle;"
 
-#: ../data/lightsoff-menus.ui.h:1
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/lightsoff.desktop.in:8
+#| msgid "Lights Off"
+msgid "lightsoff"
+msgstr "lightsoff"
+
+#: data/lightsoff-menus.ui:7
 msgid "_Start Over"
 msgstr "Neu be_ginnen"
 
-#: ../data/lightsoff-menus.ui.h:2
+#: data/lightsoff-menus.ui:14
 msgid "_Help"
 msgstr "_Hilfe"
 
-#: ../data/lightsoff-menus.ui.h:3
+#: data/lightsoff-menus.ui:19
 msgid "_About"
 msgstr "_Info"
 
-#: ../data/lightsoff-menus.ui.h:4
+#: data/lightsoff-menus.ui:23
 msgid "_Quit"
 msgstr "_Beenden"
 
-#: ../data/lightsoff.ui.h:1
+#: data/lightsoff.ui:15
 msgid "Return to the previous level"
 msgstr "Zur vorherigen Spielstufe zurückkehren"
 
-#: ../data/lightsoff.ui.h:2
+#: data/lightsoff.ui:35
 msgid "Proceed to the next level"
 msgstr "Weiter zur nächsten Spielstufe"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+#: data/org.gnome.lightsoff.gschema.xml:6
 msgid "The current level"
 msgstr "Aktuelle Spielstufe"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+#: data/org.gnome.lightsoff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Die häufigste Spielstufe des Spielers."
 
-#: ../src/lightsoff.vala:96
+#: src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Karl Eichwalder <ke@suse.de>\n"
@@ -126,7 +133,7 @@ msgstr ""
 "Benjamin Steinwender <b@stbe.at>\n"
 "Bernd Homuth <dev@hmt.im>"
 
-#: ../src/lightsoff-window.vala:60
+#: src/lightsoff-window.vala:60
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -134,26 +141,11 @@ msgstr[0] "%d Zug"
 msgstr[1] "%d Züge"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:66
 #, c-format
 msgid "Level %d"
 msgstr "Spielstufe %d"
 
-#: ../src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Schalten Sie alle Lichter aus!"
-
-#~ msgid "_New Game"
-#~ msgstr "_Neues Spiel"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Alle Lichter ausschalten\n"
-#~ "\n"
-#~ "»Lichter aus« ist ein Teil der GNOME-Spiele."
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "GNOME Games-Website"
