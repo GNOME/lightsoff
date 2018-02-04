@@ -123,15 +123,3 @@ msgstr "Lygis %d"
 #: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Išjungti visas šviesas!"
-
-#~ msgid "_New Game"
-#~ msgstr "_Naujas žaidimas"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Išjunkite visas šviesas\n"
-#~ "\n"
-#~ "Lights Off yra GNOME Games dalis."

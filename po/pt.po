@@ -114,15 +114,3 @@ msgstr "Nível %d"
 #: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Desligue todas as luzes!"
-
-#~ msgid "_New Game"
-#~ msgstr "_Novo Jogo"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Desligue todas as luzes\n"
-#~ "\n"
-#~ "Luzes Apagadas faz parte dos Jogos GNOME."

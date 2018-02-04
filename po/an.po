@@ -98,25 +98,9 @@ msgid "Level %d"
 msgstr "Libel %d"
 
 #: ../src/lightsoff.vala:117
-#| msgid "Turn off all the lights"
 msgid "Turn off all the lights!"
 msgstr "Amorta todas as luces!"
 
 #: ../src/lightsoff.vala:226
 msgid "translator-credits"
 msgstr "Daniel Martinez <entaltoaragon@gmail.com>, 2013, 2015"
-
-#~ msgid "_New Game"
-#~ msgstr "Chuego _nuevo"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Amortar todas as luces\n"
-#~ "\n"
-#~ "Luces difuera ye parte d'os chuegos de GNOME."
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Pachina web d'os chuegos de GNOME"

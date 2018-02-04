@@ -125,15 +125,3 @@ msgstr "Уровень %d"
 #: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Погасите все огоньки!"
-
-#~ msgid "_New Game"
-#~ msgstr "_Новая игра"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Потушите все огоньки\n"
-#~ "\n"
-#~ "«Туши свет» является частью пакета GNOME Games."

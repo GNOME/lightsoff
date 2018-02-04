@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: "
-"http://bugzilla.gnome.org/enter_bug.cgi?product=lightsoff&keywords=I18N+L10N&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=lightsoff&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2016-11-12 12:49+0000\n"
 "PO-Revision-Date: 2015-03-15 15:57+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
@@ -121,16 +121,3 @@ msgstr "Bane %d"
 #: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Sluk alle lysene!"
-
-#~ msgid "_New Game"
-#~ msgstr "_Nyt spil"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Sluk alle lysene\n"
-#~ "\n"
-#~ "Lights Off er en del af GNOME Games."
-

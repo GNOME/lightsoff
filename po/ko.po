@@ -49,8 +49,8 @@ msgid ""
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
-"불 끄기는 전등 스위치 퍼즐 모음입니다. 불을 누르면 켜거나 끕니다. 또 주위"
-"의 불도 같이 켜거나 끕니다. 목표는 간단합니다. 모든 불을 끄십시오!"
+"불 끄기는 전등 스위치 퍼즐 모음입니다. 불을 누르면 켜거나 끕니다. 또 주위의 "
+"불도 같이 켜거나 끕니다. 목표는 간단합니다. 모든 불을 끄십시오!"
 
 #: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""

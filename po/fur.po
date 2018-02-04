@@ -58,7 +58,6 @@ msgstr "zûc;zûcs;logjiche;taule;casele;berdei;lûs;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/lightsoff.desktop.in:8
-#| msgid "Lights Off"
 msgid "lightsoff"
 msgstr "lightsoff"
 

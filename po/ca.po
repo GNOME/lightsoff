@@ -52,8 +52,8 @@ msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
-"Els jugadors a qui els agrada apagar els llums hi gaudiran molt gràcies al gran "
-"nombre de nivells."
+"Els jugadors a qui els agrada apagar els llums hi gaudiran molt gràcies al "
+"gran nombre de nivells."
 
 #: ../data/lightsoff.appdata.xml.in.h:5
 msgid "The GNOME Project"
@@ -121,15 +121,3 @@ msgstr "Nivell %d"
 #: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Apaga tots els llums!"
-
-#~ msgid "_New Game"
-#~ msgstr "Partida _nova"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Apaga tots els llums\n"
-#~ "\n"
-#~ "L'apaga els llums forma part dels jocs del GNOME."

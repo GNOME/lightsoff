@@ -43,9 +43,8 @@ msgid ""
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
 "L'«Apaga els llums» és una col·lecció de trencaclosques de canvi de llums. "
-"En fer clic sobre un llum, este s'apaga o s'encén, però també engega o "
-"apaga els llums que l'envolten. L'objectiu és senzill: apagueu tots els "
-"llums!"
+"En fer clic sobre un llum, este s'apaga o s'encén, però també engega o apaga "
+"els llums que l'envolten. L'objectiu és senzill: apagueu tots els llums!"
 
 #: ../data/lightsoff.appdata.xml.in.h:4
 msgid ""
@@ -121,15 +120,3 @@ msgstr "Nivell %d"
 #: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Apaga tots els llums!"
-
-#~ msgid "_New Game"
-#~ msgstr "Partida _nova"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Apaga tots els llums\n"
-#~ "\n"
-#~ "L'apaga els llums forma part dels jocs del GNOME."

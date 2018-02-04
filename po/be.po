@@ -45,8 +45,8 @@ msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
-"Велізарная колькасць узроўняў для тых, хто атрымоўвае асалоду ад "
-"выключэння святла."
+"Велізарная колькасць узроўняў для тых, хто атрымоўвае асалоду ад выключэння "
+"святла."
 
 #: ../data/lightsoff.appdata.xml.in.h:5
 msgid "The GNOME Project"
@@ -112,18 +112,3 @@ msgstr "Узровень %d"
 #: ../src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Выключы святло!"
-
-#~ msgid "_New Game"
-#~ msgstr "_Новая гульня"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Гульня з выключэннем ліхтарыкаў\n"
-#~ "\n"
-#~ "Гасі святло - частка гульняў GNOME."
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Сеціўная пляцоўка гульняў GNOME"

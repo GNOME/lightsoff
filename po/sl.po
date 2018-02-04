@@ -62,7 +62,6 @@ msgstr "igra;logika;tabla;ploščki;uganke;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/lightsoff.desktop.in:8
-#| msgid "Lights Off"
 msgid "lightsoff"
 msgstr "lightsoff"
 
@@ -124,21 +123,3 @@ msgstr "Raven %d"
 #: src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Ugasni vse luči"
-
-#~ msgid "The users's most recent level."
-#~ msgstr "Uporabnikov najnovejši rezultat."
-
-#~ msgid "_New Game"
-#~ msgstr "_Nova Igra"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Ugasnite vse luči\n"
-#~ "\n"
-#~ "Igra Ugasni luči je del iger GNOME."
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Spletna stran iger GNOME"
