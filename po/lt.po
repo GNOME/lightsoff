@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-02-28 11:36+0000\n"
-"PO-Revision-Date: 2017-03-03 21:11+0200\n"
+"POT-Creation-Date: 2018-02-25 11:02+0000\n"
+"PO-Revision-Date: 2018-02-28 22:12+0200\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -25,19 +25,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.4\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
+#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
+#: src/lightsoff.vala:87 src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Šviesos išjungtos"
 
-#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:90
+#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
+#: src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Išjungti visas šviesas"
 
-#: ../data/lightsoff.appdata.xml.in.h:3
+#: data/lightsoff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -47,54 +47,60 @@ msgstr ""
 "šviesos ją išjungia arba įjungia, bet taip pat perjungia visas aplinkines "
 "šviesas. Uždavinys paprastas: išjungti visas šviesas!"
 
-#: ../data/lightsoff.appdata.xml.in.h:4
+#: data/lightsoff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
 "Žaidėjai, kurie mėgsta išjungti šviesas, mėgausis daugybe šio žaidimo lygių."
 
-#: ../data/lightsoff.appdata.xml.in.h:5
+#: data/lightsoff.appdata.xml.in:39
 msgid "The GNOME Project"
 msgstr "GNOME projektas"
 
-#: ../data/lightsoff.desktop.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/lightsoff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "žaidimas;logika;lenta;kokliai;gretimi;galvosūkis;"
 
-#: ../data/lightsoff-menus.ui.h:1
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/lightsoff.desktop.in:8
+msgid "lightsoff"
+msgstr "lightsoff"
+
+#: data/lightsoff-menus.ui:7
 msgid "_Start Over"
 msgstr "_Pradėti iš naujo"
 
-#: ../data/lightsoff-menus.ui.h:2
+#: data/lightsoff-menus.ui:14
 msgid "_Help"
 msgstr "_Žinynas"
 
-#: ../data/lightsoff-menus.ui.h:3
+#: data/lightsoff-menus.ui:19
 msgid "_About"
 msgstr "_Apie"
 
-#: ../data/lightsoff-menus.ui.h:4
+#: data/lightsoff-menus.ui:23
 msgid "_Quit"
 msgstr "_Išeiti"
 
-#: ../data/lightsoff.ui.h:1
+#: data/lightsoff.ui:15
 msgid "Return to the previous level"
 msgstr "Grįžti į ankstesnį lygį"
 
-#: ../data/lightsoff.ui.h:2
+#: data/lightsoff.ui:35
 msgid "Proceed to the next level"
 msgstr "Pereiti į kitą lygį"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+#: data/org.gnome.lightsoff.gschema.xml:6
 msgid "The current level"
 msgstr "Dabartinis lygis"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+#: data/org.gnome.lightsoff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Paskiausias žaidėjo lygis."
 
-#: ../src/lightsoff.vala:96
+#: src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Paskutinieji vertėjai:\n"
@@ -106,7 +112,7 @@ msgstr ""
 "Tomas Kuliavas <tokul@users.sf.net>,\n"
 "Gediminas Paulauskas <menesis@chatsubo.lt>"
 
-#: ../src/lightsoff-window.vala:60
+#: src/lightsoff-window.vala:60
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -115,11 +121,11 @@ msgstr[1] "%d ėjimai"
 msgstr[2] "%d ėjimų"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:66
 #, c-format
 msgid "Level %d"
 msgstr "Lygis %d"
 
-#: ../src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Išjungti visas šviesas!"
