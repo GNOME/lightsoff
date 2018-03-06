@@ -1,5 +1,5 @@
 # Danish translation of gnome-games.
-# Copyright (C) 1998-2015 Free Software Foundation, Inc.
+# Copyright (C) 1998-2015, 2018 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-games package.
 # Anders Wegge Jakobsen <wegge@wegge.dk>, 1998.
 # Kenneth Christiansen <kenneth@ripen.dk>, 1998-2001
@@ -7,16 +7,16 @@
 # Ole Laursen <olau@hardworking.dk>, 2001, 02, 03, 04.
 # Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
 # flemming christensen <fc@stromata.dk>, 2011.
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007-2015.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007-2015, 2018.
 #
 # Husk at tilføje dig i credit-listen (besked id "translator-credits")
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-11-12 12:49+0000\n"
-"PO-Revision-Date: 2015-03-15 15:57+0100\n"
+"POT-Creation-Date: 2018-02-04 05:41+0000\n"
+"PO-Revision-Date: 2018-03-02 18:36+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -25,17 +25,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
+#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
+#: src/lightsoff.vala:87 src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Sluk lyset"
 
-#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:90
+#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
+#: src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Sluk alle lysene"
 
-#: ../data/lightsoff.appdata.xml.in.h:3
+#: data/lightsoff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -45,54 +45,60 @@ msgstr ""
 "tænde eller slukke det - men dette tænder eller slukker også alle de "
 "omgivende lys. Dit mål er enkelt: Sluk alle lysene!"
 
-#: ../data/lightsoff.appdata.xml.in.h:4
+#: data/lightsoff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
 "De lysslukningslystne spillere vil bestemt nyde det enorme antal baner."
 
-#: ../data/lightsoff.appdata.xml.in.h:5
+#: data/lightsoff.appdata.xml.in:39
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
 
-#: ../data/lightsoff.desktop.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/lightsoff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "spil;logik;bræt;brikker;tilstødende;omgivende;hjernebryder;"
 
-#: ../data/lightsoff-menus.ui.h:1
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/lightsoff.desktop.in:8
+msgid "lightsoff"
+msgstr "lightsoff"
+
+#: data/lightsoff-menus.ui:7
 msgid "_Start Over"
 msgstr "_Begynd forfra"
 
-#: ../data/lightsoff-menus.ui.h:2
+#: data/lightsoff-menus.ui:14
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: ../data/lightsoff-menus.ui.h:3
+#: data/lightsoff-menus.ui:19
 msgid "_About"
 msgstr "_Om"
 
-#: ../data/lightsoff-menus.ui.h:4
+#: data/lightsoff-menus.ui:23
 msgid "_Quit"
 msgstr "_Afslut"
 
-#: ../data/lightsoff.ui.h:1
+#: data/lightsoff.ui:15
 msgid "Return to the previous level"
 msgstr "Tilbage til forrige bane"
 
-#: ../data/lightsoff.ui.h:2
+#: data/lightsoff.ui:35
 msgid "Proceed to the next level"
 msgstr "Videre til næste bane"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+#: data/org.gnome.lightsoff.gschema.xml:6
 msgid "The current level"
 msgstr "Den nuværende bane"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+#: data/org.gnome.lightsoff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Brugerens sidste bane."
 
-#: ../src/lightsoff.vala:96
+#: src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Anders Wegge Jakobsen\n"
@@ -105,7 +111,7 @@ msgstr ""
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
 
-#: ../src/lightsoff-window.vala:60
+#: src/lightsoff-window.vala:60
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -113,11 +119,11 @@ msgstr[0] "%d træk"
 msgstr[1] "%d træk"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:66
 #, c-format
 msgid "Level %d"
 msgstr "Bane %d"
 
-#: ../src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Sluk alle lysene!"
