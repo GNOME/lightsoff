@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: gnome-games 0\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-08-18 08:42+0000\n"
-"PO-Revision-Date: 2017-08-21 22:11+0200\n"
+"POT-Creation-Date: 2018-02-04 05:41+0000\n"
+"PO-Revision-Date: 2018-03-07 16:58+0100\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2008-05-28 02:59+0000\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
+#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
+#: src/lightsoff.vala:87 src/lightsoff.vala:109
 msgid "Lights Off"
 msgstr "Isključi svjetla"
 
-#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:90
+#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
+#: src/lightsoff.vala:90
 msgid "Turn off all the lights"
 msgstr "Isključite sva svjetla"
 
-#: ../data/lightsoff.appdata.xml.in.h:3
+#: data/lightsoff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -39,7 +39,7 @@ msgstr ""
 "svjetlo se isključuje ili uključuje, kako i sva okolna svjetla, Vaš cilj je "
 "jednostavan: isključite sva svjetla!"
 
-#: ../data/lightsoff.appdata.xml.in.h:4
+#: data/lightsoff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -47,53 +47,59 @@ msgstr ""
 "Igračima kojima je užitak isključivanje i uključivanje svjetala uživati će u "
 "velikom broju razina."
 
-#: ../data/lightsoff.appdata.xml.in.h:5
+#: data/lightsoff.appdata.xml.in:39
 msgid "The GNOME Project"
 msgstr "GNOME projekt"
 
-#: ../data/lightsoff.desktop.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/lightsoff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "igra;logika;ploča;pločice;susjedno;puzle;"
 
-#: ../data/lightsoff-menus.ui.h:1
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/lightsoff.desktop.in:8
+msgid "lightsoff"
+msgstr "lightsoff"
+
+#: data/lightsoff-menus.ui:7
 msgid "_Start Over"
 msgstr "_Pokreni ponovo"
 
-#: ../data/lightsoff-menus.ui.h:2
+#: data/lightsoff-menus.ui:14
 msgid "_Help"
 msgstr "_Priručnik"
 
-#: ../data/lightsoff-menus.ui.h:3
+#: data/lightsoff-menus.ui:19
 msgid "_About"
 msgstr "_O programu"
 
-#: ../data/lightsoff-menus.ui.h:4
+#: data/lightsoff-menus.ui:23
 msgid "_Quit"
 msgstr "_Zatvori"
 
-#: ../data/lightsoff.ui.h:1
+#: data/lightsoff.ui:15
 msgid "Return to the previous level"
 msgstr "Poništi zadnju razinu"
 
-#: ../data/lightsoff.ui.h:2
+#: data/lightsoff.ui:35
 msgid "Proceed to the next level"
 msgstr "Sljedeća razina"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+#: data/org.gnome.lightsoff.gschema.xml:6
 msgid "The current level"
 msgstr "Trenutna razina"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+#: data/org.gnome.lightsoff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Nedavna korisnikova razina."
 
-#: ../src/lightsoff.vala:96
+#: src/lightsoff.vala:96
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  gogo https://launchpad.net/~trebelnik-stefina"
 
-#: ../src/lightsoff-window.vala:60
+#: src/lightsoff-window.vala:60
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -102,11 +108,11 @@ msgstr[1] "%d poteza"
 msgstr[2] "%d poteza"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:66
 #, c-format
 msgid "Level %d"
 msgstr "Razina %d"
 
-#: ../src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
 msgstr "Isključite sva svjetla!"
