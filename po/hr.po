@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: gnome-games 0\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-04 05:41+0000\n"
-"PO-Revision-Date: 2018-03-07 16:58+0100\n"
+"POT-Creation-Date: 2018-03-07 15:58+0000\n"
+"PO-Revision-Date: 2018-03-14 14:23+0100\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -35,7 +35,7 @@ msgid ""
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
-"Isključite svjetla je kolekcija puzla isključivanja svjetala. Klikom na "
+"Isključite svjetla je kolekcija slagalica isključivanja svjetala. Klikom na "
 "svjetlo se isključuje ili uključuje, kako i sva okolna svjetla, Vaš cilj je "
 "jednostavan: isključite sva svjetla!"
 
@@ -54,7 +54,7 @@ msgstr "GNOME projekt"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/lightsoff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "igra;logika;ploča;pločice;susjedno;puzle;"
+msgstr "igra;logika;ploča;pločice;susjedno;slagalica;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/lightsoff.desktop.in:8
@@ -63,7 +63,7 @@ msgstr "lightsoff"
 
 #: data/lightsoff-menus.ui:7
 msgid "_Start Over"
-msgstr "_Pokreni ponovo"
+msgstr "_Pokreni ponovno"
 
 #: data/lightsoff-menus.ui:14
 msgid "_Help"
@@ -79,7 +79,7 @@ msgstr "_Zatvori"
 
 #: data/lightsoff.ui:15
 msgid "Return to the previous level"
-msgstr "Poništi zadnju razinu"
+msgstr "Vrati se na posljednju razinu"
 
 #: data/lightsoff.ui:35
 msgid "Proceed to the next level"
