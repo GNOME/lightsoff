@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-16 22:09+0000\n"
-"PO-Revision-Date: 2017-11-05 19:38+0100\n"
+"POT-Creation-Date: 2018-03-26 22:45+0000\n"
+"PO-Revision-Date: 2018-04-02 23:15+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
 #: src/lightsoff.vala:87 src/lightsoff.vala:109
 msgid "Lights Off"
-msgstr "Stude lis lûs"
+msgstr "Distude lis lûs"
 
 #: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
 #: src/lightsoff.vala:90
 msgid "Turn off all the lights"
-msgstr "Stude dutis lis lûs"
+msgstr "Distude dutis lis lûs"
 
 #: data/lightsoff.appdata.xml.in:10
 msgid ""
@@ -35,7 +35,7 @@ msgid ""
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
-"\"Stude lis lûs\" a je une colezion di berdeis cun lis lûs: fasint clic "
+"\"Distude lis lûs\" a je une colezion di berdeis cun lis lûs: fasint clic "
 "suntune lûs cheste si pie o stude, ma a pie e stude ancje dutis lis lûs a "
 "tôr atôr. L'obietîf dal zûc al è sempliç: studâ dutis lis lûs!"
 
@@ -112,4 +112,4 @@ msgstr "Nivel %d"
 
 #: src/lightsoff-window.vala:70
 msgid "Turn off all the lights!"
-msgstr "Stude dutis lis lûs!"
+msgstr "Distude dutis lis lûs!"
