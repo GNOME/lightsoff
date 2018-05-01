@@ -8,6 +8,8 @@
  * license.
  */
 
+using Config;
+
 public void setup_animation (Clutter.Actor actor, Clutter.AnimationMode mode, uint duration) {
     actor.set_easing_duration (duration);
     actor.set_easing_mode (mode);
@@ -44,9 +46,9 @@ public class GameView : Clutter.Group
     {
         try
         {
-            highlight_texture = new Clutter.Texture.from_file (Path.build_filename (DATADIR, "highlight.svg"));
-            off_texture = new Clutter.Texture.from_file (Path.build_filename (DATADIR, "off.svg"));
-            on_texture = new Clutter.Texture.from_file (Path.build_filename (DATADIR, "on.svg"));
+            highlight_texture = new Clutter.Texture.from_file (Path.build_filename (Config.DATADIR, "highlight.svg"));
+            off_texture = new Clutter.Texture.from_file (Path.build_filename (Config.DATADIR, "off.svg"));
+            on_texture = new Clutter.Texture.from_file (Path.build_filename (Config.DATADIR, "on.svg"));
         }
         catch (Clutter.TextureError e)
         {

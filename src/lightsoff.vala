@@ -10,6 +10,8 @@
  * license.
  */
 
+using Config;
+
 public class LightsOff : Gtk.Application
 {
     private LightsoffWindow window;
@@ -102,9 +104,9 @@ public class LightsOff : Gtk.Application
     public static int main (string[] args)
     {
         Intl.setlocale (LocaleCategory.ALL, "");
-        Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-        Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-        Intl.textdomain (GETTEXT_PACKAGE);
+        Intl.bindtextdomain (Config.GETTEXT_PACKAGE, Config.LOCALEDIR);
+        Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (Config.GETTEXT_PACKAGE);
 
         Environment.set_application_name (_("Lights Off"));
 
