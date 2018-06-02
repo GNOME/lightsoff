@@ -23,7 +23,7 @@
     </screenshot>
   </screenshots>
   <url type="homepage">https://wiki.gnome.org/Apps/Lightsoff</url>
-  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=lightsoff</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/lightsoff/issues/new?issue</url>
   <url type="donation">http://www.gnome.org/friends/</url>
   <url type="help">https://help.gnome.org/users/lightsoff/stable/</url>
   <url type="translate">https://wiki.gnome.org/TranslationProject</url>
