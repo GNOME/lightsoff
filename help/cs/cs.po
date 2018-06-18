@@ -1,13 +1,13 @@
 # Czech translation for lightsoff.
 # Copyright (C) 2013 lightsoff's COPYRIGHT HOLDER
 # This file is distributed under the same license as the lightsoff package.
-# Marek Černocký <marek@manet.cz>, 2013, 2017.
+# Marek Černocký <marek@manet.cz>, 2013, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"POT-Creation-Date: 2017-07-31 12:22+0000\n"
-"PO-Revision-Date: 2017-08-07 13:21+0200\n"
+"POT-Creation-Date: 2018-06-02 16:45+0000\n"
+"PO-Revision-Date: 2018-06-18 10:40+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -150,13 +150,12 @@ msgstr "Hlaste chyby nebo navrhujte vylepšení"
 msgid ""
 "<app>Lights Off</app> is maintained by a volunteer community. You are "
 "welcome to participate. If you notice a problem you can file a <em>bug "
-"report</em>. To file a bug, go to <link href=\"https://bugzilla.gnome.org/\"/"
-">."
+"report</em>. To file a bug, go to <link href=\"https://gitlab.gnome.org/"
+"GNOME/lightsoff/issues\"/>."
 msgstr ""
 "O <app>Zhasněte světla</app> se stará komunita dobrovolníků. Vaše případná "
-"účast bude vítána. Pokud narazíte na nějaký problém, uvítáme když nám "
-"<em>chybu nahlásíte</em>. Udělat to můžete na <link href=\"https://bugzilla."
-"gnome.org/\"/>."
+"účast bude vítána. Pokud si povšimnete nějakého problému, můžete <em>nahlásit "
+"chybu</em> na <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\"/>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:29
@@ -174,43 +173,43 @@ msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
 "receive updates by e-mail about the status of your bug. If you don't already "
-"have an account, just click on the <gui>New Account</gui> link to create one."
+"have an account, just click on the <gui>Sign in/Register</gui> link to "
+"create one."
 msgstr ""
 "Abyste se mohli zapojit, musíte si vytvořit účet, díky kterému získáte "
 "přistup, můžete hlásit chyby a psát komentáře. Registraci potřebujete také k "
 "tomu, aby vám přicházely na e-mail informace o stavu vaší chyby. Jestli účet "
-"zatím nemáte, stačí pro vytvoření kliknout na odkaz <gui>Nový účet</gui>."
+"zatím nemáte, stačí pro vytvoření kliknout na odkaz <gui>Sign in/Register"
+"</gui>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:36
 msgid ""
-"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>lightsoff</gui></guiseq>. Before reporting a "
-"bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-"
-"writing.html\">bug writing guidelines</link>, and please <link href="
-"\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff\">browse</link> "
+"Once you have an account, log in, click on <gui>New Issue</gui>. Before "
+"reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
+"page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
+"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">browse</link> "
 "for the bug to see if it already exists."
 msgstr ""
-"Když už účet máte, přihlaste se, klikněte na <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>lightsoff</gui></guiseq>. Před nahlášením "
-"chyby si prosím přečtěte <link href=\"https://bugzilla.gnome.org/page.cgi?"
-"id=bug-writing.html\">přiručku k hlášení chyb</link> (odkaz je v angličtině) "
-"a <link href=\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff"
-"\">podívejte</link> se prosím, jestli stejnou chybu nenahlásil už někdo jiný."
+"Když už účet máte, přihlaste se, klikněte na <guiseq><gui>New Issue</"
+"gui>. Před nahlášením chyby si prosím přečtěte <link href=\"https://bugzilla."
+"gnome.org/page.cgi?id=bug-writing.html\">přiručku k hlášení chyb</link> a "
+"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff\">"
+"podívejte</link> se prosím, jestli stejnou chybu nenahlásil už někdo jiný."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:44
+#: C/bug-filing.page:43
 msgid ""
-"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
-"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Submit Bug</gui>."
+"If you are requesting a new feature, choose <gui>Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit issue</gui>."
 msgstr ""
-"V případě, že žádáte o novou funkčnost, zvolte v nabídce <gui>Severity</gui> "
-"položku <gui>enhancement</gui>. Vyplňte pole Summary a Description a "
-"klikněte na <gui>Submit Bug</gui>."
+"V případě, že žádáte o novou funkčnost, zvolte v nabídce <gui>Labels</gui> "
+"položku <gui>Feature</gui>. Vyplňte pole <gui>Title</gui> a <gui>Description"
+"</gui> a klikněte na <gui>Submit issue</gui>."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:48
+#: C/bug-filing.page:47
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
