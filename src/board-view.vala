@@ -108,7 +108,7 @@ public class BoardView : Clutter.Group
 
                 float xx, yy;
                 get_light_position (x, y, out xx, out yy);
-                l.anchor_gravity = Clutter.Gravity.CENTER;
+                l.set_pivot_point (0.5f, 0.5f);
                 l.set_position (xx, yy);
 
                 lights[x, y] = l;
@@ -120,10 +120,8 @@ public class BoardView : Clutter.Group
 
     public void get_light_position (int x, int y, out float xx, out float yy)
     {
-        // All lights need to be shifted down and right by half a light,
-        // as lights have center gravity.
-        xx = (x + 0.5f) * off_texture.width + 2;
-        yy = (y + 0.5f) * off_texture.height + 2;
+        xx = x * off_texture.width;
+        yy = y * off_texture.height;
     }
 
     public void fade_in (Clutter.Timeline timeline)

@@ -76,8 +76,8 @@ public class GameView : Clutter.Group
         set_size (real_board_width, real_board_height);
 
         key_cursor_view = new Clutter.Clone (highlight_texture);
+        key_cursor_view.set_pivot_point (0.5f, 0.5f);
         key_cursor_view.set_position (-100, -100);
-        key_cursor_view.anchor_gravity = Clutter.Gravity.CENTER;
         add_child (key_cursor_view);
     }
 
@@ -198,12 +198,12 @@ public class GameView : Clutter.Group
         if (key_cursor_ready)
         {
             setup_animation (key_cursor_view, Clutter.AnimationMode.EASE_OUT_SINE, 250);
-            key_cursor_view.set_position (x, y);
+            key_cursor_view.set_position (x + 2, y + 2);
         }
         else
         {
             key_cursor_view.opacity = 0;
-            key_cursor_view.set_position (x, y);
+            key_cursor_view.set_position (x + 2, y + 2);
             setup_animation (key_cursor_view, Clutter.AnimationMode.EASE_OUT_SINE, 250);
             key_cursor_view.set_opacity (255);
         }
