@@ -30,19 +30,17 @@ private class Light : Clutter.Group
         set_scale (0.9, 0.9);
 
         off = new Clutter.Clone (off_actor);
-        off.anchor_gravity = Clutter.Gravity.CENTER;
+        off.set_pivot_point (0.5f, 0.5f);
         add_child (off);
 
         on = new Clutter.Clone (on_actor);
-        on.anchor_gravity = Clutter.Gravity.CENTER;
+        on.set_pivot_point (0.5f, 0.5f);
         on.opacity = 0;
         add_child (on);
 
         // Add a 2 px margin around the tile image, center tiles within it.
-        width += 4;
-        height += 4;
-        off.set_position (width / 2, height / 2);
-        on.set_position (width / 2, height / 2);
+        off.set_position (2, 2);
+        on.set_position (2, 2);
     }
 
     public void toggle (Clutter.Timeline? timeline = null)
