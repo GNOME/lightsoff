@@ -17,7 +17,7 @@ public void setup_animation (Clutter.Actor actor, Clutter.AnimationMode mode, ui
 
 public class GameView : Clutter.Group
 {
-    private Clutter.Texture highlight_texture;
+    private Clutter.Content highlight_texture;
     private Clutter.Texture off_texture;
     private Clutter.Texture on_texture;
 
@@ -42,11 +42,31 @@ public class GameView : Clutter.Group
     public signal void level_changed (int level);
     public signal void moves_changed (int moves);
 
+    private Clutter.Content build_from_file ( string filename ) throws GLib.Error
+    {
+        var filepath = Path.build_filename (Config.DATADIR, filename);
+        var pixbuf = Rsvg.pixbuf_from_file (filepath);
+        Clutter.Image result = new Clutter.Image ();
+        result.set_data (pixbuf.get_pixels (),
+                         pixbuf.has_alpha ? Cogl.PixelFormat.RGBA_8888 : Cogl.PixelFormat.RGB_888,
+                         pixbuf.width,
+                         pixbuf.height,
+                         pixbuf.rowstride);
+        return result;
+    }
+
     public GameView (int level)
     {
         try
         {
-            highlight_texture = new Clutter.Texture.from_file (Path.build_filename (Config.DATADIR, "highlight.svg"));
+            highlight_texture = build_from_file ("highlight.svg");
+        }
+        catch (GLib.Error e)
+        {
+            warning ("Failed to load images: %s", e.message);
+        }
+        try
+        {
             off_texture = new Clutter.Texture.from_file (Path.build_filename (Config.DATADIR, "off.svg"));
             on_texture = new Clutter.Texture.from_file (Path.build_filename (Config.DATADIR, "on.svg"));
         }
@@ -56,8 +76,6 @@ public class GameView : Clutter.Group
         }
 
         /* Add textures onto the scene so they can be cloned */
-        highlight_texture.hide ();
-        add_child (highlight_texture);
         off_texture.hide ();
         add_child (off_texture);
         on_texture.hide ();
@@ -75,9 +93,11 @@ public class GameView : Clutter.Group
         var real_board_height = 5 * off_texture.height + 4;
         set_size (real_board_width, real_board_height);
 
-        key_cursor_view = new Clutter.Clone (highlight_texture);
+        key_cursor_view = new Clutter.Actor ();
+        key_cursor_view.set_content (highlight_texture );
         key_cursor_view.set_pivot_point (0.5f, 0.5f);
         key_cursor_view.set_position (-100, -100);
+        key_cursor_view.set_size (off_texture.width, off_texture.height);
         add_child (key_cursor_view);
     }
 
