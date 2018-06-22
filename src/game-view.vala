@@ -45,7 +45,8 @@ public class GameView : Clutter.Group
     private Clutter.Content build_from_file ( string filename ) throws GLib.Error
     {
         var filepath = Path.build_filename (Config.DATADIR, filename);
-        var pixbuf = Rsvg.pixbuf_from_file (filepath);
+        var handle = new Rsvg.Handle.from_file (filepath);
+        Gdk.Pixbuf pixbuf = handle.get_pixbuf ();
         Clutter.Image result = new Clutter.Image ();
         result.set_data (pixbuf.get_pixels (),
                          pixbuf.has_alpha ? Cogl.PixelFormat.RGBA_8888 : Cogl.PixelFormat.RGB_888,
