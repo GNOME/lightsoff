@@ -12,8 +12,10 @@ private class Light : Clutter.Group
 {
     private Clutter.Actor off;
     private Clutter.Actor on;
-
     private bool _is_lit;
+    
+    private const double SCALE_OFF = 0.9;
+    private const double SCALE_ON = 1.0;
     public bool is_lit
     {
         get { return _is_lit; }
@@ -27,7 +29,7 @@ private class Light : Clutter.Group
 
     public Light (Clutter.Actor off_actor, Clutter.Actor on_actor)
     {
-        set_scale (0.9, 0.9);
+        set_scale (SCALE_OFF, SCALE_OFF);
 
         off = new Clutter.Clone (off_actor);
         off.set_pivot_point (0.5f, 0.5f);
@@ -41,6 +43,7 @@ private class Light : Clutter.Group
         // Add a 2 px margin around the tile image, center tiles within it.
         off.set_position (2, 2);
         on.set_position (2, 2);
+
     }
 
     public void toggle (Clutter.Timeline? timeline = null)
@@ -50,20 +53,31 @@ private class Light : Clutter.Group
         if (timeline != null)
         {
             // Animate the opacity of the 'off' tile to match the state.
-            off.animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", is_lit ? 0 : 255);
-            on.animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", is_lit ? 255 : 0);
+            off.save_easing_state ();
+            off.set_easing_duration (timeline.duration);
+            off.set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
+            off.set_opacity (is_lit ? 0 : 255);
+            off.restore_easing_state ();
+
+            on.save_easing_state ();
+            on.set_easing_duration (timeline.duration);
+            on.set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
+            on.set_opacity (is_lit ? 255 : 0);
+            on.restore_easing_state ();
 
             // Animate the tile to be smaller when in the 'off' state.
-            animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline,
-                                   "scale-x", is_lit ? 1.0 : 0.9,
-                                   "scale-y", is_lit ? 1.0 : 0.9);
+            save_easing_state ();
+            set_easing_duration (timeline.duration);
+            set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
+            set_scale (is_lit ? SCALE_ON : SCALE_OFF, is_lit ? SCALE_ON : SCALE_OFF);
+            restore_easing_state ();
         }
         else
         {
             off.opacity = is_lit ? 0 : 255;
             on.opacity = is_lit ? 255 : 0;
-            scale_x = is_lit ? 1 : 0.9;
-            scale_y = is_lit ? 1 : 0.9;
+            scale_x = is_lit ? SCALE_ON : SCALE_OFF;
+            scale_y = is_lit ? SCALE_ON : SCALE_OFF;
         }
     }
 }
@@ -120,16 +134,6 @@ public class BoardView : Clutter.Group
     {
         xx = x * off_texture.width;
         yy = y * off_texture.height;
-    }
-
-    public void fade_in (Clutter.Timeline timeline)
-    {
-        animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", 0);
-    }
-
-    public void fade_out (Clutter.Timeline timeline)
-    {
-        animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", 255);
     }
 
     public void slide_in (int direction, int sign, Clutter.Timeline timeline)
