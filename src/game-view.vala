@@ -17,9 +17,8 @@ public void setup_animation (Clutter.Actor actor, Clutter.AnimationMode mode, ui
 
 public class GameView : Clutter.Group
 {
-    private Clutter.Content highlight_texture;
-    private Clutter.Texture off_texture;
-    private Clutter.Texture on_texture;
+    private Clutter.Actor off_texture;
+    private Clutter.Actor on_texture;
 
     private int current_level;
 
@@ -42,17 +41,23 @@ public class GameView : Clutter.Group
     public signal void level_changed (int level);
     public signal void moves_changed (int moves);
 
-    private Clutter.Content build_from_file ( string filename ) throws GLib.Error
+    private Clutter.Actor build_from_file ( string filename ) throws GLib.Error
     {
         var filepath = Path.build_filename (Config.DATADIR, filename);
         var handle = new Rsvg.Handle.from_file (filepath);
         Gdk.Pixbuf pixbuf = handle.get_pixbuf ();
-        Clutter.Image result = new Clutter.Image ();
-        result.set_data (pixbuf.get_pixels (),
+        Clutter.Image image = new Clutter.Image ();
+        image.set_data (pixbuf.get_pixels (),
                          pixbuf.has_alpha ? Cogl.PixelFormat.RGBA_8888 : Cogl.PixelFormat.RGB_888,
                          pixbuf.width,
                          pixbuf.height,
                          pixbuf.rowstride);
+        Clutter.Actor result = new Clutter.Actor ();
+        result.set_content (image);
+        float width, height;
+        image.get_preferred_size (out width, out height);
+        result.set_pivot_point (0.5f, 0.5f);
+        result.set_size (width, height);
         return result;
     }
 
@@ -60,20 +65,13 @@ public class GameView : Clutter.Group
     {
         try
         {
-            highlight_texture = build_from_file ("highlight.svg");
+            key_cursor_view = build_from_file ("highlight.svg");
+            on_texture = build_from_file ( "on.svg");
+            off_texture = build_from_file ( "off.svg");
         }
         catch (GLib.Error e)
         {
             warning ("Failed to load images: %s", e.message);
-        }
-        try
-        {
-            off_texture = new Clutter.Texture.from_file (Path.build_filename (Config.DATADIR, "off.svg"));
-            on_texture = new Clutter.Texture.from_file (Path.build_filename (Config.DATADIR, "on.svg"));
-        }
-        catch (Clutter.TextureError e)
-        {
-            warning ("Failed to load textures: %s", e.message);
         }
 
         /* Add textures onto the scene so they can be cloned */
@@ -94,8 +92,6 @@ public class GameView : Clutter.Group
         var real_board_height = 5 * off_texture.height + 4;
         set_size (real_board_width, real_board_height);
 
-        key_cursor_view = new Clutter.Actor ();
-        key_cursor_view.set_content (highlight_texture );
         key_cursor_view.set_pivot_point (0.5f, 0.5f);
         key_cursor_view.set_position (-100, -100);
         key_cursor_view.set_size (off_texture.width, off_texture.height);

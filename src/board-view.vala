@@ -72,8 +72,8 @@ public class BoardView : Clutter.Group
 {
     private new const int size = 5;
     private PuzzleGenerator puzzle_generator;
-    private Clutter.Texture off_texture;
-    private Clutter.Texture on_texture;
+    private Clutter.Actor off_texture;
+    private Clutter.Actor on_texture;
     private Light[,] lights;
 
     public bool playable = true;
@@ -87,7 +87,7 @@ public class BoardView : Clutter.Group
     public signal void game_won ();
     public signal void light_toggled ();
 
-    public BoardView (Clutter.Texture off_texture, Clutter.Texture on_texture)
+    public BoardView (Clutter.Actor off_texture, Clutter.Actor on_texture)
     {
         this.off_texture = off_texture;
         this.on_texture = on_texture;
