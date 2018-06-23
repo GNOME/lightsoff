@@ -57,22 +57,17 @@ private class Light : Clutter.Group
     {
         _is_lit = !_is_lit;
 
-        if (timeline != null)
-        {
-            // Animate the opacity of the 'off' tile to match the state.
-            off.set_opacity (is_lit ? 0 : 255);
-            on.set_opacity (is_lit ? 255 : 0);
+        save_easing_state ();
+        if (timeline == null)
+            set_easing_duration (0);
 
-            // Animate the tile to be smaller when in the 'off' state.
-            set_scale (is_lit ? SCALE_ON : SCALE_OFF, is_lit ? SCALE_ON : SCALE_OFF);
-        }
-        else
-        {
-            off.opacity = is_lit ? 0 : 255;
-            on.opacity = is_lit ? 255 : 0;
-            scale_x = is_lit ? SCALE_ON : SCALE_OFF;
-            scale_y = is_lit ? SCALE_ON : SCALE_OFF;
-        }
+        // Animate the opacity of the 'off' tile to match the state.
+        off.set_opacity (is_lit ? 0 : 255);
+        on.set_opacity (is_lit ? 255 : 0);
+
+        set_scale (is_lit ? SCALE_ON : SCALE_OFF, is_lit ? SCALE_ON : SCALE_OFF);
+
+        restore_easing_state ();
     }
 }
 
