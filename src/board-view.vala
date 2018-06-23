@@ -12,8 +12,10 @@ private class Light : Clutter.Group
 {
     private Clutter.Actor off;
     private Clutter.Actor on;
-
     private bool _is_lit;
+    
+    private const double SCALE_OFF = 0.9;
+    private const double SCALE_ON = 1.0;
     public bool is_lit
     {
         get { return _is_lit; }
@@ -27,46 +29,45 @@ private class Light : Clutter.Group
 
     public Light (Clutter.Actor off_actor, Clutter.Actor on_actor)
     {
-        set_scale (0.9, 0.9);
+        set_scale (SCALE_OFF, SCALE_OFF);
 
         off = new Clutter.Clone (off_actor);
-        off.anchor_gravity = Clutter.Gravity.CENTER;
+        off.set_pivot_point (0.5f, 0.5f);
         add_child (off);
 
         on = new Clutter.Clone (on_actor);
-        on.anchor_gravity = Clutter.Gravity.CENTER;
+        on.set_pivot_point (0.5f, 0.5f);
         on.opacity = 0;
         add_child (on);
 
         // Add a 2 px margin around the tile image, center tiles within it.
-        width += 4;
-        height += 4;
-        off.set_position (width / 2, height / 2);
-        on.set_position (width / 2, height / 2);
+        off.set_position (2, 2);
+        on.set_position (2, 2);
+
+        off.set_easing_duration (300);
+        on.set_easing_duration (300);
+        off.set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
+        on.set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
+        set_easing_duration (300);
+        set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
+
     }
 
     public void toggle (Clutter.Timeline? timeline = null)
     {
         _is_lit = !_is_lit;
 
-        if (timeline != null)
-        {
-            // Animate the opacity of the 'off' tile to match the state.
-            off.animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", is_lit ? 0 : 255);
-            on.animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", is_lit ? 255 : 0);
+        save_easing_state ();
+        if (timeline == null)
+            set_easing_duration (0);
 
-            // Animate the tile to be smaller when in the 'off' state.
-            animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline,
-                                   "scale-x", is_lit ? 1.0 : 0.9,
-                                   "scale-y", is_lit ? 1.0 : 0.9);
-        }
-        else
-        {
-            off.opacity = is_lit ? 0 : 255;
-            on.opacity = is_lit ? 255 : 0;
-            scale_x = is_lit ? 1 : 0.9;
-            scale_y = is_lit ? 1 : 0.9;
-        }
+        // Animate the opacity of the 'off' tile to match the state.
+        off.set_opacity (is_lit ? 0 : 255);
+        on.set_opacity (is_lit ? 255 : 0);
+
+        set_scale (is_lit ? SCALE_ON : SCALE_OFF, is_lit ? SCALE_ON : SCALE_OFF);
+
+        restore_easing_state ();
     }
 }
 
@@ -74,8 +75,8 @@ public class BoardView : Clutter.Group
 {
     private new const int size = 5;
     private PuzzleGenerator puzzle_generator;
-    private Clutter.Texture off_texture;
-    private Clutter.Texture on_texture;
+    private Clutter.Actor off_texture;
+    private Clutter.Actor on_texture;
     private Light[,] lights;
 
     public bool playable = true;
@@ -89,7 +90,7 @@ public class BoardView : Clutter.Group
     public signal void game_won ();
     public signal void light_toggled ();
 
-    public BoardView (Clutter.Texture off_texture, Clutter.Texture on_texture)
+    public BoardView (Clutter.Actor off_texture, Clutter.Actor on_texture)
     {
         this.off_texture = off_texture;
         this.on_texture = on_texture;
@@ -108,7 +109,7 @@ public class BoardView : Clutter.Group
 
                 float xx, yy;
                 get_light_position (x, y, out xx, out yy);
-                l.anchor_gravity = Clutter.Gravity.CENTER;
+                l.set_pivot_point (0.5f, 0.5f);
                 l.set_position (xx, yy);
 
                 lights[x, y] = l;
@@ -120,20 +121,8 @@ public class BoardView : Clutter.Group
 
     public void get_light_position (int x, int y, out float xx, out float yy)
     {
-        // All lights need to be shifted down and right by half a light,
-        // as lights have center gravity.
-        xx = (x + 0.5f) * off_texture.width + 2;
-        yy = (y + 0.5f) * off_texture.height + 2;
-    }
-
-    public void fade_in (Clutter.Timeline timeline)
-    {
-        animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", 0);
-    }
-
-    public void fade_out (Clutter.Timeline timeline)
-    {
-        animate_with_timeline (Clutter.AnimationMode.EASE_OUT_SINE, timeline, "opacity", 255);
+        xx = x * off_texture.width;
+        yy = y * off_texture.height;
     }
 
     public void slide_in (int direction, int sign, Clutter.Timeline timeline)
@@ -160,6 +149,7 @@ public class BoardView : Clutter.Group
         animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
                                "opacity", 255,
                                "z_position", 0.0);
+
     }
 
     public void swap_out (float direction, Clutter.Timeline timeline)
@@ -203,7 +193,6 @@ public class BoardView : Clutter.Group
         if (animate)
         {
             timeline = new Clutter.Timeline (300);
-            timeline.completed.connect (toggle_completed_cb);
         }
 
         if ((int) x + 1 < size)
@@ -217,11 +206,13 @@ public class BoardView : Clutter.Group
 
         lights[(int) x, (int) y].toggle (timeline);
 
+        check_completed ();
+
         if (animate)
             timeline.start ();
     }
 
-    private void toggle_completed_cb ()
+    private void check_completed ()
     {
         var cleared = true;
         for (var x = 0; x < size; x++)
