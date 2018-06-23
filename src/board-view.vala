@@ -44,6 +44,13 @@ private class Light : Clutter.Group
         off.set_position (2, 2);
         on.set_position (2, 2);
 
+        off.set_easing_duration (300);
+        on.set_easing_duration (300);
+        off.set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
+        on.set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
+        set_easing_duration (300);
+        set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
+
     }
 
     public void toggle (Clutter.Timeline? timeline = null)
@@ -53,24 +60,11 @@ private class Light : Clutter.Group
         if (timeline != null)
         {
             // Animate the opacity of the 'off' tile to match the state.
-            off.save_easing_state ();
-            off.set_easing_duration (timeline.duration);
-            off.set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
             off.set_opacity (is_lit ? 0 : 255);
-            off.restore_easing_state ();
-
-            on.save_easing_state ();
-            on.set_easing_duration (timeline.duration);
-            on.set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
             on.set_opacity (is_lit ? 255 : 0);
-            on.restore_easing_state ();
 
             // Animate the tile to be smaller when in the 'off' state.
-            save_easing_state ();
-            set_easing_duration (timeline.duration);
-            set_easing_mode (Clutter.AnimationMode.EASE_OUT_SINE);
             set_scale (is_lit ? SCALE_ON : SCALE_OFF, is_lit ? SCALE_ON : SCALE_OFF);
-            restore_easing_state ();
         }
         else
         {
@@ -160,6 +154,7 @@ public class BoardView : Clutter.Group
         animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
                                "opacity", 255,
                                "z_position", 0.0);
+
     }
 
     public void swap_out (float direction, Clutter.Timeline timeline)
@@ -203,7 +198,6 @@ public class BoardView : Clutter.Group
         if (animate)
         {
             timeline = new Clutter.Timeline (300);
-            timeline.completed.connect (toggle_completed_cb);
         }
 
         if ((int) x + 1 < size)
@@ -217,11 +211,13 @@ public class BoardView : Clutter.Group
 
         lights[(int) x, (int) y].toggle (timeline);
 
+        check_completed ();
+
         if (animate)
             timeline.start ();
     }
 
-    private void toggle_completed_cb ()
+    private void check_completed ()
     {
         var cleared = true;
         for (var x = 0; x < size; x++)
