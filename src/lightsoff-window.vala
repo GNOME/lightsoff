@@ -28,6 +28,25 @@ public class LightsoffWindow : ApplicationWindow
         { "next-level",     next_level_cb }
     };
 
+    public Gtk.Widget build_game_container (int level, out GameView out_game_view)
+    {
+        var clutter_embed = new GtkClutter.Embed ();
+        clutter_embed.show ();
+        var stage = (Clutter.Stage) clutter_embed.get_stage ();
+        stage.key_release_event.connect (key_release_event_cb);
+        stage.background_color = Clutter.Color.from_string ("#000000");
+
+        ClutterGameView clutter_game_view = new ClutterGameView (level);
+        clutter_game_view.show ();
+
+        stage.add_child (clutter_game_view);
+
+        out_game_view = clutter_game_view;
+        stage.set_size (clutter_game_view.width, clutter_game_view.height);
+        clutter_embed.set_size_request ((int) stage.width, (int) stage.height);
+        return clutter_embed;
+    }
+
     public LightsoffWindow ()
     {
         settings = new GLib.Settings ("org.gnome.lightsoff");
@@ -35,24 +54,14 @@ public class LightsoffWindow : ApplicationWindow
         add_action_entries (window_actions, this);
         previous_level = (SimpleAction) this.lookup_action ("previous-level");
 
-        level_changed_cb (settings.get_int ("level"));
+        int level = settings.get_int ("level");
+        level_changed_cb (level);
 
-        var clutter_embed = new GtkClutter.Embed ();
-        clutter_embed.show ();
-        this.add (clutter_embed);
+        this.add (build_game_container (level, out game_view));
 
-        var stage = (Clutter.Stage) clutter_embed.get_stage ();
-        stage.key_release_event.connect (key_release_event_cb);
-        stage.background_color = Clutter.Color.from_string ("#000000");
-
-        game_view = new GameView (settings.get_int ("level"));
         game_view.level_changed.connect (level_changed_cb);
         game_view.moves_changed.connect (update_subtitle);
-        game_view.show ();
-        stage.add_child (game_view);
 
-        stage.set_size (game_view.width, game_view.height);
-        clutter_embed.set_size_request ((int) stage.width, (int) stage.height);
     }
 
     private void update_subtitle (int moves)

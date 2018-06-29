@@ -4,6 +4,7 @@ lightsoff_vala_sources = [
   'lightsoff-window.vala',
   'puzzle-generator.vala',
   'game-view.vala',
+  'game-view-clutter.vala',
 ]
 
 lightsoff_resources_file = files('lightsoff.gresource.xml')
