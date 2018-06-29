@@ -22,8 +22,8 @@ public class GtkGameView : Gtk.Grid, GameView {
     }
     public void reset_game ()
     {
-
-
+        current_level = 1;
+        load_level (current_level);
     }
 
     public GtkGameView (int level)
