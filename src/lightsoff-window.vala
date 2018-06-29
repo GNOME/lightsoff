@@ -28,12 +28,12 @@ public class LightsoffWindow : ApplicationWindow
         { "next-level",     next_level_cb }
     };
 
-    public Gtk.Widget build_game_container (int level, out GameView out_game_view)
+    public Gtk.Widget build_clutter_game_container (int level, out GameView out_game_view)
     {
         var clutter_embed = new GtkClutter.Embed ();
         clutter_embed.show ();
         var stage = (Clutter.Stage) clutter_embed.get_stage ();
-        stage.key_release_event.connect (key_release_event_cb);
+        stage.key_release_event.connect (key_release_clutter_event_cb);
         stage.background_color = Clutter.Color.from_string ("#000000");
 
         ClutterGameView clutter_game_view = new ClutterGameView (level);
@@ -47,6 +47,20 @@ public class LightsoffWindow : ApplicationWindow
         return clutter_embed;
     }
 
+    public Gtk.Widget build_gtk_game_container (int level, out GameView out_game_view)
+    {
+        var aspect_frame = new Gtk.AspectFrame (null, 0.5f, 0.5f, 1.0f, false);
+        aspect_frame.show ();
+
+        GtkGameView gtk_game_view = new GtkGameView (level);
+        gtk_game_view.show ();
+
+        aspect_frame.add (gtk_game_view);
+
+        out_game_view = gtk_game_view;
+        return aspect_frame;
+    }
+
     public LightsoffWindow ()
     {
         settings = new GLib.Settings ("org.gnome.lightsoff");
@@ -57,7 +71,7 @@ public class LightsoffWindow : ApplicationWindow
         int level = settings.get_int ("level");
         level_changed_cb (level);
 
-        this.add (build_game_container (level, out game_view));
+        this.add (build_gtk_game_container (level, out game_view));
 
         game_view.level_changed.connect (level_changed_cb);
         game_view.moves_changed.connect (update_subtitle);
@@ -99,7 +113,7 @@ public class LightsoffWindow : ApplicationWindow
             settings.set_int ("level", level);
     }
 
-    private bool key_release_event_cb (Clutter.Actor actor, Clutter.KeyEvent event)
+    private bool key_release_clutter_event_cb (Clutter.Actor actor, Clutter.KeyEvent event)
     {
         switch (event.keyval)
         {
