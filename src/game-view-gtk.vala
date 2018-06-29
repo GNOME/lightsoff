@@ -28,6 +28,7 @@ public class GtkGameView : Gtk.Grid, GameView {
 
     public GtkGameView (int level)
     {
+        get_style_context ().add_class ("grid");
         puzzle_generator = new PuzzleGenerator (SIZE);
                 /* Clear level */
         current_level = level;
@@ -41,10 +42,13 @@ public class GtkGameView : Gtk.Grid, GameView {
                 attach (lights[x, y], x, y, 1, 1);
             }
 
-        set_size_request (SIZE * 64, SIZE * 64);
+        set_size_request (SIZE * 72, SIZE * 72);
         row_homogeneous = true;
         column_homogeneous = true;
         load_level (current_level);
+        border_width = 4;
+        row_spacing = 2;
+        column_spacing = 2;
     }
 
     private void find_light (Gtk.ToggleButton light, out int x, out int y)
