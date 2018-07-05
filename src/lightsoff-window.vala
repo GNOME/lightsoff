@@ -50,6 +50,8 @@ public class LightsoffWindow : ApplicationWindow
     public Gtk.Widget build_gtk_game_container (int level, out GameView out_game_view)
     {
         var aspect_frame = new Gtk.AspectFrame (null, 0.5f, 0.5f, 1.0f, false);
+        aspect_frame.set_shadow_type (ShadowType.NONE);
+        aspect_frame.get_style_context ().add_class ("aspect");
         aspect_frame.show ();
 
         GtkGameView gtk_game_view = new GtkGameView (level);
@@ -58,6 +60,9 @@ public class LightsoffWindow : ApplicationWindow
         aspect_frame.add (gtk_game_view);
 
         out_game_view = gtk_game_view;
+        var provider = new Gtk.CssProvider ();
+        provider.load_from_resource ("/org/gnome/lightsoff/ui/lightsoff.css");
+        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
         return aspect_frame;
     }
 

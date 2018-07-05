@@ -1,0 +1,27 @@
+.appmenu {
+  border: none;
+}
+
+.grid > .toggle, .grid > .toggle:backdrop, .grid > .toggle:focus {
+  background-image: linear-gradient(90deg, #050505, #222);
+  /*background-color: black;*/
+  border-color: #353535;
+  border-radius: 5px;
+  border-width: 1px;
+  margin: 4px;
+  box-shadow: none;
+  transition: 150ms;
+}
+
+.grid > .toggle:checked/*, .grid > .toggle:hover */{
+  border-width: 1px;
+  border-color: #729fcf;
+  background-image: linear-gradient(90deg,  #35669b, #5e92c8);
+  box-shadow: none;
+  margin: 0;
+  transition: 150ms;
+}
+
+.aspect {
+  background-color: black;
+}
