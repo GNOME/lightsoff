@@ -25,8 +25,8 @@ public class ClutterGameView : Clutter.Group, GameView
     private List<Clutter.Actor> actor_remove_queue = null;
 
     private Clutter.Actor board_group;
-    private BoardView board_view;
-    private BoardView? new_board_view = null;
+    private BoardViewClutter board_view;
+    private BoardViewClutter? new_board_view = null;
     private Clutter.Actor key_cursor_view;
 
     private Clutter.Timeline timeline;
@@ -95,9 +95,9 @@ public class ClutterGameView : Clutter.Group, GameView
         add_child (key_cursor_view);
     }
 
-    private BoardView create_board_view (int level)
+    private BoardViewClutter create_board_view (int level)
     {
-        var view = new BoardView (off_texture, on_texture);
+        var view = new BoardViewClutter (off_texture, on_texture);
         view.load_level (level);
         view.game_won.connect (game_won_cb);
         view.light_toggled.connect (light_toggled_cb);

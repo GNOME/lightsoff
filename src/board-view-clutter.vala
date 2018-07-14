@@ -71,7 +71,7 @@ private class Light : Clutter.Group
     }
 }
 
-public class BoardView : Clutter.Group
+public class BoardViewClutter : Clutter.Group
 {
     private new const int size = 5;
     private PuzzleGenerator puzzle_generator;
@@ -90,7 +90,7 @@ public class BoardView : Clutter.Group
     public signal void game_won ();
     public signal void light_toggled ();
 
-    public BoardView (Clutter.Actor off_texture, Clutter.Actor on_texture)
+    public BoardViewClutter (Clutter.Actor off_texture, Clutter.Actor on_texture)
     {
         this.off_texture = off_texture;
         this.on_texture = on_texture;
