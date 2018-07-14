@@ -76,9 +76,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
      // Toggle a light and those in each cardinal direction around it.
     private void toggle_light (int x, int y, bool clicked = true)
     {
-        for (var xi = 0; xi < size; xi++)
-            for (var yi = 0; yi < size; yi++)
-                lights[xi, yi].toggled.disconnect (light_toggled_cb);
+        @foreach((light) => (light as Gtk.ToggleButton).toggled.disconnect (light_toggled_cb));
 
         if (x>= size || y >= size || x < 0 || y < 0 )
             return;
@@ -94,9 +92,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         if (!clicked)
             lights[(int) x, (int) y].set_active (!lights[(int) x, (int) y ].get_active ());
 
-        for (var xi = 0; xi < size; xi++)
-            for (var yi = 0; yi < size; yi++)
-                lights[xi, yi].toggled.connect (light_toggled_cb);
+        @foreach((light) => (light as Gtk.ToggleButton).toggled.connect (light_toggled_cb));
     }
 
     // Pseudorandomly generates and sets the state of each light based on
@@ -109,9 +105,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         if (level < 1)
             level = 1;
 
-        for (var xi = 0; xi < size; xi++)
-            for (var yi = 0; yi < size; yi++)
-                lights[xi, yi].toggled.disconnect (light_toggled_cb);
+        @foreach((light) => (light as Gtk.ToggleButton).toggled.disconnect (light_toggled_cb));
 
         /* Clear level */
         for (var x = 0; x < size; x++)
