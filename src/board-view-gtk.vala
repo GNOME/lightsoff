@@ -54,14 +54,6 @@ public class BoardViewGtk : Gtk.Grid, BoardView
     {
     }
 
-    public void swap_in (float direction, Clutter.Timeline timeline)
-    {
-    }
-
-    public void swap_out (float direction, Clutter.Timeline timeline)
-    {
-    }
-
     public void light_toggled_cb (Gtk.ToggleButton source)
     {
         int xl, yl;

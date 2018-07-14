@@ -173,19 +173,33 @@ public class ClutterGameView : Clutter.Group, GameView
             return;
         }
 
-        timeline = new Clutter.Timeline (500);
-
         new_board_view = create_board_view (current_level);
-        board_group.add_child (new_board_view);
         new_board_view.z_position = -250 * direction;
         new_board_view.opacity = 0;
 
-        new_board_view.swap_in (direction, timeline);
-        board_view.swap_out (direction, timeline);
-        timeline.completed.connect (transition_complete_cb);
+        replace_board (board_view, new_board_view);
+
+        /* Fade into background or drop down */
+        board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                               "z_position", 250.0 * direction,
+                               "opacity", 0);
 
         level_changed (current_level);
     }
+
+    public void replace_board (BoardView old_board, BoardView new_board)
+    {
+        timeline = new Clutter.Timeline (500);
+        board_group.add_child (new_board as Clutter.Group);
+
+        /* Bring into foreground and make visible */
+        (new_board as Clutter.Group).animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                               "opacity", 255,
+                               "z_position", 0.0);
+
+        timeline.completed.connect (transition_complete_cb);
+    }
+
 
     public void hide_cursor ()
     {
@@ -238,16 +252,16 @@ public class ClutterGameView : Clutter.Group, GameView
 
         current_level = 1;
 
-        timeline = new Clutter.Timeline (500);
-
         new_board_view = create_board_view (current_level);
-        board_group.add_child (new_board_view);
         new_board_view.z_position = 250;
         new_board_view.opacity = 0;
 
-        new_board_view.swap_in (-1, timeline);
-        board_view.swap_out (-1, timeline);
-        timeline.completed.connect (transition_complete_cb);
+        replace_board (board_view, new_board_view);
+
+        /* Fade into background or drop down */
+        board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                               "z_position", 250.0 * -1,
+                               "opacity", 0);
 
         level_changed (current_level);
     }

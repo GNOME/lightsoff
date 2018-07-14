@@ -8,11 +8,17 @@ public class GtkGameView : Gtk.Frame, GameView {
     {
         current_level += direction;
         new_board_view = create_board_view (current_level);
-        remove (board_view);
-        add (new_board_view);
+        replace_board (board_view, new_board_view);
         board_view = new_board_view;
         level_changed (current_level);
     }
+
+    public void replace_board (BoardView old_board, BoardView new_board)
+    {
+        @foreach ((widget) => remove (widget));
+        add (new_board as Gtk.Widget);
+    }
+
     public void hide_cursor ()
     {
     }
@@ -26,10 +32,8 @@ public class GtkGameView : Gtk.Frame, GameView {
     {
         current_level = 1;
         new_board_view = create_board_view (current_level);
-        remove (board_view);
-        add (new_board_view);
+        replace_board (board_view, new_board_view);
         board_view = new_board_view;
-
         level_changed (current_level);
     }
 
@@ -67,10 +71,8 @@ public class GtkGameView : Gtk.Frame, GameView {
         current_level++;
 
         new_board_view = create_board_view (current_level);
-        remove (board_view);
-        add (new_board_view);
+        replace_board (board_view, new_board_view);
         board_view = new_board_view;
-
         level_changed (current_level);
     }
 

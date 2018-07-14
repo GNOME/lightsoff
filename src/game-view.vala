@@ -9,6 +9,9 @@
  */
 public interface GameView : GLib.Object {
     public abstract void swap_board (int direction);
+
+    public abstract void replace_board (BoardView board_biew, BoardView new_board_view);
+
     public abstract void hide_cursor ();
     public abstract void activate_cursor ();
     public abstract void move_cursor (int x, int y);

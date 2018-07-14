@@ -141,23 +141,6 @@ public class BoardViewClutter : Clutter.Group, BoardView
                                "y", sign * (1 - direction) * height);
     }
 
-    public void swap_in (float direction, Clutter.Timeline timeline)
-    {
-        /* Bring into foreground and make visible */
-        animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
-                               "opacity", 255,
-                               "z_position", 0.0);
-
-    }
-
-    public void swap_out (float direction, Clutter.Timeline timeline)
-    {
-        /* Fade into background or drop down */
-        animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
-                               "z_position", 250.0 * direction,
-                               "opacity", 0);
-    }
-
     private void light_button_press_cb (Clutter.TapAction tap, Clutter.Actor actor)
     {
         int x, y;
