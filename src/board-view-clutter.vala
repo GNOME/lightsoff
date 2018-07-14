@@ -74,7 +74,6 @@ private class Light : Clutter.Group
 public class BoardViewClutter : Clutter.Group, BoardView
 {
 
-    private new const int size = 5;
     private PuzzleGenerator puzzle_generator;
 
     public bool playable = true;
@@ -159,27 +158,11 @@ public class BoardViewClutter : Clutter.Group, BoardView
                                "opacity", 0);
     }
 
-    private void find_light (GLib.Object light, out int x, out int y)
-    {
-        x = y = 0;
-        for (x = 0; x < size; x++)
-            for (y = 0; y < size; y++)
-                if (lights[x, y] == light)
-                    return;
-    }
-
     private void light_button_press_cb (Clutter.TapAction tap, Clutter.Actor actor)
     {
         int x, y;
         find_light ((Light) actor, out x, out y);
         move_to (x, y);
-    }
-
-    public void move_to (int x, int y)
-    {
-        toggle_light (x, y);
-        _moves += 1;
-        light_toggled ();
     }
 
     // Toggle a light and those in each cardinal direction around it.
@@ -205,23 +188,8 @@ public class BoardViewClutter : Clutter.Group, BoardView
 
         lights[(int) x, (int) y].toggle (timeline);
 
-        if (is_completed ()) {
-            game_won ();
-        }
-
         if (animate)
             timeline.start ();
-    }
-
-    private bool is_completed ()
-    {
-        var cleared = true;
-        for (var x = 0; x < size; x++)
-            for (var y = 0; y < size; y++)
-                if (lights[x, y].is_lit)
-                    cleared = false;
-
-        return cleared;
     }
 
     // Pseudorandomly generates and sets the state of each light based on
@@ -252,4 +220,35 @@ public class BoardViewClutter : Clutter.Group, BoardView
                 if (sol[x, y])
                     toggle_light (x, y, false);
     }
+
+    private void find_light (GLib.Object light, out int x, out int y)
+    {
+        x = y = 0;
+        for (x = 0; x < size; x++)
+            for (y = 0; y < size; y++)
+                if (lights[x, y] == light)
+                    return;
+    }
+
+    private bool is_completed ()
+    {
+        var cleared = true;
+        for (var x = 0; x < size; x++)
+            for (var y = 0; y < size; y++)
+                if (lights[x, y].is_lit)
+                    cleared = false;
+
+        return cleared;
+    }
+
+    public void move_to (int x, int y)
+    {
+        toggle_light (x, y);
+        _moves += 1;
+        light_toggled ();
+        if (is_completed ()) {
+            game_won ();
+        }
+    }
+
 }

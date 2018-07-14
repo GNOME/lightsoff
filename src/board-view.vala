@@ -9,6 +9,8 @@
  */
 public interface BoardView: GLib.Object {
 
+    protected new const int size = 5;
+
     public signal void game_won ();
     public signal void light_toggled ();
 }

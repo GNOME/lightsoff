@@ -10,7 +10,6 @@
 
 public class BoardViewGtk : Gtk.Grid, BoardView
 {
-    private new const int size = 5;
     private PuzzleGenerator puzzle_generator;
     private Gtk.ToggleButton[,] lights;
 
@@ -63,37 +62,11 @@ public class BoardViewGtk : Gtk.Grid, BoardView
     {
     }
 
-    private void find_light (GLib.Object light, out int x, out int y)
-    {
-        x = y = 0;
-        for (x = 0; x < size; x++)
-            for (y = 0; y < size; y++)
-                if (lights[x, y] == light)
-                    return;
-    }
-
-    private bool is_completed ()
-    {
-        var cleared = true;
-        for (var x = 0; x < size; x++)
-            for (var y = 0; y < size; y++)
-                if (lights[x, y].active)
-                    cleared = false;
-
-        return cleared;
-    }
-
     public void light_toggled_cb (Gtk.ToggleButton source)
     {
         int xl, yl;
         find_light (source, out xl, out yl);
-
-        toggle_light (xl, yl, true);
-        _moves += 1;
-        light_toggled ();
-        if (is_completed ()) {
-            game_won ();
-        }
+        move_to (xl, yl);
     }
     // Pseudorandomly generates and sets the state of each light based on
     // a level number; hopefully this is stable between machines, but that
@@ -101,7 +74,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
     // symmetry for some levels.
 
      // Toggle a light and those in each cardinal direction around it.
-    private void toggle_light (int x, int y, bool clicked = false)
+    private void toggle_light (int x, int y, bool clicked = true)
     {
         for (var xi = 0; xi < size; xi++)
             for (var yi = 0; yi < size; yi++)
@@ -126,6 +99,10 @@ public class BoardViewGtk : Gtk.Grid, BoardView
                 lights[xi, yi].toggled.connect (light_toggled_cb);
     }
 
+    // Pseudorandomly generates and sets the state of each light based on
+    // a level number; hopefully this is stable between machines, but that
+    // depends on GLib's PRNG stability. Also, provides some semblance of
+    // symmetry for some levels.
     public void load_level (int level)
     {
         /* We *must* not have level < 1, as the following assumes a nonzero, nonnegative number */
@@ -152,6 +129,37 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)
                 if (sol[x, y])
-                    toggle_light (x, y);
+                    toggle_light (x, y, false);
     }
+
+    private void find_light (GLib.Object light, out int x, out int y)
+    {
+        x = y = 0;
+        for (x = 0; x < size; x++)
+            for (y = 0; y < size; y++)
+                if (lights[x, y] == light)
+                    return;
+    }
+
+    private bool is_completed ()
+    {
+        var cleared = true;
+        for (var x = 0; x < size; x++)
+            for (var y = 0; y < size; y++)
+                if (lights[x, y].active)
+                    cleared = false;
+
+        return cleared;
+    }
+
+    public void move_to (int x, int y)
+    {
+        toggle_light (x, y);
+        _moves += 1;
+        light_toggled ();
+        if (is_completed ()) {
+            game_won ();
+        }
+    }
+
 }
