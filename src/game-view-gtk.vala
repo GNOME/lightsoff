@@ -15,7 +15,7 @@ public class GtkGameView : Gtk.Frame, GameView {
 
     public void replace_board (BoardView old_board, BoardView new_board)
     {
-        @foreach ((widget) => remove (widget));
+        remove (old_board as Gtk.Widget);
         add (new_board as Gtk.Widget);
     }
 

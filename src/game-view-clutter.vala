@@ -200,7 +200,6 @@ public class ClutterGameView : Clutter.Group, GameView
         timeline.completed.connect (transition_complete_cb);
     }
 
-
     public void hide_cursor ()
     {
         setup_animation (key_cursor_view, Clutter.AnimationMode.EASE_OUT_SINE, 250);
