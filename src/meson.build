@@ -1,5 +1,5 @@
 lightsoff_vala_sources = [
-  'board-view.vala',
+  'board-view-clutter.vala',
   'lightsoff.vala',
   'lightsoff-window.vala',
   'puzzle-generator.vala',
