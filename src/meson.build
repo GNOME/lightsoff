@@ -1,4 +1,5 @@
 lightsoff_vala_sources = [
+  'board-view.vala',
   'board-view-clutter.vala',
   'board-view-gtk.vala',
   'lightsoff.vala',

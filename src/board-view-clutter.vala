@@ -71,13 +71,11 @@ private class Light : Clutter.Group
     }
 }
 
-public class BoardViewClutter : Clutter.Group
+public class BoardViewClutter : Clutter.Group, BoardView
 {
+
     private new const int size = 5;
     private PuzzleGenerator puzzle_generator;
-    private Clutter.Actor off_texture;
-    private Clutter.Actor on_texture;
-    private Light[,] lights;
 
     public bool playable = true;
 
@@ -87,8 +85,9 @@ public class BoardViewClutter : Clutter.Group
         get { return _moves;}
     }
 
-    public signal void game_won ();
-    public signal void light_toggled ();
+    private Clutter.Actor off_texture;
+    private Clutter.Actor on_texture;
+    private Light[,] lights;
 
     public BoardViewClutter (Clutter.Actor off_texture, Clutter.Actor on_texture)
     {
@@ -160,7 +159,7 @@ public class BoardViewClutter : Clutter.Group
                                "opacity", 0);
     }
 
-    private void find_light (Light light, out int x, out int y)
+    private void find_light (GLib.Object light, out int x, out int y)
     {
         x = y = 0;
         for (x = 0; x < size; x++)
@@ -206,13 +205,15 @@ public class BoardViewClutter : Clutter.Group
 
         lights[(int) x, (int) y].toggle (timeline);
 
-        check_completed ();
+        if (is_completed ()) {
+            game_won ();
+        }
 
         if (animate)
             timeline.start ();
     }
 
-    private void check_completed ()
+    private bool is_completed ()
     {
         var cleared = true;
         for (var x = 0; x < size; x++)
@@ -220,8 +221,7 @@ public class BoardViewClutter : Clutter.Group
                 if (lights[x, y].is_lit)
                     cleared = false;
 
-        if (cleared)
-            game_won ();
+        return cleared;
     }
 
     // Pseudorandomly generates and sets the state of each light based on

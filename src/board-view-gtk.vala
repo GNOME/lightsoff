@@ -8,7 +8,7 @@
  * license.
  */
 
-public class BoardViewGtk : Gtk.Grid
+public class BoardViewGtk : Gtk.Grid, BoardView
 {
     private new const int size = 5;
     private PuzzleGenerator puzzle_generator;
@@ -21,9 +21,6 @@ public class BoardViewGtk : Gtk.Grid
     {
         get { return _moves;}
     }
-
-    public signal void game_won ();
-    public signal void light_toggled ();
 
     public BoardViewGtk ()
     {
@@ -66,7 +63,7 @@ public class BoardViewGtk : Gtk.Grid
     {
     }
 
-    private void find_light (Gtk.ToggleButton light, out int x, out int y)
+    private void find_light (GLib.Object light, out int x, out int y)
     {
         x = y = 0;
         for (x = 0; x < size; x++)
@@ -131,8 +128,6 @@ public class BoardViewGtk : Gtk.Grid
 
     public void load_level (int level)
     {
-        _moves = 0;
-        light_toggled ();
         /* We *must* not have level < 1, as the following assumes a nonzero, nonnegative number */
         if (level < 1)
             level = 1;
