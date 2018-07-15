@@ -8,9 +8,17 @@
  * license.
  */
 public interface GameView : GLib.Object {
+
+    public enum ReplaceStyle {
+        REFRESH, // crossfade
+        SLIDE_FORWARD, // slide out-in
+        SLIDE_BACKWARD, // slide in-out
+        SLIDE_NEXT // slide over
+    }
+
     public abstract void swap_board (int direction);
 
-    public abstract void replace_board (BoardView board_biew, BoardView new_board_view);
+    public abstract void replace_board (BoardView board_biew, BoardView new_board_view, ReplaceStyle style, bool fast = true);
 
     public abstract void hide_cursor ();
     public abstract void activate_cursor ();

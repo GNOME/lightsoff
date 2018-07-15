@@ -8,12 +8,14 @@ public class GtkGameView : Gtk.Frame, GameView {
     {
         current_level += direction;
         new_board_view = create_board_view (current_level);
-        replace_board (board_view, new_board_view);
+        replace_board (board_view, new_board_view, 
+                       direction == 1 ? GameView.ReplaceStyle.SLIDE_FORWARD 
+                                      : GameView.ReplaceStyle.SLIDE_BACKWARD);
         board_view = new_board_view;
         level_changed (current_level);
     }
 
-    public void replace_board (BoardView old_board, BoardView new_board)
+    public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
         remove (old_board as Gtk.Widget);
         add (new_board as Gtk.Widget);
@@ -32,7 +34,7 @@ public class GtkGameView : Gtk.Frame, GameView {
     {
         current_level = 1;
         new_board_view = create_board_view (current_level);
-        replace_board (board_view, new_board_view);
+        replace_board (board_view, new_board_view, GameView.ReplaceStyle.REFRESH);
         board_view = new_board_view;
         level_changed (current_level);
     }
@@ -71,7 +73,7 @@ public class GtkGameView : Gtk.Frame, GameView {
         current_level++;
 
         new_board_view = create_board_view (current_level);
-        replace_board (board_view, new_board_view);
+        replace_board (board_view, new_board_view, GameView.ReplaceStyle.SLIDE_NEXT, false);
         board_view = new_board_view;
         level_changed (current_level);
     }

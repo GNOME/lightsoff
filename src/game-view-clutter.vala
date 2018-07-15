@@ -134,26 +134,8 @@ public class ClutterGameView : Clutter.Group, GameView
 
         current_level++;
 
-        // Make sure the board transition is different than the previous.
-        var direction = 0;
-        var sign = 0;
-        do
-        {
-            direction = Random.int_range (0, 2); // x or y
-            sign = Random.boolean () ? 1 : -1; // left/right up/down
-        }
-        while (last_direction == direction && last_sign == sign);
-        last_direction = direction;
-        last_sign = sign;
-
         new_board_view = create_board_view (current_level);
-        board_group.add_child (new_board_view);
-
-        timeline = new Clutter.Timeline (1500);
-        new_board_view.slide_in (direction, sign, timeline);
-        board_view.slide_out (direction, sign, timeline);
-        timeline.completed.connect (transition_complete_cb);
-
+        replace_board (board_view, new_board_view, GameView.ReplaceStyle.SLIDE_NEXT);
         level_changed (current_level);
     }
 
@@ -174,31 +156,82 @@ public class ClutterGameView : Clutter.Group, GameView
         }
 
         new_board_view = create_board_view (current_level);
-        new_board_view.z_position = -250 * direction;
-        new_board_view.opacity = 0;
 
-        replace_board (board_view, new_board_view);
-
-        /* Fade into background or drop down */
-        board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
-                               "z_position", 250.0 * direction,
-                               "opacity", 0);
+        replace_board (board_view, new_board_view, 
+                       direction == 1 ? GameView.ReplaceStyle.SLIDE_FORWARD 
+                                      : GameView.ReplaceStyle.SLIDE_BACKWARD);
 
         level_changed (current_level);
     }
 
-    public void replace_board (BoardView old_board, BoardView new_board)
+    public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
-        timeline = new Clutter.Timeline (500);
+        timeline = new Clutter.Timeline (fast ? 500 : 1500);
         board_group.add_child (new_board as Clutter.Group);
-
-        /* Bring into foreground and make visible */
-        (new_board as Clutter.Group).animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+        int direction = 1;
+        switch (style)
+        {
+            case REFRESH: 
+                new_board_view.z_position = 250;
+                new_board_view.opacity = 0;
+                /* Fade into background or drop down */
+                board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                                       "z_position", 250.0 * -1,
+                                       "opacity", 0);
+                        /* Bring into foreground and make visible */
+                new_board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
                                "opacity", 255,
                                "z_position", 0.0);
+                break;
+            case SLIDE_NEXT:
+                // Make sure the board transition is different than the previous.
+                direction = 0;
+                var sign = 0;
+                do
+                {
+                    direction = Random.int_range (0, 2); // x or y
+                    sign = Random.boolean () ? 1 : -1; // left/right up/down
+                }
+                while (last_direction == direction && last_sign == sign);
+                last_direction = direction;
+                last_sign = sign;
+
+                timeline = new Clutter.Timeline (1500);
+                new_board_view.slide_in (direction, sign, timeline);
+                board_view.slide_out (direction, sign, timeline);
+                break;
+            case SLIDE_FORWARD: 
+                new_board_view.z_position = -250 * direction;
+                new_board_view.opacity = 0;
+                /* Fade into background or drop down */
+                board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                                       "z_position", 250.0 * direction,
+                                       "opacity", 0);
+                        /* Bring into foreground and make visible */
+                new_board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                               "opacity", 255,
+                               "z_position", 0.0);
+                break;
+            case SLIDE_BACKWARD: 
+                direction = -1;
+                new_board_view.z_position = -250 * direction;
+                new_board_view.opacity = 0;
+                /* Fade into background or drop down */
+                board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                                       "z_position", 250.0 * direction,
+                                       "opacity", 0);
+                        /* Bring into foreground and make visible */
+                new_board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                               "opacity", 255,
+                               "z_position", 0.0);
+                break;
+
+            default: break;
+        } 
 
         timeline.completed.connect (transition_complete_cb);
     }
+
 
     public void hide_cursor ()
     {
@@ -252,15 +285,8 @@ public class ClutterGameView : Clutter.Group, GameView
         current_level = 1;
 
         new_board_view = create_board_view (current_level);
-        new_board_view.z_position = 250;
-        new_board_view.opacity = 0;
 
-        replace_board (board_view, new_board_view);
-
-        /* Fade into background or drop down */
-        board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
-                               "z_position", 250.0 * -1,
-                               "opacity", 0);
+        replace_board (board_view, new_board_view, GameView.ReplaceStyle.REFRESH);
 
         level_changed (current_level);
     }
