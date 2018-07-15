@@ -1,4 +1,4 @@
-public class GtkGameView : Gtk.Frame, GameView {
+public class GtkGameView : Gtk.Stack, GameView {
 
     private BoardViewGtk board_view;
     private BoardViewGtk? new_board_view = null;
@@ -17,8 +17,26 @@ public class GtkGameView : Gtk.Frame, GameView {
 
     public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
-        remove (old_board as Gtk.Widget);
-        add (new_board as Gtk.Widget);
+        transition_duration = fast ? 1000 : 2000;
+        switch (style)
+        {
+            case REFRESH:
+                transition_type = Gtk.StackTransitionType.SLIDE_DOWN;
+                break;
+            case SLIDE_NEXT:
+            case SLIDE_FORWARD:
+                transition_type = Gtk.StackTransitionType.SLIDE_LEFT;
+                break;
+            case SLIDE_BACKWARD:
+                transition_type = Gtk.StackTransitionType.SLIDE_RIGHT;
+                break;
+        }
+
+        var new_level = "level %d".printf(current_level);
+        add_named (new_board as Gtk.Widget, new_level);
+        set_visible_child (new_board as Gtk.Widget);
+        notify["transition-running"].connect(() => remove (old_board as Gtk.Widget));
+        ;
     }
 
     public void hide_cursor ()

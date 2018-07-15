@@ -46,14 +46,6 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         _moves = 0;
     }
 
-    public void slide_in (int direction, int sign, Clutter.Timeline timeline)
-    {
-    }
-
-    public void slide_out (int direction, int sign, Clutter.Timeline timeline)
-    {
-    }
-
     public void light_toggled_cb (Gtk.ToggleButton source)
     {
         int xl, yl;
