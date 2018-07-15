@@ -65,7 +65,7 @@ public class LightsoffWindow : ApplicationWindow
         return aspect_frame;
     }
 
-    public LightsoffWindow ()
+    public LightsoffWindow (bool gtk = false)
     {
         settings = new GLib.Settings ("org.gnome.lightsoff");
 
@@ -75,7 +75,10 @@ public class LightsoffWindow : ApplicationWindow
         int level = settings.get_int ("level");
         level_changed_cb (level);
 
-        this.add (build_gtk_game_container (level, out game_view));
+        if (gtk)
+            this.add (build_gtk_game_container (level, out game_view));
+        else
+            this.add (build_clutter_game_container (level, out game_view));
 
         this.key_release_event.connect (key_release_event_cb);
         game_view.level_changed.connect (level_changed_cb);
