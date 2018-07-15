@@ -86,6 +86,7 @@ public class LightsoffWindow : ApplicationWindow
     private void update_subtitle (int moves)
     {
         headerbar.subtitle = ngettext ("%d move", "%d moves", moves).printf (moves);
+        set_focus_visible (false);
     }
 
     private void update_title (int level)

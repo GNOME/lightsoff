@@ -12,7 +12,13 @@
   box-shadow: none;
   transition-duration: 300ms;
   transition-timing-function: linear;
-  outline: none;
+  /*outline: none;*/
+}
+
+.grid > .toggle:focus {
+  outline-offset: -15px;
+  outline-width: 3px;
+  outline-style: inset;
 }
 
 .grid > .toggle:checked/*, .grid > .toggle:hover */{
