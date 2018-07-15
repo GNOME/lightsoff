@@ -34,6 +34,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
 
         puzzle_generator = new PuzzleGenerator (size);
         lights = new Gtk.ToggleButton [size, size];
+        List<Gtk.Widget> focus_list = new List<Gtk.Widget> ();
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)
             {
@@ -41,8 +42,9 @@ public class BoardViewGtk : Gtk.Grid, BoardView
                 lights[x, y].show ();
                 lights[x, y].toggled.connect (light_toggled_cb);
                 attach (lights[x, y], x, y, 1, 1);
+                focus_list.append (lights[x, y]);
             }
-
+        set_focus_chain (focus_list);
         _moves = 0;
     }
 

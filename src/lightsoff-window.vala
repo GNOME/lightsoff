@@ -114,6 +114,7 @@ public class LightsoffWindow : ApplicationWindow
     {
         previous_level.set_enabled (level > 1);
         update_title (level);
+        set_focus_visible (false);
         if (level != settings.get_int ("level"))
             settings.set_int ("level", level);
     }
