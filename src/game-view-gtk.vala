@@ -36,7 +36,6 @@ public class GtkGameView : Gtk.Stack, GameView {
         add_named (new_board as Gtk.Widget, new_level);
         set_visible_child (new_board as Gtk.Widget);
         notify["transition-running"].connect(() => remove (old_board as Gtk.Widget));
-        ;
     }
 
     public void hide_cursor ()
@@ -72,7 +71,7 @@ public class GtkGameView : Gtk.Stack, GameView {
     {
         var view = new BoardViewGtk ();
         view.load_level (level);
-        view.game_won.connect (game_won_cb);
+        view.game_won.connect (() => GLib.Timeout.add (300, game_won_cb));
         view.light_toggled.connect (light_toggled_cb);
         view.playable = false;
         view.show_all ();
@@ -86,14 +85,14 @@ public class GtkGameView : Gtk.Stack, GameView {
 
 // The player won the game; create a new board, update the level count,
     // and transition between the two boards in a random direction.
-    private void game_won_cb ()
+    private bool game_won_cb ()
     {
         current_level++;
-
         new_board_view = create_board_view (current_level);
         replace_board (board_view, new_board_view, GameView.ReplaceStyle.SLIDE_NEXT, false);
         board_view = new_board_view;
         level_changed (current_level);
+        return false;
     }
 
 }
