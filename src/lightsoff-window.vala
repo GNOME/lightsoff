@@ -33,7 +33,6 @@ public class LightsoffWindow : ApplicationWindow
         var clutter_embed = new GtkClutter.Embed ();
         clutter_embed.show ();
         var stage = (Clutter.Stage) clutter_embed.get_stage ();
-        stage.key_release_event.connect (key_release_clutter_event_cb);
         stage.background_color = Clutter.Color.from_string ("#000000");
 
         ClutterGameView clutter_game_view = new ClutterGameView (level);
@@ -78,6 +77,7 @@ public class LightsoffWindow : ApplicationWindow
 
         this.add (build_gtk_game_container (level, out game_view));
 
+        this.key_release_event.connect (key_release_event_cb);
         game_view.level_changed.connect (level_changed_cb);
         game_view.moves_changed.connect (update_subtitle);
 
@@ -86,7 +86,6 @@ public class LightsoffWindow : ApplicationWindow
     private void update_subtitle (int moves)
     {
         headerbar.subtitle = ngettext ("%d move", "%d moves", moves).printf (moves);
-        set_focus_visible (false);
     }
 
     private void update_title (int level)
@@ -119,28 +118,23 @@ public class LightsoffWindow : ApplicationWindow
             settings.set_int ("level", level);
     }
 
-    private bool key_release_clutter_event_cb (Clutter.Actor actor, Clutter.KeyEvent event)
+    private bool key_release_event_cb (Gtk.Widget widget, Gdk.EventKey event)
     {
         switch (event.keyval)
         {
-        case Clutter.Key.Escape:
-            game_view.hide_cursor ();
-            return true;
-        case Clutter.Key.Down:
-            game_view.move_cursor (0, 1);
-            return true;
-        case Clutter.Key.Up:
-            game_view.move_cursor (0, -1);
-            return true;
-        case Clutter.Key.Left:
-            game_view.move_cursor (-1, 0);
-            return true;
-        case Clutter.Key.Right:
-            game_view.move_cursor (1, 0);
-            return true;
-        case Clutter.Key.Return:
-            game_view.activate_cursor ();
-            return true;
+        case Gdk.Key.Escape:
+            set_focus_visible (false);
+            return game_view.hide_cursor ();
+        case Gdk.Key.Down:
+            return game_view.move_cursor (0, 1);
+        case Gdk.Key.Up:
+            return game_view.move_cursor (0, -1);
+        case Gdk.Key.Left:
+            return game_view.move_cursor (-1, 0);
+        case Gdk.Key.Right:
+            return game_view.move_cursor (1, 0);
+        case Gdk.Key.Return:
+            return game_view.activate_cursor ();
         default:
             return false;
         }

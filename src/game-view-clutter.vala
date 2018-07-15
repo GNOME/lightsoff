@@ -233,14 +233,15 @@ public class ClutterGameView : Clutter.Group, GameView
     }
 
 
-    public void hide_cursor ()
+    public bool hide_cursor ()
     {
         setup_animation (key_cursor_view, Clutter.AnimationMode.EASE_OUT_SINE, 250);
         key_cursor_view.set_opacity (0);
         key_cursor_ready = false;
+        return true;
     }
 
-    public void move_cursor (int x_step, int y_step)
+    public bool move_cursor (int x_step, int y_step)
     {
         if (key_cursor_ready)
         {
@@ -269,12 +270,14 @@ public class ClutterGameView : Clutter.Group, GameView
         }
 
         key_cursor_ready = true;
+        return true;
     }
 
-    public void activate_cursor ()
+    public bool activate_cursor ()
     {
         if (key_cursor_ready)
             board_view.move_to (key_cursor_x, key_cursor_y);
+        return true;
     }
 
     public void reset_game ()

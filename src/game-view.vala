@@ -20,9 +20,9 @@ public interface GameView : GLib.Object {
 
     public abstract void replace_board (BoardView board_biew, BoardView new_board_view, ReplaceStyle style, bool fast = true);
 
-    public abstract void hide_cursor ();
-    public abstract void activate_cursor ();
-    public abstract void move_cursor (int x, int y);
+    public abstract bool hide_cursor ();
+    public abstract bool activate_cursor ();
+    public abstract bool move_cursor (int x, int y);
     public abstract void reset_game ();
 
     public signal void level_changed (int level);

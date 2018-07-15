@@ -38,14 +38,18 @@ public class GtkGameView : Gtk.Stack, GameView {
         notify["transition-running"].connect(() => remove (old_board as Gtk.Widget));
     }
 
-    public void hide_cursor ()
+    public bool hide_cursor ()
     {
+        queue_draw ();
+        return false;
     }
-    public void activate_cursor ()
+    public bool activate_cursor ()
     {
+        return false;
     }
-    public void move_cursor (int x, int y)
+    public bool move_cursor (int x, int y)
     {
+        return false;
     }
     public void reset_game ()
     {
@@ -64,7 +68,6 @@ public class GtkGameView : Gtk.Stack, GameView {
         board_view = create_board_view (current_level);
         board_view.playable = true;
         add (board_view);
-
     }
 
     private BoardViewGtk create_board_view (int level)
