@@ -17,7 +17,7 @@ public class GtkGameView : Gtk.Stack, GameView {
 
     public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
-        transition_duration = fast ? 1000 : 2000;
+        transition_duration = fast ? 500 : 1000;
         switch (style)
         {
             case REFRESH:
