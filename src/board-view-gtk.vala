@@ -51,9 +51,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
 
     public void light_toggled_cb (Gtk.ToggleButton source)
     {
-        int xl, yl;
-        find_light (source, out xl, out yl);
-        move_to (xl, yl);
+        handle_toggle (source);
     }
     // Pseudorandomly generates and sets the state of each light based on
     // a level number; hopefully this is stable between machines, but that
@@ -96,14 +94,9 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         return puzzle_generator;
     }
 
-    private bool is_completed ()
+    public bool is_light_active (int x, int y)
     {
-        for (var x = 0; x < size; x++)
-            for (var y = 0; y < size; y++)
-                if (lights[x, y].active)
-                    return false;
-
-        return true;
+        return lights[x, y].active;
     }
 
     public GLib.Object get_light_at (int x, int y)
@@ -111,14 +104,9 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         return lights[x, y];
     }
 
-    public void move_to (int x, int y)
+    public void increase_moves ()
     {
-        toggle_light (x, y);
         _moves += 1;
-        light_toggled ();
-        if (is_completed ()) {
-            game_won ();
-        }
     }
 
 }

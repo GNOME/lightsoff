@@ -144,9 +144,7 @@ public class BoardViewClutter : Clutter.Group, BoardView
 
     private void light_button_press_cb (Clutter.TapAction tap, Clutter.Actor actor)
     {
-        int x, y;
-        find_light ((Light) actor, out x, out y);
-        move_to (x, y);
+        handle_toggle (actor);
     }
 
     // Toggle a light and those in each cardinal direction around it.
@@ -189,30 +187,19 @@ public class BoardViewClutter : Clutter.Group, BoardView
                 lights[x, y].is_lit = false;
     }
 
+    public bool is_light_active (int x, int y)
+    {
+        return lights[x, y].is_lit;
+    }
 
     public GLib.Object get_light_at (int x, int y)
     {
         return lights[x, y];
     }
 
-    private bool is_completed ()
+    public void increase_moves ()
     {
-        for (var x = 0; x < size; x++)
-            for (var y = 0; y < size; y++)
-                if (lights[x, y].is_lit)
-                    return false;
-
-        return true;
-    }
-
-    public void move_to (int x, int y)
-    {
-        toggle_light (x, y);
         _moves += 1;
-        light_toggled ();
-        if (is_completed ()) {
-            game_won ();
-        }
     }
 
 }
