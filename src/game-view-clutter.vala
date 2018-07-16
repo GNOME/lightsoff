@@ -80,7 +80,7 @@ public class ClutterGameView : Clutter.Group, GameView
         add_child (board_group);
 
         current_level = level;
-        board_view = create_board_view (current_level);
+        board_view = create_board_view (current_level) as BoardViewClutter;
         board_view.playable = true;
         board_group.add_child (board_view);
 
@@ -94,11 +94,11 @@ public class ClutterGameView : Clutter.Group, GameView
         add_child (key_cursor_view);
     }
 
-    private BoardViewClutter create_board_view (int level)
+    public BoardView create_board_view (int level)
     {
         var view = new BoardViewClutter (off_texture, on_texture);
         view.load_level (level);
-        view.game_won.connect (game_won_cb);
+        view.game_won.connect (() => game_won_cb());
         view.light_toggled.connect (light_toggled_cb);
         view.playable = false;
         return view;
@@ -116,38 +116,6 @@ public class ClutterGameView : Clutter.Group, GameView
         new_view.playable = true;
         timeline = null;
         board_view = new_view;
-    }
-
-    // The player won the game; create a new board, update the level count,
-    // and transition between the two boards in a random direction.
-    private void game_won_cb ()
-    {
-        if (timeline != null && timeline.is_playing ())
-            return;
-
-        replace_board (board_view, create_board_view (++current_level), GameView.ReplaceStyle.SLIDE_NEXT);
-    }
-
-    // The player asked to swap to a different level without completing
-    // the one in progress; this can occur either by clicking an arrow
-    // or by requesting a new game from the menu. Animate the new board
-    // in, depthwise, in the direction indicated by 'context'.
-    public void swap_board (int direction)
-    {
-        if (timeline != null && timeline.is_playing ())
-            return;
-
-        current_level += direction;
-        if (current_level <= 0)
-        {
-            current_level = 1;
-            return;
-        }
-
-        replace_board (board_view, create_board_view (current_level),
-                       direction == 1 ? GameView.ReplaceStyle.SLIDE_FORWARD 
-                                      : GameView.ReplaceStyle.SLIDE_BACKWARD);
-
     }
 
     public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
@@ -280,5 +248,16 @@ public class ClutterGameView : Clutter.Group, GameView
     public BoardView get_board_view ()
     {
         return board_view;
+    }
+
+    public int next_level (int direction)
+    {
+        current_level += direction;
+        return current_level;
+    }
+
+    public bool is_transitioning ()
+    {
+        return timeline != null && timeline.is_playing ();
     }
 }

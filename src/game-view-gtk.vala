@@ -3,13 +3,6 @@ public class GtkGameView : Gtk.Stack, GameView {
     private BoardViewGtk board_view;
     private int current_level;
     private GLib.Queue<ulong> handlers = new GLib.Queue<ulong>();
-    public void swap_board (int direction)
-    {
-        current_level += direction;
-        replace_board (board_view, create_board_view (current_level),
-                       direction == 1 ? GameView.ReplaceStyle.SLIDE_FORWARD 
-                                      : GameView.ReplaceStyle.SLIDE_BACKWARD);
-    }
 
     public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
@@ -67,12 +60,12 @@ public class GtkGameView : Gtk.Stack, GameView {
                 /* Clear level */
         current_level = level;
 
-        board_view = create_board_view (current_level);
+        board_view = create_board_view (current_level) as BoardViewGtk;
         board_view.playable = true;
         add (board_view);
     }
 
-    private BoardViewGtk create_board_view (int level)
+    public BoardView create_board_view (int level)
     {
         var view = new BoardViewGtk ();
         view.load_level (level);
@@ -83,16 +76,19 @@ public class GtkGameView : Gtk.Stack, GameView {
         return view;
     }
 
-    // The player won the game; create a new board, update the level count,
-    // and transition between the two boards in a random direction.
-    private bool game_won_cb ()
-    {
-        replace_board (board_view, create_board_view (++current_level), GameView.ReplaceStyle.SLIDE_NEXT, false);
-        return false;
-    }
-
     public BoardView get_board_view ()
     {
         return board_view;
     }
+
+    public int next_level (int direction) {
+        current_level += direction;
+        return current_level;
+    }
+
+    public bool is_transitioning ()
+    {
+        return transition_running;
+    }
+
 }
