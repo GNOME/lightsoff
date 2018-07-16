@@ -18,7 +18,7 @@ public interface GameView : GLib.Object {
 
     public abstract void swap_board (int direction);
 
-    public abstract BoardView replace_board (BoardView board_biew, BoardView new_board_view, ReplaceStyle style, bool fast = true);
+    public abstract void replace_board (BoardView board_biew, BoardView new_board_view, ReplaceStyle style, bool fast = true);
 
     public abstract bool hide_cursor ();
     public abstract bool activate_cursor ();

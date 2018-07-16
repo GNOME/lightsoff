@@ -26,7 +26,6 @@ public class ClutterGameView : Clutter.Group, GameView
 
     private Clutter.Actor board_group;
     private BoardViewClutter board_view;
-    private BoardViewClutter? new_board_view = null;
     private Clutter.Actor key_cursor_view;
 
     private Clutter.Timeline timeline;
@@ -106,18 +105,17 @@ public class ClutterGameView : Clutter.Group, GameView
     }
 
     // The boards have finished transitioning; delete the old one!
-    private void transition_complete_cb ()
+    private void board_replaced (BoardViewClutter old_view, BoardViewClutter new_view)
     {
-        board_view.destroy ();
-        board_view = new_board_view;
-        board_view.playable = true;
-        new_board_view = null;
-        timeline = null;
-
+        old_view.destroy ();
         // Remove all of the queued-for-removal actors
         foreach (var actor in actor_remove_queue)
             actor.destroy ();
         actor_remove_queue = null;
+
+        new_view.playable = true;
+        timeline = null;
+        board_view = new_view;
     }
 
     private void light_toggled_cb ()
@@ -132,8 +130,7 @@ public class ClutterGameView : Clutter.Group, GameView
         if (timeline != null && timeline.is_playing ())
             return;
 
-        board_view = replace_board (board_view, create_board_view (++current_level), GameView.ReplaceStyle.SLIDE_NEXT) as BoardViewClutter;
-        level_changed (current_level);
+        replace_board (board_view, create_board_view (++current_level), GameView.ReplaceStyle.SLIDE_NEXT);
     }
 
     // The player asked to swap to a different level without completing
@@ -152,26 +149,26 @@ public class ClutterGameView : Clutter.Group, GameView
             return;
         }
 
-        board_view = replace_board (board_view, create_board_view (current_level),
+        replace_board (board_view, create_board_view (current_level),
                        direction == 1 ? GameView.ReplaceStyle.SLIDE_FORWARD 
-                                      : GameView.ReplaceStyle.SLIDE_BACKWARD) as BoardViewClutter;
+                                      : GameView.ReplaceStyle.SLIDE_BACKWARD);
 
-        level_changed (current_level);
     }
 
-    public BoardView replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
+    public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
-        new_board_view = new_board as BoardViewClutter;
         timeline = new Clutter.Timeline (fast ? 500 : 1500);
         board_group.add_child (new_board as Clutter.Group);
         int direction = 1;
+        BoardViewClutter new_board_view = new_board as BoardViewClutter;
+        BoardViewClutter old_board_view = old_board as BoardViewClutter;
         switch (style)
         {
             case REFRESH: 
                 new_board_view.z_position = 250;
                 new_board_view.opacity = 0;
                 /* Fade into background or drop down */
-                board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                old_board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
                                        "z_position", 250.0 * -1,
                                        "opacity", 0);
                         /* Bring into foreground and make visible */
@@ -194,13 +191,13 @@ public class ClutterGameView : Clutter.Group, GameView
 
                 timeline = new Clutter.Timeline (1500);
                 new_board_view.slide_in (direction, sign, timeline);
-                board_view.slide_out (direction, sign, timeline);
+                old_board_view.slide_out (direction, sign, timeline);
                 break;
             case SLIDE_FORWARD: 
                 new_board_view.z_position = -250 * direction;
                 new_board_view.opacity = 0;
                 /* Fade into background or drop down */
-                board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                old_board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
                                        "z_position", 250.0 * direction,
                                        "opacity", 0);
                         /* Bring into foreground and make visible */
@@ -213,7 +210,7 @@ public class ClutterGameView : Clutter.Group, GameView
                 new_board_view.z_position = -250 * direction;
                 new_board_view.opacity = 0;
                 /* Fade into background or drop down */
-                board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
+                old_board_view.animate_with_timeline (Clutter.AnimationMode.EASE_IN_SINE, timeline,
                                        "z_position", 250.0 * direction,
                                        "opacity", 0);
                         /* Bring into foreground and make visible */
@@ -224,11 +221,9 @@ public class ClutterGameView : Clutter.Group, GameView
 
             default: break;
         } 
-
-        timeline.completed.connect (transition_complete_cb);
-        return new_board;
+        timeline.completed.connect (() => board_replaced (old_board_view, new_board_view));
+        level_changed (current_level);
     }
-
 
     public bool hide_cursor ()
     {
@@ -284,8 +279,6 @@ public class ClutterGameView : Clutter.Group, GameView
 
         current_level = 1;
 
-        board_view = replace_board (board_view, create_board_view (current_level), GameView.ReplaceStyle.REFRESH) as BoardViewClutter;
-
-        level_changed (current_level);
+        replace_board (board_view, create_board_view (current_level), GameView.ReplaceStyle.REFRESH);
     }
 }
