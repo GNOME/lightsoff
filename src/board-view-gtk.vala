@@ -41,7 +41,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
             {
                 lights[x, y] = new Gtk.ToggleButton ();
                 lights[x, y].show ();
-                lights[x, y].toggled.connect (light_toggled_cb);
+                lights[x, y].toggled.connect (handle_toggle);
                 attach (lights[x, y], x, y, 1, 1);
                 focus_list.append (lights[x, y]);
             }
@@ -49,10 +49,6 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         _moves = 0;
     }
 
-    public void light_toggled_cb (Gtk.ToggleButton source)
-    {
-        handle_toggle (source);
-    }
     // Pseudorandomly generates and sets the state of each light based on
     // a level number; hopefully this is stable between machines, but that
     // depends on GLib's PRNG stability. Also, provides some semblance of
@@ -61,7 +57,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
      // Toggle a light and those in each cardinal direction around it.
     public void toggle_light (int x, int y, bool clicked = true)
     {
-        @foreach((light) => (light as Gtk.ToggleButton).toggled.disconnect (light_toggled_cb));
+        @foreach((light) => (light as Gtk.ToggleButton).toggled.disconnect (handle_toggle));
 
         if (x>= size || y >= size || x < 0 || y < 0 )
             return;
@@ -77,9 +73,8 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         if (!clicked)
             lights[(int) x, (int) y].set_active (!lights[(int) x, (int) y ].get_active ());
 
-        @foreach((light) => (light as Gtk.ToggleButton).toggled.connect (light_toggled_cb));
+        @foreach((light) => (light as Gtk.ToggleButton).toggled.connect (handle_toggle));
     }
-
 
     public void clear_level ()
     {

@@ -104,7 +104,7 @@ public class BoardViewClutter : Clutter.Group, BoardView
                 l.reactive = true;
                 var tap = new Clutter.TapAction ();
                 l.add_action (tap);
-                tap.tap.connect (light_button_press_cb);
+                tap.tap.connect ((tap, actor) => handle_toggle (actor));
 
                 float xx, yy;
                 get_light_position (x, y, out xx, out yy);
@@ -140,11 +140,6 @@ public class BoardViewClutter : Clutter.Group, BoardView
         animate_with_timeline (Clutter.AnimationMode.EASE_OUT_BOUNCE, timeline,
                                "x", sign * direction * width,
                                "y", sign * (1 - direction) * height);
-    }
-
-    private void light_button_press_cb (Clutter.TapAction tap, Clutter.Actor actor)
-    {
-        handle_toggle (actor);
     }
 
     // Toggle a light and those in each cardinal direction around it.
