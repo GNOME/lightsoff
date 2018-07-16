@@ -47,6 +47,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
             }
         set_focus_chain (focus_list);
         _moves = 0;
+        show_all ();
     }
 
     // Pseudorandomly generates and sets the state of each light based on
@@ -57,6 +58,9 @@ public class BoardViewGtk : Gtk.Grid, BoardView
      // Toggle a light and those in each cardinal direction around it.
     public void toggle_light (int x, int y, bool clicked = true)
     {
+        if (!playable)
+            return;
+
         @foreach((light) => (light as Gtk.ToggleButton).toggled.disconnect (handle_toggle));
 
         if (x>= size || y >= size || x < 0 || y < 0 )

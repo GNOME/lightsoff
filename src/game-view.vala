@@ -43,13 +43,12 @@ public interface GameView : GLib.Object {
 
     // The player won the game; create a new board, update the level count,
     // and transition between the two boards in a random direction.
-    public bool game_won_cb ()
+    public void game_won_cb ()
     {
         if (is_transitioning ())
-            return false;
+            return;
 
         replace_board (get_board_view (), create_board_view (next_level (1)), GameView.ReplaceStyle.SLIDE_NEXT);
-        return false;
     }
 
     public void light_toggled_cb ()

@@ -31,6 +31,7 @@ public class GtkGameView : Gtk.Stack, GameView {
     public void board_replaced (BoardViewGtk old_board, BoardViewGtk new_board)
     {
         @foreach((board) => { if (board != get_visible_child ()) remove(board);});
+        new_board.playable = true;
         board_view = new_board;
         disconnect(handlers.pop_head());
     }
@@ -69,14 +70,13 @@ public class GtkGameView : Gtk.Stack, GameView {
     {
         var view = new BoardViewGtk ();
         view.load_level (level);
-        view.game_won.connect (() => GLib.Timeout.add (300, game_won_cb));
+        view.game_won.connect (() => game_won_cb());
         view.light_toggled.connect (light_toggled_cb);
         view.playable = false;
-        view.show_all ();
         return view;
     }
 
-    public BoardView get_board_view ()
+   public BoardView get_board_view ()
     {
         return board_view;
     }
