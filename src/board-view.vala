@@ -11,6 +11,7 @@ public interface BoardView: GLib.Object {
 
     protected new const int size = 5;
 
+    public abstract int get_moves ();
     public signal void game_won ();
     public signal void light_toggled ();
 }

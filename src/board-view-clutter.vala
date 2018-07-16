@@ -83,6 +83,7 @@ public class BoardViewClutter : Clutter.Group, BoardView
     {
         get { return _moves;}
     }
+    public int get_moves() { return _moves;}
 
     private Clutter.Actor off_texture;
     private Clutter.Actor on_texture;

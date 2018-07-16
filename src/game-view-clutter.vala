@@ -118,11 +118,6 @@ public class ClutterGameView : Clutter.Group, GameView
         board_view = new_view;
     }
 
-    private void light_toggled_cb ()
-    {
-        moves_changed (board_view.moves);
-    }
-
     // The player won the game; create a new board, update the level count,
     // and transition between the two boards in a random direction.
     private void game_won_cb ()
@@ -280,5 +275,10 @@ public class ClutterGameView : Clutter.Group, GameView
         current_level = 1;
 
         replace_board (board_view, create_board_view (current_level), GameView.ReplaceStyle.REFRESH);
+    }
+
+    public BoardView get_board_view ()
+    {
+        return board_view;
     }
 }

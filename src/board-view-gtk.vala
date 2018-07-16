@@ -20,6 +20,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
     {
         get { return _moves;}
     }
+    public int get_moves() { return _moves;}
 
     public BoardViewGtk ()
     {

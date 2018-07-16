@@ -24,6 +24,13 @@ public interface GameView : GLib.Object {
     public abstract bool activate_cursor ();
     public abstract bool move_cursor (int x, int y);
     public abstract void reset_game ();
+    public abstract BoardView get_board_view ();
+
+
+    public void light_toggled_cb ()
+    {
+        moves_changed (get_board_view ().get_moves ());
+    }
 
     public signal void level_changed (int level);
     public signal void moves_changed (int moves);
