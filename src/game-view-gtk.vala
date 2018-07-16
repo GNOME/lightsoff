@@ -13,7 +13,6 @@ public class GtkGameView : Gtk.Stack, GameView {
 
     public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
-        stdout.printf ("Changing board %p with board %p\n", old_board, new_board);
         transition_duration = fast ? 500 : 1000;
         switch (style)
         {
@@ -38,7 +37,6 @@ public class GtkGameView : Gtk.Stack, GameView {
 
     public void board_replaced (BoardViewGtk old_board, BoardViewGtk new_board)
     {
-        stdout.printf ("Cleaning board %p, replacing with  %p\n", old_board, new_board);
         @foreach((board) => { if (board != get_visible_child ()) remove(board);});
         board_view = new_board;
         disconnect(handlers.pop_head());
