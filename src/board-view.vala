@@ -12,6 +12,46 @@ public interface BoardView: GLib.Object {
     protected new const int size = 5;
 
     public abstract int get_moves ();
+    public abstract PuzzleGenerator get_puzzle_generator ();
+    public abstract void clear_level ();
+    public abstract void toggle_light (int x, int y, bool user_initiated = true);
+
+    public abstract GLib.Object get_light_at (int x, int y);
+
+        // Pseudorandomly generates and sets the state of each light based on
+    // a level number; hopefully this is stable between machines, but that
+    // depends on GLib's PRNG stability. Also, provides some semblance of
+    // symmetry for some levels.
+    public void load_level (int level)
+    {
+        /* We *must* not have level < 1, as the following assumes a nonzero, nonnegative number */
+        if (level < 1)
+            level = 1;
+
+        clear_level ();
+        /* Use the same pseudo-random levels */
+        Random.set_seed (level);
+
+        /* Levels require more and more clicks to make */
+        var solution_length = (int) Math.floor (2 * Math.log (level) + 1);
+
+        /* Do the moves the player needs to */
+        var sol = get_puzzle_generator ().minimal_solution (solution_length);
+        for (var x = 0; x < size; x++)
+            for (var y = 0; y < size; y++)
+                if (sol[x, y])
+                    toggle_light (x, y, false);
+    }
+
+    public void find_light (GLib.Object light, out int x, out int y)
+    {
+        x = y = 0;
+        for (x = 0; x < size; x++)
+            for (y = 0; y < size; y++)
+                if (get_light_at (x, y) == light)
+                    return;
+    }
+
     public signal void game_won ();
     public signal void light_toggled ();
 }

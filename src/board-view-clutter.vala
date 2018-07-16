@@ -150,7 +150,7 @@ public class BoardViewClutter : Clutter.Group, BoardView
     }
 
     // Toggle a light and those in each cardinal direction around it.
-    private void toggle_light (int x, int y, bool animate = true)
+    public void toggle_light (int x, int y, bool animate = true)
     {
         if (!playable)
             return;
@@ -176,53 +176,33 @@ public class BoardViewClutter : Clutter.Group, BoardView
             timeline.start ();
     }
 
-    // Pseudorandomly generates and sets the state of each light based on
-    // a level number; hopefully this is stable between machines, but that
-    // depends on GLib's PRNG stability. Also, provides some semblance of
-    // symmetry for some levels.
-    public void load_level (int level)
+    public PuzzleGenerator get_puzzle_generator ()
     {
-        /* We *must* not have level < 1, as the following assumes a nonzero, nonnegative number */
-        if (level < 1)
-            level = 1;
+        return puzzle_generator;
+    }
 
+    public void clear_level ()
+    {
         /* Clear level */
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)
                 lights[x, y].is_lit = false;
-
-        /* Use the same pseudo-random levels */
-        Random.set_seed (level);
-
-        /* Levels require more and more clicks to make */
-        var solution_length = (int) Math.floor (2 * Math.log (level) + 1);
-
-        /* Do the moves the player needs to */
-        var sol = puzzle_generator.minimal_solution (solution_length);
-        for (var x = 0; x < size; x++)
-            for (var y = 0; y < size; y++)
-                if (sol[x, y])
-                    toggle_light (x, y, false);
     }
 
-    private void find_light (GLib.Object light, out int x, out int y)
+
+    public GLib.Object get_light_at (int x, int y)
     {
-        x = y = 0;
-        for (x = 0; x < size; x++)
-            for (y = 0; y < size; y++)
-                if (lights[x, y] == light)
-                    return;
+        return lights[x, y];
     }
 
     private bool is_completed ()
     {
-        var cleared = true;
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)
                 if (lights[x, y].is_lit)
-                    cleared = false;
+                    return false;
 
-        return cleared;
+        return true;
     }
 
     public void move_to (int x, int y)
