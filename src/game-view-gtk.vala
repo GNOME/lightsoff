@@ -1,21 +1,18 @@
 public class GtkGameView : Gtk.Stack, GameView {
 
     private BoardViewGtk board_view;
-    private BoardViewGtk? new_board_view = null;
     private int current_level;
 
     public void swap_board (int direction)
     {
         current_level += direction;
-        new_board_view = create_board_view (current_level);
-        replace_board (board_view, new_board_view, 
+        board_view = replace_board (board_view, create_board_view (current_level),
                        direction == 1 ? GameView.ReplaceStyle.SLIDE_FORWARD 
-                                      : GameView.ReplaceStyle.SLIDE_BACKWARD);
-        board_view = new_board_view;
+                                      : GameView.ReplaceStyle.SLIDE_BACKWARD) as BoardViewGtk;
         level_changed (current_level);
     }
 
-    public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
+    public BoardView replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
         transition_duration = fast ? 500 : 1000;
         switch (style)
@@ -36,6 +33,7 @@ public class GtkGameView : Gtk.Stack, GameView {
         add_named (new_board as Gtk.Widget, new_level);
         set_visible_child (new_board as Gtk.Widget);
         notify["transition-running"].connect(() => remove (old_board as Gtk.Widget));
+        return new_board;
     }
 
     public bool hide_cursor ()
@@ -51,12 +49,11 @@ public class GtkGameView : Gtk.Stack, GameView {
     {
         return false;
     }
+
     public void reset_game ()
     {
         current_level = 1;
-        new_board_view = create_board_view (current_level);
-        replace_board (board_view, new_board_view, GameView.ReplaceStyle.REFRESH);
-        board_view = new_board_view;
+        board_view = replace_board (board_view, create_board_view (current_level), GameView.ReplaceStyle.REFRESH) as BoardViewGtk;
         level_changed (current_level);
     }
 
@@ -90,10 +87,7 @@ public class GtkGameView : Gtk.Stack, GameView {
     // and transition between the two boards in a random direction.
     private bool game_won_cb ()
     {
-        current_level++;
-        new_board_view = create_board_view (current_level);
-        replace_board (board_view, new_board_view, GameView.ReplaceStyle.SLIDE_NEXT, false);
-        board_view = new_board_view;
+        board_view = replace_board (board_view, create_board_view (++current_level), GameView.ReplaceStyle.SLIDE_NEXT, false) as BoardViewGtk;
         level_changed (current_level);
         return false;
     }

@@ -132,10 +132,7 @@ public class ClutterGameView : Clutter.Group, GameView
         if (timeline != null && timeline.is_playing ())
             return;
 
-        current_level++;
-
-        new_board_view = create_board_view (current_level);
-        replace_board (board_view, new_board_view, GameView.ReplaceStyle.SLIDE_NEXT);
+        board_view = replace_board (board_view, create_board_view (++current_level), GameView.ReplaceStyle.SLIDE_NEXT) as BoardViewClutter;
         level_changed (current_level);
     }
 
@@ -155,17 +152,16 @@ public class ClutterGameView : Clutter.Group, GameView
             return;
         }
 
-        new_board_view = create_board_view (current_level);
-
-        replace_board (board_view, new_board_view, 
+        board_view = replace_board (board_view, create_board_view (current_level),
                        direction == 1 ? GameView.ReplaceStyle.SLIDE_FORWARD 
-                                      : GameView.ReplaceStyle.SLIDE_BACKWARD);
+                                      : GameView.ReplaceStyle.SLIDE_BACKWARD) as BoardViewClutter;
 
         level_changed (current_level);
     }
 
-    public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
+    public BoardView replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
+        new_board_view = new_board as BoardViewClutter;
         timeline = new Clutter.Timeline (fast ? 500 : 1500);
         board_group.add_child (new_board as Clutter.Group);
         int direction = 1;
@@ -230,6 +226,7 @@ public class ClutterGameView : Clutter.Group, GameView
         } 
 
         timeline.completed.connect (transition_complete_cb);
+        return new_board;
     }
 
 
@@ -287,9 +284,7 @@ public class ClutterGameView : Clutter.Group, GameView
 
         current_level = 1;
 
-        new_board_view = create_board_view (current_level);
-
-        replace_board (board_view, new_board_view, GameView.ReplaceStyle.REFRESH);
+        board_view = replace_board (board_view, create_board_view (current_level), GameView.ReplaceStyle.REFRESH) as BoardViewClutter;
 
         level_changed (current_level);
     }
