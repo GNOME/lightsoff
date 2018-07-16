@@ -5,9 +5,6 @@ data/lightsoff.desktop.in
 data/lightsoff-menus.ui
 data/lightsoff.ui
 data/org.gnome.lightsoff.gschema.xml
-src/board-view-clutter.vala
-src/game-view-clutter.vala
-src/game-view-gtk.vala
 src/lightsoff.vala
 src/lightsoff-window.vala
 src/puzzle-generator.vala
