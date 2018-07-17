@@ -52,22 +52,22 @@ public class GtkGameView : Gtk.Stack, GameView {
 
     public void reset_game ()
     {
-        current_level = 1;
-        replace_board (board_view, create_board_view (current_level), GameView.ReplaceStyle.REFRESH);
+        if (is_transitioning())
+            return;
+        replace_board (get_board_view (), create_board_view (1), GameView.ReplaceStyle.REFRESH);
     }
 
     public GtkGameView (int level)
     {
-                /* Clear level */
-        current_level = level;
-
-        board_view = create_board_view (current_level) as BoardViewGtk;
+        board_view = create_board_view (level) as BoardViewGtk;
         board_view.playable = true;
         add (board_view);
     }
 
     public BoardView create_board_view (int level)
     {
+        current_level = level;
+
         var view = new BoardViewGtk ();
         view.load_level (level);
         view.game_won.connect (() => game_won_cb());

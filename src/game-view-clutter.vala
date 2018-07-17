@@ -79,8 +79,7 @@ public class ClutterGameView : Clutter.Group, GameView
         board_group = new Clutter.Actor ();
         add_child (board_group);
 
-        current_level = level;
-        board_view = create_board_view (current_level) as BoardViewClutter;
+        board_view = create_board_view (level) as BoardViewClutter;
         board_view.playable = true;
         board_group.add_child (board_view);
 
@@ -96,6 +95,7 @@ public class ClutterGameView : Clutter.Group, GameView
 
     public BoardView create_board_view (int level)
     {
+        current_level = level;
         var view = new BoardViewClutter (off_texture, on_texture);
         view.load_level (level);
         view.game_won.connect (() => game_won_cb());
@@ -237,12 +237,10 @@ public class ClutterGameView : Clutter.Group, GameView
 
     public void reset_game ()
     {
-        if (timeline != null && timeline.is_playing ())
+        if (is_transitioning ())
             return;
 
-        current_level = 1;
-
-        replace_board (board_view, create_board_view (current_level), GameView.ReplaceStyle.REFRESH);
+        replace_board (get_board_view (), create_board_view (1), GameView.ReplaceStyle.REFRESH);
     }
 
     public BoardView get_board_view ()

@@ -23,7 +23,7 @@ private class Light : Clutter.Group
         {
             value = value != false;
             if (value != _is_lit)
-                toggle ();
+                toggle_pixel ();
         }
     }
 
@@ -53,7 +53,7 @@ private class Light : Clutter.Group
 
     }
 
-    public void toggle (Clutter.Timeline? timeline = null)
+    public void toggle_pixel (Clutter.Timeline? timeline = null)
     {
         _is_lit = !_is_lit;
 
@@ -155,15 +155,15 @@ public class BoardViewClutter : Clutter.Group, BoardView
         }
 
         if ((int) x + 1 < size)
-            lights[(int) x + 1, (int) y].toggle (timeline);
+            lights[(int) x + 1, (int) y].toggle_pixel (timeline);
         if ((int) x - 1 >= 0)
-            lights[(int) x - 1, (int) y].toggle (timeline);
+            lights[(int) x - 1, (int) y].toggle_pixel (timeline);
         if ((int) y + 1 < size)
-            lights[(int) x, (int) y + 1].toggle (timeline);
+            lights[(int) x, (int) y + 1].toggle_pixel (timeline);
         if ((int) y - 1 >= 0)
-            lights[(int) x, (int) y - 1].toggle (timeline);
+            lights[(int) x, (int) y - 1].toggle_pixel (timeline);
 
-        lights[(int) x, (int) y].toggle (timeline);
+        lights[(int) x, (int) y].toggle_pixel (timeline);
 
         if (animate)
             timeline.start ();
