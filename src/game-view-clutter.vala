@@ -83,8 +83,8 @@ public class ClutterGameView : Clutter.Group, GameView
         board_view.playable = true;
         board_group.add_child (board_view);
 
-        var real_board_width = 5 * off_texture.width + 4;
-        var real_board_height = 5 * off_texture.height + 4;
+        var real_board_width = BoardView.size * off_texture.width + 4;
+        var real_board_height = BoardView.size * off_texture.height + 4;
         set_size (real_board_width, real_board_height);
 
         key_cursor_view.set_pivot_point (0.5f, 0.5f);

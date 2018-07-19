@@ -9,7 +9,7 @@
  */
 public interface BoardView: GLib.Object {
 
-    protected new const int size = 5;
+    public new const int size = 5;
 
     public abstract int get_moves ();
     public abstract PuzzleGenerator get_puzzle_generator ();
