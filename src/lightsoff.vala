@@ -21,10 +21,10 @@ public class LightsOff : Gtk.Application
 
     private const GLib.OptionEntry[] options = {
         // --version
-        { "version", 0, 0, OptionArg.NONE, ref version, "Display version number", null },
+        { "version", 0, 0, OptionArg.NONE, ref version, _("Display version number"), null },
 
         // --gtk-mode
-        { "gtk-mode", 0, 0, OptionArg.NONE, ref gtk, "Use gtk mode, no clutter", null },
+        { "gtk-mode", 0, 0, OptionArg.NONE, ref gtk, _("Use native graphics"), null },
 
         // list terminator
         { null }
