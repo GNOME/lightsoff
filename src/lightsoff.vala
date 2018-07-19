@@ -16,6 +16,20 @@ public class LightsOff : Gtk.Application
 {
     private LightsoffWindow window;
 
+    private static bool version = false;
+    private static bool gtk = false;
+
+    private const GLib.OptionEntry[] options = {
+        // --version
+        { "version", 0, 0, OptionArg.NONE, ref version, "Display version number", null },
+
+        // --gtk-mode
+        { "gtk-mode", 0, 0, OptionArg.NONE, ref gtk, "Use gtk mode, no clutter", null },
+
+        // list terminator
+        { null }
+    };
+
     private const GLib.ActionEntry[] action_entries =
     {
         { "quit",          quit_cb     },
@@ -37,7 +51,7 @@ public class LightsOff : Gtk.Application
 
         add_action_entries (action_entries, this);
 
-        window = new LightsoffWindow ();
+        window = new LightsoffWindow (gtk);
         add_window (window);
     }
 
@@ -110,7 +124,21 @@ public class LightsOff : Gtk.Application
 
         Environment.set_application_name (_("Lights Off"));
 
-        if (GtkClutter.init (ref args) != Clutter.InitError.SUCCESS)
+        try {
+            var opt_context = new OptionContext ("");
+            opt_context.set_help_enabled (true);
+            opt_context.add_main_entries (options, null);
+            opt_context.parse (ref args);
+        } catch (OptionError e) {
+            print (_("Run `%s --help` to see a full list of available command line options.\n"), args[0]);
+            return 0;
+        }
+
+        if (version) {
+            print ("%s %s\n", _("Lights Off"), VERSION);
+            return 0;
+        }
+        if (!gtk && GtkClutter.init (ref args) != Clutter.InitError.SUCCESS)
         {
             warning ("Failed to initialise Clutter");
             return Posix.EXIT_FAILURE;
