@@ -80,6 +80,7 @@ public class LightsoffWindow : ApplicationWindow
         else
             this.add (build_clutter_game_container (level, out game_view));
 
+        this.set_resizable (gtk);
         this.key_release_event.connect (key_release_event_cb);
         game_view.level_changed.connect (level_changed_cb);
         game_view.moves_changed.connect (update_subtitle);
