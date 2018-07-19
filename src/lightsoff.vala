@@ -21,10 +21,10 @@ public class LightsOff : Gtk.Application
 
     private const GLib.OptionEntry[] options = {
         // --version
-        { "version", 0, 0, OptionArg.NONE, ref version, _("Display version number"), null },
+        { "version", 0, 0, OptionArg.NONE, ref version, "Display version number", null },
 
         // --gtk-mode
-        { "gtk-mode", 0, 0, OptionArg.NONE, ref gtk, _("Use native graphics"), null },
+        { "gtk-mode", 0, 0, OptionArg.NONE, ref gtk, "Use native graphics", null },
 
         // list terminator
         { null }
@@ -127,7 +127,7 @@ public class LightsOff : Gtk.Application
         try {
             var opt_context = new OptionContext ("");
             opt_context.set_help_enabled (true);
-            opt_context.add_main_entries (options, null);
+            opt_context.add_main_entries (options, Config.GETTEXT_PACKAGE);
             opt_context.parse (ref args);
         } catch (OptionError e) {
             print (_("Run `%s --help` to see a full list of available command line options.\n"), args[0]);
