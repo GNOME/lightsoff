@@ -3,13 +3,13 @@
 # Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-games package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2014, 2017.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2014, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.lightsoff.master\n"
-"POT-Creation-Date: 2017-07-31 12:22+0000\n"
-"PO-Revision-Date: 2017-08-03 12:34+0200\n"
+"POT-Creation-Date: 2018-06-02 16:45+0000\n"
+"PO-Revision-Date: 2018-07-31 12:19+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -154,16 +154,21 @@ msgstr "Informar de un error o sugerir una mejora"
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:26
+#| msgid ""
+#| "<app>Lights Off</app> is maintained by a volunteer community. You are "
+#| "welcome to participate. If you notice a problem you can file a <em>bug "
+#| "report</em>. To file a bug, go to <link href=\"https://bugzilla.gnome.org/"
+#| "\"/>."
 msgid ""
 "<app>Lights Off</app> is maintained by a volunteer community. You are "
 "welcome to participate. If you notice a problem you can file a <em>bug "
-"report</em>. To file a bug, go to <link href=\"https://bugzilla.gnome.org/\"/"
-">."
+"report</em>. To file a bug, go to <link href=\"https://gitlab.gnome.org/"
+"GNOME/lightsoff/issues\"/>."
 msgstr ""
 "<app>Luces fuera</app> lo mantiene la comunidad de manera voluntaria. Si "
 "quiere participar, es bienvenido. Si encuentra un error, puede rellenar un "
 "<em>informe de error</em>. Para informar de un error, vaya a <link href="
-"\"https://bugzilla.gnome.org/\"/>."
+"\"https://gitlab.gnome.org/GNOME/lightsoff/issues\"/>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:29
@@ -177,52 +182,64 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:32
+#| msgid ""
+#| "To participate you need an account which will give you the ability to "
+#| "gain access, file bugs, and make comments. Also, you need to register so "
+#| "you can receive updates by e-mail about the status of your bug. If you "
+#| "don't already have an account, just click on the <gui>New Account</gui> "
+#| "link to create one."
 msgid ""
 "To participate you need an account which will give you the ability to gain "
 "access, file bugs, and make comments. Also, you need to register so you can "
 "receive updates by e-mail about the status of your bug. If you don't already "
-"have an account, just click on the <gui>New Account</gui> link to create one."
+"have an account, just click on the <gui>Sign in/Register</gui> link to "
+"create one."
 msgstr ""
 "Para participar necesita una cuenta, que le permitirá obtener acceso, "
 "informar de errores y hacer comentarios. También debe registrarte para poder "
 "recibir actualizaciones por correo-e sobre el estado de su informe de error. "
-"Si todavía no tiene una cuenta, simplemente pulse en el enlace <gui>New "
-"Account</gui> para crear una."
+"Si todavía no tiene una cuenta, simplemente pulse en el enlace <gui>Sign in/"
+"Register</gui> para crear una."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:36
+#| msgid ""
+#| "Once you have an account, log in, click on <guiseq><gui>File a Bug</"
+#| "gui><gui>Applications</gui><gui>lightsoff</gui></guiseq>. Before "
+#| "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
+#| "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
+#| "<link href=\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff"
+#| "\">browse</link> for the bug to see if it already exists."
 msgid ""
-"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>lightsoff</gui></guiseq>. Before reporting a "
-"bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-"
-"writing.html\">bug writing guidelines</link>, and please <link href="
-"\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff\">browse</link> "
+"Once you have an account, log in, click on <gui>New Issue</gui>. Before "
+"reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
+"page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
+"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">browse</link> "
 "for the bug to see if it already exists."
 msgstr ""
-"Una vez que tenga su cuenta, inicie sesión y pulse en <guiseq><gui>Informar "
-"de un error</gui><gui>Aplicaciones</gui><gui>lightsoffs</gui></guiseq>. "
+"Una vez que tenga su cuenta, inicie sesión y pulse en <gui>New Issue</gui>. "
 "Antes de informar de un error, lea las <link href=\"https://bugzilla.gnome."
 "org/page.cgi?id=bug-writing.html\">guías para informar de un error</link> y "
-"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff"
-"\">busque</link> el error para ver si ya existe."
+"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">busque</link> "
+"el error para ver si ya existe."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:44
+#: C/bug-filing.page:43
 #| msgid ""
 #| "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
 #| "<gui>Severity</gui> menu. Fill in the Summary and Description sections "
-#| "and click <gui>Commit</gui>."
+#| "and click <gui>Submit Bug</gui>."
 msgid ""
-"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
-"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Submit Bug</gui>."
+"If you are requesting a new feature, choose <gui>Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit issue</gui>."
 msgstr ""
-"Si está solicitando una característica nueva, elija <gui>enhancement</gui> "
-"en el menú <gui>Severity</gui>. Rellene las secciones «Summary» y "
-"«Description» y pulse en <gui>Submit Bug</gui>."
+"Si está solicitando una característica nueva, elija <gui>Feature</gui> en el "
+"menú <gui>Labels</gui>. Rellene las secciones «Title» y «Description» y "
+"pulse en <gui>Submit issue</gui>."
 
 #. (itstool) path: section/p
-#: C/bug-filing.page:48
+#: C/bug-filing.page:47
 msgid ""
 "Your report will be given an ID number, and its status will be updated as it "
 "is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
