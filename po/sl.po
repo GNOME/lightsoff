@@ -5,15 +5,14 @@
 # Matej Erman <matej.erman@guest.arnes.si>, 2002.
 # Tadej Janež <tadej_janez@email.si>, 2003.
 # Matic Žgur <mr.zgur@gmail.com>, 2006–2007.
-# Matej Urbančič <mateju@svn.gnome.org>, 2007–2017.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007–2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-12-20 17:17+0000\n"
-"PO-Revision-Date: 2017-12-31 11:21+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2018-07-31 11:02+0000\n"
+"PO-Revision-Date: 2018-08-03 12:14+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -23,15 +22,15 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:87 src/lightsoff.vala:109
+#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
 msgid "Lights Off"
 msgstr "Ugasni luči"
 
 #: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:90
+#: src/lightsoff.vala:106
 msgid "Turn off all the lights"
 msgstr "Ugasni vse luči"
 
@@ -81,11 +80,11 @@ msgstr "_O Programu"
 msgid "_Quit"
 msgstr "_Končaj"
 
-#: data/lightsoff.ui:15
+#: data/lightsoff.ui:14
 msgid "Return to the previous level"
 msgstr "Vrni se na predhodno raven"
 
-#: data/lightsoff.ui:35
+#: data/lightsoff.ui:34
 msgid "Proceed to the next level"
 msgstr "Nadaljuj na naslednjo raven"
 
@@ -97,7 +96,7 @@ msgstr "Trenutna raven"
 msgid "The users’s most recent level."
 msgstr "Uporabnikova zadnja dosežena raven."
 
-#: src/lightsoff.vala:96
+#: src/lightsoff.vala:112
 msgid "translator-credits"
 msgstr ""
 "Matej Urbančič <mateju@svn.gnome.org>\n"
@@ -105,7 +104,14 @@ msgstr ""
 "Matej Erman\n"
 "Tadej Janež"
 
-#: src/lightsoff-window.vala:60
+#: src/lightsoff.vala:133
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Zagon ukaza »%s --help« izpiše popoln seznam dostopnih možnosti ukazne "
+"vrstice.\n"
+
+#: src/lightsoff-window.vala:92
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -115,11 +121,29 @@ msgstr[2] "%d premika"
 msgstr[3] "%d premiki"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:98
 #, c-format
 msgid "Level %d"
 msgstr "Raven %d"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:102
 msgid "Turn off all the lights!"
 msgstr "Ugasni vse luči"
+
+#~ msgid "The users's most recent level."
+#~ msgstr "Uporabnikov najnovejši rezultat."
+
+#~ msgid "_New Game"
+#~ msgstr "_Nova Igra"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "Ugasnite vse luči\n"
+#~ "\n"
+#~ "Igra Ugasni luči je del iger GNOME."
+
+#~ msgid "GNOME Games web site"
+#~ msgstr "Spletna stran iger GNOME"
