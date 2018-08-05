@@ -70,8 +70,13 @@ public interface BoardView: GLib.Object {
         increase_moves ();
         light_toggled ();
         if (is_completed ()) {
-            game_won ();
+            Gdk.threads_add_timeout(300, game_won_timeout);
         }
+    }
+
+    private bool game_won_timeout () {
+        game_won ();
+        return GLib.Source.REMOVE;
     }
 
     public bool is_completed ()
