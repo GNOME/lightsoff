@@ -18,10 +18,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-16 22:09+0000\n"
-"PO-Revision-Date: 2018-02-05 01:05+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2018-07-19 20:55+0000\n"
+"PO-Revision-Date: 2018-08-12 00:59+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -32,12 +31,12 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 
 #: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:87 src/lightsoff.vala:109
+#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
 msgid "Lights Off"
 msgstr "Lights Off"
 
 #: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:90
+#: src/lightsoff.vala:106
 msgid "Turn off all the lights"
 msgstr "Wyłączanie wszystkich świateł"
 
@@ -87,11 +86,11 @@ msgstr "_O grze"
 msgid "_Quit"
 msgstr "Za_kończ"
 
-#: data/lightsoff.ui:15
+#: data/lightsoff.ui:14
 msgid "Return to the previous level"
 msgstr "Wraca do poprzedniego poziomu"
 
-#: data/lightsoff.ui:35
+#: data/lightsoff.ui:34
 msgid "Proceed to the next level"
 msgstr "Przechodzi do następnego poziomu"
 
@@ -103,7 +102,7 @@ msgstr "Obecny poziom"
 msgid "The users’s most recent level."
 msgstr "Ostatni poziom użytkownika."
 
-#: src/lightsoff.vala:96
+#: src/lightsoff.vala:112
 msgid "translator-credits"
 msgstr ""
 "Zbigniew Chyla <chyla@alice.ci.pwr.wroc.pl>, 1998-2002\n"
@@ -120,7 +119,14 @@ msgstr ""
 "Piotr Drąg <piotrdrag@gmail.com>, 2010-2018\n"
 "Aviary.pl <community-poland@mozilla.org>, 2007-2018"
 
-#: src/lightsoff-window.vala:60
+#: src/lightsoff.vala:133
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Polecenie „%s --help” wyświetli pełną listę dostępnych opcji wiersza "
+"poleceń.\n"
+
+#: src/lightsoff-window.vala:92
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -129,11 +135,11 @@ msgstr[1] "%d ruchy"
 msgstr[2] "%d ruchów"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:98
 #, c-format
 msgid "Level %d"
 msgstr "%d. poziom"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:102
 msgid "Turn off all the lights!"
 msgstr "Wyłącz wszystkie światła!"
