@@ -129,7 +129,7 @@ msgstr ""
 msgid "Run `%s --help` to see a full list of available command line options.\n"
 msgstr ""
 "Spuštěním „%s --help“ si zobrazíte úplný seznam dostupných přepínačů "
-"příkazové řádky."
+"příkazové řádky.\n"
 
 #: src/lightsoff-window.vala:92
 #, c-format
