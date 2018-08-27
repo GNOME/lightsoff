@@ -11,10 +11,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-16 22:09+0000\n"
-"PO-Revision-Date: 2018-03-05 14:02+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2018-07-19 20:55+0000\n"
+"PO-Revision-Date: 2018-08-27 10:09+0200\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italiano <gnome-it-list@gnome.org>\n"
 "Language: it\n"
@@ -25,12 +24,12 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 
 #: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:87 src/lightsoff.vala:109
+#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
 msgid "Lights Off"
 msgstr "Spegni le luci"
 
 #: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:90
+#: src/lightsoff.vala:106
 msgid "Turn off all the lights"
 msgstr "Spegni tutte le luci"
 
@@ -63,7 +62,6 @@ msgstr "gioco;giochi;logica;board;tavola;caselle;puzzle;rompicapo;luci;luce;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/lightsoff.desktop.in:8
-#| msgid "Lights Off"
 msgid "lightsoff"
 msgstr "lightsoff"
 
@@ -83,11 +81,11 @@ msgstr "I_nformazioni"
 msgid "_Quit"
 msgstr "_Esci"
 
-#: data/lightsoff.ui:15
+#: data/lightsoff.ui:14
 msgid "Return to the previous level"
 msgstr "Tornal al livello precedente"
 
-#: data/lightsoff.ui:35
+#: data/lightsoff.ui:34
 msgid "Proceed to the next level"
 msgstr "Vai al livello successivo"
 
@@ -99,7 +97,7 @@ msgstr "Il livello attuale"
 msgid "The users’s most recent level."
 msgstr "Il livello più recente degli utenti."
 
-#: src/lightsoff.vala:96
+#: src/lightsoff.vala:112
 msgid "translator-credits"
 msgstr ""
 "Milo Casagrande <milo@milo.name>\n"
@@ -107,7 +105,13 @@ msgstr ""
 "Francesco Marletta <francesco.marletta@tiscali.it>\n"
 "Fabrizio Stefani <f.stef@it.gnome.org>"
 
-#: src/lightsoff-window.vala:60
+#: src/lightsoff.vala:133
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Eseguire «%s --help» per l'elenco completo delle opzioni a riga di comando.\n"
+
+#: src/lightsoff-window.vala:92
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -115,11 +119,11 @@ msgstr[0] "%d mossa"
 msgstr[1] "%d mosse"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:98
 #, c-format
 msgid "Level %d"
 msgstr "Livello %d"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:102
 msgid "Turn off all the lights!"
 msgstr "Spegni tutte le luci!"
