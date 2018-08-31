@@ -9,10 +9,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=lightso"
-"ff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-04 05:41+0000\n"
-"PO-Revision-Date: 2018-02-25 13:00+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2018-07-19 20:55+0000\n"
+"PO-Revision-Date: 2018-08-31 21:00+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -26,12 +25,12 @@ msgstr ""
 "X-Poedit-Country: LATVIA\n"
 
 #: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:87 src/lightsoff.vala:109
+#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
 msgid "Lights Off"
 msgstr "Izslēgt gaismu"
 
 #: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:90
+#: src/lightsoff.vala:106
 msgid "Turn off all the lights"
 msgstr "Izslēdziet visas gaismas"
 
@@ -64,7 +63,6 @@ msgstr "spēle;loģika;galdiņš;flīzes;blakus;mīkla;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/lightsoff.desktop.in:8
-#| msgid "Lights Off"
 msgid "lightsoff"
 msgstr "lightsoff"
 
@@ -84,11 +82,11 @@ msgstr "P_ar"
 msgid "_Quit"
 msgstr "_Iziet"
 
-#: data/lightsoff.ui:15
+#: data/lightsoff.ui:14
 msgid "Return to the previous level"
 msgstr "Atgriezties uz iepriekšējo līmeni"
 
-#: data/lightsoff.ui:35
+#: data/lightsoff.ui:34
 msgid "Proceed to the next level"
 msgstr "Iet uz nākamo līmeni"
 
@@ -100,14 +98,21 @@ msgstr "Pašreizējais līmenis"
 msgid "The users’s most recent level."
 msgstr "Lietotāja pēdējais līmenis."
 
-#: src/lightsoff.vala:96
+#: src/lightsoff.vala:112
 msgid "translator-credits"
 msgstr ""
 "Raivis Dejus <orvils@gmail.com>\n"
 "Sandra Zabarovska <sandra.zabarovska@gmail.com>\n"
 "Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>"
 
-#: src/lightsoff-window.vala:60
+#: src/lightsoff.vala:133
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Palaidiet “%s --help”, lai redzētu pilnu pieejamo komandrindas iespēju "
+"sarakstu.\n"
+
+#: src/lightsoff-window.vala:92
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -116,12 +121,12 @@ msgstr[1] "%d gājieni"
 msgstr[2] "%d gājienu"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:98
 #, c-format
 msgid "Level %d"
 msgstr "Līmenis %d"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:102
 msgid "Turn off all the lights!"
 msgstr "Izslēdziet visas gaismas!"
 
