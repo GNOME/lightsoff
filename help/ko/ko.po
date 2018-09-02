@@ -1,379 +1,962 @@
 # Korean translation for gnome-games.
 # Copyright (C) 2011 gnome-games's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-games package.
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2011.
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2011, 2014, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2011-09-18 08:42+0000\n"
-"PO-Revision-Date: 2011-09-18 19:19+0900\n"
-"Last-Translator: Seong-ho, Cho <darkcircle.0426@gmail.com>\n"
+"POT-Creation-Date: 2018-09-01 16:51+0000\n"
+"PO-Revision-Date: 2018-09-02 18:08+0900\n"
+"Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
 "Language-Team: Korean <gnome-kr@googlegroups.com>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.1.1\n"
 
-#: C/lightsoff.xml:27(title)
-msgid "<application>Lights Off</application> Manual"
-msgstr "<application>불 끄기</application> 설명서"
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "조성호 <shcho@gnome.org>, 2011, 2014, 2018"
 
-#: C/lightsoff.xml:30(para)
+#. (itstool) path: credit/name
+#: C/basic.page:9 C/bug-filing.page:14 C/develop.page:15
+#: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
+#: C/translate.page:15
+msgid "Perumal Viravan"
+msgstr "Perumal Viravan"
+
+#. (itstool) path: credit/years
+#: C/basic.page:11 C/rules.page:11 C/strategy.page:10
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: license/p
+#: C/basic.page:14 C/bug-filing.page:18 C/develop.page:19
+#: C/documentation.page:17 C/index.page:16 C/strategy.page:13
+#: C/translate.page:19
+msgid "Creative Commons Share Alike 3.0"
+msgstr "크리에이티브 커먼즈 동일조건변경허락 3.0"
+
+#. (itstool) path: page/title
+#: C/basic.page:18
+msgid "Basics"
+msgstr "기본"
+
+#. (itstool) path: page/p
+#: C/basic.page:19
+msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
+msgstr "<app>불 끄기</app>는 키보드와 마우스를 사용하여 게임할 수 있습니다."
+
+#. (itstool) path: section/title
+#: C/basic.page:22
+msgid "Using the keyboard"
+msgstr "키보드 사용하기"
+
+#. (itstool) path: item/p
+#: C/basic.page:24
 msgid ""
-"Lights Off is a puzzle game, where the objective is to turn off all of the "
-"tiles on the board. Each click toggles the state of the clicked tile and its "
-"non-diagonal neighbors."
+"To select a tile, use the arrow keys to move the spotlight on to that tile "
+"and press the <key>Enter</key> key."
 msgstr ""
-"불 끄기는 보드상의 모든 타일에 켜진 불을 모두 끄는 퍼즐 게임입니다. 한번 클"
-"릭 할 때마다 눌려진 타일과 대각선 상에 위치하지 않은 이웃 타일들의 상태가 바"
-"뀝니다."
+"타일을 선택하려면 화살표 키를 사용하여 스포트라이트를 해당 타일로 이동하고 "
+"<key>Enter</key>키를 누르십시오."
 
-#: C/lightsoff.xml:38(year)
-msgid "2010"
-msgstr "2010"
-
-#: C/lightsoff.xml:39(holder)
-msgid "Tim Horton"
-msgstr "Tim Horton"
-
-#: C/lightsoff.xml:54(publishername) C/lightsoff.xml:95(para)
-msgid "GNOME Documentation Project"
-msgstr "그놈 문서 프로젝트"
-
-#: C/lightsoff.xml:2(para)
+#. (itstool) path: item/p
+#: C/basic.page:25 C/basic.page:33
 msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"help:fdl\">link</ulink> or "
-"in the file COPYING-DOCS distributed with this manual."
+"Once a tile is selected it will toggle the state of the selected tile and "
+"its non-diagonal neighbors."
 msgstr ""
-"전면 표지와 후면 표지, 그리고 변경되지 않는 섹션을 제외한 이 문서의 복제, 배"
-"포 및 수정은 자유 소프트웨어 재단에 의해 공표된 Version 1.1 이후의 GNU Free "
-"Documentation License(GFDL)에 의해 허용됩니다. GFDL의 복제본은 <ulink type="
-"\"help\" url=\"help:fdl\">이 링크</ulink>, 혹은 설명서와 함께 배포되는 "
-"COPYING-DOCS 파일에서 찾을 수 있습니다."
+"타일을 선택하면 대각선 방향에 있지 않은 이웃하는 타일의 상태를 바꿉니다."
 
-#: C/lightsoff.xml:12(para)
+#. (itstool) path: section/title
+#: C/basic.page:30
+msgid "Using the mouse"
+msgstr "마우스 사용"
+
+#. (itstool) path: item/p
+#: C/basic.page:32
+msgid "To select a tile move the mouse pointer over the tile and click it."
+msgstr "타일을 선택하려면 마우스 포인터를 타일 위로 가져다놓고 누르십시오."
+
+#. (itstool) path: section/title
+#: C/basic.page:38
+msgid "Progress through the levels"
+msgstr "레벨을 통한 과정"
+
+#. (itstool) path: item/p
+#: C/basic.page:40
 msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
-"GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in "
-"section 6 of the license."
+"The progress through the levels is either by turning off all the lights in "
+"that level or using the arrow shaped buttons in the bottom of the game."
 msgstr ""
-"이 설명서는 GFDL에 의해 배포되는 그놈 메뉴얼 모음의 한 부분입니다. 모음으로부"
-"터 이 설명서를 개별적으로 배포하고 싶으시다면 라이선스의 6장에 기술된 대로 "
-"이 메뉴얼에 라이선스를 추가함으로써 가능합니다."
+"각각의 레벨에서 모든 타일의 불을 끄거나 게임 하단 근처에 있는 화살표 모양 단"
+"추를 눌러 다음 단계로 진행할 수 있습니다."
 
-#: C/lightsoff.xml:19(para)
+#. (itstool) path: item/p
+#: C/basic.page:41
 msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
+"The arrow shaped buttons at the bottom of the game allow you to skip the "
+"levels or return to the previous levels. The current level is shown at the "
+"bottom of the game."
 msgstr ""
-"회사에서의 제품이나 서비스를 구분하기 위해 사용되는 수많은 이름들은 등록상표 "
-"입니다. 어떤 그놈 문서에 나타나는 등록상표 명칭이나 등록상표로 인지되는 그>"
-"놈 문서 프로젝트의 구성원의 이름이 존재하는 곳에는 대문자로 표기하거나 대문"
-"자 약자로 표기됩니다."
+"게임 창 하단의 화살표 모양 단추는 다음 레벨로 넘어가거나 이전 레벨로 들어갈 "
+"수 있게 합니다. 현재 레벨은 게임 창 하단에 나타납니다."
 
-#: C/lightsoff.xml:35(para)
+#. (itstool) path: figure/desc
+#: C/basic.page:45
 msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+"This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
+"shaped buttons at the bottom."
 msgstr ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+"이 장면은 하단의 화살표 모양 단추와 레벨 3의 <app>불 끄기</app> 패턴을 나타냅"
+"니다."
 
-#: C/lightsoff.xml:55(para)
+#. (itstool) path: section/title
+#: C/basic.page:51
+msgid "Video Demonstration"
+msgstr "동영상 시연"
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:9 C/develop.page:10 C/documentation.page:8
+#: C/translate.page:10
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#. (itstool) path: credit/years
+#: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
+#: C/translate.page:12
+msgid "2011"
+msgstr "2011"
+
+#. (itstool) path: page/title
+#: C/bug-filing.page:22
+msgid "Help make <app>Lights Off</app> better"
+msgstr "<app>불 끄기</app> 발전 돕기"
+
+#. (itstool) path: section/title
+#: C/bug-filing.page:25
+msgid "Report a bug or suggest an improvement"
+msgstr "버그 보고 또는 개선 제안"
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:26
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
+"<app>Lights Off</app> is maintained by a volunteer community. You are "
+"welcome to participate. If you notice a problem you can file a <em>bug "
+"report</em>. To file a bug, go to <link href=\"https://gitlab.gnome.org/"
+"GNOME/lightsoff/issues\"/>."
 msgstr ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
+"<app>마작</app>은 기여자 집단이 관리합니다. 여러분의 참여를 환영합니다. 문제"
+"를 발견했다면 <em>버그 보고서</em>를 제출할 수 있습니다. 버그를 보고하려면, "
+"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues/\"/>로 이동하십"
+"시오."
 
-#: C/lightsoff.xml:28(para)
+#. (itstool) path: section/p
+#: C/bug-filing.page:29
 msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
 msgstr ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
+"그놈 깃랩은 사용자나 개발자가 버그, 치명적 종료, 기능 개선 요청 등을 자세하"
+"게 적어 제출할 수 있는 버그 추적 시스템입니다."
 
-#: C/lightsoff.xml:65(firstname)
-msgid "Tim"
-msgstr "Tim"
-
-#: C/lightsoff.xml:66(surname)
-msgid "Horton"
-msgstr "Horton"
-
-#: C/lightsoff.xml:68(email)
-msgid "hortont@gnome.org"
-msgstr "hortont@gnome.org"
-
-#: C/lightsoff.xml:89(revnumber)
-msgid "Lights Off Manual V1.0"
-msgstr "불 끄기 설명서 V1.0"
-
-#: C/lightsoff.xml:90(date)
-msgid "January 2010"
-msgstr "2010년 1월"
-
-#: C/lightsoff.xml:92(para)
-msgid "Tim Horton <email>hortont@gnome.org</email>"
-msgstr "Tim Horton <email>hortont@gnome.org</email>"
-
-#: C/lightsoff.xml:100(releaseinfo)
-msgid "This manual describes version 2.28 of Lights Off."
-msgstr "이 설명서는 불끄기 2.28을 설명합니다."
-
-#: C/lightsoff.xml:107(title)
-msgid "Feedback"
-msgstr "피드백"
-
-#: C/lightsoff.xml:108(para)
+#. (itstool) path: section/p
+#: C/bug-filing.page:32
 msgid ""
-"To report a bug or make a suggestion regarding the <application>Lights Off</"
-"application> application or this manual, follow the directions in the <ulink "
-"url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME Feedback Page</"
-"ulink>."
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>Sign in/Register</gui> link to "
+"create one."
 msgstr ""
-"<application>불 끄기</application>프로그램이나 이 설명서에 대해 버그나 제안"
-"을 보고하려면, <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">그"
-"놈 피드백 페이지</ulink>의 지시를 따릅니다."
+"참여하려면 접근 권한을 얻어 버그를 보고하고 답글을 올릴 수 있는 계정이 필요합"
+"니다. 버그 처리 상태 최신 내용을 전자메일로 받으려면 가입해야합니다. 계정이 "
+"없다면 <gui>Sign in / Register</gui> 링크를 눌러 만드십시오."
 
-#: C/lightsoff.xml:120(primary)
+#. (itstool) path: section/p
+#: C/bug-filing.page:36
+msgid ""
+"Once you have an account, log in, click on <gui>New Issue</gui>. Before "
+"reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
+"page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
+"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">browse</link> "
+"for the bug to see if it already exists."
+msgstr ""
+"계정을 확보하고 나면 로그인하시고 <gui>New issue</gui>를 클릭하십시오. 버그"
+"를 보고하기 전 <link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-"
+"writing.html\">버그 작성 지침</link>을 읽으시고, 이미 같은 내용으로 누군가가 "
+"버그 보고를 올렸는지 <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+"issues\">찾아보십시오</link>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:43
+msgid ""
+"If you are requesting a new feature, choose <gui>Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit issue</gui>."
+msgstr ""
+"새 기능을 제안한다면 <gui>Labels</gui> 메뉴에서 <gui>1. Feature</gui>를 선택"
+"하십시오. 제목과 설명 부분을 채워나간 후 <gui>Submit Issue</gui>를 누르십시"
+"오."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:47
+msgid ""
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
+msgstr ""
+"보고서에는 ID 번호가 붙으며, 처리하는대로 최신 상태가 바뀝니다. <app>불 끄기"
+"</app> 개선을 도와주셔서 감사합니다!"
+
+#. (itstool) path: page/title
+#: C/develop.page:23
+msgid "Help develop"
+msgstr "개발 돕기"
+
+#. (itstool) path: page/p
+#: C/develop.page:24
+msgid ""
+"The <app>GNOME Games</app> are developed and maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"<app>그놈 게임</app>은 전세계 기여자가 개발하고 관리합니다. 여러분의 참여를 "
+"환영합니다."
+
+#. (itstool) path: page/p
+#: C/develop.page:27
+msgid ""
+"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"link>."
+msgstr ""
+"<link href=\"https://wiki.gnome.org/Apps/Games/Contributing\"><app>그놈 게임"
+"</app> 개발 지원</link>을 원하시면, <link href=\"https://cbe005.chat.mibbit."
+"com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link> 또는 <link "
+"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">메일링 리스트</"
+"link>로 개발자에게 연락할 수 있습니다."
+
+#. (itstool) path: page/title
+#: C/documentation.page:21
+msgid "Help write documentation"
+msgstr "문서 작성 돕기"
+
+#. (itstool) path: page/p
+#: C/documentation.page:23
+msgid ""
+"The <app>GNOME Games</app> documentation is maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"<app>그놈 게임</app> 문서는 기여자 집단이 관리합니다. 여러분의 참여를 환영합"
+"니다."
+
+#. (itstool) path: page/p
+#: C/documentation.page:26
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
+"mailman/listinfo/gnome-doc-list\">mailing list</link>."
+msgstr ""
+"문서 프로젝트에 기여하려면 <link href=\"https://cbe003.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">IRC</link>, <link href=\"http://mail."
+"gnome.org/mailman/listinfo/gnome-doc-list\">메일링 리스트</link>로 언제든지 "
+"연락주십시오."
+
+#. (itstool) path: page/p
+#: C/documentation.page:28
+msgid ""
+"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> page contains useful information."
+msgstr ""
+"<link href=\"https://live.gnome.org/DocumentationProject/Contributing\">위키"
+"</link> 페이지에 도움 정보가 있습니다."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
 msgid "Lights Off"
 msgstr "불 끄기"
 
-#: C/lightsoff.xml:126(title)
-msgid "Introduction"
-msgstr "개요"
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Lights Off"
+msgstr "불 끄기"
 
-#. synopsis of game
-#: C/lightsoff.xml:129(para)
+#. (itstool) path: media/span
+#: C/index.page:21
+msgid "Lights Off logo"
+msgstr "불 끄기 로고"
+
+#. (itstool) path: page/title
+#: C/index.page:21
+msgid "<_:media-1/> Lights Off"
+msgstr "<_:media-1/> 불 끄기"
+
+#. (itstool) path: page/p
+#: C/index.page:23
 msgid ""
-"<application>Lights Off</application> is a puzzle game, where the objective "
-"is to turn off all of the tiles on the board. Each click toggles the state "
-"of the clicked tile and its non-diagonal neighbors."
+"<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
+"off all the lights. Each click on a tile toggles the state of the clicked "
+"tile and its non-diagonal neighbors."
 msgstr ""
-"<application>불 끄기</application>는 보드상의 모든 타일에 켜진 불을 모두 끄"
-"는 퍼즐 게임입니다. 한번 클릭 할 때마다 눌려진 타일과 대각선 상에 위치하지 않"
-"은 이웃 타일들의 상태가 바뀝니다."
+"<app>불 끄기</app>는 5X5 격자칸에서 즐기는 퍼즐이며 불을 다 끄는 것이 목표입"
+"니다. 한번 클릭 할 때마다 눌린 타일과 대각선 상에 위치하지 않은 이웃 타일의 "
+"상태가 바뀝니다."
 
-#. running game
-#: C/lightsoff.xml:132(para)
-msgid ""
-"To run <application>Lights Off</application>, select "
-"<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
-"guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type "
-"<command>lightsoff</command> in the command line."
-msgstr ""
-"<application>불 끄기</application>를 실행하려면, <menuchoice><guimenu>프로그"
-"램</guimenu><guisubmenu>게임</guisubmenu><guimenuitem>불 끄기</guimenuitem></"
-"menuchoice>를 선택하거나 명령 줄에서 <command>lightsoff</command>을 입력합니"
-"다."
+#. (itstool) path: section/title
+#: C/index.page:27
+msgid "Game Play"
+msgstr "게임하기"
 
-#. part of gnome-games
-#: C/lightsoff.xml:135(para)
-msgid ""
-"<application>Lights Off</application> is included in the <filename>gnome-"
-"games</filename> package, which is part of the GNOME desktop environment. "
-"This document describes version 1.0 of <application>Lights Off</application>."
-msgstr ""
-"<application>불 끄기</application>는 그놈 데스크톱 환경의 일부인 "
-"<filename>gnome-games</filename> 패키지에 들어있습니다. 이 문서는 "
-"<application>불 끄기</application> 1.0을 설명합니다."
+#. (itstool) path: section/title
+#: C/index.page:31
+msgid "Get Involved"
+msgstr "참여하기"
 
-#: C/lightsoff.xml:139(title)
-msgid "Playing <application>Lights Off</application>"
-msgstr "<application>불 끄기</application> 즐기기"
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.0 Unported 라이선스"
 
-#: C/lightsoff.xml:140(para)
-msgid ""
-"You progress through the levels either by turning off all of the tiles in a "
-"particular level, or using the arrow-shaped buttons near the bottom of the "
-"game. These buttons allow you to skip levels, or return to previous levels, "
-"without restriction."
-msgstr ""
-"각각의 레벨에서 모든 타일의 불을 끄거나 게임 하단 근처에 있는 화살표 표시 단"
-"추를 눌러 다음 단계로 진행할 수 있습니다. 이 단추들은 어떤 제한 없이 단계를 "
-"건너뛰게 하거나 이전 레벨로 돌아갈 수 있게 합니다."
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "이 문서는 <_:link-1/>에 따른 활용을 허가합니다."
 
-#: C/lightsoff.xml:142(title)
-msgid "Manipulating the Board"
-msgstr "보드 조작하기"
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "법적 정보."
 
-#: C/lightsoff.xml:143(para)
-msgid ""
-"There is only one action available in <application>Lights Off</application>: "
-"clicking a tile on the board. You can either click on the tile with the "
-"mouse, or use the arrow keys to choose it. The first time you press an arrow "
-"key during a game of <application>Lights Off</application>, a cursor will "
-"appear, which you can move with the keyboard; pressing enter will click the "
-"light below the cursor."
-msgstr ""
-"<application>불 끄기</application>에서 할 수 있는 동작은 단지 하나 뿐이며, 보"
-"드상의 타일을 누르는 것입니다. 타일을 마우스로 누르거나, 방향키로 선택합니"
-"다. <application>불 끄기</application>게임을 하는 동안 방향키를 처음 누르면 "
-"키보드로 옮길 수 있는 커서가 나타날 것입니다. 엔터키를 누르면 커서 아래에 있"
-"는 불을 누를 것입니다."
-
-#: C/lightsoff.xml:144(para)
-msgid ""
-"When a tile is clicked, both it and all of its non-diagonal neighbors will "
-"toggle their state. The objective is to turn all of the tiles on the board "
-"off."
-msgstr ""
-"타일을 누르면, 누른 타일과 대각선 방향에 있지 않은 이웃 타일들의 상태가 바뀔 "
-"것입니다. 목표는 보드의 모든 타일의 불을 끄는 것입니다."
-
-#: C/lightsoff.xml:147(title)
-msgid "Starting a New Game"
-msgstr "새 게임 시작하기"
-
-#: C/lightsoff.xml:148(para)
-msgid ""
-"To begin a new game, go to <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The progression of "
-"levels will be the same between games and between computers, so "
-"<menuchoice><guimenuitem>New Game</guimenuitem></menuchoice> should only be "
-"chosen if you actually want to return to the beginning of the game."
-msgstr ""
-"새 게임을 시작하기 위해 <menuchoice><guimenu>게임</guimenu><guimenuitem>새 게"
-"임</guimenuitem></menuchoice>으로 갑니다. 레벨의 진행은 같은 게임 및 컴퓨터"
-"간 동일하게 될 것이며, <menuchoice><guimenuitem>새 게임</guimenuitem></"
-"menuchoice>은 단지 게임의 처음으로 가고 싶을때만 선택합니다."
-
-#: C/lightsoff.xml:154(title)
-msgid "Customizing <application>Lights Off</application>"
-msgstr "<application>불 끄기</application> 사용자 정의"
-
-#: C/lightsoff.xml:156(title)
-msgid "Customizing the Look of <application>Lights Off</application>"
-msgstr "<application>불 끄기</application> 모양새 사용자 정의"
-
-#: C/lightsoff.xml:157(para)
-msgid ""
-"Under <menuchoice><guimenu>Game</guimenu><guimenuitem>Preferences</"
-"guimenuitem></menuchoice>, you can customize the look of the tiles in "
-"<application>Lights Off</application>. There are a variety of styles "
-"included, some of which make use of the color of your theme. This can be "
-"disabled with the <guilabel>Use colors from GNOME Theme</guilabel> option in "
-"the Preferences window."
-msgstr ""
-"<menuchoice><guimenu>게임</guimenu><guimenuitem>기본 설정</guimenuitem></"
-"menuchoice>에서 <application>불 끄기</application>의 타일 모습을 취향에 따라 "
-"바꿀 수 있습니다. 여러분의 테마 색을 사용하여 만들어진 많은 유형이 존재합니"
-"다. 기본 설정 창의 <guilabel>그놈 테마로부터 색을 사용</guilabel> 옵션을 통"
-"해 비활성화 할 수 있습니다."
-
-#: C/lightsoff.xml:162(title)
-msgid "Authors"
-msgstr "저작자"
-
-#: C/lightsoff.xml:163(para)
-msgid ""
-"<application>Lights Off</application> was written by Tim Horton in 2009 and "
-"maintained by the Gnome Games Team since then. This manual was written by "
-"Tim Horton. To report a bug or make a suggestion regarding this application "
-"or this manual, follow the directions in this <ulink url=\"ghelp:user-guide?"
-"feedback-bugs\" type=\"help\">document</ulink>."
-msgstr ""
-"<application>불 끄기</application>는 2009년도 Tim Horton이 작성하였으며, 이"
-"후 그놈 게임 팀에 의해 관리됩니다. 이 설명서는 Tim Horton이 작성했습니다. 이 "
-"프로그램이나 설명서에 대한 버그나 제안을 보고하려면 이 <ulink url=\"ghelp:"
-"user-guide?feedback-bugs\" type=\"help\">문서</ulink>의 지시를 따릅니다."
-
-#: C/lightsoff.xml:187(title)
+#. (itstool) path: page/title
+#: C/license.page:11
 msgid "License"
 msgstr "라이선스"
 
-#: C/lightsoff.xml:188(para)
+#. (itstool) path: page/p
+#: C/license.page:12
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the <citetitle><ulink type=\"help\" url=\"help:gpl"
-"\">GNU General Public License</ulink></citetitle> as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version."
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
 msgstr ""
-"이 프로그램은 자유 소프트웨어 입니다. 자유 소프트웨어 재단이 공표한 버전 2 이"
-"후의 <citetitle><ulink type=\"help\" url=\"help:gpl\">GNU 일반 공중 사"
-"용 허가서</ulink></citetitle>의 조상에 따라 수정하고 재배포 할 수 있습니다."
+"이 문서는 크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.0 Unported 라이선"
+"스로 배포됩니다."
 
-#: C/lightsoff.xml:190(para)
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "다음을 자유로이 행할 수 있습니다:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>공유</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "저작물을 복제, 배포, 전송합니다."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>변경</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "저작물을 적용합니다."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "다음 조건을 따라야 합니다:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>저작자 표시</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
 msgid ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE. See the <citetitle>GNU General Public "
-"License</citetitle> for more details."
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
 msgstr ""
-"이 프로그램은 유용성에 기대하여 배포되지만, 어떤 보증도 할 수 없으며, 일부 목"
-"적을 위한 적합성이나 상업성에 대한 암시적 보증도 없습니다. 더 자세한 사항에 "
-"대해서는 <citetitle>GNU 일반 공중 사용 허가서</citetitle>를 참조하기 바랍니"
+"저자 또는 라이선스 보유자가 지정한 방식대로 작업물의 저작자를 기재(그러나 저"
+"작물의 활용을 보증할 경우 해당없음)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>동일 조건</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"이 저작물을 개작, 변형, 이 저작물을 기반으로 또 다른 저작물을 만든다면, 동"
+"일, 유사 또는 호환 라이선스에 따라 저작물을 배포해야 함."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"라이선스 전문은 <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"legalcode\">크리에이티브 커먼즈 웹사이트</link>를 보시거나, <link href="
+"\"http://creativecommons.org/licenses/by-sa/3.0/\">일반 권리 증서</link>를 읽"
+"어보십시오."
+
+#. (itstool) path: page/title
+#: C/rules.page:16
+msgid "Rules"
+msgstr "규칙"
+
+#. (itstool) path: page/p
+#: C/rules.page:18
+msgid ""
+"In order to complete the <app>Lights Off</app> puzzle, you must turn off all "
+"the lights in the board. This will get you to advance to the next level."
+msgstr ""
+"<app>불 끄기</app> 퍼즐을 끝내려면 게임판의 모든 불을 꺼야 합니다. 이렇게 하"
+"면 다음 레벨로 넘어갑니다."
+
+#. (itstool) path: item/p
+#: C/rules.page:20
+msgid "The game begins with a pattern of lights on the 5x5 grid."
+msgstr "5x5 격자 판의 불 패턴이 들어온 상태에서 게임을 시작합니다."
+
+#. (itstool) path: item/p
+#: C/rules.page:21
+msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
+msgstr ""
+"상태를 바꿀 타일 그리고 이웃과 대각선상에 놓여있지 않은 타일을 선택하십시오."
+
+#. (itstool) path: item/p
+#: C/rules.page:22
+msgid ""
+"Once you have successfully turned off all the lights, you complete that "
+"level and move on to the next."
+msgstr "모든 불을 끄면, 해당 레벨이 끝나고 다음 레벨로 넘어갑니다."
+
+#. (itstool) path: page/title
+#: C/strategy.page:17
+msgid "Strategy"
+msgstr "전략"
+
+#. (itstool) path: page/p
+#: C/strategy.page:18
+msgid ""
+"This is a simple strategy to solve the <app>Lights Off</app> puzzle by using "
+"the method called \"Chase the Lights\"."
+msgstr ""
+"이 내용은 \"불빛 쫓기\" 방식으로 <app>불 끄기</app> 퍼즐을 풀어나가는 간단한 "
+"전략입니다."
+
+#. (itstool) path: item/p
+#: C/strategy.page:20
+msgid ""
+"Chase the lights starting from the first row. To chase the lights in the "
+"first row, click the tile on the second row corresponding to the light in "
+"the first row. This will turn off that light in the first row."
+msgstr ""
+"첫번째 줄부터 시작해서 불을 쫒아갑니다. 첫번째 줄의 불을 쫒아가려면 첫번째 줄"
+"에 해당하는 두번째 줄의 타일을 누릅니다. 이렇게 해서 첫번째 줄의 불을 끕니다."
+
+#. (itstool) path: note/p
+#: C/strategy.page:21
+msgid ""
+"This method can be used in the same way to chase the lights in other rows as "
+"well, i.e., if you want to chase the lights in the second row, click the "
+"corresponding tile in the third row."
+msgstr ""
+"이 방식으로 다른 줄의 불을 따라갈 수 있습니다. 두번째 줄의 불을 따라간다면 세"
+"번째 줄의 각 타일을 누르면 됩니다."
+
+#. (itstool) path: item/p
+#: C/strategy.page:23
+msgid ""
+"In the same way continue to chase the lights in the second, third and fourth "
+"row. At the end of this you will be only left with the lights in the fifth "
+"row."
+msgstr ""
+"동일한 방식으로 두번째, 세번째, 네번째 줄에 있는 불을 계속 쫒아갑니다. 이렇"
+"게 따라가면 결국 다섯번째 줄에 불 하나가 남습니다."
+
+#. (itstool) path: item/p
+#: C/strategy.page:25
+msgid ""
+"Now depending on which lights are remaining in the fifth row, click the "
+"tiles in the first row using the table given below."
+msgstr ""
+"다섯번째 줄에 어떤 불이 켜져있느냐에 따라 아래 테이블을 활용하여 첫번째 줄에 "
+"있는 타일을 누릅니다."
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Lights Left on the fifth Row"
+msgstr "다섯번째 줄에 있는 왼쪽 불"
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Tiles to Click on the First Row"
+msgstr "첫번째 줄의 타일을 누르십시오"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "1, 2, 3"
+msgstr "1, 2, 3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "2"
+msgstr "2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "1, 2, 4, 5"
+msgstr "1, 2, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "3"
+msgstr "3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "1, 3, 4"
+msgstr "1, 3, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "5"
+msgstr "5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 5"
+msgstr "1, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 2"
+msgstr "1, 2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "2, 3, 5"
+msgstr "2, 3, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "1"
+msgstr "1"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "2, 4"
+msgstr "2, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "1, 4"
+msgstr "1, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "3, 4, 5"
+msgstr "3, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "4"
+msgstr "4"
+
+#. (itstool) path: item/p
+#: C/strategy.page:48
+msgid ""
+"Now again chase the lights starting from the first row. After chasing the "
+"lights this time your puzzle will be solved."
+msgstr ""
+"첫번째 줄에서 시작하는 불을 다시 쫒아가십시오. 불을 다 쫒아가다보면 퍼즐이 풀"
+"립니다."
+
+#. (itstool) path: note/p
+#: C/strategy.page:50
+msgid ""
+"This strategy doesn't always produce the optimal solution, it may take more "
+"moves."
+msgstr ""
+"이 방식이 언제나 최적의 방식인 것은 아닙니다. 더 많이 움직여야 할 수도 있습니"
 "다."
 
-#: C/lightsoff.xml:192(para)
-msgid ""
-"A copy of the <citetitle>GNU General Public License</citetitle> is included "
-"as an appendix to the <citetitle>GNOME Users Guide</citetitle>. You may also "
-"obtain a copy of the <citetitle>GNU General Public License</citetitle> from "
-"the Free Software Foundation by visiting <ulink type=\"http\" url=\"http://"
-"www.fsf.org\">their Web site</ulink> or by writing to <address> Free "
-"Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
-"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
-"postcode><country>USA</country></address>"
-msgstr ""
-"<citetitle>GNU 일반 공중 사용 허가서</citetitle>의 복제본은 <citetitle>그놈 "
-"사용자 안내서</citetitle>의 부록에 포함되어 있습니다. <citetitle>GNU 일반 공"
-"중 사용 허가서</citetitle>의 복제본은 <ulink type=\"http\" url=\"http://www."
-"fsf.org\">자유 소프트웨어 재단의 웹 사이트</ulink>를 방문하거나 <address> "
-"Free Software Foundation, Inc. <street>59 Temple Place</street> - Suite 330 "
-"<city>Boston</city>, <state>MA</state><postcode>02111-1307</"
-"postcode><country>USA</country></address>로 편지를 써서 구할 수도 있습니다."
+#. (itstool) path: page/title
+#: C/translate.page:23
+msgid "Help translate"
+msgstr "번역 돕기"
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/lightsoff.xml:0(None)
-msgid "translator-credits"
-msgstr "Seong-ho, Cho <darkcircle.0426@gmail.com>"
+#. (itstool) path: page/p
+#: C/translate.page:24
+msgid ""
+"The <app>GNOME Games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community. You are welcome to "
+"participate."
+msgstr ""
+"그놈 게임 사용자 인터페이스와 문서는 전세계 기여자 집단이 번역합니다. 여러분"
+"의 참여를 환영합니다."
+
+#. (itstool) path: page/p
+#: C/translate.page:27
+msgid ""
+"There are <link href=\"http://l10n.gnome.org/module/lightsoff/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"여전히 <link href=\"http://l10n.gnome.org/module/gnome-mahjongg/\">수많은 언"
+"어</link>로 번역이 필요합니다."
+
+#. (itstool) path: page/p
+#: C/translate.page:30
+msgid ""
+"To start translating you will need to <link href=\"http://l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"teams/\">translation team</link> for your language. This will give you the "
+"ability to upload new translations."
+msgstr ""
+"번역을 시작하려면 <link href=\"http://l10n.gnome.org\">계정 생성</link>을 진"
+"행하고, 여러분의 언어에 해당하는 <link href=\"http://l10n.gnome.org/teams/\">"
+"번역 팀</link>에 참여해야합니다. 이 과정을 거치면 여러분이 새 번역을 업로드"
+"할 수 있습니다."
+
+#. (itstool) path: page/p
+#: C/translate.page:34
+msgid ""
+"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
+"channel are located worldwide, so you may not get an immediate response as a "
+"result of timezone differences."
+msgstr ""
+"<link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org"
+"%2Fi18n\">IRC</link>에서 그놈 번역자와 대화할 수 있습니다. 전세계 여러 번역자"
+"가 이 채널에 있어 시차에 따라 답변을 바로 받지 못할 수도 있습니다."
+
+#. (itstool) path: page/p
+#: C/translate.page:37
+msgid ""
+"Alternatively, you can contact the Internationalization Team using their "
+"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"list</link>."
+msgstr ""
+"대신 각 언어 팀별 <link href=\"http://mail.gnome.org/mailman/listinfo/gnome-"
+"i18n\">메일링 리스트</link>로 국제화 팀과 연락할 수 있습니다."
+
+#~ msgid ""
+#~ "<app>Lights Off</app> is maintained by a volunteer community. You are "
+#~ "welcome to participate. If you notice a problem you can file a <em>bug "
+#~ "report</em>. To file a bug, go to <link href=\"https://bugzilla.gnome.org/"
+#~ "\"/>."
+#~ msgstr ""
+#~ "<app>불 끄기</app>는 기여자 집단이 관리합니다. 여러분의 참여를 환영합니"
+#~ "다. 문제를 발견했다면 <em>버그 보고서</em>를 제출할 수 있습니다. 버그를 보"
+#~ "고하려면, <link href=\"https://gitlab.gnome.org/GNOME/gnome-mahjongg/"
+#~ "issues/\"/>로 이동하십시오."
+
+#~ msgid "<application>Lights Off</application> Manual"
+#~ msgstr "<application>불 끄기</application> 설명서"
+
+#~ msgid "2010"
+#~ msgstr "2010"
+
+#~ msgid "Tim Horton"
+#~ msgstr "Tim Horton"
+
+#~ msgid "GNOME Documentation Project"
+#~ msgstr "그놈 문서 프로젝트"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.1 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"help:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "전면 표지와 후면 표지, 그리고 변경되지 않는 섹션을 제외한 이 문서의 복제, "
+#~ "배포 및 수정은 자유 소프트웨어 재단에 의해 공표된 Version 1.1 이후의 GNU "
+#~ "Free Documentation License(GFDL)에 의해 허용됩니다. GFDL의 복제본은 "
+#~ "<ulink type=\"help\" url=\"help:fdl\">이 링크</ulink>, 혹은 설명서와 함께 "
+#~ "배포되는 COPYING-DOCS 파일에서 찾을 수 있습니다."
+
+#~ msgid ""
+#~ "This manual is part of a collection of GNOME manuals distributed under "
+#~ "the GFDL. If you want to distribute this manual separately from the "
+#~ "collection, you can do so by adding a copy of the license to the manual, "
+#~ "as described in section 6 of the license."
+#~ msgstr ""
+#~ "이 설명서는 GFDL에 의해 배포되는 그놈 메뉴얼 모음의 한 부분입니다. 모음으"
+#~ "로부터 이 설명서를 개별적으로 배포하고 싶으시다면 라이선스의 6장에 기술된 "
+#~ "대로 이 메뉴얼에 라이선스를 추가함으로써 가능합니다."
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "회사에서의 제품이나 서비스를 구분하기 위해 사용되는 수많은 이름들은 등록상"
+#~ "표 입니다. 어떤 그놈 문서에 나타나는 등록상표 명칭이나 등록상표로 인지되"
+#~ "는 그>놈 문서 프로젝트의 구성원의 이름이 존재하는 곳에는 대문자로 표기하거"
+#~ "나 대문자 약자로 표기됩니다."
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+#~ msgstr ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND"
+
+#~ msgid ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT "
+#~ "(INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL "
+#~ "WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE "
+#~ "LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+#~ msgstr ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+
+#~ msgid "Tim"
+#~ msgstr "Tim"
+
+#~ msgid "Horton"
+#~ msgstr "Horton"
+
+#~ msgid "hortont@gnome.org"
+#~ msgstr "hortont@gnome.org"
+
+#~ msgid "Lights Off Manual V1.0"
+#~ msgstr "불 끄기 설명서 V1.0"
+
+#~ msgid "January 2010"
+#~ msgstr "2010년 1월"
+
+#~ msgid "Tim Horton <email>hortont@gnome.org</email>"
+#~ msgstr "Tim Horton <email>hortont@gnome.org</email>"
+
+#~ msgid "This manual describes version 2.28 of Lights Off."
+#~ msgstr "이 설명서는 불끄기 2.28을 설명합니다."
+
+#~ msgid "Feedback"
+#~ msgstr "피드백"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the <application>Lights "
+#~ "Off</application> application or this manual, follow the directions in "
+#~ "the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">GNOME "
+#~ "Feedback Page</ulink>."
+#~ msgstr ""
+#~ "<application>불 끄기</application>프로그램이나 이 설명서에 대해 버그나 제"
+#~ "안을 보고하려면, <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+#~ "\">그놈 피드백 페이지</ulink>의 지시를 따릅니다."
+
+#~ msgid "Introduction"
+#~ msgstr "개요"
+
+#~ msgid ""
+#~ "To run <application>Lights Off</application>, select "
+#~ "<menuchoice><guimenu>Applications</guimenu><guisubmenu>Games</"
+#~ "guisubmenu><guimenuitem>Lights Off</guimenuitem></menuchoice>, or type "
+#~ "<command>lightsoff</command> in the command line."
+#~ msgstr ""
+#~ "<application>불 끄기</application>를 실행하려면, <menuchoice><guimenu>프로"
+#~ "그램</guimenu><guisubmenu>게임</guisubmenu><guimenuitem>불 끄기</"
+#~ "guimenuitem></menuchoice>를 선택하거나 명령 줄에서 <command>lightsoff</"
+#~ "command>을 입력합니다."
+
+#~ msgid ""
+#~ "<application>Lights Off</application> is included in the <filename>gnome-"
+#~ "games</filename> package, which is part of the GNOME desktop environment. "
+#~ "This document describes version 1.0 of <application>Lights Off</"
+#~ "application>."
+#~ msgstr ""
+#~ "<application>불 끄기</application>는 그놈 데스크톱 환경의 일부인 "
+#~ "<filename>gnome-games</filename> 패키지에 들어있습니다. 이 문서는 "
+#~ "<application>불 끄기</application> 1.0을 설명합니다."
+
+#~ msgid "Playing <application>Lights Off</application>"
+#~ msgstr "<application>불 끄기</application> 즐기기"
+
+#~ msgid ""
+#~ "There is only one action available in <application>Lights Off</"
+#~ "application>: clicking a tile on the board. You can either click on the "
+#~ "tile with the mouse, or use the arrow keys to choose it. The first time "
+#~ "you press an arrow key during a game of <application>Lights Off</"
+#~ "application>, a cursor will appear, which you can move with the keyboard; "
+#~ "pressing enter will click the light below the cursor."
+#~ msgstr ""
+#~ "<application>불 끄기</application>에서 할 수 있는 동작은 단지 하나 뿐이"
+#~ "며, 보드상의 타일을 누르는 것입니다. 타일을 마우스로 누르거나, 방향키로 선"
+#~ "택합니다. <application>불 끄기</application>게임을 하는 동안 방향키를 처"
+#~ "음 누르면 키보드로 옮길 수 있는 커서가 나타날 것입니다. 엔터키를 누르면 커"
+#~ "서 아래에 있는 불을 누를 것입니다."
+
+#~ msgid ""
+#~ "When a tile is clicked, both it and all of its non-diagonal neighbors "
+#~ "will toggle their state. The objective is to turn all of the tiles on the "
+#~ "board off."
+#~ msgstr ""
+#~ "타일을 누르면, 누른 타일과 대각선 방향에 있지 않은 이웃 타일들의 상태가 바"
+#~ "뀔 것입니다. 목표는 보드의 모든 타일의 불을 끄는 것입니다."
+
+#~ msgid "Starting a New Game"
+#~ msgstr "새 게임 시작하기"
+
+#~ msgid ""
+#~ "To begin a new game, go to <menuchoice><guimenu>Game</"
+#~ "guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. The progression "
+#~ "of levels will be the same between games and between computers, so "
+#~ "<menuchoice><guimenuitem>New Game</guimenuitem></menuchoice> should only "
+#~ "be chosen if you actually want to return to the beginning of the game."
+#~ msgstr ""
+#~ "새 게임을 시작하기 위해 <menuchoice><guimenu>게임</guimenu><guimenuitem>"
+#~ "새 게임</guimenuitem></menuchoice>으로 갑니다. 레벨의 진행은 같은 게임 및 "
+#~ "컴퓨터간 동일하게 될 것이며, <menuchoice><guimenuitem>새 게임</"
+#~ "guimenuitem></menuchoice>은 단지 게임의 처음으로 가고 싶을때만 선택합니다."
+
+#~ msgid "Customizing <application>Lights Off</application>"
+#~ msgstr "<application>불 끄기</application> 사용자 정의"
+
+#~ msgid "Customizing the Look of <application>Lights Off</application>"
+#~ msgstr "<application>불 끄기</application> 모양새 사용자 정의"
+
+#~ msgid ""
+#~ "Under <menuchoice><guimenu>Game</guimenu><guimenuitem>Preferences</"
+#~ "guimenuitem></menuchoice>, you can customize the look of the tiles in "
+#~ "<application>Lights Off</application>. There are a variety of styles "
+#~ "included, some of which make use of the color of your theme. This can be "
+#~ "disabled with the <guilabel>Use colors from GNOME Theme</guilabel> option "
+#~ "in the Preferences window."
+#~ msgstr ""
+#~ "<menuchoice><guimenu>게임</guimenu><guimenuitem>기본 설정</guimenuitem></"
+#~ "menuchoice>에서 <application>불 끄기</application>의 타일 모습을 취향에 따"
+#~ "라 바꿀 수 있습니다. 여러분의 테마 색을 사용하여 만들어진 많은 유형이 존재"
+#~ "합니다. 기본 설정 창의 <guilabel>그놈 테마로부터 색을 사용</guilabel> 옵션"
+#~ "을 통해 비활성화 할 수 있습니다."
+
+#~ msgid "Authors"
+#~ msgstr "저작자"
+
+#~ msgid ""
+#~ "<application>Lights Off</application> was written by Tim Horton in 2009 "
+#~ "and maintained by the Gnome Games Team since then. This manual was "
+#~ "written by Tim Horton. To report a bug or make a suggestion regarding "
+#~ "this application or this manual, follow the directions in this <ulink url="
+#~ "\"ghelp:user-guide?feedback-bugs\" type=\"help\">document</ulink>."
+#~ msgstr ""
+#~ "<application>불 끄기</application>는 2009년도 Tim Horton이 작성하였으며, "
+#~ "이후 그놈 게임 팀에 의해 관리됩니다. 이 설명서는 Tim Horton이 작성했습니"
+#~ "다. 이 프로그램이나 설명서에 대한 버그나 제안을 보고하려면 이 <ulink url="
+#~ "\"ghelp:user-guide?feedback-bugs\" type=\"help\">문서</ulink>의 지시를 따"
+#~ "릅니다."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the <citetitle><ulink type=\"help\" url=\"help:gpl"
+#~ "\">GNU General Public License</ulink></citetitle> as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "이 프로그램은 자유 소프트웨어 입니다. 자유 소프트웨어 재단이 공표한 버전 "
+#~ "2 이후의 <citetitle><ulink type=\"help\" url=\"help:gpl\">GNU 일반 공중 사"
+#~ "용 허가서</ulink></citetitle>의 조상에 따라 수정하고 재배포 할 수 있습니"
+#~ "다."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the "
+#~ "<citetitle>GNU General Public License</citetitle> for more details."
+#~ msgstr ""
+#~ "이 프로그램은 유용성에 기대하여 배포되지만, 어떤 보증도 할 수 없으며, 일"
+#~ "부 목적을 위한 적합성이나 상업성에 대한 암시적 보증도 없습니다. 더 자세한 "
+#~ "사항에 대해서는 <citetitle>GNU 일반 공중 사용 허가서</citetitle>를 참조하"
+#~ "기 바랍니다."
+
+#~ msgid ""
+#~ "A copy of the <citetitle>GNU General Public License</citetitle> is "
+#~ "included as an appendix to the <citetitle>GNOME Users Guide</citetitle>. "
+#~ "You may also obtain a copy of the <citetitle>GNU General Public License</"
+#~ "citetitle> from the Free Software Foundation by visiting <ulink type="
+#~ "\"http\" url=\"http://www.fsf.org\">their Web site</ulink> or by writing "
+#~ "to <address> Free Software Foundation, Inc. <street>59 Temple Place</"
+#~ "street> - Suite 330 <city>Boston</city>, <state>MA</"
+#~ "state><postcode>02111-1307</postcode><country>USA</country></address>"
+#~ msgstr ""
+#~ "<citetitle>GNU 일반 공중 사용 허가서</citetitle>의 복제본은 <citetitle>그"
+#~ "놈 사용자 안내서</citetitle>의 부록에 포함되어 있습니다. <citetitle>GNU 일"
+#~ "반 공중 사용 허가서</citetitle>의 복제본은 <ulink type=\"http\" url="
+#~ "\"http://www.fsf.org\">자유 소프트웨어 재단의 웹 사이트</ulink>를 방문하거"
+#~ "나 <address> Free Software Foundation, Inc. <street>59 Temple Place</"
+#~ "street> - Suite 330 <city>Boston</city>, <state>MA</"
+#~ "state><postcode>02111-1307</postcode><country>USA</country></address>로 편"
+#~ "지를 써서 구할 수도 있습니다."
