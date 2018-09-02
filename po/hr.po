@@ -4,10 +4,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games 0\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-03-07 15:58+0000\n"
-"PO-Revision-Date: 2018-03-14 14:23+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2018-07-19 20:55+0000\n"
+"PO-Revision-Date: 2018-09-02 19:10+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "Language: hr\n"
@@ -17,15 +16,15 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2008-05-28 02:59+0000\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:87 src/lightsoff.vala:109
+#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
 msgid "Lights Off"
 msgstr "Isključi svjetla"
 
 #: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:90
+#: src/lightsoff.vala:106
 msgid "Turn off all the lights"
 msgstr "Isključite sva svjetla"
 
@@ -77,11 +76,11 @@ msgstr "_O programu"
 msgid "_Quit"
 msgstr "_Zatvori"
 
-#: data/lightsoff.ui:15
+#: data/lightsoff.ui:14
 msgid "Return to the previous level"
 msgstr "Vrati se na posljednju razinu"
 
-#: data/lightsoff.ui:35
+#: data/lightsoff.ui:34
 msgid "Proceed to the next level"
 msgstr "Sljedeća razina"
 
@@ -93,13 +92,19 @@ msgstr "Trenutna razina"
 msgid "The users’s most recent level."
 msgstr "Nedavna korisnikova razina."
 
-#: src/lightsoff.vala:96
+#: src/lightsoff.vala:112
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  gogo https://launchpad.net/~trebelnik-stefina"
 
-#: src/lightsoff-window.vala:60
+#: src/lightsoff.vala:133
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Pokrenite `%s --help` za potpuni prikaz mogućnosti dostupnih naredbi.\n"
+
+#: src/lightsoff-window.vala:92
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -108,11 +113,11 @@ msgstr[1] "%d poteza"
 msgstr[2] "%d poteza"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:98
 #, c-format
 msgid "Level %d"
 msgstr "Razina %d"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:102
 msgid "Turn off all the lights!"
 msgstr "Isključite sva svjetla!"
