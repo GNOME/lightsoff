@@ -16,6 +16,7 @@ using Gtk;
 public class LightsoffWindow : ApplicationWindow
 {
     [GtkChild] private HeaderBar headerbar;
+    [GtkChild] private MenuButton menu_button;
 
     private GLib.Settings settings;
     private GameView game_view;
@@ -68,6 +69,9 @@ public class LightsoffWindow : ApplicationWindow
     public LightsoffWindow (bool gtk = false)
     {
         settings = new GLib.Settings ("org.gnome.lightsoff");
+
+        var menu_builder = new Gtk.Builder.from_resource ("/org/gnome/lightsoff/gtk/menus.ui");
+        menu_button.set_menu_model ((GLib.Menu) menu_builder.get_object ("primary-menu"));
 
         add_action_entries (window_actions, this);
         previous_level = (SimpleAction) this.lookup_action ("previous-level");
