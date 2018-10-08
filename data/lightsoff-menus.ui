@@ -11,12 +11,12 @@
       <item>
         <attribute name="label" translatable="yes">_Previous puzzle</attribute>
         <attribute name="action">win.previous-level</attribute>
-        <attribute name="accel">&lt;Primary&gt;p</attribute>
+        <attribute name="accel">&lt;Primary&gt;Page_Up</attribute>
       </item>
       <item>
         <attribute name="label" translatable="yes">Ne_xt puzzle</attribute>
         <attribute name="action">win.next-level</attribute>
-        <attribute name="accel">&lt;Primary&gt;x</attribute>
+        <attribute name="accel">&lt;Primary&gt;Page_Down</attribute>
       </item>
     </section>
     <section>

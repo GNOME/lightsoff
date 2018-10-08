@@ -33,6 +33,7 @@ public class LightsOff : Gtk.Application
     private const GLib.ActionEntry[] action_entries =
     {
         { "help",          help_cb     },
+        { "quit",          quit_cb     },
         { "about",         about_cb    }
     };
 
@@ -49,6 +50,13 @@ public class LightsOff : Gtk.Application
         Gtk.Settings.get_default ().set ("gtk-application-prefer-dark-theme", true);
 
         add_action_entries (action_entries, this);
+
+        set_accels_for_action ("app.quit", {"<control>Q"});
+        set_accels_for_action ("app.help", {"F1"});
+
+        set_accels_for_action ("win.new-game", {"<control>N"});
+        set_accels_for_action ("win.previous-level", {"<control>Page_Up"});
+        set_accels_for_action ("win.next-level", {"<control>Page_Down"});
 
         window = new LightsoffWindow (gtk);
         add_window (window);
@@ -70,6 +78,12 @@ public class LightsOff : Gtk.Application
             warning ("Failed to show help: %s", e.message);
         }
     }
+
+    private void quit_cb ()
+    {
+        window.destroy ();
+    }
+
 
     private void about_cb ()
     {
