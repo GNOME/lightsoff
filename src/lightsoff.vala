@@ -32,7 +32,6 @@ public class LightsOff : Gtk.Application
 
     private const GLib.ActionEntry[] action_entries =
     {
-        { "quit",          quit_cb     },
         { "help",          help_cb     },
         { "about",         about_cb    }
     };
@@ -60,11 +59,6 @@ public class LightsOff : Gtk.Application
         window.present ();
     }
 
-    private void quit_cb ()
-    {
-        window.destroy ();
-    }
-
     private void help_cb ()
     {
         try
@@ -83,6 +77,7 @@ public class LightsOff : Gtk.Application
         {
             "Tim Horton",
             "Robert Ancell",
+            "Robert Roth",
             null
         };
 
