@@ -14,7 +14,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
     private Gtk.ToggleButton[,] lights;
 
     public bool playable = true;
-
+    private const int MIN_TOGGLE_SIZE = 48;
     private int _moves = 0;
     public int moves
     {
@@ -27,11 +27,11 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         get_style_context ().add_class ("grid");
         row_homogeneous = true;
         column_homogeneous = true;
-        border_width = 4;
+        border_width = 2;
         row_spacing = 2;
         column_spacing = 2;
 
-        set_size_request (size * 72, size * 72);
+        set_size_request (size * MIN_TOGGLE_SIZE, size * MIN_TOGGLE_SIZE);
 
         puzzle_generator = new PuzzleGenerator (size);
         lights = new Gtk.ToggleButton [size, size];
