@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-07-19 20:55+0000\n"
-"PO-Revision-Date: 2018-08-09 21:10+0200\n"
+"POT-Creation-Date: 2018-10-09 03:24+0000\n"
+"PO-Revision-Date: 2018-12-28 11:57+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,15 +20,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 
 #: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
+#: src/lightsoff.vala:112 src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Släck lyset"
 
 #: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:106
+#: src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "Släck alla ljus"
 
@@ -68,25 +68,21 @@ msgstr "lightsoff"
 msgid "_Start Over"
 msgstr "_Börja om"
 
-#: data/lightsoff-menus.ui:14
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "_Föregående pussel"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "Nä_sta pussel"
+
+#: data/lightsoff-menus.ui:24
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "_Om"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "A_vsluta"
-
-#: data/lightsoff.ui:14
-msgid "Return to the previous level"
-msgstr "Gå tillbaka till föregående nivå"
-
-#: data/lightsoff.ui:34
-msgid "Proceed to the next level"
-msgstr "Fortsätt till nästa nivå"
+#: data/lightsoff-menus.ui:29
+msgid "_About Lights Off"
+msgstr "_Om Släck lyset"
 
 #: data/org.gnome.lightsoff.gschema.xml:6
 msgid "The current level"
@@ -96,7 +92,7 @@ msgstr "Aktuella nivån"
 msgid "The users’s most recent level."
 msgstr "Användarens senaste nivå."
 
-#: src/lightsoff.vala:112
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
@@ -109,14 +105,14 @@ msgstr ""
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>."
 
-#: src/lightsoff.vala:133
+#: src/lightsoff.vala:142
 #, c-format
 msgid "Run `%s --help` to see a full list of available command line options.\n"
 msgstr ""
 "Kör ”%s --help” för att se en komplett lista över tillgängliga "
 "kommandoradsflaggor.\n"
 
-#: src/lightsoff-window.vala:92
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -124,11 +120,26 @@ msgstr[0] "%d drag"
 msgstr[1] "%d drag"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:98
-#, c-format
-msgid "Level %d"
-msgstr "Nivå %d"
-
 #: src/lightsoff-window.vala:102
+#, c-format
+msgid "Puzzle %d"
+msgstr "Pussel %d"
+
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Släck alla ljus!"
+
+#~ msgid "_About"
+#~ msgstr "_Om"
+
+#~ msgid "_Quit"
+#~ msgstr "A_vsluta"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Gå tillbaka till föregående nivå"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Fortsätt till nästa nivå"
+
+#~ msgid "Level %d"
+#~ msgstr "Nivå %d"
