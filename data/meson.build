@@ -8,7 +8,7 @@ install_data(['off.svg', 'on.svg', 'highlight.svg'],
   install_dir: pkgdatadir,
 )
 
-desktop = 'lightsoff.desktop'
+desktop = 'org.gnome.lightsoff.desktop'
 
 # Desktop file
 i18n.merge_file(
@@ -20,7 +20,7 @@ i18n.merge_file(
   install_dir: join_paths(datadir, 'applications'),
 )
 
-appdata = 'lightsoff.appdata.xml'
+appdata = 'org.gnome.lightsoff.appdata.xml'
 
 # Appdata
 i18n.merge_file(

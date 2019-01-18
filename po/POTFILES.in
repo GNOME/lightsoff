@@ -1,9 +1,9 @@
 # List of source files containing translatable strings.
 # Please keep this file in alphabetical order.
-data/lightsoff.appdata.xml.in
-data/lightsoff.desktop.in
 data/lightsoff-menus.ui
 data/lightsoff.ui
+data/org.gnome.lightsoff.appdata.xml.in
+data/org.gnome.lightsoff.desktop.in
 data/org.gnome.lightsoff.gschema.xml
 src/lightsoff.vala
 src/lightsoff-window.vala
