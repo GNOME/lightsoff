@@ -12,7 +12,7 @@
 
 using Gtk;
 
-[GtkTemplate (ui = "/org/gnome/lightsoff/ui/lightsoff.ui")]
+[GtkTemplate (ui = "/org/gnome/LightsOff/ui/lightsoff.ui")]
 public class LightsoffWindow : ApplicationWindow
 {
     [GtkChild] private HeaderBar headerbar;
@@ -61,16 +61,16 @@ public class LightsoffWindow : ApplicationWindow
 
         out_game_view = gtk_game_view;
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/org/gnome/lightsoff/ui/lightsoff.css");
+        provider.load_from_resource ("/org/gnome/LightsOff/ui/lightsoff.css");
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
         return aspect_frame;
     }
 
     public LightsoffWindow (bool gtk = false)
     {
-        settings = new GLib.Settings ("org.gnome.lightsoff");
+        settings = new GLib.Settings ("org.gnome.LightsOff");
 
-        var menu_builder = new Gtk.Builder.from_resource ("/org/gnome/lightsoff/gtk/menus.ui");
+        var menu_builder = new Gtk.Builder.from_resource ("/org/gnome/LightsOff/gtk/menus.ui");
         menu_button.set_menu_model ((GLib.Menu) menu_builder.get_object ("primary-menu"));
 
         add_action_entries (window_actions, this);

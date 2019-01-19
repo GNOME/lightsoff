@@ -39,14 +39,14 @@ public class LightsOff : Gtk.Application
 
     private LightsOff ()
     {
-        Object (application_id: "org.gnome.lightsoff", flags: ApplicationFlags.FLAGS_NONE);
+        Object (application_id: "org.gnome.LightsOff", flags: ApplicationFlags.FLAGS_NONE);
     }
 
     protected override void startup ()
     {
         base.startup ();
 
-        Gtk.Window.set_default_icon_name ("org.gnome.lightsoff");
+        Gtk.Window.set_default_icon_name ("org.gnome.LightsOff");
         Gtk.Settings.get_default ().set ("gtk-application-prefer-dark-theme", true);
 
         add_action_entries (action_entries, this);
@@ -119,7 +119,7 @@ public class LightsOff : Gtk.Application
                                "artists", artists,
                                "documenters", documenters,
                                "translator-credits", _("translator-credits"),
-                               "logo-icon-name", "org.gnome.lightsoff",
+                               "logo-icon-name", "org.gnome.LightsOff",
                                "website", "https://wiki.gnome.org/Apps/Lightsoff",
                                null);
     }

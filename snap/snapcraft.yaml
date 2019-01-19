@@ -23,7 +23,7 @@ slots:
   lightsoff:
     interface: dbus
     bus: session
-    name: org.gnome.lightsoff
+    name: org.gnome.LightsOff
 
 apps:
   lightsoff:

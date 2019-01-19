@@ -8,7 +8,7 @@ install_data(['off.svg', 'on.svg', 'highlight.svg'],
   install_dir: pkgdatadir,
 )
 
-desktop = 'org.gnome.lightsoff.desktop'
+desktop = 'org.gnome.LightsOff.desktop'
 
 # Desktop file
 desktop_file = i18n.merge_file(
@@ -31,7 +31,7 @@ if desktop_file_validate.found()
 endif
 
 
-appdata = 'org.gnome.lightsoff.appdata.xml'
+appdata = 'org.gnome.LightsOff.appdata.xml'
 
 # Appdata
 appdata_file = i18n.merge_file(
@@ -52,7 +52,7 @@ if appstream_util.found()
 endif
 
 # Gschema
-install_data('org.gnome.lightsoff.gschema.xml',
+install_data('org.gnome.LightsOff.gschema.xml',
   install_dir: join_paths(datadir, 'glib-2.0', 'schemas'),
 )
 

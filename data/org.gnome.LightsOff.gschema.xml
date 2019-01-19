@@ -1,5 +1,5 @@
 <schemalist>
-  <schema id="org.gnome.lightsoff" path="/org/gnome/lightsoff/" gettext-domain="lightsoff">
+  <schema id="org.gnome.LightsOff" path="/org/gnome/LightsOff/" gettext-domain="lightsoff">
     <key name="level" type="i">
       <default>1</default>
       <range min="1" />
