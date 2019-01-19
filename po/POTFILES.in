@@ -2,9 +2,9 @@
 # Please keep this file in alphabetical order.
 data/lightsoff-menus.ui
 data/lightsoff.ui
-data/org.gnome.lightsoff.appdata.xml.in
-data/org.gnome.lightsoff.desktop.in
-data/org.gnome.lightsoff.gschema.xml
+data/org.gnome.LightsOff.appdata.xml.in
+data/org.gnome.LightsOff.desktop.in
+data/org.gnome.LightsOff.gschema.xml
 src/lightsoff.vala
 src/lightsoff-window.vala
 src/puzzle-generator.vala
