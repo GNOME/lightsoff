@@ -53,4 +53,4 @@ subdir('src')
 config_file = configure_file(output: 'config.h', configuration: conf)
 
 # Extra scripts
-meson.add_install_script('meson_post_install.py')
+meson.add_install_script('build-aux/meson_post_install.py')
