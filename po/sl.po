@@ -5,14 +5,14 @@
 # Matej Erman <matej.erman@guest.arnes.si>, 2002.
 # Tadej Janež <tadej_janez@email.si>, 2003.
 # Matic Žgur <mr.zgur@gmail.com>, 2006–2007.
-# Matej Urbančič <mateju@svn.gnome.org>, 2007–2018.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007–2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-10-13 07:56+0000\n"
-"PO-Revision-Date: 2018-10-25 20:11+0200\n"
+"POT-Creation-Date: 2019-01-25 13:23+0000\n"
+"PO-Revision-Date: 2019-01-25 18:28+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -23,46 +23,6 @@ msgstr ""
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 2.1.1\n"
-
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:112 src/lightsoff.vala:134 src/lightsoff.vala:147
-msgid "Lights Off"
-msgstr "Ugasni luči"
-
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:115
-msgid "Turn off all the lights"
-msgstr "Ugasni vse luči"
-
-#: data/lightsoff.appdata.xml.in:10
-msgid ""
-"Lights Off is a collection of light switch puzzles. Clicking on a light "
-"toggles it either on or off, but also toggles all the surrounding lights, "
-"too. Your objective is simple: turn off all the lights!"
-msgstr ""
-"Igra Ugasni luči je igra prižiganja in ugašanja žarnic. Vsako stikalo prižge "
-"ali ugasne luč, vpliva pa tudi na vse ostale luči. Cilj igre je enostaven: "
-"ugasniti je treba vse luči."
-
-#: data/lightsoff.appdata.xml.in:15
-msgid ""
-"Players who delight in turning off lights will enjoy the huge number of "
-"levels."
-msgstr "Pri igri je na voljo veliko število postavitev različne zahtevnosti."
-
-#: data/lightsoff.appdata.xml.in:39
-msgid "The GNOME Project"
-msgstr "Projekt GNOME"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
-msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "igra;logika;tabla;ploščki;uganke;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
 
 #: data/lightsoff-menus.ui:7
 msgid "_Start Over"
@@ -84,11 +44,53 @@ msgstr "Pomo_č"
 msgid "_About Lights Off"
 msgstr "_O igri"
 
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
+msgid "Lights Off"
+msgstr "Ugasni luči"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
+msgid "Turn off all the lights"
+msgstr "Ugasni vse luči"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:10
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"Igra Ugasni luči je igra prižiganja in ugašanja žarnic. Vsako stikalo prižge "
+"ali ugasne luč, vpliva pa tudi na vse ostale luči. Cilj igre je enostaven: "
+"ugasniti je treba vse luči."
+
+#: data/org.gnome.LightsOff.appdata.xml.in:15
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr "Pri igri je na voljo veliko število postavitev različne zahtevnosti."
+
+#: data/org.gnome.LightsOff.appdata.xml.in:42
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.LightsOff.desktop.in:6
+msgid "game;logic;board;tiles;adjacent;puzzle;"
+msgstr "igra;logika;tabla;ploščki;uganke;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.LightsOff.desktop.in:8
+#| msgid "Lights Off"
+msgid "org.gnome.LightsOff"
+msgstr "org.gnome.LightsOff"
+
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Trenutna raven"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Uporabnikova zadnja dosežena raven."
 
@@ -125,6 +127,9 @@ msgstr "Uganka %d"
 #: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Ugasni vse luči"
+
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
 
 #~ msgid "_About"
 #~ msgstr "_O Programu"
