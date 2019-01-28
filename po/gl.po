@@ -10,34 +10,57 @@
 # Antón Méixome <meixome@mancomun.org>, 2009.
 # Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
 # Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.
-# Fran Dieguez <frandieguez@gnome.org>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
+# Fran Dieguez <frandieguez@gnome.org>, 2011-2019.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games-master-po-gl-54590\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-07-19 20:55+0000\n"
-"PO-Revision-Date: 2018-08-30 00:34+0200\n"
+"POT-Creation-Date: 2019-01-19 20:15+0000\n"
+"PO-Revision-Date: 2019-01-29 00:07+0100\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
-"Language-Team: Proxecto Trasno <proxecto@trasno.gal>\n"
+"Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.30.0\n"
 "X-Project-Style: gnome\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "_Iniciar de novo"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "_Anteriro quebracabezas"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "S_eguinte quebracabezas"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "_Axuda"
+
+#: data/lightsoff-menus.ui:29
+#| msgid "Lights Off"
+msgid "_About Lights Off"
+msgstr "Sobre _Apagar as luces"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Apagar as luces"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:106
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "Apagar todas as luces"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -47,7 +70,7 @@ msgstr ""
 "sobre unha luz apágaa ou acéndea, pero tamén troca todas as luces "
 "adxacentes. O seu obxectivo é simple: apagar todas as luces!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -55,72 +78,50 @@ msgstr ""
 "Os xogadores aos que lle gusta apagar luces gozaran da garn cantidade de "
 "niveis."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "O Proxecto GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "xogo;lóxica;taboleiro;celas;adxacente;quebracabezas;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
+#: data/org.gnome.LightsOff.desktop.in:8
+#| msgid "Lights Off"
+msgid "org.gnome.LightsOff"
+msgstr "org.gnome.LightsOff"
 
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "_Iniciar de novo"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "_Axuda"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "So_bre"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "_Saír"
-
-#: data/lightsoff.ui:14
-msgid "Return to the previous level"
-msgstr "Volver ao nivel anterior"
-
-#: data/lightsoff.ui:34
-msgid "Proceed to the next level"
-msgstr "Ir ao seguinte nivel"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "O nivel actual"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "O nivel máis recente do usuario."
 
-#: src/lightsoff.vala:112
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "Fran Diéguez <frandieguez@gnome.org>, 2009-2018.\n"
 "Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.\n"
 "Antón Méixome <meixome@mancomun.org>, 2009.\n"
 "Suso Baleato <suso.baleato@xunta.es>, 2009.\n"
-"Mancomún - Centro de Referencia e Servizos de Software Libre "
-"<g11n@mancomun.org>, 2009.\n"
+"Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun."
+"org>, 2009.\n"
 "Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.\n"
 "Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005, 2006.\n"
 "Jesús Bravo Álvarez <jba@pobox.com>, 2000."
 
-#: src/lightsoff.vala:133
+#: src/lightsoff.vala:142
 #, c-format
 msgid "Run `%s --help` to see a full list of available command line options.\n"
-msgstr "Executar `%s --help` para ver a lista completa de opcións de liña de ordes "
+msgstr ""
+"Executar `%s --help` para ver a lista completa de opcións de liña de ordes "
 "dispoñíbeis.\n"
 
-#: src/lightsoff-window.vala:92
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -128,11 +129,29 @@ msgstr[0] "%d movemento"
 msgstr[1] "%d movementos"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:98
-#, c-format
-msgid "Level %d"
-msgstr "Nivel %d"
-
 #: src/lightsoff-window.vala:102
+#, c-format
+msgid "Puzzle %d"
+msgstr "Quebracabezas %d"
+
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Apaga todas as luces!"
+
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
+
+#~ msgid "_About"
+#~ msgstr "So_bre"
+
+#~ msgid "_Quit"
+#~ msgstr "_Saír"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Volver ao nivel anterior"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Ir ao seguinte nivel"
+
+#~ msgid "Level %d"
+#~ msgstr "Nivel %d"
