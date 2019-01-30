@@ -1,5 +1,5 @@
 name: lightsoff
-version: git
+version: 3.30.0
 summary: Turn off all the lights
 description: |
   Lights Off is a collection of light switch puzzles. Clicking on a light
@@ -7,7 +7,7 @@ description: |
   too. Your objective is simple: turn off all the lights!
 
   Players who delight in turning off lights will enjoy the huge number of
-  levels.    
+  levels.
 
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: strict
@@ -16,7 +16,7 @@ plugs:
     gnome-3-26-1604:
       interface: content
       target: $SNAP/gnome-platform
-      default-provider: gnome-3-26-1604:gnome-3-26-1604
+      default-provider: gnome-3-26-1604
 
 slots:
   # for GtkApplication registration
@@ -46,24 +46,23 @@ parts:
     after: [desktop-gnome-platform]
     source: .
     source-type: git
-    prepare:
+    source-tag: 3.30.0
+    override-build: |
       sed -i.bak -e 's|Icon=lightsoff$|Icon=${SNAP}/meta/gui/lightsoff.svg|g' data/lightsoff.desktop.in
-    install: |
+      snapcraftctl build
       mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
-      cp ../src/data/icons/hicolor/scalable/lightsoff.svg $SNAPCRAFT_PART_INSTALL/meta/gui/
-      cp data/lightsoff.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
-    plugin: autotools
-    configflags: [--prefix=/snap/lightsoff/current/usr, --bindir=/snap/lightsoff/current/usr/games]
+      cp ../src/data/icons/hicolor/scalable/apps/lightsoff.svg $SNAPCRAFT_PART_INSTALL/meta/gui/
+      cp ../install/snap/lightsoff/current/usr/share/applications/lightsoff.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
+    plugin: meson
+    meson-parameters: [--prefix=/snap/lightsoff/current/usr, --bindir=/snap/lightsoff/current/usr/games]
     organize:
       snap/lightsoff/current/usr: usr
     build-packages:
-      - appstream-util
-      - gnome-pkg-tools
-      - intltool
-      - libclutter-1.0-dev
+      - itstool
       - libclutter-gtk-1.0-dev
       - libglib2.0-dev
       - libgtk-3-dev
       - librsvg2-dev
       - valac
-      - yelp-tools
+    stage-packages:
+      - libclutter-gtk-1.0-0
