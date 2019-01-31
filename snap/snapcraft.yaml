@@ -11,12 +11,18 @@ description: |
 
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict
+base: core18
+
+# Launchpad doesn't recognize these fields yet
+passthrough:
+  license: GPL-2.0+
+  title: Lights Off
 
 plugs:
-  gnome-3-26-1604:
+  gnome-3-28-1804:
     interface: content
     target: $SNAP/gnome-platform
-    default-provider: gnome-3-26-1604
+    default-provider: gnome-3-28-1804
   gtk-3-themes:
     interface: content
     target: $SNAP/data-dir/themes
@@ -35,26 +41,43 @@ slots:
 
 apps:
   lightsoff:
-    command: desktop-launch lightsoff
+    command: desktop-launch snapcraft-preload lightsoff
     plugs:
       - desktop
       - desktop-legacy
       - gsettings
-      - pulseaudio
       - opengl
       - unity7
       - wayland
     desktop: usr/share/applications/lightsoff.desktop
     environment:
-      PATH: $SNAP/usr/games:$PATH
+      GSETTINGS_SCHEMA_DIR: $SNAP/share/glib-2.0/schemas
 
 parts:
+# Needed by clutter
+  snapcraft-preload:
+    source: https://github.com/sergiusens/snapcraft-preload.git
+    plugin: cmake
+    build-packages:
+      - gcc-multilib
+      - g++-multilib
+
+  desktop-gnome-platform:
+    source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
+    source-subdir: gtk
+    plugin: make
+    make-parameters: ["FLAVOR=gtk3"]
+    build-packages:
+      - build-essential
+      - libgtk-3-dev
+    override-build: |
+      snapcraftctl build
+      mkdir -pv $SNAPCRAFT_PART_INSTALL/gnome-platform
+
   lightsoff:
-    build-attributes: [no-system-libraries]
     after: [desktop-gnome-platform]
-    source: .
+    source: ,
     source-type: git
-    source-tag: 3.30.0
     override-build: |
       sed -i.bak -e 's|Icon=lightsoff$|Icon=${SNAP}/meta/gui/lightsoff.svg|g' data/lightsoff.desktop.in
       snapcraftctl build
@@ -62,10 +85,11 @@ parts:
       cp ../src/data/icons/hicolor/scalable/apps/lightsoff.svg $SNAPCRAFT_PART_INSTALL/meta/gui/
       cp ../install/snap/lightsoff/current/usr/share/applications/lightsoff.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
     plugin: meson
-    meson-parameters: [--prefix=/snap/lightsoff/current/usr, --bindir=/snap/lightsoff/current/usr/games]
+    meson-parameters: [--prefix=/snap/lightsoff/current/usr]
     organize:
       snap/lightsoff/current/usr: usr
     build-packages:
+      - gettext
       - itstool
       - libclutter-gtk-1.0-dev
       - libglib2.0-dev
