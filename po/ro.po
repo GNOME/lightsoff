@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.ro\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-07-19 20:55+0000\n"
-"PO-Revision-Date: 2018-07-20 20:00+0300\n"
+"POT-Creation-Date: 2019-01-19 20:15+0000\n"
+"PO-Revision-Date: 2019-01-27 02:28+0200\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
 "com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
@@ -22,20 +22,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Poedit 2.0.9\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Launchpad-Export-Date: 2009-11-27 09:12+0000\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "_Start din nou"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "Puzzle-ul _anterior"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "Puzzle-ul _următor"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "_Ajutor"
+
+#: data/lightsoff-menus.ui:29
+msgid "_About Lights Off"
+msgstr "_Despre Opriți luminile"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Opriți luminile"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:106
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "Opriți toate luminile"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -46,7 +67,7 @@ msgstr ""
 "și toate luminile din jurul ei. Obiectivul este simplu: opriți toate "
 "luminile!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -54,58 +75,34 @@ msgstr ""
 "Jucătorii care sunt încântați să oprească lumini vor savura numărul ridicat "
 "de niveluri."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "Proiectul GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "game;logic;board;tiles;adjacent;puzzle;joc;logică;tablă;tile;adiacent;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
+#: data/org.gnome.LightsOff.desktop.in:8
+msgid "org.gnome.LightsOff"
+msgstr "org.gnome.LightsOff"
 
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "_Start din nou"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "_Ajutor"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "_Despre"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "_Ieșire"
-
-#: data/lightsoff.ui:14
-msgid "Return to the previous level"
-msgstr "Revino la nivelul precedent"
-
-#: data/lightsoff.ui:34
-msgid "Proceed to the next level"
-msgstr "Continuă la nivelul următor"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Nivelul curent"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Nivelul cel mai recent al utilizatorului."
 
-#: src/lightsoff.vala:112
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "Mugurel Tudor <mugurelu@gnome.ro>\n"
 "Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
-"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2018\n"
+"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2019\n"
 "\n"
 "Launchpad Contributions:\n"
 "  Adi Roiban https://launchpad.net/~adiroiban\n"
@@ -123,14 +120,14 @@ msgstr ""
 "  Mugurel Tudor https://launchpad.net/~mugurelu-gnome\n"
 "  leandrud https://launchpad.net/~leandrud"
 
-#: src/lightsoff.vala:133
+#: src/lightsoff.vala:142
 #, c-format
 msgid "Run `%s --help` to see a full list of available command line options.\n"
 msgstr ""
 "Rulați „%s --help” pentru a consulta o listă completă de opțiuni disponibile "
 "în linia de comandă.\n"
 
-#: src/lightsoff-window.vala:92
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -139,11 +136,29 @@ msgstr[1] "%d mutări"
 msgstr[2] "%d de mutări"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:98
-#, c-format
-msgid "Level %d"
-msgstr "Nivelul %d"
-
 #: src/lightsoff-window.vala:102
+#, c-format
+msgid "Puzzle %d"
+msgstr "Puzzle %d"
+
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Opriți toate luminile!"
+
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
+
+#~ msgid "_About"
+#~ msgstr "_Despre"
+
+#~ msgid "_Quit"
+#~ msgstr "_Ieșire"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Revino la nivelul precedent"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Continuă la nivelul următor"
+
+#~ msgid "Level %d"
+#~ msgstr "Nivelul %d"
