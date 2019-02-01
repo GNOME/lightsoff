@@ -76,7 +76,7 @@ parts:
 
   lightsoff:
     after: [desktop-gnome-platform]
-    source: ,
+    source: .
     source-type: git
     override-build: |
       sed -i.bak -e 's|Icon=lightsoff$|Icon=${SNAP}/meta/gui/lightsoff.svg|g' data/lightsoff.desktop.in
