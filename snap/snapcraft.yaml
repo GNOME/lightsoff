@@ -1,5 +1,5 @@
 name: lightsoff
-version: 3.30.0
+version: git
 summary: Turn off all the lights
 description: |
   Lights Off is a collection of light switch puzzles. Clicking on a light
