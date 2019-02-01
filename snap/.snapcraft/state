@@ -1,6 +1,0 @@
-!GlobalState
-assets:
-  build-packages:
-  - git-man=1:2.20.1-2ubuntu1
-  - git=1:2.20.1-2ubuntu1
-  build-snaps: []
