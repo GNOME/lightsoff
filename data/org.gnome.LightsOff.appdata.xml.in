@@ -63,5 +63,20 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+  <releases>
+    <release version="3.31.90" date="2019-02-04">
+      <description>
+        <p>Overview of changes in lightsoff 3.31.90</p>
+        <ul>
+          <li>Snap build fixes (Jeremy Bicha)</li>
+          <li>Unify application identifier !5 (Bilal Elmoussaoui)</li>
+          <li>Added tests to validate appdata and desktop !5 (Bilal Elmoussaoui)</li>
+          <li>Updated appdata !5 (Bilal Elmoussaoui)</li>
+          <li>Added flatpak nightly builds !6 (Bilal Elmoussaoui)</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
 
+    </release>
+  </releases>
 </component>

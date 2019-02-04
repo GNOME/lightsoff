@@ -1,3 +1,13 @@
+Lights Off 3.31.90
+==================
+
+* Snap build fixes (Jeremy Bicha)
+* Unify application identifier !5 (Bilal Elmoussaoui)
+* Added tests to validate appdata and desktop !5 (Bilal Elmoussaoui)
+* Updated appdata !5 (Bilal Elmoussaoui)
+* Added flatpak nightly builds !6 (Bilal Elmoussaoui)
+* Updated translations
+
 Lights Off 3.31.3
 ==================
 

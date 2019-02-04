@@ -1,5 +1,5 @@
 project('lightsoff', ['c','vala'],
-	version: '3.31.3',
+	version: '3.31.90',
 	meson_version: '>= 0.43.0',
 	license: 'GPLv2+'
 )
