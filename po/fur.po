@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-10-09 03:24+0000\n"
-"PO-Revision-Date: 2018-12-24 18:19+0100\n"
+"POT-Creation-Date: 2019-02-01 01:41+0000\n"
+"PO-Revision-Date: 2019-02-04 14:57+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <fur@li.org>\n"
 "Language: fur\n"
@@ -17,48 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2\n"
-
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:112 src/lightsoff.vala:134 src/lightsoff.vala:147
-msgid "Lights Off"
-msgstr "Distude lis lûs"
-
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:115
-msgid "Turn off all the lights"
-msgstr "Distude dutis lis lûs"
-
-#: data/lightsoff.appdata.xml.in:10
-msgid ""
-"Lights Off is a collection of light switch puzzles. Clicking on a light "
-"toggles it either on or off, but also toggles all the surrounding lights, "
-"too. Your objective is simple: turn off all the lights!"
-msgstr ""
-"\"Distude lis lûs\" a je une colezion di berdeis cun lis lûs: fasint clic "
-"suntune lûs cheste si pie o stude, ma a pie e stude ancje dutis lis lûs a "
-"tôr atôr. L'obietîf dal zûc al è sempliç: studâ dutis lis lûs!"
-
-#: data/lightsoff.appdata.xml.in:15
-msgid ""
-"Players who delight in turning off lights will enjoy the huge number of "
-"levels."
-msgstr ""
-"I zuiadôrs che a gjoldin chest gjenar di zûc a cjataràn une vore di nivei di "
-"finî."
-
-#: data/lightsoff.appdata.xml.in:39
-msgid "The GNOME Project"
-msgstr "Il progjet GNOME"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
-msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "zûc;zûcs;logjiche;taule;casele;berdei;lûs;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
 
 #: data/lightsoff-menus.ui:7
 msgid "_Start Over"
@@ -80,11 +38,55 @@ msgstr "_Jutori"
 msgid "_About Lights Off"
 msgstr "_Informazions su Distude lis lûs"
 
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
+msgid "Lights Off"
+msgstr "Distude lis lûs"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
+msgid "Turn off all the lights"
+msgstr "Distude dutis lis lûs"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:10
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"\"Distude lis lûs\" a je une colezion di berdeis cun lis lûs: fasint clic "
+"suntune lûs cheste si pie o stude, ma a pie e stude ancje dutis lis lûs a "
+"tôr atôr. L'obietîf dal zûc al è sempliç: studâ dutis lis lûs!"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:15
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"I zuiadôrs che a gjoldin chest gjenar di zûc a cjataràn une vore di nivei di "
+"finî."
+
+#: data/org.gnome.LightsOff.appdata.xml.in:42
+msgid "The GNOME Project"
+msgstr "Il progjet GNOME"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.LightsOff.desktop.in:6
+msgid "game;logic;board;tiles;adjacent;puzzle;"
+msgstr "zûc;zûcs;logjiche;taule;casele;berdei;lûs;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.LightsOff.desktop.in:8
+#| msgid "Lights Off"
+msgid "org.gnome.LightsOff"
+msgstr "org.gnome.LightsOff"
+
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Il nivel atuâl"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Il nivel plui resint dai utents."
 
@@ -115,6 +117,9 @@ msgstr "Puzzle %d"
 #: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Distude dutis lis lûs!"
+
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
 
 #~ msgid "_About"
 #~ msgstr "_Informazions"
