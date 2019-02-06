@@ -16,14 +16,14 @@
 # Petr Pulc <petrpulc@gmail.com>, 2009.
 # Andre Klapper <ak-47@gmx.net>, 2009.
 # Petr Kovar <pknbe@volny.cz>, 2008, 2012.
-# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-10-09 03:24+0000\n"
-"PO-Revision-Date: 2018-10-13 09:55+0200\n"
+"POT-Creation-Date: 2019-02-01 01:41+0000\n"
+"PO-Revision-Date: 2019-02-06 09:58+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -33,47 +33,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.7\n"
 "X-Project-Style: gnome\n"
-
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:112 src/lightsoff.vala:134 src/lightsoff.vala:147
-msgid "Lights Off"
-msgstr "Zhasněte světla"
-
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:115
-msgid "Turn off all the lights"
-msgstr "Zhasněte všechna světla"
-
-#: data/lightsoff.appdata.xml.in:10
-msgid ""
-"Lights Off is a collection of light switch puzzles. Clicking on a light "
-"toggles it either on or off, but also toggles all the surrounding lights, "
-"too. Your objective is simple: turn off all the lights!"
-msgstr ""
-"Zhasněte světla je sada hlavolamů založených na přepínání světel. Kliknutím "
-"na světlo jej rožnete nebo zhasnete, ale přepente tím i všechna okolní "
-"světla. Váš úkol je jednoduchý: všechna světla zhasnout!"
-
-#: data/lightsoff.appdata.xml.in:15
-msgid ""
-"Players who delight in turning off lights will enjoy the huge number of "
-"levels."
-msgstr ""
-"Hráči, které baví zhasínat světla, se mohou těšit na velké množství úrovní."
-
-#: data/lightsoff.appdata.xml.in:39
-msgid "The GNOME Project"
-msgstr "Projekt GNOME"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
-msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "hra;logická;desková;políčka;hlavolam;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
 
 #: data/lightsoff-menus.ui:7
 msgid "_Start Over"
@@ -95,11 +54,53 @@ msgstr "_Nápověda"
 msgid "_About Lights Off"
 msgstr "O _aplikaci Zhasněte světla"
 
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
+msgid "Lights Off"
+msgstr "Zhasněte světla"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
+msgid "Turn off all the lights"
+msgstr "Zhasněte všechna světla"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:10
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"Zhasněte světla je sada hlavolamů založených na přepínání světel. Kliknutím "
+"na světlo jej rožnete nebo zhasnete, ale přepente tím i všechna okolní "
+"světla. Váš úkol je jednoduchý: všechna světla zhasnout!"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:15
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"Hráči, které baví zhasínat světla, se mohou těšit na velké množství úrovní."
+
+#: data/org.gnome.LightsOff.appdata.xml.in:42
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.LightsOff.desktop.in:6
+msgid "game;logic;board;tiles;adjacent;puzzle;"
+msgstr "hra;logická;desková;políčka;hlavolam;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.LightsOff.desktop.in:8
+msgid "org.gnome.LightsOff"
+msgstr "org.gnome.LightsOff"
+
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Současná úroveň"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Uživatelova poslední úroveň."
 
@@ -144,18 +145,3 @@ msgstr "Hlavolam %d"
 #: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Zhasněte všechna světla!"
-
-#~ msgid "_About"
-#~ msgstr "O _aplikaci"
-
-#~ msgid "_Quit"
-#~ msgstr "U_končit"
-
-#~ msgid "Return to the previous level"
-#~ msgstr "Vrátit se do předchozí úrovně"
-
-#~ msgid "Proceed to the next level"
-#~ msgstr "Postoupit do následující úrovně"
-
-#~ msgid "Level %d"
-#~ msgstr "Úroveň %d"
