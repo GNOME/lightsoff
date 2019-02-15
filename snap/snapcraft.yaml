@@ -96,5 +96,3 @@ parts:
       - libgtk-3-dev
       - librsvg2-dev
       - valac
-    stage-packages:
-      - libclutter-gtk-1.0-0
