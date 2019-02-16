@@ -1,5 +1,5 @@
 # French translation of lightsoff.
-# Copyright (C) 1998-2018 Free Software Foundation, Inc.
+# Copyright (C) 1998-2019 Free Software Foundation, Inc.
 # This file is distributed under the same license as the lightsoff package.
 #
 # Vincent Renardias <vincent@ldsol.com>, 1998-1999.
@@ -14,7 +14,7 @@
 # Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
 # Benoît Dejean <benoit@placenet.org>, 2006.
 # Pierre Slamich <pierre.slamich@gmail.com>, 2006.
-# Marc Lorber <linux-lorber@club-internet.fr>, 2006
+# Marc Lorber <linux-lorber@club-internet.fr>, 2006.
 # Pierre Slamich <pierre.slamich@gmail.com>, 2006.
 # Claude Paroz <claude@2xlibre.net>, 2007-2010.
 # Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
@@ -22,16 +22,17 @@
 # Pierre Lemaire <pierre.lemaire@kamick.org>, 2008.
 # Laurent Coudeur <laurentc@iol.ie>, 2009.
 # Bruno Brouard <annoa.b@gmail.com>, 2012.
-# Bruno Cauet <brunocauet@gmail.com>, 2014
+# Bruno Cauet <brunocauet@gmail.com>, 2014.
 # Charles Monzat <superboa@hotmail.fr>, 2017.
+# Julien Humbert <julroy67@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-07-19 20:55+0000\n"
-"PO-Revision-Date: 2018-08-12 21:14+0200\n"
-"Last-Translator: Guillaume Bernard <associations@guillaume-bernard.fr>\n"
+"POT-Creation-Date: 2019-02-01 03:56+0000\n"
+"PO-Revision-Date: 2019-02-01 16:33+0900\n"
+"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: français <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -39,27 +40,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "_Recommencer"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "Tableau _précédent"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "Tableau _suivant"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "Aid_e"
+
+#: data/lightsoff-menus.ui:29
+msgid "_About Lights Off"
+msgstr "À _propos de Toutéteint"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Toutéteint"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:106
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "Éteindre toutes les lumières"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
-"Toutéteint est une collection de puzzles d’interrupteurs. Cliquer sur une "
-"lumière bascule son état, mais aussi celui des lumières tout autour. Votre "
-"objectif est simple : éteindre toutes les lumières !"
+"Toutéteint est une collection de casse-têtes d’interrupteurs. Cliquer sur "
+"une lumière bascule son état, mais aussi celui des lumières tout autour. "
+"Votre objectif est simple : éteindre toutes les lumières !"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -67,53 +89,29 @@ msgstr ""
 "Les joueurs qui se réjouissent d’éteindre toutes les lumières apprécieront "
 "le grand nombre de niveaux."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "Le projet GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "jeu;logique;plateau;tuiles;adjacentes;énigmes;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
+#: data/org.gnome.LightsOff.desktop.in:8
+msgid "org.gnome.LightsOff"
+msgstr "org.gnome.LightsOff"
 
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "_Recommencer"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "Aid_e"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "À _propos"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "_Quitter"
-
-#: data/lightsoff.ui:14
-msgid "Return to the previous level"
-msgstr "Retourner au niveau précédent"
-
-#: data/lightsoff.ui:34
-msgid "Proceed to the next level"
-msgstr "Avancer vers le niveau suivant"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Le niveau actuel"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Le niveau le plus récent des utilisateurs."
 
-#: src/lightsoff.vala:112
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "Christophe Merlet <redfox@redfoxcenter.org>\n"
@@ -127,16 +125,17 @@ msgstr ""
 "Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
 "Didier Vidal <didier-devel@melix.net>\n"
 "Pierre Lemaire <pierre.lemaire@kamick.org>\n"
-"Bruno Cauet <brunocauet@gmail.com>"
+"Bruno Cauet <brunocauet@gmail.com>\n"
+"Julien Humbert <julroy67@gmail.com>"
 
-#: src/lightsoff.vala:133
+#: src/lightsoff.vala:142
 #, c-format
 msgid "Run `%s --help` to see a full list of available command line options.\n"
 msgstr ""
 "Lancez « %s --help » pour voir une liste complète des options disponibles en "
 "ligne de commande.\n"
 
-#: src/lightsoff-window.vala:92
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -144,11 +143,11 @@ msgstr[0] "%d déplacement"
 msgstr[1] "%d déplacements"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:98
-#, c-format
-msgid "Level %d"
-msgstr "Niveau %d :"
-
 #: src/lightsoff-window.vala:102
+#, c-format
+msgid "Puzzle %d"
+msgstr "Tableau %d"
+
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Éteignez toutes les lumières !"
