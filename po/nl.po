@@ -38,14 +38,13 @@
 # Wouter Bolsterlee <wbolster@gnome.org>, 2008.
 # Redmar <redmar@ubuntu-nl.org>, 2011.
 # Justin van Steijn <jvs@fsfe.org>, 2015.
-# Nathan Follens <nthn@unseen.is>, 2017-2018.
+# Nathan Follens <nthn@unseen.is>, 2017-2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-12-08 08:58+0000\n"
-"PO-Revision-Date: 2018-02-08 18:37+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2019-01-19 20:15+0000\n"
+"PO-Revision-Date: 2019-02-24 15:58+0100\n"
 "Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -54,19 +53,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2011-09-18 07:04+0000\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:87 src/lightsoff.vala:109
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "Opnieuw _starten"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "Vorige _puzzel"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "Vol_gende puzzel"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "_Hulp"
+
+#: data/lightsoff-menus.ui:29
+msgid "_About Lights Off"
+msgstr "_Over Lichten uit"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Lichten uit"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:90
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "Schakel alle lichten uit"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -76,7 +96,7 @@ msgstr ""
 "op een licht schakelt het in of uit, maar ditzelfde gebeurt met de "
 "omliggende lichten. Uw doel is simpel: schakel alle lichten uit!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -84,54 +104,30 @@ msgstr ""
 "Spelers die het lukt om alle lichten uit te schakelen, zullen van het grote "
 "aantal niveaus genieten."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "Het Gnome-project"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "spel;logisch;bord;tegels;aanliggend;puzzel;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
+#: data/org.gnome.LightsOff.desktop.in:8
 #| msgid "Lights Off"
-msgid "lightsoff"
-msgstr "lightsoff"
+msgid "org.gnome.LightsOff"
+msgstr "org.gnome.LightsOff"
 
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "Opnieuw _starten"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "_Hulp"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "I_nfo"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "_Afsluiten"
-
-#: data/lightsoff.ui:15
-msgid "Return to the previous level"
-msgstr "Terugkeren naar het vorige niveau"
-
-#: data/lightsoff.ui:35
-msgid "Proceed to the next level"
-msgstr "Doorgaan naar het volgende niveau"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Het huidige niveau"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Meest recente niveau van de gebruiker."
 
-#: src/lightsoff.vala:96
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "Tino Meinen\n"
@@ -163,7 +159,15 @@ msgstr ""
 "  Wouter Bolsterlee (uws) https://launchpad.net/~uws\n"
 "  kerplunk https://launchpad.net/~schorpioen"
 
-#: src/lightsoff-window.vala:60
+#: src/lightsoff.vala:142
+#, c-format
+msgid ""
+"Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Voer `%s --help` uit voor een volledige lijst met beschikbare "
+"opdrachtregelopties.\n"
+
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -171,11 +175,30 @@ msgstr[0] "%d beweging"
 msgstr[1] "%d bewegingen"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:102
 #, c-format
-msgid "Level %d"
-msgstr "Niveau %d"
+msgid "Puzzle %d"
+msgstr "Puzzel %d"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Schakel alle lichten uit!"
+
+#~| msgid "Lights Off"
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
+
+#~ msgid "_About"
+#~ msgstr "I_nfo"
+
+#~ msgid "_Quit"
+#~ msgstr "_Afsluiten"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Terugkeren naar het vorige niveau"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Doorgaan naar het volgende niveau"
+
+#~ msgid "Level %d"
+#~ msgstr "Niveau %d"
