@@ -5,13 +5,13 @@
 # Peteris Krisjanis <peteris.krisjanis@os.lv>, 2002.
 # Raivis Dejus <orvils@gmail.com>, 2006, 2007.
 # Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010, 2011.
-# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2014, 2016, 2017, 2018.
+# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-07-19 20:55+0000\n"
-"PO-Revision-Date: 2018-08-31 21:00+0200\n"
+"POT-Creation-Date: 2019-01-19 20:15+0000\n"
+"PO-Revision-Date: 2019-03-03 14:18+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -24,17 +24,39 @@ msgstr ""
 "X-Poedit-Language: Latvian\n"
 "X-Poedit-Country: LATVIA\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "_Sākt no jauna"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "Ie_priekšējā mīkla"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "Nā_kamā mīkla"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "_Palīdzība"
+
+#: data/lightsoff-menus.ui:29
+#| msgid "Lights Off"
+msgid "_About Lights Off"
+msgstr "P_ar “Izslēgt gaismu”"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Izslēgt gaismu"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:106
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "Izslēdziet visas gaismas"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -44,7 +66,7 @@ msgstr ""
 "attiecīgi ieslēgta vai izslēgta, bet līdzi tiek pārslēgtas arī blakus esošās "
 "gaismas. Tavs mērķis ir izslēgt visas gaismas!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -52,67 +74,44 @@ msgstr ""
 "Tiem spēlētājiem, kuriem patīk izslēgt gaismas, būs pieejams milzīgs līmeņu "
 "skaits."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "GNOME projekts"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "spēle;loģika;galdiņš;flīzes;blakus;mīkla;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
+#: data/org.gnome.LightsOff.desktop.in:8
+#| msgid "Lights Off"
+msgid "org.gnome.LightsOff"
+msgstr "org.gnome.LightsOff"
 
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "_Sākt no jauna"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "_Palīdzība"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "P_ar"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "_Iziet"
-
-#: data/lightsoff.ui:14
-msgid "Return to the previous level"
-msgstr "Atgriezties uz iepriekšējo līmeni"
-
-#: data/lightsoff.ui:34
-msgid "Proceed to the next level"
-msgstr "Iet uz nākamo līmeni"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Pašreizējais līmenis"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Lietotāja pēdējais līmenis."
 
-#: src/lightsoff.vala:112
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "Raivis Dejus <orvils@gmail.com>\n"
 "Sandra Zabarovska <sandra.zabarovska@gmail.com>\n"
 "Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>"
 
-#: src/lightsoff.vala:133
+#: src/lightsoff.vala:142
 #, c-format
 msgid "Run `%s --help` to see a full list of available command line options.\n"
 msgstr ""
 "Palaidiet “%s --help”, lai redzētu pilnu pieejamo komandrindas iespēju "
 "sarakstu.\n"
 
-#: src/lightsoff-window.vala:92
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -121,12 +120,29 @@ msgstr[1] "%d gājieni"
 msgstr[2] "%d gājienu"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:98
-#, c-format
-msgid "Level %d"
-msgstr "Līmenis %d"
-
 #: src/lightsoff-window.vala:102
+#, c-format
+msgid "Puzzle %d"
+msgstr "Mīkla %d"
+
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Izslēdziet visas gaismas!"
 
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
+
+#~ msgid "_About"
+#~ msgstr "P_ar"
+
+#~ msgid "_Quit"
+#~ msgstr "_Iziet"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Atgriezties uz iepriekšējo līmeni"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Iet uz nākamo līmeni"
+
+#~ msgid "Level %d"
+#~ msgstr "Līmenis %d"
