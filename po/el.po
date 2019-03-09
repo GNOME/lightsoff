@@ -36,29 +36,51 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.el\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-07-19 20:55+0000\n"
-"PO-Revision-Date: 2018-09-08 11:57+0300\n"
-"Last-Translator: Tom Tryfonidis <tomtryf@gnome.org>\n"
+"POT-Creation-Date: 2019-01-19 20:15+0000\n"
+"PO-Revision-Date: 2019-03-09 19:37+0200\n"
+"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
 "Language-Team: Ελληνικά <>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Project-Style: gnome\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "_Αρχίστε ξανά"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "_Προηγούμενος γρίφος"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "Επό_μενος γρίφος"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: data/lightsoff-menus.ui:29
+#| msgid "Lights Off"
+msgid "_About Lights Off"
+msgstr "_Περί του Σβήστε τα φώτα"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Σβήστε τα φώτα"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:106
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "Σβήστε όλα τα φώτα"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -68,7 +90,7 @@ msgstr ""
 "ένα φως εναλλάσσεται σε αναμμένο ή σβηστό, αλλά αλλάζει επίσης και όλα τα "
 "περιβάλλοντα φώτα. Ο σκοπός σας είναι απλός: σβήστε όλα τα φώτα!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -76,55 +98,32 @@ msgstr ""
 "Οι παίχτες που χαίρονται με το σβήσιμο των φώτων θα απολαύσουν ένα τεράστιο "
 "αριθμό επιπέδων."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "Το έργο GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr ""
 "παιχνίδι;λογική;πίνακας;παραθέσεις;γειτονικός;γρίφος;game;logic;board;tiles;"
 "adjacent;puzzle;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
+#: data/org.gnome.LightsOff.desktop.in:8
+#| msgid "Lights Off"
+msgid "org.gnome.LightsOff"
+msgstr "org.gnome.LightsOff"
 
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "_Αρχίστε ξανά"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "_Βοήθεια"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "_Περί"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "Έ_ξοδος"
-
-#: data/lightsoff.ui:14
-msgid "Return to the previous level"
-msgstr "Επιστροφή στο προηγούμενο επίπεδο"
-
-#: data/lightsoff.ui:34
-msgid "Proceed to the next level"
-msgstr "Μετάβαση στο επόμενο επίπεδο"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Το τρέχον επίπεδο"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Το πιο πρόσφατο επίπεδο του χρήστη."
 
-#: src/lightsoff.vala:112
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -133,19 +132,19 @@ msgstr ""
 "Συμεών (Σίμος) Ξενιτέλλης <simos@hellug.gr>\n"
 "Κώστας Παπαδήμας <pkst@gmx.net>\n"
 "Τζένη Πετούμενου <epetoumenou@gmail.com>\n"
+"Ευστάθιος Ιωσηφίδης <iosifidis@opensuse.org>\n"
 "\n"
 "Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα\n"
 "http://gnome.gr/"
 
-#: src/lightsoff.vala:133
+#: src/lightsoff.vala:142
 #, c-format
-msgid ""
-"Run `%s --help` to see a full list of available command line options.\n"
+msgid "Run `%s --help` to see a full list of available command line options.\n"
 msgstr ""
 "Εκτελέστε «%s --help» για να δείτε την πλήρη λίστα των διαθέσιμων επιλογών "
 "της γραμμής εντολών.\n"
 
-#: src/lightsoff-window.vala:92
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -153,11 +152,29 @@ msgstr[0] "%d κίνηση"
 msgstr[1] "%d κινήσεις"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:98
-#, c-format
-msgid "Level %d"
-msgstr "Επίπεδο %d"
-
 #: src/lightsoff-window.vala:102
+#, c-format
+msgid "Puzzle %d"
+msgstr "Γρίφος %d"
+
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Σβήστε όλα τα φώτα!"
+
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
+
+#~ msgid "_About"
+#~ msgstr "_Περί"
+
+#~ msgid "_Quit"
+#~ msgstr "Έ_ξοδος"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Επιστροφή στο προηγούμενο επίπεδο"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Μετάβαση στο επόμενο επίπεδο"
+
+#~ msgid "Level %d"
+#~ msgstr "Επίπεδο %d"
