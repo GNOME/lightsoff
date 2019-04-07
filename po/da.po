@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2019-01-19 20:15+0000\n"
+"POT-Creation-Date: 2019-03-26 18:32+0000\n"
 "PO-Revision-Date: 2019-02-13 00:21+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -81,11 +81,6 @@ msgstr "GNOME-projektet"
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "spil;logik;bræt;brikker;tilstødende;omgivende;hjernebryder;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.LightsOff.desktop.in:8
-msgid "org.gnome.LightsOff"
-msgstr "org.gnome.LightsOff"
-
 #: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Den nuværende bane"
@@ -104,12 +99,14 @@ msgstr ""
 "Ole Laursen\n"
 "Ask Hjorth Larsen\n"
 "\n"
-"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
-"Mere info: http://www.dansk-gruppen.dk"
+"Dansk-gruppen\n"
+"Websted <http://dansk-gruppen.dk>\n"
+"E-mail <dansk@dansk-gruppen.dk>"
 
 #: src/lightsoff.vala:142
 #, c-format
-msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgid ""
+"Run `%s --help` to see a full list of available command line options.\n"
 msgstr ""
 "Kør “%s --help” for at se den fulde liste over tilgængelige "
 "kommandolinjetilvalg.\n"
@@ -131,6 +128,9 @@ msgstr "Opgave %d"
 msgid "Turn off all the lights!"
 msgstr "Sluk alle lysene!"
 
+#~ msgid "org.gnome.LightsOff"
+#~ msgstr "org.gnome.LightsOff"
+
 #~ msgid "lightsoff"
 #~ msgstr "lightsoff"
 
@@ -148,3 +148,4 @@ msgstr "Sluk alle lysene!"
 
 #~ msgid "Level %d"
 #~ msgstr "Bane %d"
+
