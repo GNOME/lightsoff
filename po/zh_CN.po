@@ -1,34 +1,34 @@
-# Chinese simplified translation for Gnome-games.
-# Copyright 2011 Free Software Foundation, Inc.
-#
+# Chinese simplified translation for lightsoff.
+# Copyright 2011-2018 lightsoff's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lightsoff package.
 # Aron Xu <aronxu@gnome.org>, 2011.
 # YunQiang Su <wzssyqa@gmail.com>, 2011, 2012.
 # Sphinx Jiang <yishanj13@gmail.com>, 2013.
 # Mingcong Bai <jeffbai@aosc.xyz>, 2018.
+# Dingzhong Chen <wsxy162@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-games master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-05-06 19:22+0000\n"
-"PO-Revision-Date: 2018-05-10 11:23-0500\n"
-"Last-Translator: Mingcong Bai <jeffbai@aosc.xyz>\n"
-"Language-Team: Chinese Simplified <i18n-zh@googlegroups.com>\n"
+"Project-Id-Version: lightsoff master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2018-08-25 08:31+0000\n"
+"PO-Revision-Date: 2018-09-06 11:28+0800\n"
+"Last-Translator: Dingzhong Chen <wsxy162@gmail.com>\n"
+"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:89 src/lightsoff.vala:111
+#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
 msgid "Lights Off"
 msgstr "关灯"
 
 #: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:92
+#: src/lightsoff.vala:106
 msgid "Turn off all the lights"
 msgstr "关闭所有的灯"
 
@@ -38,8 +38,8 @@ msgid ""
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
-"Lights Off 是关灯游戏的集合。点击一盏灯，将其切换为打开或关闭，周围的灯也"
-"会被切换。你的目标很简单：关闭所有的灯！"
+"Lights Off 是关灯游戏的集合。点击一盏灯，将其切换为打开或关闭，周围的灯也会被"
+"切换。你的目标很简单：关闭所有的灯！"
 
 #: data/lightsoff.appdata.xml.in:15
 msgid ""
@@ -77,11 +77,11 @@ msgstr "关于(_A)"
 msgid "_Quit"
 msgstr "退出(_Q)"
 
-#: data/lightsoff.ui:15
+#: data/lightsoff.ui:14
 msgid "Return to the previous level"
 msgstr "返回上一关卡"
 
-#: data/lightsoff.ui:35
+#: data/lightsoff.ui:34
 msgid "Proceed to the next level"
 msgstr "前进到下一关卡"
 
@@ -93,27 +93,33 @@ msgstr "当前关卡"
 msgid "The users’s most recent level."
 msgstr "用户最近的关卡。"
 
-#: src/lightsoff.vala:98
+#: src/lightsoff.vala:112
 msgid "translator-credits"
 msgstr ""
 "Yang Zhang <zyangmath@gmail.com>, 2007\n"
 "Ping Z <zpsigma@gmail.com>, 2007\n"
 "Xhacker Liu <liu.dongyuan@gmail.com>, 2010\n"
 "Mandy Wang <wangmychn@gmail.com>, 2016\n"
-"Mingcong Bai <jeffbai@aosc.io>, 2018"
+"Mingcong Bai <jeffbai@aosc.io>, 2018\n"
+"Dingzhong Chen <wsxy162@gmail.com>, 2018"
 
-#: src/lightsoff-window.vala:60
+#: src/lightsoff.vala:133
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr "运行“%s --help”以查看可用命令行选项的完整列表。\n"
+
+#: src/lightsoff-window.vala:92
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
-msgstr[0] "变化 %d 次"
+msgstr[0] "%d 步"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:98
 #, c-format
 msgid "Level %d"
 msgstr "关卡 %d"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:102
 msgid "Turn off all the lights!"
 msgstr "关闭所有的灯！"
