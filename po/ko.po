@@ -10,7 +10,8 @@
 #
 # Junyoul Lim <purum@postech.ac.kr>, 2017
 # Changwoo Ryu <cwryu@debian.org>, 2013-2015, 2018.
-# Hyunwoo Park <ez.amiryo@gmail.com>, 2018
+# Hyunwoo Park <ez.amiryo@gmail.com>, 2018.
+# Seong-ho Cho <shcho@gnome.org>, 2019.
 #
 #
 # 새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
@@ -22,28 +23,49 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-07-19 20:55+0000\n"
-"PO-Revision-Date: 2018-08-25 17:11+0900\n"
-"Last-Translator: Hyunwoo Park <ez.amiryo@gmail.com>\n"
+"POT-Creation-Date: 2019-03-26 18:31+0000\n"
+"PO-Revision-Date: 2019-09-02 10:17+0900\n"
+"Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2.3\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "처음부터 시작(_S)"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "이전 퍼즐(_P)"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "다음 퍼즐(_X)"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "도움말(_H)"
+
+#: data/lightsoff-menus.ui:29
+msgid "_About Lights Off"
+msgstr "불 끄기 정보(_A)"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "불 끄기"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:106
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "모든 불을 끄십시오"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -52,84 +74,74 @@ msgstr ""
 "불 끄기는 전등 스위치 퍼즐 모음입니다. 불을 누르면 켜거나 끕니다. 또 주위"
 "의 불도 같이 켜거나 끕니다. 목표는 간단합니다. 모든 불을 끄십시오!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr "여러 가지 불 끄기 게임이 있습니다."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "그놈 프로젝트"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr ""
 "game;게임;logic;로직;논리;board;보드;tiles;타일;adjacent;옆칸;puzzle;퍼즐;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
-
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "처음부터 시작(_S)"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "도움말(_H)"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "정보(_A)"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "끝내기(_Q)"
-
-#: data/lightsoff.ui:14
-msgid "Return to the previous level"
-msgstr "이전 단계로 돌아가기"
-
-#: data/lightsoff.ui:34
-msgid "Proceed to the next level"
-msgstr "다음 단계로 진행하기"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "현재 단계"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "사용자의 최근 게임 단계."
 
-#: src/lightsoff.vala:112
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "류창우 <cwryu@debian.org>\n"
 "임준열 <purum@postech.ac.kr>\n"
-"박현우 <ez.amiryo@gmail.com>"
+"박현우 <ez.amiryo@gmail.com>\n"
+"조성호 <shcho@gnome.org>"
 
-#: src/lightsoff.vala:133
+#: src/lightsoff.vala:142
 #, c-format
 msgid ""
 "Run `%s --help` to see a full list of available command line options.\n"
 msgstr "전체 명령어 옵션 목록을 보려면 `%s --help` 명령을 실행하십시오.\n"
 
-#: src/lightsoff-window.vala:92
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
 msgstr[0] "%d번 움직임"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:98
-#, c-format
-msgid "Level %d"
-msgstr "단계 %d"
-
 #: src/lightsoff-window.vala:102
+#, c-format
+msgid "Puzzle %d"
+msgstr "퍼즐 %d단계"
+
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "모든 불을 끄십시오!"
+
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
+
+#~ msgid "_About"
+#~ msgstr "정보(_A)"
+
+#~ msgid "_Quit"
+#~ msgstr "끝내기(_Q)"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "이전 단계로 돌아가기"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "다음 단계로 진행하기"
+
+#~ msgid "Level %d"
+#~ msgstr "단계 %d"
