@@ -13,9 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-07-20 20:51+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2019-03-26 18:31+0000\n"
 "PO-Revision-Date: 2013-09-16 14:07+0900\n"
 "Last-Translator: Jiro Matsuzawa <jmatsuzawa@gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -25,56 +24,74 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr ""
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr ""
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr ""
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: data/lightsoff-menus.ui:29
+#, fuzzy
+#| msgid "Lights Off"
+msgid "_About Lights Off"
+msgstr "Lights Off"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Lights Off"
 
-#: ../data/lightsoff.desktop.in.in.h:2
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "すべてのライトを消すゲーム"
 
-#: ../data/lightsoff.desktop.in.in.h:3
+#: data/org.gnome.LightsOff.appdata.xml.in:10
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+
+#: data/org.gnome.LightsOff.appdata.xml.in:15
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+
+#: data/org.gnome.LightsOff.appdata.xml.in:42
+msgid "The GNOME Project"
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr ""
 "game;logic;board;tiles;adjacent;puzzle;ゲーム;ロジック;論理;ボード;タイル;隣"
 "接;パズル;"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "現在のレベル"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
-msgid "The users's most recent level."
+#: data/org.gnome.LightsOff.gschema.xml:7
+#, fuzzy
+#| msgid "The users's most recent level."
+msgid "The users’s most recent level."
 msgstr "ユーザーの最近のレベルです。"
 
-#: ../src/lightsoff.vala:32
-msgid "_New Game"
-msgstr "新しいゲーム(_N)"
-
-#: ../src/lightsoff.vala:35
-msgid "_Help"
-msgstr "ヘルプ(_H)"
-
-#: ../src/lightsoff.vala:36
-msgid "_About"
-msgstr "このアプリケーションについて(_A)"
-
-#: ../src/lightsoff.vala:39
-msgid "_Quit"
-msgstr "終了(_Q)"
-
-#: ../src/lightsoff.vala:150
-msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
-msgstr ""
-"すべてのライトを消すゲーム\n"
-"\n"
-"Lights Off は GNOME ゲーム集の一部です。"
-
-#: ../src/lightsoff.vala:157
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "相花 毅 <takeshi.aihana@gmail.com>\n"
@@ -87,6 +104,46 @@ msgstr ""
 "松澤 二郎 <jmatsuzawa@gnome.org>\n"
 "日本GNOMEユーザー会 <http://www.gnome.gr.jp>"
 
-#: ../src/lightsoff.vala:160
-msgid "GNOME Games web site"
-msgstr "GNOME ゲーム集のウェブサイト"
+#: src/lightsoff.vala:142
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+
+#: src/lightsoff-window.vala:96
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] ""
+
+#. The title of the window, %d is the level number
+#: src/lightsoff-window.vala:102
+#, c-format
+msgid "Puzzle %d"
+msgstr ""
+
+#: src/lightsoff-window.vala:106
+#, fuzzy
+#| msgid "Turn off all the lights"
+msgid "Turn off all the lights!"
+msgstr "すべてのライトを消すゲーム"
+
+#~ msgid "_New Game"
+#~ msgstr "新しいゲーム(_N)"
+
+#~ msgid "_About"
+#~ msgstr "このアプリケーションについて(_A)"
+
+#~ msgid "_Quit"
+#~ msgstr "終了(_Q)"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "すべてのライトを消すゲーム\n"
+#~ "\n"
+#~ "Lights Off は GNOME ゲーム集の一部です。"
+
+#~ msgid "GNOME Games web site"
+#~ msgstr "GNOME ゲーム集のウェブサイト"
