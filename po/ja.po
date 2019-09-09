@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
 "POT-Creation-Date: 2019-03-26 18:31+0000\n"
-"PO-Revision-Date: 2019-09-08 18:00+0900\n"
+"PO-Revision-Date: 2019-09-09 18:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: data/lightsoff-menus.ui:7
 msgid "_Start Over"
-msgstr "一からやり直す(_S)"
+msgstr "最初からやり直す(_S)"
 
 #: data/lightsoff-menus.ui:12
 msgid "_Previous puzzle"
