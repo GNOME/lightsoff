@@ -5,17 +5,16 @@
 # Elnaz Sarbar <elnaz@farsiweb.info>, 2005, 2006.
 # Meelad Zakaria <meelad@farsiweb.info>, 2005.
 # Farzaneh Sarafraz <farzaneh@farsiweb.info>, 2006.
-# Danial Behzadi <dani.behzi@ubuntu.com>, 2012, 2015.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2012, 2015, 2016, 2018, 2019.
 # Arash Mousavi <mousavi.arash@gmail.com>, 2012, 2013, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games HEAD\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-04-06 10:07+0000\n"
-"PO-Revision-Date: 2017-09-22 23:18+0330\n"
-"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2019-09-25 06:56+0000\n"
+"PO-Revision-Date: 2019-09-25 17:04+0330\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -23,94 +22,110 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
-msgid "Lights Off"
-msgstr "چراغ‌ها خاموش"
-
-#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:90
-msgid "Turn off all the lights"
-msgstr "تمامی چراغ‌ها را خاموش کنید"
-
-#: ../data/lightsoff.appdata.xml.in.h:3
-msgid ""
-"Lights Off is a collection of light switch puzzles. Clicking on a light "
-"toggles it either on or off, but also toggles all the surrounding lights, "
-"too. Your objective is simple: turn off all the lights!"
-msgstr ""
-"چراغ‌ها خاموش مجموعه‌ای از پازل‌های تغییر چراغ است. کلیک روی یک چراغ، آن و تمام "
-"چراغ‌های مجاورش را روشن یا خاموش می‌کند. هدف شما ساده است: تمام چراغ‌ها را "
-"خاموش کنید!"
-
-#: ../data/lightsoff.appdata.xml.in.h:4
-msgid ""
-"Players who delight in turning off lights will enjoy the huge number of "
-"levels."
-msgstr ""
-"بازیکنانی که از خاموش کردن چراغ‌ها لذّت می‌برند، از تعداد زیاد مراحل خوشحال "
-"خواهند شد."
-
-#: ../data/lightsoff.appdata.xml.in.h:5
-msgid "The GNOME Project"
-msgstr "پروژه گنوم"
-
-#: ../data/lightsoff.desktop.in.h:3
-msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "بازی;منطق;تخته;کاشی;مجاور;پازل;game;logic;board;tiles;adjacent;puzzle;"
-
-#: ../data/lightsoff-menus.ui.h:1
+#: data/lightsoff-menus.ui:7
 msgid "_Start Over"
-msgstr "_شروع مجدد"
+msgstr "_شروع دوباره"
 
-#: ../data/lightsoff-menus.ui.h:2
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "پازل _پیشین"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "پازل _بعدی"
+
+#: data/lightsoff-menus.ui:24
 msgid "_Help"
 msgstr "_راهنما"
 
-#: ../data/lightsoff-menus.ui.h:3
-msgid "_About"
-msgstr "_درباره"
+#: data/lightsoff-menus.ui:29
+msgid "_About Lights Off"
+msgstr "_دربارهٔ چراغ‌ها خاموش"
 
-#: ../data/lightsoff-menus.ui.h:4
-msgid "_Quit"
-msgstr "_خروج"
+#: data/org.gnome.LightsOff.appdata.xml.in:7 data/org.gnome.LightsOff.desktop.in:3
+#: src/lightsoff.vala:112 src/lightsoff.vala:134 src/lightsoff.vala:147
+msgid "Lights Off"
+msgstr "چراغ‌ها خاموش"
 
-#: ../data/lightsoff.ui.h:1
-msgid "Return to the previous level"
-msgstr "بازگشت به مرحلهٔ پیش"
+#: data/org.gnome.LightsOff.appdata.xml.in:8 data/org.gnome.LightsOff.desktop.in:4
+#: src/lightsoff.vala:115
+msgid "Turn off all the lights"
+msgstr "تمام چراغ‌ها را خاموش کنید"
 
-#: ../data/lightsoff.ui.h:2
-msgid "Proceed to the next level"
-msgstr "گذار به مرحلهٔ بعد"
+#: data/org.gnome.LightsOff.appdata.xml.in:10
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light toggles "
+"it either on or off, but also toggles all the surrounding lights, too. Your "
+"objective is simple: turn off all the lights!"
+msgstr ""
+"چراغ‌ها خاموش مجموعه‌ای از پازل‌های تغییر چراغ است. کلیک روی یک چراغ، آن و تمام "
+"چراغ‌های مجاورش را روشن یا خاموش می‌کند. هدف شما ساده است: تمام چراغ‌ها را خاموش "
+"کنید!"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+#: data/org.gnome.LightsOff.appdata.xml.in:15
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of levels."
+msgstr ""
+"بازیکنانی که از خاموش کردن چراغ‌ها لذّت می‌برند، از تعداد زیاد مراحل خوشحال خواهند "
+"شد."
+
+#: data/org.gnome.LightsOff.appdata.xml.in:42
+msgid "The GNOME Project"
+msgstr "پروژه گنوم"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.LightsOff.desktop.in:6
+msgid "game;logic;board;tiles;adjacent;puzzle;"
+msgstr "بازی;منطق;تخته;کاشی;مجاور;پازل;game;logic;board;tiles;adjacent;puzzle;"
+
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "مرحلهٔ جاری"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "آخرین مرحلهٔ کاربر."
 
-#: ../src/lightsoff.vala:96
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "آرش موسوی <mousavi.arash@gmail.com>\n"
 "دانیال بهزادی <dani.behzi@ubuntu.com>"
 
-#: ../src/lightsoff-window.vala:60
+#: src/lightsoff.vala:142
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr "برای دیدن فهرست کامل دستورهای موجود خط فرمان، ‪%s --help‬ را اجرا کنید.\n"
+
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
 msgstr[0] "%Id حرکت"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:102
 #, c-format
-msgid "Level %d"
-msgstr "مرحلهٔ %Id"
+msgid "Puzzle %d"
+msgstr "پازل %Id"
 
-#: ../src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
-msgstr "تمامی چراغ‌ها را خاموش کنید!"
+msgstr "تمام چراغ‌ها را خاموش کنید!"
+
+#~ msgid "_About"
+#~ msgstr "_درباره"
+
+#~ msgid "_Quit"
+#~ msgstr "_خروج"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "بازگشت به مرحلهٔ پیش"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "گذار به مرحلهٔ بعد"
+
+#~ msgid "Level %d"
+#~ msgstr "مرحلهٔ %Id"
