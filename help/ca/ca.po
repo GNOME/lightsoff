@@ -158,7 +158,7 @@ msgstr ""
 
 #: C/basic.page:29(section/title)
 msgid "Using the mouse"
-msgstr "Ratolí sense fil"
+msgstr "Utilització del ratolí"
 
 #: C/basic.page:31(item/p)
 msgid "To select a tile move the mouse pointer over the tile and click it."
