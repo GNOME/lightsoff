@@ -44,7 +44,7 @@
 </list>	
 <figure>
   <desc>This shows the <app>Lights Off</app> pattern for level 3.</desc>
-  <media type="image" mime="image/png" src="figures/lo1.png" width="300" its:translate="no"></media>
+  <media type="image" mime="image/png" src="figures/lo1.png" width="300"></media>
 </figure>
 </section>
 
