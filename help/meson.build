@@ -14,7 +14,7 @@ lightsoff_help_pages = [
 lightsoff_help_media = [
     'figures/lightsoff.jpg',
     'figures/lightsoff_logo.jpg',
-    'figures/lo1.jpg',
+    'figures/lo1.png',
     'figures/lightsoff.ogv',
 ]
 

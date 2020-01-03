@@ -4,6 +4,7 @@
 	id="basic">
   <info>
     <revision pkgversion="3.4" version="0.1" date="2012-03-08" status="review"/>
+    <revision pkgversion="3.34" version="0.2" date="2020-01-03" status="review"/>
     <link type="guide" xref="index#play"/>
     <credit type="author copyright">
       <name>Perumal Viravan</name>
@@ -37,13 +38,13 @@
 <section id="level">
 <title>Progress through the levels</title>
 <list>
- <item><p>The progress through the levels is either by turning off all the lights in that level or using the arrow shaped buttons in the bottom of the game.</p></item>
- <item><p>The arrow shaped buttons at the bottom of the game allow you to skip the levels or return to the previous levels. The current level is shown at the bottom of the game.
+ <item><p>The progress through the levels is either by turning off all the lights in that level or by pressing the menu button in the top-right corner of the window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>.</p></item>
+ <item><p>The current level is shown in the title bar.
 </p></item>
 </list>	
 <figure>
-  <desc>This shows the <app>Lights Off</app> pattern for level 3, with the arrow shaped buttons at the bottom.</desc>
-  <media type="image" mime="image/jpg" src="figures/lo1.jpg" width="300" its:translate="no"></media>
+  <desc>This shows the <app>Lights Off</app> pattern for level 3.</desc>
+  <media type="image" mime="image/png" src="figures/lo1.png" width="300" its:translate="no"></media>
 </figure>
 </section>
 
