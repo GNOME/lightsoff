@@ -1,0 +1,755 @@
+# Indonesian translation for lightsoff.
+# Copyright (C) 2017 lightsoff's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lightsoff package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lightsoff master\n"
+"POT-Creation-Date: 2020-01-03 18:30+0000\n"
+"PO-Revision-Date: 2020-01-07 12:17+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Andika Triwidada <atriwidada@gnome.org>, 2020."
+
+#. (itstool) path: credit/name
+#: C/basic.page:10 C/bug-filing.page:14 C/develop.page:15
+#: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
+#: C/translate.page:15
+msgid "Perumal Viravan"
+msgstr "Perumal Viravan"
+
+#. (itstool) path: credit/years
+#: C/basic.page:12 C/rules.page:11 C/strategy.page:10
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: license/p
+#: C/basic.page:15 C/bug-filing.page:18 C/develop.page:19
+#: C/documentation.page:17 C/index.page:16 C/strategy.page:13
+#: C/translate.page:19
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#. (itstool) path: page/title
+#: C/basic.page:19
+msgid "Basics"
+msgstr "Dasar"
+
+#. (itstool) path: page/p
+#: C/basic.page:20
+msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
+msgstr ""
+"<app>Lights Off</app> dapat dimainkan menggunakan papan tik atau tetikus."
+
+#. (itstool) path: section/title
+#: C/basic.page:23
+msgid "Using the keyboard"
+msgstr "Menggunakan papan tik"
+
+#. (itstool) path: item/p
+#: C/basic.page:25
+msgid ""
+"To select a tile, use the arrow keys to move the spotlight on to that tile "
+"and press the <key>Enter</key> key."
+msgstr ""
+"Untuk memilih ubin, gunakan tombol panah untuk memindahkan sorotan ke ubin "
+"tersebut dan tekan tombol <key>Enter</key>."
+
+#. (itstool) path: item/p
+#: C/basic.page:26 C/basic.page:34
+msgid ""
+"Once a tile is selected it will toggle the state of the selected tile and "
+"its non-diagonal neighbors."
+msgstr ""
+"Setelah ubin dipilih, ubin tersebut akan beralih ke keadaan ubin dipilih dan "
+"tetangga non-diagonalnya."
+
+#. (itstool) path: section/title
+#: C/basic.page:31
+msgid "Using the mouse"
+msgstr "Menggunakan tetikus"
+
+#. (itstool) path: item/p
+#: C/basic.page:33
+msgid "To select a tile move the mouse pointer over the tile and click it."
+msgstr "Untuk memilih ubin, pindahkan pointer tetikus ke ubin dan klik."
+
+#. (itstool) path: section/title
+#: C/basic.page:39
+msgid "Progress through the levels"
+msgstr "Kemajuan melalui tingkat"
+
+#. (itstool) path: item/p
+#: C/basic.page:41
+#, fuzzy
+#| msgid ""
+#| "The progress through the levels is either by turning off all the lights "
+#| "in that level or using the arrow shaped buttons in the bottom of the game."
+msgid ""
+"The progress through the levels is either by turning off all the lights in "
+"that level or by pressing the menu button in the top-right corner of the "
+"window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
+msgstr ""
+"Kemajuan melalui tingkat ini baik dengan mematikan semua lampu di tingkat "
+"itu atau menggunakan tombol berbentuk panah di bawah permainan."
+
+#. (itstool) path: item/p
+#: C/basic.page:42
+msgid "The current level is shown in the title bar."
+msgstr "Tingkat saat ini ditampilkan di bilah judul."
+
+#. (itstool) path: figure/desc
+#: C/basic.page:46
+#, fuzzy
+#| msgid ""
+#| "This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
+#| "shaped buttons at the bottom."
+msgid "This shows the <app>Lights Off</app> pattern for level 3."
+msgstr ""
+"Hal ini menunjukkan pola <app>Lights Off</app> untuk level 3, dengan panah "
+"berbentuk tombol di bagian bawah."
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/basic.page:47
+msgctxt "_"
+msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+msgstr "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+
+#. (itstool) path: section/title
+#: C/basic.page:52
+msgid "Video Demonstration"
+msgstr "Video Demonstrasi"
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:9 C/develop.page:10 C/documentation.page:8
+#: C/translate.page:10
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#. (itstool) path: credit/years
+#: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
+#: C/translate.page:12
+msgid "2011"
+msgstr "2011"
+
+#. (itstool) path: page/title
+#: C/bug-filing.page:22
+msgid "Help make <app>Lights Off</app> better"
+msgstr "Bantu membuat <app>Lights Off</app> menjadi lebih baik"
+
+#. (itstool) path: section/title
+#: C/bug-filing.page:25
+msgid "Report a bug or suggest an improvement"
+msgstr "Melaporkan kutu atau menyarankan perbaikan"
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:26
+#, fuzzy
+#| msgid ""
+#| "<app>Lights Off</app> is maintained by a volunteer community. You are "
+#| "welcome to participate. If you notice a problem you can file a <em>bug "
+#| "report</em>. To file a bug, go to <link href=\"https://bugzilla.gnome.org/"
+#| "\"/>."
+msgid ""
+"<app>Lights Off</app> is maintained by a volunteer community. You are "
+"welcome to participate. If you notice a problem you can file a <em>bug "
+"report</em>. To file a bug, go to <link href=\"https://gitlab.gnome.org/"
+"GNOME/lightsoff/issues\"/>."
+msgstr ""
+"<app>Lights Off</app> dikelola oleh komunitas sukarelawan. Anda dipersilakan "
+"untuk berpartisipasi. Jika Anda melihat masalah Anda dapat mengajukan "
+"<em>laporan kutu</em>. Untuk mengajukan kutu, pergi ke <link href=\"https://"
+"bugzilla.gnome.org/\"/>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:29
+msgid ""
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
+msgstr ""
+"Ini adalah sistem pelacakan kutu dimana pengguna dan pengembang dapat "
+"mengajukan rincian tentang kutu, kres dan permintaan perangkat tambahan."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:32
+#, fuzzy
+#| msgid ""
+#| "To participate you need an account which will give you the ability to "
+#| "gain access, file bugs, and make comments. Also, you need to register so "
+#| "you can receive updates by e-mail about the status of your bug. If you "
+#| "don't already have an account, just click on the <gui>New Account</gui> "
+#| "link to create one."
+msgid ""
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>Sign in/Register</gui> link to "
+"create one."
+msgstr ""
+"Untuk berpartisipasi Anda perlu akun yang akan memberikan Anda kemampuan "
+"untuk mendapatkan akses, mengajukan kutu, dan membuat komentar. Juga, Anda "
+"harus mendaftar sehingga Anda dapat menerima pembaruan melalui surel tentang "
+"status kutu Anda. Jika Anda belum memiliki akun, klik pada <gui>Akun baru</"
+"gui> untuk membuatnya."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:36
+#, fuzzy
+#| msgid ""
+#| "Once you have an account, log in, click on <guiseq><gui>File a Bug</"
+#| "gui><gui>Applications</gui><gui>lightsoff</gui></guiseq>. Before "
+#| "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
+#| "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
+#| "<link href=\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff"
+#| "\">browse</link> for the bug to see if it already exists."
+msgid ""
+"Once you have an account, log in, click on <gui>New Issue</gui>. Before "
+"reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
+"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
+"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+"issues\">browse</link> for the bug to see if it already exists."
+msgstr ""
+"Setelah Anda memiliki akun, masuk, klik pada <guiseq><gui>Ajukan Kutu</"
+"gui><gui>Aplikasi</gui><gui>iagno</gui></guiseq>.  Sebelum melaporkan kutu, "
+"silakan baca <link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-writing."
+"html\">pedoman penulisan kutu</link>, dan silakan <link href=\"https://"
+"bugzilla.gnome.org/browse.cgi?product=lightsoff\">cari</link> untuk melihat "
+"apakah sudah ada.."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:43
+#, fuzzy
+#| msgid ""
+#| "If you are requesting a new feature, choose <gui>enhancement</gui> in the "
+#| "<gui>Severity</gui> menu. Fill in the Summary and Description sections "
+#| "and click <gui>Commit</gui>."
+msgid ""
+"If you are requesting a new feature, choose <gui>Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit issue</gui>."
+msgstr ""
+"Jika Anda meminta fitur baru, pilih <gui>tambahan</gui> dalam menu "
+"<gui>Severity</gui>. Isi bagian Ringkasan dan Deskripsi dan klik <gui>Komit</"
+"gui>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:47
+msgid ""
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
+msgstr ""
+"Laporan Anda akan diberikan nomor ID, dan statusnya akan diperbarui karena "
+"sedang ditangani. Terima kasih telah membantu membuat <app>Lights Off</app> "
+"menjadi lebih baik!"
+
+#. (itstool) path: page/title
+#: C/develop.page:23
+msgid "Help develop"
+msgstr "Membantu mengembangkan"
+
+#. (itstool) path: page/p
+#: C/develop.page:24
+msgid ""
+"The <app>GNOME Games</app> are developed and maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"<app>Permainan GNOME</app> dikembangkan dan dikelola oleh komunitas "
+"sukarelawan. Anda dipersilakan untuk berpartisipasi."
+
+#. (itstool) path: page/p
+#: C/develop.page:27
+#, fuzzy
+#| msgid ""
+#| "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
+#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our "
+#| "<link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing "
+#| "list</link>."
+msgid ""
+"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
+"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"link>."
+msgstr ""
+"Jika Anda ingin <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
+"\">membantu mengembangkan <app>Permainan GNOME</app></link>,  Anda dapat "
+"menghubungi pengembang dengan menggunakan <link href=\"https://cbe005.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, atau "
+"melalui <link href=\"http://mail.gnome.org/mailman/listinfo/games-list"
+"\">milis</link>."
+
+#. (itstool) path: page/title
+#: C/documentation.page:21
+msgid "Help write documentation"
+msgstr "Membantu menulis dokumentasi"
+
+#. (itstool) path: page/p
+#: C/documentation.page:23
+msgid ""
+"The <app>GNOME Games</app> documentation is maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"Dokumentasi <app>Permainan GNOME</app> dokumentasi dikelola oleh komunitas "
+"sukarelawan. Anda dipersilakan untuk berpartisipasi."
+
+#. (itstool) path: page/p
+#: C/documentation.page:26
+#, fuzzy
+#| msgid ""
+#| "To contribute to the Documentation Project, feel free to get in touch "
+#| "with us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
+#| "%2Firc.gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail."
+#| "gnome.org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"https://mail.gnome."
+"org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
+msgstr ""
+"Untuk berkontribusi pada Proyek Dokumentasi, jangan ragu untuk menghubungi "
+"kami menggunakan <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
+"%2Firc.gnome.org%2Fdocs\">irc</link>, atau melalui <link href=\"http://mail."
+"gnome.org/mailman/listinfo/gnome-doc-list\">milis</link>."
+
+#. (itstool) path: page/p
+#: C/documentation.page:28
+#, fuzzy
+#| msgid ""
+#| "Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+#| "\">wiki</link> page contains useful information."
+msgid ""
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> page contains useful information."
+msgstr ""
+"Halaman <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> kami berisi informasi yang berguna."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Lights Off"
+msgstr "Lights Off"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Lights Off"
+msgstr "Lights Off"
+
+#. (itstool) path: media/span
+#: C/index.page:21
+msgid "Lights Off logo"
+msgstr "Logo Lights Off"
+
+#. (itstool) path: page/title
+#: C/index.page:21
+msgid "<_:media-1/> Lights Off"
+msgstr "<_:media-1/> Lights Off"
+
+#. (itstool) path: page/p
+#: C/index.page:23
+msgid ""
+"<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
+"off all the lights. Each click on a tile toggles the state of the clicked "
+"tile and its non-diagonal neighbors."
+msgstr ""
+"<app>Lights Off</app> adalah teka-teki yang dimainkan pada grid 5X5 dengan "
+"tujuan untuk mematikan semua lampu. Setiap klik pada ubin akan mematikan "
+"keadaan ubin yang diklik dan tetangga non-diagonalnya."
+
+#. (itstool) path: section/title
+#: C/index.page:27
+msgid "Game Play"
+msgstr "Bermain Permainan"
+
+#. (itstool) path: section/title
+#: C/index.page:31
+msgid "Get Involved"
+msgstr "Terlibat"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Karya ini berada dibawah lisensi <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Informasi hukum."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Lisensi"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Karya ini berada dibawah lisensi CreativeCommons Attribution-Share Alike 3.0 "
+"Unported."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Anda bebas:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Untuk berbagi</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Untuk menyalin, menyebarkan, dan mengirimkan karya."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Untuk menggabungkan</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Untuk mengadaptasi karya."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Di bawah persyaratan berikut:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Atribusi</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Anda harus mengatribusi karya dengan cara yang telah ditentukan oleh "
+"pengarang atau pelisensi (tapi tidak bermaksud mengesankan bahwa mereka "
+"mendorong Anda atau penggunaan Anda terhadap karyanya)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Berbagi Serupa</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+#, fuzzy
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Jika anda mengubah, mentranformasikan, atau membuat atas dasar karya ini, "
+"anda dapat membagikan karya yang dihasilkan hanya pada dasar yang sama, "
+"mirip atau lisensi yang kompatibel."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+#, fuzzy
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Untuk lisensi yang lengkap, lihat <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/legalcode\">laman situs CreativeCommons</link>, atau "
+"membaca lengkap <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"\">akta Commons</link>."
+
+#. (itstool) path: page/title
+#: C/rules.page:16
+msgid "Rules"
+msgstr "Peraturan"
+
+#. (itstool) path: page/p
+#: C/rules.page:18
+msgid ""
+"In order to complete the <app>Lights Off</app> puzzle, you must turn off all "
+"the lights in the board. This will get you to advance to the next level."
+msgstr ""
+"Dalam rangka untuk menyelesaikan teka-teki <app>Lights Off</app>, Anda harus "
+"mematikan semua lampu di papan. Ini akan membuat Anda untuk maju ke tingkat "
+"berikutnya."
+
+#. (itstool) path: item/p
+#: C/rules.page:20
+msgid "The game begins with a pattern of lights on the 5x5 grid."
+msgstr "Permainan dimulai dengan pola lampu pada grid 5x5."
+
+#. (itstool) path: item/p
+#: C/rules.page:21
+msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
+msgstr "Pilih ubin untuk beralih wilayah dan wilayah tetangga non-diagonalnya."
+
+#. (itstool) path: item/p
+#: C/rules.page:22
+msgid ""
+"Once you have successfully turned off all the lights, you complete that "
+"level and move on to the next."
+msgstr ""
+"Setelah Anda berhasil mematikan semua lampu, Anda menyelesaikan tingkat "
+"tersebut dan pindah ke tingkat berikutnya."
+
+#. (itstool) path: page/title
+#: C/strategy.page:17
+msgid "Strategy"
+msgstr "Strategi"
+
+#. (itstool) path: page/p
+#: C/strategy.page:18
+msgid ""
+"This is a simple strategy to solve the <app>Lights Off</app> puzzle by using "
+"the method called \"Chase the Lights\"."
+msgstr ""
+"Ini adalah strategi sederhana untuk memecahkan teka-teki <app>Lights Off</"
+"app> dengan menggunakan metode yang disebut \"Mengejar Lampu\"."
+
+#. (itstool) path: item/p
+#: C/strategy.page:20
+msgid ""
+"Chase the lights starting from the first row. To chase the lights in the "
+"first row, click the tile on the second row corresponding to the light in "
+"the first row. This will turn off that light in the first row."
+msgstr ""
+"Mengejar lampu mulai dari baris pertama. Untuk mengejar lampu di baris "
+"pertama, klik ubin pada baris kedua sesuai dengan cahaya di baris pertama. "
+"Ini akan mematikan lampu yang di baris pertama."
+
+#. (itstool) path: note/p
+#: C/strategy.page:21
+msgid ""
+"This method can be used in the same way to chase the lights in other rows as "
+"well, i.e., if you want to chase the lights in the second row, click the "
+"corresponding tile in the third row."
+msgstr ""
+"Metode ini dapat digunakan dengan cara yang sama untuk mengejar lampu di "
+"baris lain juga, yaitu, jika Anda ingin mengejar lampu di baris kedua, klik "
+"sesuai ubin di baris ketiga."
+
+#. (itstool) path: item/p
+#: C/strategy.page:23
+msgid ""
+"In the same way continue to chase the lights in the second, third and fourth "
+"row. At the end of this you will be only left with the lights in the fifth "
+"row."
+msgstr ""
+"Dengan cara yang sama terus mengejar lampu di baris kedua, ketiga dan "
+"keempat. Pada akhirnya Anda hanya akan menyisakan lampu di baris kelima."
+
+#. (itstool) path: item/p
+#: C/strategy.page:25
+msgid ""
+"Now depending on which lights are remaining in the fifth row, click the "
+"tiles in the first row using the table given below."
+msgstr ""
+"Sekarang tergantung pada lampu yang tersisa di baris kelima, klik ubin di "
+"baris pertama menggunakan tabel di bawah ini."
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Lights Left on the fifth Row"
+msgstr "Lampu kiri pada Baris kelima"
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Tiles to Click on the First Row"
+msgstr "Ubin untuk Klik pada Baris Pertama"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "1, 2, 3"
+msgstr "1, 2, 3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "2"
+msgstr "2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "1, 2, 4, 5"
+msgstr "1, 2, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "3"
+msgstr "3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "1, 3, 4"
+msgstr "1, 3, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "5"
+msgstr "5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 5"
+msgstr "1, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 2"
+msgstr "1, 2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "2, 3, 5"
+msgstr "2, 3, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "1"
+msgstr "1"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "2, 4"
+msgstr "2, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "1, 4"
+msgstr "1, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "3, 4, 5"
+msgstr "3, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "4"
+msgstr "4"
+
+#. (itstool) path: item/p
+#: C/strategy.page:48
+msgid ""
+"Now again chase the lights starting from the first row. After chasing the "
+"lights this time your puzzle will be solved."
+msgstr ""
+"Sekarang mengejar lagi lampu mulai dari baris pertama. Setelah mengejar "
+"lampu saat ini teka-teki Anda akan dipecahkan."
+
+#. (itstool) path: note/p
+#: C/strategy.page:50
+msgid ""
+"This strategy doesn't always produce the optimal solution, it may take more "
+"moves."
+msgstr ""
+"Strategi ini tidak selalu menghasilkan solusi yang optimal, mungkin "
+"diperlukan lebih banyak pergerakan."
+
+#. (itstool) path: page/title
+#: C/translate.page:23
+msgid "Help translate"
+msgstr "Bantu menerjemahkan"
+
+#. (itstool) path: page/p
+#: C/translate.page:24
+msgid ""
+"The <app>GNOME Games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community. You are welcome to "
+"participate."
+msgstr ""
+"Antarmuka pengguna dan dokumentasi <app>Permainan GNOME</app> sedang "
+"diterjemahkan oleh komunitas sukarelawan di seluruh dunia. Anda dipersilakan "
+"untuk berpartisipasi."
+
+#. (itstool) path: page/p
+#: C/translate.page:27
+#, fuzzy
+#| msgid ""
+#| "There are <link href=\"http://l10n.gnome.org/module/lightsoff/\">many "
+#| "languages</link> for which translations are still needed."
+msgid ""
+"There are <link href=\"https://l10n.gnome.org/module/lightsoff/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"Terdapat <link href=\"http://l10n.gnome.org/module/lightsoff/\">banyak "
+"bahasa</link> yang terjemahannya masih diperlukan."
+
+#. (itstool) path: page/p
+#: C/translate.page:30
+#, fuzzy
+#| msgid ""
+#| "To start translating you will need to <link href=\"http://l10n.gnome.org"
+#| "\">create an account</link> and join the <link href=\"http://l10n.gnome."
+#| "org/teams/\">translation team</link> for your language. This will give "
+#| "you the ability to upload new translations."
+msgid ""
+"To start translating you will need to <link href=\"https://l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
+"teams/\">translation team</link> for your language. This will give you the "
+"ability to upload new translations."
+msgstr ""
+"Untuk memulai menerjemahkan Anda akan perlu untuk <link href=\"http://l10n."
+"gnome.org\">membuat akun</link> dan bergabung dengan <link href=\"http://"
+"l10n.gnome.org/teams/\">tim translasi</link> untuk bahasa Anda. Ini akan "
+"memberikan Anda kemampuan untuk mengunggah terjemahan baru."
+
+#. (itstool) path: page/p
+#: C/translate.page:34
+msgid ""
+"You can chat with GNOME translators using <link href=\"https://cbe003.chat."
+"mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
+"channel are located worldwide, so you may not get an immediate response as a "
+"result of timezone differences."
+msgstr ""
+"Anda dapat mengobrol dengan penerjemah GNOME menggunakan <link href="
+"\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n"
+"\">irc</link>. Orang pada saluran ini terletak di seluruh dunia, sehingga "
+"Anda mungkin tidak mendapatkan tanggapan langsung sebagai akibat dari "
+"perbedaan zona waktu."
+
+#. (itstool) path: page/p
+#: C/translate.page:37
+#, fuzzy
+#| msgid ""
+#| "Alternatively, you can contact the Internationalization Team using their "
+#| "<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+#| "list</link>."
+msgid ""
+"Alternatively, you can contact the Internationalization Team using their "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"list</link>."
+msgstr ""
+"Sebagai alternatif, Anda dapat menghubungi Tim Internasionalisasi "
+"menggunakan <link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n"
+"\">milis</link>."
