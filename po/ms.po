@@ -4,112 +4,128 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Gnome-Games 2.0.x\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-16 22:09+0000\n"
-"PO-Revision-Date: 2003-11-24 01:54+0800\n"
-"Last-Translator: Hasbullah Bin Pit <sebol@ikhlas.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2019-09-25 06:56+0000\n"
+"PO-Revision-Date: 2019-12-28 18:24+0800\n"
+"Last-Translator: abuyop <abuyop@gmail.com>\n"
 "Language-Team: Projek Gabai <gabai-penyumbang@lists.sourceforge.org>\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:87 src/lightsoff.vala:109
-#, fuzzy
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "_Mula Balik"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "Teka-Teki _terdahulu"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "Teka-Teki _berikutnya"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "_Bantuan"
+
+#: data/lightsoff-menus.ui:29
+msgid "_About Lights Off"
+msgstr "Perih_al Padam Lampu"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
-msgstr "Eight off"
+msgstr "Padam Lampu"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:90
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
-msgstr ""
+msgstr "Padam semua lampu"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
+"Padam Lampu ialah satu koleksi teka-teki suis lampu. Dengan mengklik satu "
+"lampu menyebabkannya dibuka atau ditutup, tetap menyebabkan semua lampu-"
+"lampu di sekelilingnya ditogol. Objektif anda adalah mudah: iaitu padam "
+"semua lampu!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
+"Pemain yang suka memadam lampu pasti menyukai sejumlah besar aras "
+"permainan ini."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
-msgstr ""
+msgstr "Projek GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr ""
+msgstr "permainan;logik;papan;jubin;bersebelahan;teka-teki;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-#, fuzzy
-msgid "lightsoff"
-msgstr "Eight off"
-
-#: data/lightsoff-menus.ui:7
-#, fuzzy
-msgid "_Start Over"
-msgstr "Mula semula permainan"
-
-#: data/lightsoff-menus.ui:14
-#, fuzzy
-msgid "_Help"
-msgstr "Bantuan"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr ""
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr ""
-
-#: data/lightsoff.ui:15
-#, fuzzy
-msgid "Return to the previous level"
-msgstr "Nyah acara pergerakan terakhir"
-
-#: data/lightsoff.ui:35
-#, fuzzy
-msgid "Proceed to the next level"
-msgstr "Ulang acara pergerakan yang dinyah acara"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
-#, fuzzy
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
-msgstr "Lihat bantuan bagi permainan semasa"
+msgstr "Aras semasa"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
-msgstr ""
+msgstr "Aras terkini pengguna."
 
-#: src/lightsoff.vala:96
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
-"\"kenang daku semasa bermain..ahaks...'\n"
-"Noor Azurah Anuar <gbumla@yahoo.com>, Bandar Hilir."
+"abuyop\n"
+"'kenang daku semasa bermain..ahaks...'\n"
+"Noor Azurah Anuar <gbumla@yahoo.com>, Bandar Hilir"
 
-#: src/lightsoff-window.vala:60
-#, fuzzy, c-format
+#: src/lightsoff.vala:142
+#, c-format
+msgid ""
+"Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Jalankan '%s --help' untuk melihat satu senarai penuh pilihan baris "
+"perintah yang tersedia.\n"
+
+#: src/lightsoff-window.vala:96
+#, c-format
 msgid "%d move"
 msgid_plural "%d moves"
-msgstr[0] "Pergerakan tidak sah."
-msgstr[1] "Pergerakan tidak sah."
+msgstr[0] "%d gerakan"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
-#, fuzzy, c-format
-msgid "Level %d"
-msgstr "Peringkat:"
+#: src/lightsoff-window.vala:102
+#, c-format
+msgid "Puzzle %d"
+msgstr "Teka-teki %d"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
-msgstr ""
+msgstr "Padam semua lampu!"
+
+#, fuzzy
+#~ msgid "lightsoff"
+#~ msgstr "Eight off"
+
+#, fuzzy
+#~ msgid "Return to the previous level"
+#~ msgstr "Nyah acara pergerakan terakhir"
+
+#, fuzzy
+#~ msgid "Proceed to the next level"
+#~ msgstr "Ulang acara pergerakan yang dinyah acara"
+
+#, fuzzy
+#~ msgid "Level %d"
+#~ msgstr "Peringkat:"
