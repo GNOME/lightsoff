@@ -1,14 +1,14 @@
 # Polish translation for lightsoff help.
-# Copyright © 2017-2018 the lightsoff authors.
+# Copyright © 2017-2020 the lightsoff authors.
 # This file is distributed under the same license as the lightsoff help.
-# Piotr Drąg <piotrdrag@gmail.com>, 2017-2018.
-# Aviary.pl <community-poland@mozilla.org>, 2017-2018.
+# Piotr Drąg <piotrdrag@gmail.com>, 2017-2020.
+# Aviary.pl <community-poland@mozilla.org>, 2017-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff-help\n"
-"POT-Creation-Date: 2018-06-02 16:45+0000\n"
-"PO-Revision-Date: 2018-08-12 01:01+0200\n"
+"POT-Creation-Date: 2020-01-07 05:20+0000\n"
+"PO-Revision-Date: 2020-01-12 19:12+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -22,45 +22,45 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2017-2018\n"
-"Aviary.pl <community-poland@mozilla.org>, 2017-2018"
+"Piotr Drąg <piotrdrag@gmail.com>, 2017-2020\n"
+"Aviary.pl <community-poland@mozilla.org>, 2017-2020"
 
 #. (itstool) path: credit/name
-#: C/basic.page:9 C/bug-filing.page:14 C/develop.page:15
+#: C/basic.page:10 C/bug-filing.page:14 C/develop.page:15
 #: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
 #: C/translate.page:15
 msgid "Perumal Viravan"
 msgstr "Perumal Viravan"
 
 #. (itstool) path: credit/years
-#: C/basic.page:11 C/rules.page:11 C/strategy.page:10
+#: C/basic.page:12 C/rules.page:11 C/strategy.page:10
 msgid "2012"
 msgstr "2012"
 
 #. (itstool) path: license/p
-#: C/basic.page:14 C/bug-filing.page:18 C/develop.page:19
+#: C/basic.page:15 C/bug-filing.page:18 C/develop.page:19
 #: C/documentation.page:17 C/index.page:16 C/strategy.page:13
 #: C/translate.page:19
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Share Alike 3.0"
 
 #. (itstool) path: page/title
-#: C/basic.page:18
+#: C/basic.page:19
 msgid "Basics"
 msgstr "Podstawy"
 
 #. (itstool) path: page/p
-#: C/basic.page:19
+#: C/basic.page:20
 msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
 msgstr "W grę <app>Lights Off</app> można grać za pomocą klawiatury lub myszy."
 
 #. (itstool) path: section/title
-#: C/basic.page:22
+#: C/basic.page:23
 msgid "Using the keyboard"
 msgstr "Używanie klawiatury"
 
 #. (itstool) path: item/p
-#: C/basic.page:24
+#: C/basic.page:25
 msgid ""
 "To select a tile, use the arrow keys to move the spotlight on to that tile "
 "and press the <key>Enter</key> key."
@@ -69,7 +69,7 @@ msgstr ""
 "to pole i naciśnij klawisz <key>Enter</key>."
 
 #. (itstool) path: item/p
-#: C/basic.page:25 C/basic.page:33
+#: C/basic.page:26 C/basic.page:34
 msgid ""
 "Once a tile is selected it will toggle the state of the selected tile and "
 "its non-diagonal neighbors."
@@ -78,50 +78,53 @@ msgstr ""
 "sąsiadów nie po przekątnej."
 
 #. (itstool) path: section/title
-#: C/basic.page:30
+#: C/basic.page:31
 msgid "Using the mouse"
 msgstr "Używanie myszy"
 
 #. (itstool) path: item/p
-#: C/basic.page:32
+#: C/basic.page:33
 msgid "To select a tile move the mouse pointer over the tile and click it."
 msgstr "Aby zaznaczyć pole, najedź na nie kursorem myszy i je kliknij."
 
 #. (itstool) path: section/title
-#: C/basic.page:38
+#: C/basic.page:39
 msgid "Progress through the levels"
 msgstr "Przechodzenie między poziomami"
 
 #. (itstool) path: item/p
-#: C/basic.page:40
-msgid ""
-"The progress through the levels is either by turning off all the lights in "
-"that level or using the arrow shaped buttons in the bottom of the game."
-msgstr ""
-"Można przechodząc między poziomami wyłączając wszystkie światła na danym "
-"poziomie lub używając przycisków w kształcie strzałek na dole gry."
-
-#. (itstool) path: item/p
 #: C/basic.page:41
 msgid ""
-"The arrow shaped buttons at the bottom of the game allow you to skip the "
-"levels or return to the previous levels. The current level is shown at the "
-"bottom of the game."
+"The progress through the levels is either by turning off all the lights in "
+"that level or by pressing the menu button in the top-right corner of the "
+"window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
 msgstr ""
-"Przyciski w kształcie strzałek na dole gry umożliwiają pominięcie poziomu "
-"lub powrót do poprzednich. Obecny poziom jest wyświetlany na dole gry."
+"Można przechodzić między poziomami wyłączając wszystkie światła na danym "
+"poziomie lub klikając przycisk menu w górnym prawym rogu okna i wybierając "
+"<gui>Następny poziom</gui> lub <gui>Poprzedni poziom</gui>."
+
+#. (itstool) path: item/p
+#: C/basic.page:42
+msgid "The current level is shown in the title bar."
+msgstr "Obecny poziom jest wyświetlany na pasku tytułu."
 
 #. (itstool) path: figure/desc
-#: C/basic.page:45
-msgid ""
-"This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
-"shaped buttons at the bottom."
-msgstr ""
-"<app>Lights Off</app> na 3. poziomie, z przyciskami w kształcie strzałek na "
-"dole."
+#: C/basic.page:46
+msgid "This shows the <app>Lights Off</app> pattern for level 3."
+msgstr "<app>Lights Off</app> na 3. poziomie."
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/basic.page:47
+msgctxt "_"
+msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+msgstr "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
 
 #. (itstool) path: section/title
-#: C/basic.page:51
+#: C/basic.page:52
 msgid "Video Demonstration"
 msgstr "Demonstracja wideo"
 
@@ -187,16 +190,16 @@ msgstr ""
 #: C/bug-filing.page:36
 msgid ""
 "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
-"reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
-"page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">browse</link> "
-"for the bug to see if it already exists."
+"reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
+"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
+"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+"issues\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "Po utworzeniu konta zaloguj się i kliknij <gui>New Issue</gui> (Nowe "
 "zgłoszenie). Przed zgłoszeniem błędu prosimy przeczytać <link href=\"https://"
-"bugzilla.gnome.org/page.cgi?id=bug-writing.html\">wytyczne opisywania "
-"błędów</link> i <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues"
-"\">poszukać</link>, czy błąd został już zgłoszony."
+"wiki.gnome.org/Community/GettingInTouch/Bugzilla/Guidelines\">wytyczne "
+"opisywania błędów</link> i <link href=\"https://gitlab.gnome.org/GNOME/"
+"lightsoff/issues\">poszukać</link>, czy błąd został już zgłoszony."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:43
@@ -241,14 +244,14 @@ msgid ""
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
 "touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
 "url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
-"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
 "Jeśli chcesz <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
 "\">pomóc rozwijać <app>Gry GNOME</app></link>, to możesz skontaktować się "
 "z programistami za pomocą sieci <link href=\"https://cbe005.chat.mibbit.com/?"
 "url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link> lub przez <link "
-"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">listę pocztową</"
+"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">listę pocztową</"
 "link> (w języku angielskim)."
 
 #. (itstool) path: page/title
@@ -270,22 +273,22 @@ msgstr ""
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
-"mailman/listinfo/gnome-doc-list\">mailing list</link>."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"https://mail.gnome."
+"org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
 "Jeśli chcesz wziąć udział w projekcie dokumentacji, to skontaktuj się z nami "
 "za pomocą sieci <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
-"%2Firc.gnome.org%2Fdocs\">IRC</link> lub przez <link href=\"http://mail."
+"%2Firc.gnome.org%2Fdocs\">IRC</link> lub przez <link href=\"https://mail."
 "gnome.org/mailman/listinfo/gnome-doc-list\">listę pocztową</link> (w języku "
 "angielskim)."
 
 #. (itstool) path: page/p
 #: C/documentation.page:28
 msgid ""
-"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"Nasza <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"Nasza <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> zawiera przydatne informacje (w języku angielskim)."
 
 #. (itstool) path: info/title
@@ -636,22 +639,22 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/translate.page:27
 msgid ""
-"There are <link href=\"http://l10n.gnome.org/module/lightsoff/\">many "
+"There are <link href=\"https://l10n.gnome.org/module/lightsoff/\">many "
 "languages</link> for which translations are still needed."
 msgstr ""
-"<link href=\"http://l10n.gnome.org/module/lightsoff/\">Wiele języków</link> "
+"<link href=\"https://l10n.gnome.org/module/lightsoff/\">Wiele języków</link> "
 "nadal potrzebuje tłumaczeń."
 
 #. (itstool) path: page/p
 #: C/translate.page:30
 msgid ""
-"To start translating you will need to <link href=\"http://l10n.gnome.org"
-"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"To start translating you will need to <link href=\"https://l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
 "teams/\">translation team</link> for your language. This will give you the "
 "ability to upload new translations."
 msgstr ""
-"Do rozpoczęcia tłumaczenia potrzebne jest <link href=\"http://l10n.gnome.org"
-"\">utworzenie konta</link> i dołączenie do <link href=\"http://l10n.gnome."
+"Do rozpoczęcia tłumaczenia potrzebne jest <link href=\"https://l10n.gnome.org"
+"\">utworzenie konta</link> i dołączenie do <link href=\"https://l10n.gnome."
 "org/teams/\">zespołu tłumaczy</link> dla danego języka. Umożliwi to "
 "wysyłanie nowych tłumaczeń."
 
@@ -672,9 +675,9 @@ msgstr ""
 #: C/translate.page:37
 msgid ""
 "Alternatively, you can contact the Internationalization Team using their "
-"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
 "list</link>."
 msgstr ""
 "Można także skontaktować się z zespołem tłumaczeń za pomocą <link href="
-"\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">listy pocztowej</link> "
-"(w języku angielskim)."
+"\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">listy pocztowej</"
+"link> (w języku angielskim)."
