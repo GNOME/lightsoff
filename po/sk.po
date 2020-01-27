@@ -9,10 +9,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-04 05:41+0000\n"
-"PO-Revision-Date: 2018-03-17 15:20+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2019-09-25 13:36+0000\n"
+"PO-Revision-Date: 2020-01-27 13:43+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -20,19 +19,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.4\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:87 src/lightsoff.vala:109
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "_Začať odznovu"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "_Predchádzajúci hlavolam"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "_Nasledujúci hlavolam"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "_Pomocník"
+
+#: data/lightsoff-menus.ui:29
+msgid "_About Lights Off"
+msgstr "_O aplikácii Zhasnúť svetlá"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Zhasnúť svetlá"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:90
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "Zhasnite všetky svetlá"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -42,7 +62,7 @@ msgstr ""
 "svetlo ho zažnete alebo zhasnete, ale tiež prepnete svetlá okolo. Váš cieľ "
 "je jednoduchý: zhasnite všetky svetlá!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -50,56 +70,24 @@ msgstr ""
 "Hráči, ktorých baví zhasínanie svetiel sa môžu tešiť na veľké množstvo "
 "úrovní."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "Projekt GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "hra;logická;stolová;susediace dlaždice;hlavolam;logika;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-#| msgid "Lights Off"
-msgid "lightsoff"
-msgstr "lightsoff"
-
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "_Začať odznovu"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "_Pomocník"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "_O tejto hre"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "_Ukončiť"
-
-# tooltip
-#: data/lightsoff.ui:15
-msgid "Return to the previous level"
-msgstr "Vráti predošlú úroveň"
-
-# tooltip
-#: data/lightsoff.ui:35
-msgid "Proceed to the next level"
-msgstr "Prejde na ďalšiu úroveň"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Aktuálna úroveň"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Naposledy hraná úroveň."
 
-#: src/lightsoff.vala:96
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "Stanislav Višňovský (visnovsky@nenya.ms.mff.cuni.cz)\n"
@@ -108,7 +96,15 @@ msgstr ""
 "Ján Kyselica <kyselica.jan@gmail.com>\n"
 "Dušan Kazik <prescott66@gmail.com>"
 
-#: src/lightsoff-window.vala:60
+#: src/lightsoff.vala:142
+#, c-format
+msgid ""
+"Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Spustením „%s --help“ zobrazíte úplný zoznam dostupných volieb príkazového "
+"riadku.\n"
+
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -117,11 +113,32 @@ msgstr[1] "%d ťah"
 msgstr[2] "%d ťahy"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:102
 #, c-format
-msgid "Level %d"
-msgstr "Úroveň %d"
+msgid "Puzzle %d"
+msgstr "Hlavolam úrovne %d"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Zhasnite všetky svetlá!"
+
+#~| msgid "Lights Off"
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
+
+#~ msgid "_About"
+#~ msgstr "_O tejto hre"
+
+#~ msgid "_Quit"
+#~ msgstr "_Ukončiť"
+
+# tooltip
+#~ msgid "Return to the previous level"
+#~ msgstr "Vráti predošlú úroveň"
+
+# tooltip
+#~ msgid "Proceed to the next level"
+#~ msgstr "Prejde na ďalšiu úroveň"
+
+#~ msgid "Level %d"
+#~ msgstr "Úroveň %d"
