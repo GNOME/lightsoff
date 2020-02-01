@@ -64,6 +64,15 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.35.90" date="2020-02-01" type="development">
+      <description>
+        <p>Overview of changes in lightsoff 3.35.90</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Updated help</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.34.0" date="2019-09-09" type="stable">
       <description>
         <p>Overview of changes in lightsoff 3.34.0</p>
