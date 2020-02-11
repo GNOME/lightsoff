@@ -4,92 +4,93 @@
 # Abigail Brady <morwen@evilmagic.org>, Bastien Nocera <hadess@hadess.net>, 2007.
 # Bruce Cowan <bruce@bcowan.me.uk>, 2009, 2010, 2011, 2012.
 # Philip Withnall <philip@tecnocode.co.uk>, 2010.
+# Zander Brown <zbrown@gnome.org>, 2019.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-13 20:34+0000\n"
-"PO-Revision-Date: 2016-09-08 08:05+0200\n"
-"Last-Translator: David King <amigadave@amigadave.com>\n"
-"Language-Team: British English <en@li.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2019-03-26 18:31+0000\n"
+"PO-Revision-Date: 2019-08-24 21:30+0100\n"
+"Last-Translator: Zander Brown <zbrown@gnome.org>\n"
+"Language-Team: English - United Kingdom <en_GB@li.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Gtranslator 3.32.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
-msgid "Lights Off"
-msgstr "Lights Off"
-
-#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:90
-msgid "Turn off all the lights"
-msgstr "Turn off all the lights"
-
-#: ../data/lightsoff.appdata.xml.in.h:3
-msgid ""
-"Lights Off is a collection of light switch puzzles. Clicking on a light "
-"toggles it either on or off, but also toggles all the surrounding lights, "
-"too. Your objective is simple: turn off all the lights!"
-msgstr ""
-"Lights Off is a collection of light switch puzzles. Clicking on a light "
-"toggles it either on or off, but also toggles all the surrounding lights, "
-"too. Your objective is simple: turn off all the lights!"
-
-#: ../data/lightsoff.appdata.xml.in.h:4
-msgid ""
-"Players who delight in turning off lights will enjoy the huge number of "
-"levels."
-msgstr ""
-"Players who delight in turning off lights will enjoy the huge number of "
-"levels."
-
-#: ../data/lightsoff.appdata.xml.in.h:5
-msgid "The GNOME Project"
-msgstr "The GNOME Project"
-
-#: ../data/lightsoff.desktop.in.h:3
-msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "game;logic;board;tiles;adjacent;puzzle;"
-
-#: ../data/lightsoff-menus.ui.h:1
+#: data/lightsoff-menus.ui:7
 msgid "_Start Over"
 msgstr "_Start Over"
 
-#: ../data/lightsoff-menus.ui.h:2
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "_Previous puzzle"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "Ne_xt puzzle"
+
+#: data/lightsoff-menus.ui:24
 msgid "_Help"
 msgstr "_Help"
 
-#: ../data/lightsoff-menus.ui.h:3
-msgid "_About"
-msgstr "_About"
+#: data/lightsoff-menus.ui:29
+#| msgid "Lights Off"
+msgid "_About Lights Off"
+msgstr "_About Lights Off"
 
-#: ../data/lightsoff-menus.ui.h:4
-msgid "_Quit"
-msgstr "_Quit"
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
+msgid "Lights Off"
+msgstr "Lights Off"
 
-#: ../data/lightsoff.ui.h:1
-msgid "Return to the previous level"
-msgstr "Return to the previous level"
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
+msgid "Turn off all the lights"
+msgstr "Turn off all the lights"
 
-#: ../data/lightsoff.ui.h:2
-msgid "Proceed to the next level"
-msgstr "Proceed to the next level"
+#: data/org.gnome.LightsOff.appdata.xml.in:10
+msgid ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
+msgstr ""
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+#: data/org.gnome.LightsOff.appdata.xml.in:15
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+
+#: data/org.gnome.LightsOff.appdata.xml.in:42
+msgid "The GNOME Project"
+msgstr "The GNOME Project"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.LightsOff.desktop.in:6
+msgid "game;logic;board;tiles;adjacent;puzzle;"
+msgstr "game;logic;board;tiles;adjacent;puzzle;"
+
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "The current level"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
-msgstr "The users's most recent level."
+#: data/org.gnome.LightsOff.gschema.xml:7
+#| msgid "The users's most recent level."
+msgid "The users’s most recent level."
+msgstr "The user’s most recent level."
 
-#: ../src/lightsoff.vala:96
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "Robert Brady <robert@susu.org.uk>\n"
@@ -99,9 +100,16 @@ msgstr ""
 "David Lodge <dave@cirt.net>\n"
 "Philip Withnall <philip@tecnocode.co.uk>\n"
 "Bruce Cowan <bruce@bcowan.me.uk>\n"
-"David King <amigadave@amigadave.com>"
+"David King <amigadave@amigadave.com>\n"
+"Zander Brown <zbrown@gnome.org>"
 
-#: ../src/lightsoff-window.vala:60
+#: src/lightsoff.vala:142
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Run `%s --help` to see a full list of available command line options.\n"
+
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -109,11 +117,26 @@ msgstr[0] "%d move"
 msgstr[1] "%d moves"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:102
 #, c-format
-msgid "Level %d"
-msgstr "Level %d"
+msgid "Puzzle %d"
+msgstr "Puzzle %d"
 
-#: ../src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Turn off all the lights!"
+
+#~ msgid "_About"
+#~ msgstr "_About"
+
+#~ msgid "_Quit"
+#~ msgstr "_Quit"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Return to the previous level"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Proceed to the next level"
+
+#~ msgid "Level %d"
+#~ msgstr "Level %d"
