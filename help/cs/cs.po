@@ -1,13 +1,13 @@
 # Czech translation for lightsoff.
 # Copyright (C) 2013 lightsoff's COPYRIGHT HOLDER
 # This file is distributed under the same license as the lightsoff package.
-# Marek Černocký <marek@manet.cz>, 2013, 2017, 2018.
+# Marek Černocký <marek@manet.cz>, 2013, 2017, 2018, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"POT-Creation-Date: 2018-06-02 16:45+0000\n"
-"PO-Revision-Date: 2018-06-18 10:40+0200\n"
+"POT-Creation-Date: 2020-01-03 18:30+0000\n"
+"PO-Revision-Date: 2020-03-08 10:26+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -23,41 +23,41 @@ msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>, 2013"
 
 #. (itstool) path: credit/name
-#: C/basic.page:9 C/bug-filing.page:14 C/develop.page:15
+#: C/basic.page:10 C/bug-filing.page:14 C/develop.page:15
 #: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
 #: C/translate.page:15
 msgid "Perumal Viravan"
 msgstr "Perumal Viravan"
 
 #. (itstool) path: credit/years
-#: C/basic.page:11 C/rules.page:11 C/strategy.page:10
+#: C/basic.page:12 C/rules.page:11 C/strategy.page:10
 msgid "2012"
 msgstr "2012"
 
 #. (itstool) path: license/p
-#: C/basic.page:14 C/bug-filing.page:18 C/develop.page:19
+#: C/basic.page:15 C/bug-filing.page:18 C/develop.page:19
 #: C/documentation.page:17 C/index.page:16 C/strategy.page:13
 #: C/translate.page:19
 msgid "Creative Commons Share Alike 3.0"
 msgstr "Creative Commons Share Alike 3.0"
 
 #. (itstool) path: page/title
-#: C/basic.page:18
+#: C/basic.page:19
 msgid "Basics"
 msgstr "Základy"
 
 #. (itstool) path: page/p
-#: C/basic.page:19
+#: C/basic.page:20
 msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
 msgstr "Hru <app>Zhasněte světla</app> lze hrát pomocí klávesnice nebo myši."
 
 #. (itstool) path: section/title
-#: C/basic.page:22
+#: C/basic.page:23
 msgid "Using the keyboard"
 msgstr "Používání klávesnice"
 
 #. (itstool) path: item/p
-#: C/basic.page:24
+#: C/basic.page:25
 msgid ""
 "To select a tile, use the arrow keys to move the spotlight on to that tile "
 "and press the <key>Enter</key> key."
@@ -66,7 +66,7 @@ msgstr ""
 "světlo a na požadovaném políčku zmáčkněte <key>Enter</key>."
 
 #. (itstool) path: item/p
-#: C/basic.page:25 C/basic.page:33
+#: C/basic.page:26 C/basic.page:34
 msgid ""
 "Once a tile is selected it will toggle the state of the selected tile and "
 "its non-diagonal neighbors."
@@ -75,51 +75,53 @@ msgstr ""
 "sousedů."
 
 #. (itstool) path: section/title
-#: C/basic.page:30
+#: C/basic.page:31
 msgid "Using the mouse"
 msgstr "Používání myši"
 
 #. (itstool) path: item/p
-#: C/basic.page:32
+#: C/basic.page:33
 msgid "To select a tile move the mouse pointer over the tile and click it."
 msgstr "Pro výběr políčka nad něj přesuňte ukazatel myši a klikněte."
 
 #. (itstool) path: section/title
-#: C/basic.page:38
+#: C/basic.page:39
 msgid "Progress through the levels"
 msgstr "Postup úrovněmi"
 
 #. (itstool) path: item/p
-#: C/basic.page:40
-msgid ""
-"The progress through the levels is either by turning off all the lights in "
-"that level or using the arrow shaped buttons in the bottom of the game."
-msgstr ""
-"Postup do další úrovně hry nastává buď po shasnutí všech světel v současné "
-"úrovni nebo pomocí šipek ve spodní části hry."
-
-#. (itstool) path: item/p
 #: C/basic.page:41
 msgid ""
-"The arrow shaped buttons at the bottom of the game allow you to skip the "
-"levels or return to the previous levels. The current level is shown at the "
-"bottom of the game."
+"The progress through the levels is either by turning off all the lights in "
+"that level or by pressing the menu button in the top-right corner of the "
+"window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
 msgstr ""
-"Tlačítka ve spodní části hry umožňují přeskakovat úrovně, případně se vrátit "
-"do předchozích úrovní. Ve spodní části se rovněž zobrazuje číslo současné "
-"úrovně."
+"Postup do další úrovně hry nastává buď po shasnutí všech světel v současné "
+"úrovni nebo zmáčknutím tlačítka nabídky v pravém horním rohu okna a zvolením "
+"<gui>Následující hlavolam</gui> nebo <gui>Předchozí hlavolam</gui>."
+
+#. (itstool) path: item/p
+#: C/basic.page:42
+msgid "The current level is shown in the title bar."
+msgstr "Současná úroveň je zobrazená v hlavičkové liště."
 
 #. (itstool) path: figure/desc
-#: C/basic.page:45
-msgid ""
-"This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
-"shaped buttons at the bottom."
-msgstr ""
-"Ukazuje rozložení ve 3 úrovni hry <app>Zhasnět světla</app>; dole můžete "
-"vidět tlačítka se šipkami."
+#: C/basic.page:46
+msgid "This shows the <app>Lights Off</app> pattern for level 3."
+msgstr "Ukazuje rozložení ve 3. úrovni hry <app>Zhasněte světla</app>."
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/basic.page:47
+msgctxt "_"
+msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+msgstr "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
 
 #. (itstool) path: section/title
-#: C/basic.page:51
+#: C/basic.page:52
 msgid "Video Demonstration"
 msgstr "Ukázkové video"
 
@@ -154,8 +156,9 @@ msgid ""
 "GNOME/lightsoff/issues\"/>."
 msgstr ""
 "O <app>Zhasněte světla</app> se stará komunita dobrovolníků. Vaše případná "
-"účast bude vítána. Pokud si povšimnete nějakého problému, můžete <em>nahlásit "
-"chybu</em> na <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\"/>."
+"účast bude vítána. Pokud si povšimnete nějakého problému, můžete "
+"<em>nahlásit chybu</em> na <link href=\"https://gitlab.gnome.org/GNOME/"
+"lightsoff/issues\"/>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:29
@@ -179,23 +182,24 @@ msgstr ""
 "Abyste se mohli zapojit, musíte si vytvořit účet, díky kterému získáte "
 "přistup, můžete hlásit chyby a psát komentáře. Registraci potřebujete také k "
 "tomu, aby vám přicházely na e-mail informace o stavu vaší chyby. Jestli účet "
-"zatím nemáte, stačí pro vytvoření kliknout na odkaz <gui>Sign in/Register"
-"</gui>."
+"zatím nemáte, stačí pro vytvoření kliknout na odkaz <gui>Sign in/Register</"
+"gui>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:36
 msgid ""
 "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
-"reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
-"page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">browse</link> "
-"for the bug to see if it already exists."
+"reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
+"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
+"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+"issues\">browse</link> for the bug to see if it already exists."
 msgstr ""
-"Když už účet máte, přihlaste se, klikněte na <gui>New Issue</"
-"gui>. Před nahlášením chyby si prosím přečtěte <link href=\"https://bugzilla."
-"gnome.org/page.cgi?id=bug-writing.html\">přiručku k hlášení chyb</link> a "
-"<link href=\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff\">"
-"podívejte</link> se prosím, jestli stejnou chybu nenahlásil už někdo jiný."
+"Když už účet máte, přihlaste se, klikněte na <gui>New Issue</gui>. Před "
+"nahlášením chyby si prosím přečtěte <link href=\"https://wiki.gnome.org/"
+"Community/GettingInTouch/Bugzilla/Guidelines\">přiručku k hlášení chyb</link> "
+"(odkaz je v angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/"
+"lightsoff/issues\">podívejte</link> se prosím, jestli stejnou chybu "
+"nenahlásil už někdo jiný."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:43
@@ -205,8 +209,8 @@ msgid ""
 "<gui>Submit issue</gui>."
 msgstr ""
 "V případě, že žádáte o novou funkčnost, zvolte v nabídce <gui>Labels</gui> "
-"položku <gui>Feature</gui>. Vyplňte pole <gui>Title</gui> a <gui>Description"
-"</gui> a klikněte na <gui>Submit issue</gui>."
+"položku <gui>Feature</gui>. Vyplňte pole <gui>Title</gui> a "
+"<gui>Description</gui> a klikněte na <gui>Submit issue</gui>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:47
@@ -238,13 +242,13 @@ msgid ""
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
 "touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
 "url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
-"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
 "Jestli chcete <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
 "\">pomoci s vývojem <app>her GNOME</app></link>, můžete se s vývojáři "
 "kontaktovat na <link href=\"https://cbe005.chat.mibbit.com/?url=irc%3A%2F"
-"%2Firc.gnome.org%2Fgnome-games\">IRC</link> nebo přes <link href=\"http://"
+"%2Firc.gnome.org%2Fgnome-games\">IRC</link> nebo přes <link href=\"https://"
 "mail.gnome.org/mailman/listinfo/games-list\">poštovní konferenci</link>. Ke "
 "komunikaci se používá angličtina."
 
@@ -267,22 +271,22 @@ msgstr ""
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
-"mailman/listinfo/gnome-doc-list\">mailing list</link>."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"https://mail.gnome."
+"org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
 "Jestli chcete přispívat do Dokumentačního projektu, nebojte se nás "
 "kontaktovat na <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
-"%2Firc.gnome.org%2Fdocs\">IRC</link> nebo přes <link href=\"http://mail."
+"%2Firc.gnome.org%2Fdocs\">IRC</link> nebo přes <link href=\"https://mail."
 "gnome.org/mailman/listinfo/gnome-doc-list\">poštovní konferenci</link>. Ke "
 "komunikaci se používá angličtina."
 
 #. (itstool) path: page/p
 #: C/documentation.page:28
 msgid ""
-"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
-"Užitečné informace obsahuje naše <link href=\"https://live.gnome.org/"
+"Užitečné informace obsahuje naše <link href=\"https://wiki.gnome.org/"
 "DocumentationProject/Contributing\">wikistránka</link>."
 
 #. (itstool) path: info/title
@@ -636,22 +640,22 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/translate.page:27
 msgid ""
-"There are <link href=\"http://l10n.gnome.org/module/lightsoff/\">many "
+"There are <link href=\"https://l10n.gnome.org/module/lightsoff/\">many "
 "languages</link> for which translations are still needed."
 msgstr ""
-"Stále je <link href=\"http://l10n.gnome.org/module/quadrapassel/\">řada "
+"Stále je <link href=\"https://l10n.gnome.org/module/quadrapassel/\">řada "
 "jazyků</link>, do kterých je třeba překlad udělat."
 
 #. (itstool) path: page/p
 #: C/translate.page:30
 msgid ""
-"To start translating you will need to <link href=\"http://l10n.gnome.org"
-"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"To start translating you will need to <link href=\"https://l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
 "teams/\">translation team</link> for your language. This will give you the "
 "ability to upload new translations."
 msgstr ""
-"Jestli chcete překládat, musíte si <link href=\"http:l10n.gnome.org"
-"\">vytvořit účet</link> a přidat se k <link href=\"http://l10n.gnome.org/"
+"Jestli chcete překládat, musíte si <link href=\"https:l10n.gnome.org"
+"\">vytvořit účet</link> a přidat se k <link href=\"https://l10n.gnome.org/"
 "teams/\">překladatelskému týmu</link> svého jazyka. Pak budete moci odesílat "
 "své nové překlady."
 
@@ -672,9 +676,9 @@ msgstr ""
 #: C/translate.page:37
 msgid ""
 "Alternatively, you can contact the Internationalization Team using their "
-"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
 "list</link>."
 msgstr ""
 "Případně můžete kontaktovat Internacionalizační tým přes jeho <link href="
-"\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">poštovní konferenci</"
+"\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">poštovní konferenci</"
 "link>."
