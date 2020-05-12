@@ -21,6 +21,7 @@ public class LightsoffWindow : ApplicationWindow
     private GLib.Settings settings;
     private GameView game_view;
     private SimpleAction previous_level;
+    private EventControllerKey key_controller;
 
     private const GLib.ActionEntry[] window_actions =
     {
@@ -28,6 +29,12 @@ public class LightsoffWindow : ApplicationWindow
         { "previous-level", previous_level_cb },
         { "next-level",     next_level_cb }
     };
+
+    private inline void init_keyboard ()
+    {
+        key_controller = new EventControllerKey (this);
+        key_controller.key_pressed.connect (on_key_pressed);
+    }
 
     public Gtk.Widget build_clutter_game_container (int level, out GameView out_game_view)
     {
@@ -76,6 +83,7 @@ public class LightsoffWindow : ApplicationWindow
         add_action_entries (window_actions, this);
         previous_level = (SimpleAction) this.lookup_action ("previous-level");
 
+        init_keyboard ();
         int level = settings.get_int ("level");
         level_changed_cb (level);
 
@@ -85,7 +93,6 @@ public class LightsoffWindow : ApplicationWindow
             this.add (build_clutter_game_container (level, out game_view));
 
         this.set_resizable (gtk);
-        this.key_release_event.connect (key_release_event_cb);
         game_view.level_changed.connect (level_changed_cb);
         game_view.moves_changed.connect (update_subtitle);
 
@@ -127,9 +134,11 @@ public class LightsoffWindow : ApplicationWindow
             settings.set_int ("level", level);
     }
 
-    private bool key_release_event_cb (Gtk.Widget widget, Gdk.EventKey event)
+    private inline bool on_key_pressed (EventControllerKey _key_controller, uint keyval, uint keycode, Gdk.ModifierType state)
     {
-        switch (event.keyval)
+        if (menu_button.get_active())
+            return false;
+        switch (keyval)
         {
         case Gdk.Key.Escape:
             set_focus_visible (false);

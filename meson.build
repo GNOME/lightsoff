@@ -20,7 +20,7 @@ glib_min_version = '2.38'
 glib_dep = dependency('glib-2.0', version: '>= ' + glib_min_version)
 gmodule_dep = dependency('gmodule-2.0')
 gio_dep = dependency('gio-2.0', version: '>= ' + glib_min_version)
-gtk_dep = dependency('gtk+-3.0', version: '>= 3.13.4')
+gtk_dep = dependency('gtk+-3.0', version: '>= 3.24')
 clutter_dep = dependency('clutter-1.0', version: '>= 1.14.0')
 clutter_gtk_dep = dependency('clutter-gtk-1.0', version: '>= 1.5.0')
 librsvg_dep = dependency('librsvg-2.0', version: '>= 2.32.0')
