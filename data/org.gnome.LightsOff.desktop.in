@@ -5,7 +5,7 @@ Comment=Turn off all the lights
 Keywords=game;logic;board;tiles;adjacent;puzzle;
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=org.gnome.LightsOff
-Exec=lightsoff --gtk-mode
+Exec=lightsoff
 Terminal=false
 Type=Application
 Categories=GNOME;GTK;Game;LogicGame;

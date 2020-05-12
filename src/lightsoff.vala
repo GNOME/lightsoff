@@ -17,7 +17,7 @@ public class LightsOff : Gtk.Application
     private LightsoffWindow window;
 
     private static bool version = false;
-    private static bool gtk = false;
+    private static bool gtk = true;
 
     private const GLib.OptionEntry[] options = {
         // --version
