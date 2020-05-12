@@ -61,7 +61,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         if (!playable)
             return;
 
-        @foreach((light) => (light as Gtk.ToggleButton).toggled.disconnect (handle_toggle));
+        @foreach((light) => ((Gtk.ToggleButton)light).toggled.disconnect (handle_toggle));
 
         if (x>= size || y >= size || x < 0 || y < 0 )
             return;
@@ -77,7 +77,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         if (!clicked)
             lights[(int) x, (int) y].set_active (!lights[(int) x, (int) y ].get_active ());
 
-        @foreach((light) => (light as Gtk.ToggleButton).toggled.connect (handle_toggle));
+        @foreach((light) => ((Gtk.ToggleButton)light).toggled.connect (handle_toggle));
     }
 
     public void clear_level ()

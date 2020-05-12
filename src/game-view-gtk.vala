@@ -24,11 +24,11 @@ public class GtkGameView : Gtk.Stack, GameView {
         var new_level = "level %d".printf(current_level);
         add_named (new_board as Gtk.Widget, new_level);
         set_visible_child (new_board as Gtk.Widget);
-        (old_board as BoardViewGtk).playable = false;
-        if (Gtk.Settings.get_for_screen ((new_board as Gtk.Widget).get_screen ()).gtk_enable_animations)
+        ((BoardViewGtk)old_board).playable = false;
+        if (Gtk.Settings.get_for_screen (((Gtk.Widget)new_board).get_screen ()).gtk_enable_animations)
             handlers.push_tail(notify["transition-running"].connect(() => board_replaced (old_board as BoardViewGtk, new_board as BoardViewGtk)));
         else
-            board_replaced (old_board as BoardViewGtk, new_board as BoardViewGtk);
+            board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board);
         level_changed (current_level);
     }
 
