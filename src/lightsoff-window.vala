@@ -73,7 +73,7 @@ public class LightsoffWindow : ApplicationWindow
         return aspect_frame;
     }
 
-    public LightsoffWindow (bool gtk = false)
+    public LightsoffWindow (bool gtk = true)
     {
         settings = new GLib.Settings ("org.gnome.LightsOff");
 
