@@ -1,15 +1,14 @@
 # Kazakh translation for gnome-games.
 # Copyright (C) 2010 gnome-games's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-games package.
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010-2017.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-04 05:41+0000\n"
-"PO-Revision-Date: 2018-03-03 20:49+0500\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2020-05-12 07:05+0000\n"
+"PO-Revision-Date: 2020-06-26 12:44+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -17,19 +16,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.3.1\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:87 src/lightsoff.vala:109
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "Басынан ба_стау"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "_Алдыңғы жұмбақ"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "_Келесі жұмбақ"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "_Көмек"
+
+#: data/lightsoff-menus.ui:29
+msgid "_About Lights Off"
+msgstr "Жарықтарды сөндіру ойыны тур_алы"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "Жарықтарды сөндіру"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:90
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "Барлық жарықтарды сөндіріңіз"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -39,7 +59,7 @@ msgstr ""
 "Жарыққа шерту оны іске қосады немесе сөндіреді, және де оның көрші "
 "жарықтарын да өзгертеді. Ұтып алу үшін барлық жарықтарды сөндіру керек!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -47,71 +67,67 @@ msgstr ""
 "Жарықтарды сөндіру ойынын ұнататын ойыншылар деңгейлердің үлкен санымен "
 "рахаттанады."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "GNOME жобасы"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr ""
 "game;logic;board;tiles;adjacent;puzzle;ойын;логика;тақта;плитка;көрші;"
 "жұмбақ;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-#| msgid "Lights Off"
-msgid "lightsoff"
-msgstr "lightsoff"
-
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "Басынан ба_стау"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "_Көмек"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "О_сы туралы"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "_Шығу"
-
-#: data/lightsoff.ui:15
-msgid "Return to the previous level"
-msgstr "Алдыңғы деңгейге оралу"
-
-#: data/lightsoff.ui:35
-msgid "Proceed to the next level"
-msgstr "Келесі деңгейге өту"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "Ағымдағы деңгейі"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The users’s most recent level."
 msgstr "Пайдаланушының соңғы деңгейі."
 
-#: src/lightsoff.vala:96
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
 
-#: src/lightsoff-window.vala:60
+#: src/lightsoff.vala:142
+#, c-format
+msgid ""
+"Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Командалық жолдың барлық опцияларын қарау үшін `%s --help` енгізіңіз.\n"
+
+#: src/lightsoff-window.vala:96
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
 msgstr[0] "%d жылжыту"
 
 #. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:102
 #, c-format
-msgid "Level %d"
-msgstr "Деңгей %d"
+msgid "Puzzle %d"
+msgstr "Жұмбақ %d"
 
-#: src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:106
 msgid "Turn off all the lights!"
 msgstr "Барлық жарықтарды сөндіріңіз!"
+
+#~| msgid "Lights Off"
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
+
+#~ msgid "_About"
+#~ msgstr "О_сы туралы"
+
+#~ msgid "_Quit"
+#~ msgstr "_Шығу"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Алдыңғы деңгейге оралу"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Келесі деңгейге өту"
+
+#~ msgid "Level %d"
+#~ msgstr "Деңгей %d"
