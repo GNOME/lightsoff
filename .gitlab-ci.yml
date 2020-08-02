@@ -11,3 +11,9 @@ flatpak:
         RUNTIME_REPO: "https://sdk.gnome.org/gnome-nightly.flatpakrepo"
         APP_ID: "org.gnome.LightsOff"
     extends: .flatpak
+
+nightly:
+    extends: '.publish_nightly'
+    # assuming your job in named 'flatpak'
+    dependencies: ['flatpak']
+    needs: ['flatpak']
