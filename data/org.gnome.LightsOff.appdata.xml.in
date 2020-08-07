@@ -64,6 +64,17 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <releases>
+    <release version="3.37.90" date="2020-08-07" type="development">
+      <description>
+        <p>Overview of changes in lightsoff 3.37.90</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Updated help</li>
+          <li>Updated build</li>
+          <li>Switch to GTK mode by default (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.36.0" date="2020-03-07" type="stable">
       <description>
         <p>Overview of changes in lightsoff 3.36.0</p>
