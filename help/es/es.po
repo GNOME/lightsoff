@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.lightsoff.master\n"
-"POT-Creation-Date: 2020-01-03 18:30+0000\n"
+"POT-Creation-Date: 2020-06-26 07:46+0000\n"
 "PO-Revision-Date: 2020-01-07 16:58+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
@@ -97,9 +97,6 @@ msgstr "Progreso a través de los niveles"
 
 #. (itstool) path: item/p
 #: C/basic.page:41
-#| msgid ""
-#| "The progress through the levels is either by turning off all the lights "
-#| "in that level or using the arrow shaped buttons in the bottom of the game."
 msgid ""
 "The progress through the levels is either by turning off all the lights in "
 "that level or by pressing the menu button in the top-right corner of the "
@@ -117,9 +114,6 @@ msgstr "El nivel actual se muestra en la barra de título."
 
 #. (itstool) path: figure/desc
 #: C/basic.page:46
-#| msgid ""
-#| "This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
-#| "shaped buttons at the bottom."
 msgid "This shows the <app>Lights Off</app> pattern for level 3."
 msgstr "Esto muestra el patrón de <app>Luces fuera</app> para el nivel 3."
 
@@ -129,9 +123,6 @@ msgstr "Esto muestra el patrón de <app>Luces fuera</app> para el nivel 3."
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/basic.page:47
-#| msgctxt "_"
-#| msgid ""
-#| "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
 msgctxt "_"
 msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
 msgstr "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
@@ -172,7 +163,7 @@ msgid ""
 "GNOME/lightsoff/issues\"/>."
 msgstr ""
 "<app>Luces fuera</app> lo mantiene la comunidad de manera voluntaria. Si "
-"quiere participar, es bienvenido. Si encuentra un error, puede rellenar un "
+"quiere participar, es bienvenido/a . Si encuentra un error, puede rellenar un "
 "<em>informe de error</em>. Para informar de un error, vaya a <link href="
 "\"https://gitlab.gnome.org/GNOME/lightsoff/issues\"/>."
 
@@ -203,12 +194,6 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:36
-#| msgid ""
-#| "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
-#| "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
-#| "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-#| "<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">browse</"
-#| "link> for the bug to see if it already exists."
 msgid ""
 "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
@@ -254,17 +239,10 @@ msgid ""
 "community. You are welcome to participate."
 msgstr ""
 "Los <app>juegos de GNOME</app> los desarrolla y los mantiene una comunidad "
-"de voluntarios. Si quiere participar es bienvenido."
+"de voluntarios. Si quiere participar es bienvenido/a ."
 
 #. (itstool) path: page/p
 #: C/develop.page:27
-#| msgid ""
-#| "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
-#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
-#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our "
-#| "<link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing "
-#| "list</link>."
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
@@ -292,15 +270,10 @@ msgid ""
 "community. You are welcome to participate."
 msgstr ""
 "La documentación de los <app>juegos de GNOME</app> las mantiene una "
-"comunidad de voluntarios. Si quiere participar es bienvenido."
+"comunidad de voluntarios. Si quiere participar es bienvenido/a ."
 
 #. (itstool) path: page/p
 #: C/documentation.page:26
-#| msgid ""
-#| "To contribute to the Documentation Project, feel free to get in touch "
-#| "with us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
-#| "%2Firc.gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail."
-#| "gnome.org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
@@ -314,9 +287,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/documentation.page:28
-#| msgid ""
-#| "Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
-#| "\">wiki</link> page contains useful information."
 msgid ""
 "Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
@@ -672,13 +642,10 @@ msgid ""
 msgstr ""
 "La interfaz de usuario de los <app>juegos de GNOME</app> y la documentación "
 "las traduce una comunidad de voluntarios de todo el mundo. Si quiere "
-"participar, es bienvenido."
+"participar, es bienvenido/a ."
 
 #. (itstool) path: page/p
 #: C/translate.page:27
-#| msgid ""
-#| "There are <link href=\"http://l10n.gnome.org/module/lightsoff/\">many "
-#| "languages</link> for which translations are still needed."
 msgid ""
 "There are <link href=\"https://l10n.gnome.org/module/lightsoff/\">many "
 "languages</link> for which translations are still needed."
@@ -688,11 +655,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:30
-#| msgid ""
-#| "To start translating you will need to <link href=\"http://l10n.gnome.org"
-#| "\">create an account</link> and join the <link href=\"http://l10n.gnome."
-#| "org/teams/\">translation team</link> for your language. This will give "
-#| "you the ability to upload new translations."
 msgid ""
 "To start translating you will need to <link href=\"https://l10n.gnome.org"
 "\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
@@ -720,10 +682,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:37
-#| msgid ""
-#| "Alternatively, you can contact the Internationalization Team using their "
-#| "<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
-#| "list</link>."
 msgid ""
 "Alternatively, you can contact the Internationalization Team using their "
 "<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
