@@ -5,88 +5,323 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
-"POT-Creation-Date: 2013-04-17 18:17+0000\n"
-"PO-Revision-Date: 2013-06-02 17:28+0200\n"
-"Last-Translator: Mireia Blanc Pastor <mireia.blanc.pastor@gmail.com>\n"
+"POT-Creation-Date: 2020-06-26 07:46+0000\n"
+"PO-Revision-Date: 2020-09-12 19:18+0200\n"
+"Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail."
+"com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bits\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Mireia Blanc Pastor <mireia.blanc.pastor@gmail.com>, 2011, 2012."
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:6(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/lightsoff_logo.jpg' "
-"md5='8d8b8efd7f0cfb455cb7fba261433455'"
 msgstr ""
-"external ref='figures/lightsoff_logo.jpg' "
-"md5='8d8b8efd7f0cfb455cb7fba261433455'"
+"Mireia Blanc Pastor <mireia.blanc.pastor@gmail.com>, 2011, 2012\n"
+"Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail.com>, 2020"
 
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#.
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/index.page:20(media)
-msgctxt "_"
+#. (itstool) path: credit/name
+#: C/basic.page:10 C/bug-filing.page:14 C/develop.page:15
+#: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
+#: C/translate.page:15
+msgid "Perumal Viravan"
+msgstr "Perumal Viravan"
+
+#. (itstool) path: credit/years
+#: C/basic.page:12 C/rules.page:11 C/strategy.page:10
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: license/p
+#: C/basic.page:15 C/bug-filing.page:18 C/develop.page:19
+#: C/documentation.page:17 C/index.page:16 C/strategy.page:13
+#: C/translate.page:19
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Compartir Igual 3.0"
+
+#. (itstool) path: page/title
+#: C/basic.page:19
+msgid "Basics"
+msgstr "Bàsics"
+
+#. (itstool) path: page/p
+#: C/basic.page:20
+msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
+msgstr "Es pot jugar a l'<app>Apaga els llums</app> amb el teclat o el ratolí."
+
+#. (itstool) path: section/title
+#: C/basic.page:23
+msgid "Using the keyboard"
+msgstr "Utilització del teclat"
+
+#. (itstool) path: item/p
+#: C/basic.page:25
 msgid ""
-"external ref='figures/lightsoff.jpg' md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
+"To select a tile, use the arrow keys to move the spotlight on to that tile "
+"and press the <key>Enter</key> key."
 msgstr ""
-"external ref='figures/lightsoff.jpg' md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
+"Per a seleccionar una fitxa, utilitzeu les fletxes del teclat per a moure el "
+"focus a la fitxa i premeu la tecla <key>Enter</key>."
 
-#: C/index.page:7(info/title)
+#. (itstool) path: item/p
+#: C/basic.page:26 C/basic.page:34
+msgid ""
+"Once a tile is selected it will toggle the state of the selected tile and "
+"its non-diagonal neighbors."
+msgstr ""
+"Cada cop que fem clic a una fitxa, es canviarà el seu propi estat i el de "
+"les seves veïnes no diagonals."
+
+#. (itstool) path: section/title
+#: C/basic.page:31
+msgid "Using the mouse"
+msgstr "Utilització del ratolí"
+
+#. (itstool) path: item/p
+#: C/basic.page:33
+msgid "To select a tile move the mouse pointer over the tile and click it."
+msgstr ""
+"Per a seleccionar una fitxa, col·loqueu el punter del ratolí sobre la fitxa "
+"i feu-hi clic."
+
+#. (itstool) path: section/title
+#: C/basic.page:39
+msgid "Progress through the levels"
+msgstr "Progrés a través dels nivells"
+
+#. (itstool) path: item/p
+#: C/basic.page:41
+msgid ""
+"The progress through the levels is either by turning off all the lights in "
+"that level or by pressing the menu button in the top-right corner of the "
+"window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
+msgstr ""
+"Es progressa a través dels nivells desactivant tots els llums del nivell o "
+"prement el botó de menú de la cantonada superior dreta de la finestra i "
+"seleccionant <gui>Trencaclosques següent</gui> or <gui>Trencaclosques "
+"anterior</gui>."
+
+#. (itstool) path: item/p
+#: C/basic.page:42
+msgid "The current level is shown in the title bar."
+msgstr "El nivell actual es mostra a la barra de títol."
+
+#. (itstool) path: figure/desc
+#: C/basic.page:46
+msgid "This shows the <app>Lights Off</app> pattern for level 3."
+msgstr "Aquest és el patró del nivell 3 de l'<app>Apaga els llums</app>."
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/basic.page:47
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
+msgctxt "_"
+msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+msgstr "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+
+#. (itstool) path: section/title
+#: C/basic.page:52
+msgid "Video Demonstration"
+msgstr "Demostració en vídeo"
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:9 C/develop.page:10 C/documentation.page:8
+#: C/translate.page:10
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#. (itstool) path: credit/years
+#: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
+#: C/translate.page:12
+msgid "2011"
+msgstr "2011"
+
+#. (itstool) path: page/title
+#: C/bug-filing.page:22
+msgid "Help make <app>Lights Off</app> better"
+msgstr "Ajudeu a millorar l'<app>Apaga els llums</app>"
+
+#. (itstool) path: section/title
+#: C/bug-filing.page:25
+msgid "Report a bug or suggest an improvement"
+msgstr "Informeu d'un error o suggeriu una millora"
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:26
+msgid ""
+"<app>Lights Off</app> is maintained by a volunteer community. You are "
+"welcome to participate. If you notice a problem you can file a <em>bug "
+"report</em>. To file a bug, go to <link href=\"https://gitlab.gnome.org/"
+"GNOME/lightsoff/issues\"/>."
+msgstr ""
+"L'<app>Apaga els llums</app> el manté una comunitat de voluntaris. Us "
+"convidem a participar-hi. Si us adoneu d'un problema, podeu enviar un "
+"<em>informe d'error</em>. Per a enviar-ne un, aneu a <link href=\"https://"
+"gitlab.gnome.org/GNOME/lightsoff/issues\"/>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:29
+msgid ""
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
+msgstr ""
+"Es tracta d'un sistema de seguiment d'errors on els usuaris i els "
+"desenvolupadors poden enviar detalls sobre errors, fallades i sol·licitar "
+"millores."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:32
+msgid ""
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>Sign in/Register</gui> link to "
+"create one."
+msgstr ""
+"Per a participar-hi, necessiteu un compte que us donarà la possibilitat "
+"d'accedir-hi, d'enviar informes d'errors i de fer comentaris. A més, us heu "
+"de registrar per a poder rebre actualitzacions per correu electrònic sobre "
+"l'estat de l'informe d'error. Si encara no teniu un compte, feu clic a "
+"l'enllaç <gui>Sign in/Register</gui> per a crear-ne un."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:36
+msgid ""
+"Once you have an account, log in, click on <gui>New Issue</gui>. Before "
+"reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
+"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
+"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+"issues\">browse</link> for the bug to see if it already exists."
+msgstr ""
+"Quan tingueu un compte, inicieu la sessió i feu clic a <gui>New issue</gui>. "
+"Abans d'informar d'un error, llegiu les <link href=\"https://wiki.gnome.org/"
+"Community/GettingInTouch/Bugzilla/Guidelines\">pautes d'escriptura d'errors</"
+"link> i <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues"
+"\">cerqueu</link> l'error per a veure si ja existeix."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:43
+msgid ""
+"If you are requesting a new feature, choose <gui>Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit issue</gui>."
+msgstr ""
+"Si sol·liciteu una funció nova, trieu <gui>Feature</gui> al menú "
+"<gui>Labels</gui>. Ompliu les seccions de títol i descripció i feu clic a "
+"<gui>Submit issue</gui>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:47
+msgid ""
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
+msgstr ""
+"El vostre informe rebrà un número ID i el seu estat s'actualitzarà a mesura "
+"que es vagi gestionant. Gràcies per ajudar a millorar l'<app>Apaga els "
+"llums</app>!"
+
+#. (itstool) path: page/title
+#: C/develop.page:23
+msgid "Help develop"
+msgstr "Ajudeu a desenvolupar"
+
+#. (itstool) path: page/p
+#: C/develop.page:24
+msgid ""
+"The <app>GNOME Games</app> are developed and maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"Una comunitat de voluntaris desenvolupa i manté els <app>jocs del GNOME</"
+"app>. Us convidem a participar-hi."
+
+#. (itstool) path: page/p
+#: C/develop.page:27
+msgid ""
+"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
+"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"link>."
+msgstr ""
+"Si voleu <link href=\"https://wiki.gnome.org/Apps/Games/Contributing"
+"\">ajudar a desenvolupar els <app>jocs del GNOME</app></link>, podeu posar-"
+"vos en contacte amb els desenvolupadors mitjançant l'<link href=\"https://"
+"cbe005.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</"
+"link> o la nostra <link href=\"https://mail.gnome.org/mailman/listinfo/games-"
+"list\">llista de correu</link>."
+
+#. (itstool) path: page/title
+#: C/documentation.page:21
+msgid "Help write documentation"
+msgstr "Ajudeu a escriure la documentació"
+
+#. (itstool) path: page/p
+#: C/documentation.page:23
+msgid ""
+"The <app>GNOME Games</app> documentation is maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"Una comunitat de voluntaris manté la documentació dels <app>jocs del GNOME</"
+"app>. Us convidem a participar-hi."
+
+#. (itstool) path: page/p
+#: C/documentation.page:26
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"https://mail.gnome."
+"org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
+msgstr ""
+"Per a col·laborar amb el projecte de documentació, no dubteu a contactar amb "
+"nosaltres mitjançant l'<link href=\"https://cbe003.chat.mibbit.com/?url=irc"
+"%3A%2F%2Firc.gnome.org%2Fdocs\">irc</link> o la nostra <link href=\"https://"
+"mail.gnome.org/mailman/listinfo/gnome-doc-list\">llista de correu</link>."
+
+#. (itstool) path: page/p
+#: C/documentation.page:28
+msgid ""
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
+"\">wiki</link> page contains useful information."
+msgstr ""
+"La nostra pàgina <link href=\"https://wiki.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> conté informació útil."
+
+#. (itstool) path: info/title
+#: C/index.page:8
 msgctxt "link"
 msgid "Lights Off"
 msgstr "Apaga els llums"
 
-#: C/index.page:8(info/title)
+#. (itstool) path: info/title
+#: C/index.page:9
 msgctxt "text"
 msgid "Lights Off"
 msgstr "Apaga els llums"
 
-#: C/index.page:11(credit/name) C/basic.page:8(credit/name)
-#: C/bug-filing.page:15(credit/name) C/develop.page:15(credit/name)
-#: C/documentation.page:13(credit/name) C/rules.page:9(credit/name)
-#: C/strategy.page:8(credit/name) C/translate.page:15(credit/name)
-msgid "Perumal Viravan"
-msgstr "Perumal Viravan"
+#. (itstool) path: media/span
+#: C/index.page:21
+msgid "Lights Off logo"
+msgstr "Logo de l'Apaga els llums"
 
-#: C/index.page:15(license/p) C/basic.page:13(license/p)
-#: C/bug-filing.page:19(license/p) C/develop.page:19(license/p)
-#: C/documentation.page:17(license/p) C/strategy.page:13(license/p)
-#: C/translate.page:19(license/p)
-msgid "Creative Commons Share Alike 3.0"
-msgstr "Creative Commons Compartir Igual 3.0"
+#. (itstool) path: page/title
+#: C/index.page:21
+#| msgctxt "link"
+#| msgid "Lights Off"
+msgid "<_:media-1/> Lights Off"
+msgstr "<_:media-1/> Apaga els llums"
 
-#: C/index.page:20(page/title)
-msgid ""
-"<media type=\"image\" src=\"figures/lightsoff.jpg\">Lights Off logo</"
-"media>Lights Off"
-msgstr ""
-"<media type=\"image\" src=\"figures/lightsoff.jpg\">Logotip de l'Apaga els "
-"llums</media>Apaga els llums"
-
-#: C/index.page:22(page/p)
+#. (itstool) path: page/p
+#: C/index.page:23
 msgid ""
 "<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
 "off all the lights. Each click on a tile toggles the state of the clicked "
@@ -97,457 +332,399 @@ msgstr ""
 "es fa clic canvia l'estat de la fitxa polsada i les seves veïnes no "
 "diagonals."
 
-#: C/index.page:26(section/title)
+#. (itstool) path: section/title
+#: C/index.page:27
 msgid "Game Play"
 msgstr "Funcionament del joc"
 
-#: C/index.page:30(section/title)
+#. (itstool) path: section/title
+#: C/index.page:31
 msgid "Get Involved"
-msgstr ""
+msgstr "Impliqueu-vos"
 
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/basic.page:45(media)
-msgctxt "_"
-msgid "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
-msgstr "external ref='figures/lo1.jpg' md5='2aac25db21cc116cc083cef95f663c26'"
-
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/basic.page:51(media)
-msgctxt "_"
-msgid ""
-"external ref='figures/lightsoff.ogv' md5='61b453a759cd54689b3a321089290bf8'"
-msgstr ""
-"external ref='figures/lightsoff.ogv' md5='61b453a759cd54689b3a321089290bf8'"
-
-#: C/basic.page:10(credit/years) C/rules.page:11(credit/years)
-#: C/strategy.page:10(credit/years)
-msgid "2012"
-msgstr "2012"
-
-#: C/basic.page:17(page/title)
-msgid "Basics"
-msgstr "Bàsics"
-
-#: C/basic.page:18(page/p)
-msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
-msgstr ""
-
-#: C/basic.page:21(section/title)
-msgid "Using the keyboard"
-msgstr "Utilització del teclat"
-
-#: C/basic.page:23(item/p)
-msgid ""
-"To select a tile, use the arrow keys to move the spotlight on to that tile "
-"and press the <key>Enter</key> key."
-msgstr ""
-
-#: C/basic.page:24(item/p) C/basic.page:32(item/p)
-msgid ""
-"Once a tile is selected it will toggle the state of the selected tile and "
-"its non-diagonal neighbors."
-msgstr ""
-"Cada cop que fem clic a una fitxa, es canviarà el seu propi estat i el de "
-"les seves veïnes no diagonals."
-
-#: C/basic.page:29(section/title)
-msgid "Using the mouse"
-msgstr "Utilització del ratolí"
-
-#: C/basic.page:31(item/p)
-msgid "To select a tile move the mouse pointer over the tile and click it."
-msgstr ""
-
-#: C/basic.page:37(section/title)
-msgid "Progress through the levels"
-msgstr ""
-
-#: C/basic.page:39(item/p)
-msgid ""
-"The progress through the levels is either by turning off all the lights in "
-"that level or using the arrow shaped buttons in the bottom of the game."
-msgstr ""
-"S'avança a través dels nivells bé sigui apagant totes les fitxes d'un nivell "
-"concret, o bé amb els botons en forma de fletxa a la part inferior del joc."
-
-#: C/basic.page:40(item/p)
-msgid ""
-"The arrow shaped buttons at the bottom of the game allow you to skip the "
-"levels or return to the previous levels. The current level is shown at the "
-"bottom of the game."
-msgstr ""
-
-#: C/basic.page:44(figure/desc)
-msgid ""
-"This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
-"shaped buttons at the bottom."
-msgstr ""
-
-#: C/basic.page:50(section/title)
-msgid "Video Demonstration"
-msgstr ""
-
-#: C/bug-filing.page:10(credit/name) C/develop.page:10(credit/name)
-#: C/documentation.page:8(credit/name) C/translate.page:10(credit/name)
-msgid "Tiffany Antopolski"
-msgstr "Tiffany Antopolski"
-
-#: C/bug-filing.page:12(credit/years) C/develop.page:12(credit/years)
-#: C/documentation.page:10(credit/years) C/translate.page:12(credit/years)
-msgid "2011"
-msgstr "2011"
-
-#: C/bug-filing.page:23(page/title)
-msgid "Help make <app>Lights Off</app> better"
-msgstr ""
-
-#: C/bug-filing.page:26(section/title)
-msgid "Report a bug or suggest an improvement"
-msgstr ""
-
-#: C/bug-filing.page:27(section/p)
-msgid ""
-"<app>Lights Off</app> is maintained by a volunteer community. You are "
-"welcome to participate. If you notice a problem you can file a <em>bug "
-"report</em>. To file a bug, go to <link href=\"https://bugzilla.gnome.org/\"/"
-">."
-msgstr ""
-
-#: C/bug-filing.page:30(section/p)
-msgid ""
-"This is a bug tracking system where users and developers can file details "
-"about bugs, crashes and request enhancements."
-msgstr ""
-
-#: C/bug-filing.page:33(section/p)
-msgid ""
-"To participate you need an account which will give you the ability to gain "
-"access, file bugs, and make comments. Also, you need to register so you can "
-"receive updates by e-mail about the status of your bug. If you don't already "
-"have an account, just click on the <gui>New Account</gui> link to create one."
-msgstr ""
-
-#: C/bug-filing.page:37(section/p)
-msgid ""
-"Once you have an account, log in, click on <guiseq><gui>File a Bug</"
-"gui><gui>Applications</gui><gui>lightsoff</gui></guiseq>. Before reporting a "
-"bug, please read the <link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-"
-"writing.html\">bug writing guidelines</link>, and please <link href="
-"\"https://bugzilla.gnome.org/browse.cgi?product=lightsoff\">browse</link> "
-"for the bug to see if it already exists."
-msgstr ""
-
-#: C/bug-filing.page:45(section/p)
-msgid ""
-"If you are requesting a new feature, choose <gui>enhancement</gui> in the "
-"<gui>Severity</gui> menu. Fill in the Summary and Description sections and "
-"click <gui>Commit</gui>."
-msgstr ""
-
-#: C/bug-filing.page:49(section/p)
-msgid ""
-"Your report will be given an ID number, and its status will be updated as it "
-"is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
-msgstr ""
-
-#: C/develop.page:23(page/title)
-msgid "Help develop"
-msgstr ""
-
-#: C/develop.page:24(page/p)
-msgid ""
-"The <app>GNOME Games</app> are developed and maintained by a volunteer "
-"community. You are welcome to participate."
-msgstr ""
-
-#: C/develop.page:27(page/p)
-msgid ""
-"If you would like to <link href=\"https://live.gnome.org/GnomeGames/"
-"Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-"touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
-"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
-"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
-"link>."
-msgstr ""
-
-#: C/documentation.page:21(page/title)
-msgid "Help write documentation"
-msgstr ""
-
-#: C/documentation.page:23(page/p)
-msgid ""
-"The <app>GNOME Games</app> documentation is maintained by a volunteer "
-"community. You are welcome to participate."
-msgstr ""
-
-#: C/documentation.page:26(page/p)
-msgid ""
-"To contribute to the Documentation Project, feel free to get in touch with "
-"us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
-"mailman/listinfo/gnome-doc-list\">mailing list</link>."
-msgstr ""
-
-#: C/documentation.page:28(page/p)
-msgid ""
-"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
-"\">wiki</link> page contains useful information."
-msgstr ""
-
-#: C/legal.xml:3(p/link)
+#. (itstool) path: p/link
+#: C/legal.xml:3
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-msgstr ""
+msgstr "Reconeixement-CompartirIgual 3.0 No adaptada (CC BY-SA 3.0)"
 
-#: C/legal.xml:3(license/p)
+#. (itstool) path: license/p
+#: C/legal.xml:3
 msgid "This work is licensed under a <_:link-1/>."
-msgstr ""
+msgstr "Aquesta obra està llicenciada sota una <_:link-1>."
 
-#: C/license.page:8(info/desc)
+#. (itstool) path: info/desc
+#: C/license.page:8
 msgid "Legal information."
 msgstr "Informació legal."
 
-#: C/license.page:11(page/title)
+#. (itstool) path: page/title
+#: C/license.page:11
 msgid "License"
 msgstr "Llicència"
 
-#: C/license.page:12(page/p)
+#. (itstool) path: page/p
+#: C/license.page:12
 msgid ""
 "This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
 "Unported license."
 msgstr ""
+"Aquesta obra es distribueix sota una llicència Reconeixement-CompartirIgual "
+"3.0 No adaptada (CC BY-SA 3.0)."
 
-#: C/license.page:20(page/p)
+#. (itstool) path: page/p
+#: C/license.page:20
 msgid "You are free:"
 msgstr "Sou lliure de:"
 
-#: C/license.page:25(item/title)
+#. (itstool) path: item/title
+#: C/license.page:25
 msgid "<em>To share</em>"
-msgstr ""
+msgstr "<em>Compartir</em>"
 
-#: C/license.page:26(item/p)
+#. (itstool) path: item/p
+#: C/license.page:26
 msgid "To copy, distribute and transmit the work."
-msgstr ""
+msgstr "Copiar, distribuir i transmetre l'obra."
 
-#: C/license.page:29(item/title)
+#. (itstool) path: item/title
+#: C/license.page:29
 msgid "<em>To remix</em>"
-msgstr ""
+msgstr "<em>Adaptar</em>"
 
-#: C/license.page:30(item/p)
+#. (itstool) path: item/p
+#: C/license.page:30
 msgid "To adapt the work."
-msgstr ""
+msgstr "Adaptar l'obra."
 
-#: C/license.page:33(page/p)
+#. (itstool) path: page/p
+#: C/license.page:33
 msgid "Under the following conditions:"
-msgstr ""
+msgstr "Amb les condicions següents:"
 
-#: C/license.page:38(item/title)
+#. (itstool) path: item/title
+#: C/license.page:38
 msgid "<em>Attribution</em>"
-msgstr ""
+msgstr "<em>Reconeixement</em>"
 
-#: C/license.page:39(item/p)
+#. (itstool) path: item/p
+#: C/license.page:39
 msgid ""
 "You must attribute the work in the manner specified by the author or "
 "licensor (but not in any way that suggests that they endorse you or your use "
 "of the work)."
 msgstr ""
+"Heu de reconèixer l'obra de la manera especificada per l'autor o llicenciant "
+"(però no d'una manera que suggereixi que us donen suport o patrocinen l'ús "
+"que en feu)."
 
-#: C/license.page:46(item/title)
+#. (itstool) path: item/title
+#: C/license.page:46
 msgid "<em>Share Alike</em>"
-msgstr ""
+msgstr "<em>Compartir igual</em>"
 
-#: C/license.page:47(item/p)
+#. (itstool) path: item/p
+#: C/license.page:47
 msgid ""
 "If you alter, transform, or build upon this work, you may distribute the "
 "resulting work only under the same, similar or a compatible license."
 msgstr ""
+"Si altereu, transformeu o construïu sobre aquesta obra, només podeu "
+"distribuir l'obra resultant sota la mateixa llicència, una de similar o una "
+"de compatible."
 
-#: C/license.page:53(page/p)
+#. (itstool) path: page/p
+#: C/license.page:53
 msgid ""
 "For the full text of the license, see the <link href=\"http://"
 "creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
+"Per a veure el text complet de la llicència, aneu al <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">lloc web de "
+"CreativeCommons</link> o llegiu el <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Commons Deed</link> complet."
 
-#: C/rules.page:16(page/title)
+#. (itstool) path: page/title
+#: C/rules.page:16
 msgid "Rules"
 msgstr "Regles"
 
-#: C/rules.page:18(page/p)
+#. (itstool) path: page/p
+#: C/rules.page:18
 msgid ""
 "In order to complete the <app>Lights Off</app> puzzle, you must turn off all "
 "the lights in the board. This will get you to advance to the next level."
 msgstr ""
+"Per a completar el trencaclosques de l'<app>Apaga els llums</app>, heu "
+"d'apagar tots els llums del tauler. Això us farà avançar al nivell següent."
 
-#: C/rules.page:20(item/p)
+#. (itstool) path: item/p
+#: C/rules.page:20
 msgid "The game begins with a pattern of lights on the 5x5 grid."
-msgstr ""
+msgstr "El joc comença amb un patró de llums a la graella de 5x5."
 
-#: C/rules.page:21(item/p)
+#. (itstool) path: item/p
+#: C/rules.page:21
 msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
 msgstr ""
+"Seleccioneu una fitxa per a invertir-ne l'estat i el de les fitxes veïnes no "
+"diagonals."
 
-#: C/rules.page:22(item/p)
+#. (itstool) path: item/p
+#: C/rules.page:22
 msgid ""
 "Once you have successfully turned off all the lights, you complete that "
 "level and move on to the next."
 msgstr ""
+"Un cop heu apagat amb èxit tots els llums, heu acabat el nivell i avanceu al "
+"següent."
 
-#: C/strategy.page:17(page/title)
+#. (itstool) path: page/title
+#: C/strategy.page:17
 msgid "Strategy"
 msgstr "Estratègia"
 
-#: C/strategy.page:18(page/p)
+#. (itstool) path: page/p
+#: C/strategy.page:18
 msgid ""
 "This is a simple strategy to solve the <app>Lights Off</app> puzzle by using "
 "the method called \"Chase the Lights\"."
 msgstr ""
+"Aquesta és una estratègia simple per a resoldre el trencaclosques de "
+"l'<app>Apaga els llums</app> utilitzant el mètode anomenat «captura els "
+"llums»."
 
-#: C/strategy.page:20(item/p)
+#. (itstool) path: item/p
+#: C/strategy.page:20
 msgid ""
 "Chase the lights starting from the first row. To chase the lights in the "
 "first row, click the tile on the second row corresponding to the light in "
 "the first row. This will turn off that light in the first row."
 msgstr ""
+"Captureu els llums començant per la primera fila. Per a capturar els llums "
+"de la primera fila, feu clic a la fitxa de la segona fila corresponent al "
+"llum de la primera fila. Això desactivarà el llum de la primera fila."
 
-#: C/strategy.page:21(note/p)
+#. (itstool) path: note/p
+#: C/strategy.page:21
 msgid ""
 "This method can be used in the same way to chase the lights in other rows as "
 "well, i.e., if you want to chase the lights in the second row, click the "
 "corresponding tile in the third row."
 msgstr ""
+"Aquest mètode es pot utilitzar de la mateixa manera per a capturar els llums "
+"d'altres files també, és a dir, si voleu capturar els llums de la segona "
+"fila, feu clic a la fitxa corresponent de la tercera fila."
 
-#: C/strategy.page:23(item/p)
+#. (itstool) path: item/p
+#: C/strategy.page:23
 msgid ""
 "In the same way continue to chase the lights in the second, third and fourth "
 "row. At the end of this you will be only left with the lights in the fifth "
 "row."
 msgstr ""
+"De la mateixa manera, seguiu capturant els llums de la segona, tercera i "
+"quarta files. Al final d'això, només us restaran els llums de la cinquena "
+"fila."
 
-#: C/strategy.page:25(item/p)
+#. (itstool) path: item/p
+#: C/strategy.page:25
 msgid ""
 "Now depending on which lights are remaining in the fifth row, click the "
 "tiles in the first row using the table given below."
 msgstr ""
+"Ara, depenent de quins llums restin a la cinquena fila, feu clic a les "
+"fitxes de la primera fila utilitzant la taula que es mostra a continuació."
 
-#: C/strategy.page:29(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:29
 msgid "Lights Left on the fifth Row"
-msgstr ""
+msgstr "Llums restants de la cinquena fila"
 
-#: C/strategy.page:29(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:29
 msgid "Tiles to Click on the First Row"
-msgstr ""
+msgstr "Fitxes a les quals fer clic a la primera fila"
 
-#: C/strategy.page:32(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:32
 msgid "1, 2, 3"
 msgstr "1, 2, 3"
 
-#: C/strategy.page:32(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:32
 msgid "2"
 msgstr "2"
 
-#: C/strategy.page:34(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:34
 msgid "1, 2, 4, 5"
 msgstr "1, 2, 4, 5"
 
-#: C/strategy.page:34(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:34
 msgid "3"
 msgstr "3"
 
-#: C/strategy.page:36(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:36
 msgid "1, 3, 4"
 msgstr "1, 3, 4"
 
-#: C/strategy.page:36(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:36
 msgid "5"
 msgstr "5"
 
-#: C/strategy.page:38(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:38
 msgid "1, 5"
 msgstr "1, 5"
 
-#: C/strategy.page:38(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:38
 msgid "1, 2"
 msgstr "1, 2"
 
-#: C/strategy.page:40(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:40
 msgid "2, 3, 5"
 msgstr "2, 3, 5"
 
-#: C/strategy.page:40(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:40
 msgid "1"
 msgstr "1"
 
-#: C/strategy.page:42(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:42
 msgid "2, 4"
 msgstr "2, 4"
 
-#: C/strategy.page:42(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:42
 msgid "1, 4"
 msgstr "1, 4"
 
-#: C/strategy.page:44(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:44
 msgid "3, 4, 5"
 msgstr "3, 4, 5"
 
-#: C/strategy.page:44(td/p)
+#. (itstool) path: td/p
+#: C/strategy.page:44
 msgid "4"
 msgstr "4"
 
-#: C/strategy.page:48(item/p)
+#. (itstool) path: item/p
+#: C/strategy.page:48
 msgid ""
 "Now again chase the lights starting from the first row. After chasing the "
 "lights this time your puzzle will be solved."
 msgstr ""
+"Ara, torneu a capturar els llums començant per la primera fila. Després de "
+"capturar els llums, aquesta vegada el trencaclosques quedarà resolt."
 
-#: C/strategy.page:50(note/p)
+#. (itstool) path: note/p
+#: C/strategy.page:50
 msgid ""
 "This strategy doesn't always produce the optimal solution, it may take more "
 "moves."
 msgstr ""
+"Aquesta estratègia no sempre produeix la solució òptima i pot requerir més "
+"moviments."
 
-#: C/translate.page:23(page/title)
+#. (itstool) path: page/title
+#: C/translate.page:23
 msgid "Help translate"
-msgstr ""
+msgstr "Ajudeu a traduir"
 
-#: C/translate.page:24(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:24
 msgid ""
 "The <app>GNOME Games</app> user interface and documentation is being "
 "translated by a world-wide volunteer community. You are welcome to "
 "participate."
 msgstr ""
+"La interfície d'usuari i la documentació dels <app>jocs del GNOME</app> les "
+"tradueix una comunitat de voluntaris d'arreu del món. Us convidem a "
+"participar-hi."
 
-#: C/translate.page:27(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:27
 msgid ""
-"There are <link href=\"http://l10n.gnome.org/module/gnome-games/\">many "
+"There are <link href=\"https://l10n.gnome.org/module/lightsoff/\">many "
 "languages</link> for which translations are still needed."
 msgstr ""
+"Hi ha <link href=\"https://l10n.gnome.org/module/lightsoff/\">molts idiomes</"
+"link> per als quals encara calen traduccions."
 
-#: C/translate.page:30(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:30
 msgid ""
-"To start translating you will need to <link href=\"http://l10n.gnome.org"
-"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"To start translating you will need to <link href=\"https://l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
 "teams/\">translation team</link> for your language. This will give you the "
 "ability to upload new translations."
 msgstr ""
+"Per a començar a traduir, haureu de <link href=\"https://l10n.gnome.org"
+"\">crear un compte</link> i unir-vos a l'<link href=\"https://l10n.gnome.org/"
+"teams/\">equip de traducció</link> de la vostra llengua. Això us permetrà "
+"carregar noves traduccions."
 
-#: C/translate.page:34(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:34
 msgid ""
 "You can chat with GNOME translators using <link href=\"https://cbe003.chat."
 "mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n\">irc</link>. People on the "
 "channel are located worldwide, so you may not get an immediate response as a "
 "result of timezone differences."
 msgstr ""
+"Podeu xatejar amb l'equip de traductors del GNOME mitjançant l'<link href="
+"\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n"
+"\">IRC</link>. Els participants d'aquest canal es troben arreu del món, per "
+"la qual cosa pot ser que no obtingueu una resposta immediata a causa de les "
+"diferències horàries."
 
-#: C/translate.page:37(page/p)
+#. (itstool) path: page/p
+#: C/translate.page:37
 msgid ""
 "Alternatively, you can contact the Internationalization Team using their "
-"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
 "list</link>."
 msgstr ""
+"També podeu contactar amb l’Equip d’Internacionalització mitjançant la seva "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">llista de "
+"correu</link>."
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/lightsoff_logo.jpg' "
+#~ "md5='8d8b8efd7f0cfb455cb7fba261433455'"
+#~ msgstr ""
+#~ "external ref='figures/lightsoff_logo.jpg' "
+#~ "md5='8d8b8efd7f0cfb455cb7fba261433455'"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/lightsoff.jpg' "
+#~ "md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
+#~ msgstr ""
+#~ "external ref='figures/lightsoff.jpg' "
+#~ "md5='22e3748b8fced7f6770f76cb1e2e6fa4'"
+
+#~ msgid ""
+#~ "<media type=\"image\" src=\"figures/lightsoff.jpg\">Lights Off logo</"
+#~ "media>Lights Off"
+#~ msgstr ""
+#~ "<media type=\"image\" src=\"figures/lightsoff.jpg\">Logotip de l'Apaga "
+#~ "els llums</media>Apaga els llums"
+
+#~ msgctxt "_"
+#~ msgid ""
+#~ "external ref='figures/lightsoff.ogv' "
+#~ "md5='61b453a759cd54689b3a321089290bf8'"
+#~ msgstr ""
+#~ "external ref='figures/lightsoff.ogv' "
+#~ "md5='61b453a759cd54689b3a321089290bf8'"
