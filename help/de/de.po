@@ -134,7 +134,7 @@ msgstr ""
 #: C/basic.page:47
 msgctxt "_"
 msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
-msgstr ""
+msgstr "translated"
 
 #. (itstool) path: section/title
 #: C/basic.page:52
