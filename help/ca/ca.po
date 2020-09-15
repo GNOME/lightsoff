@@ -65,7 +65,7 @@ msgid ""
 "and press the <key>Enter</key> key."
 msgstr ""
 "Per a seleccionar una fitxa, utilitzeu les fletxes del teclat per a moure el "
-"focus a la fitxa i premeu la tecla <key>Enter</key>."
+"focus a la fitxa i premeu la tecla <key>Retorn</key>."
 
 #. (itstool) path: item/p
 #: C/basic.page:26 C/basic.page:34
@@ -350,7 +350,7 @@ msgstr "Reconeixement-CompartirIgual 3.0 No adaptada (CC BY-SA 3.0)"
 #. (itstool) path: license/p
 #: C/legal.xml:3
 msgid "This work is licensed under a <_:link-1/>."
-msgstr "Aquesta obra està llicenciada sota una <_:link-1>."
+msgstr "Aquesta obra està llicenciada sota una <_:link-1/>."
 
 #. (itstool) path: info/desc
 #: C/license.page:8
