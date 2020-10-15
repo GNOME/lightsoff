@@ -17,14 +17,10 @@ public class LightsOff : Gtk.Application
     private LightsoffWindow window;
 
     private static bool version = false;
-    private static bool gtk = true;
 
     private const GLib.OptionEntry[] options = {
         // --version
         { "version", 0, 0, OptionArg.NONE, ref version, "Display version number", null },
-
-        // --gtk-mode
-        { "gtk-mode", 0, 0, OptionArg.NONE, ref gtk, "Use native graphics", null },
 
         // list terminator
         { null }
@@ -58,7 +54,7 @@ public class LightsOff : Gtk.Application
         set_accels_for_action ("win.previous-level", {"<control>Page_Up"});
         set_accels_for_action ("win.next-level", {"<control>Page_Down"});
 
-        window = new LightsoffWindow (gtk);
+        window = new LightsoffWindow ();
         add_window (window);
     }
 
@@ -146,11 +142,6 @@ public class LightsOff : Gtk.Application
         if (version) {
             print ("%s %s\n", _("Lights Off"), VERSION);
             return 0;
-        }
-        if (!gtk && GtkClutter.init (ref args) != Clutter.InitError.SUCCESS)
-        {
-            warning ("Failed to initialise Clutter");
-            return Posix.EXIT_FAILURE;
         }
 
         var app = new LightsOff ();
