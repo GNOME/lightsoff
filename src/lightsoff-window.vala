@@ -36,25 +36,7 @@ public class LightsoffWindow : ApplicationWindow
         key_controller.key_pressed.connect (on_key_pressed);
     }
 
-    public Gtk.Widget build_clutter_game_container (int level, out GameView out_game_view)
-    {
-        var clutter_embed = new GtkClutter.Embed ();
-        clutter_embed.show ();
-        var stage = (Clutter.Stage) clutter_embed.get_stage ();
-        stage.background_color = Clutter.Color.from_string ("#000000");
-
-        ClutterGameView clutter_game_view = new ClutterGameView (level);
-        clutter_game_view.show ();
-
-        stage.add_child (clutter_game_view);
-
-        out_game_view = clutter_game_view;
-        stage.set_size (clutter_game_view.width, clutter_game_view.height);
-        clutter_embed.set_size_request ((int) stage.width, (int) stage.height);
-        return clutter_embed;
-    }
-
-    public Gtk.Widget build_gtk_game_container (int level, out GameView out_game_view)
+    public Gtk.Widget build_game_container (int level, out GameView out_game_view)
     {
         var aspect_frame = new Gtk.AspectFrame (null, 0.5f, 0.5f, 1.0f, false);
         aspect_frame.set_shadow_type (ShadowType.NONE);
@@ -87,7 +69,7 @@ public class LightsoffWindow : ApplicationWindow
         int level = settings.get_int ("level");
         level_changed_cb (level);
 
-        this.add (build_gtk_game_container (level, out game_view));
+        this.add (build_game_container (level, out game_view));
 
         this.set_resizable (true);
         game_view.level_changed.connect (level_changed_cb);

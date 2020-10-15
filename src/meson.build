@@ -1,12 +1,10 @@
 lightsoff_vala_sources = [
   'board-view.vala',
-  'board-view-clutter.vala',
   'board-view-gtk.vala',
   'lightsoff.vala',
   'lightsoff-window.vala',
   'puzzle-generator.vala',
   'game-view.vala',
-  'game-view-clutter.vala',
   'game-view-gtk.vala',
 ]
 
@@ -22,8 +20,6 @@ deps = [
   glib_dep,
   gio_dep,
   gtk_dep,
-  clutter_dep,
-  clutter_gtk_dep,
   librsvg_dep,
   libmath_dep,
   config_dep,
