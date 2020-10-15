@@ -22,11 +22,11 @@ public class GtkGameView : Gtk.Stack, GameView {
         }
 
         var new_level = "level %d".printf(current_level);
-        add_named (new_board as Gtk.Widget, new_level);
-        set_visible_child (new_board as Gtk.Widget);
+        add_named ((Gtk.Widget)new_board, new_level);
+        set_visible_child ((Gtk.Widget)new_board);
         ((BoardViewGtk)old_board).playable = false;
         if (Gtk.Settings.get_for_screen (((Gtk.Widget)new_board).get_screen ()).gtk_enable_animations)
-            handlers.push_tail(notify["transition-running"].connect(() => board_replaced (old_board as BoardViewGtk, new_board as BoardViewGtk)));
+            handlers.push_tail(notify["transition-running"].connect(() => board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board)));
         else
             board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board);
         level_changed (current_level);
@@ -65,7 +65,7 @@ public class GtkGameView : Gtk.Stack, GameView {
 
     public GtkGameView (int level)
     {
-        board_view = create_board_view (level) as BoardViewGtk;
+        board_view = (BoardViewGtk)create_board_view (level);
         board_view.playable = true;
         add (board_view);
     }
@@ -79,12 +79,12 @@ public class GtkGameView : Gtk.Stack, GameView {
         view.game_won.connect (() => game_won_cb());
         view.light_toggled.connect (light_toggled_cb);
         view.playable = false;
-        return view as BoardView;
+        return (BoardView)view;
     }
 
    public BoardView get_board_view ()
     {
-        return board_view as BoardView;
+        return (BoardView)board_view;
     }
 
     public int next_level (int direction) {

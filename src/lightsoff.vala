@@ -23,7 +23,7 @@ public class LightsOff : Gtk.Application
         { "version", 0, 0, OptionArg.NONE, ref version, "Display version number", null },
 
         // list terminator
-        { null }
+        {}
     };
 
     private const GLib.ActionEntry[] action_entries =
@@ -43,7 +43,9 @@ public class LightsOff : Gtk.Application
         base.startup ();
 
         Gtk.Window.set_default_icon_name ("org.gnome.LightsOff");
-        Gtk.Settings.get_default ().set ("gtk-application-prefer-dark-theme", true);
+        Gtk.Settings? gtk_settings = Gtk.Settings.get_default ();
+        if (gtk_settings != null) // else..?
+            ((!) gtk_settings).set ("gtk-application-prefer-dark-theme", true);
 
         add_action_entries (action_entries, this);
 
@@ -87,21 +89,18 @@ public class LightsOff : Gtk.Application
         {
             "Tim Horton",
             "Robert Ancell",
-            "Robert Roth",
-            null
+            "Robert Roth"
         };
 
         string[] artists =
         {
             "Tim Horton",
-            "Ulisse Perusin",
-            null
+            "Ulisse Perusin"
         };
 
         string[] documenters =
         {
-            "Eric Baudais",
-            null
+            "Eric Baudais"
         };
 
         Gtk.show_about_dialog (window,
@@ -116,8 +115,7 @@ public class LightsOff : Gtk.Application
                                "documenters", documenters,
                                "translator-credits", _("translator-credits"),
                                "logo-icon-name", "org.gnome.LightsOff",
-                               "website", "https://wiki.gnome.org/Apps/Lightsoff",
-                               null);
+                               "website", "https://wiki.gnome.org/Apps/Lightsoff");
     }
 
     public static int main (string[] args)

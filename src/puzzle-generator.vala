@@ -59,7 +59,7 @@ public class PuzzleGenerator : Object
         }
 
         // Row-reduction over field with two elements
-        List<int> non_pivot_cols = null;
+        List<int> non_pivot_cols = new List<int> ();
         var ipiv = 0;
         for (var jpiv = 0; jpiv < size * size; jpiv++)
         {

@@ -47,11 +47,14 @@ public class LightsoffWindow : ApplicationWindow
         gtk_game_view.show ();
 
         aspect_frame.add (gtk_game_view);
-
         out_game_view = gtk_game_view;
+
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/org/gnome/LightsOff/ui/lightsoff.css");
-        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
+        Gdk.Screen? gdk_screen = Gdk.Screen.get_default ();
+        if (gdk_screen != null) // else..?
+            StyleContext.add_provider_for_screen ((!) gdk_screen, provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
+
         return aspect_frame;
     }
 
