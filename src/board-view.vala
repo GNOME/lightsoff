@@ -74,7 +74,7 @@ private interface BoardView: GLib.Object {
         if (is_completed ())
         {
             completed ();
-            Gdk.threads_add_timeout (300, game_won_timeout);
+            Timeout.add (300, game_won_timeout);
         }
     }
 
