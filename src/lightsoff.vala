@@ -109,16 +109,9 @@ private class LightsOff : Gtk.Application
         window.present ();
     }
 
-    private void help_cb ()
+    private inline void help_cb ()
     {
-        try
-        {
-            show_uri_on_window (window, "help:lightsoff", get_current_event_time ());
-        }
-        catch (Error e)
-        {
-            warning ("Failed to show help: %s", e.message);
-        }
+        show_uri (window, "help:lightsoff", Gdk.CURRENT_TIME);
     }
 
     private void quit_cb ()
