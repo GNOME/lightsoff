@@ -24,7 +24,10 @@ private class BoardViewGtk : Grid, BoardView
         get_style_context ().add_class ("grid");
         row_homogeneous = true;
         column_homogeneous = true;
-        border_width = 2;
+        margin_start = 2;
+        margin_end = 2;
+        margin_top = 2;
+        margin_bottom = 2;
         row_spacing = 2;
         column_spacing = 2;
 
