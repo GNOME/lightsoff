@@ -40,7 +40,6 @@ private class BoardViewGtk : Grid, BoardView
             for (var y = 0; y < size; y++)
             {
                 lights[x, y] = new ToggleButton ();
-                lights[x, y].show ();
                 lights[x, y].toggled.connect (handle_toggle);
                 attach (lights[x, y], x, y, 1, 1);
                 focus_list.append (lights[x, y]);
@@ -48,7 +47,6 @@ private class BoardViewGtk : Grid, BoardView
         set_focus_chain (focus_list);
         _moves = 0;
         completed.connect (() => set_sensitive (false));
-        show ();
     }
 
     // Pseudorandomly generates and sets the state of each light based on

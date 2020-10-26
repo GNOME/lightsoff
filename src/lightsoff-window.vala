@@ -54,7 +54,6 @@ private class LightsoffWindow : ManagedWindow
         GtkGameView gtk_game_view = new GtkGameView (level);
         gtk_game_view.hexpand = true;
         gtk_game_view.vexpand = true;
-        gtk_game_view.show ();
 
         aspect_frame.add (gtk_game_view);
         game_view = gtk_game_view;
