@@ -10,19 +10,17 @@
  * license.
  */
 
-using Config;
-
-public class LightsOff : Gtk.Application
+private class LightsOff : Gtk.Application
 {
     private LightsoffWindow window;
 
-    private static bool version = false;
+    private static string? [] remaining = new string? [1];
+    private const OptionEntry [] option_entries =
+    {
+        /* Translators: command-line option description, see 'lightsoff --help' */
+        { "version", 'v', OptionFlags.NONE, OptionArg.NONE, null,                       N_("Display version number"),   null }, // is usually "Print release version and exit"
 
-    private const GLib.OptionEntry[] options = {
-        // --version
-        { "version", 0, 0, OptionArg.NONE, ref version, "Display version number", null },
-
-        // list terminator
+        { OPTION_REMAINING, 0, OptionFlags.NONE, OptionArg.STRING_ARRAY, ref remaining, "args", null },
         {}
     };
 
@@ -33,16 +31,52 @@ public class LightsOff : Gtk.Application
         { "about",         about_cb    }
     };
 
+    private static int main (string[] args)
+    {
+        Intl.setlocale (LocaleCategory.ALL, "");
+        Intl.bindtextdomain (Config.GETTEXT_PACKAGE, Config.LOCALEDIR);
+        Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
+        Intl.textdomain (Config.GETTEXT_PACKAGE);
+
+        Environment.set_application_name (_("Lights Off"));
+        Gtk.Window.set_default_icon_name ("org.gnome.LightsOff");
+
+        var app = new LightsOff ();
+        return app.run (args);
+    }
+
     private LightsOff ()
     {
         Object (application_id: "org.gnome.LightsOff", flags: ApplicationFlags.FLAGS_NONE);
+
+        add_main_option_entries (option_entries);
+    }
+
+    protected override int handle_local_options (GLib.VariantDict options)
+    {
+        if (options.contains ("version")
+         || remaining [0] != null && (!) remaining [0] == "version")
+        {
+            /* Translators: name of the program, as displayed in the output of the command-line 'lightsoff --version' */
+            print ("%s %s\n", _("Lights Off"), Config.VERSION);    // TODO is usually not translated, for parsing... would be better?
+            return Posix.EXIT_SUCCESS;
+        }
+
+        if (remaining [0] != null)
+        {
+            /* Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed' */
+            stderr.printf (_("Failed to parse command-line arguments.") + "\n");
+            return Posix.EXIT_FAILURE;
+        }
+
+        /* Activate */
+        return -1;
     }
 
     protected override void startup ()
     {
         base.startup ();
 
-        Gtk.Window.set_default_icon_name ("org.gnome.LightsOff");
         Gtk.Settings? gtk_settings = Gtk.Settings.get_default ();
         if (gtk_settings != null) // else..?
             ((!) gtk_settings).set ("gtk-application-prefer-dark-theme", true);
@@ -60,7 +94,7 @@ public class LightsOff : Gtk.Application
         add_window (window);
     }
 
-    public override void activate ()
+    protected override void activate ()
     {
         window.present ();
     }
@@ -105,7 +139,7 @@ public class LightsOff : Gtk.Application
 
         Gtk.show_about_dialog (window,
                                "program-name", _("Lights Off"),
-                               "version", VERSION,
+                               "version", Config.VERSION,
                                "comments",
                                _("Turn off all the lights"),
                                "copyright", "Copyright © 2009 Tim Horton",
@@ -116,33 +150,5 @@ public class LightsOff : Gtk.Application
                                "translator-credits", _("translator-credits"),
                                "logo-icon-name", "org.gnome.LightsOff",
                                "website", "https://wiki.gnome.org/Apps/Lightsoff");
-    }
-
-    public static int main (string[] args)
-    {
-        Intl.setlocale (LocaleCategory.ALL, "");
-        Intl.bindtextdomain (Config.GETTEXT_PACKAGE, Config.LOCALEDIR);
-        Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
-        Intl.textdomain (Config.GETTEXT_PACKAGE);
-
-        Environment.set_application_name (_("Lights Off"));
-
-        try {
-            var opt_context = new OptionContext ("");
-            opt_context.set_help_enabled (true);
-            opt_context.add_main_entries (options, Config.GETTEXT_PACKAGE);
-            opt_context.parse (ref args);
-        } catch (OptionError e) {
-            print (_("Run `%s --help` to see a full list of available command line options.\n"), args[0]);
-            return 0;
-        }
-
-        if (version) {
-            print ("%s %s\n", _("Lights Off"), VERSION);
-            return 0;
-        }
-
-        var app = new LightsOff ();
-        return app.run ();
     }
 }
