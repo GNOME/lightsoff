@@ -10,8 +10,13 @@
  * license.
  */
 
+using Gtk;
+
 private class LightsOff : Gtk.Application
 {
+    /* Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog */
+    private const string PROGRAM_NAME = _("Lights Off");
+
     private LightsoffWindow window;
 
     private static string? [] remaining = new string? [1];
@@ -38,8 +43,8 @@ private class LightsOff : Gtk.Application
         Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain (Config.GETTEXT_PACKAGE);
 
-        Environment.set_application_name (_("Lights Off"));
-        Gtk.Window.set_default_icon_name ("org.gnome.LightsOff");
+        Environment.set_application_name (PROGRAM_NAME);
+        Window.set_default_icon_name ("org.gnome.LightsOff");
 
         var app = new LightsOff ();
         return app.run (args);
@@ -57,8 +62,7 @@ private class LightsOff : Gtk.Application
         if (options.contains ("version")
          || remaining [0] != null && (!) remaining [0] == "version")
         {
-            /* Translators: name of the program, as displayed in the output of the command-line 'lightsoff --version' */
-            print ("%s %s\n", _("Lights Off"), Config.VERSION);    // TODO is usually not translated, for parsing... would be better?
+            print ("%s %s\n", PROGRAM_NAME, Config.VERSION);   // TODO is usually not translated, for parsing... would be better?
             return Posix.EXIT_SUCCESS;
         }
 
@@ -103,7 +107,7 @@ private class LightsOff : Gtk.Application
     {
         try
         {
-            Gtk.show_uri (window.get_screen (), "help:lightsoff", Gtk.get_current_event_time ());
+            show_uri (window.get_screen (), "help:lightsoff", get_current_event_time ());
         }
         catch (Error e)
         {
@@ -115,7 +119,6 @@ private class LightsOff : Gtk.Application
     {
         window.destroy ();
     }
-
 
     private void about_cb ()
     {
@@ -137,18 +140,26 @@ private class LightsOff : Gtk.Application
             "Eric Baudais"
         };
 
-        Gtk.show_about_dialog (window,
-                               "program-name", _("Lights Off"),
-                               "version", Config.VERSION,
-                               "comments",
-                               _("Turn off all the lights"),
-                               "copyright", "Copyright © 2009 Tim Horton",
-                               "license-type", Gtk.License.GPL_2_0,
-                               "authors", authors,
-                               "artists", artists,
-                               "documenters", documenters,
-                               "translator-credits", _("translator-credits"),
-                               "logo-icon-name", "org.gnome.LightsOff",
-                               "website", "https://wiki.gnome.org/Apps/Lightsoff");
+        /* Translators: short description of the application, seen in the About dialog */
+        string comments = _("Turn off all the lights");
+
+
+        /* Translators: about dialog text; label of the website link */
+        string website_label = _("Page on GNOME wiki");
+
+        show_about_dialog (window,
+                           "program-name",          PROGRAM_NAME,
+                           "version",               Config.VERSION,
+                           "comments",              comments,
+                           "copyright",             "Copyright © 2009 Tim Horton",  // TODO _("Copyright \xc2\xa9 %u-%u – Arnaud Bonatti").printf (20xx, 20xx)
+                           "license-type",          License.GPL_2_0,
+                           "authors",               authors,
+                           "artists",               artists,
+                           "documenters",           documenters,
+        /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
+                           "translator-credits",    _("translator-credits"),
+                           "logo-icon-name",        "org.gnome.LightsOff",
+                           "website",               "https://wiki.gnome.org/Apps/Lightsoff",
+                           "website-label",         website_label);
     }
 }

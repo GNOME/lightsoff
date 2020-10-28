@@ -7,6 +7,7 @@
  * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
  * license.
  */
+
 public interface BoardView: GLib.Object {
 
     public new const int size = 5;

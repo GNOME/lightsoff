@@ -1,4 +1,14 @@
-public class GtkGameView : Gtk.Stack, GameView {
+/*
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 2 of the License, or (at your option) any later
+ * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
+ * license.
+ */
+
+using Gtk;
+
+public class GtkGameView : Stack, GameView {
 
     private BoardViewGtk board_view;
     private int current_level;
@@ -10,22 +20,22 @@ public class GtkGameView : Gtk.Stack, GameView {
         switch (style)
         {
             case REFRESH:
-                transition_type = Gtk.StackTransitionType.SLIDE_DOWN;
+                transition_type = StackTransitionType.SLIDE_DOWN;
                 break;
             case SLIDE_NEXT:
             case SLIDE_FORWARD:
-                transition_type = Gtk.StackTransitionType.SLIDE_LEFT;
+                transition_type = StackTransitionType.SLIDE_LEFT;
                 break;
             case SLIDE_BACKWARD:
-                transition_type = Gtk.StackTransitionType.SLIDE_RIGHT;
+                transition_type = StackTransitionType.SLIDE_RIGHT;
                 break;
         }
 
         var new_level = "level %d".printf(current_level);
-        add_named ((Gtk.Widget)new_board, new_level);
-        set_visible_child ((Gtk.Widget)new_board);
+        add_named ((Widget)new_board, new_level);
+        set_visible_child ((Widget)new_board);
         ((BoardViewGtk)old_board).playable = false;
-        if (Gtk.Settings.get_for_screen (((Gtk.Widget)new_board).get_screen ()).gtk_enable_animations)
+        if (Gtk.Settings.get_for_screen (((Widget)new_board).get_screen ()).gtk_enable_animations)
             handlers.push_tail(notify["transition-running"].connect(() => board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board)));
         else
             board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board);

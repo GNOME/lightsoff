@@ -87,13 +87,14 @@ public class LightsoffWindow : ApplicationWindow
 
     private void update_title (int level)
     {
-        /* The title of the window, %d is the level number */
+        /* Translators: the title of the window, %d is the level number */
         headerbar.title = _("Puzzle %d").printf (level);
 
-        /* Subtitle is a game hint when playing level one, the number of moves otherwise */
         if (level == 1)
+            /* Translators: default subtitle, only displayed when playing level one; used as a game hint */
             headerbar.subtitle = _("Turn off all the lights!");
         else
+            /* else show number of moves */
             update_subtitle (0);
     }
 

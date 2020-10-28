@@ -8,10 +8,12 @@
  * license.
  */
 
-public class BoardViewGtk : Gtk.Grid, BoardView
+using Gtk;
+
+public class BoardViewGtk : Grid, BoardView
 {
     private PuzzleGenerator puzzle_generator;
-    private Gtk.ToggleButton[,] lights;
+    private ToggleButton[,] lights;
 
     public bool playable = true;
     private const int MIN_TOGGLE_SIZE = 48;
@@ -34,12 +36,12 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         set_size_request (size * MIN_TOGGLE_SIZE, size * MIN_TOGGLE_SIZE);
 
         puzzle_generator = new PuzzleGenerator (size);
-        lights = new Gtk.ToggleButton [size, size];
-        List<Gtk.Widget> focus_list = new List<Gtk.Widget> ();
+        lights = new ToggleButton [size, size];
+        List<Widget> focus_list = new List<Widget> ();
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)
             {
-                lights[x, y] = new Gtk.ToggleButton ();
+                lights[x, y] = new ToggleButton ();
                 lights[x, y].show ();
                 lights[x, y].toggled.connect (handle_toggle);
                 attach (lights[x, y], x, y, 1, 1);
@@ -61,7 +63,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         if (!playable)
             return;
 
-        @foreach((light) => ((Gtk.ToggleButton)light).toggled.disconnect (handle_toggle));
+        @foreach((light) => ((ToggleButton)light).toggled.disconnect (handle_toggle));
 
         if (x>= size || y >= size || x < 0 || y < 0 )
             return;
@@ -77,7 +79,7 @@ public class BoardViewGtk : Gtk.Grid, BoardView
         if (!clicked)
             lights[(int) x, (int) y].set_active (!lights[(int) x, (int) y ].get_active ());
 
-        @foreach((light) => ((Gtk.ToggleButton)light).toggled.connect (handle_toggle));
+        @foreach((light) => ((ToggleButton)light).toggled.connect (handle_toggle));
     }
 
     public void clear_level ()

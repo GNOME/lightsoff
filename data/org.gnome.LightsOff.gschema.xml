@@ -3,7 +3,9 @@
     <key name="level" type="i">
       <default>1</default>
       <range min="1" />
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level' -->
       <summary>The current level</summary>
+      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/level' -->
       <description>The users’s most recent level.</description>
     </key>
   </schema>
