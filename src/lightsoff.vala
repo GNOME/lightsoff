@@ -107,7 +107,7 @@ private class LightsOff : Gtk.Application
     {
         try
         {
-            show_uri (window.get_screen (), "help:lightsoff", get_current_event_time ());
+            show_uri_on_window (window, "help:lightsoff", get_current_event_time ());
         }
         catch (Error e)
         {
