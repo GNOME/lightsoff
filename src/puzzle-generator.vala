@@ -31,14 +31,14 @@
 // (Certainly, on average, at most half the lights which belong to at least
 // one null set may be used.)
 
-public class PuzzleGenerator : Object
+private class PuzzleGenerator : Object
 {
     private int size;
     private int max_solution_length;
     private int[] region_of;
     private int[] region_size;
 
-    public PuzzleGenerator (int size)
+    internal PuzzleGenerator (int size)
     {
         this.size = size;
         var adj_matrix = new int[size * size, size * size];
@@ -144,7 +144,7 @@ public class PuzzleGenerator : Object
             max_solution_length += (int) Math.floor (region_size[j] / 2);
     }
 
-    public bool[,] minimal_solution (int solution_length)
+    internal bool[,] minimal_solution (int solution_length)
     {
         var sol = new bool[size, size];
         for (var x = 0; x < size; x++)
@@ -205,4 +205,3 @@ public class PuzzleGenerator : Object
         return sol;
     }
 }
-

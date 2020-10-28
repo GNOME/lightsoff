@@ -8,27 +8,27 @@
  * license.
  */
 
-public interface BoardView: GLib.Object {
+private interface BoardView: GLib.Object {
 
-    public new const int size = 5;
+    internal new const int size = 5;
 
-    public abstract int get_moves ();
-    public abstract PuzzleGenerator get_puzzle_generator ();
-    public abstract void clear_level ();
-    public abstract void toggle_light (int x, int y, bool user_initiated = true);
-    public abstract void increase_moves ();
-    public abstract bool is_light_active (int x, int y);
+    internal abstract int get_moves ();
+    internal abstract PuzzleGenerator get_puzzle_generator ();
+    internal abstract void clear_level ();
+    internal abstract void toggle_light (int x, int y, bool user_initiated = true);
+    internal abstract void increase_moves ();
+    internal abstract bool is_light_active (int x, int y);
 
-    public abstract GLib.Object get_light_at (int x, int y);
+    internal abstract GLib.Object get_light_at (int x, int y);
 
-    public signal void game_won ();
-    public signal void light_toggled ();
+    internal signal void game_won ();
+    internal signal void light_toggled ();
 
         // Pseudorandomly generates and sets the state of each light based on
     // a level number; hopefully this is stable between machines, but that
     // depends on GLib's PRNG stability. Also, provides some semblance of
     // symmetry for some levels.
-    public void load_level (int level)
+    internal void load_level (int level)
     {
         /* We *must* not have level < 1, as the following assumes a nonzero, nonnegative number */
         if (level < 1)
@@ -49,14 +49,14 @@ public interface BoardView: GLib.Object {
                     toggle_light (x, y, false);
     }
 
-    public void handle_toggle (GLib.Object light)
+    internal void handle_toggle (GLib.Object light)
     {
         int x, y;
         find_light (light, out x, out y);
         move_to (x, y);
     }
 
-    public void find_light (GLib.Object light, out int x, out int y)
+    internal void find_light (GLib.Object light, out int x, out int y)
     {
         x = y = 0;
         for (x = 0; x < size; x++)
@@ -65,7 +65,7 @@ public interface BoardView: GLib.Object {
                     return;
     }
 
-    public void move_to (int x, int y)
+    internal void move_to (int x, int y)
     {
         toggle_light (x, y);
         increase_moves ();
@@ -80,7 +80,7 @@ public interface BoardView: GLib.Object {
         return GLib.Source.REMOVE;
     }
 
-    public bool is_completed ()
+    internal bool is_completed ()
     {
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)

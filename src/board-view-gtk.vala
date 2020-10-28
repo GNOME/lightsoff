@@ -10,21 +10,17 @@
 
 using Gtk;
 
-public class BoardViewGtk : Grid, BoardView
+private class BoardViewGtk : Grid, BoardView
 {
     private PuzzleGenerator puzzle_generator;
     private ToggleButton[,] lights;
 
-    public bool playable = true;
+    internal bool playable { private get; internal set; default = true; }
     private const int MIN_TOGGLE_SIZE = 48;
     private int _moves = 0;
-    public int moves
-    {
-        get { return _moves;}
-    }
-    public int get_moves() { return _moves;}
+    internal int get_moves () { return _moves; }
 
-    public BoardViewGtk ()
+    internal BoardViewGtk ()
     {
         get_style_context ().add_class ("grid");
         row_homogeneous = true;
@@ -58,7 +54,7 @@ public class BoardViewGtk : Grid, BoardView
     // symmetry for some levels.
 
      // Toggle a light and those in each cardinal direction around it.
-    public void toggle_light (int x, int y, bool clicked = true)
+    internal void toggle_light (int x, int y, bool clicked = true)
     {
         if (!playable)
             return;
@@ -82,7 +78,7 @@ public class BoardViewGtk : Grid, BoardView
         @foreach((light) => ((ToggleButton)light).toggled.connect (handle_toggle));
     }
 
-    public void clear_level ()
+    internal void clear_level ()
     {
         /* Clear level */
         for (var x = 0; x < size; x++)
@@ -90,24 +86,23 @@ public class BoardViewGtk : Grid, BoardView
                 lights[x, y].active = false;
     }
 
-    public PuzzleGenerator get_puzzle_generator ()
+    internal PuzzleGenerator get_puzzle_generator ()
     {
         return puzzle_generator;
     }
 
-    public bool is_light_active (int x, int y)
+    internal bool is_light_active (int x, int y)
     {
         return lights[x, y].active;
     }
 
-    public GLib.Object get_light_at (int x, int y)
+    internal GLib.Object get_light_at (int x, int y)
     {
         return lights[x, y];
     }
 
-    public void increase_moves ()
+    internal void increase_moves ()
     {
         _moves += 1;
     }
-
 }

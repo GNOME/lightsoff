@@ -13,7 +13,7 @@
 using Gtk;
 
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/lightsoff.ui")]
-public class LightsoffWindow : ApplicationWindow
+private class LightsoffWindow : ApplicationWindow
 {
     [GtkChild] private HeaderBar headerbar;
     [GtkChild] private MenuButton menu_button;
@@ -36,7 +36,7 @@ public class LightsoffWindow : ApplicationWindow
         key_controller.key_pressed.connect (on_key_pressed);
     }
 
-    public Gtk.Widget build_game_container (int level, out GameView out_game_view)
+    private Gtk.Widget build_game_container (int level, out GameView out_game_view)
     {
         var aspect_frame = new Gtk.AspectFrame (null, 0.5f, 0.5f, 1.0f, false);
         aspect_frame.set_shadow_type (ShadowType.NONE);
@@ -58,7 +58,7 @@ public class LightsoffWindow : ApplicationWindow
         return aspect_frame;
     }
 
-    public LightsoffWindow ()
+    internal LightsoffWindow ()
     {
         settings = new GLib.Settings ("org.gnome.LightsOff");
 
@@ -145,4 +145,4 @@ public class LightsoffWindow : ApplicationWindow
     {
         game_view.reset_game ();
     }
- }
+}

@@ -8,13 +8,13 @@
 
 using Gtk;
 
-public class GtkGameView : Stack, GameView {
-
+private class GtkGameView : Stack, GameView
+{
     private BoardViewGtk board_view;
     private int current_level;
     private GLib.Queue<ulong> handlers = new GLib.Queue<ulong>();
 
-    public void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
+    internal void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
         transition_duration = fast ? 500 : 1000;
         switch (style)
@@ -42,7 +42,7 @@ public class GtkGameView : Stack, GameView {
         level_changed (current_level);
     }
 
-    public void board_replaced (BoardViewGtk old_board, BoardViewGtk new_board)
+    internal void board_replaced (BoardViewGtk old_board, BoardViewGtk new_board)
     {
         @foreach((board) => { if (board != get_visible_child ()) remove(board);});
         new_board.playable = true;
@@ -51,21 +51,21 @@ public class GtkGameView : Stack, GameView {
             disconnect(handlers.pop_head());
     }
 
-    public bool hide_cursor ()
+    internal bool hide_cursor ()
     {
         queue_draw ();
         return false;
     }
-    public bool activate_cursor ()
+    internal bool activate_cursor ()
     {
         return false;
     }
-    public bool move_cursor (int x, int y)
+    internal bool move_cursor (int x, int y)
     {
         return false;
     }
 
-    public void reset_game ()
+    internal void reset_game ()
     {
         if (is_transitioning())
             return;
@@ -73,14 +73,14 @@ public class GtkGameView : Stack, GameView {
         replace_board (get_board_view (), create_board_view (1), GameView.ReplaceStyle.REFRESH);
     }
 
-    public GtkGameView (int level)
+    internal GtkGameView (int level)
     {
         board_view = (BoardViewGtk)create_board_view (level);
         board_view.playable = true;
         add (board_view);
     }
 
-    public BoardView create_board_view (int level)
+    internal BoardView create_board_view (int level)
     {
         current_level = level;
 
@@ -92,19 +92,18 @@ public class GtkGameView : Stack, GameView {
         return (BoardView)view;
     }
 
-   public BoardView get_board_view ()
+   internal BoardView get_board_view ()
     {
         return (BoardView)board_view;
     }
 
-    public int next_level (int direction) {
+    internal int next_level (int direction) {
         current_level += direction;
         return current_level;
     }
 
-    public bool is_transitioning ()
+    internal bool is_transitioning ()
     {
         return transition_running;
     }
-
 }

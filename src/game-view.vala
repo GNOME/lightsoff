@@ -8,31 +8,31 @@
  * license.
  */
 
-public interface GameView : GLib.Object {
+private interface GameView : GLib.Object {
 
-    public enum ReplaceStyle {
+    internal enum ReplaceStyle {
         REFRESH, // crossfade
         SLIDE_FORWARD, // slide out-in
         SLIDE_BACKWARD, // slide in-out
         SLIDE_NEXT // slide over
     }
 
-    public abstract void replace_board (BoardView board_biew, BoardView new_board_view, ReplaceStyle style, bool fast = true);
+    internal abstract void replace_board (BoardView board_biew, BoardView new_board_view, ReplaceStyle style, bool fast = true);
 
-    public abstract bool hide_cursor ();
-    public abstract bool activate_cursor ();
-    public abstract bool move_cursor (int x, int y);
-    public abstract void reset_game ();
-    public abstract BoardView get_board_view ();
-    public abstract bool is_transitioning ();
-    public abstract int next_level (int direction);
-    public abstract BoardView create_board_view (int level);
+    internal abstract bool hide_cursor ();
+    internal abstract bool activate_cursor ();
+    internal abstract bool move_cursor (int x, int y);
+    internal abstract void reset_game ();
+    internal abstract BoardView get_board_view ();
+    internal abstract bool is_transitioning ();
+    internal abstract int next_level (int direction);
+    internal abstract BoardView create_board_view (int level);
 
     // The player asked to swap to a different level without completing
     // the one in progress; this can occur either by clicking an arrow
     // or by requesting a new game from the menu. Animate the new board
     // in, depthwise, in the direction indicated by 'context'.
-    public void swap_board (int direction)
+    internal void swap_board (int direction)
     {
         if (is_transitioning ())
             return;
@@ -44,7 +44,7 @@ public interface GameView : GLib.Object {
 
     // The player won the game; create a new board, update the level count,
     // and transition between the two boards in a random direction.
-    public void game_won_cb ()
+    internal void game_won_cb ()
     {
         if (is_transitioning ())
             return;
@@ -52,12 +52,11 @@ public interface GameView : GLib.Object {
         replace_board (get_board_view (), create_board_view (next_level (1)), GameView.ReplaceStyle.SLIDE_NEXT);
     }
 
-    public void light_toggled_cb ()
+    internal void light_toggled_cb ()
     {
         moves_changed (get_board_view ().get_moves ());
     }
 
-    public signal void level_changed (int level);
-    public signal void moves_changed (int moves);
-
+    internal signal void level_changed (int level);
+    internal signal void moves_changed (int moves);
 }
