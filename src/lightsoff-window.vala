@@ -13,7 +13,7 @@
 using Gtk;
 
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/lightsoff.ui")]
-private class LightsoffWindow : ApplicationWindow
+private class LightsoffWindow : ManagedWindow
 {
     [GtkChild] private HeaderBar headerbar;
     [GtkChild] private MenuButton menu_button;
@@ -60,6 +60,8 @@ private class LightsoffWindow : ApplicationWindow
 
     internal LightsoffWindow ()
     {
+        Object (schema_path: "/org/gnome/LightsOff/");
+
         settings = new GLib.Settings ("org.gnome.LightsOff");
 
         var menu_builder = new Gtk.Builder.from_resource ("/org/gnome/LightsOff/gtk/menus.ui");

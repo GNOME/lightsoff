@@ -9,4 +9,28 @@
       <description>The users’s most recent level.</description>
     </key>
   </schema>
+
+  <schema id="org.gnome.LightsOff.Lib" gettext-domain="lightsoff">
+    <key name="window-width" type="i">
+      <default>1</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width' -->
+      <summary>The width of the window</summary>
+      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width' -->
+      <description>The width of the main window in pixels.</description>
+    </key>
+    <key name="window-height" type="i">
+      <default>1</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height' -->
+      <summary>The height of the window</summary>
+      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height' -->
+      <description>The height of the main window in pixels.</description>
+    </key>
+    <key name="window-is-maximized" type="b">
+      <default>false</default>
+      <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized' -->
+      <summary>A flag to enable maximized mode</summary>
+      <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized' -->
+      <description>If “true”, the main window starts in maximized mode.</description>
+    </key>
+  </schema>
 </schemalist>
