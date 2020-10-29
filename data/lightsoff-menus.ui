@@ -4,26 +4,6 @@
   <menu id="primary-menu">
     <section>
       <item>
-        <!-- Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts the current level  -->
-        <attribute name="label" translatable="yes">_Start Over</attribute>
-        <attribute name="action">win.new-game</attribute>
-        <attribute name="accel">&lt;Primary&gt;n</attribute>
-      </item>
-      <item>
-        <!-- Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to previous level -->
-        <attribute name="label" translatable="yes">_Previous puzzle</attribute>
-        <attribute name="action">win.previous-level</attribute>
-        <attribute name="accel">&lt;Primary&gt;Page_Up</attribute>
-      </item>
-      <item>
-        <!-- Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to next level -->
-        <attribute name="label" translatable="yes">Ne_xt puzzle</attribute>
-        <attribute name="action">win.next-level</attribute>
-        <attribute name="accel">&lt;Primary&gt;Page_Down</attribute>
-      </item>
-    </section>
-    <section>
-      <item>
         <!-- Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help -->
         <attribute name="label" translatable="yes">_Help</attribute>
         <attribute name="action">app.help</attribute>
