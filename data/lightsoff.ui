@@ -27,6 +27,7 @@
   <requires lib="gtk+" version="3.12"/>
   <template class="LightsoffWindow" parent="ManagedWindow">
     <property name="can_focus">False</property>
+    <property name="resizable">True</property>
     <child type="titlebar">
       <object class="GtkHeaderBar" id="headerbar">
         <property name="visible">True</property>
@@ -75,6 +76,16 @@
             <property name="position">0</property>
           </packing>
         </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkAspectFrame" id="aspect_frame">
+        <property name="visible">True</property>
+        <property name="obey_child">False</property>
+        <property name="shadow_type">none</property>
+        <style>
+          <class name="aspect"/>
+        </style>
       </object>
     </child>
   </template>

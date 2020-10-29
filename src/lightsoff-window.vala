@@ -18,6 +18,7 @@ private class LightsoffWindow : ManagedWindow
     [GtkChild] private HeaderBar    headerbar;
     [GtkChild] private MenuButton   menu_button;
     [GtkChild] private Label        score_label;
+    [GtkChild] private AspectFrame  aspect_frame;
 
     private GLib.Settings settings;
     private GameView game_view;
@@ -37,26 +38,19 @@ private class LightsoffWindow : ManagedWindow
         key_controller.key_pressed.connect (on_key_pressed);
     }
 
-    private Gtk.Widget build_game_container (int level, out GameView out_game_view)
+    private inline void populate_game_container (int level)
     {
-        var aspect_frame = new Gtk.AspectFrame (null, 0.5f, 0.5f, 1.0f, false);
-        aspect_frame.set_shadow_type (ShadowType.NONE);
-        aspect_frame.get_style_context ().add_class ("aspect");
-        aspect_frame.show ();
-
         GtkGameView gtk_game_view = new GtkGameView (level);
         gtk_game_view.show ();
 
         aspect_frame.add (gtk_game_view);
-        out_game_view = gtk_game_view;
+        game_view = gtk_game_view;
 
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/org/gnome/LightsOff/ui/lightsoff.css");
         Gdk.Screen? gdk_screen = Gdk.Screen.get_default ();
         if (gdk_screen != null) // else..?
             StyleContext.add_provider_for_screen ((!) gdk_screen, provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-        return aspect_frame;
     }
 
     internal LightsoffWindow ()
@@ -75,12 +69,10 @@ private class LightsoffWindow : ManagedWindow
         int level = settings.get_int ("level");
         level_changed_cb (level);
 
-        this.add (build_game_container (level, out game_view));
+        populate_game_container (level);
 
-        this.set_resizable (true);
         game_view.level_changed.connect (level_changed_cb);
         game_view.moves_changed.connect (update_subtitle);
-
     }
 
     private void update_subtitle (int moves)
