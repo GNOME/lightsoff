@@ -15,8 +15,9 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/lightsoff.ui")]
 private class LightsoffWindow : ManagedWindow
 {
-    [GtkChild] private HeaderBar headerbar;
-    [GtkChild] private MenuButton menu_button;
+    [GtkChild] private HeaderBar    headerbar;
+    [GtkChild] private MenuButton   menu_button;
+    [GtkChild] private Label        score_label;
 
     private GLib.Settings settings;
     private GameView game_view;
@@ -84,20 +85,14 @@ private class LightsoffWindow : ManagedWindow
 
     private void update_subtitle (int moves)
     {
-        headerbar.subtitle = ngettext ("%d move", "%d moves", moves).printf (moves);
+        score_label.set_label (moves.to_string ());
     }
 
     private void update_title (int level)
     {
         /* Translators: the title of the window, %d is the level number */
         headerbar.title = _("Puzzle %d").printf (level);
-
-        if (level == 1)
-            /* Translators: default subtitle, only displayed when playing level one; used as a game hint */
-            headerbar.subtitle = _("Turn off all the lights!");
-        else
-            /* else show number of moves */
-            update_subtitle (0);
+        update_subtitle (0);
     }
 
     private void previous_level_cb ()
