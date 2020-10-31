@@ -17,13 +17,18 @@ private class LightsoffWindow : ManagedWindow
 {
     [GtkChild] private HeaderBar    headerbar;
     [GtkChild] private MenuButton   menu_button;
-    [GtkChild] private Label        score_label;
+    [GtkChild] private Label        level_label;
+    [GtkChild] private Label        score_label_1;
+    [GtkChild] private Label        score_label_2;
     [GtkChild] private AspectFrame  aspect_frame;
+    [GtkChild] private Revealer     revealer;
 
     private GLib.Settings settings;
     private GameView game_view;
     private SimpleAction previous_level;
     private EventControllerKey key_controller;
+
+    private string custom_title = "";
 
     private const GLib.ActionEntry[] window_actions =
     {
@@ -41,6 +46,8 @@ private class LightsoffWindow : ManagedWindow
     private inline void populate_game_container (int level)
     {
         GtkGameView gtk_game_view = new GtkGameView (level);
+        gtk_game_view.hexpand = true;
+        gtk_game_view.vexpand = true;
         gtk_game_view.show ();
 
         aspect_frame.add (gtk_game_view);
@@ -77,13 +84,16 @@ private class LightsoffWindow : ManagedWindow
 
     private void update_subtitle (int moves)
     {
-        score_label.set_label (moves.to_string ());
+        string moves_string = moves.to_string ();
+        score_label_1.set_label (moves_string);
+        score_label_2.set_label (moves_string);
     }
 
-    private void update_title (int level)
+    private void update_title ()
     {
-        /* Translators: the title of the window, %d is the level number */
-        headerbar.title = _("Puzzle %d").printf (level);
+        if (large_window_size)
+            headerbar.set_title (custom_title);
+        level_label.set_label (custom_title);
         update_subtitle (0);
     }
 
@@ -100,7 +110,9 @@ private class LightsoffWindow : ManagedWindow
     private void level_changed_cb (int level)
     {
         previous_level.set_enabled (level > 1);
-        update_title (level);
+        /* Translators: the title of the window, %d is the level number */
+        custom_title = _("Puzzle %d").printf (level);
+        update_title ();
         set_focus_visible (false);
         if (level != settings.get_int ("level"))
             settings.set_int ("level", level);
@@ -133,5 +145,23 @@ private class LightsoffWindow : ManagedWindow
     private void new_game_cb ()
     {
         game_view.reset_game ();
+    }
+
+    bool large_window_size = true;
+    protected override void change_window_size (bool large)
+    {
+        large_window_size = large;
+        if (large)
+        {
+            score_label_1.show ();
+            headerbar.set_title (custom_title);
+            revealer.set_reveal_child (false);
+        }
+        else
+        {
+            score_label_1.hide ();
+            headerbar.set_title (null);
+            revealer.set_reveal_child (true);
+        }
     }
 }
