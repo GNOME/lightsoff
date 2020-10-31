@@ -43,3 +43,24 @@
 .aspect {
   background-color: black;
 }
+
+/*\
+* * actionbar
+\*/
+
+actionbar {
+  min-height: 47px; /* TODO calc() exactly; corresponds to the height of an actionbar with a GtkButton in it, in usual Adwaita conditions */
+}
+/* TODO move in game-window.css */
+label.level-label:dir(ltr) {
+  margin-left : 12px;
+}
+label.level-label:dir(rtl) {
+  margin-right: 12px;
+}
+label.score-label:dir(rtl) {
+  margin-left : 6px;
+}
+label.score-label:dir(ltr) {
+  margin-right: 6px;
+}

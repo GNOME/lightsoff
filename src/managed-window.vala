@@ -67,6 +67,8 @@ private class ManagedWindow : ApplicationWindow
             return;
         window_width = (!) _window_width;
         window_height = (!) _window_height;
+
+        update_adaptative_children ();
     }
 
     private inline void on_destroy ()
@@ -74,6 +76,36 @@ private class ManagedWindow : ApplicationWindow
         save_window_state ();
         base.destroy ();
     }
+
+    /*\
+    * * adaptative stuff
+    \*/
+
+    private enum WindowSize
+    {
+        START,
+        SMALL,
+        LARGE
+    }
+    private WindowSize window_size = WindowSize.START;
+
+    private void update_adaptative_children ()
+    {
+        if (window_width < 590)
+            _change_window_size (WindowSize.SMALL);
+        else
+            _change_window_size (WindowSize.LARGE);
+    }
+
+    private void _change_window_size (WindowSize new_window_size)
+    {
+        if (window_size == new_window_size)
+            return;
+        window_size = new_window_size;
+        change_window_size (window_size == WindowSize.LARGE);
+    }
+
+    protected virtual void change_window_size (bool large) {}
 
     /*\
     * * manage window state
