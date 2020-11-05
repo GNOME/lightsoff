@@ -44,6 +44,7 @@ private class LightsOff : Gtk.Application
         Intl.textdomain (Config.GETTEXT_PACKAGE);
 
         Environment.set_application_name (PROGRAM_NAME);
+        Environment.set_prgname ("org.gnome.LightsOff");
         Window.set_default_icon_name ("org.gnome.LightsOff");
 
         var app = new LightsOff ();
