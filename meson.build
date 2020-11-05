@@ -7,12 +7,13 @@ project('lightsoff', ['c','vala'],
 gnome = import('gnome')
 i18n = import('i18n')
 
-localedir = join_paths(get_option('prefix'), get_option('localedir'))
-datadir = join_paths (get_option ('prefix'), get_option ('datadir'))
-pkgdatadir = join_paths (datadir, 'lightsoff')
+localedir   = join_paths(get_option('prefix'), get_option('localedir'))
+datadir     = join_paths(get_option('prefix'), get_option('datadir'))
+bindir      = join_paths(get_option('prefix'), get_option('bindir'))
+pkgdatadir  = join_paths(datadir, 'lightsoff')
 
-podir = join_paths(meson.source_root(), 'po')
-vapidir = join_paths(meson.source_root(), 'vapi')
+podir       = join_paths(meson.source_root(), 'po')
+vapidir     = join_paths(meson.source_root(), 'vapi')
 
 # Dependencies
 glib_min_version = '2.38'
