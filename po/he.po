@@ -4,34 +4,58 @@
 # Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER
 # Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2010.
+# Yosef Or Boczko <yoseforb@gmail.com>, 2020.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.he\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-14 17:13+0300\n"
-"PO-Revision-Date: 2016-08-14 17:13+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2020-06-26 07:46+0000\n"
+"PO-Revision-Date: 2020-09-29 23:00+0300\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
-"Language-Team: Gezer (Hebrew)\n"
+"Language-Team: Hebrew <yoseforb@gmail.com>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.36.0\n"
 "X-Launchpad-Export-Date: 2008-01-13 04:36+0000\n"
 "X-Poedit-Language: Hebrew\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
+#: data/lightsoff-menus.ui:7
+msgid "_Start Over"
+msgstr "ה_תחלה מחדש"
+
+#: data/lightsoff-menus.ui:12
+msgid "_Previous puzzle"
+msgstr "תצרף _קודם"
+
+#: data/lightsoff-menus.ui:17
+msgid "Ne_xt puzzle"
+msgstr "תצרף ה_בא"
+
+#: data/lightsoff-menus.ui:24
+msgid "_Help"
+msgstr "ע_זרה"
+
+#: data/lightsoff-menus.ui:29
+#| msgid "Lights Off"
+msgid "_About Lights Off"
+msgstr "_על אודות האורות כבויים"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
+#: src/lightsoff.vala:134 src/lightsoff.vala:147
 msgid "Lights Off"
 msgstr "האורות כבויים"
 
-#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:90
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
 msgid "Turn off all the lights"
 msgstr "כיבוי כל האורות"
 
-#: ../data/lightsoff.appdata.xml.in.h:3
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -41,53 +65,31 @@ msgstr ""
 "מכבה אותה אך גם עושה זאת למנורות הסמוכות. מטרתך היא פשוטה: לכבות את כל "
 "האורות!"
 
-#: ../data/lightsoff.appdata.xml.in.h:4
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr "משחקים שנהנים לכבות אורות יענו ממספר רב של שלבים."
 
-#: ../data/lightsoff.appdata.xml.in.h:5
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "מיזם GNOME"
 
-#: ../data/lightsoff.desktop.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "משחק;הגיון;היגיון;לוח;משבצות;סמוך;סמוכים;פאזל;פזל;תצרף;"
 
-#: ../data/lightsoff-menus.ui.h:1
-msgid "_Start Over"
-msgstr "ה_תחלה מחדש"
-
-#: ../data/lightsoff-menus.ui.h:2
-msgid "_Help"
-msgstr "ע_זרה"
-
-#: ../data/lightsoff-menus.ui.h:3
-msgid "_About"
-msgstr "על _אודות"
-
-#: ../data/lightsoff-menus.ui.h:4
-msgid "_Quit"
-msgstr "י_ציאה"
-
-#: ../data/lightsoff.ui.h:1
-msgid "Return to the previous level"
-msgstr "חזרה לשלב הקודם"
-
-#: ../data/lightsoff.ui.h:2
-msgid "Proceed to the next level"
-msgstr "להתקדם לשלב הבא"
-
-#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+#: data/org.gnome.LightsOff.gschema.xml:6
 msgid "The current level"
 msgstr "The current level"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:2
-msgid "The users's most recent level."
-msgstr "The users's most recent level."
+#: data/org.gnome.LightsOff.gschema.xml:7
+#| msgid "The users's most recent level."
+msgid "The users’s most recent level."
+msgstr "The users’s most recent level."
 
-#: ../src/lightsoff.vala:96
+#: src/lightsoff.vala:121
 msgid "translator-credits"
 msgstr ""
 "גיל אשר <dolfin@rpg.org.il>\n"
@@ -97,12 +99,17 @@ msgstr ""
 "‏Yaniv Abir https://launchpad.net/~yanivabir\n"
 "‏dod_basim https://launchpad.net/~yoav-prat\n"
 "ירון שהרבני <sh.yaron@gmail.com>\n"
-"יוסף אור בוצ׳קו <yoseforb@gnome.org>\n"
+"יוסף אור בוצ׳קו <yoseforb@gmail.com>\n"
 "\n"
-"פרויקט תרגום GNOME לעברית:\n"
-"‏http://gnome-il.berlios.de"
+"<a href=\"https://l10n.gnome.org/teams/he/\">מיזם תרגום GNOME לעברית</a>"
 
-#: ../src/lightsoff-window.vala:60
+#: src/lightsoff.vala:142
+#, c-format
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Run `%s --help` to see a full list of available command line options.\n"
+
+#: src/lightsoff-window.vala:103
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -110,11 +117,26 @@ msgstr[0] "מהלך אחד"
 msgstr[1] "%d מהלכים"
 
 #. The title of the window, %d is the level number
-#: ../src/lightsoff-window.vala:66
+#: src/lightsoff-window.vala:109
 #, c-format
-msgid "Level %d"
-msgstr "שלב %d"
+msgid "Puzzle %d"
+msgstr "תצרף %d"
 
-#: ../src/lightsoff-window.vala:70
+#: src/lightsoff-window.vala:113
 msgid "Turn off all the lights!"
 msgstr "כבו את כל האורות!"
+
+#~ msgid "_About"
+#~ msgstr "על _אודות"
+
+#~ msgid "_Quit"
+#~ msgstr "י_ציאה"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "חזרה לשלב הקודם"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "להתקדם לשלב הבא"
+
+#~ msgid "Level %d"
+#~ msgstr "שלב %d"
