@@ -31,8 +31,7 @@ private class GtkGameView : Stack, GameView
                 break;
         }
 
-        var new_level = "level %d".printf(current_level);
-        add_named ((Widget)new_board, new_level);
+        add ((Widget)new_board);
         set_visible_child ((Widget)new_board);
         ((BoardViewGtk)old_board).playable = false;
         if (Gtk.Settings.get_for_screen (((Widget)new_board).get_screen ()).gtk_enable_animations)
