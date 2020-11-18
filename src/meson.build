@@ -7,6 +7,7 @@ lightsoff_vala_sources = [
   'game-view.vala',
   'game-view-gtk.vala',
   'managed-window.vala',
+  'notifications-revealer.vala',
 ]
 
 lightsoff_resources_file = files('lightsoff.gresource.xml')

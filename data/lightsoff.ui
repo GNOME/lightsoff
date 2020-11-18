@@ -79,49 +79,59 @@
       </object>
     </child>
     <child>
-      <object class="GtkGrid">
+      <object class="GtkOverlay">
         <property name="visible">True</property>
-        <property name="orientation">vertical</property>
         <child>
-          <object class="GtkAspectFrame" id="aspect_frame">
+          <object class="GtkGrid">
             <property name="visible">True</property>
-            <property name="obey_child">False</property>
-            <property name="shadow_type">none</property>
-            <style>
-              <class name="aspect"/>
-            </style>
-          </object>
-        </child>
-        <child>
-          <object class="GtkRevealer" id="revealer">
-            <property name="visible">True</property>
-            <property name="reveal-child">False</property>
+            <property name="orientation">vertical</property>
             <child>
-              <object class="GtkActionBar">
+              <object class="GtkAspectFrame" id="aspect_frame">
                 <property name="visible">True</property>
+                <property name="obey_child">False</property>
+                <property name="shadow_type">none</property>
+                <style>
+                  <class name="aspect"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkRevealer" id="revealer">
+                <property name="visible">True</property>
+                <property name="reveal-child">False</property>
                 <child>
-                  <object class="GtkLabel" id="level_label">
+                  <object class="GtkActionBar">
                     <property name="visible">True</property>
-                    <property name="label" translatable="no">Puzzle X</property>
-                    <style>
-                      <class name="level-label"/>
-                    </style>
+                    <child>
+                      <object class="GtkLabel" id="level_label">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="no">Puzzle X</property>
+                        <style>
+                          <class name="level-label"/>
+                        </style>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="score_label_2">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="no">0</property>
+                        <style>
+                          <class name="score-label"/>
+                        </style>
+                      </object>
+                      <packing>
+                        <property name="pack_type">end</property>
+                      </packing>
+                    </child>
                   </object>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="score_label_2">
-                    <property name="visible">True</property>
-                    <property name="label" translatable="no">0</property>
-                    <style>
-                      <class name="score-label"/>
-                    </style>
-                  </object>
-                  <packing>
-                    <property name="pack_type">end</property>
-                  </packing>
                 </child>
               </object>
             </child>
+          </object>
+        </child>
+        <child type="overlay">
+          <object class="NotificationsRevealer" id="notifications_revealer">
+            <property name="visible">True</property>
           </object>
         </child>
       </object>

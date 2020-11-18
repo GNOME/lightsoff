@@ -12,14 +12,14 @@
 
   <schema id="org.gnome.LightsOff.Lib" gettext-domain="lightsoff">
     <key name="window-width" type="i">
-      <default>1</default>
+      <default>800</default>
       <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width' -->
       <summary>The width of the window</summary>
       <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width' -->
       <description>The width of the main window in pixels.</description>
     </key>
     <key name="window-height" type="i">
-      <default>1</default>
+      <default>600</default>
       <!-- Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height' -->
       <summary>The height of the window</summary>
       <!-- Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height' -->
