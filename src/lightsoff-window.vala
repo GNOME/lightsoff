@@ -15,13 +15,14 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/lightsoff.ui")]
 private class LightsoffWindow : ManagedWindow
 {
-    [GtkChild] private HeaderBar    headerbar;
-    [GtkChild] private MenuButton   menu_button;
-    [GtkChild] private Label        level_label;
-    [GtkChild] private Label        score_label_1;
-    [GtkChild] private Label        score_label_2;
-    [GtkChild] private AspectFrame  aspect_frame;
-    [GtkChild] private Revealer     revealer;
+    [GtkChild] private HeaderBar                headerbar;
+    [GtkChild] private MenuButton               menu_button;
+    [GtkChild] private Label                    level_label;
+    [GtkChild] private Label                    score_label_1;
+    [GtkChild] private Label                    score_label_2;
+    [GtkChild] private AspectFrame              aspect_frame;
+    [GtkChild] private Revealer                 revealer;
+    [GtkChild] private NotificationsRevealer    notifications_revealer;
 
     private GLib.Settings settings;
     private GameView game_view;
@@ -75,6 +76,9 @@ private class LightsoffWindow : ManagedWindow
         init_keyboard ();
         int level = settings.get_int ("level");
         level_changed_cb (level);
+        if (level == 1)
+            /* Translators: short game explanation, displayed as an in-app notification when game is launched on level 1 */
+            notifications_revealer.show_notification (_("Turn off all the lights!"));
 
         populate_game_container (level);
 
@@ -95,6 +99,7 @@ private class LightsoffWindow : ManagedWindow
             headerbar.set_title (custom_title);
         level_label.set_label (custom_title);
         update_subtitle (0);
+        notifications_revealer.hide_notification ();
     }
 
     private void previous_level_cb ()
@@ -156,12 +161,14 @@ private class LightsoffWindow : ManagedWindow
             score_label_1.show ();
             headerbar.set_title (custom_title);
             revealer.set_reveal_child (false);
+            notifications_revealer.set_window_size (/* thin */ false);
         }
         else
         {
             score_label_1.hide ();
             headerbar.set_title (null);
             revealer.set_reveal_child (true);
+            notifications_revealer.set_window_size (/* thin */ true);
         }
     }
 }

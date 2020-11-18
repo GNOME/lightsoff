@@ -64,3 +64,15 @@ label.score-label:dir(rtl) {
 label.score-label:dir(ltr) {
   margin-right: 6px;
 }
+
+/*\
+* * app notification
+\*/
+
+.thin-window .app-notification {
+  border-radius:0;
+}
+
+/*\
+* * the end
+\*/
