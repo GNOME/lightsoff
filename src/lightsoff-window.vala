@@ -67,7 +67,7 @@ private class LightsoffWindow : ManagedWindow
 
         settings = new GLib.Settings ("org.gnome.LightsOff");
 
-        var menu_builder = new Gtk.Builder.from_resource ("/org/gnome/LightsOff/gtk/menus.ui");
+        var menu_builder = new Gtk.Builder.from_resource ("/org/gnome/LightsOff/ui/menus.ui");
         menu_button.set_menu_model ((GLib.Menu) menu_builder.get_object ("primary-menu"));
 
         add_action_entries (window_actions, this);
