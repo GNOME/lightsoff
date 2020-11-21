@@ -4,19 +4,19 @@
   <menu id="change-level-menu">
     <section>
       <item>
-        <!-- Translators: entry of the "Change Level" menu (with a mnemonic that appears when pressing Alt); switch to the first level  -->
-        <attribute name="label" translatable="yes">_Start Over</attribute>
+        <!-- Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"  -->
+        <attribute name="label" translatable="yes">_First puzzle</attribute>
         <attribute name="action">win.new-game</attribute>
         <attribute name="accel">&lt;Primary&gt;n</attribute>
       </item>
       <item>
-        <!-- Translators: entry of the "Change Level" menu (with a mnemonic that appears when pressing Alt); switch to previous level -->
+        <!-- Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle" -->
         <attribute name="label" translatable="yes">_Previous puzzle</attribute>
         <attribute name="action">win.previous-level</attribute>
         <attribute name="accel">&lt;Primary&gt;Page_Up</attribute>
       </item>
       <item>
-        <!-- Translators: entry of the "Change Level" menu (with a mnemonic that appears when pressing Alt); switch to next level -->
+        <!-- Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle" -->
         <attribute name="label" translatable="yes">Ne_xt puzzle</attribute>
         <attribute name="action">win.next-level</attribute>
         <attribute name="accel">&lt;Primary&gt;Page_Down</attribute>
