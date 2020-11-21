@@ -18,8 +18,8 @@ private class LightsoffWindow : ManagedWindow
     [GtkChild] private HeaderBar                headerbar;
     [GtkChild] private MenuButton               menu_button;
     [GtkChild] private Label                    level_label;
-    [GtkChild] private Label                    score_label_1;
-    [GtkChild] private Label                    score_label_2;
+    [GtkChild] private GameButton               game_button_1;
+    [GtkChild] private GameButton               game_button_2;
     [GtkChild] private AspectFrame              aspect_frame;
     [GtkChild] private Revealer                 revealer;
     [GtkChild] private NotificationsRevealer    notifications_revealer;
@@ -27,15 +27,20 @@ private class LightsoffWindow : ManagedWindow
     private GLib.Settings settings;
     private GameView game_view;
     private SimpleAction previous_level;
+    private SimpleAction restart_action;
     private EventControllerKey key_controller;
 
     private string custom_title = "";
 
     private const GLib.ActionEntry[] window_actions =
     {
-        { "new-game",       new_game_cb },
-        { "previous-level", previous_level_cb },
-        { "next-level",     next_level_cb }
+        // "Change Puzzle" menu
+        { "new-game",       new_game_cb         },
+        { "previous-level", previous_level_cb   },
+        { "next-level",     next_level_cb       },
+
+        // game menu
+        { "restart",        restart_cb          },
     };
 
     private inline void init_keyboard ()
@@ -72,6 +77,8 @@ private class LightsoffWindow : ManagedWindow
 
         add_action_entries (window_actions, this);
         previous_level = (SimpleAction) this.lookup_action ("previous-level");
+        restart_action = (SimpleAction) this.lookup_action ("restart");
+        enable_restart_action (false);
 
         init_keyboard ();
         int level = settings.get_int ("level");
@@ -89,8 +96,9 @@ private class LightsoffWindow : ManagedWindow
     private void update_subtitle (int moves)
     {
         string moves_string = moves.to_string ();
-        score_label_1.set_label (moves_string);
-        score_label_2.set_label (moves_string);
+        game_button_1.set_label (moves_string);
+        game_button_2.set_label (moves_string);
+        enable_restart_action (moves > 0);
     }
 
     private void update_title ()
@@ -100,6 +108,13 @@ private class LightsoffWindow : ManagedWindow
         level_label.set_label (custom_title);
         update_subtitle (0);
         notifications_revealer.hide_notification ();
+    }
+
+    private void enable_restart_action (bool new_state)
+    {
+        restart_action.set_enabled (new_state);
+        game_button_1.set_sensitive (new_state);
+        game_button_2.set_sensitive (new_state);
     }
 
     private void previous_level_cb ()
@@ -112,9 +127,16 @@ private class LightsoffWindow : ManagedWindow
         game_view.swap_board (1);
     }
 
+    private void restart_cb ()
+    {
+        game_view.swap_board (0);
+        enable_restart_action (false);
+    }
+
     private void level_changed_cb (int level)
     {
         previous_level.set_enabled (level > 1);
+        enable_restart_action (false);
         /* Translators: the title of the window, %d is the level number */
         custom_title = _("Puzzle %d").printf (level);
         update_title ();
@@ -150,6 +172,7 @@ private class LightsoffWindow : ManagedWindow
     private void new_game_cb ()
     {
         game_view.reset_game ();
+        enable_restart_action (false);
     }
 
     bool large_window_size = true;
@@ -158,17 +181,22 @@ private class LightsoffWindow : ManagedWindow
         large_window_size = large;
         if (large)
         {
-            score_label_1.show ();
+            game_button_1.show ();
             headerbar.set_title (custom_title);
             revealer.set_reveal_child (false);
             notifications_revealer.set_window_size (/* thin */ false);
         }
         else
         {
-            score_label_1.hide ();
+            game_button_1.hide ();
             headerbar.set_title (null);
             revealer.set_reveal_child (true);
             notifications_revealer.set_window_size (/* thin */ true);
         }
     }
+}
+
+[GtkTemplate (ui = "/org/gnome/LightsOff/ui/game-button.ui")]
+private class GameButton : MenuButton
+{
 }

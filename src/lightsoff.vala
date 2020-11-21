@@ -88,12 +88,17 @@ private class LightsOff : Gtk.Application
 
         add_action_entries (action_entries, this);
 
-        set_accels_for_action ("app.quit", {"<control>Q"});
-        set_accels_for_action ("app.help", {"F1"});
+        // generic
+        set_accels_for_action ("app.quit",              { "<Primary>q"          });
+        set_accels_for_action ("app.help",              {          "F1"         });
 
-        set_accels_for_action ("win.new-game", {"<control>N"});
-        set_accels_for_action ("win.previous-level", {"<control>Page_Up"});
-        set_accels_for_action ("win.next-level", {"<control>Page_Down"});
+        // "Change Puzzle" menu
+        set_accels_for_action ("win.new-game",          { "<Primary>n"          });
+        set_accels_for_action ("win.previous-level",    { "<Primary>Page_Up"    });
+        set_accels_for_action ("win.next-level",        { "<Primary>Page_Down"  });
+
+        // game menu
+        set_accels_for_action ("win.restart",           { "<Primary>r"          });
 
         window = new LightsoffWindow ();
         add_window (window);

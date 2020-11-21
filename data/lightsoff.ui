@@ -48,9 +48,8 @@
           </object>
         </child>
         <child>
-          <object class="GtkLabel" id="score_label_1">
+          <object class="GameButton" id="game_button_1">
             <property name="visible">True</property>
-            <property name="label" translatable="no">0</property>
           </object>
           <packing>
             <property name="pack_type">end</property>
@@ -112,12 +111,8 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="score_label_2">
+                      <object class="GameButton" id="game_button_2">
                         <property name="visible">True</property>
-                        <property name="label" translatable="no">0</property>
-                        <style>
-                          <class name="score-label"/>
-                        </style>
                       </object>
                       <packing>
                         <property name="pack_type">end</property>
