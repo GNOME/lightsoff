@@ -19,8 +19,11 @@ private class GtkGameView : Stack, GameView
         transition_duration = fast ? 500 : 1000;
         switch (style)
         {
-            case REFRESH:
+            case RESTART:
                 transition_type = StackTransitionType.SLIDE_DOWN;
+                break;
+            case REFRESH:
+                transition_type = StackTransitionType.CROSSFADE;
                 break;
             case SLIDE_NEXT:
             case SLIDE_FORWARD:
@@ -29,6 +32,8 @@ private class GtkGameView : Stack, GameView
             case SLIDE_BACKWARD:
                 transition_type = StackTransitionType.SLIDE_RIGHT;
                 break;
+            default:
+                assert_not_reached ();
         }
 
         add ((Widget)new_board);
@@ -69,7 +74,7 @@ private class GtkGameView : Stack, GameView
         if (is_transitioning())
             return;
 
-        replace_board (get_board_view (), create_board_view (1), GameView.ReplaceStyle.REFRESH);
+        replace_board (get_board_view (), create_board_view (1), GameView.ReplaceStyle.RESTART);
     }
 
     internal GtkGameView (int level)

@@ -58,12 +58,6 @@ label.level-label:dir(ltr) {
 label.level-label:dir(rtl) {
   margin-right: 12px;
 }
-label.score-label:dir(rtl) {
-  margin-left : 6px;
-}
-label.score-label:dir(ltr) {
-  margin-right: 6px;
-}
 
 /*\
 * * app notification

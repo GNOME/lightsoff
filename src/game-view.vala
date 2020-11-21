@@ -11,10 +11,11 @@
 private interface GameView : GLib.Object {
 
     internal enum ReplaceStyle {
-        REFRESH, // crossfade
-        SLIDE_FORWARD, // slide out-in
-        SLIDE_BACKWARD, // slide in-out
-        SLIDE_NEXT // slide over
+        REFRESH,        // crossfade
+        RESTART,        // slide down
+        SLIDE_FORWARD,  // slide left
+        SLIDE_BACKWARD, // slide right
+        SLIDE_NEXT      // slide left
     }
 
     internal abstract void replace_board (BoardView board_biew, BoardView new_board_view, ReplaceStyle style, bool fast = true);
@@ -37,9 +38,17 @@ private interface GameView : GLib.Object {
         if (is_transitioning ())
             return;
 
-        replace_board (get_board_view (), create_board_view (next_level (direction)),
-                       direction == 1 ? GameView.ReplaceStyle.SLIDE_FORWARD
-                                      : GameView.ReplaceStyle.SLIDE_BACKWARD);
+        ReplaceStyle style;
+        if (direction == 1)
+            style = GameView.ReplaceStyle.SLIDE_FORWARD;
+        else if (direction == 0)
+            style = GameView.ReplaceStyle.REFRESH;
+        else if (direction == -1)
+            style = GameView.ReplaceStyle.SLIDE_BACKWARD;
+        else
+            assert_not_reached ();
+
+        replace_board (get_board_view (), create_board_view (next_level (direction)), style);
     }
 
     // The player won the game; create a new board, update the level count,

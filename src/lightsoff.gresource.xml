@@ -5,6 +5,7 @@
     <file alias="lightsoff.css">../data/lightsoff.css</file>
     <file preprocess="xml-stripblanks" alias="menus.ui">../data/lightsoff-menus.ui</file>
     <file preprocess="xml-stripblanks" alias="notifications-revealer.ui">../data/notifications-revealer.ui</file>
+    <file preprocess="xml-stripblanks" alias="game-button.ui">../data/game-button.ui</file>
   </gresource>
 </gresources>
 
