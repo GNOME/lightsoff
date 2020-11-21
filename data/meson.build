@@ -62,6 +62,9 @@ if appstream_util.found()
   )
 endif
 
+# Install man page
+install_man('@0@.6'.format(meson.project_name()))
+
 # Gschema
 install_data('org.gnome.LightsOff.gschema.xml',
   install_dir: join_paths(datadir, 'glib-2.0', 'schemas'),
