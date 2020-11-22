@@ -16,6 +16,8 @@ private class GtkGameView : Stack, GameView
 
     internal void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
+        ((BoardViewGtk)old_board).sensitive = false;
+
         transition_duration = fast ? 500 : 1000;
         switch (style)
         {
@@ -38,7 +40,6 @@ private class GtkGameView : Stack, GameView
 
         add ((Widget)new_board);
         set_visible_child ((Widget)new_board);
-        ((BoardViewGtk)old_board).playable = false;
         if (Gtk.Settings.get_for_screen (((Widget)new_board).get_screen ()).gtk_enable_animations)
             handlers.push_tail(notify["transition-running"].connect(() => board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board)));
         else
@@ -49,7 +50,7 @@ private class GtkGameView : Stack, GameView
     internal void board_replaced (BoardViewGtk old_board, BoardViewGtk new_board)
     {
         @foreach((board) => { if (board != get_visible_child ()) remove(board);});
-        new_board.playable = true;
+        new_board.sensitive = true;
         board_view = new_board;
         if (!handlers.is_empty ())
             disconnect(handlers.pop_head());
@@ -80,7 +81,7 @@ private class GtkGameView : Stack, GameView
     internal GtkGameView (int level)
     {
         board_view = (BoardViewGtk)create_board_view (level);
-        board_view.playable = true;
+        board_view.sensitive = true;
         add (board_view);
     }
 
@@ -90,18 +91,19 @@ private class GtkGameView : Stack, GameView
 
         var view = new BoardViewGtk ();
         view.load_level (level);
-        view.game_won.connect (() => game_won_cb());
+        view.game_won.connect (game_won_cb);
         view.light_toggled.connect (light_toggled_cb);
-        view.playable = false;
+        view.sensitive = false;
         return (BoardView)view;
     }
 
-   internal BoardView get_board_view ()
+    internal BoardView get_board_view ()
     {
         return (BoardView)board_view;
     }
 
-    internal int next_level (int direction) {
+    internal int next_level (int direction)
+    {
         current_level += direction;
         return current_level;
     }

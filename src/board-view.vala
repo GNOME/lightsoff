@@ -21,10 +21,11 @@ private interface BoardView: GLib.Object {
 
     internal abstract GLib.Object get_light_at (int x, int y);
 
+    protected signal void completed ();
     internal signal void game_won ();
     internal signal void light_toggled ();
 
-        // Pseudorandomly generates and sets the state of each light based on
+    // Pseudorandomly generates and sets the state of each light based on
     // a level number; hopefully this is stable between machines, but that
     // depends on GLib's PRNG stability. Also, provides some semblance of
     // symmetry for some levels.
@@ -70,12 +71,15 @@ private interface BoardView: GLib.Object {
         toggle_light (x, y);
         increase_moves ();
         light_toggled ();
-        if (is_completed ()) {
-            Gdk.threads_add_timeout(300, game_won_timeout);
+        if (is_completed ())
+        {
+            completed ();
+            Gdk.threads_add_timeout (300, game_won_timeout);
         }
     }
 
-    private bool game_won_timeout () {
+    private bool game_won_timeout ()
+    {
         game_won ();
         return GLib.Source.REMOVE;
     }

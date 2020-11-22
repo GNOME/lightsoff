@@ -15,12 +15,11 @@ private class BoardViewGtk : Grid, BoardView
     private PuzzleGenerator puzzle_generator;
     private ToggleButton[,] lights;
 
-    internal bool playable { private get; internal set; default = true; }
     private const int MIN_TOGGLE_SIZE = 48;
     private int _moves = 0;
     internal int get_moves () { return _moves; }
 
-    internal BoardViewGtk ()
+    construct
     {
         get_style_context ().add_class ("grid");
         row_homogeneous = true;
@@ -45,7 +44,8 @@ private class BoardViewGtk : Grid, BoardView
             }
         set_focus_chain (focus_list);
         _moves = 0;
-        show_all ();
+        completed.connect (() => set_sensitive (false));
+        show ();
     }
 
     // Pseudorandomly generates and sets the state of each light based on
@@ -53,12 +53,9 @@ private class BoardViewGtk : Grid, BoardView
     // depends on GLib's PRNG stability. Also, provides some semblance of
     // symmetry for some levels.
 
-     // Toggle a light and those in each cardinal direction around it.
+    // Toggle a light and those in each cardinal direction around it.
     internal void toggle_light (int x, int y, bool clicked = true)
     {
-        if (!playable)
-            return;
-
         @foreach((light) => ((ToggleButton)light).toggled.disconnect (handle_toggle));
 
         if (x>= size || y >= size || x < 0 || y < 0 )
@@ -80,7 +77,6 @@ private class BoardViewGtk : Grid, BoardView
 
     internal void clear_level ()
     {
-        /* Clear level */
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)
                 lights[x, y].active = false;
