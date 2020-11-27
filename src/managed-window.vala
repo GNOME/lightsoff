@@ -31,7 +31,6 @@ private class ManagedWindow : ApplicationWindow
     private inline void connect_callbacks ()
     {
         map.connect (init_state_watcher);
-        size_allocate.connect (on_size_allocate);
         destroy.connect (on_destroy);
     }
 
@@ -42,6 +41,7 @@ private class ManagedWindow : ApplicationWindow
             assert_not_reached ();
         surface = (Gdk.Toplevel) (!) nullable_surface;
         surface.notify ["state"].connect (on_window_state_event);
+        surface.size_changed.connect (on_size_changed);
     }
 
     private Gdk.Toplevel surface;
@@ -63,7 +63,7 @@ private class ManagedWindow : ApplicationWindow
         window_is_tiled      = (state & tiled_state)                  != 0;
     }
 
-    private inline void on_size_allocate (Allocation allocation)
+    private inline void on_size_changed (Gdk.Surface _surface, int width, int height)
     {
         if (window_is_maximized || window_is_tiled || window_is_fullscreen)
             return;
