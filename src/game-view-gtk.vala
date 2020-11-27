@@ -38,7 +38,7 @@ private class GtkGameView : Stack, GameView
                 assert_not_reached ();
         }
 
-        add ((Widget)new_board);
+        add_child ((Widget)new_board);
         set_visible_child ((Widget)new_board);
         if (Gtk.Settings.get_for_screen (((Widget)new_board).get_screen ()).gtk_enable_animations)
             handlers.push_tail(notify["transition-running"].connect(() => board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board)));
@@ -82,7 +82,7 @@ private class GtkGameView : Stack, GameView
     {
         board_view = (BoardViewGtk)create_board_view (level);
         board_view.sensitive = true;
-        add (board_view);
+        add_child (board_view);
     }
 
     internal BoardView create_board_view (int level)
