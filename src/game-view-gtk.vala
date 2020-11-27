@@ -49,11 +49,11 @@ private class GtkGameView : Stack, GameView
 
     internal void board_replaced (BoardViewGtk old_board, BoardViewGtk new_board)
     {
-        @foreach((board) => { if (board != get_visible_child ()) remove(board);});
+        remove (old_board);
         new_board.sensitive = true;
         board_view = new_board;
         if (!handlers.is_empty ())
-            disconnect(handlers.pop_head());
+            disconnect (handlers.pop_head());
     }
 
     internal bool hide_cursor ()
