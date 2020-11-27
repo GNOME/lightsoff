@@ -35,16 +35,16 @@ private class BoardViewGtk : Grid, BoardView
 
         puzzle_generator = new PuzzleGenerator (size);
         lights = new ToggleButton [size, size];
-        List<Widget> focus_list = new List<Widget> ();
+//        List<Widget> focus_list = new List<Widget> ();
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)
             {
                 lights[x, y] = new ToggleButton ();
                 lights[x, y].toggled.connect (handle_toggle);
                 attach (lights[x, y], x, y, 1, 1);
-                focus_list.append (lights[x, y]);
+//                focus_list.append (lights[x, y]);
             }
-        set_focus_chain (focus_list);
+//        set_focus_chain (focus_list);
         _moves = 0;
         completed.connect (() => set_sensitive (false));
     }
