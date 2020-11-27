@@ -40,7 +40,7 @@ private class GtkGameView : Stack, GameView
 
         add_child ((Widget)new_board);
         set_visible_child ((Widget)new_board);
-        if (Gtk.Settings.get_for_screen (((Widget)new_board).get_screen ()).gtk_enable_animations)
+        if (Gtk.Settings.get_for_display (((Widget)new_board).get_display ()).gtk_enable_animations)
             handlers.push_tail(notify["transition-running"].connect(() => board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board)));
         else
             board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board);
