@@ -57,7 +57,9 @@ private class BoardViewGtk : Grid, BoardView
     // Toggle a light and those in each cardinal direction around it.
     internal void toggle_light (int x, int y, bool clicked = true)
     {
-        @foreach((light) => ((ToggleButton)light).toggled.disconnect (handle_toggle));
+        for (uint8 i = 0; i < 5; i++)
+            for (uint8 j = 0; j < 5; j++)
+                lights [i, j].toggled.disconnect (handle_toggle);
 
         if (x>= size || y >= size || x < 0 || y < 0 )
             return;
@@ -73,7 +75,9 @@ private class BoardViewGtk : Grid, BoardView
         if (!clicked)
             lights[(int) x, (int) y].set_active (!lights[(int) x, (int) y ].get_active ());
 
-        @foreach((light) => ((ToggleButton)light).toggled.connect (handle_toggle));
+        for (uint8 i = 0; i < 5; i++)
+            for (uint8 j = 0; j < 5; j++)
+                lights [i, j].toggled.connect (handle_toggle);
     }
 
     internal void clear_level ()
