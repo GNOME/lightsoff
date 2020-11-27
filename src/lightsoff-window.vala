@@ -44,8 +44,9 @@ private class LightsoffWindow : ManagedWindow
 
     private inline void init_keyboard ()
     {
-        key_controller = new EventControllerKey (this);
+        key_controller = new EventControllerKey ();
         key_controller.key_pressed.connect (on_key_pressed);
+        ((Widget) this).add_controller (key_controller);
     }
 
     private inline void populate_game_container (int level)
