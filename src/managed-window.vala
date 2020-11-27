@@ -31,7 +31,7 @@ private class ManagedWindow : ApplicationWindow
     private inline void connect_callbacks ()
     {
         map.connect (init_state_watcher);
-        destroy.connect (on_destroy);
+        unmap.connect (on_unmap);
     }
 
     private inline void init_state_watcher ()
@@ -78,10 +78,10 @@ private class ManagedWindow : ApplicationWindow
         update_adaptative_children ();
     }
 
-    private inline void on_destroy ()
+    private inline void on_unmap ()
     {
         save_window_state ();
-        base.destroy ();
+        base.unmap ();
     }
 
     /*\
