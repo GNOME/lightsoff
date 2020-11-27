@@ -30,30 +30,37 @@ private class ManagedWindow : ApplicationWindow
 
     private inline void connect_callbacks ()
     {
-        window_state_event.connect (on_window_state_event);
+        map.connect (init_state_watcher);
         size_allocate.connect (on_size_allocate);
         destroy.connect (on_destroy);
     }
 
-    private const Gdk.WindowState tiled_state = Gdk.WindowState.TILED
-                                              | Gdk.WindowState.TOP_TILED
-                                              | Gdk.WindowState.BOTTOM_TILED
-                                              | Gdk.WindowState.LEFT_TILED
-                                              | Gdk.WindowState.RIGHT_TILED;
-    private inline bool on_window_state_event (Widget widget, Gdk.EventWindowState event)
+    private inline void init_state_watcher ()
     {
-        if ((event.changed_mask & Gdk.WindowState.MAXIMIZED) != 0)
-            window_is_maximized = (event.new_window_state & Gdk.WindowState.MAXIMIZED) != 0;
+        Gdk.Surface? nullable_surface = get_surface ();     // TODO report bug, get_surface() returns a nullable Surface
+        if (nullable_surface == null || !((!) nullable_surface is Gdk.Toplevel))
+            assert_not_reached ();
+        surface = (Gdk.Toplevel) (!) nullable_surface;
+        surface.notify ["state"].connect (on_window_state_event);
+    }
+
+    private Gdk.Toplevel surface;
+    private const Gdk.ToplevelState tiled_state = Gdk.ToplevelState.TILED
+                                                | Gdk.ToplevelState.TOP_TILED
+                                                | Gdk.ToplevelState.BOTTOM_TILED
+                                                | Gdk.ToplevelState.LEFT_TILED
+                                                | Gdk.ToplevelState.RIGHT_TILED;
+    private inline void on_window_state_event ()
+    {
+        Gdk.ToplevelState state = surface.get_state ();
+
+        window_is_maximized  = (state & Gdk.ToplevelState.MAXIMIZED)  != 0;
 
         /* fullscreen: saved as maximized */
-        if ((event.changed_mask & Gdk.WindowState.FULLSCREEN) != 0)
-            window_is_fullscreen = (event.new_window_state & Gdk.WindowState.FULLSCREEN) != 0;
+        window_is_fullscreen = (state & Gdk.ToplevelState.FULLSCREEN) != 0;
 
         /* tiled: not saved, but should not change saved window size */
-        if ((event.changed_mask & tiled_state) != 0)
-            window_is_tiled = (event.new_window_state & tiled_state) != 0;
-
-        return false;
+        window_is_tiled      = (state & tiled_state)                  != 0;
     }
 
     private inline void on_size_allocate (Allocation allocation)
