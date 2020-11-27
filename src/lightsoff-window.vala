@@ -54,7 +54,7 @@ private class LightsoffWindow : ManagedWindow
         gtk_game_view.hexpand = true;
         gtk_game_view.vexpand = true;
 
-        aspect_frame.add (gtk_game_view);
+        aspect_frame.set_child (gtk_game_view);
         game_view = gtk_game_view;
 
         var provider = new Gtk.CssProvider ();
