@@ -8,8 +8,9 @@
 
 using Gtk;
 
-private class GtkGameView : Stack, GameView
+private class GtkGameView : Widget, GameView
 {
+    private Stack stack;
     private BoardViewGtk board_view;
     private int current_level;
     private GLib.Queue<ulong> handlers = new GLib.Queue<ulong>();
@@ -18,28 +19,28 @@ private class GtkGameView : Stack, GameView
     {
         ((BoardViewGtk)old_board).sensitive = false;
 
-        transition_duration = fast ? 500 : 1000;
+        stack.transition_duration = fast ? 500 : 1000;
         switch (style)
         {
             case RESTART:
-                transition_type = StackTransitionType.SLIDE_DOWN;
+                stack.transition_type = StackTransitionType.SLIDE_DOWN;
                 break;
             case REFRESH:
-                transition_type = StackTransitionType.CROSSFADE;
+                stack.transition_type = StackTransitionType.CROSSFADE;
                 break;
             case SLIDE_NEXT:
             case SLIDE_FORWARD:
-                transition_type = StackTransitionType.SLIDE_LEFT;
+                stack.transition_type = StackTransitionType.SLIDE_LEFT;
                 break;
             case SLIDE_BACKWARD:
-                transition_type = StackTransitionType.SLIDE_RIGHT;
+                stack.transition_type = StackTransitionType.SLIDE_RIGHT;
                 break;
             default:
                 assert_not_reached ();
         }
 
-        add_child ((Widget)new_board);
-        set_visible_child ((Widget)new_board);
+        stack.add_child ((Widget)new_board);
+        stack.set_visible_child ((Widget)new_board);
         if (Gtk.Settings.get_for_display (((Widget)new_board).get_display ()).gtk_enable_animations)
             handlers.push_tail(notify["transition-running"].connect(() => board_replaced ((BoardViewGtk)old_board, (BoardViewGtk)new_board)));
         else
@@ -49,7 +50,7 @@ private class GtkGameView : Stack, GameView
 
     internal void board_replaced (BoardViewGtk old_board, BoardViewGtk new_board)
     {
-        remove (old_board);
+        stack.remove (old_board);
         new_board.sensitive = true;
         board_view = new_board;
         if (!handlers.is_empty ())
@@ -72,17 +73,26 @@ private class GtkGameView : Stack, GameView
 
     internal void reset_game ()
     {
-        if (is_transitioning())
+        if (is_transitioning ())
             return;
 
         replace_board (get_board_view (), create_board_view (1), GameView.ReplaceStyle.RESTART);
+    }
+
+    construct
+    {
+        BinLayout layout = new BinLayout ();
+        set_layout_manager (layout);
+
+        stack = new Stack ();
+        stack.insert_after (this, /* insert first */ null);
     }
 
     internal GtkGameView (int level)
     {
         board_view = (BoardViewGtk)create_board_view (level);
         board_view.sensitive = true;
-        add_child (board_view);
+        stack.add_child (board_view);
     }
 
     internal BoardView create_board_view (int level)
@@ -110,6 +120,6 @@ private class GtkGameView : Stack, GameView
 
     internal bool is_transitioning ()
     {
-        return transition_running;
+        return stack.transition_running;
     }
 }
