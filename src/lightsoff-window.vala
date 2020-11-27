@@ -15,14 +15,13 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/lightsoff.ui")]
 private class LightsoffWindow : ManagedWindow
 {
-    [GtkChild] private unowned HeaderBar                headerbar;
-    [GtkChild] private unowned MenuButton               menu_button;
-    [GtkChild] private unowned Label                    level_label;
-    [GtkChild] private unowned GameButton               game_button_1;
-    [GtkChild] private unowned GameButton               game_button_2;
-    [GtkChild] private unowned AspectFrame              aspect_frame;
-    [GtkChild] private unowned Revealer                 revealer;
-    [GtkChild] private unowned NotificationsRevealer    notifications_revealer;
+    [GtkChild] private MenuButton               menu_button;
+    [GtkChild] private Label                    level_label;
+    [GtkChild] private GameButton               game_button_1;
+    [GtkChild] private GameButton               game_button_2;
+    [GtkChild] private AspectFrame              aspect_frame;
+    [GtkChild] private Revealer                 revealer;
+    [GtkChild] private NotificationsRevealer    notifications_revealer;
 
     private GLib.Settings settings;
     private GameView game_view;
@@ -103,7 +102,7 @@ private class LightsoffWindow : ManagedWindow
     private void update_title ()
     {
         if (large_window_size)
-            headerbar.set_title (custom_title);
+            set_title (custom_title);
         level_label.set_label (custom_title);
         update_subtitle (0);
         notifications_revealer.hide_notification ();
@@ -181,14 +180,14 @@ private class LightsoffWindow : ManagedWindow
         if (large)
         {
             game_button_1.show ();
-            headerbar.set_title (custom_title);
+            set_title (custom_title);
             revealer.set_reveal_child (false);
             notifications_revealer.set_window_size (/* thin */ false);
         }
         else
         {
             game_button_1.hide ();
-            headerbar.set_title (null);
+            set_title (null);
             revealer.set_reveal_child (true);
             notifications_revealer.set_window_size (/* thin */ true);
         }
