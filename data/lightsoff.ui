@@ -45,15 +45,15 @@
           </object>
         </child>
         <child type="end">
-          <object class="GameButton" id="game_button_1"/>
-        </child>
-        <child type="end">
           <object class="GtkMenuButton" id="menu_button">
             <property name="valign">center</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
             <property name="icon-name">open-menu-symbolic</property>
           </object>
+        </child>
+        <child type="end">
+          <object class="GameButton" id="game_button_1"/>
         </child>
       </object>
     </child>
