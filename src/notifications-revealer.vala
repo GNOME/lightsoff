@@ -18,9 +18,10 @@
 using Gtk;
 
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/notifications-revealer.ui")]
-private class NotificationsRevealer : Revealer
+private class NotificationsRevealer : Widget
 {
-    [GtkChild] private Label notification_label;
+    [GtkChild] private Revealer revealer;
+    [GtkChild] private Label    notification_label;
 
     construct
     {
@@ -34,7 +35,7 @@ private class NotificationsRevealer : Revealer
     internal void show_notification (string notification)
     {
         notification_label.set_text (notification);
-        set_reveal_child (true);
+        revealer.set_reveal_child (true);
     }
 
     private bool thin_window_size = false;
@@ -76,6 +77,6 @@ private class NotificationsRevealer : Revealer
 
     internal void hide_notification (/* SimpleAction action, Variant? variant */)
     {
-        set_reveal_child (false);
+        revealer.set_reveal_child (false);
     }
 }
