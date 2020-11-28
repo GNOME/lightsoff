@@ -1,18 +1,18 @@
 # Swedish messages for lightsoff.
-# Copyright © 1999-2019 Free Software Foundation, Inc.
+# Copyright © 1999-2020 Free Software Foundation, Inc.
 # Andreas Persenius <ndap@swipnet.se>, 1999.
 # Andreas Hyden <a.hyden@cyberpoint.se>
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2016, 2017, 2018, 2019.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2019-01-19 20:15+0000\n"
-"PO-Revision-Date: 2019-01-25 14:22+0100\n"
+"POT-Creation-Date: 2020-10-31 10:33+0000\n"
+"PO-Revision-Date: 2020-11-28 22:53+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,36 +20,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: data/lightsoff-menus.ui:7
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts the current level
+#: data/lightsoff-menus.ui:8
 msgid "_Start Over"
 msgstr "_Börja om"
 
-#: data/lightsoff-menus.ui:12
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to previous level
+#: data/lightsoff-menus.ui:14
 msgid "_Previous puzzle"
 msgstr "_Föregående pussel"
 
-#: data/lightsoff-menus.ui:17
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to next level
+#: data/lightsoff-menus.ui:20
 msgid "Ne_xt puzzle"
 msgstr "Nä_sta pussel"
 
-#: data/lightsoff-menus.ui:24
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
+#: data/lightsoff-menus.ui:28
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: data/lightsoff-menus.ui:29
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
+#: data/lightsoff-menus.ui:34
 msgid "_About Lights Off"
 msgstr "_Om Släck lyset"
 
+#. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
-#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
-#: src/lightsoff.vala:134 src/lightsoff.vala:147
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Släck lyset"
 
+#. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:144
 msgid "Turn off all the lights"
 msgstr "Släck alla ljus"
 
@@ -80,21 +86,63 @@ msgstr "GNOME-projektet"
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "spel;logik;brädspel;brickor;närliggande;pussel;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.LightsOff.desktop.in:8
-#| msgid "Lights Off"
-msgid "org.gnome.LightsOff"
-msgstr "org.gnome.LightsOff"
-
-#: data/org.gnome.LightsOff.gschema.xml:6
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The current level"
 msgstr "Aktuella nivån"
 
-#: data/org.gnome.LightsOff.gschema.xml:7
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:9
 msgid "The users’s most recent level."
 msgstr "Användarens senaste nivå."
 
-#: src/lightsoff.vala:121
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:17
+msgid "The width of the window"
+msgstr "Bredden på fönstret"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:19
+msgid "The width of the main window in pixels."
+msgstr "Bredden på huvudfönstret i bildpunkter."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:24
+msgid "The height of the window"
+msgstr "Höjden på fönstret"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "Höjden på huvudfönstret i bildpunkter."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "En flagga för att aktivera maximerat läge"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "Om ”true” (sant) startas huvudfönstret i maximerat läge."
+
+#. Translators: command-line option description, see 'lightsoff --help'
+#: src/lightsoff.vala:26
+msgid "Display version number"
+msgstr "Visa versionsnummer"
+
+#. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
+#: src/lightsoff.vala:72
+msgid "Failed to parse command-line arguments."
+msgstr "Misslyckades med att tolka kommandoradsargument."
+
+#. Translators: about dialog text; label of the website link
+#: src/lightsoff.vala:148
+msgid "Page on GNOME wiki"
+msgstr "Sida på GNOME-wikin"
+
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/lightsoff.vala:160
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>\n"
@@ -107,29 +155,33 @@ msgstr ""
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>."
 
-#: src/lightsoff.vala:142
-#, c-format
-msgid "Run `%s --help` to see a full list of available command line options.\n"
-msgstr ""
-"Kör ”%s --help” för att se en komplett lista över tillgängliga "
-"kommandoradsflaggor.\n"
-
-#: src/lightsoff-window.vala:96
+#: src/lightsoff-window.vala:87
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
 msgstr[0] "%d drag"
 msgstr[1] "%d drag"
 
-#. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:102
+#. Translators: the title of the window, %d is the level number
+#: src/lightsoff-window.vala:93
 #, c-format
 msgid "Puzzle %d"
 msgstr "Pussel %d"
 
-#: src/lightsoff-window.vala:106
+#. Translators: default subtitle, only displayed when playing level one; used as a game hint
+#: src/lightsoff-window.vala:97
 msgid "Turn off all the lights!"
 msgstr "Släck alla ljus!"
+
+#~| msgid "Lights Off"
+#~ msgid "org.gnome.LightsOff"
+#~ msgstr "org.gnome.LightsOff"
+
+#~ msgid ""
+#~ "Run `%s --help` to see a full list of available command line options.\n"
+#~ msgstr ""
+#~ "Kör ”%s --help” för att se en komplett lista över tillgängliga "
+#~ "kommandoradsflaggor.\n"
 
 #~ msgid "lightsoff"
 #~ msgstr "lightsoff"
