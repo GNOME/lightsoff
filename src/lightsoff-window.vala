@@ -201,6 +201,12 @@ private class GameButton : Widget
 {
     [GtkChild] private MenuButton menu_button;
 
+    construct
+    {
+        BinLayout layout = new BinLayout ();
+        set_layout_manager (layout);
+    }
+
     internal void set_label (string new_label)
     {
         menu_button.set_label (new_label);
