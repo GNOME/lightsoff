@@ -8,10 +8,10 @@
   outline-style: none;
   border-width: 1px;
   box-shadow: none;
-  -gtk-outline-top-left-radius: 50%;
-  -gtk-outline-top-right-radius: 50%;
-  -gtk-outline-bottom-left-radius: 50%;
-  -gtk-outline-bottom-right-radius: 50%;
+/*  -gtk-outline-top-left-radius: 50%; */
+/*  -gtk-outline-top-right-radius: 50%; */
+/*  -gtk-outline-bottom-left-radius: 50%; */
+/*  -gtk-outline-bottom-right-radius: 50%; */
   transition: outline-offset 0ms ease;
   margin: 6px;
   transition: margin 300ms linear;
