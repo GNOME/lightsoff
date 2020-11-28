@@ -189,7 +189,7 @@ private class LightsoffWindow : ManagedWindow
         else
         {
             game_button_1.hide ();
-            set_title (null);
+            set_title ("");
             revealer.set_reveal_child (true);
             notifications_revealer.set_window_size (/* thin */ true);
         }
