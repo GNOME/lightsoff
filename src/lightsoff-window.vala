@@ -199,7 +199,7 @@ private class LightsoffWindow : ManagedWindow
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/game-button.ui")]
 private class GameButton : Widget
 {
-    private MenuButton menu_button;
+    [GtkChild] private MenuButton menu_button;
 
     internal void set_label (string new_label)
     {
