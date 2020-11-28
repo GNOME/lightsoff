@@ -81,7 +81,8 @@ private class ManagedWindow : ApplicationWindow
     private inline void on_unmap ()
     {
         save_window_state ();
-        base.unmap ();
+
+        application.quit ();
     }
 
     /*\
@@ -138,7 +139,7 @@ private class ManagedWindow : ApplicationWindow
         set_default_size (settings.get_int ("window-width"), settings.get_int ("window-height"));
     }
 
-    private inline void save_window_state ()   // called on destroy
+    private inline void save_window_state ()   // called on unmap
     {
         settings.delay ();
         settings.set_int ("window-width", window_width);
