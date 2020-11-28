@@ -25,6 +25,9 @@ private class NotificationsRevealer : Widget
 
     construct
     {
+        BinLayout layout = new BinLayout ();
+        set_layout_manager (layout);
+
         install_action_entries ();
     }
 
