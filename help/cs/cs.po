@@ -118,7 +118,7 @@ msgstr "Ukazuje rozložení ve 3. úrovni hry <app>Zhasněte světla</app>."
 #: C/basic.page:47
 msgctxt "_"
 msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
-msgstr "external ref='figures/lo1.png' md5='b11cc518c25c291ebce8ab2c21c899aa'"
+msgstr "external ref='figures/lo1.png' md5='c780946c888c43a60246d310267bd9d8'"
 
 #. (itstool) path: section/title
 #: C/basic.page:52
