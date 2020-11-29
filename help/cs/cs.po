@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: lightsoff master\n"
-"POT-Creation-Date: 2020-01-03 18:30+0000\n"
-"PO-Revision-Date: 2020-03-08 10:26+0100\n"
+"Project-Id-Version: lightsoff\n"
+"POT-Creation-Date: 2020-06-26 07:46+0000\n"
+"PO-Revision-Date: 2020-11-29 01:20+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -118,7 +118,7 @@ msgstr "Ukazuje rozložení ve 3. úrovni hry <app>Zhasněte světla</app>."
 #: C/basic.page:47
 msgctxt "_"
 msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
-msgstr "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+msgstr "external ref='figures/lo1.png' md5='b11cc518c25c291ebce8ab2c21c899aa'"
 
 #. (itstool) path: section/title
 #: C/basic.page:52
@@ -196,8 +196,8 @@ msgid ""
 msgstr ""
 "Když už účet máte, přihlaste se, klikněte na <gui>New Issue</gui>. Před "
 "nahlášením chyby si prosím přečtěte <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">přiručku k hlášení chyb</link> "
-"(odkaz je v angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/"
+"Community/GettingInTouch/Bugzilla/Guidelines\">přiručku k hlášení chyb</"
+"link> (odkaz je v angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/"
 "lightsoff/issues\">podívejte</link> se prosím, jestli stejnou chybu "
 "nenahlásil už někdo jiný."
 
