@@ -11,10 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.ro\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2019-01-19 20:15+0000\n"
-"PO-Revision-Date: 2019-01-27 02:28+0200\n"
-"Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
-"com>\n"
+"POT-Creation-Date: 2020-10-31 10:33+0000\n"
+"PO-Revision-Date: 2020-12-12 19:17+0200\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -22,37 +21,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Launchpad-Export-Date: 2009-11-27 09:12+0000\n"
 
-#: data/lightsoff-menus.ui:7
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts the current level
+#: data/lightsoff-menus.ui:8
 msgid "_Start Over"
 msgstr "_Start din nou"
 
-#: data/lightsoff-menus.ui:12
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to previous level
+#: data/lightsoff-menus.ui:14
 msgid "_Previous puzzle"
 msgstr "Puzzle-ul _anterior"
 
-#: data/lightsoff-menus.ui:17
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to next level
+#: data/lightsoff-menus.ui:20
 msgid "Ne_xt puzzle"
 msgstr "Puzzle-ul _următor"
 
-#: data/lightsoff-menus.ui:24
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
+#: data/lightsoff-menus.ui:28
 msgid "_Help"
 msgstr "_Ajutor"
 
-#: data/lightsoff-menus.ui:29
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
+#: data/lightsoff-menus.ui:34
 msgid "_About Lights Off"
 msgstr "_Despre Opriți luminile"
 
+#. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
-#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
-#: src/lightsoff.vala:134 src/lightsoff.vala:147
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Opriți luminile"
 
+#. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:144
 msgid "Turn off all the lights"
 msgstr "Opriți toate luminile"
 
@@ -84,25 +89,69 @@ msgstr "Proiectul GNOME"
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "game;logic;board;tiles;adjacent;puzzle;joc;logică;tablă;tile;adiacent;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.LightsOff.desktop.in:8
-msgid "org.gnome.LightsOff"
-msgstr "org.gnome.LightsOff"
-
-#: data/org.gnome.LightsOff.gschema.xml:6
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The current level"
 msgstr "Nivelul curent"
 
-#: data/org.gnome.LightsOff.gschema.xml:7
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:9
 msgid "The users’s most recent level."
 msgstr "Nivelul cel mai recent al utilizatorului."
 
-#: src/lightsoff.vala:121
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:17
+msgid "The width of the window"
+msgstr "Lățimea ferestrei"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:19
+msgid "The width of the main window in pixels."
+msgstr "Lățimea ferestrei principale în pixeli."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:24
+msgid "The height of the window"
+msgstr "Înălțimea ferestrei"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "Înălțimea ferestrei principale în pixeli."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "Fanionul pentru a activa modul maximizat"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "Dacă este „adevărat”, fereastra principală începe în modul maximizat."
+
+#. Translators: command-line option description, see 'lightsoff --help'
+#: src/lightsoff.vala:26
+msgid "Display version number"
+msgstr "Afișează numărul versiunii"
+
+#. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
+#: src/lightsoff.vala:72
+msgid "Failed to parse command-line arguments."
+msgstr "Nu s-au putut parsa argumentele în linie de comandă."
+
+#. Translators: about dialog text; label of the website link
+#: src/lightsoff.vala:148
+msgid "Page on GNOME wiki"
+msgstr "Pagina pe wiki GNOME"
+
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/lightsoff.vala:160
 msgid "translator-credits"
 msgstr ""
 "Mugurel Tudor <mugurelu@gnome.ro>\n"
 "Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
-"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2019\n"
+"Florentina Mușat <florentina [dot] musat [dot] 28 [at] gmail [dot] com>, "
+"2019-2020\n"
 "\n"
 "Launchpad Contributions:\n"
 "  Adi Roiban https://launchpad.net/~adiroiban\n"
@@ -120,14 +169,7 @@ msgstr ""
 "  Mugurel Tudor https://launchpad.net/~mugurelu-gnome\n"
 "  leandrud https://launchpad.net/~leandrud"
 
-#: src/lightsoff.vala:142
-#, c-format
-msgid "Run `%s --help` to see a full list of available command line options.\n"
-msgstr ""
-"Rulați „%s --help” pentru a consulta o listă completă de opțiuni disponibile "
-"în linia de comandă.\n"
-
-#: src/lightsoff-window.vala:96
+#: src/lightsoff-window.vala:87
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
@@ -135,15 +177,25 @@ msgstr[0] "%d mutare"
 msgstr[1] "%d mutări"
 msgstr[2] "%d de mutări"
 
-#. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:102
+#. Translators: the title of the window, %d is the level number
+#: src/lightsoff-window.vala:93
 #, c-format
 msgid "Puzzle %d"
 msgstr "Puzzle %d"
 
-#: src/lightsoff-window.vala:106
+#. Translators: default subtitle, only displayed when playing level one; used as a game hint
+#: src/lightsoff-window.vala:97
 msgid "Turn off all the lights!"
 msgstr "Opriți toate luminile!"
+
+#~ msgid "org.gnome.LightsOff"
+#~ msgstr "org.gnome.LightsOff"
+
+#~ msgid ""
+#~ "Run `%s --help` to see a full list of available command line options.\n"
+#~ msgstr ""
+#~ "Rulați „%s --help” pentru a consulta o listă completă de opțiuni "
+#~ "disponibile în linia de comandă.\n"
 
 #~ msgid "lightsoff"
 #~ msgstr "lightsoff"
