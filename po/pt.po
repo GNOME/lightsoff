@@ -12,46 +12,51 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2020-06-26 07:46+0000\n"
-"PO-Revision-Date: 2020-09-09 00:59+0100\n"
-"Last-Translator: Juliano Camargo <julianosc@pm.me>\n"
+"POT-Creation-Date: 2020-10-31 10:33+0000\n"
+"PO-Revision-Date: 2021-01-06 14:24+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: data/lightsoff-menus.ui:7
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts the current level
+#: data/lightsoff-menus.ui:8
 msgid "_Start Over"
 msgstr "_Recomeçar"
 
-#: data/lightsoff-menus.ui:12
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to previous level
+#: data/lightsoff-menus.ui:14
 msgid "_Previous puzzle"
 msgstr "_Puzzle anterior"
 
-#: data/lightsoff-menus.ui:17
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to next level
+#: data/lightsoff-menus.ui:20
 msgid "Ne_xt puzzle"
-msgstr "P_róximo puzzle"
+msgstr "Puzzle s_eguinte"
 
-#: data/lightsoff-menus.ui:24
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
+#: data/lightsoff-menus.ui:28
 msgid "_Help"
 msgstr "A_juda"
 
-#: data/lightsoff-menus.ui:29
-#| msgid "Lights Off"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
+#: data/lightsoff-menus.ui:34
 msgid "_About Lights Off"
-msgstr "_Sobre Luzes desligadas"
+msgstr "_Acerca do Luzes desligadas"
 
+#. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
-#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
-#: src/lightsoff.vala:134 src/lightsoff.vala:147
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Luzes desligadas"
 
+#. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:144
 msgid "Turn off all the lights"
 msgstr "Desligue todas as luzes"
 
@@ -75,52 +80,101 @@ msgstr ""
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
-msgstr "Projeto GNOME"
+msgstr "O Projeto GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "jogo;lógica;tabuleiro;mosaicos;adjacente;puzzle;"
 
-#: data/org.gnome.LightsOff.gschema.xml:6
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The current level"
 msgstr "O nível atual"
 
-#: data/org.gnome.LightsOff.gschema.xml:7
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:9
 msgid "The users’s most recent level."
 msgstr "O nível mais recente do utilizador."
 
-#: src/lightsoff.vala:121
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:17
+msgid "The width of the window"
+msgstr "A largura da janela"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:19
+msgid "The width of the main window in pixels."
+msgstr "A largura da janela principal em píxeis."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:24
+msgid "The height of the window"
+msgstr "A altura da janela"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "A altura da janela principal em píxeis."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "Um sinalizador para permitir o modo maximizado"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "Se \"verdadeiro\", a janela principal inicia no modo maximizado."
+
+#. Translators: command-line option description, see 'lightsoff --help'
+#: src/lightsoff.vala:26
+msgid "Display version number"
+msgstr "Mostrar número da versão"
+
+#. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
+#: src/lightsoff.vala:72
+msgid "Failed to parse command-line arguments."
+msgstr "Falha na análise dos argumentos da linha de comando."
+
+#. Translators: about dialog text; label of the website link
+#: src/lightsoff.vala:148
+msgid "Page on GNOME wiki"
+msgstr "Página na wiki do GNOME"
+
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/lightsoff.vala:160
 msgid "translator-credits"
 msgstr ""
 "Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Pedro Albuquerque <palbuquerque73@gmail.com>\n"
 "Tiago Santos <tiagofsantos81@sapo.pt>\n"
-"Juliano S. Camargo <julianosc@pm.me>"
+"Juliano S. Camargo <julianosc@pm.me>\n"
+"Hugo Carvalho <hugokarvalho@hotmail.com>"
 
-#: src/lightsoff.vala:142
-#, c-format
-msgid "Run `%s --help` to see a full list of available command line options.\n"
-msgstr ""
-"Execute `%s --help` para ver uma lista completa de opções disponíveis em "
-"linha de comando.\n"
-
-#: src/lightsoff-window.vala:103
+#: src/lightsoff-window.vala:87
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
 msgstr[0] "%d movimento"
 msgstr[1] "%d movimentos"
 
-#. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:109
+#. Translators: the title of the window, %d is the level number
+#: src/lightsoff-window.vala:93
 #, c-format
 msgid "Puzzle %d"
 msgstr "Puzzle %d"
 
-#: src/lightsoff-window.vala:113
+#. Translators: default subtitle, only displayed when playing level one; used as a game hint
+#: src/lightsoff-window.vala:97
 msgid "Turn off all the lights!"
 msgstr "Desligue todas as luzes!"
+
+#~ msgid ""
+#~ "Run `%s --help` to see a full list of available command line options.\n"
+#~ msgstr ""
+#~ "Execute `%s --help` para ver uma lista completa de opções disponíveis em "
+#~ "linha de comando.\n"
 
 #~ msgid "_About"
 #~ msgstr "_Sobre"
