@@ -5,12 +5,13 @@
 # Andika Triwidada <andika@gmail.com>, 2010, 2012, 2013, 2014.
 # Vincent Sebastian The <vincent.s.the@gmail.com>, 2011, 2012.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2012.
+# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018, 2019, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2019-01-19 20:15+0000\n"
-"PO-Revision-Date: 2019-01-26 21:31+0700\n"
+"POT-Creation-Date: 2020-10-31 10:33+0000\n"
+"PO-Revision-Date: 2021-01-20 18:45+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
@@ -19,36 +20,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Rosetta-Export-Date: 2007-04-23 05:58:10+0000\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: data/lightsoff-menus.ui:7
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts the current level
+#: data/lightsoff-menus.ui:8
 msgid "_Start Over"
 msgstr "Ulangi _Lagi"
 
-#: data/lightsoff-menus.ui:12
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to previous level
+#: data/lightsoff-menus.ui:14
 msgid "_Previous puzzle"
 msgstr "Teka-teki _sebelumnya"
 
-#: data/lightsoff-menus.ui:17
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to next level
+#: data/lightsoff-menus.ui:20
 msgid "Ne_xt puzzle"
 msgstr "Teka-teki berikutn_ya"
 
-#: data/lightsoff-menus.ui:24
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
+#: data/lightsoff-menus.ui:28
 msgid "_Help"
 msgstr "_Bantuan"
 
-#: data/lightsoff-menus.ui:29
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
+#: data/lightsoff-menus.ui:34
 msgid "_About Lights Off"
 msgstr "Tent_ang Lights Off"
 
+#. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
-#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
-#: src/lightsoff.vala:134 src/lightsoff.vala:147
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Lights Off"
 
+#. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:144
 msgid "Turn off all the lights"
 msgstr "Matikan semua cahaya"
 
@@ -77,20 +84,63 @@ msgstr "Proyek GNOME"
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "permainan;logika;papan;ubin;bersebelahan;teka-teki;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.LightsOff.desktop.in:8
-msgid "org.gnome.LightsOff"
-msgstr "org.gnome.LightsOff"
-
-#: data/org.gnome.LightsOff.gschema.xml:6
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The current level"
 msgstr "Tingkat saat ini"
 
-#: data/org.gnome.LightsOff.gschema.xml:7
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:9
 msgid "The users’s most recent level."
 msgstr "Tingkat terkini pengguna."
 
-#: src/lightsoff.vala:121
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:17
+msgid "The width of the window"
+msgstr "Lebar jendela"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:19
+msgid "The width of the main window in pixels."
+msgstr "Lebar jendela utama dalam piksel."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:24
+msgid "The height of the window"
+msgstr "Tinggi jendela"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "Tinggi dari jendela utama dalam piksel."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "Tanda untuk mengaktifkan mode pemaksimalan"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "Jika \"true\", jendela utama mulai dalam mode pemaksimalan."
+
+#. Translators: command-line option description, see 'lightsoff --help'
+#: src/lightsoff.vala:26
+msgid "Display version number"
+msgstr "Tampilkan nomor versi"
+
+#. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
+#: src/lightsoff.vala:72
+msgid "Failed to parse command-line arguments."
+msgstr "Gagal mengurai argumen baris perintah."
+
+#. Translators: about dialog text; label of the website link
+#: src/lightsoff.vala:148
+msgid "Page on GNOME wiki"
+msgstr "Halaman di wiki GNOME"
+
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/lightsoff.vala:160
 msgid "translator-credits"
 msgstr ""
 "Mohammad DAMT <mdamt@bisnisweb.com>\n"
@@ -98,30 +148,33 @@ msgstr ""
 "Andika Triwidada <andika@gmail.com>, 2010, 2012, 2013, 2014, 2015.\n"
 "Vincent Sebastian The <vincent.s.the@gmail.com>, 2011, 2012.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2012.\n"
-"Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018, 2019."
+"Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018, 2019, 2021."
 
-#: src/lightsoff.vala:142
-#, c-format
-msgid "Run `%s --help` to see a full list of available command line options.\n"
-msgstr ""
-"Jalankan `%s --help` untuk melihat daftar lengkap opsi baris perintah yang "
-"tersedia.\n"
-
-#: src/lightsoff-window.vala:96
+#: src/lightsoff-window.vala:87
 #, c-format
 msgid "%d move"
 msgid_plural "%d moves"
 msgstr[0] "%d langkah"
 
-#. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:102
+#. Translators: the title of the window, %d is the level number
+#: src/lightsoff-window.vala:93
 #, c-format
 msgid "Puzzle %d"
 msgstr "Teka-teki %d"
 
-#: src/lightsoff-window.vala:106
+#. Translators: default subtitle, only displayed when playing level one; used as a game hint
+#: src/lightsoff-window.vala:97
 msgid "Turn off all the lights!"
 msgstr "Matikan semua cahaya!"
+
+#~ msgid "org.gnome.LightsOff"
+#~ msgstr "org.gnome.LightsOff"
+
+#~ msgid ""
+#~ "Run `%s --help` to see a full list of available command line options.\n"
+#~ msgstr ""
+#~ "Jalankan `%s --help` untuk melihat daftar lengkap opsi baris perintah "
+#~ "yang tersedia.\n"
 
 #~ msgid "lightsoff"
 #~ msgstr "lightsoff"
