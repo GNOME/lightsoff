@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-05 18:18+0000\n"
-"PO-Revision-Date: 2021-02-05 22:16+0200\n"
+"POT-Creation-Date: 2021-02-06 13:00+0000\n"
+"PO-Revision-Date: 2021-02-06 15:06+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -21,6 +21,12 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 20.11.70\n"
 "X-Project-Style: gnome\n"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
+#: data/game-button.ui:7
+msgid "_Restart"
+msgstr ""
+"_Перезапустити"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
 #: data/lightsoff-menus.ui:8
@@ -34,7 +40,6 @@ msgstr "_Про «Без світла»"
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:8
-#| msgid "Ne_xt puzzle"
 msgid "_First puzzle"
 msgstr "Пер_ша головоломка"
 
@@ -51,8 +56,7 @@ msgstr "_Наступна головоломка"
 #. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
 #: data/lightsoff.ui:46
 msgid "_Change Puzzle"
-msgstr ""
-"З_мінити головоломку"
+msgstr "З_мінити головоломку"
 
 #. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
