@@ -1,5 +1,6 @@
 # List of source files containing translatable strings.
 # Please keep this file in alphabetical order.
+data/game-button.ui
 data/lightsoff-menus.ui
 data/lightsoff.ui
 data/org.gnome.LightsOff.appdata.xml.in
