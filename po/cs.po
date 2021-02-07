@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-05 18:18+0000\n"
-"PO-Revision-Date: 2021-02-06 08:07+0100\n"
+"POT-Creation-Date: 2021-02-06 13:00+0000\n"
+"PO-Revision-Date: 2021-02-07 19:08+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -33,6 +33,11 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.7\n"
 "X-Project-Style: gnome\n"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
+#: data/game-button.ui:7
+msgid "_Restart"
+msgstr "_Restartovat"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
 #: data/lightsoff-menus.ui:8
@@ -187,4 +192,3 @@ msgstr "Zhasněte všechna světla!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Hlavolam %d"
-
