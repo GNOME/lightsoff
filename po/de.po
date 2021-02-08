@@ -20,14 +20,15 @@
 # Benjamin Steinwender <b@stbe.at>, 2014.
 # Bernd Homuth <dev@hmt.im>, 2015.
 # Tim Sabsch <tim@sabsch.com>, 2018-2019.
+# Philipp Kiemle <philipp.kiemle@gmail.com>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2020-12-08 21:07+0000\n"
-"PO-Revision-Date: 2020-12-23 22:57+0100\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
+"POT-Creation-Date: 2021-02-06 13:00+0000\n"
+"PO-Revision-Date: 2021-02-07 07:30+0100\n"
+"Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -36,30 +37,40 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts the current level
-#: data/lightsoff-menus.ui:8
-msgid "_Start Over"
-msgstr "Neu be_ginnen"
-
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to previous level
-#: data/lightsoff-menus.ui:14
-msgid "_Previous puzzle"
-msgstr "_Vorheriges Rätsel"
-
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to next level
-#: data/lightsoff-menus.ui:20
-msgid "Ne_xt puzzle"
-msgstr "_Nächstes Rätsel"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
+#: data/game-button.ui:7
+msgid "_Restart"
+msgstr "Neu sta_rten"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
-#: data/lightsoff-menus.ui:28
+#: data/lightsoff-menus.ui:8
 msgid "_Help"
 msgstr "_Hilfe"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
-#: data/lightsoff-menus.ui:34
+#: data/lightsoff-menus.ui:14
 msgid "_About Lights Off"
 msgstr "_Info zu Lichter aus"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:8
+msgid "_First puzzle"
+msgstr "_Erstes Rätsel"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:14
+msgid "_Previous puzzle"
+msgstr "_Vorheriges Rätsel"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle"
+#: data/lightsoff.ui:20
+msgid "Ne_xt puzzle"
+msgstr "_Nächstes Rätsel"
+
+#. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
+#: data/lightsoff.ui:46
+msgid "_Change Puzzle"
+msgstr "_Anderes Rätsel"
 
 #. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
@@ -69,7 +80,7 @@ msgstr "Lichter aus"
 
 #. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:145
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:150
 msgid "Turn off all the lights"
 msgstr "Schalten Sie alle Lichter aus"
 
@@ -99,7 +110,9 @@ msgstr "Das GNOME-Projekt"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "Spiel;Logik;Brettspiel;benachbart;Puzzle;"
+msgstr ""
+"game;Spiel;logic;Logik;board;Brettspiel;tiles;Kacheln;adjacent;benachbart;"
+"puzzle;Puzzle;"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
 #: data/org.gnome.LightsOff.gschema.xml:7
@@ -152,12 +165,12 @@ msgid "Failed to parse command-line arguments."
 msgstr "Befehlszeilenoption konnte nicht interpretiert werden."
 
 #. Translators: about dialog text; label of the website link
-#: src/lightsoff.vala:149
+#: src/lightsoff.vala:154
 msgid "Page on GNOME wiki"
 msgstr "Seite im GNOME Wiki"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/lightsoff.vala:161
+#: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr ""
 "Karl Eichwalder <ke@suse.de>\n"
@@ -177,25 +190,27 @@ msgstr ""
 "Tobias Endrigkeit <tobiasendrigkeit@googlemail.com>\n"
 "Benjamin Steinwender <b@stbe.at>\n"
 "Bernd Homuth <dev@hmt.im>\n"
-"Tim Sabsch <tim@sabsch.com>"
+"Tim Sabsch <tim@sabsch.com>\n"
+"Philipp Kiemle <philipp.kiemle@gmail.com>"
 
-#: src/lightsoff-window.vala:87
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d Zug"
-msgstr[1] "%d Züge"
+#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
+#: src/lightsoff-window.vala:88
+msgid "Turn off all the lights!"
+msgstr "Schalten Sie alle Lichter aus!"
 
 #. Translators: the title of the window, %d is the level number
-#: src/lightsoff-window.vala:93
+#: src/lightsoff-window.vala:141
 #, c-format
 msgid "Puzzle %d"
 msgstr "Rätsel %d"
 
-#. Translators: default subtitle, only displayed when playing level one; used as a game hint
-#: src/lightsoff-window.vala:97
-msgid "Turn off all the lights!"
-msgstr "Schalten Sie alle Lichter aus!"
+#~ msgid "_Start Over"
+#~ msgstr "Neu be_ginnen"
+
+#~ msgid "%d move"
+#~ msgid_plural "%d moves"
+#~ msgstr[0] "%d Zug"
+#~ msgstr[1] "%d Züge"
 
 #~ msgid "org.gnome.LightsOff"
 #~ msgstr "org.gnome.LightsOff"
