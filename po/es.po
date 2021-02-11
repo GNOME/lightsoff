@@ -5,14 +5,14 @@
 # Lucas Vieites <lucas@codexion.com>, 2007, 2008.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 # Chris Leonard <cjl@laptop.org>, 2012.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2020.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2020-10-31 10:33+0000\n"
-"PO-Revision-Date: 2020-12-02 12:55+0100\n"
+"POT-Creation-Date: 2021-02-06 13:00+0000\n"
+"PO-Revision-Date: 2021-02-11 09:51+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -23,30 +23,41 @@ msgstr ""
 "X-Generator: Gtranslator 3.38.0\n"
 "X-Project-Style: gnome\n"
 
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts the current level
-#: data/lightsoff-menus.ui:8
-msgid "_Start Over"
-msgstr "_Iniciar"
-
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to previous level
-#: data/lightsoff-menus.ui:14
-msgid "_Previous puzzle"
-msgstr "_Puzle anterior"
-
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to next level
-#: data/lightsoff-menus.ui:20
-msgid "Ne_xt puzzle"
-msgstr "_Siguiente puzle"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
+#: data/game-button.ui:7
+msgid "_Restart"
+msgstr "_Reiniciar"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
-#: data/lightsoff-menus.ui:28
+#: data/lightsoff-menus.ui:8
 msgid "_Help"
 msgstr "Ay_uda"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
-#: data/lightsoff-menus.ui:34
+#: data/lightsoff-menus.ui:14
 msgid "_About Lights Off"
 msgstr "_Acerca de Luces fuera"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:8
+#| msgid "Ne_xt puzzle"
+msgid "_First puzzle"
+msgstr "_Primer puzle"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:14
+msgid "_Previous puzzle"
+msgstr "_Puzle anterior"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle"
+#: data/lightsoff.ui:20
+msgid "Ne_xt puzzle"
+msgstr "_Siguiente puzle"
+
+#. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
+#: data/lightsoff.ui:46
+msgid "_Change Puzzle"
+msgstr "_Cambiar de puzle"
 
 #. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
@@ -56,7 +67,7 @@ msgstr "Luces fuera"
 
 #. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:144
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:150
 msgid "Turn off all the lights"
 msgstr "Apagar todas las luces"
 
@@ -133,42 +144,43 @@ msgid "Display version number"
 msgstr "Mostrar el número de versión"
 
 #. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
-#: src/lightsoff.vala:72
+#: src/lightsoff.vala:73
 msgid "Failed to parse command-line arguments."
 msgstr "Falló al analizar opciones de la línea de comandos"
 
 #. Translators: about dialog text; label of the website link
-#: src/lightsoff.vala:148
+#: src/lightsoff.vala:154
 msgid "Page on GNOME wiki"
 msgstr "Página en la wiki de GNOME"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/lightsoff.vala:160
+#: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2016\n"
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2021\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2008\n"
 "Lucas Vieites <lucas@asixinformatica.com>, 2002-2008\n"
 "Germán Poo Caamaño <gpoo@ubiobio.cl>\n"
 "Pablo Saratxaga <pablo@mandrakesoft.com>"
 
-#: src/lightsoff-window.vala:87
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d movimiento"
-msgstr[1] "%d movimientos"
+#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
+#: src/lightsoff-window.vala:88
+msgid "Turn off all the lights!"
+msgstr "Apagar todas las luces"
 
 #. Translators: the title of the window, %d is the level number
-#: src/lightsoff-window.vala:93
+#: src/lightsoff-window.vala:141
 #, c-format
 msgid "Puzzle %d"
 msgstr "Puzle %d"
 
-#. Translators: default subtitle, only displayed when playing level one; used as a game hint
-#: src/lightsoff-window.vala:97
-msgid "Turn off all the lights!"
-msgstr "Apagar todas las luces"
+#~ msgid "_Start Over"
+#~ msgstr "_Iniciar"
+
+#~ msgid "%d move"
+#~ msgid_plural "%d moves"
+#~ msgstr[0] "%d movimiento"
+#~ msgstr[1] "%d movimientos"
 
 #~| msgid "Lights Off"
 #~ msgid "org.gnome.LightsOff"
