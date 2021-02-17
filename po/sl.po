@@ -5,14 +5,14 @@
 # Matej Erman <matej.erman@guest.arnes.si>, 2002.
 # Tadej Janež <tadej_janez@email.si>, 2003.
 # Matic Žgur <mr.zgur@gmail.com>, 2006–2007.
-# Matej Urbančič <mateju@svn.gnome.org>, 2007–2019.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007–2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-01-12 09:38+0000\n"
-"PO-Revision-Date: 2021-01-13 21:26+0100\n"
+"POT-Creation-Date: 2021-02-13 23:05+0000\n"
+"PO-Revision-Date: 2021-02-17 17:55+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -24,30 +24,40 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts the current level
-#: data/lightsoff-menus.ui:8
-msgid "_Start Over"
-msgstr "_Začni znova"
-
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to previous level
-#: data/lightsoff-menus.ui:14
-msgid "_Previous puzzle"
-msgstr "_Predhodna uganka"
-
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); switch to next level
-#: data/lightsoff-menus.ui:20
-msgid "Ne_xt puzzle"
-msgstr "_Naslednja uganka"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
+#: data/game-button.ui:7
+msgid "_Restart"
+msgstr "_Ponovno začni"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
-#: data/lightsoff-menus.ui:28
+#: data/lightsoff-menus.ui:8
 msgid "_Help"
 msgstr "Pomo_č"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
-#: data/lightsoff-menus.ui:34
+#: data/lightsoff-menus.ui:14
 msgid "_About Lights Off"
 msgstr "_O igri"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:8
+msgid "_First puzzle"
+msgstr "_Prva uganka"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:14
+msgid "_Previous puzzle"
+msgstr "_Predhodna uganka"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle"
+#: data/lightsoff.ui:20
+msgid "Ne_xt puzzle"
+msgstr "_Naslednja uganka"
+
+#. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
+#: data/lightsoff.ui:46
+msgid "_Change Puzzle"
+msgstr "_Zamenjaj uganko"
 
 #. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
@@ -57,7 +67,7 @@ msgstr "Ugasni luči"
 
 #. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:145
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:150
 msgid "Turn off all the lights"
 msgstr "Ugasni vse luči"
 
@@ -137,12 +147,12 @@ msgid "Failed to parse command-line arguments."
 msgstr "Razčlenjevanje argumentov ukazne vrstice je spodletelo."
 
 #. Translators: about dialog text; label of the website link
-#: src/lightsoff.vala:149
+#: src/lightsoff.vala:154
 msgid "Page on GNOME wiki"
 msgstr "Stran na GNOME Wiki"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/lightsoff.vala:161
+#: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr ""
 "Matej Urbančič <mateju@svn.gnome.org>\n"
@@ -150,25 +160,26 @@ msgstr ""
 "Matej Erman\n"
 "Tadej Janež"
 
-#: src/lightsoff-window.vala:87
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d premikov"
-msgstr[1] "%d premik"
-msgstr[2] "%d premika"
-msgstr[3] "%d premiki"
+#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
+#: src/lightsoff-window.vala:88
+msgid "Turn off all the lights!"
+msgstr "Ugasni vse luči!"
 
 #. Translators: the title of the window, %d is the level number
-#: src/lightsoff-window.vala:93
+#: src/lightsoff-window.vala:141
 #, c-format
 msgid "Puzzle %d"
 msgstr "Uganka %d"
 
-#. Translators: default subtitle, only displayed when playing level one; used as a game hint
-#: src/lightsoff-window.vala:97
-msgid "Turn off all the lights!"
-msgstr "Ugasni vse luči!"
+#~ msgid "_Start Over"
+#~ msgstr "_Začni znova"
+
+#~ msgid "%d move"
+#~ msgid_plural "%d moves"
+#~ msgstr[0] "%d premikov"
+#~ msgstr[1] "%d premik"
+#~ msgstr[2] "%d premika"
+#~ msgstr[3] "%d premiki"
 
 #~| msgid "Lights Off"
 #~ msgid "org.gnome.LightsOff"
