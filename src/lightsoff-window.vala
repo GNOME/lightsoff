@@ -15,14 +15,14 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/lightsoff.ui")]
 private class LightsoffWindow : ManagedWindow
 {
-    [GtkChild] private HeaderBar                headerbar;
-    [GtkChild] private MenuButton               menu_button;
-    [GtkChild] private Label                    level_label;
-    [GtkChild] private GameButton               game_button_1;
-    [GtkChild] private GameButton               game_button_2;
-    [GtkChild] private AspectFrame              aspect_frame;
-    [GtkChild] private Revealer                 revealer;
-    [GtkChild] private NotificationsRevealer    notifications_revealer;
+    [GtkChild] private unowned HeaderBar                headerbar;
+    [GtkChild] private unowned MenuButton               menu_button;
+    [GtkChild] private unowned Label                    level_label;
+    [GtkChild] private unowned GameButton               game_button_1;
+    [GtkChild] private unowned GameButton               game_button_2;
+    [GtkChild] private unowned AspectFrame              aspect_frame;
+    [GtkChild] private unowned Revealer                 revealer;
+    [GtkChild] private unowned NotificationsRevealer    notifications_revealer;
 
     private GLib.Settings settings;
     private GameView game_view;
