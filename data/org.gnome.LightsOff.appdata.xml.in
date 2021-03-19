@@ -64,6 +64,15 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <releases>
+    <release version="40.0" date="2021-03-17" type="stable">
+      <description>
+        <p>Overview of changes in lightsoff 40.0</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Use unowned for GtkChild fields (Rico Tzschichholz)</li>
+        </ul>
+      </description>
+    </release>
     <release version="40.rc" date="2021-03-12" type="development">
       <description>
         <p>Overview of changes in lightsoff 40.rc</p>
