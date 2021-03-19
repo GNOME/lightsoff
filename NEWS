@@ -1,3 +1,9 @@
+Lights Off 40.0
+==================
+
+* Updated translations
+* Use unowned for GtkChild fields (Rico Tzschichholz)
+
 Lights Off 40.rc
 ==================
 
