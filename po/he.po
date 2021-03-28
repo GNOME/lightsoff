@@ -4,14 +4,14 @@
 # Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER
 # Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2010.
-# Yosef Or Boczko <yoseforb@gmail.com>, 2020.
+# Yosef Or Boczko <yoseforb@gmail.com>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.he\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2020-06-26 07:46+0000\n"
-"PO-Revision-Date: 2020-09-29 23:00+0300\n"
+"POT-Creation-Date: 2021-03-06 12:35+0000\n"
+"PO-Revision-Date: 2021-03-29 02:37+0300\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: Hebrew <yoseforb@gmail.com>\n"
 "Language: he\n"
@@ -19,39 +19,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 3.38.0\n"
 "X-Launchpad-Export-Date: 2008-01-13 04:36+0000\n"
 "X-Poedit-Language: Hebrew\n"
 
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
+#: data/game-button.ui:7
+msgid "_Restart"
 msgstr "ה_תחלה מחדש"
 
-#: data/lightsoff-menus.ui:12
-msgid "_Previous puzzle"
-msgstr "תצרף _קודם"
-
-#: data/lightsoff-menus.ui:17
-msgid "Ne_xt puzzle"
-msgstr "תצרף ה_בא"
-
-#: data/lightsoff-menus.ui:24
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
+#: data/lightsoff-menus.ui:8
 msgid "_Help"
 msgstr "ע_זרה"
 
-#: data/lightsoff-menus.ui:29
-#| msgid "Lights Off"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
+#: data/lightsoff-menus.ui:14
 msgid "_About Lights Off"
 msgstr "_על אודות האורות כבויים"
 
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:8
+#| msgid "Ne_xt puzzle"
+msgid "_First puzzle"
+msgstr "תצרף _ראשון"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:14
+msgid "_Previous puzzle"
+msgstr "תצרף _קודם"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle"
+#: data/lightsoff.ui:20
+msgid "Ne_xt puzzle"
+msgstr "תצרף ה_בא"
+
+#. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
+#: data/lightsoff.ui:46
+msgid "_Change Puzzle"
+msgstr "_שינוי תצרף"
+
+#. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
-#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:112
-#: src/lightsoff.vala:134 src/lightsoff.vala:147
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "האורות כבויים"
 
+#. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:115
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:150
 msgid "Turn off all the lights"
 msgstr "כיבוי כל האורות"
 
@@ -80,16 +96,63 @@ msgstr "מיזם GNOME"
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "משחק;הגיון;היגיון;לוח;משבצות;סמוך;סמוכים;פאזל;פזל;תצרף;"
 
-#: data/org.gnome.LightsOff.gschema.xml:6
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The current level"
 msgstr "The current level"
 
-#: data/org.gnome.LightsOff.gschema.xml:7
-#| msgid "The users's most recent level."
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:9
 msgid "The users’s most recent level."
 msgstr "The users’s most recent level."
 
-#: src/lightsoff.vala:121
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:17
+msgid "The width of the window"
+msgstr "The width of the window"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:19
+msgid "The width of the main window in pixels."
+msgstr "The width of the main window in pixels."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:24
+msgid "The height of the window"
+msgstr "The height of the window"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "The height of the main window in pixels."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "A flag to enable maximized mode"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "If “true”, the main window starts in maximized mode."
+
+#. Translators: command-line option description, see 'lightsoff --help'
+#: src/lightsoff.vala:26
+msgid "Display version number"
+msgstr "Display version number"
+
+#. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
+#: src/lightsoff.vala:73
+msgid "Failed to parse command-line arguments."
+msgstr "Failed to parse command-line arguments."
+
+#. Translators: about dialog text; label of the website link
+#: src/lightsoff.vala:154
+msgid "Page on GNOME wiki"
+msgstr "עמוד ב־GNOME ויקי"
+
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr ""
 "גיל אשר <dolfin@rpg.org.il>\n"
@@ -103,28 +166,29 @@ msgstr ""
 "\n"
 "<a href=\"https://l10n.gnome.org/teams/he/\">מיזם תרגום GNOME לעברית</a>"
 
-#: src/lightsoff.vala:142
-#, c-format
-msgid "Run `%s --help` to see a full list of available command line options.\n"
-msgstr ""
-"Run `%s --help` to see a full list of available command line options.\n"
+#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
+#: src/lightsoff-window.vala:88
+msgid "Turn off all the lights!"
+msgstr "כבו את כל האורות!"
 
-#: src/lightsoff-window.vala:103
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "מהלך אחד"
-msgstr[1] "%d מהלכים"
-
-#. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:109
+#. Translators: the title of the window, %d is the level number
+#: src/lightsoff-window.vala:141
 #, c-format
 msgid "Puzzle %d"
 msgstr "תצרף %d"
 
-#: src/lightsoff-window.vala:113
-msgid "Turn off all the lights!"
-msgstr "כבו את כל האורות!"
+#~ msgid "_Start Over"
+#~ msgstr "ה_תחלה מחדש"
+
+#~ msgid ""
+#~ "Run `%s --help` to see a full list of available command line options.\n"
+#~ msgstr ""
+#~ "Run `%s --help` to see a full list of available command line options.\n"
+
+#~ msgid "%d move"
+#~ msgid_plural "%d moves"
+#~ msgstr[0] "מהלך אחד"
+#~ msgstr[1] "%d מהלכים"
 
 #~ msgid "_About"
 #~ msgstr "על _אודות"
