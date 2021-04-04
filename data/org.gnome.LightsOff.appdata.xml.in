@@ -81,7 +81,7 @@
         </ul>
       </description>
     </release>
-    <release version="40.rc" date="2021-03-12" type="development">
+    <release version="40~rc" date="2021-03-12" type="development">
       <description>
         <p>Overview of changes in lightsoff 40.rc</p>
         <ul>
@@ -89,7 +89,7 @@
         </ul>
       </description>
     </release>
-    <release version="40.beta" date="2021-02-05" type="development">
+    <release version="40~beta" date="2021-02-05" type="development">
       <description>
         <p>Overview of changes in lightsoff 40.beta</p>
         <ul>
@@ -98,7 +98,7 @@
         </ul>
       </description>
     </release>
-    <release version="40.alpha" date="2021-01-10" type="development">
+    <release version="40~alpha" date="2021-01-10" type="development">
       <description>
         <p>Overview of changes in lightsoff 40.alpha</p>
         <ul>
