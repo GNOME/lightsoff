@@ -1,12 +1,12 @@
 # Henrik Löwendahl <henrik.lowendahl@purplescout.se>, 2011.
 # Erik Sköldås <erik.skoldas@tele2.se>, 2015.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2020.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2020, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lights off doc\n"
-"POT-Creation-Date: 2020-01-03 18:30+0000\n"
-"PO-Revision-Date: 2020-03-08 20:42+0100\n"
+"POT-Creation-Date: 2021-07-28 20:09+0000\n"
+"PO-Revision-Date: 2021-07-31 21:44+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -193,15 +193,15 @@ msgstr ""
 msgid ""
 "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
-"issues\">browse</link> for the bug to see if it already exists."
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "När du väl har ett konto, logga in, klicka på <gui>New Issue</gui>. Innan du "
-"rapporterar ett fel, läs <link href=\"https://wiki.gnome.org/Community/"
-"GettingInTouch/Bugzilla/Guidelines\">riktlinjer för felrapporter</link>, och "
-"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">sök</link> "
-"för att se om felet är rapporterat."
+"rapporterar ett fel, läs <link href=\"https://wiki.gnome.org/GettingInTouch/"
+"BugReportingGuidelines\">riktlinjer för felrapporter</link>, och <link href="
+"\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">sök</link> för att se om "
+"felet är rapporterat."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:43
@@ -682,12 +682,3 @@ msgid ""
 msgstr ""
 "Alternativt kan du kontakta internationaliseringsgruppen via deras <link "
 "href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">sändlista</link>."
-
-#~ msgid ""
-#~ "The arrow shaped buttons at the bottom of the game allow you to skip the "
-#~ "levels or return to the previous levels. The current level is shown at "
-#~ "the bottom of the game."
-#~ msgstr ""
-#~ "De pilformade knapparna längst ned i spelet gör att du kan hoppa över "
-#~ "nivåer eller återgå till tidigare nivåer. Den nuvarande nivån visas "
-#~ "längst ned i spelet."
