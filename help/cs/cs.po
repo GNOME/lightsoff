@@ -1,13 +1,14 @@
 # Czech translation for lightsoff.
 # Copyright (C) 2013 lightsoff's COPYRIGHT HOLDER
 # This file is distributed under the same license as the lightsoff package.
-# Marek Černocký <marek@manet.cz>, 2013, 2017, 2018, 2020.
+#
+# Marek Černocký <marek@manet.cz>, 2013, 2017, 2018, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
-"POT-Creation-Date: 2020-06-26 07:46+0000\n"
-"PO-Revision-Date: 2020-11-29 01:20+0100\n"
+"POT-Creation-Date: 2021-07-28 20:09+0000\n"
+"PO-Revision-Date: 2021-08-26 17:56+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -20,7 +21,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Marek Černocký <marek@manet.cz>, 2013"
+msgstr "Marek Černocký <marek@manet.cz>"
 
 #. (itstool) path: credit/name
 #: C/basic.page:10 C/bug-filing.page:14 C/develop.page:15
@@ -190,16 +191,16 @@ msgstr ""
 msgid ""
 "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
-"issues\">browse</link> for the bug to see if it already exists."
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "Když už účet máte, přihlaste se, klikněte na <gui>New Issue</gui>. Před "
 "nahlášením chyby si prosím přečtěte <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">přiručku k hlášení chyb</"
-"link> (odkaz je v angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/"
-"lightsoff/issues\">podívejte</link> se prosím, jestli stejnou chybu "
-"nenahlásil už někdo jiný."
+"GettingInTouch/BugReportingGuidelines\">přiručku k hlášení chyb</link> (odkaz "
+"je v angličtině) a <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+"issues\">podívejte</link> se prosím, jestli stejnou chybu nenahlásil už někdo "
+"jiný."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:43
@@ -682,3 +683,4 @@ msgstr ""
 "Případně můžete kontaktovat Internacionalizační tým přes jeho <link href="
 "\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">poštovní konferenci</"
 "link>."
+
