@@ -1,63 +1,63 @@
 # Korean translation for gnome-games.
 # Copyright (C) 2011 gnome-games's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-games package.
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2011, 2014, 2018.
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2011, 2014, 2018, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"POT-Creation-Date: 2018-09-01 16:51+0000\n"
-"PO-Revision-Date: 2018-09-02 18:08+0900\n"
-"Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
+"POT-Creation-Date: 2021-07-28 20:09+0000\n"
+"PO-Revision-Date: 2021-09-09 15:00+0900\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: Korean <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "조성호 <shcho@gnome.org>, 2011, 2014, 2018"
+msgstr "조성호 <shcho@gnome.org>, 2011, 2014, 2018, 2021"
 
 #. (itstool) path: credit/name
-#: C/basic.page:9 C/bug-filing.page:14 C/develop.page:15
+#: C/basic.page:10 C/bug-filing.page:14 C/develop.page:15
 #: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
 #: C/translate.page:15
 msgid "Perumal Viravan"
 msgstr "Perumal Viravan"
 
 #. (itstool) path: credit/years
-#: C/basic.page:11 C/rules.page:11 C/strategy.page:10
+#: C/basic.page:12 C/rules.page:11 C/strategy.page:10
 msgid "2012"
 msgstr "2012"
 
 #. (itstool) path: license/p
-#: C/basic.page:14 C/bug-filing.page:18 C/develop.page:19
+#: C/basic.page:15 C/bug-filing.page:18 C/develop.page:19
 #: C/documentation.page:17 C/index.page:16 C/strategy.page:13
 #: C/translate.page:19
 msgid "Creative Commons Share Alike 3.0"
 msgstr "크리에이티브 커먼즈 동일조건변경허락 3.0"
 
 #. (itstool) path: page/title
-#: C/basic.page:18
+#: C/basic.page:19
 msgid "Basics"
 msgstr "기본"
 
 #. (itstool) path: page/p
-#: C/basic.page:19
+#: C/basic.page:20
 msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
 msgstr "<app>불 끄기</app>는 키보드와 마우스를 사용하여 게임할 수 있습니다."
 
 #. (itstool) path: section/title
-#: C/basic.page:22
+#: C/basic.page:23
 msgid "Using the keyboard"
 msgstr "키보드 사용하기"
 
 #. (itstool) path: item/p
-#: C/basic.page:24
+#: C/basic.page:25
 msgid ""
 "To select a tile, use the arrow keys to move the spotlight on to that tile "
 "and press the <key>Enter</key> key."
@@ -66,7 +66,7 @@ msgstr ""
 "<key>Enter</key>키를 누르십시오."
 
 #. (itstool) path: item/p
-#: C/basic.page:25 C/basic.page:33
+#: C/basic.page:26 C/basic.page:34
 msgid ""
 "Once a tile is selected it will toggle the state of the selected tile and "
 "its non-diagonal neighbors."
@@ -74,50 +74,53 @@ msgstr ""
 "타일을 선택하면 대각선 방향에 있지 않은 이웃하는 타일의 상태를 바꿉니다."
 
 #. (itstool) path: section/title
-#: C/basic.page:30
+#: C/basic.page:31
 msgid "Using the mouse"
 msgstr "마우스 사용"
 
 #. (itstool) path: item/p
-#: C/basic.page:32
+#: C/basic.page:33
 msgid "To select a tile move the mouse pointer over the tile and click it."
 msgstr "타일을 선택하려면 마우스 포인터를 타일 위로 가져다놓고 누르십시오."
 
 #. (itstool) path: section/title
-#: C/basic.page:38
+#: C/basic.page:39
 msgid "Progress through the levels"
 msgstr "레벨을 통한 과정"
 
 #. (itstool) path: item/p
-#: C/basic.page:40
-msgid ""
-"The progress through the levels is either by turning off all the lights in "
-"that level or using the arrow shaped buttons in the bottom of the game."
-msgstr ""
-"각각의 레벨에서 모든 타일의 불을 끄거나 게임 하단 근처에 있는 화살표 모양 단"
-"추를 눌러 다음 단계로 진행할 수 있습니다."
-
-#. (itstool) path: item/p
 #: C/basic.page:41
 msgid ""
-"The arrow shaped buttons at the bottom of the game allow you to skip the "
-"levels or return to the previous levels. The current level is shown at the "
-"bottom of the game."
+"The progress through the levels is either by turning off all the lights in "
+"that level or by pressing the menu button in the top-right corner of the "
+"window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
 msgstr ""
-"게임 창 하단의 화살표 모양 단추는 다음 레벨로 넘어가거나 이전 레벨로 들어갈 "
-"수 있게 합니다. 현재 레벨은 게임 창 하단에 나타납니다."
+"각각의 레벨에서 모든 타일의 불을 끄거나 창 우측 상단의 메뉴 단추를 누른 후 "
+"<gui>다음 퍼즐</gui> 또는 <gui>이전 퍼즐</gui>을 선택하면 해당 레벨로 진행할 "
+"수 있습니다."
+
+#. (itstool) path: item/p
+#: C/basic.page:42
+msgid "The current level is shown in the title bar."
+msgstr "제목 표시줄에 현재 레벨이 나타납니다."
 
 #. (itstool) path: figure/desc
-#: C/basic.page:45
-msgid ""
-"This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
-"shaped buttons at the bottom."
-msgstr ""
-"이 장면은 하단의 화살표 모양 단추와 레벨 3의 <app>불 끄기</app> 패턴을 나타냅"
-"니다."
+#: C/basic.page:46
+msgid "This shows the <app>Lights Off</app> pattern for level 3."
+msgstr "이 장면은 레벨 3의 <app>불 끄기</app> 패턴을 나타냅니다."
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/basic.page:47
+msgctxt "_"
+msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+msgstr "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
 
 #. (itstool) path: section/title
-#: C/basic.page:51
+#: C/basic.page:52
 msgid "Video Demonstration"
 msgstr "동영상 시연"
 
@@ -182,16 +185,16 @@ msgstr ""
 #: C/bug-filing.page:36
 msgid ""
 "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
-"reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
-"page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">browse</link> "
-"for the bug to see if it already exists."
+"reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "계정을 확보하고 나면 로그인하시고 <gui>New issue</gui>를 클릭하십시오. 버그"
-"를 보고하기 전 <link href=\"https://bugzilla.gnome.org/page.cgi?id=bug-"
-"writing.html\">버그 작성 지침</link>을 읽으시고, 이미 같은 내용으로 누군가가 "
-"버그 보고를 올렸는지 <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
-"issues\">찾아보십시오</link>."
+"를 보고하기 전 <link href=\"https://wiki.gnome.org/GettingInTouch/"
+"BugReportingGuidelines\">버그 작성 지침</link>을 확인하시고, 이미 같은 내용으"
+"로 누군가가 버그 보고를 올렸는지 <link href=\"https://gitlab.gnome.org/GNOME/"
+"lightsoff/issues\">찾아보십시오</link>."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:43
@@ -234,13 +237,13 @@ msgid ""
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
 "touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
 "url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
-"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
+"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
 "link>."
 msgstr ""
 "<link href=\"https://wiki.gnome.org/Apps/Games/Contributing\"><app>그놈 게임"
 "</app> 개발 지원</link>을 원하시면, <link href=\"https://cbe005.chat.mibbit."
 "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">IRC</link> 또는 <link "
-"href=\"http://mail.gnome.org/mailman/listinfo/games-list\">메일링 리스트</"
+"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">메일링 리스트</"
 "link>로 개발자에게 연락할 수 있습니다."
 
 #. (itstool) path: page/title
@@ -262,22 +265,22 @@ msgstr ""
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail.gnome.org/"
-"mailman/listinfo/gnome-doc-list\">mailing list</link>."
+"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"https://mail.gnome."
+"org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgstr ""
 "문서 프로젝트에 기여하려면 <link href=\"https://cbe003.chat.mibbit.com/?"
-"url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">IRC</link>, <link href=\"http://mail."
+"url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">IRC</link>, <link href=\"https://mail."
 "gnome.org/mailman/listinfo/gnome-doc-list\">메일링 리스트</link>로 언제든지 "
 "연락주십시오."
 
 #. (itstool) path: page/p
 #: C/documentation.page:28
 msgid ""
-"Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
 msgstr ""
 "<link href=\"https://live.gnome.org/DocumentationProject/Contributing\">위키"
-"</link> 페이지에 도움 정보가 있습니다."
+"</link> 페이지에 안내 정보가 있습니다."
 
 #. (itstool) path: info/title
 #: C/index.page:8
@@ -624,24 +627,24 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/translate.page:27
 msgid ""
-"There are <link href=\"http://l10n.gnome.org/module/lightsoff/\">many "
+"There are <link href=\"https://l10n.gnome.org/module/lightsoff/\">many "
 "languages</link> for which translations are still needed."
 msgstr ""
-"여전히 <link href=\"http://l10n.gnome.org/module/gnome-mahjongg/\">수많은 언"
-"어</link>로 번역이 필요합니다."
+"여전히 <link href=\"https://l10n.gnome.org/module/lightsoff/\">수많은 언어</"
+"link>로 번역이 필요합니다."
 
 #. (itstool) path: page/p
 #: C/translate.page:30
 msgid ""
-"To start translating you will need to <link href=\"http://l10n.gnome.org"
-"\">create an account</link> and join the <link href=\"http://l10n.gnome.org/"
+"To start translating you will need to <link href=\"https://l10n.gnome.org"
+"\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
 "teams/\">translation team</link> for your language. This will give you the "
 "ability to upload new translations."
 msgstr ""
-"번역을 시작하려면 <link href=\"http://l10n.gnome.org\">계정 생성</link>을 진"
-"행하고, 여러분의 언어에 해당하는 <link href=\"http://l10n.gnome.org/teams/\">"
-"번역 팀</link>에 참여해야합니다. 이 과정을 거치면 여러분이 새 번역을 업로드"
-"할 수 있습니다."
+"번역을 시작하려면 <link href=\"https://l10n.gnome.org\">계정 만들기</link>를 "
+"진행하고, 여러분의 언어에 해당하는 <link href=\"https://l10n.gnome.org/teams/"
+"\">번역 팀</link>에 참여해야합니다. 이 과정을 거치면 여러분이 새 번역을 업로"
+"드할 수 있습니다."
 
 #. (itstool) path: page/p
 #: C/translate.page:34
@@ -659,11 +662,19 @@ msgstr ""
 #: C/translate.page:37
 msgid ""
 "Alternatively, you can contact the Internationalization Team using their "
-"<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+"<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
 "list</link>."
 msgstr ""
-"대신 각 언어 팀별 <link href=\"http://mail.gnome.org/mailman/listinfo/gnome-"
+"대신 각 언어 팀별 <link href=\"https://mail.gnome.org/mailman/listinfo/gnome-"
 "i18n\">메일링 리스트</link>로 국제화 팀과 연락할 수 있습니다."
+
+#~ msgid ""
+#~ "The arrow shaped buttons at the bottom of the game allow you to skip the "
+#~ "levels or return to the previous levels. The current level is shown at "
+#~ "the bottom of the game."
+#~ msgstr ""
+#~ "게임 창 하단의 화살표 모양 단추는 다음 레벨로 넘어가거나 이전 레벨로 들어"
+#~ "갈 수 있게 합니다. 현재 레벨은 게임 창 하단에 나타납니다."
 
 #~ msgid ""
 #~ "<app>Lights Off</app> is maintained by a volunteer community. You are "
