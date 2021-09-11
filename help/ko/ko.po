@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "POT-Creation-Date: 2021-07-28 20:09+0000\n"
-"PO-Revision-Date: 2021-09-09 15:00+0900\n"
+"PO-Revision-Date: 2021-09-10 12:06+0900\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: Korean <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -139,7 +139,7 @@ msgstr "2011"
 #. (itstool) path: page/title
 #: C/bug-filing.page:22
 msgid "Help make <app>Lights Off</app> better"
-msgstr "<app>불 끄기</app> 발전 돕기"
+msgstr "<app>불 끄기</app> 개선 돕기"
 
 #. (itstool) path: section/title
 #: C/bug-filing.page:25
@@ -154,10 +154,10 @@ msgid ""
 "report</em>. To file a bug, go to <link href=\"https://gitlab.gnome.org/"
 "GNOME/lightsoff/issues\"/>."
 msgstr ""
-"<app>마작</app>은 기여자 집단이 관리합니다. 여러분의 참여를 환영합니다. 문제"
-"를 발견했다면 <em>버그 보고서</em>를 제출할 수 있습니다. 버그를 보고하려면, "
-"<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues/\"/>로 이동하십"
-"시오."
+"<app>불 끄기</app>는 기여자 집단이 관리합니다. 여러분의 참여를 환영합니다. 문"
+"제를 발견했다면 <em>버그 보고서</em>를 제출할 수 있습니다. 버그를 보고하려"
+"면, <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues/\"/>로 이동"
+"하십시오."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:29
@@ -333,7 +333,7 @@ msgstr "크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.
 #. (itstool) path: license/p
 #: C/legal.xml:3
 msgid "This work is licensed under a <_:link-1/>."
-msgstr "이 문서는 <_:link-1/>에 따른 활용을 허가합니다."
+msgstr "이 문서는 <_:link-1/>를 따릅니다."
 
 #. (itstool) path: info/desc
 #: C/license.page:8
@@ -357,7 +357,7 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/license.page:20
 msgid "You are free:"
-msgstr "다음을 자유로이 행할 수 있습니다:"
+msgstr "이용자는 다음 권리가 있습니다:"
 
 #. (itstool) path: item/title
 #: C/license.page:25
@@ -396,8 +396,9 @@ msgid ""
 "licensor (but not in any way that suggests that they endorse you or your use "
 "of the work)."
 msgstr ""
-"저자 또는 라이선스 보유자가 지정한 방식대로 작업물의 저작자를 기재(그러나 저"
-"작물의 활용을 보증할 경우 해당없음)."
+"저작자 또는 저작권자가 지정한 방법으로 표시해야 합니다. 하지만 저작자나 저작"
+"권자가 귀하에게 권리를 부여한다거나 귀하의 사용을 허가한다는 내용을 나타내서"
+"는 안 됩니다."
 
 #. (itstool) path: item/title
 #: C/license.page:46
@@ -421,10 +422,10 @@ msgid ""
 "link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
 "sa/3.0/\">Commons Deed</link>."
 msgstr ""
-"라이선스 전문은 <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
-"legalcode\">크리에이티브 커먼즈 웹사이트</link>를 보시거나, <link href="
-"\"http://creativecommons.org/licenses/by-sa/3.0/\">일반 권리 증서</link>를 읽"
-"어보십시오."
+"라이선스 전문을 보려면, <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/legalcode\">크리에이티브 커먼즈 웹사이트 </link> 또는 <link href="
+"\"http://creativecommons.org/licenses/by-sa/3.0/\">일반 권리 증서</link>를 참"
+"조합니다."
 
 #. (itstool) path: page/title
 #: C/rules.page:16
@@ -621,8 +622,8 @@ msgid ""
 "translated by a world-wide volunteer community. You are welcome to "
 "participate."
 msgstr ""
-"그놈 게임 사용자 인터페이스와 문서는 전세계 기여자 집단이 번역합니다. 여러분"
-"의 참여를 환영합니다."
+"<app>그놈 게임</app> 사용자 인터페이스와 문서는 전세계 기여자 집단이 번역합니"
+"다. 여러분의 참여를 환영합니다."
 
 #. (itstool) path: page/p
 #: C/translate.page:27
@@ -655,8 +656,9 @@ msgid ""
 "result of timezone differences."
 msgstr ""
 "<link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org"
-"%2Fi18n\">IRC</link>에서 그놈 번역자와 대화할 수 있습니다. 전세계 여러 번역자"
-"가 이 채널에 있어 시차에 따라 답변을 바로 받지 못할 수도 있습니다."
+"%2Fi18n\">IRC</link>에서 그놈 번역자와 이야기를 나눌 수 있습니다. 채널에 있"
+"는 사람은 전 세계에 있기 때문에, 시차로 인해 빠른 답변을 받지 못할 수도 있습"
+"니다."
 
 #. (itstool) path: page/p
 #: C/translate.page:37
@@ -665,8 +667,8 @@ msgid ""
 "<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
 "list</link>."
 msgstr ""
-"대신 각 언어 팀별 <link href=\"https://mail.gnome.org/mailman/listinfo/gnome-"
-"i18n\">메일링 리스트</link>로 국제화 팀과 연락할 수 있습니다."
+"대신, 국제화 팀에 <link href=\"https://mail.gnome.org/mailman/listinfo/gnome-"
+"i18n\">메일링 리스트</link>로 연락할 수도 있습니다."
 
 #~ msgid ""
 #~ "The arrow shaped buttons at the bottom of the game allow you to skip the "
