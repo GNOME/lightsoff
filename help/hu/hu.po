@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff-help master\n"
-"POT-Creation-Date: 2020-10-20 18:10+0000\n"
-"PO-Revision-Date: 2021-03-02 08:04+0100\n"
+"POT-Creation-Date: 2021-07-28 20:09+0000\n"
+"PO-Revision-Date: 2021-09-12 09:19+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
@@ -96,18 +96,15 @@ msgstr "A szinteken való továbbhaladás"
 
 #. (itstool) path: item/p
 #: C/basic.page:41
-#| msgid ""
-#| "The progress through the levels is either by turning off all the lights "
-#| "in that level or using the arrow shaped buttons in the bottom of the game."
 msgid ""
 "The progress through the levels is either by turning off all the lights in "
 "that level or by pressing the menu button in the top-right corner of the "
 "window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
 msgstr ""
-"A szinteken való továbbhaladás az adott szint fényeinek lekapcsolásával, vagy"
-" az ablak jobb felső sarkában lévő menügomb megnyomásával és a <gui>Következő"
-" feladvány</gui> vagy az <gui>Előző feladvány</gui> kiválasztásával"
-" valósítható meg."
+"A szinteken való továbbhaladás az adott szint fényeinek lekapcsolásával, "
+"vagy az ablak jobb felső sarkában lévő menügomb megnyomásával és a "
+"<gui>Következő feladvány</gui> vagy az <gui>Előző feladvány</gui> "
+"kiválasztásával valósítható meg."
 
 #. (itstool) path: item/p
 #: C/basic.page:42
@@ -116,9 +113,6 @@ msgstr "Az aktuális szint a címsávban van megjelenítve."
 
 #. (itstool) path: figure/desc
 #: C/basic.page:46
-#| msgid ""
-#| "This shows the <app>Lights Off</app> pattern for level 3, with the arrow "
-#| "shaped buttons at the bottom."
 msgid "This shows the <app>Lights Off</app> pattern for level 3."
 msgstr ""
 "Ez megjeleníti a <app>Fények le</app> játék harmadik szintjének mintáját."
@@ -202,20 +196,20 @@ msgstr ""
 #: C/bug-filing.page:36
 #| msgid ""
 #| "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
-#| "reporting a bug, please read the <link href=\"https://bugzilla.gnome.org/"
-#| "page.cgi?id=bug-writing.html\">bug writing guidelines</link>, and please "
-#| "<link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">browse</"
-#| "link> for the bug to see if it already exists."
+#| "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
+#| "Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
+#| "link>, and please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+#| "issues\">browse</link> for the bug to see if it already exists."
 msgid ""
 "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-"Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-"link>, and please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
-"issues\">browse</link> for the bug to see if it already exists."
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues"
+"\">browse</link> for the bug to see if it already exists."
 msgstr ""
-"Ha létrehozta fiókját, jelentkezzen be, kattintson a <gui>New issue</gui>"
+"Ha létrehozta fiókját, jelentkezzen be, kattintson a <gui>New Issue</gui>"
 " hivatkozásokra. Hiba jelentése előtt olvassa el a <link"
-" href=\"https://wiki.gnome.org/Community/GettingInTouch/Bugzilla/Guidelines\""
+" href=\"https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines\""
 ">hibajelentés-írási irányelveket</link>, és <link"
 " href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">ellenőrizze</link>,"
 " hogy nincs-e már a hiba bejelentve."
@@ -257,13 +251,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/develop.page:27
-#| msgid ""
-#| "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
-#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
-#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
-#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our "
-#| "<link href=\"http://mail.gnome.org/mailman/listinfo/games-list\">mailing "
-#| "list</link>."
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
@@ -295,11 +282,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/documentation.page:26
-#| msgid ""
-#| "To contribute to the Documentation Project, feel free to get in touch "
-#| "with us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F"
-#| "%2Firc.gnome.org%2Fdocs\">irc</link>, or via our <link href=\"http://mail."
-#| "gnome.org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
@@ -313,9 +295,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/documentation.page:28
-#| msgid ""
-#| "Our <link href=\"https://live.gnome.org/DocumentationProject/Contributing"
-#| "\">wiki</link> page contains useful information."
 msgid ""
 "Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
 "\">wiki</link> page contains useful information."
@@ -672,9 +651,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:27
-#| msgid ""
-#| "There are <link href=\"http://l10n.gnome.org/module/lightsoff/\">many "
-#| "languages</link> for which translations are still needed."
 msgid ""
 "There are <link href=\"https://l10n.gnome.org/module/lightsoff/\">many "
 "languages</link> for which translations are still needed."
@@ -684,11 +660,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:30
-#| msgid ""
-#| "To start translating you will need to <link href=\"http://l10n.gnome.org"
-#| "\">create an account</link> and join the <link href=\"http://l10n.gnome."
-#| "org/teams/\">translation team</link> for your language. This will give "
-#| "you the ability to upload new translations."
 msgid ""
 "To start translating you will need to <link href=\"https://l10n.gnome.org"
 "\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
@@ -715,10 +686,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/translate.page:37
-#| msgid ""
-#| "Alternatively, you can contact the Internationalization Team using their "
-#| "<link href=\"http://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
-#| "list</link>."
 msgid ""
 "Alternatively, you can contact the Internationalization Team using their "
 "<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
