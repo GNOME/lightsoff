@@ -20,8 +20,11 @@ using Gtk;
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/notifications-revealer.ui")]
 private class NotificationsRevealer : Widget
 {
-    [GtkChild] private Revealer revealer;
-    [GtkChild] private Label    notification_label;
+    [GtkChild]
+    private unowned Revealer revealer;
+
+    [GtkChild]
+    private unowned Label notification_label;
 
     construct
     {

@@ -41,7 +41,7 @@ private class ManagedWindow : ApplicationWindow
             assert_not_reached ();
         surface = (Gdk.Toplevel) (!) nullable_surface;
         surface.notify ["state"].connect (on_window_state_event);
-        surface.size_changed.connect (on_size_changed);
+        // surface.size_changed.connect (on_size_changed);
     }
 
     private Gdk.Toplevel surface;
@@ -69,7 +69,7 @@ private class ManagedWindow : ApplicationWindow
             return;
         int? _window_width = null;
         int? _window_height = null;
-        get_size (out _window_width, out _window_height);
+        // get_size (out _window_width, out _window_height);
         if (_window_width == null || _window_height == null)
             return;
         window_width = (!) _window_width;
