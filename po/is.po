@@ -5,33 +5,71 @@
 #
 #
 # aki <aki@akademia.is>, 2004.
-# Sveinn í Felli <sv1@fellsnet.is>, 2017, 2018, 2019.
+# Sveinn í Felli <sv1@fellsnet.is>, 2017, 2018, 2019, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games 2.6\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2018-10-05 20:00+0000\n"
-"PO-Revision-Date: 2019-02-21 08:52+0000\n"
+"POT-Creation-Date: 2021-02-06 13:00+0000\n"
+"PO-Revision-Date: 2022-01-29 11:35+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
+"Language-Team: Icelandic <translation-team-is@lists.sourceforge.org>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 19.12.3\n"
 
-#: data/lightsoff.appdata.xml.in:7 data/lightsoff.desktop.in:3
-#: src/lightsoff.vala:103 src/lightsoff.vala:125 src/lightsoff.vala:138
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
+#: data/game-button.ui:7
+msgid "_Restart"
+msgstr "By_rja aftur"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
+#: data/lightsoff-menus.ui:8
+msgid "_Help"
+msgstr "_Hjálp"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
+#: data/lightsoff-menus.ui:14
+#| msgid "Lights Off"
+msgid "_About Lights Off"
+msgstr "Um Slökkv_a ljósin - Lights Off"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:8
+msgid "_First puzzle"
+msgstr "_Fyrsta þraut"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:14
+msgid "_Previous puzzle"
+msgstr "Fyrri þraut"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle"
+#: data/lightsoff.ui:20
+msgid "Ne_xt puzzle"
+msgstr "Næs_ta þraut"
+
+#. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
+#: data/lightsoff.ui:46
+msgid "_Change Puzzle"
+msgstr "Ski_pta um þraut"
+
+#. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Slökkva ljósin"
 
-#: data/lightsoff.appdata.xml.in:8 data/lightsoff.desktop.in:4
-#: src/lightsoff.vala:106
+#. Translators: short description of the application, seen in the About dialog
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:150
 msgid "Turn off all the lights"
 msgstr "Slökktu á öllum ljósunum"
 
-#: data/lightsoff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -42,7 +80,7 @@ msgstr ""
 "um stöðu á öllum ljósum í kring. Markmiðið er einfalt: slökkva á öllum "
 "ljósunum!"
 
-#: data/lightsoff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
@@ -50,77 +88,114 @@ msgstr ""
 "Leikmönnum sem gengur vel að slökkva á ljósum, er úthlutað fjöldanum öllum "
 "af leikþrepum."
 
-#: data/lightsoff.appdata.xml.in:39
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "GNOME verkefnið"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/lightsoff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "leikur;rökhugsun;borð;spjöld;aðliggjandi;gestaþraut;ráðgáta;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/lightsoff.desktop.in:8
-msgid "lightsoff"
-msgstr "lightsoff"
-
-#: data/lightsoff-menus.ui:7
-msgid "_Start Over"
-msgstr "_Byrja aftur"
-
-#: data/lightsoff-menus.ui:14
-msgid "_Help"
-msgstr "_Hjálp"
-
-#: data/lightsoff-menus.ui:19
-msgid "_About"
-msgstr "_Um hugbúnaðinn"
-
-#: data/lightsoff-menus.ui:23
-msgid "_Quit"
-msgstr "Hæ_tta"
-
-#: data/lightsoff.ui:14
-msgid "Return to the previous level"
-msgstr "Fara aftur á fyrra þrep"
-
-#: data/lightsoff.ui:34
-msgid "Proceed to the next level"
-msgstr "Halda áfram á næsta þrep"
-
-#: data/org.gnome.lightsoff.gschema.xml:6
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The current level"
-msgstr "Núverandi þrep"
+msgstr "Núverandi stig"
 
-#: data/org.gnome.lightsoff.gschema.xml:7
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:9
 msgid "The users’s most recent level."
-msgstr "Nýjasta þrep þessa notanda."
+msgstr "Nýjasta stig þessa notanda."
 
-#: src/lightsoff.vala:112
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:17
+msgid "The width of the window"
+msgstr "Breidd gluggans"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:19
+msgid "The width of the main window in pixels."
+msgstr "Breidd aðalgluggans í mynddílum."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:24
+msgid "The height of the window"
+msgstr "Hæð gluggans"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "Hæð aðalgluggans í mynddílum."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "Flagg til að virkja hámarkaða glugga"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "Ef \"satt\" byrjar aðalglugginn hámarkaður."
+
+#. Translators: command-line option description, see 'lightsoff --help'
+#: src/lightsoff.vala:26
+msgid "Display version number"
+msgstr "Birta útgáfunúmer"
+
+#. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
+#: src/lightsoff.vala:73
+msgid "Failed to parse command-line arguments."
+msgstr "Mistókst að þátta skipanalínuviðföng."
+
+#. Translators: about dialog text; label of the website link
+#: src/lightsoff.vala:154
+msgid "Page on GNOME wiki"
+msgstr "GNOME wiki-síða"
+
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr "Sveinn í Felli, sv1@fellsnet.is"
 
-#: src/lightsoff.vala:133
-#, c-format
-msgid "Run `%s --help` to see a full list of available command line options.\n"
-msgstr ""
-"Keyrðu '%s --help' til að sjá lista með öllum mögulegum valkostum"
-" skipanalínunnar.\n"
-
-#: src/lightsoff-window.vala:92
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d leikur"
-msgstr[1] "%d leikir"
-
-#. The title of the window, %d is the level number
-#: src/lightsoff-window.vala:98
-#, c-format
-msgid "Level %d"
-msgstr "Þrep %d"
-
-#: src/lightsoff-window.vala:102
+#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
+#: src/lightsoff-window.vala:88
 msgid "Turn off all the lights!"
 msgstr "Slökktu á öllum ljósunum!"
 
+#. Translators: the title of the window, %d is the level number
+#: src/lightsoff-window.vala:141
+#, c-format
+msgid "Puzzle %d"
+msgstr "Þraut %d"
+
+#~ msgid "lightsoff"
+#~ msgstr "lightsoff"
+
+#~ msgid "_Start Over"
+#~ msgstr "_Byrja aftur"
+
+#~ msgid "_About"
+#~ msgstr "_Um hugbúnaðinn"
+
+#~ msgid "_Quit"
+#~ msgstr "Hæ_tta"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Fara aftur á fyrra þrep"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Halda áfram á næsta þrep"
+
+#~ msgid ""
+#~ "Run `%s --help` to see a full list of available command line options.\n"
+#~ msgstr ""
+#~ "Keyrðu '%s --help' til að sjá lista með öllum mögulegum valkostum "
+#~ "skipanalínunnar.\n"
+
+#~ msgid "%d move"
+#~ msgid_plural "%d moves"
+#~ msgstr[0] "%d leikur"
+#~ msgstr[1] "%d leikir"
+
+#~ msgid "Level %d"
+#~ msgstr "Þrep %d"
