@@ -1,5 +1,5 @@
 # gnome-games ja.po.
-# Copyright (C) 1998-2019 Free Software Foundation, Inc.
+# Copyright (C) 1998-2010, 2012-2013, 2019, 2022 Free Software Foundation, Inc.
 # Yukihiro Nakai <Nakai@technologist.com>, 1998.
 # Akira Higuchi <a-higuti@math.sci.hokudai.ac.jp>, 1999.
 # Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
@@ -9,14 +9,14 @@
 # Satoru SATOH <ss@gnome.gr.jp>, 2006.
 # Shushi KUROSE <md81bird@hitaki.net>, 2012.
 # Jiro Matsuzawa <jmatsuzawa@gnome.org>, 2013.
-# sicklylife <translation@sicklylife.jp>, 2019.
+# sicklylife <translation@sicklylife.jp>, 2019, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games gnome-2-32\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
 "POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2019-09-09 18:00+0900\n"
+"PO-Revision-Date: 2022-03-09 20:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -28,7 +28,7 @@ msgstr ""
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
 msgid "_Restart"
-msgstr ""
+msgstr "最初からやり直す(_R)"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
 #: data/lightsoff-menus.ui:8
@@ -42,10 +42,8 @@ msgstr "Lights Off について(_A)"
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:8
-#, fuzzy
-#| msgid "Ne_xt puzzle"
 msgid "_First puzzle"
-msgstr "次のパズル(_X)"
+msgstr "最初のパズル(_F)"
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:14
@@ -60,7 +58,7 @@ msgstr "次のパズル(_X)"
 #. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
 #: data/lightsoff.ui:46
 msgid "_Change Puzzle"
-msgstr ""
+msgstr "パズルを変える(_C)"
 
 #. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.appdata.xml.in:7
@@ -111,22 +109,22 @@ msgstr "ユーザーの最近のレベルです。"
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
 #: data/org.gnome.LightsOff.gschema.xml:17
 msgid "The width of the window"
-msgstr ""
+msgstr "ウィンドウの幅"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
 #: data/org.gnome.LightsOff.gschema.xml:19
 msgid "The width of the main window in pixels."
-msgstr ""
+msgstr "メインウィンドウの幅 (ピクセル単位) です。"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
 #: data/org.gnome.LightsOff.gschema.xml:24
 msgid "The height of the window"
-msgstr ""
+msgstr "ウィンドウの高さ"
 
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
 #: data/org.gnome.LightsOff.gschema.xml:26
 msgid "The height of the main window in pixels."
-msgstr ""
+msgstr "メインウィンドウの高さ (ピクセル単位) です。"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
 #: data/org.gnome.LightsOff.gschema.xml:31
@@ -141,17 +139,17 @@ msgstr ""
 #. Translators: command-line option description, see 'lightsoff --help'
 #: src/lightsoff.vala:26
 msgid "Display version number"
-msgstr ""
+msgstr "バージョン番号を表示する"
 
 #. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
 #: src/lightsoff.vala:73
 msgid "Failed to parse command-line arguments."
-msgstr ""
+msgstr "コマンドライン引数の解析に失敗しました。"
 
 #. Translators: about dialog text; label of the website link
 #: src/lightsoff.vala:154
 msgid "Page on GNOME wiki"
-msgstr ""
+msgstr "GNOME Wiki のページ"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
 #: src/lightsoff.vala:166
