@@ -19,7 +19,7 @@
   </description>
   <screenshots>
     <screenshot height="426" width="379" type="default">
-      <image>https://people.gnome.org/~mcatanzaro/lightsoff.png</image>
+      <image>https://gitlab.gnome.org/GNOME/lightsoff/-/raw/master/data/screenshot.png</image>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">org.gnome.LightsOff.desktop</launchable>
