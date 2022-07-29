@@ -1,14 +1,7 @@
-# Abkhazian translation for lightsoff.
-# Copyright (C) 2022 lightsoff's COPYRIGHT HOLDER
-# This file is distributed under the same license as the lightsoff package.
-# Нанба Наала <naala-nanba@rambler.ru>, 2022.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2022-02-06 20:06+0000\n"
-"PO-Revision-Date: 2018-12-28 10:59+0000\n"
+"POT-Creation-Date: 2022-06-01 16:47+0000\n"
 "Last-Translator: Нанба Наала <naala-nanba@rambler.ru>\n"
 "Language-Team: Abkhazian <ab@li.org>\n"
 "Language: ab\n"
@@ -16,7 +9,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-DamnedLies-Scope: partial\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
@@ -35,10 +27,8 @@ msgstr "_Аԥшьы иазкны"
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:8
-#, fuzzy
-#| msgid "Ne_xt puzzle"
 msgid "_First puzzle"
-msgstr "Ана_ҩстәи ахыԥҽыга"
+msgstr ""
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:14
@@ -86,7 +76,7 @@ msgstr "Ахәмарҩцәа ргәы иаахәоит аҩаӡарақәа рх
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
-msgstr "Апроект GNOME"
+msgstr "The GNOME Project"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -153,7 +143,7 @@ msgstr "GNOME wiki аҟны адаҟьа"
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
 #: src/lightsoff.vala:166
 msgid "translator-credits"
-msgstr "Нанба Наала <naala-nanba@rambler.ru>, 2022./n"
+msgstr "Нанба Наала <naala-nanba@rambler.ru>, 2022"
 
 #. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
 #: src/lightsoff-window.vala:88
@@ -166,19 +156,17 @@ msgstr "Алашарақәа зегьы шәырцәа!"
 msgid "Puzzle %d"
 msgstr "Ахыԥҽыга %d "
 
-#~ msgid "lightsoff"
-#~ msgstr "Алашара шәырцә"
+msgid "lightsoff"
+msgstr "Алашара шәырцә"
 
-#~ msgid "_Start Over"
-#~ msgstr "_Ханатә алагара"
+msgid "_Start Over"
+msgstr "_Ханатә алагара"
 
-#~ msgid ""
-#~ "Run `%s --help` to see a full list of available command line options.\n"
-#~ msgstr ""
-#~ "Инашәыгӡа «%s --help»,  адҵатә цәаҳәа алшарақәа зегьы рыхьӡынҵа "
-#~ "аарԥшразы .\n"
+msgid "Run `%s --help` to see a full list of available command line options.\n"
+msgstr ""
+"Инашәыгӡа «%s --help»,  адҵатә цәаҳәа алшарақәа зегьы рыхьӡынҵа аарԥшразы .\n"
 
-#~ msgid "%d move"
-#~ msgid_plural "%d moves"
-#~ msgstr[0] "%d шьаҿак"
-#~ msgstr[1] "%d шьаҿак"
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d шьаҿак"
+msgstr[1] "%d шьаҿак"
