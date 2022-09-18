@@ -1,11 +1,8 @@
-# Turkish translation of gnome-games.
+# Turkish translation of lightsoff.
 # Copyright (C) 2000-2002, 2004, 2005, 2008 Free Software Foundation, Inc.
+# Copyright (C) 2009-2022 lightsoff's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lightsoff package.
 #
-# foundation: sıralama
-# Tableau: orta sıra
-# reserve: yedek
-# waste: kullanılamayan
-# stock : eldeki kartlar
 # Onur Kucuk, <okucuk@yahoo.com>, 2000.
 # Ömer Fadıl USTA <omer_fad@hotmail.com>,2002.
 # Hakan Bekdas <hakanbekdas@yahoo.com>, 2006.
@@ -18,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
+"POT-Creation-Date: 2022-07-26 06:54+0000\n"
 "PO-Revision-Date: 2021-02-21 16:27+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
@@ -176,38 +173,3 @@ msgstr "Tüm ışıkları kapat!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Bulmaca %d"
-
-#~ msgid "_Start Over"
-#~ msgstr "_Baştan Başla"
-
-#~| msgid "Lights Off"
-#~ msgid "org.gnome.LightsOff"
-#~ msgstr "org.gnome.LightsOff"
-
-#~ msgid ""
-#~ "Run `%s --help` to see a full list of available command line options.\n"
-#~ msgstr ""
-#~ "Kullanılabilir tüm komut satırı seçeneklerinin tam listesini görmek için "
-#~ "“%s --help” komutunu çalıştırın.\n"
-
-#~ msgid "%d move"
-#~ msgid_plural "%d moves"
-#~ msgstr[0] "%d hamle"
-
-#~ msgid "lightsoff"
-#~ msgstr "lightsoff"
-
-#~ msgid "_About"
-#~ msgstr "H_akkında"
-
-#~ msgid "_Quit"
-#~ msgstr "_Çıkış"
-
-#~ msgid "Return to the previous level"
-#~ msgstr "Önceki seviyeye dön"
-
-#~ msgid "Proceed to the next level"
-#~ msgstr "Sonraki seviyeden devam et"
-
-#~ msgid "Level %d"
-#~ msgstr "%d. seviye"
