@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
 "POT-Creation-Date: 2022-10-03 08:23+0000\n"
-"PO-Revision-Date: 2022-10-13 10:23+0200\n"
+"PO-Revision-Date: 2022-10-13 11:10+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -115,7 +115,7 @@ msgstr "Широчината на прозореца"
 #. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
 #: data/org.gnome.LightsOff.gschema.xml:19
 msgid "The width of the main window in pixels."
-msgstr "Широчината на главния прозорец в пиксели"
+msgstr "Широчината на главния прозорец в пиксели."
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
 #: data/org.gnome.LightsOff.gschema.xml:24
