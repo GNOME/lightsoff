@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
 "POT-Creation-Date: 2022-10-03 08:23+0000\n"
-"PO-Revision-Date: 2022-10-09 12:36+0200\n"
+"PO-Revision-Date: 2022-10-13 10:23+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -26,7 +26,7 @@ msgstr ""
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
 msgid "_Restart"
-msgstr "_Рестартиране"
+msgstr "_Отначало"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
 #: data/lightsoff-menus.ui:8
@@ -147,7 +147,7 @@ msgstr "Извеждане на версията"
 #. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
 #: src/lightsoff.vala:73
 msgid "Failed to parse command-line arguments."
-msgstr "Неуспешен анализ на аргументите от командния ред."
+msgstr "Неуспешен анализ на аргументите на командния ред."
 
 #. Translators: about dialog text; label of the website link
 #: src/lightsoff.vala:154
