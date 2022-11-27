@@ -5,11 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-02-23 11:25+0000\n"
-"PO-Revision-Date: 2017-09-08 14:25+0300\n"
-"Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2021-10-05 07:09+0000\n"
+"PO-Revision-Date: 2021-10-05 16:38+0300\n"
+"Last-Translator: Launchpad translators\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
@@ -17,98 +16,178 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 3.0\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/lightsoff.appdata.xml.in.h:1 ../data/lightsoff.desktop.in.h:1
-#: ../src/lightsoff.vala:87 ../src/lightsoff.vala:109
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
+#: data/game-button.ui:7
+msgid "_Restart"
+msgstr "_Перазапусціць"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
+#: data/lightsoff-menus.ui:8
+msgid "_Help"
+msgstr "_Даведка"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
+#: data/lightsoff-menus.ui:14
+msgid "_About Lights Off"
+msgstr "_Аб праграме"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:8
+msgid "_First puzzle"
+msgstr "П_ершая галаваломка"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:14
+msgid "_Previous puzzle"
+msgstr "_Папярэдняя галаваломка"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle"
+#: data/lightsoff.ui:20
+msgid "Ne_xt puzzle"
+msgstr "_Наступная галаваломка"
+
+#. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
+#: data/lightsoff.ui:46
+msgid "_Change Puzzle"
+msgstr "_Змяніць галаваломку"
+
+#. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Гасі святло"
 
-#: ../data/lightsoff.appdata.xml.in.h:2 ../data/lightsoff.desktop.in.h:2
-#: ../src/lightsoff.vala:90
+#. Translators: short description of the application, seen in the About dialog
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:150
 msgid "Turn off all the lights"
 msgstr "Гульня з выключэннем ліхтарыкаў"
 
-#: ../data/lightsoff.appdata.xml.in.h:3
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
 "too. Your objective is simple: turn off all the lights!"
 msgstr ""
-"Гасі святло гэта збор галаваломак з пераключэннем святла. Пстрыкніце каб "
-"выключыць ці ўключыць святло, адначасова пераключыцца таксама святло "
-"навокал. Задача простая: выключыць усё святло!"
+"Гасі святло гэта збор галаваломак з пераключэннем святла. Націскайце на "
+"агні, каб пагасіць або запаліць іх, але разам з імі пераключаюцца і суседнія "
+"агні. Задача простая – пагасіць уск агні!"
 
-#: ../data/lightsoff.appdata.xml.in.h:4
+#: data/org.gnome.LightsOff.appdata.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
-msgstr ""
-"Велізарная колькасць узроўняў для тых, хто атрымоўвае асалоду ад выключэння "
-"святла."
+msgstr "Аматары гасіць святло ўзрадуюцца ад вялікай колькасці ўзроўняў."
 
-#: ../data/lightsoff.appdata.xml.in.h:5
+#: data/org.gnome.LightsOff.appdata.xml.in:42
 msgid "The GNOME Project"
 msgstr "Праект GNOME"
 
-#: ../data/lightsoff.desktop.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "гульня;лагічная гульня;логіка;настольная гульня;галаваломка;"
+msgstr ""
+"настольная;лагічная;гульня;логіка;галаваломка;сумежныя;суседнія;клеткі;"
 
-#: ../data/lightsoff-menus.ui.h:1
-msgid "_Start Over"
-msgstr "_Пачаць з пачатку"
-
-#: ../data/lightsoff-menus.ui.h:2
-msgid "_Help"
-msgstr "_Дапамога"
-
-#: ../data/lightsoff-menus.ui.h:3
-msgid "_About"
-msgstr "_Аб праграме"
-
-#: ../data/lightsoff-menus.ui.h:4
-msgid "_Quit"
-msgstr "_Выйсці"
-
-#: ../data/lightsoff.ui.h:1
-msgid "Return to the previous level"
-msgstr "Вярнуцца да папярэдняга ўзроўню"
-
-#: ../data/lightsoff.ui.h:2
-msgid "Proceed to the next level"
-msgstr "Перайсці да наступнага ўзроўню"
-
-#: ../data/org.gnome.lightsoff.gschema.xml.h:1
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:7
 msgid "The current level"
 msgstr "Бягучы ўзровень"
 
-#: ../data/org.gnome.lightsoff.gschema.xml.h:2
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:9
 msgid "The users’s most recent level."
 msgstr "Апошні ўзровень карыстальніка."
 
-#: ../src/lightsoff.vala:96
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:17
+msgid "The width of the window"
+msgstr "Шырыня акна"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:19
+msgid "The width of the main window in pixels."
+msgstr "Шырыня галоўнага акна ў пікселях."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:24
+msgid "The height of the window"
+msgstr "Вышыня акна"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "Вышыня галоўнага акна ў пікселях."
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "Уключыць рэжым разгорнутага акна"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr ""
+"Калі «true», асноўнае акно праграмы запускаецца разгорнутым на ўсю працоўную "
+"прастору."
+
+#. Translators: command-line option description, see 'lightsoff --help'
+#: src/lightsoff.vala:26
+msgid "Display version number"
+msgstr "Паказаць нумар версіі"
+
+#. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
+#: src/lightsoff.vala:73
+msgid "Failed to parse command-line arguments."
+msgstr "Не ўдалося прааналізаваць аргументы загаднага радка."
+
+#. Translators: about dialog text; label of the website link
+#: src/lightsoff.vala:154
+msgid "Page on GNOME wiki"
+msgstr "Старонка на GNOME wiki"
+
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr ""
 "Ales Nyakhaychyk <nab@mail.by>\n"
 "Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Юрась Шумовіч <shumovichy@gmail.com>"
 
-#: ../src/lightsoff-window.vala:60
-#, c-format
-msgid "%d move"
-msgid_plural "%d moves"
-msgstr[0] "%d ход"
-msgstr[1] "%d хода"
-msgstr[2] "%d хадоў"
-
-#. The title of the window, %d is the level number
-#: ../src/lightsoff-window.vala:66
-#, c-format
-msgid "Level %d"
-msgstr "Узровень %d"
-
-#: ../src/lightsoff-window.vala:70
+#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
+#: src/lightsoff-window.vala:88
 msgid "Turn off all the lights!"
-msgstr "Выключы святло!"
+msgstr "Пагасіце ўсе агні!"
+
+#. Translators: the title of the window, %d is the level number
+#: src/lightsoff-window.vala:141
+#, c-format
+msgid "Puzzle %d"
+msgstr "Галаваломка %d"
+
+#~ msgid "_Start Over"
+#~ msgstr "_Пачаць з пачатку"
+
+#~ msgid "_About"
+#~ msgstr "_Аб праграме"
+
+#~ msgid "_Quit"
+#~ msgstr "_Выйсці"
+
+#~ msgid "Return to the previous level"
+#~ msgstr "Вярнуцца да папярэдняга ўзроўню"
+
+#~ msgid "Proceed to the next level"
+#~ msgstr "Перайсці да наступнага ўзроўню"
+
+#~ msgid "%d move"
+#~ msgid_plural "%d moves"
+#~ msgstr[0] "%d ход"
+#~ msgstr[1] "%d хода"
+#~ msgstr[2] "%d хадоў"
+
+#~ msgid "Level %d"
+#~ msgstr "Узровень %d"
