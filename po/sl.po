@@ -11,18 +11,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-13 23:05+0000\n"
-"PO-Revision-Date: 2021-02-17 17:55+0100\n"
-"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2023-04-28 22:45+0200\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 3.3\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
@@ -88,8 +88,8 @@ msgid ""
 msgstr "Pri igri je na voljo veliko število postavitev različne zahtevnosti."
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "Projekt GNOME"
+msgid "The Lightsoff Team"
+msgstr "Ekipa Lightsoff"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -170,59 +170,3 @@ msgstr "Ugasni vse luči!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Uganka %d"
-
-#~ msgid "_Start Over"
-#~ msgstr "_Začni znova"
-
-#~ msgid "%d move"
-#~ msgid_plural "%d moves"
-#~ msgstr[0] "%d premikov"
-#~ msgstr[1] "%d premik"
-#~ msgstr[2] "%d premika"
-#~ msgstr[3] "%d premiki"
-
-#~| msgid "Lights Off"
-#~ msgid "org.gnome.LightsOff"
-#~ msgstr "org.gnome.LightsOff"
-
-#~ msgid ""
-#~ "Run `%s --help` to see a full list of available command line options.\n"
-#~ msgstr ""
-#~ "Zagon ukaza »%s --help« izpiše popoln seznam dostopnih možnosti ukazne "
-#~ "vrstice.\n"
-
-#~ msgid "lightsoff"
-#~ msgstr "lightsoff"
-
-#~ msgid "_About"
-#~ msgstr "_O Programu"
-
-#~ msgid "_Quit"
-#~ msgstr "_Končaj"
-
-#~ msgid "Return to the previous level"
-#~ msgstr "Vrni se na predhodno raven"
-
-#~ msgid "Proceed to the next level"
-#~ msgstr "Nadaljuj na naslednjo raven"
-
-#~ msgid "Level %d"
-#~ msgstr "Raven %d"
-
-#~ msgid "The users's most recent level."
-#~ msgstr "Uporabnikov najnovejši rezultat."
-
-#~ msgid "_New Game"
-#~ msgstr "_Nova Igra"
-
-#~ msgid ""
-#~ "Turn off all the lights\n"
-#~ "\n"
-#~ "Lights Off is a part of GNOME Games."
-#~ msgstr ""
-#~ "Ugasnite vse luči\n"
-#~ "\n"
-#~ "Igra Ugasni luči je del iger GNOME."
-
-#~ msgid "GNOME Games web site"
-#~ msgstr "Spletna stran iger GNOME"
