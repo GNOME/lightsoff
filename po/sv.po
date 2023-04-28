@@ -1,18 +1,18 @@
 # Swedish messages for lightsoff.
-# Copyright © 1999-2021 Free Software Foundation, Inc.
+# Copyright © 1999-2023 Free Software Foundation, Inc.
 # Andreas Persenius <ndap@swipnet.se>, 1999.
 # Andreas Hyden <a.hyden@cyberpoint.se>
 # Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
 # Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2021-02-06 21:29+0100\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2023-04-28 20:39+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
@@ -88,8 +88,8 @@ msgstr ""
 "stora antalet nivåer."
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "GNOME-projektet"
+msgid "The Lightsoff Team"
+msgstr "Släck lyset-gruppen"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -176,6 +176,9 @@ msgstr "Släck alla ljus!"
 msgid "Puzzle %d"
 msgstr "Pussel %d"
 
+#~ msgid "The GNOME Project"
+#~ msgstr "GNOME-projektet"
+
 #~ msgid "_Start Over"
 #~ msgstr "_Börja om"
 
@@ -183,10 +186,6 @@ msgstr "Pussel %d"
 #~ msgid_plural "%d moves"
 #~ msgstr[0] "%d drag"
 #~ msgstr[1] "%d drag"
-
-#~| msgid "Lights Off"
-#~ msgid "org.gnome.LightsOff"
-#~ msgstr "org.gnome.LightsOff"
 
 #~ msgid ""
 #~ "Run `%s --help` to see a full list of available command line options.\n"
