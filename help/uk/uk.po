@@ -2,19 +2,20 @@
 # Copyright (C) 2020 lightsoff's COPYRIGHT HOLDER
 # This file is distributed under the same license as the lightsoff package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"POT-Creation-Date: 2021-07-28 20:09+0000\n"
-"PO-Revision-Date: 2021-07-29 13:16+0300\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2023-04-29 19:23+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 20.12.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -192,25 +193,20 @@ msgstr ""
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:36
-#| msgid ""
-#| "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
-#| "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
-#| "Community/GettingInTouch/Bugzilla/Guidelines\">bug writing guidelines</"
-#| "link>, and please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
-#| "issues\">browse</link> for the bug to see if it already exists."
 msgid ""
 "Once you have an account, log in, click on <gui>New Issue</gui>. Before "
 "reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
 "GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
-"please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues"
-"\">browse</link> for the bug to see if it already exists."
+"please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+"issues\">browse</link> for the bug to see if it already exists."
 msgstr ""
 "Щойно ваш обліковий запис буде зареєстровано, увійдіть до нього і натисніть "
 "кнопку <gui>New issue</gui> («Нова вада»). Перш ніж повідомляти про ваду, "
-"будь ласка, ознайомтеся із <link href=\"https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines\">настановами щодо створення повідомлень "
-"про вади</link>, і, будь ласка, <link href=\"https://gitlab.gnome.org/GNOME/"
-"lightsoff/issues\">перегляньте</link> список вад, щоб переконатися у тому, "
-"що про виявлену вами ваду ще ніхто не повідомив."
+"будь ласка, ознайомтеся із <link href=\"https://wiki.gnome.org/"
+"GettingInTouch/BugReportingGuidelines\">настановами щодо створення "
+"повідомлень про вади</link>, і, будь ласка, <link href=\"https://gitlab."
+"gnome.org/GNOME/lightsoff/issues\">перегляньте</link> список вад, щоб "
+"переконатися у тому, що про виявлену вами ваду ще ніхто не повідомив."
 
 #. (itstool) path: section/p
 #: C/bug-filing.page:43
@@ -250,20 +246,26 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/develop.page:27
+#| msgid ""
+#| "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+#| "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
+#| "touch with the developers using <link href=\"https://cbe005.chat.mibbit."
+#| "com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our "
+#| "<link href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing "
+#| "list</link>."
 msgid ""
 "If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">help develop <app>GNOME Games</app></link>, you can get in "
 "touch with the developers using <link href=\"https://cbe005.chat.mibbit.com/?"
-"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via our <link "
-"href=\"https://mail.gnome.org/mailman/listinfo/games-list\">mailing list</"
-"link>."
+"url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link>, or via <link "
+"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
 msgstr ""
 "Якщо ви хочете допомогти у <link href=\"https://wiki.gnome.org/Apps/Games/"
 "Contributing\">розробці <app>Ігор GNOME</app></link>, можете зв'язатися із "
 "нашими розробниками за допомогою <link href=\"https://cbe005.chat.mibbit."
-"com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link> або нашого "
-"<link href=\"https://mail.gnome.org/mailman/listinfo/games-list\">списку "
-"листування</link>."
+"com/?url=irc%3A%2F%2Firc.gnome.org%2Fgnome-games\">irc</link> або "
+"<link "
+"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
 
 #. (itstool) path: page/title
 #: C/documentation.page:21
@@ -281,22 +283,28 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/documentation.page:26
+#| msgid ""
+#| "To contribute to the Documentation Project, feel free to get in touch "
+#| "with us using <link href=\"https://cbe003.chat.mibbit.com/?"
+#| "url=irc%3A%2F%2Firc.gnome.org%2Fdocs\">irc</link>, or via our <link "
+#| "href=\"https://mail.gnome.org/mailman/listinfo/gnome-doc-list\">mailing "
+#| "list</link>."
 msgid ""
 "To contribute to the Documentation Project, feel free to get in touch with "
 "us using <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link>, or via our <link href=\"https://mail.gnome."
-"org/mailman/listinfo/gnome-doc-list\">mailing list</link>."
+"gnome.org%2Fdocs\">irc</link>, or via <link href=\"https://discourse.gnome."
+"org/tag/documentation\">GNOME Discourse</link>."
 msgstr ""
 "Щоб взяти участь у проєкті з документування, можете зв'язатися із нами за "
 "допомогою <link href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc."
-"gnome.org%2Fdocs\">irc</link> або нашого <link href=\"https://mail.gnome.org/"
-"mailman/listinfo/gnome-doc-list\">списку листування</link>."
+"gnome.org%2Fdocs\">irc</link> або <link "
+"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>.."
 
 #. (itstool) path: page/p
 #: C/documentation.page:28
 msgid ""
-"Our <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing"
-"\">wiki</link> page contains useful information."
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> page contains useful information."
 msgstr ""
 "На нашій <link href=\"https://wiki.gnome.org/DocumentationProject/"
 "Contributing\">сторінці у вікі</link> містяться корисні настанови."
@@ -467,7 +475,8 @@ msgstr "Гра розпочинається на наборі ліхтарів �
 
 #. (itstool) path: item/p
 #: C/rules.page:21
-msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
+msgid ""
+"Select a tile to toggle its state and its non-diagonal neighbors state."
 msgstr ""
 "Позначте плитку для перемикання стану цієї плитки та сусідніх із нею "
 "недіагональних плиток."
@@ -662,15 +671,15 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/translate.page:30
 msgid ""
-"To start translating you will need to <link href=\"https://l10n.gnome.org"
-"\">create an account</link> and join the <link href=\"https://l10n.gnome.org/"
-"teams/\">translation team</link> for your language. This will give you the "
-"ability to upload new translations."
+"To start translating you will need to <link href=\"https://l10n.gnome."
+"org\">create an account</link> and join the <link href=\"https://l10n.gnome."
+"org/teams/\">translation team</link> for your language. This will give you "
+"the ability to upload new translations."
 msgstr ""
-"Щоб почати перекладати, вам слід <link href=\"https://l10n.gnome.org"
-"\">створити обліковий запис</link> і долучитися до <link href=\"https://l10n."
-"gnome.org/teams/\">команди перекладачів</link> вашою мовою. Після цього ви "
-"зможете вивантажувати нові переклади."
+"Щоб почати перекладати, вам слід <link href=\"https://l10n.gnome."
+"org\">створити обліковий запис</link> і долучитися до <link href=\"https://"
+"l10n.gnome.org/teams/\">команди перекладачів</link> вашою мовою. Після цього "
+"ви зможете вивантажувати нові переклади."
 
 #. (itstool) path: page/p
 #: C/translate.page:34
@@ -680,19 +689,22 @@ msgid ""
 "channel are located worldwide, so you may not get an immediate response as a "
 "result of timezone differences."
 msgstr ""
-"Ви можете спілкуватися із перекладачами GNOME за допомогою <link href="
-"\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome.org%2Fi18n"
-"\">irc</link>. Учасники каналу живуть у різних кінцях світу, тому, можливо, "
-"відповідь надійде не одразу — це результат того, що люди мешкають у різних "
-"часових поясах."
+"Ви можете спілкуватися із перекладачами GNOME за допомогою <link "
+"href=\"https://cbe003.chat.mibbit.com/?url=irc%3A%2F%2Firc.gnome."
+"org%2Fi18n\">irc</link>. Учасники каналу живуть у різних кінцях світу, тому, "
+"можливо, відповідь надійде не одразу — це результат того, що люди мешкають у "
+"різних часових поясах."
 
 #. (itstool) path: page/p
 #: C/translate.page:37
+#| msgid ""
+#| "Alternatively, you can contact the Internationalization Team using their "
+#| "<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
+#| "list</link>."
 msgid ""
-"Alternatively, you can contact the Internationalization Team using their "
-"<link href=\"https://mail.gnome.org/mailman/listinfo/gnome-i18n\">mailing "
-"list</link>."
+"Alternatively, you can contact the Internationalization Team using <link "
+"href=\"https://discourse.gnome.org/tag/i18n\">GNOME Discourse</link>."
 msgstr ""
 "Крім того, ви можете зв'язатися із командою з інтернаціоналізації за "
-"допомогою відповідного <link href=\"https://mail.gnome.org/mailman/listinfo/"
-"gnome-i18n\">списку листування</link>."
+"допомогою <link href=\"https://discourse.gnome.org/tag/games\">GNOME"
+" Discourse</link>.."
