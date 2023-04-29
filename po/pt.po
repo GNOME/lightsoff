@@ -7,13 +7,14 @@
 # Pedro Albuquerque <palbuquerque73@openmailbox.com>, 2015.
 # Sérgio Cardeira <cardeira.sergio@gmail.com>, 2016.
 # Juliano Camargo <julianosc@pm.me>, 2020.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2020, 2021, 2022, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.12\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2021-02-10 19:21+0000\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2023-04-29 19:14+0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
@@ -40,7 +41,6 @@ msgstr "_Acerca do Luzes desligadas"
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:8
-#| msgid "Ne_xt puzzle"
 msgid "_First puzzle"
 msgstr "_Primeiro puzzle"
 
@@ -90,8 +90,8 @@ msgstr ""
 "níveis disponível."
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "O Projeto GNOME"
+msgid "The Lightsoff Team"
+msgstr "A equipa do Luzes desligadas"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -173,6 +173,9 @@ msgstr "Desligue todas as luzes!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Puzzle %d"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "O Projeto GNOME"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Recomeçar"
