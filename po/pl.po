@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
 "PO-Revision-Date: 2021-03-13 20:44+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -94,8 +94,8 @@ msgid ""
 msgstr "Gracze lubiący wyłączanie świateł polubią wielką liczbę poziomów."
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "Projekt GNOME"
+msgid "The Lightsoff Team"
+msgstr "Zespół Lights Off"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
