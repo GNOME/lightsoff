@@ -5,15 +5,15 @@
 # Elnaz Sarbar <elnaz@farsiweb.info>, 2005-2006.
 # Meelad Zakaria <meelad@farsiweb.info>, 2005.
 # Farzaneh Sarafraz <farzaneh@farsiweb.info>, 2006.
-# Danial Behzadi <dani.behzi@ubuntu.com>, 2012, 2015-2021.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2012, 2015-2023.
 # Arash Mousavi <mousavi.arash@gmail.com>, 2012-2013, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2021-03-10 15:38+0000\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2023-05-03 12:33+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
 msgid "_Restart"
-msgstr "شروع _دوباره"
+msgstr "_آغاز دوباره"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
 #: data/lightsoff-menus.ui:8
@@ -89,8 +89,8 @@ msgstr ""
 "شد."
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "پروژه گنوم"
+msgid "The Lightsoff Team"
+msgstr "'گروه چراغ‌ها خاموش"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -169,6 +169,9 @@ msgstr "تمام چراغ‌ها را خاموش کنید!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "پازل %Id"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "پروژه گنوم"
 
 #~ msgid "_Start Over"
 #~ msgstr "_شروع دوباره"
