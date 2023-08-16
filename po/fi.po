@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2021-02-22 11:29+0200\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2023-08-16 21:43+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Launchpad-Export-Date: 2010-09-13 15:09+0000\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-POT-Import-Date: 2012-03-05 14:46:29+0000\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
@@ -93,8 +93,8 @@ msgstr ""
 "tasoja."
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "Gnome-projekti"
+msgid "The Lightsoff Team"
+msgstr "Lightsoff-tiimi"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -160,7 +160,7 @@ msgstr "Sivu Gnomen wikissä"
 #: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr ""
-"Jiri Grönroos, 2012-2021\n"
+"Jiri Grönroos, 2012-2023\n"
 "Timo Jyrinki, 2008\n"
 "Ilkka Tuohela, 2006-2009\n"
 "Sami Pesonen, 2002-2005\n"
@@ -188,6 +188,9 @@ msgstr "Sammuta kaikki valot!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Pulma %d"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "Gnome-projekti"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Aloita uudelleen"
