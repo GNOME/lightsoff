@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2021-03-10 10:23+0500\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2023-08-20 19:21+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
@@ -84,8 +84,8 @@ msgstr ""
 "рахаттанады."
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "GNOME жобасы"
+msgid "The Lightsoff Team"
+msgstr "Lightsoff тобы"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -133,8 +133,7 @@ msgstr "Максималды режимін іске қосу жалаушасы
 #: data/org.gnome.LightsOff.gschema.xml:33
 msgid "If “true”, the main window starts in maximized mode."
 msgstr ""
-"Егер \"true\" болса, басты терезе максималды күйінде іске қосылатын "
-"болады."
+"Егер \"true\" болса, басты терезе максималды күйінде іске қосылатын болады."
 
 #. Translators: command-line option description, see 'lightsoff --help'
 #: src/lightsoff.vala:26
@@ -166,6 +165,9 @@ msgstr "Барлық жарықтарды сөндіріңіз!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Жұмбақ %d"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "GNOME жобасы"
 
 #~ msgid "_Start Over"
 #~ msgstr "Басынан ба_стау"
