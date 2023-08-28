@@ -16,16 +16,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games-master-po-gl-54590\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-07 00:09+0000\n"
-"PO-Revision-Date: 2021-02-23 16:14+0100\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2023-08-28 19:44+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Proxecto Trasno <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 3.38.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Project-Style: gnome\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
@@ -94,8 +94,8 @@ msgstr ""
 "niveis."
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "O Proxecto GNOME"
+msgid "The Lightsoff Team"
+msgstr "O equipo de Apagar as luces"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -161,7 +161,7 @@ msgstr "Páxina na wiki de GNOME"
 #: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr ""
-"Fran Diéguez <frandieguez@gnome.org>, 2009-2021.\n"
+"Fran Diéguez <frandieguez@gnome.org>, 2009-2023.\n"
 "Leandro Regueiro <leandro.regueiro@gmail.com>, 2012.\n"
 "Antón Méixome <meixome@mancomun.org>, 2009.\n"
 "Suso Baleato <suso.baleato@xunta.es>, 2009.\n"
@@ -181,6 +181,9 @@ msgstr "Apaga todas as luces!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Quebracabezas %d"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "O Proxecto GNOME"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Iniciar de novo"
