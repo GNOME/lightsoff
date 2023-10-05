@@ -6,21 +6,22 @@
 # Sphinx Jiang <yishanj13@gmail.com>, 2013.
 # Mingcong Bai <jeffbai@aosc.xyz>, 2018.
 # Dingzhong Chen <wsxy162@gmail.com>, 2018-2021.
+# lumingzh <lumingzh@qq.com>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-03-06 12:35+0000\n"
-"PO-Revision-Date: 2021-05-18 12:19+0800\n"
-"Last-Translator: Dingzhong Chen <wsxy162@gmail.com>\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2023-10-05 20:56+0800\n"
+"Last-Translator: lumingzh <lumingzh@qq.com>\n"
 "Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Gtranslator 40.0\n"
+"X-Generator: Gtranslator 45.2\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
@@ -39,7 +40,6 @@ msgstr "关于关灯(_A)"
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:8
-#| msgid "Ne_xt puzzle"
 msgid "_First puzzle"
 msgstr "第一个谜题(_F)"
 
@@ -86,8 +86,8 @@ msgid ""
 msgstr "成功关灯的玩家将会享受更多的关卡。"
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "GNOME 项目"
+msgid "The Lightsoff Team"
+msgstr "关灯团队"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -159,7 +159,8 @@ msgstr ""
 "Mandy Wang <wangmychn@gmail.com>, 2016\n"
 "Mingcong Bai <jeffbai@aosc.io>, 2018\n"
 "Dingzhong Chen <wsxy162@gmail.com>, 2018\n"
-"Weiyi Xu <xuweiyi0923@gmail.com>, 2020"
+"Weiyi Xu <xuweiyi0923@gmail.com>, 2020\n"
+"lumingzh <lumingzh@qq.com>, 2023"
 
 #. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
 #: src/lightsoff-window.vala:88
@@ -171,6 +172,9 @@ msgstr "关闭所有的灯！"
 #, c-format
 msgid "Puzzle %d"
 msgstr "谜题 %d"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "GNOME 项目"
 
 #~ msgid "_Start Over"
 #~ msgstr "重新开始(_S)"
