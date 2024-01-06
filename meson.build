@@ -1,6 +1,6 @@
 project('lightsoff', ['c','vala'],
-	version: '40.0.1',
-	meson_version: '>= 0.50.0',
+	version: '46.alpha',
+	meson_version: '>= 0.56.0',
 	license: 'GPLv2+'
 )
 
@@ -12,8 +12,8 @@ datadir     = join_paths(get_option('prefix'), get_option('datadir'))
 bindir      = join_paths(get_option('prefix'), get_option('bindir'))
 pkgdatadir  = join_paths(datadir, 'lightsoff')
 
-podir       = join_paths(meson.source_root(), 'po')
-vapidir     = join_paths(meson.source_root(), 'vapi')
+podir       = join_paths(meson.project_source_root(), 'po')
+vapidir     = join_paths(meson.project_source_root(), 'vapi')
 
 # Dependencies
 glib_min_version = '2.38'
