@@ -103,7 +103,7 @@ private class GtkGameView : Widget, GameView
         view.load_level (level);
         view.game_won.connect (game_won_cb);
         view.light_toggled.connect (light_toggled_cb);
-        view.sensitive = false;
+        view.sensitive = true;
         return (BoardView)view;
     }
 
