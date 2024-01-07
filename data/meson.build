@@ -1,6 +1,7 @@
 # Icons
 install_subdir('icons',
   install_dir: datadir,
+  exclude_files: ['org.gnome.LightsOff.Source.svg']
 )
 
 # UI files
