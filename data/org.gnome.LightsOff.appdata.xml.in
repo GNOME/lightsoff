@@ -25,9 +25,10 @@
   <launchable type="desktop-id">org.gnome.LightsOff.desktop</launchable>
   <url type="homepage">https://wiki.gnome.org/Apps/Lightsoff</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/lightsoff/issues/new?issue</url>
-  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
   <url type="help">https://help.gnome.org/users/lightsoff/stable/</url>
   <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/lightsoff</url>
   <update_contact>mcatanzaro_at_gnome.org</update_contact>
   <project_group>GNOME</project_group>
   <kudos>
@@ -189,7 +190,6 @@
     </release>
   </releases>
   <custom>
-    <value key="Purism::form_factor">workstation</value>
     <value key="Purism::form_factor">mobile</value>
   </custom>
 </component>
