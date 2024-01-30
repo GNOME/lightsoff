@@ -5,22 +5,22 @@
 # Lucas Vieites <lucas@codexion.com>, 2007, 2008.
 # Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009, 2010, 2011.
 # Chris Leonard <cjl@laptop.org>, 2012.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2021.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2021-02-11 09:51+0100\n"
+"POT-Creation-Date: 2023-04-28 14:37+0000\n"
+"PO-Revision-Date: 2024-01-30 10:43+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.38.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 45.3\n"
 "X-Project-Style: gnome\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
@@ -40,7 +40,6 @@ msgstr "_Acerca de Luces fuera"
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:8
-#| msgid "Ne_xt puzzle"
 msgid "_First puzzle"
 msgstr "_Primer puzle"
 
@@ -90,8 +89,8 @@ msgstr ""
 "cantidad de niveles."
 
 #: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "El proyecto GNOME"
+msgid "The Lightsoff Team"
+msgstr "El equipo de luces fuera"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -157,7 +156,7 @@ msgstr "Página en la wiki de GNOME"
 #: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2021\n"
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2008-2024\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2008\n"
 "Lucas Vieites <lucas@asixinformatica.com>, 2002-2008\n"
 "Germán Poo Caamaño <gpoo@ubiobio.cl>\n"
@@ -173,6 +172,9 @@ msgstr "Apagar todas las luces"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Puzle %d"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "El proyecto GNOME"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Iniciar"
