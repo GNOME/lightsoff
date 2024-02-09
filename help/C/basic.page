@@ -38,7 +38,7 @@
 <section id="level">
 <title>Progress through the levels</title>
 <list>
- <item><p>The progress through the levels is either by turning off all the lights in that level or by pressing the menu button in the top-right corner of the window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>.</p></item>
+ <item><p>The progress through the levels is either by turning off all the lights in that level or by pressing the menu button in the top-left corner of the window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>.</p></item>
  <item><p>The current level is shown in the title bar.
 </p></item>
 </list>	
