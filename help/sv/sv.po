@@ -1,12 +1,12 @@
 # Henrik Löwendahl <henrik.lowendahl@purplescout.se>, 2011.
 # Erik Sköldås <erik.skoldas@tele2.se>, 2015.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2020, 2021, 2023.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2020, 2021, 2023, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lights off doc\n"
-"POT-Creation-Date: 2023-09-15 00:55+0000\n"
-"PO-Revision-Date: 2023-09-15 22:00+0200\n"
+"POT-Creation-Date: 2024-02-09 17:07+0000\n"
+"PO-Revision-Date: 2024-02-09 18:41+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -22,6 +22,7 @@ msgid "translator-credits"
 msgstr ""
 "Henrik Löwendahl <henrik.lowendahl@purplescout.se>, 2011\n"
 "Erik Sköldås <erik.skoldas@tele2.se>, 2015 \n"
+"Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017\n"
 "\n"
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>"
@@ -97,11 +98,11 @@ msgstr "Framsteg genom nivåerna"
 #: C/basic.page:41
 msgid ""
 "The progress through the levels is either by turning off all the lights in "
-"that level or by pressing the menu button in the top-right corner of the "
+"that level or by pressing the menu button in the top-left corner of the "
 "window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
 msgstr ""
 "Du rör dig framåt genom nivåerna genom att antingen släcka alla brickorna på "
-"en nivå, eller genom att trycka på menyknappen i fönstrets övre högra hörn "
+"en nivå, eller genom att trycka på menyknappen i fönstrets övre vänstra hörn "
 "och välja <gui>Nästa pussel</gui> eller <gui>Föregående pussel</gui>."
 
 #. (itstool) path: item/p
@@ -338,7 +339,7 @@ msgstr "Spelets gång"
 #. (itstool) path: section/title
 #: C/index.page:31
 msgid "Get Involved"
-msgstr "Bli engagerad"
+msgstr "Engagera dig"
 
 #. (itstool) path: p/link
 #: C/legal.xml:3
