@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
-"POT-Creation-Date: 2023-09-15 00:55+0000\n"
-"PO-Revision-Date: 2023-09-16 20:51+1000\n"
+"POT-Creation-Date: 2024-02-09 17:07+0000\n"
+"PO-Revision-Date: 2024-02-15 23:51+1000\n"
 "Last-Translator: Ser82-png <asvmail.as@gmail.com>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
@@ -21,7 +21,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Ser82-png <asvmail.as@gmail.com>, 2022-2023"
+msgstr "Ser82-png <asvmail.as@gmail.com>, 2022-2024"
 
 #. (itstool) path: credit/name
 #: C/basic.page:10 C/bug-filing.page:14 C/develop.page:15
@@ -95,11 +95,11 @@ msgstr "Прохождение уровней"
 #: C/basic.page:41
 msgid ""
 "The progress through the levels is either by turning off all the lights in "
-"that level or by pressing the menu button in the top-right corner of the "
+"that level or by pressing the menu button in the top-left corner of the "
 "window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
 msgstr ""
 "Чтобы пройти уровни, нужно либо выключить все источники света на этом "
-"уровне, либо нажать кнопку меню в правом верхнем углу окна и выбрать "
+"уровне, либо нажать кнопку меню в левом верхнем углу окна и выбрать "
 "<gui>Следующая головоломка</gui> или <gui>Предыдущая головоломка</gui>."
 
 #. (itstool) path: item/p
