@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff-help\n"
-"POT-Creation-Date: 2023-09-15 00:55+0000\n"
+"POT-Creation-Date: 2024-02-09 17:07+0000\n"
 "PO-Revision-Date: 2023-09-16 15:47+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -96,11 +96,11 @@ msgstr "Przechodzenie między poziomami"
 #: C/basic.page:41
 msgid ""
 "The progress through the levels is either by turning off all the lights in "
-"that level or by pressing the menu button in the top-right corner of the "
+"that level or by pressing the menu button in the top-left corner of the "
 "window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
 msgstr ""
 "Można przechodzić między poziomami wyłączając wszystkie światła na danym "
-"poziomie lub klikając przycisk menu w górnym prawym rogu okna i wybierając "
+"poziomie lub klikając przycisk menu w górnym lewym rogu okna i wybierając "
 "<gui>Następny poziom</gui> lub <gui>Poprzedni poziom</gui>."
 
 #. (itstool) path: item/p
