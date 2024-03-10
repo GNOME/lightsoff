@@ -4,14 +4,14 @@
 #
 # Peteris Krisjanis <peteris.krisjanis@os.lv>, 2002.
 # Raivis Dejus <orvils@gmail.com>, 2006, 2007.
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2010, 2011.
+# SPDX-FileCopyrightText: 2010, 2011, 2024 Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>
 # Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: lv\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2021-10-27 10:07+0300\n"
+"POT-Creation-Date: 2024-02-09 17:07+0000\n"
+"PO-Revision-Date: 2024-03-10 18:09+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 :"
 " 2);\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 23.08.1\n"
 "X-Poedit-Language: Latvian\n"
 "X-Poedit-Country: LATVIA\n"
 
@@ -41,7 +41,6 @@ msgstr "P_ar “Izslēgt gaismu”"
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:8
-#| msgid "Ne_xt puzzle"
 msgid "_First puzzle"
 msgstr "_Pirmā mīkla"
 
@@ -90,9 +89,9 @@ msgstr ""
 "Tiem spēlētājiem, kuriem patīk izslēgt gaismas, būs pieejams milzīgs līmeņu "
 "skaits."
 
-#: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "GNOME projekts"
+#: data/org.gnome.LightsOff.appdata.xml.in:43
+msgid "The Lightsoff Team"
+msgstr "Lightsoff komanda"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -173,6 +172,9 @@ msgstr "Izslēdziet visas gaismas!"
 msgid "Puzzle %d"
 msgstr "Mīkla %d"
 
+#~ msgid "The GNOME Project"
+#~ msgstr "GNOME projekts"
+
 #~ msgid "_Start Over"
 #~ msgstr "_Sākt no jauna"
 
@@ -209,3 +211,4 @@ msgstr "Mīkla %d"
 
 #~ msgid "Level %d"
 #~ msgstr "Līmenis %d"
+
