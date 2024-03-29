@@ -8,77 +8,188 @@
 # Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006, 2007.
 # Ravishankar Shrivastava <raviratlami@aol.in>, 2009.
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009, 2013.
+# Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.master.hi\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=lightsoff&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-28 23:11+0000\n"
-"PO-Revision-Date: 2013-03-25 16:31+0530\n"
-"Last-Translator: raj <raj>\n"
-"Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
+"POT-Creation-Date: 2024-02-09 17:07+0000\n"
+"PO-Revision-Date: 2024-03-29 15:38+0530\n"
+"Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
+"Language-Team: Hindi\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Gtranslator 46.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../data/lightsoff.desktop.in.in.h:1 ../src/lightsoff.vala:147
-#: ../src/lightsoff.vala:171
-msgid "Lights Off"
-msgstr "लाइट बन्द"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
+#: data/game-button.ui:7
+msgid "_Restart"
+msgstr "पुनर्प्रारंभ (_R)"
 
-#: ../data/lightsoff.desktop.in.in.h:2
-msgid "Turn off all the lights"
-msgstr "सभी लाइट बन्द करें"
-
-#: ../data/lightsoff.desktop.in.in.h:3
-msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "game;logic;board;tiles;adjacent;puzzle;"
-
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:1
-msgid "The current level"
-msgstr "मौज़ूदा स्तर"
-
-#: ../data/org.gnome.lightsoff.gschema.xml.in.h:2
-msgid "The users's most recent level."
-msgstr "उपयोक्ता का एकदम ताज़ा स्तर."
-
-#: ../src/lightsoff.vala:32
-msgid "_New Game"
-msgstr "नया खेल (_N)"
-
-#: ../src/lightsoff.vala:35
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
+#: data/lightsoff-menus.ui:8
 msgid "_Help"
 msgstr "मदद (_H)"
 
-#: ../src/lightsoff.vala:36
-msgid "_About"
-msgstr "के बारे में (_A)"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
+#: data/lightsoff-menus.ui:14
+msgid "_About Lights Off"
+msgstr "Lights Off के बारे में (_A)"
 
-#: ../src/lightsoff.vala:39
-msgid "_Quit"
-msgstr "बाहर (_Q)"
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:8
+msgid "_First puzzle"
+msgstr "पहली पहेली (_F)"
 
-#: ../src/lightsoff.vala:150
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
+#: data/lightsoff.ui:14
+msgid "_Previous puzzle"
+msgstr "पिछली पहेली (_P)"
+
+#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle"
+#: data/lightsoff.ui:20
+msgid "Ne_xt puzzle"
+msgstr "अगली पहेली (_x)"
+
+#. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
+#: data/lightsoff.ui:46
+msgid "_Change Puzzle"
+msgstr "पहेली बदलें (_C)"
+
+#. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
+#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
+msgid "Lights Off"
+msgstr "Lights Off"
+
+#. Translators: short description of the application, seen in the About dialog
+#: data/org.gnome.LightsOff.appdata.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:150
+msgid "Turn off all the lights"
+msgstr "सभी लाइट बन्द करें"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:10
 msgid ""
-"Turn off all the lights\n"
-"\n"
-"Lights Off is a part of GNOME Games."
+"Lights Off is a collection of light switch puzzles. Clicking on a light "
+"toggles it either on or off, but also toggles all the surrounding lights, "
+"too. Your objective is simple: turn off all the lights!"
 msgstr ""
-"प्रकाश बंद करें\n"
-"\n"
-"लाइट ऑफ गनोम गेम का हिस्सा है."
+"Lights Off लाइट स्विच पहेलियों का एक संग्रह है। किसी लाइट पर क्लिक करने से वह न केवल "
+"चालू या बंद होती है, बल्कि आसपास की सभी लाइटें भी चालू हो जाती हैं। आपका उद्देश्य सरल है: "
+"सभी लाइटें बंद कर दें!"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:15
+msgid ""
+"Players who delight in turning off lights will enjoy the huge number of "
+"levels."
+msgstr "जो खिलाड़ी लाइट बंद करने में आनंद लेते हैं वे बड़ी संख्या में स्तरों का आनंद लेंगे।"
+
+#: data/org.gnome.LightsOff.appdata.xml.in:43
+msgid "The Lightsoff Team"
+msgstr "Lightsoff टीम"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.LightsOff.desktop.in:6
+msgid "game;logic;board;tiles;adjacent;puzzle;"
+msgstr "game;logic;board;tiles;adjacent;puzzle;खेल;तर्क;बोर्ड;टाइल्स;आसन्न;पहेली;"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:7
+msgid "The current level"
+msgstr "वर्तमान स्तर"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
+#: data/org.gnome.LightsOff.gschema.xml:9
+msgid "The users’s most recent level."
+msgstr "उपयोगकर्ताओं का नवीनतम स्तर।"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:17
+msgid "The width of the window"
+msgstr "विंडो की चौड़ाई"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-width'
+#: data/org.gnome.LightsOff.gschema.xml:19
+msgid "The width of the main window in pixels."
+msgstr "मुख्य विंडो की चौड़ाई पिक्सल में।"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:24
+msgid "The height of the window"
+msgstr "विंडो की ऊंचाई"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-height'
+#: data/org.gnome.LightsOff.gschema.xml:26
+msgid "The height of the main window in pixels."
+msgstr "मुख्य विंडो की ऊंचाई पिक्सेल में।"
+
+#. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:31
+msgid "A flag to enable maximized mode"
+msgstr "अधिकतम मोड सक्षम करने के लिए एक फ्लैग"
+
+#. Translators: description of a settings key, see 'dconf-editor /org/gnome/LightsOff/window-is-maximized'
+#: data/org.gnome.LightsOff.gschema.xml:33
+msgid "If “true”, the main window starts in maximized mode."
+msgstr "यदि \"सही\" है, तो मुख्य विंडो अधिकतम मोड में प्रारंभ होती है।"
+
+#. Translators: command-line option description, see 'lightsoff --help'
+#: src/lightsoff.vala:26
+msgid "Display version number"
+msgstr "संस्करण संख्या प्रदर्शित करें"
+
+#. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
+#: src/lightsoff.vala:73
+msgid "Failed to parse command-line arguments."
+msgstr "कमांड-लाइन तर्कों को पार्स करने में विफल।"
+
+#. Translators: about dialog text; label of the website link
+#: src/lightsoff.vala:154
+msgid "Page on GNOME wiki"
+msgstr "GNOME विकी पर पेज"
 
 #  Translator credits
-#: ../src/lightsoff.vala:157
+#. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
+#: src/lightsoff.vala:166
 msgid "translator-credits"
 msgstr ""
+"Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024\n"
 "रविशंकर श्रीवास्तव (raviratlami@yahoo.com)\n"
 "राजेश रंजन (rajeshkajha@yahoo.com)"
 
+#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
+#: src/lightsoff-window.vala:88
+msgid "Turn off all the lights!"
+msgstr "सभी लाइटें बंद कर दें!"
+
+#. Translators: the title of the window, %d is the level number
+#: src/lightsoff-window.vala:141
+#, c-format
+msgid "Puzzle %d"
+msgstr "पहेली %d"
+
+#~ msgid "_New Game"
+#~ msgstr "नया खेल (_N)"
+
+#~ msgid "_About"
+#~ msgstr "के बारे में (_A)"
+
+#~ msgid "_Quit"
+#~ msgstr "बाहर (_Q)"
+
+#~ msgid ""
+#~ "Turn off all the lights\n"
+#~ "\n"
+#~ "Lights Off is a part of GNOME Games."
+#~ msgstr ""
+#~ "प्रकाश बंद करें\n"
+#~ "\n"
+#~ "लाइट ऑफ गनोम गेम का हिस्सा है."
+
 # libgnomeprintui/gnome-print-paper-selector.c:1453
-#: ../src/lightsoff.vala:160
-msgid "GNOME Games web site"
-msgstr "ग्नोम खेल वेबसाइट"
+#~ msgid "GNOME Games web site"
+#~ msgstr "ग्नोम खेल वेबसाइट"
