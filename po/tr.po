@@ -15,16 +15,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2023-04-28 14:37+0000\n"
-"PO-Revision-Date: 2023-05-12 11:45+0300\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"POT-Creation-Date: 2024-02-09 17:07+0000\n"
+"PO-Revision-Date: 2024-05-10 22:41+0300\n"
+"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.3\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
 #: data/game-button.ui:7
@@ -91,14 +91,16 @@ msgstr ""
 "Işıkları kapatmaktan hoşlanan oyuncular çok sayıda düzeyden keyif "
 "alacaklardır."
 
-#: data/org.gnome.LightsOff.appdata.xml.in:42
+#: data/org.gnome.LightsOff.appdata.xml.in:43
 msgid "The Lightsoff Team"
 msgstr "Lightsoff Takımı"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
 msgid "game;logic;board;tiles;adjacent;puzzle;"
-msgstr "oyun;mantık;tahta;taşlar;komşu;bulmaca;puzzle;"
+msgstr ""
+"game;logic;board;tiles;adjacent;puzzle;oyun;mantık;tahta;taşlar;komşu;"
+"bulmaca;"
 
 #. Translators: summary of a settings key, see 'dconf-editor /org/gnome/LightsOff/level'
 #: data/org.gnome.LightsOff.gschema.xml:7
