@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2020-12-23 07:24+0100\n"
+"POT-Creation-Date: 2024-07-29 20:47+0000\n"
+"PO-Revision-Date: 2024-09-14 07:24+0100\n"
 "Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "Language: ca\n"
@@ -102,9 +102,9 @@ msgstr ""
 "Els jugadors a qui els agrada apagar els llums hi gaudiran molt gràcies al "
 "gran nombre de nivells."
 
-#: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "El projecte GNOME"
+#: data/org.gnome.LightsOff.appdata.xml.in:43
+msgid "The Lightsoff Team"
+msgstr "L'equip de Lightsoff"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -201,19 +201,3 @@ msgstr "Apaga tots els llums!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Trencaclosques %d"
-
-#~ msgid "_Start Over"
-#~ msgstr "_Torna a començar"
-
-#~ msgid "%d move"
-#~ msgid_plural "%d moves"
-#~ msgstr[0] "%d moviment"
-#~ msgstr[1] "%d moviments"
-
-#~ msgid "org.gnome.LightsOff"
-#~ msgstr "org.gnome.LightsOff"
-
-#~ msgid "Run `%s --help` to see a full list of available command line options.\n"
-#~ msgstr ""
-#~ "Executeu «%s --help» per veure una llista completa de les opcions "
-#~ "disponibles de la línia d'ordres.\n"
