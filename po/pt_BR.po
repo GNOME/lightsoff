@@ -23,21 +23,22 @@
 # Djavan Fagundes <djavan@comum.org>, 2012.
 # Enrico Nicoletto <liverig@gmail.com>, 2013-2015.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2016-2021.
+# Juliano de Souza Camargo <julianosc@pm.me>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2021-02-13 10:58-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"POT-Creation-Date: 2024-07-29 20:47+0000\n"
+"PO-Revision-Date: 2024-09-23 10:00-0300\n"
+"Last-Translator: Juliano de Souza Camargo <julianosc@pm.me>\n"
+"Language-Team: Brazilian Portuguese <https://br.gnome.org/traducao>>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.38.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Gtranslator 46.1\n"
 "X-Project-Style: gnome\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
@@ -57,7 +58,6 @@ msgstr "_Sobre o Luzes desligadas"
 
 #. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
 #: data/lightsoff.ui:8
-#| msgid "Ne_xt puzzle"
 msgid "_First puzzle"
 msgstr "_Primeiro quebra-cabeça"
 
@@ -105,9 +105,9 @@ msgid ""
 msgstr ""
 "Jogadores que gostam de apagar luzes irão apreciar o vasto número de níveis."
 
-#: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "O Projeto GNOME"
+#: data/org.gnome.LightsOff.appdata.xml.in:43
+msgid "The Lightsoff Team"
+msgstr "A equipe Lightsoff"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -200,6 +200,9 @@ msgstr "Apague todas as luzes!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Quebra-cabeça %d"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "O Projeto GNOME"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Recomeçar"
