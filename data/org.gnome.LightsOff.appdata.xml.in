@@ -24,7 +24,7 @@
   </screenshots>
   <launchable type="desktop-id">org.gnome.LightsOff.desktop</launchable>
   <url type="homepage">https://wiki.gnome.org/Apps/Lightsoff</url>
-  <url type="bugtracker">https://gitlab.gnome.org/GNOME/lightsoff/issues/new?issue</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/lightsoff/issues</url>
   <url type="donation">https://www.gnome.org/donate/</url>
   <url type="help">https://help.gnome.org/users/lightsoff/stable/</url>
   <url type="translate">https://wiki.gnome.org/TranslationProject</url>
