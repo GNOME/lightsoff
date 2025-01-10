@@ -44,21 +44,21 @@ if desktop_file_validate.found()
   )
 endif
 
-# Appdata
-appdata = 'org.gnome.LightsOff.appdata.xml'
-appdata_file = i18n.merge_file(
-  input: appdata + '.in',
-  output: appdata,
+# Metainfo
+metainfo = 'org.gnome.LightsOff.metainfo.xml'
+metainfo_file = i18n.merge_file(
+  input: metainfo + '.in',
+  output: metainfo,
   po_dir: podir,
   install: true,
   install_dir: join_paths(datadir, 'metainfo')
 )
-appstream_util = find_program('appstream-util', required: false)
-if appstream_util.found()
+appstreamcli = find_program('appstreamcli', required: false)
+if appstreamcli.found()
   test(
-    'validate-appdata', appstream_util,
+    'validate-metainfo', appstreamcli,
     args: [
-      'validate-relax', '--nonet', appdata_file.full_path()
+      'validate', '--no-net', '--explain', metainfo_file.full_path()
     ]
   )
 endif

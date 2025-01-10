@@ -3,7 +3,7 @@
 data/game-button.ui
 data/lightsoff-menus.ui
 data/lightsoff.ui
-data/org.gnome.LightsOff.appdata.xml.in
+data/org.gnome.LightsOff.metainfo.xml.in
 data/org.gnome.LightsOff.desktop.in
 data/org.gnome.LightsOff.gschema.xml
 src/lightsoff.vala
