@@ -21,8 +21,8 @@ glib_min_version = '2.38'
 glib_dep = dependency('glib-2.0', version: '>= ' + glib_min_version)
 gmodule_dep = dependency('gmodule-2.0')
 gio_dep = dependency('gio-2.0', version: '>= ' + glib_min_version)
-gtk_dep = dependency('gtk4', version: '>= 3.99.3')
-librsvg_dep = dependency('librsvg-2.0', version: '>= 2.32.0')
+gtk_dep = dependency('gtk4', version: '>= 4.14.0')
+librsvg_dep = dependency('librsvg-2.0', version: '>= 2.59.0')
 
 # Check for compilers
 valac = meson.get_compiler('vala')
