@@ -4,11 +4,6 @@ install_subdir('icons',
   exclude_files: ['org.gnome.LightsOff.Source.svg']
 )
 
-# UI files
-install_data(['off.svg', 'on.svg', 'highlight.svg'],
-  install_dir: pkgdatadir,
-)
-
 # Make D-Bus activatable
 service_conf = configuration_data()
 service_conf.set('bindir', bindir)

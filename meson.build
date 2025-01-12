@@ -23,7 +23,6 @@ gmodule_dep = dependency('gmodule-2.0')
 gio_dep = dependency('gio-2.0', version: '>= ' + glib_min_version)
 gtk_dep = dependency('gtk4', version: '>= 4.14.0')
 libadwaita_dep = dependency('libadwaita-1', version: '>= 1.6.0')
-librsvg_dep = dependency('librsvg-2.0', version: '>= 2.59.0')
 
 # Check for compilers
 valac = meson.get_compiler('vala')
