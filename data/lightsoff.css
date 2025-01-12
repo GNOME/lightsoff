@@ -1,72 +1,18 @@
-.appmenu {
-  border: none;
-}
-
 .grid > .toggle {
-  outline-offset: -10px;
-  outline-width: 3px;
-  outline-style: none;
-  border-width: 1px;
-  box-shadow: none;
-/*  -gtk-outline-top-left-radius: 50%; */
-/*  -gtk-outline-top-right-radius: 50%; */
-/*  -gtk-outline-bottom-left-radius: 50%; */
-/*  -gtk-outline-bottom-right-radius: 50%; */
-  transition: outline-offset 0ms ease;
   margin: 6px;
   transition: margin 300ms linear;
 }
 
 .grid > .toggle, .grid > .toggle:backdrop, .grid > .toggle:focus {
-  background-image: linear-gradient(90deg, #050505, #222);
-  /*background-color: black;*/
-  border-color: #353535;
-  border-radius: 5px;
   transition: margin 300ms linear;
-  /*outline: none;*/
 }
 
-.grid > .toggle:focus {
-  transition: outline-offset 0ms ease;
-  transition: margin 300ms linear;
-  outline-offset: -15px;
-  outline-style: solid;
-}
-
-.grid > .toggle:checked/*, .grid > .toggle:hover */{
+.grid > .toggle:checked/*, .grid > .toggle:hoverr */{
   background-image: linear-gradient(90deg,  #35669b, #5e92c8);
-  border-color: #729fcf;
+  /*border-color: #729fcf;*/
   margin: 0;
   transition: margin 300ms linear;
+  background-color: var(--success-bg-color);
 }
 
-.aspect {
-  background-color: black;
-}
 
-/*\
-* * actionbar
-\*/
-
-actionbar {
-  min-height: 47px; /* TODO calc() exactly; corresponds to the height of an actionbar with a GtkButton in it, in usual Adwaita conditions */
-}
-/* TODO move in game-window.css */
-label.level-label:dir(ltr) {
-  margin-left : 12px;
-}
-label.level-label:dir(rtl) {
-  margin-right: 12px;
-}
-
-/*\
-* * app notification
-\*/
-
-.thin-window .app-notification {
-  border-radius:0;
-}
-
-/*\
-* * the end
-\*/

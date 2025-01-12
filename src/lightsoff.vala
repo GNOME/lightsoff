@@ -52,7 +52,7 @@ private class LightsOff : Adw.Application
 
     private LightsOff ()
     {
-        Object (application_id: "org.gnome.LightsOff", flags: ApplicationFlags.FLAGS_NONE);
+        Object (application_id: "org.gnome.LightsOff", flags: ApplicationFlags.DEFAULT_FLAGS);
 
         add_main_option_entries (option_entries);
     }
@@ -80,8 +80,6 @@ private class LightsOff : Adw.Application
     protected override void startup ()
     {
         base.startup ();
-
-        Adw.StyleManager.get_default ().set_color_scheme (Adw.ColorScheme.FORCE_DARK);
 
         add_action_entries (action_entries, this);
 

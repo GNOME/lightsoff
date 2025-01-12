@@ -10,7 +10,7 @@
 
 using Adw, Gtk;
 
-[GtkTemplate (ui = "/org/gnome/LightsOff/ui/lightsoff.ui")]
+[GtkTemplate (ui = "/org/gnome/LightsOff/lightsoff.ui")]
 private class LightsoffWindow : ManagedWindow
 {
     [GtkChild]
@@ -19,6 +19,8 @@ private class LightsoffWindow : ManagedWindow
     private unowned AspectFrame              aspect_frame;
     [GtkChild]
     private unowned ToastOverlay             toast_overlay;
+    [GtkChild]
+    private unowned WindowTitle              title_widget;
 
     private Toast toast;
     private GLib.Settings settings;
@@ -54,11 +56,6 @@ private class LightsoffWindow : ManagedWindow
         aspect_frame.set_child (gtk_game_view);
         game_view = gtk_game_view;
 
-        var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/org/gnome/LightsOff/ui/lightsoff.css");
-        Gdk.Display? gdk_display = Gdk.Display.get_default ();
-        if (gdk_display != null) // else..?
-            StyleContext.add_provider_for_display ((!) gdk_display, provider, STYLE_PROVIDER_PRIORITY_APPLICATION);
     }
 
     internal LightsoffWindow ()
@@ -67,7 +64,7 @@ private class LightsoffWindow : ManagedWindow
 
         settings = new GLib.Settings ("org.gnome.LightsOff");
 
-        var menu_builder = new Gtk.Builder.from_resource ("/org/gnome/LightsOff/ui/menus.ui");
+        var menu_builder = new Gtk.Builder.from_resource ("/org/gnome/LightsOff/menus.ui");
         menu_button.set_menu_model ((GLib.Menu) menu_builder.get_object ("primary-menu"));
 
         add_action_entries (window_actions, this);
@@ -95,11 +92,12 @@ private class LightsoffWindow : ManagedWindow
     private void moves_changed_cb (int moves)
     {
         enable_restart_action (moves > 0);
+        title_widget.set_subtitle (ngettext("%d move", "%d moves", moves).printf(moves));
     }
 
     private void update_title (string custom_title)
     {
-        set_title (custom_title);
+        title_widget.set_title (custom_title);
         moves_changed_cb (0);
         if (toast != null)
             toast.dismiss ();

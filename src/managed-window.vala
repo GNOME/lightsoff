@@ -65,7 +65,6 @@ private class ManagedWindow : ApplicationWindow
     private inline void on_unmap ()
     {
         save_window_state ();
-        settings.apply ();
         application.quit ();
     }
 

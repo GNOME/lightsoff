@@ -21,7 +21,7 @@ private class BoardViewGtk : Grid, BoardView
 
     construct
     {
-        get_style_context ().add_class ("grid");
+        add_css_class ("grid");
         row_homogeneous = true;
         column_homogeneous = true;
         margin_start = 2;
@@ -54,37 +54,45 @@ private class BoardViewGtk : Grid, BoardView
     // depends on GLib's PRNG stability. Also, provides some semblance of
     // symmetry for some levels.
 
+    internal void set_light (ToggleButton toggle, bool val)
+    {
+        toggle.toggled.disconnect (handle_toggle);
+        toggle.set_active (val);
+        toggle.toggled.connect (handle_toggle);
+    }
+
+    internal void invert_light (int x, int y)
+    {
+        var toggle = lights [x, y];
+        var active = toggle.get_active ();
+        set_light (toggle, !active);
+    }
+
     // Toggle a light and those in each cardinal direction around it.
     internal void toggle_light (int x, int y, bool clicked = true)
     {
-        for (uint8 i = 0; i < 5; i++)
-            for (uint8 j = 0; j < 5; j++)
-                lights [i, j].toggled.disconnect (handle_toggle);
-
         if (x>= size || y >= size || x < 0 || y < 0 )
             return;
         if ((int) x + 1 < size)
-            lights[(int) x + 1, (int) y].set_active (!lights[(int) x + 1, (int) y].get_active ());
+            invert_light (x + 1, y);
         if ((int) x - 1 >= 0)
-            lights[(int) x - 1, (int) y].set_active (!lights[(int) x - 1, (int) y].get_active ());
+            invert_light (x - 1, y);
         if ((int) y + 1 < size)
-            lights[(int) x, (int) y + 1].set_active (!lights[(int) x, (int) y + 1].get_active ());
+            invert_light (x, y + 1);
         if ((int) y - 1 >= 0)
-            lights[(int) x, (int) y - 1].set_active (!lights[(int) x, (int) y - 1].get_active ());
+            invert_light (x, y - 1);
 
         if (!clicked)
-            lights[(int) x, (int) y].set_active (!lights[(int) x, (int) y ].get_active ());
-
-        for (uint8 i = 0; i < 5; i++)
-            for (uint8 j = 0; j < 5; j++)
-                lights [i, j].toggled.connect (handle_toggle);
+            invert_light (x, y);
     }
 
     internal void clear_level ()
     {
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)
-                lights[x, y].active = false;
+            {
+                set_light (lights[x, y], false);
+            }
     }
 
     internal PuzzleGenerator get_puzzle_generator ()
