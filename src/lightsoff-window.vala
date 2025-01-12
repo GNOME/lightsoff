@@ -1,7 +1,5 @@
 /*
- * Copyright (C) 2010-2013 Robert Ancell
- * Copyright (C) 2014 Michael Catanzaro
- * Copyright (C) 2016 Arnaud Bonatti
+ * Copyright (C) 2025 Robert Roth
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -10,7 +8,7 @@
  * license.
  */
 
-using Gtk;
+using Adw, Gtk;
 
 [GtkTemplate (ui = "/org/gnome/LightsOff/ui/lightsoff.ui")]
 private class LightsoffWindow : ManagedWindow
@@ -18,25 +16,16 @@ private class LightsoffWindow : ManagedWindow
     [GtkChild]
     private unowned MenuButton               menu_button;
     [GtkChild]
-    private unowned Label                    level_label;
-    [GtkChild]
-    private unowned GameButton               game_button_1;
-    [GtkChild]
-    private unowned GameButton               game_button_2;
-    [GtkChild]
     private unowned AspectFrame              aspect_frame;
     [GtkChild]
-    private unowned Revealer                 revealer;
-    [GtkChild]
-    private unowned NotificationsRevealer    notifications_revealer;
+    private unowned ToastOverlay             toast_overlay;
 
+    private Toast toast;
     private GLib.Settings settings;
     private GameView game_view;
     private SimpleAction previous_level;
     private SimpleAction restart_action;
     private EventControllerKey key_controller;
-
-    private string custom_title = "";
 
     private const GLib.ActionEntry[] window_actions =
     {
@@ -90,37 +79,35 @@ private class LightsoffWindow : ManagedWindow
         int level = settings.get_int ("level");
         level_changed_cb (level);
         if (level == 1)
+        {
             /* Translators: short game explanation, displayed as an in-app notification when game is launched on level 1 */
-            notifications_revealer.show_notification (_("Turn off all the lights!"));
+            toast = new Toast (_("Turn off all the lights!"));
+
+            toast_overlay.add_toast (toast);
+        }
 
         populate_game_container (level);
 
         game_view.level_changed.connect (level_changed_cb);
-        game_view.moves_changed.connect (update_subtitle);
+        game_view.moves_changed.connect (moves_changed_cb);
     }
 
-    private void update_subtitle (int moves)
+    private void moves_changed_cb (int moves)
     {
-        string moves_string = moves.to_string ();
-        game_button_1.set_label (moves_string);
-        game_button_2.set_label (moves_string);
         enable_restart_action (moves > 0);
     }
 
-    private void update_title ()
+    private void update_title (string custom_title)
     {
-        if (large_window_size)
-            set_title (custom_title);
-        level_label.set_label (custom_title);
-        update_subtitle (0);
-        notifications_revealer.hide_notification ();
+        set_title (custom_title);
+        moves_changed_cb (0);
+        if (toast != null)
+            toast.dismiss ();
     }
 
     private void enable_restart_action (bool new_state)
     {
         restart_action.set_enabled (new_state);
-        game_button_1.set_sensitive (new_state);
-        game_button_2.set_sensitive (new_state);
     }
 
     private void previous_level_cb ()
@@ -144,11 +131,11 @@ private class LightsoffWindow : ManagedWindow
         previous_level.set_enabled (level > 1);
         enable_restart_action (false);
         /* Translators: the title of the window, %d is the level number */
-        custom_title = _("Puzzle %d").printf (level);
-        update_title ();
-        set_focus_visible (false);
+        update_title (_("Puzzle %d").printf (level));
+        // set_focus_visible (false);
         if (level != settings.get_int ("level"))
             settings.set_int ("level", level);
+        set_focus (game_view as Gtk.Widget);
     }
 
     private inline bool on_key_pressed (EventControllerKey _key_controller, uint keyval, uint keycode, Gdk.ModifierType state)
@@ -182,41 +169,4 @@ private class LightsoffWindow : ManagedWindow
         enable_restart_action (false);
     }
 
-    bool large_window_size = true;
-    protected override void change_window_size (bool large)
-    {
-        large_window_size = large;
-        if (large)
-        {
-            game_button_1.show ();
-            set_title (custom_title);
-            revealer.set_reveal_child (false);
-            notifications_revealer.set_window_size (/* thin */ false);
-        }
-        else
-        {
-            game_button_1.hide ();
-            set_title ("");
-            revealer.set_reveal_child (true);
-            notifications_revealer.set_window_size (/* thin */ true);
-        }
-    }
-}
-
-[GtkTemplate (ui = "/org/gnome/LightsOff/ui/game-button.ui")]
-private class GameButton : Widget
-{
-    [GtkChild]
-    private unowned MenuButton menu_button;
-
-    construct
-    {
-        BinLayout layout = new BinLayout ();
-        set_layout_manager (layout);
-    }
-
-    internal void set_label (string new_label)
-    {
-        menu_button.set_label (new_label);
-    }
 }

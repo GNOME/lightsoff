@@ -8,7 +8,7 @@
  * license.
  */
 
-using Gtk;
+using Adw;
 
 private class ManagedWindow : ApplicationWindow
 {
@@ -41,7 +41,6 @@ private class ManagedWindow : ApplicationWindow
             assert_not_reached ();
         surface = (Gdk.Toplevel) (!) nullable_surface;
         surface.notify ["state"].connect (on_window_state_event);
-        // surface.size_changed.connect (on_size_changed);
     }
 
     private Gdk.Toplevel surface;
@@ -63,57 +62,12 @@ private class ManagedWindow : ApplicationWindow
         window_is_tiled      = (state & tiled_state)                  != 0;
     }
 
-    private inline void on_size_changed (Gdk.Surface _surface, int width, int height)
-    {
-        if (window_is_maximized || window_is_tiled || window_is_fullscreen)
-            return;
-        int? _window_width = null;
-        int? _window_height = null;
-        // get_size (out _window_width, out _window_height);
-        if (_window_width == null || _window_height == null)
-            return;
-        window_width = (!) _window_width;
-        window_height = (!) _window_height;
-
-        update_adaptative_children ();
-    }
-
     private inline void on_unmap ()
     {
         save_window_state ();
-
+        settings.apply ();
         application.quit ();
     }
-
-    /*\
-    * * adaptative stuff
-    \*/
-
-    private enum WindowSize
-    {
-        START,
-        SMALL,
-        LARGE
-    }
-    private WindowSize window_size = WindowSize.START;
-
-    private void update_adaptative_children ()
-    {
-        if (window_width < 590)
-            _change_window_size (WindowSize.SMALL);
-        else
-            _change_window_size (WindowSize.LARGE);
-    }
-
-    private void _change_window_size (WindowSize new_window_size)
-    {
-        if (window_size == new_window_size)
-            return;
-        window_size = new_window_size;
-        change_window_size (window_size == WindowSize.LARGE);
-    }
-
-    protected virtual void change_window_size (bool large) {}
 
     /*\
     * * manage window state
@@ -128,6 +82,7 @@ private class ManagedWindow : ApplicationWindow
                 assert_not_reached ();
 
             settings = new GLib.Settings.with_path ("org.gnome.LightsOff.Lib", value);
+            settings.delay ();
         }
     }
     private GLib.Settings settings;
@@ -148,3 +103,4 @@ private class ManagedWindow : ApplicationWindow
         settings.apply ();
     }
 }
+

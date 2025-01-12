@@ -10,9 +10,9 @@
  * license.
  */
 
-using Gtk;
+using Adw;
 
-private class LightsOff : Gtk.Application
+private class LightsOff : Adw.Application
 {
     /* Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog */
     private const string PROGRAM_NAME = _("Lights Off");
@@ -45,7 +45,6 @@ private class LightsOff : Gtk.Application
 
         Environment.set_application_name (PROGRAM_NAME);
         Environment.set_prgname ("org.gnome.LightsOff");
-        Window.set_default_icon_name ("org.gnome.LightsOff");
 
         var app = new LightsOff ();
         return app.run (args);
@@ -82,9 +81,7 @@ private class LightsOff : Gtk.Application
     {
         base.startup ();
 
-        Gtk.Settings? gtk_settings = Gtk.Settings.get_default ();
-        if (gtk_settings != null) // else..?
-            ((!) gtk_settings).set ("gtk-application-prefer-dark-theme", true);
+        Adw.StyleManager.get_default ().set_color_scheme (Adw.ColorScheme.FORCE_DARK);
 
         add_action_entries (action_entries, this);
 
@@ -111,7 +108,7 @@ private class LightsOff : Gtk.Application
 
     private inline void help_cb ()
     {
-        show_uri (window, "help:lightsoff", Gdk.CURRENT_TIME);
+        Gtk.show_uri (window, "help:lightsoff", Gdk.CURRENT_TIME);
     }
 
     private void quit_cb ()
@@ -142,23 +139,19 @@ private class LightsOff : Gtk.Application
         /* Translators: short description of the application, seen in the About dialog */
         string comments = _("Turn off all the lights");
 
-
-        /* Translators: about dialog text; label of the website link */
-        string website_label = _("Page on GNOME wiki");
-
         show_about_dialog (window,
-                           "program-name",          PROGRAM_NAME,
+                           "application-name",      PROGRAM_NAME,
                            "version",               Config.VERSION,
+                           "developer_name",        _("The GNOME Project"),
                            "comments",              comments,
                            "copyright",             "Copyright © 2009 Tim Horton",  // TODO _("Copyright \xc2\xa9 %u-%u – Arnaud Bonatti").printf (20xx, 20xx)
-                           "license-type",          License.GPL_2_0,
-                           "authors",               authors,
+                           "license-type",          Gtk.License.GPL_2_0,
+                           "developers",            authors,
                            "artists",               artists,
                            "documenters",           documenters,
         /* Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally! */
                            "translator-credits",    _("translator-credits"),
-                           "logo-icon-name",        "org.gnome.LightsOff",
-                           "website",               "https://wiki.gnome.org/Apps/Lightsoff",
-                           "website-label",         website_label);
+                           "application-icon",      "org.gnome.LightsOff",
+                           "website",               "https://wiki.gnome.org/Apps/Lightsoff");
     }
 }

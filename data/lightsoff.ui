@@ -1,99 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.22.1 -->
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.94.1 -->
 <interface>
-  <menu id="change-level-menu">
-    <section>
-      <item>
-        <!-- Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"  -->
-        <attribute name="label" translatable="yes">_First puzzle</attribute>
-        <attribute name="action">win.new-game</attribute>
-        <attribute name="accel">&lt;Primary&gt;n</attribute>
-      </item>
-      <item>
-        <!-- Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle" -->
-        <attribute name="label" translatable="yes">_Previous puzzle</attribute>
-        <attribute name="action">win.previous-level</attribute>
-        <attribute name="accel">&lt;Primary&gt;Page_Up</attribute>
-      </item>
-      <item>
-        <!-- Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle" -->
-        <attribute name="label" translatable="yes">Ne_xt puzzle</attribute>
-        <attribute name="action">win.next-level</attribute>
-        <attribute name="accel">&lt;Primary&gt;Page_Down</attribute>
-      </item>
-    </section>
-  </menu>
-
-  <requires lib="gtk+" version="3.99"/>
+  <!-- interface-name lightsoff.ui -->
+  <requires lib="gtk" version="4.16"/>
+  <requires lib="libadwaita" version="1.6"/>
   <template class="LightsoffWindow" parent="ManagedWindow">
-    <property name="can-focus">False</property>
-    <property name="resizable">True</property>
-    <property name="title" translatable="no">Puzzle X</property>
-    <child type="titlebar">
-      <object class="GtkHeaderBar">
-        <property name="can-focus">False</property>
-        <property name="show-title-buttons">True</property>
-        <child type="start">
-          <object class="GtkMenuButton">
-            <property name="valign">center</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">False</property>
-            <property name="use-underline">True</property>
-            <!-- Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level -->
-            <property name="label" translatable="yes">_Change Puzzle</property>
-            <property name="menu-model">change-level-menu</property>
-          </object>
-        </child>
-        <child type="end">
-          <object class="GtkMenuButton" id="menu_button">
-            <property name="valign">center</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <property name="icon-name">open-menu-symbolic</property>
-          </object>
-        </child>
-        <child type="end">
-          <object class="GameButton" id="game_button_1"/>
-        </child>
+    <!--<child>
+      <object class="AdwBreakpoint">
+        <condition>max-width: 500sp</condition>
+        <setter object="split_view" property="collapsed">True</setter>
       </object>
-    </child>
+    </child>-->
     <child>
-      <object class="GtkOverlay">
-        <child>
-          <object class="GtkGrid">
-            <property name="orientation">vertical</property>
-            <child>
-              <object class="GtkAspectFrame" id="aspect_frame">
-                <property name="obey-child">False</property>
-                <style>
-                  <class name="aspect"/>
-                </style>
+      <object class="AdwToolbarView">
+        <property name="top-bar-style">raised</property>
+        <child type="top">
+          <object class="AdwHeaderBar" id="header_bar">
+            <child type="start">
+              <object class="GtkToggleButton" id="toggle_pane_button">
+                <property name="active">False</property>
+                <property name="icon-name">sidebar-show-symbolic</property>
+                <property name="valign">center</property>
               </object>
             </child>
-            <child>
-              <object class="GtkRevealer" id="revealer">
-                <property name="reveal-child">False</property>
+            <child type="end">
+              <object class="GtkMenuButton" id="menu_button">
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="valign">center</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwOverlaySplitView" id="split_view">
+            <property name="collapsed">True</property>
+            <property name="content">
+              <object class="AdwToastOverlay" id="toast_overlay">
+                <property name="child">
+                  <object class="GtkAspectFrame" id="aspect_frame">
+                    <property name="receives-default">True</property>
+                    <property name="obey-child">False</property>
+                  </object>
+                </property>
+              </object>
+            </property>
+            <property name="max-sidebar-width">279.9</property>
+            <property name="show-sidebar"
+                    bind-source="toggle_pane_button"
+                    bind-property="active"
+                    bind-flags="sync-create|bidirectional"/>
+            <property name="sidebar">
+              <object class="GtkBox" id="sidebar_content">
+                <property name="orientation">vertical</property>
+                <property name="spacing">6</property>
+                <property name="vexpand">True</property>
                 <child>
-                  <object class="GtkActionBar">
-                    <child type="start">
-                      <object class="GtkLabel" id="level_label">
-                        <property name="label" translatable="no">Puzzle X</property>
-                        <style>
-                          <class name="level-label"/>
-                        </style>
-                      </object>
-                    </child>
-                    <child type="end">
-                      <object class="GameButton" id="game_button_2"/>
-                    </child>
+                  <object class="GtkButton" id="first_level_button">
+                    <property name="action-name">win.new-game</property>
+                    <property name="hexpand">True</property>
+                    <property name="icon-name">user-home-symbolic</property>
+                    <property name="label">_First puzzle</property>
+                    <property name="use-underline">True</property>
+                    <property name="vexpand">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="previous_level_button">
+                    <property name="action-name">win.previous-level</property>
+                    <property name="hexpand">True</property>
+                    <property name="icon-name">go-previous-symbolic</property>
+                    <property name="label">_Previous puzzle</property>
+                    <property name="use-underline">True</property>
+                    <property name="vexpand">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="next_level_button">
+                    <property name="action-name">win.next-level</property>
+                    <property name="hexpand">True</property>
+                    <property name="icon-name">go-next-symbolic</property>
+                    <property name="label">Ne_xt puzzle</property>
+                    <property name="use-underline">True</property>
+                    <property name="vexpand">True</property>
                   </object>
                 </child>
               </object>
-            </child>
+            </property>
+            <property name="vexpand">True</property>
+            <property name="vexpand-set">True</property>
           </object>
-        </child>
-        <child type="overlay">
-          <object class="NotificationsRevealer" id="notifications_revealer"/>
         </child>
       </object>
     </child>

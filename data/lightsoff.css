@@ -3,8 +3,8 @@
 }
 
 .grid > .toggle {
-  outline-offset: -30px;
-  outline-width: 10px;
+  outline-offset: -10px;
+  outline-width: 3px;
   outline-style: none;
   border-width: 1px;
   box-shadow: none;
@@ -29,7 +29,7 @@
 .grid > .toggle:focus {
   transition: outline-offset 0ms ease;
   transition: margin 300ms linear;
-  outline-offset: -40px;
+  outline-offset: -15px;
   outline-style: solid;
 }
 

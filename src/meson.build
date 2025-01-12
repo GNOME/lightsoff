@@ -1,13 +1,12 @@
 lightsoff_vala_sources = [
   'board-view.vala',
   'board-view-gtk.vala',
-  'lightsoff.vala',
-  'lightsoff-window.vala',
   'puzzle-generator.vala',
   'game-view.vala',
   'game-view-gtk.vala',
+  'lightsoff.vala',
   'managed-window.vala',
-  'notifications-revealer.vala',
+  'lightsoff-window.vala'
 ]
 
 lightsoff_resources_file = files('lightsoff.gresource.xml')
@@ -22,6 +21,7 @@ deps = [
   glib_dep,
   gio_dep,
   gtk_dep,
+  libadwaita_dep,
   librsvg_dep,
   libmath_dep,
   config_dep,
