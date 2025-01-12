@@ -17,10 +17,9 @@
         <child type="top">
           <object class="AdwHeaderBar" id="header_bar">
             <child type="start">
-              <object class="GtkToggleButton" id="toggle_pane_button">
-                <property name="active">False</property>
-                <property name="icon-name">sidebar-show-symbolic</property>
-                <property name="valign">center</property>
+              <object class="AdwSplitButton" id="restart_button">
+                <property name="icon-name">view-refresh-symbolic</property>
+                <property name="action-name">win.restart</property>
               </object>
             </child>
             <property name="title-widget">
@@ -36,58 +35,11 @@
           </object>
         </child>
         <child>
-          <object class="AdwOverlaySplitView" id="split_view">
-            <property name="collapsed">True</property>
-            <property name="content">
-              <object class="AdwToastOverlay" id="toast_overlay">
-                <property name="child">
-                  <object class="GtkAspectFrame" id="aspect_frame">
-                    <property name="receives-default">True</property>
-                    <property name="obey-child">False</property>
-                  </object>
-                </property>
-              </object>
-            </property>
-            <property name="max-sidebar-width">279.9</property>
-            <property name="show-sidebar"
-                    bind-source="toggle_pane_button"
-                    bind-property="active"
-                    bind-flags="sync-create|bidirectional"/>
-            <property name="sidebar">
-              <object class="GtkBox" id="sidebar_content">
-                <property name="orientation">vertical</property>
-                <property name="spacing">6</property>
-                <property name="vexpand">True</property>
-                <child>
-                  <object class="GtkButton" id="first_level_button">
-                    <property name="action-name">win.new-game</property>
-                    <property name="hexpand">True</property>
-                    <property name="icon-name">user-home-symbolic</property>
-                    <property name="label">_First puzzle</property>
-                    <property name="use-underline">True</property>
-                    <property name="vexpand">True</property>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkButton" id="previous_level_button">
-                    <property name="action-name">win.previous-level</property>
-                    <property name="hexpand">True</property>
-                    <property name="icon-name">go-previous-symbolic</property>
-                    <property name="label">_Previous puzzle</property>
-                    <property name="use-underline">True</property>
-                    <property name="vexpand">True</property>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkButton" id="next_level_button">
-                    <property name="action-name">win.next-level</property>
-                    <property name="hexpand">True</property>
-                    <property name="icon-name">go-next-symbolic</property>
-                    <property name="label">Ne_xt puzzle</property>
-                    <property name="use-underline">True</property>
-                    <property name="vexpand">True</property>
-                  </object>
-                </child>
+          <object class="AdwToastOverlay" id="toast_overlay">
+            <property name="child">
+              <object class="GtkAspectFrame" id="aspect_frame">
+                <property name="receives-default">True</property>
+                <property name="obey-child">False</property>
               </object>
             </property>
             <property name="vexpand">True</property>

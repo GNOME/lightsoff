@@ -16,6 +16,8 @@ private class LightsoffWindow : ManagedWindow
     [GtkChild]
     private unowned MenuButton               menu_button;
     [GtkChild]
+    private unowned SplitButton              restart_button;
+    [GtkChild]
     private unowned AspectFrame              aspect_frame;
     [GtkChild]
     private unowned ToastOverlay             toast_overlay;
@@ -66,6 +68,7 @@ private class LightsoffWindow : ManagedWindow
 
         var menu_builder = new Gtk.Builder.from_resource ("/org/gnome/LightsOff/menus.ui");
         menu_button.set_menu_model ((GLib.Menu) menu_builder.get_object ("primary-menu"));
+        restart_button.set_menu_model ((GLib.Menu) menu_builder.get_object ("restart-menu"));
 
         add_action_entries (window_actions, this);
         previous_level = (SimpleAction) this.lookup_action ("previous-level");

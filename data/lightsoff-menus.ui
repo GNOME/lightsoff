@@ -16,5 +16,29 @@
       </item>
     </section>
   </menu>
+  <menu id="restart-menu">
+    <section>
+      <item>
+        <!-- Translators: entry of the restart menu (with a mnemonic that appears when pressing Alt); restart current puzzle -->
+        <attribute name="label" translatable="yes">_Current puzzle</attribute>
+        <attribute name="action">win.restart</attribute>
+      </item>
+      <item>
+        <!-- Translators: entry of the restart menu (with a mnemonic that appears when pressing Alt); restart first puzzle -->
+        <attribute name="label" translatable="yes">_First puzzle</attribute>
+        <attribute name="action">win.new-game</attribute>
+      </item>
+      <item>
+        <!-- Translators: entry of the restart menu (with a mnemonic that appears when pressing Alt); restart previous puzzle -->
+        <attribute name="label" translatable="yes">_Previous puzzle</attribute>
+        <attribute name="action">win.previous-level</attribute>
+      </item>
+      <item>
+        <!-- Translators: entry of the restart menu (with a mnemonic that appears when pressing Alt); restart next puzzle -->
+        <attribute name="label" translatable="yes">_Next puzzle</attribute>
+        <attribute name="action">win.next-level</attribute>
+      </item>
+    </section>
+  </menu>
 </interface>
 
