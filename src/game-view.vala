@@ -61,11 +61,6 @@ private interface GameView : GLib.Object {
         replace_board (get_board_view (), create_board_view (next_level (1)), GameView.ReplaceStyle.SLIDE_NEXT);
     }
 
-    internal void light_toggled_cb ()
-    {
-        moves_changed (get_board_view ().get_moves ());
-    }
-
     internal signal void level_changed (int level);
     internal signal void moves_changed (int moves);
 }

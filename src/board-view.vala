@@ -12,11 +12,9 @@ private interface BoardView: GLib.Object {
 
     internal new const int size = 5;
 
-    internal abstract int get_moves ();
     internal abstract PuzzleGenerator get_puzzle_generator ();
     internal abstract void clear_level ();
     internal abstract void toggle_light (int x, int y, bool user_initiated = true);
-    internal abstract void increase_moves ();
     internal abstract bool is_light_active (int x, int y);
 
     internal abstract GLib.Object get_light_at (int x, int y);
@@ -69,7 +67,6 @@ private interface BoardView: GLib.Object {
     internal void move_to (int x, int y)
     {
         toggle_light (x, y);
-        increase_moves ();
         light_toggled ();
         if (is_completed ())
         {

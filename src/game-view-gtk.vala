@@ -14,6 +14,7 @@ private class GtkGameView : Widget, GameView
     private BoardViewGtk board_view;
     private int current_level;
     private GLib.Queue<ulong> handlers = new GLib.Queue<ulong>();
+    private int _moves = 0;
 
     internal void replace_board (BoardView old_board, BoardView new_board, GameView.ReplaceStyle style, bool fast = true)
     {
@@ -55,6 +56,7 @@ private class GtkGameView : Widget, GameView
         board_view = new_board;
         if (!handlers.is_empty ())
             disconnect (handlers.pop_head());
+        moves_changed (0);
     }
 
     internal bool hide_cursor ()
@@ -104,7 +106,14 @@ private class GtkGameView : Widget, GameView
         view.game_won.connect (game_won_cb);
         view.light_toggled.connect (light_toggled_cb);
         view.sensitive = true;
+        _moves = 0;
         return (BoardView)view;
+    }
+
+    internal void light_toggled_cb ()
+    {
+        _moves += 1;
+        moves_changed (_moves);
     }
 
     internal BoardView get_board_view ()
@@ -122,4 +131,5 @@ private class GtkGameView : Widget, GameView
     {
         return stack.transition_running;
     }
+
 }

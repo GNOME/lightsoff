@@ -16,8 +16,6 @@ private class BoardViewGtk : Grid, BoardView
     private ToggleButton[,] lights;
 
     private const int MIN_TOGGLE_SIZE = 48;
-    private int _moves = 0;
-    internal int get_moves () { return _moves; }
 
     construct
     {
@@ -35,17 +33,13 @@ private class BoardViewGtk : Grid, BoardView
 
         puzzle_generator = new PuzzleGenerator (size);
         lights = new ToggleButton [size, size];
-//        List<Widget> focus_list = new List<Widget> ();
         for (var x = 0; x < size; x++)
             for (var y = 0; y < size; y++)
             {
                 lights[x, y] = new ToggleButton ();
                 lights[x, y].toggled.connect (handle_toggle);
                 attach (lights[x, y], x, y, 1, 1);
-//                focus_list.append (lights[x, y]);
             }
-//        set_focus_chain (focus_list);
-        _moves = 0;
         completed.connect (() => set_sensitive (false));
     }
 
@@ -110,8 +104,4 @@ private class BoardViewGtk : Grid, BoardView
         return lights[x, y];
     }
 
-    internal void increase_moves ()
-    {
-        _moves += 1;
-    }
 }
