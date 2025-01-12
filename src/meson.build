@@ -22,7 +22,6 @@ deps = [
   gio_dep,
   gtk_dep,
   libadwaita_dep,
-  librsvg_dep,
   libmath_dep,
   config_dep,
   posix_dep,

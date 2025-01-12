@@ -9,10 +9,8 @@
 
 .grid > .toggle:checked/*, .grid > .toggle:hoverr */{
   background-image: linear-gradient(90deg,  #35669b, #5e92c8);
-  /*border-color: #729fcf;*/
   margin: 0;
   transition: margin 300ms linear;
-  background-color: var(--success-bg-color);
 }
 
 
