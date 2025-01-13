@@ -7,7 +7,6 @@
   <template class="LightsoffWindow" parent="ManagedWindow">
     <child>
       <object class="AdwToolbarView">
-        <property name="top-bar-style">raised</property>
         <child type="top">
           <object class="AdwHeaderBar" id="header_bar">
             <child type="start">
