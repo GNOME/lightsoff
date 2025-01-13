@@ -78,13 +78,6 @@ private class LightsoffWindow : ManagedWindow
         init_keyboard ();
         int level = settings.get_int ("level");
         level_changed_cb (level);
-        if (level == 1)
-        {
-            /* Translators: short game explanation, displayed as an in-app notification when game is launched on level 1 */
-            toast = new Toast (_("Turn off all the lights!"));
-
-            toast_overlay.add_toast (toast);
-        }
 
         populate_game_container (level);
 
@@ -137,13 +130,17 @@ private class LightsoffWindow : ManagedWindow
         if (level != settings.get_int ("level"))
             settings.set_int ("level", level);
         set_focus (game_view as Gtk.Widget);
+        if (level == 1)
+        {
+            /* Translators: short game explanation, displayed as an in-app notification when game is launched on level 1 */
+            toast = new Toast (_("Turn off all the lights!"));
+
+            toast_overlay.add_toast (toast);
+        }
     }
 
     private inline bool on_key_pressed (EventControllerKey _key_controller, uint keyval, uint keycode, Gdk.ModifierType state)
     {
-//        if (menu_button.get_active ())    // FIXME https://gitlab.gnome.org/GNOME/gtk/-/issues/2634
-//            return false;
-
         switch (keyval)
         {
         case Gdk.Key.Escape:
