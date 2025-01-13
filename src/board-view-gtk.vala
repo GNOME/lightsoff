@@ -15,6 +15,9 @@ private class BoardViewGtk : Grid, BoardView
     private PuzzleGenerator puzzle_generator;
     private ToggleButton[,] lights;
 
+    private int _level;
+    private int _required_moves;
+
     private const int MIN_TOGGLE_SIZE = 48;
 
     construct
@@ -40,7 +43,11 @@ private class BoardViewGtk : Grid, BoardView
                 lights[x, y].toggled.connect (handle_toggle);
                 attach (lights[x, y], x, y, 1, 1);
             }
-        completed.connect (() => set_sensitive (false));
+        completed.connect ((board, level, moves) => set_sensitive (false));
+        level_setup.connect((board, level, required_moves) => {
+            this._level = level;
+            this._required_moves = required_moves;
+        });
     }
 
     // Pseudorandomly generates and sets the state of each light based on
@@ -104,4 +111,13 @@ private class BoardViewGtk : Grid, BoardView
         return lights[x, y];
     }
 
+    internal int get_level ()
+    {
+        return _level;
+    }
+
+    internal int get_required_moves ()
+    {
+        return _required_moves;
+    }
 }

@@ -83,11 +83,14 @@ private class LightsoffWindow : ManagedWindow
 
         game_view.level_changed.connect (level_changed_cb);
         game_view.moves_changed.connect (moves_changed_cb);
+        game_view.notify_completion.connect (level_finished_cb);
     }
 
     private void moves_changed_cb (int moves)
     {
         enable_restart_action (moves > 0);
+        if (moves > 0 && toast != null)
+            toast.dismiss ();
         title_widget.set_subtitle (ngettext("%d move", "%d moves", moves).printf(moves));
     }
 
@@ -95,8 +98,6 @@ private class LightsoffWindow : ManagedWindow
     {
         title_widget.set_title (custom_title);
         moves_changed_cb (0);
-        if (toast != null)
-            toast.dismiss ();
     }
 
     private void enable_restart_action (bool new_state)
@@ -134,7 +135,6 @@ private class LightsoffWindow : ManagedWindow
         {
             /* Translators: short game explanation, displayed as an in-app notification when game is launched on level 1 */
             toast = new Toast (_("Turn off all the lights!"));
-
             toast_overlay.add_toast (toast);
         }
     }
@@ -165,6 +165,35 @@ private class LightsoffWindow : ManagedWindow
     {
         game_view.reset_game ();
         enable_restart_action (false);
+    }
+
+    private void level_finished_cb (GLib.Object source, int level, int moves, int required_moves)
+    {
+        /* Translators: short game explanation, displayed as an in-app notification when game is launched on level 1 */
+
+        /** Translators: number of moves as shows on the completion notification */
+        var total_moves = ngettext ("Completed level %d with %d move", "Completed level %d with %d moves", moves).printf (level, moves);
+        /** Translators: number of required moves as shows on the completion notification */
+        // var req_moves = ngettext ("%d required move", "%d required moves", required_moves).printf (required_moves);
+        var notification = "";
+        if (required_moves == moves) {
+            notification = _("Perfect. %s").printf ("⭐⭐⭐");
+        } else if (moves < 2 * required_moves) {
+            notification = _("Well done. %s").printf ("⭐⭐⭐");
+        } else if (moves < 3 * required_moves) {
+            notification = _("Nice job. %s").printf ("⭐⭐");
+        } else if (moves < 4 * required_moves) {
+            notification = _("Completed. %s").printf ("⭐");
+        } else {
+            notification = total_moves;
+        }
+        if (toast != null)
+            toast.dismiss ();
+        toast = new Toast ("");
+        var full_notification = new Adw.WindowTitle (notification, total_moves);
+        toast.custom_title = full_notification;
+        toast.priority = Adw.ToastPriority.HIGH;
+        toast_overlay.add_toast (toast);
     }
 
 }

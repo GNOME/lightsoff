@@ -18,10 +18,13 @@ private interface BoardView: GLib.Object {
     internal abstract bool is_light_active (int x, int y);
 
     internal abstract GLib.Object get_light_at (int x, int y);
+    internal abstract int get_level ();
+    internal abstract int get_required_moves ();
 
-    protected signal void completed ();
+    public signal void completed (int level, int moves);
     internal signal void game_won ();
     internal signal void light_toggled ();
+    internal signal void level_setup (int level, int minimum_moves);
 
     // Pseudorandomly generates and sets the state of each light based on
     // a level number; hopefully this is stable between machines, but that
@@ -46,6 +49,8 @@ private interface BoardView: GLib.Object {
             for (var y = 0; y < size; y++)
                 if (sol[x, y])
                     toggle_light (x, y, false);
+
+        level_setup (level, solution_length);
     }
 
     internal void handle_toggle (GLib.Object light)
@@ -70,7 +75,7 @@ private interface BoardView: GLib.Object {
         light_toggled ();
         if (is_completed ())
         {
-            completed ();
+            completed (get_level (), get_required_moves ());
             Timeout.add (300, game_won_timeout);
         }
     }

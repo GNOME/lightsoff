@@ -63,4 +63,5 @@ private interface GameView : GLib.Object {
 
     internal signal void level_changed (int level);
     internal signal void moves_changed (int moves);
+    internal signal void notify_completion (int level, int moves, int required_moves);
 }

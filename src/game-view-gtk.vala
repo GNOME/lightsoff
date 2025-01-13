@@ -107,6 +107,7 @@ private class GtkGameView : Widget, GameView
         view.light_toggled.connect (light_toggled_cb);
         view.sensitive = true;
         _moves = 0;
+        view.completed.connect((board, level, required_moves) => notify_completion (level, _moves, required_moves));
         return (BoardView)view;
     }
 
