@@ -8,9 +8,13 @@
 }
 
 .grid > .toggle:checked/*, .grid > .toggle:hoverr */{
-  background-image: linear-gradient(90deg,  #35669b, #5e92c8);
+  background-image: linear-gradient(90deg,  var(--accent-bg-color), color-mix(in srgb, var(--accent-bg-color) 80%, var(--view-bg-color)));
   margin: 0;
   transition: margin 300ms linear;
+}
+
+.grid {
+  margin: 12px;
 }
 
 

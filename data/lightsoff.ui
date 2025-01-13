@@ -5,12 +5,6 @@
   <requires lib="gtk" version="4.16"/>
   <requires lib="libadwaita" version="1.6"/>
   <template class="LightsoffWindow" parent="ManagedWindow">
-    <!--<child>
-      <object class="AdwBreakpoint">
-        <condition>max-width: 500sp</condition>
-        <setter object="split_view" property="collapsed">True</setter>
-      </object>
-    </child>-->
     <child>
       <object class="AdwToolbarView">
         <property name="top-bar-style">raised</property>

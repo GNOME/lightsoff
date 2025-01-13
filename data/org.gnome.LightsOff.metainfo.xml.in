@@ -18,8 +18,11 @@
     </p>
   </description>
   <screenshots>
-    <screenshot height="426" width="379" type="default">
-      <image>https://gitlab.gnome.org/GNOME/lightsoff/-/raw/main/data/screenshot.png</image>
+    <screenshot height="661" width="538" type="default">
+      <image>https://gitlab.gnome.org/GNOME/lightsoff/-/raw/main/data/screenshots/dark-start.png</image>
+      <image>https://gitlab.gnome.org/GNOME/lightsoff/-/raw/main/data/screenshots/dark-playing.png</image>
+      <image>https://gitlab.gnome.org/GNOME/lightsoff/-/raw/main/data/screenshots/light-start.png</image>
+      <image>https://gitlab.gnome.org/GNOME/lightsoff/-/raw/main/data/screenshots/light-playing.png</image>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">org.gnome.LightsOff.desktop</launchable>
