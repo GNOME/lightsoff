@@ -12,7 +12,7 @@
             <child type="start">
               <object class="GtkButton" id="restart_button">
                 <property name="icon-name">view-refresh-symbolic</property>
-                <property name="tooltip-text" translatable="yes">Restart current puzzle</property>
+                <property name="tooltip-text" translatable="yes">Restart puzzle</property>
                 <property name="action-name">win.restart</property>
               </object>
             </child>
