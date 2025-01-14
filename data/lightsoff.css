@@ -1,20 +1,19 @@
 .grid > .toggle {
-  margin: 6px;
-  transition: margin 300ms linear;
-}
-
-.grid > .toggle, .grid > .toggle:backdrop, .grid > .toggle:focus {
-  transition: margin 300ms linear;
+  transition: transform 200ms ease-out, background 200ms ease-out;
+  border-radius: 12px;
+  transform: scale(0.9);
 }
 
 .grid > .toggle:checked/*, .grid > .toggle:hoverr */{
-  background-image: linear-gradient(90deg,  var(--accent-bg-color), color-mix(in srgb, var(--accent-bg-color) 80%, var(--view-bg-color)));
-  margin: 0;
-  transition: margin 300ms linear;
+  background-image: linear-gradient(
+    45deg,
+    oklch(from var(--accent-bg-color) calc(l - 0.1) c calc(h + 10deg)),
+    oklch(from var(--accent-bg-color) calc(l + 0.1) c calc(h - 10deg))
+  );
+  transform: none;
 }
 
 .grid {
   margin: 12px;
+  margin-top: 0;
 }
-
-

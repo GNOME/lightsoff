@@ -10,8 +10,9 @@
         <child type="top">
           <object class="AdwHeaderBar" id="header_bar">
             <child type="start">
-              <object class="AdwSplitButton" id="restart_button">
+              <object class="GtkButton" id="restart_button">
                 <property name="icon-name">view-refresh-symbolic</property>
+                <property name="tooltip-text" translatable="yes">Restart current puzzle</property>
                 <property name="action-name">win.restart</property>
               </object>
             </child>
