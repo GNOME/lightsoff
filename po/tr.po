@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2024-02-09 17:07+0000\n"
-"PO-Revision-Date: 2024-05-10 22:41+0300\n"
+"POT-Creation-Date: 2025-02-01 09:14+0000\n"
+"PO-Revision-Date: 2025-02-03 19:20+0300\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
@@ -24,56 +24,50 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.3\n"
+"X-Generator: Poedit 3.5\n"
 
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
-#: data/game-button.ui:7
-msgid "_Restart"
-msgstr "_Yeniden Başlat"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restart first puzzle
+#: data/lightsoff-menus.ui:8
+msgid "_First puzzle"
+msgstr "İ_lk bulmaca"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restart previous puzzle
+#: data/lightsoff-menus.ui:13
+msgid "_Previous puzzle"
+msgstr "_Önceki bulmaca"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restart next puzzle
+#: data/lightsoff-menus.ui:18
+msgid "_Next puzzle"
+msgstr "_Sonrakini bulmaca"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
-#: data/lightsoff-menus.ui:8
+#: data/lightsoff-menus.ui:25
 msgid "_Help"
 msgstr "_Yardım"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
-#: data/lightsoff-menus.ui:14
+#: data/lightsoff-menus.ui:31
 msgid "_About Lights Off"
 msgstr "Işıklar Kapalı _Hakkında"
 
-#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
-#: data/lightsoff.ui:8
-msgid "_First puzzle"
-msgstr "İ_lk bulmaca"
-
-#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
-#: data/lightsoff.ui:14
-msgid "_Previous puzzle"
-msgstr "_Önceki bulmaca"
-
-#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle"
-#: data/lightsoff.ui:20
-msgid "Ne_xt puzzle"
-msgstr "_Sonrakini bulmaca"
-
-#. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
-#: data/lightsoff.ui:46
-msgid "_Change Puzzle"
-msgstr "Bulmacayı _Değiştir"
+#: data/lightsoff.ui:15
+msgid "Restart puzzle"
+msgstr "Bulmacayı yeniden başlat"
 
 #. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
-#: data/org.gnome.LightsOff.appdata.xml.in:7
+#: data/org.gnome.LightsOff.metainfo.xml.in:7
 #: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Işıklar Kapalı"
 
 #. Translators: short description of the application, seen in the About dialog
-#: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:150
+#: data/org.gnome.LightsOff.metainfo.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:138
 msgid "Turn off all the lights"
 msgstr "Tüm ışıkları kapat"
 
-#: data/org.gnome.LightsOff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.metainfo.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -83,17 +77,13 @@ msgstr ""
 "açık veya kapalı arasında geçiş yapar ancak çevredeki ışıkların tümünü de "
 "değiştirir. Hedefiniz basittir: tüm ışıkları kapatın!"
 
-#: data/org.gnome.LightsOff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.metainfo.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
 "Işıkları kapatmaktan hoşlanan oyuncular çok sayıda düzeyden keyif "
 "alacaklardır."
-
-#: data/org.gnome.LightsOff.appdata.xml.in:43
-msgid "The Lightsoff Team"
-msgstr "Lightsoff Takımı"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -148,30 +138,47 @@ msgid "Display version number"
 msgstr "Sürüm numarasını göster"
 
 #. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
-#: src/lightsoff.vala:73
+#: src/lightsoff.vala:72
 msgid "Failed to parse command-line arguments."
 msgstr "Komut satırı argümanları ayrıştırılamadı."
 
-#. Translators: about dialog text; label of the website link
-#: src/lightsoff.vala:154
-msgid "Page on GNOME wiki"
-msgstr "GNOME wikiʼdeki sayfası"
+#: src/lightsoff.vala:143
+msgid "The GNOME Project"
+msgstr "GNOME Projesi"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/lightsoff.vala:166
+#: src/lightsoff.vala:151
 msgid "translator-credits"
 msgstr ""
 "Barış Çiçek <baris@teamforce.name.tr> \n"
 "Muhammet Kara <muhammetk@gmail.com>\n"
 "Emin Tufan Çetin <etcetin@gmail.com>"
 
-#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
 #: src/lightsoff-window.vala:88
-msgid "Turn off all the lights!"
-msgstr "Tüm ışıkları kapat!"
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d hamle"
 
 #. Translators: the title of the window, %d is the level number
-#: src/lightsoff-window.vala:141
+#: src/lightsoff-window.vala:125
 #, c-format
 msgid "Puzzle %d"
 msgstr "Bulmaca %d"
+
+#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
+#: src/lightsoff-window.vala:133
+msgid "Turn off all the lights!"
+msgstr "Tüm ışıkları kapat!"
+
+#~ msgid "_Restart"
+#~ msgstr "_Yeniden Başlat"
+
+#~ msgid "_Change Puzzle"
+#~ msgstr "Bulmacayı _Değiştir"
+
+#~ msgid "The Lightsoff Team"
+#~ msgstr "Lightsoff Takımı"
+
+#~ msgid "Page on GNOME wiki"
+#~ msgstr "GNOME wikiʼdeki sayfası"
