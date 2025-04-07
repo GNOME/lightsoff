@@ -94,13 +94,16 @@ private class LightsOff : Adw.Application
 
         // game menu
         set_accels_for_action ("win.restart",           { "<Primary>r"          });
-
-        window = new LightsoffWindow ();
-        add_window (window);
     }
 
     protected override void activate ()
     {
+        if (window == null)
+        {
+            window = new LightsoffWindow ();
+            add_window (window);
+        }
+
         window.present ();
     }
 
