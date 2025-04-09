@@ -44,7 +44,6 @@ private class LightsOff : Adw.Application
         Intl.textdomain (Config.GETTEXT_PACKAGE);
 
         Environment.set_application_name (PROGRAM_NAME);
-        Environment.set_prgname ("org.gnome.LightsOff");
 
         var app = new LightsOff ();
         return app.run (args);
