@@ -14,67 +14,60 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lt\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
-"PO-Revision-Date: 2021-02-27 14:02+0200\n"
-"Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
+"POT-Creation-Date: 2025-09-10 21:36+0000\n"
+"PO-Revision-Date: 2025-09-23 21:31+0300\n"
+"Last-Translator: Aurimas Černius <aurimas.cernius@mailo.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 3.38.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.7\n"
 
-#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restarts current level
-#: data/game-button.ui:7
-msgid "_Restart"
-msgstr "Pe_rleisti"
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restart first puzzle
+#: data/lightsoff-menus.ui:8
+msgid "_First puzzle"
+msgstr "_Pirmas galvosūkis"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restart previous puzzle
+#: data/lightsoff-menus.ui:13
+msgid "_Previous puzzle"
+msgstr "_Ankstesnis galvosūkis"
+
+#. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restart next puzzle
+#: data/lightsoff-menus.ui:18
+msgid "_Next puzzle"
+msgstr "_Kitas galvosūkis"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); show application help
-#: data/lightsoff-menus.ui:8
+#: data/lightsoff-menus.ui:25
 msgid "_Help"
 msgstr "_Žinynas"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); open About dialog
-#: data/lightsoff-menus.ui:14
+#: data/lightsoff-menus.ui:31
 msgid "_About Lights Off"
 msgstr "_Apie ]išjungtas šviesas"
 
-#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to the first level; goes with "_Previous puzzle" and "Ne_xt puzzle"
-#: data/lightsoff.ui:8
-#| msgid "Ne_xt puzzle"
-msgid "_First puzzle"
-msgstr "_Pirmas galvosūkis"
-
-#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to previous level; goes with "_First puzzle" and "Ne_xt puzzle"
-#: data/lightsoff.ui:14
-msgid "_Previous puzzle"
-msgstr "_Ankstesnis galvosūkis"
-
-#. Translators: entry of the "Change Puzzle" menu (with a mnemonic that appears when pressing Alt); switch to next level; goes with "_First puzzle" and "_Previous puzzle"
-#: data/lightsoff.ui:20
-msgid "Ne_xt puzzle"
-msgstr "_Kitas galvosūkis"
-
-#. Translators: label of a button, in the headerbar (with a mnemonic that appears when pressing Alt); pops up a menu for going previous/next level
-#: data/lightsoff.ui:46
-msgid "_Change Puzzle"
-msgstr "_Keisti galvosūkį"
+#: data/lightsoff.ui:15
+msgid "Restart puzzle"
+msgstr "Perleisti galvosūkį"
 
 #. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
-#: data/org.gnome.LightsOff.appdata.xml.in:7
-#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
+#: data/org.gnome.LightsOff.metainfo.xml.in:7
+#: data/org.gnome.LightsOff.desktop.in:2 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Šviesos išjungtos"
 
 #. Translators: short description of the application, seen in the About dialog
-#: data/org.gnome.LightsOff.appdata.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:150
+#: data/org.gnome.LightsOff.metainfo.xml.in:8
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:140
 msgid "Turn off all the lights"
 msgstr "Išjungti visas šviesas"
 
-#: data/org.gnome.LightsOff.appdata.xml.in:10
+#: data/org.gnome.LightsOff.metainfo.xml.in:10
 msgid ""
 "Lights Off is a collection of light switch puzzles. Clicking on a light "
 "toggles it either on or off, but also toggles all the surrounding lights, "
@@ -84,19 +77,15 @@ msgstr ""
 "šviesos ją išjungia arba įjungia, bet taip pat perjungia visas aplinkines "
 "šviesas. Uždavinys paprastas: išjungti visas šviesas!"
 
-#: data/org.gnome.LightsOff.appdata.xml.in:15
+#: data/org.gnome.LightsOff.metainfo.xml.in:15
 msgid ""
 "Players who delight in turning off lights will enjoy the huge number of "
 "levels."
 msgstr ""
 "Žaidėjai, kurie mėgsta išjungti šviesas, mėgausis daugybe šio žaidimo lygių."
 
-#: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "GNOME projektas"
-
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.LightsOff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:5
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "žaidimas;logika;lenta;kokliai;gretimi;galvosūkis;"
 
@@ -146,38 +135,51 @@ msgid "Display version number"
 msgstr "Rodyti versijos numerį"
 
 #. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
-#: src/lightsoff.vala:73
+#: src/lightsoff.vala:71
 msgid "Failed to parse command-line arguments."
 msgstr "Nepavyko išanalizuoti komandų eilutės argumentų."
 
-#. Translators: about dialog text; label of the website link
-#: src/lightsoff.vala:154
-msgid "Page on GNOME wiki"
-msgstr "GNOME wiki puslapis"
+#: src/lightsoff.vala:145
+msgid "The GNOME Project"
+msgstr "GNOME projektas"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/lightsoff.vala:166
+#: src/lightsoff.vala:153
 msgid "translator-credits"
 msgstr ""
-"Paskutinieji vertėjai:\n"
-"Aurimas Černius <aurisc4@gmail.com>,\n"
-"Žygimantas Beručka <zygis@gnome.org>,\n"
+"Aurimas Černius <aurimas.cernius@mailo.com>\n"
+"Žygimantas Beručka <zygis@gnome.org>\n"
 "Justina Klingaitė <justina.klingaite@gmail.com>\n"
-"\n"
-"Ankstesnieji vertėjai:\n"
-"Tomas Kuliavas <tokul@users.sf.net>,\n"
+"Tomas Kuliavas <tokul@users.sf.net>\n"
 "Gediminas Paulauskas <menesis@chatsubo.lt>"
 
-#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
 #: src/lightsoff-window.vala:88
-msgid "Turn off all the lights!"
-msgstr "Išjungti visas šviesas!"
+#, c-format
+msgid "%d move"
+msgid_plural "%d moves"
+msgstr[0] "%d ėjimas"
+msgstr[1] "%d ėjimai"
+msgstr[2] "%d ėjimų"
 
 #. Translators: the title of the window, %d is the level number
-#: src/lightsoff-window.vala:141
+#: src/lightsoff-window.vala:125
 #, c-format
 msgid "Puzzle %d"
 msgstr "Galvosūkis %d"
+
+#. Translators: short game explanation, displayed as an in-app notification when game is launched on level 1
+#: src/lightsoff-window.vala:133
+msgid "Turn off all the lights!"
+msgstr "Išjungti visas šviesas!"
+
+#~ msgid "_Restart"
+#~ msgstr "Pe_rleisti"
+
+#~ msgid "_Change Puzzle"
+#~ msgstr "_Keisti galvosūkį"
+
+#~ msgid "Page on GNOME wiki"
+#~ msgstr "GNOME wiki puslapis"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Pradėti iš naujo"
@@ -189,13 +191,8 @@ msgstr "Galvosūkis %d"
 #~ msgid ""
 #~ "Run `%s --help` to see a full list of available command line options.\n"
 #~ msgstr ""
-#~ "Visą galimą komandų eilutės parametrų sąrašą gausite įvykdė „%s --help“.\n"
-
-#~ msgid "%d move"
-#~ msgid_plural "%d moves"
-#~ msgstr[0] "%d ėjimas"
-#~ msgstr[1] "%d ėjimai"
-#~ msgstr[2] "%d ėjimų"
+#~ "Visą galimą komandų eilutės parametrų sąrašą gausite įvykdė „%s --"
+#~ "help“.\n"
 
 #~ msgid "lightsoff"
 #~ msgstr "lightsoff"
