@@ -36,9 +36,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-games.HEAD.el\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2021-02-06 13:00+0000\n"
+"POT-Creation-Date: 2024-02-09 17:07+0000\n"
 "PO-Revision-Date: 2021-03-26 09:44+0200\n"
-"Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
+"Last-Translator: Giannis Antypas <gianni.antypas@gmail.com>\n"
 "Language-Team: Ελληνικά <>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -113,9 +113,9 @@ msgstr ""
 "Οι παίχτες που χαίρονται με το σβήσιμο των φώτων θα απολαύσουν ένα τεράστιο "
 "αριθμό επιπέδων."
 
-#: data/org.gnome.LightsOff.appdata.xml.in:42
-msgid "The GNOME Project"
-msgstr "Το έργο GNOME"
+#: data/org.gnome.LightsOff.appdata.xml.in:43
+msgid "The Lightsoff Team"
+msgstr "Η ομάδα του Lightsoff"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.LightsOff.desktop.in:6
@@ -163,8 +163,7 @@ msgstr "Μια σημαία για ενεργοποίηση της μεγιστ�
 #: data/org.gnome.LightsOff.gschema.xml:33
 msgid "If “true”, the main window starts in maximized mode."
 msgstr ""
-"Εάν είναι «αληθής», το κυρίως παράθυρο εκκινεί σε μεγιστοποιημένη "
-"λειτουργία."
+"Εάν είναι «αληθής», το κυρίως παράθυρο εκκινεί σε μεγιστοποιημένη λειτουργία."
 
 #. Translators: command-line option description, see 'lightsoff --help'
 #: src/lightsoff.vala:26
@@ -206,6 +205,9 @@ msgstr "Σβήστε όλα τα φώτα!"
 #, c-format
 msgid "Puzzle %d"
 msgstr "Γρίφος %d"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "Το έργο GNOME"
 
 #~ msgid "_Start Over"
 #~ msgstr "_Αρχίστε ξανά"
