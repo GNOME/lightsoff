@@ -1,0 +1,700 @@
+# Kazakh translation for lightsoff.
+# Copyright (C) 2026 lightsoff's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lightsoff package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>,  2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lightsoff main\n"
+"POT-Creation-Date: 2026-03-14 21:03+0000\n"
+"PO-Revision-Date: 2026-03-17 23:44+0500\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <Kazakh>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
+
+#. (itstool) path: credit/name
+#: C/basic.page:10 C/bug-filing.page:14 C/develop.page:15
+#: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
+#: C/translate.page:15
+msgid "Perumal Viravan"
+msgstr "Perumal Viravan"
+
+#. (itstool) path: credit/years
+#: C/basic.page:12 C/rules.page:11 C/strategy.page:10
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: license/p
+#: C/basic.page:15 C/bug-filing.page:18 C/develop.page:19
+#: C/documentation.page:17 C/index.page:16 C/strategy.page:13
+#: C/translate.page:19
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#. (itstool) path: page/title
+#: C/basic.page:19
+msgid "Basics"
+msgstr "Негіздер"
+
+#. (itstool) path: page/p
+#: C/basic.page:20
+msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
+msgstr ""
+"<app>Lights Off</app> ойынын пернетақта немесе тышқан көмегімен ойнауға "
+"болады."
+
+#. (itstool) path: section/title
+#: C/basic.page:23
+msgid "Using the keyboard"
+msgstr "Пернетақтаны қолдану"
+
+#. (itstool) path: item/p
+#: C/basic.page:25
+msgid ""
+"To select a tile, use the arrow keys to move the spotlight on to that tile "
+"and press the <key>Enter</key> key."
+msgstr ""
+"Тақтаны таңдау үшін бағдарша пернелері арқылы жарықты сол тақтаға апарып, "
+"<key>Enter</key> пернесін басыңыз."
+
+#. (itstool) path: item/p
+#: C/basic.page:26 C/basic.page:34
+msgid ""
+"Once a tile is selected it will toggle the state of the selected tile and "
+"its non-diagonal neighbors."
+msgstr ""
+"Тақта таңдалғаннан кейін, ол таңдалған тақтаның және оның диагоналды емес "
+"көршілерінің күйін өзгертеді."
+
+#. (itstool) path: section/title
+#: C/basic.page:31
+msgid "Using the mouse"
+msgstr "Тышқанды қолдану"
+
+#. (itstool) path: item/p
+#: C/basic.page:33
+msgid "To select a tile move the mouse pointer over the tile and click it."
+msgstr ""
+"Тақтаны таңдау үшін тышқан курсорын тақтаның үстіне апарып, оны шертіңіз."
+
+#. (itstool) path: section/title
+#: C/basic.page:39
+msgid "Progress through the levels"
+msgstr "Деңгейлер бойынша ілгерілеу"
+
+#. (itstool) path: item/p
+#: C/basic.page:41
+msgid ""
+"The progress through the levels is either by turning off all the lights in "
+"that level or by pressing the menu button in the top-left corner of the "
+"window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
+msgstr ""
+"Деңгейлер бойынша ілгерілеу сол деңгейдегі барлық шамдарды өшіру немесе "
+"терезенің жоғарғы сол жақ бұрышындағы мәзір батырмасын басып, <gui>Next "
+"puzzle</gui> немесе <gui>Previous puzzle</gui> тармағын таңдау арқылы "
+"жүзеге асады."
+
+#. (itstool) path: item/p
+#: C/basic.page:42
+msgid "The current level is shown in the title bar."
+msgstr "Ағымдағы деңгей тақырып жолағында көрсетіледі."
+
+#. (itstool) path: figure/desc
+#: C/basic.page:46
+msgid "This shows the <app>Lights Off</app> pattern for level 3."
+msgstr "Мұнда 3-деңгейге арналған <app>Lights Off</app> үлгісі көрсетілген."
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/basic.page:47
+msgctxt "_"
+msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+msgstr "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+
+#. (itstool) path: section/title
+#: C/basic.page:52
+msgid "Video Demonstration"
+msgstr "Видео демонстрация"
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:9 C/develop.page:10 C/documentation.page:8
+#: C/translate.page:10
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#. (itstool) path: credit/years
+#: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
+#: C/translate.page:12
+msgid "2011"
+msgstr "2011"
+
+#. (itstool) path: page/title
+#: C/bug-filing.page:22
+msgid "Help make <app>Lights Off</app> better"
+msgstr "<app>Lights Off</app> ойынын жақсартуға көмектесіңіз"
+
+#. (itstool) path: section/title
+#: C/bug-filing.page:25
+msgid "Report a bug or suggest an improvement"
+msgstr "Қате туралы хабарлау немесе жақсартуды ұсыну"
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:26
+msgid ""
+"<app>Lights Off</app> is maintained by a volunteer community. You are "
+"welcome to participate. If you notice a problem you can file a <em>bug "
+"report</em>. To file a bug, go to <link href=\"https://gitlab.gnome.org/"
+"GNOME/lightsoff/issues\"/>."
+msgstr ""
+"<app>Lights Off</app> бағдарламасын еріктілер қауымдастығы қолдайды. Сіз де "
+"қатыса аласыз. Егер мәселе байқасаңыз, <em>қате туралы есеп</em> бере "
+"аласыз. Қате туралы хабарлау үшін <link href=\"https://gitlab.gnome.org/"
+"GNOME/lightsoff/issues\"/> сайтына өтіңіз."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:29
+msgid ""
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
+msgstr ""
+"Бұл — пайдаланушылар мен әзірлеушілер қателер, істен шығулар туралы "
+"мәліметтерді жібере алатын және жақсартуларды сұрай алатын қателерді "
+"бақылау жүйесі."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:32
+msgid ""
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't "
+"already have an account, just click on the <gui>Sign in/Register</gui> link "
+"to create one."
+msgstr ""
+"Қатысу үшін сізге қол жеткізуге, қателерді тіркеуге және пікір қалдыруға "
+"мүмкіндік беретін тіркелгі қажет. Сондай-ақ, қатеңіздің күйі туралы "
+"электрондық пошта арқылы жаңартуларды алу үшін тіркелуіңіз керек. Егер "
+"тіркелгіңіз болмаса, оны жасау үшін <gui>Sign in/Register</gui> сілтемесін "
+"шертіп, біреуін жасаңыз."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:36
+msgid ""
+"Once you have an account, log in, click on <gui>New Issue</gui>. Before "
+"reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+"issues\">browse</link> for the bug to see if it already exists."
+msgstr ""
+"Тіркелгіңіз болғаннан кейін, жүйеге кіріп, <gui>New Issue</gui> батырмасын "
+"шертіңіз. Қате туралы хабарламас бұрын, <link href=\"https://wiki.gnome.org/"
+"GettingInTouch/BugReportingGuidelines\">қате жазу нұсқаулығын</link> оқып "
+"шығыңыз және қате бұрыннан бар-жоғын білу үшін <link href=\"https://"
+"gitlab.gnome.org/GNOME/lightsoff/issues\">шолыңыз</link>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:43
+msgid ""
+"If you are requesting a new feature, choose <gui>Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and "
+"click <gui>Submit issue</gui>."
+msgstr ""
+"Егер сіз жаңа мүмкіндікті сұрасаңыз, <gui>Labels</gui> мәзірінен "
+"<gui>Feature</gui> тармағын таңдаңыз. Title және Description бөлімдерін "
+"толтырып, <gui>Submit issue</gui> батырмасын шертіңіз."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:47
+msgid ""
+"Your report will be given an ID number, and its status will be updated as "
+"it is being dealt with. Thanks for helping make <app>Lights Off</app> "
+"better!"
+msgstr ""
+"Есебіңізге ID нөмірі беріледі және ол қаралған сайын оның күйі жаңартылып "
+"отырады. <app>Lights Off</app> ойынын жақсартуға көмектескеніңіз үшін "
+"рақмет!"
+
+#. (itstool) path: page/title
+#: C/develop.page:23
+msgid "Help develop"
+msgstr "Әзірлеуге көмектесу"
+
+#. (itstool) path: page/p
+#: C/develop.page:24
+msgid ""
+"The <app>GNOME Games</app> are developed and maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"<app>GNOME Games</app> еріктілер қауымдастығымен әзірленеді және "
+"қолданылады. Сіз де қатыса аласыз."
+
+#. (itstool) path: page/p
+#: C/develop.page:27
+msgid ""
+"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contribute\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers at <link href=\"https://matrix.to/#/#gnome-"
+"games:gnome.org\">#gnome-games:gnome.org</link> on <link xref=\"help:gnome-"
+"help/help-matrix\">Matrix</link> or <link href=\"https://web.libera.chat/"
+"#gnome-games\">#gnome-games</link> on irc.libera.chat, or via <link "
+"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
+msgstr ""
+"Егер сіз <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contribute\"><app>GNOME Games</app> әзірлеуге көмектескіңіз</link> келсе, "
+"әзірлеушілермен <link xref=\"help:gnome-help/help-matrix\">Matrix</link> "
+"желісіндегі <link href=\"https://matrix.to/#/#gnome-"
+"games:gnome.org\">#gnome-games:gnome.org</link> немесе irc.libera.chat "
+"желісіндегі <link href=\"https://web.libera.chat/#gnome-games\">#gnome-"
+"games</link> арнасы, не болмаса <link href=\"https://discourse.gnome.org/"
+"tag/games\">GNOME Discourse</link> арқылы байланыса аласыз."
+
+#. (itstool) path: page/title
+#: C/documentation.page:21
+msgid "Help write documentation"
+msgstr "Құжаттама жазуға көмектесу"
+
+#. (itstool) path: page/p
+#: C/documentation.page:23
+msgid ""
+"The <app>GNOME Games</app> documentation is maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr ""
+"<app>GNOME Games</app> құжаттамасын еріктілер қауымдастығы жүргізеді. Сіз "
+"де қатыса аласыз."
+
+#. (itstool) path: page/p
+#: C/documentation.page:26
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us in <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:gnome.org</"
+"link> on <link xref=\"help:gnome-help/help-matrix\">Matrix</link> or <link "
+"href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> on "
+"irc.libera.chat, or via <link href=\"https://discourse.gnome.org/tag/"
+"documentation\">GNOME Discourse</link>."
+msgstr ""
+"Құжаттама жобасына үлес қосу үшін бізбен <link xref=\"help:gnome-help/help-"
+"matrix\">Matrix</link> желісіндегі <link href=\"https://matrix.to/#/"
+"#docs:gnome.org\">#docs:gnome.org</link> немесе irc.libera.chat желісіндегі "
+"<link href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> "
+"арнасы, не болмаса <link href=\"https://discourse.gnome.org/tag/"
+"documentation\">GNOME Discourse</link> арқылы еркін байланыса аласыз."
+
+#. (itstool) path: page/p
+#: C/documentation.page:33
+msgid ""
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> page contains useful information."
+msgstr ""
+"Біздің <link href=\"https://wiki.gnome.org/DocumentationProject/"
+"Contributing\">вики</link> бетімізде пайдалы ақпарат бар."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Lights Off"
+msgstr "Lights Off"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Lights Off"
+msgstr "Lights Off"
+
+#. (itstool) path: media/span
+#: C/index.page:21
+msgid "Lights Off logo"
+msgstr "Lights Off логотипі"
+
+#. (itstool) path: page/title
+#: C/index.page:21
+msgid "<_:media-1/> Lights Off"
+msgstr "<_:media-1/> Lights Off"
+
+#. (itstool) path: page/p
+#: C/index.page:23
+msgid ""
+"<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to "
+"turn off all the lights. Each click on a tile toggles the state of the "
+"clicked tile and its non-diagonal neighbors."
+msgstr ""
+"<app>Lights Off</app> — 5X5 торда ойналатын жұмбақ, оның мақсаты барлық "
+"шамдарды өшіру. Тақтаны әрбір шерту сол тақтаның және оның диагоналды емес "
+"көршілерінің күйін өзгертеді."
+
+#. (itstool) path: section/title
+#: C/index.page:27
+msgid "Game Play"
+msgstr "Ойын барысы"
+
+#. (itstool) path: section/title
+#: C/index.page:31
+msgid "Get Involved"
+msgstr "Қатысу"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported лицензиясы"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Бұл жұмыс <_:link-1/> аясында лицензияланған."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Құқықтық ақпарат."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Лицензия"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike "
+"3.0 Unported license."
+msgstr ""
+"Бұл жұмыс CreativeCommons Attribution-Share Alike 3.0 Unported лицензиясы "
+"бойынша таратылады."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Сіз еркінсіз:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Бөлісуге</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Жұмысты көшіруге, таратуға және жіберуге."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Өзгертуге</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Жұмысты бейімдеуге."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Келесі шарттар орындалғанда:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Авторлықты көрсету</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your "
+"use of the work)."
+msgstr ""
+"Жұмыстың авторы немесе лицензиар көрсеткен тәртіппен авторлықты көрсетуіңіз "
+"керек (бірақ олар сізді немесе жұмысты пайдалануыңызды қолдайтындай етіп "
+"емес)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Ұқсас шарттармен бөлісу</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Егер сіз бұл жұмысты өзгертсеңіз, түрлендірсеңіз немесе оның негізінде жаңа "
+"жұмыс жасасаңыз, алынған нәтижені тек дәл осындай, ұқсас немесе үйлесімді "
+"лицензия бойынша тарата аласыз."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Лицензияның толық мәтінін <link href=\"http://creativecommons.org/licenses/"
+"by-sa/3.0/legalcode\">CreativeCommons веб-сайтынан</link> қараңыз немесе "
+"толық <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Commons "
+"Deed</link> құжатын оқыңыз."
+
+#. (itstool) path: page/title
+#: C/rules.page:16
+msgid "Rules"
+msgstr "Ережелер"
+
+#. (itstool) path: page/p
+#: C/rules.page:18
+msgid ""
+"In order to complete the <app>Lights Off</app> puzzle, you must turn off "
+"all the lights in the board. This will get you to advance to the next level."
+msgstr ""
+"<app>Lights Off</app> жұмбағын аяқтау үшін тақтадағы барлық шамдарды өшіру "
+"керек. Бұл сізге келесі деңгейге өтуге мүмкіндік береді."
+
+#. (itstool) path: item/p
+#: C/rules.page:20
+msgid "The game begins with a pattern of lights on the 5x5 grid."
+msgstr "Ойын 5x5 тордағы шамдар үлгісінен басталады."
+
+#. (itstool) path: item/p
+#: C/rules.page:21
+msgid ""
+"Select a tile to toggle its state and its non-diagonal neighbors state."
+msgstr ""
+"Тақтаны және оның диагоналды емес көршілерінің күйін өзгерту үшін оны "
+"таңдаңыз."
+
+#. (itstool) path: item/p
+#: C/rules.page:22
+msgid ""
+"Once you have successfully turned off all the lights, you complete that "
+"level and move on to the next."
+msgstr ""
+"Барлық шамдарды сәтті өшіргеннен кейін, сіз сол деңгейді аяқтап, келесіге "
+"өтесіз."
+
+#. (itstool) path: page/title
+#: C/strategy.page:17
+msgid "Strategy"
+msgstr "Стратегия"
+
+#. (itstool) path: page/p
+#: C/strategy.page:18
+msgid ""
+"This is a simple strategy to solve the <app>Lights Off</app> puzzle by "
+"using the method called \"Chase the Lights\"."
+msgstr ""
+"Бұл — «Шамдардың соңынан еріңіз» (Chase the Lights) әдісін қолдану арқылы "
+"<app>Lights Off</app> жұмбағын шешудің қарапайым стратегиясы."
+
+#. (itstool) path: item/p
+#: C/strategy.page:20
+msgid ""
+"Chase the lights starting from the first row. To chase the lights in the "
+"first row, click the tile on the second row corresponding to the light in "
+"the first row. This will turn off that light in the first row."
+msgstr ""
+"Бірінші қатардан бастап шамдардың соңынан еріңіз. Бірінші қатардағы "
+"шамдарды өшіру үшін, екінші қатардағы бірінші қатардағы шамға сәйкес "
+"келетін тақтаны шертіңіз. Бұл бірінші қатардағы сол шамды өшіреді."
+
+#. (itstool) path: note/p
+#: C/strategy.page:21
+msgid ""
+"This method can be used in the same way to chase the lights in other rows "
+"as well, i.e., if you want to chase the lights in the second row, click the "
+"corresponding tile in the third row."
+msgstr ""
+"Бұл әдісті басқа қатарлардағы шамдарды өшіру үшін де қолдануға болады, "
+"мысалы, егер сіз екінші қатардағы шамдарды өшіргіңіз келсе, үшінші "
+"қатардағы сәйкес тақтаны шертіңіз."
+
+#. (itstool) path: item/p
+#: C/strategy.page:23
+msgid ""
+"In the same way continue to chase the lights in the second, third and "
+"fourth row. At the end of this you will be only left with the lights in the "
+"fifth row."
+msgstr ""
+"Осылайша екінші, үшінші және төртінші қатардағы шамдарды өшіруді "
+"жалғастырыңыз. Соңында тек бесінші қатардағы шамдар ғана қалады."
+
+#. (itstool) path: item/p
+#: C/strategy.page:25
+msgid ""
+"Now depending on which lights are remaining in the fifth row, click the "
+"tiles in the first row using the table given below."
+msgstr ""
+"Енді бесінші қатарда қандай шамдар қалғанына байланысты, төмендегі кестені "
+"пайдаланып, бірінші қатардағы тақталарды шертіңіз."
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Lights Left on the fifth Row"
+msgstr "Бесінші қатарда қалған шамдар"
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Tiles to Click on the First Row"
+msgstr "Бірінші қатарда шертілетін тақталар"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "1, 2, 3"
+msgstr "1, 2, 3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "2"
+msgstr "2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "1, 2, 4, 5"
+msgstr "1, 2, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "3"
+msgstr "3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "1, 3, 4"
+msgstr "1, 3, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "5"
+msgstr "5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 5"
+msgstr "1, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 2"
+msgstr "1, 2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "2, 3, 5"
+msgstr "2, 3, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "1"
+msgstr "1"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "2, 4"
+msgstr "2, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "1, 4"
+msgstr "1, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "3, 4, 5"
+msgstr "3, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "4"
+msgstr "4"
+
+#. (itstool) path: item/p
+#: C/strategy.page:48
+msgid ""
+"Now again chase the lights starting from the first row. After chasing the "
+"lights this time your puzzle will be solved."
+msgstr ""
+"Енді бірінші қатардан бастап шамдарды қайтадан өшіріп шығыңыз. Осы жолы "
+"шамдарды өшіріп болған соң, жұмбақ шешіледі."
+
+#. (itstool) path: note/p
+#: C/strategy.page:50
+msgid ""
+"This strategy doesn't always produce the optimal solution, it may take more "
+"moves."
+msgstr ""
+"Бұл стратегия әрқашан ең тиімді шешімді бере бермейді, ол көбірек жүрісті "
+"қажет етуі мүмкін."
+
+#. (itstool) path: page/title
+#: C/translate.page:23
+msgid "Help translate"
+msgstr "Аудармаға көмектесу"
+
+#. (itstool) path: page/p
+#: C/translate.page:24
+msgid ""
+"The <app>GNOME Games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community. You are welcome to "
+"participate."
+msgstr ""
+"<app>GNOME Games</app> интерфейсі мен құжаттамасын бүкіл әлемдегі еріктілер "
+"қауымдастығы аударуда. Сіз де қатыса аласыз."
+
+#. (itstool) path: page/p
+#: C/translate.page:27
+msgid ""
+"There are <link href=\"https://l10n.gnome.org/module/lightsoff/\">many "
+"languages</link> for which translations are still needed."
+msgstr ""
+"Әлі де аударылуы қажет <link href=\"https://l10n.gnome.org/module/lightsoff/"
+"\">көптеген тілдер</link> бар."
+
+#. (itstool) path: page/p
+#: C/translate.page:30
+msgid ""
+"To start translating you will need to <link href=\"https://"
+"l10n.gnome.org\">create an account</link> and join the <link href=\"https://"
+"l10n.gnome.org/teams/\">translation team</link> for your language. This "
+"will give you the ability to upload new translations."
+msgstr ""
+"Аударуды бастау үшін сізге <link href=\"https://l10n.gnome.org\">тіркелгі "
+"жасап</link>, өз тіліңіздің <link href=\"https://l10n.gnome.org/teams/"
+"\">аудару тобына</link> қосылуыңыз керек. Бұл сізге жаңа аудармаларды "
+"жүктеп салуға мүмкіндік береді."
+
+#. (itstool) path: page/p
+#: C/translate.page:34
+msgid ""
+"You can chat with GNOME translators in <link href=\"https://matrix.to/#/"
+"#i18n:gnome.org\">#i18n:gnome.org</link> on <link xref=\"help:gnome-help/"
+"help-matrix\">Matrix</link> or <link href=\"https://web.libera.chat/#gnome-"
+"i18n\">#gnome-i18n</link> on irc.libera.chat. People on the channel are "
+"located worldwide, so you may not get an immediate response as a result of "
+"timezone differences."
+msgstr ""
+"GNOME аудармашыларымен <link xref=\"help:gnome-help/help-matrix\">Matrix</"
+"link> желісіндегі <link href=\"https://matrix.to/#/"
+"#i18n:gnome.org\">#i18n:gnome.org</link> немесе irc.libera.chat желісіндегі "
+"<link href=\"https://web.libera.chat/#gnome-i18n\">#gnome-i18n</link> "
+"арнасында сөйлесе аласыз. Арнадағы адамдар бүкіл әлем бойынша орналасқан, "
+"сондықтан уақыт белдеулерінің айырмашылығына байланысты бірден жауап ала "
+"алмауыңыз мүмкін."
+
+#. (itstool) path: page/p
+#: C/translate.page:41
+msgid ""
+"Alternatively, you can contact the Internationalization Team using <link "
+"href=\"https://discourse.gnome.org/tag/i18n\">GNOME Discourse</link>."
+msgstr ""
+"Сонымен қатар, сіз Интернационализация тобымен <link href=\"https://"
+"discourse.gnome.org/tag/i18n\">GNOME Discourse</link> арқылы байланыса "
+"аласыз."
