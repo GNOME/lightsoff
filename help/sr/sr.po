@@ -1,0 +1,593 @@
+# Serbian translation for lightsoff.
+# Copyright (C) 2026 lightsoff's COPYRIGHT HOLDER
+# This file is distributed under the same license as the lightsoff package.
+# Марко Костић <marko.m.kostic@gmail.com>,  2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lightsoff main\n"
+"POT-Creation-Date: 2026-04-02 14:24+0000\n"
+"PO-Revision-Date: 2026-04-05 06:54+0200\n"
+"Last-Translator: Марко Костић <marko.m.kostic@gmail.com>\n"
+"Language-Team: Serbian <Serbian>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 3.9\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Марко Костић <marko.m.kostic@gmail.com>\n"
+"Превод на српски језик https://гном.срб"
+
+#. (itstool) path: credit/name
+#: C/basic.page:10 C/bug-filing.page:14 C/develop.page:15
+#: C/documentation.page:13 C/index.page:12 C/rules.page:9 C/strategy.page:8
+#: C/translate.page:15
+msgid "Perumal Viravan"
+msgstr "Перумал Вираван"
+
+#. (itstool) path: credit/years
+#: C/basic.page:12 C/rules.page:11 C/strategy.page:10
+msgid "2012"
+msgstr "2012"
+
+#. (itstool) path: license/p
+#: C/basic.page:15 C/bug-filing.page:18 C/develop.page:19
+#: C/documentation.page:17 C/index.page:16 C/strategy.page:13
+#: C/translate.page:19
+msgid "Creative Commons Share Alike 3.0"
+msgstr "Creative Commons Share Alike 3.0"
+
+#. (itstool) path: page/title
+#: C/basic.page:19
+msgid "Basics"
+msgstr "Основно"
+
+#. (itstool) path: page/p
+#: C/basic.page:20
+msgid "<app>Lights Off</app> can be played using the keyboard or the mouse."
+msgstr "<app>Искључи светла</app> се може играти помоћу тастатуре или миша."
+
+#. (itstool) path: section/title
+#: C/basic.page:23
+msgid "Using the keyboard"
+msgstr "Коришћење тастатуре"
+
+#. (itstool) path: item/p
+#: C/basic.page:25
+msgid ""
+"To select a tile, use the arrow keys to move the spotlight on to that tile "
+"and press the <key>Enter</key> key."
+msgstr "Да изаберете поље, користите тастере са стрелицама да померите фокус на то поље и притисните тастер <key>Ентер</key>."
+
+#. (itstool) path: item/p
+#: C/basic.page:26 C/basic.page:34
+msgid ""
+"Once a tile is selected it will toggle the state of the selected tile and "
+"its non-diagonal neighbors."
+msgstr "Када је поље изабрано, оно ће променити стање изабраног поља и његових недијагоналних суседа."
+
+#. (itstool) path: section/title
+#: C/basic.page:31
+msgid "Using the mouse"
+msgstr "Коришћење миша"
+
+#. (itstool) path: item/p
+#: C/basic.page:33
+msgid "To select a tile move the mouse pointer over the tile and click it."
+msgstr "Да изаберете поље, померите показивач миша изнад поља и кликните на њега."
+
+#. (itstool) path: section/title
+#: C/basic.page:39
+msgid "Progress through the levels"
+msgstr "Напредовање кроз нивое"
+
+#. (itstool) path: item/p
+#: C/basic.page:41
+msgid ""
+"The progress through the levels is either by turning off all the lights in "
+"that level or by pressing the menu button in the top-left corner of the "
+"window and selecting <gui>Next puzzle</gui> or <gui>Previous puzzle</gui>."
+msgstr "Напредовање кроз нивое се постиже или искључивањем свих светала на том нивоу или притиском на дугме менија у горњем левом углу прозора и избором <gui>Следећа слагалица</gui> или <gui>Претходна слагалица</gui>."
+
+#. (itstool) path: item/p
+#: C/basic.page:42
+msgid "The current level is shown in the title bar."
+msgstr "Тренутни ниво је приказан у траци наслова."
+
+#. (itstool) path: figure/desc
+#: C/basic.page:46
+msgid "This shows the <app>Lights Off</app> pattern for level 3."
+msgstr "Ово приказује шаблон игре <app>Искључи светла</app> за ниво 3."
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/basic.page:47
+msgctxt "_"
+msgid "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+msgstr "external ref='figures/lo1.png' md5='16e6a74de0c47cd88b613d73cec6c2a7'"
+
+#. (itstool) path: section/title
+#: C/basic.page:52
+msgid "Video Demonstration"
+msgstr "Видео демонстрација"
+
+#. (itstool) path: credit/name
+#: C/bug-filing.page:9 C/develop.page:10 C/documentation.page:8
+#: C/translate.page:10
+msgid "Tiffany Antopolski"
+msgstr "Tiffany Antopolski"
+
+#. (itstool) path: credit/years
+#: C/bug-filing.page:11 C/develop.page:12 C/documentation.page:10
+#: C/translate.page:12
+msgid "2011"
+msgstr "2011"
+
+#. (itstool) path: page/title
+#: C/bug-filing.page:22
+msgid "Help make <app>Lights Off</app> better"
+msgstr "Помозите да <app>Искључи светла</app> буде бољи"
+
+#. (itstool) path: section/title
+#: C/bug-filing.page:25
+msgid "Report a bug or suggest an improvement"
+msgstr "Пријавите грешку или предложите побољшање"
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:26
+msgid ""
+"<app>Lights Off</app> is maintained by a volunteer community. You are "
+"welcome to participate. If you notice a problem you can file a <em>bug "
+"report</em>. To file a bug, go to <link href=\"https://gitlab.gnome.org/"
+"GNOME/lightsoff/issues\"/>."
+msgstr "<app>Искључи светла</app> одржава заједница волонтера. Добродошли сте да учествујете. Ако приметите проблем, можете поднети <em>извештај о грешци</em>. Да бисте пријавили грешку, идите на <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\"/>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:29
+msgid ""
+"This is a bug tracking system where users and developers can file details "
+"about bugs, crashes and request enhancements."
+msgstr "Ово је систем за праћење грешака где корисници и програмери могу да поднесу детаље о грешкама, падовима и затраже побољшања."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:32
+msgid ""
+"To participate you need an account which will give you the ability to gain "
+"access, file bugs, and make comments. Also, you need to register so you can "
+"receive updates by e-mail about the status of your bug. If you don't already "
+"have an account, just click on the <gui>Sign in/Register</gui> link to "
+"create one."
+msgstr "Да бисте учествовали, потребан вам је налог који ће вам дати могућност приступа, пријављивања грешака и остављања коментара. Такође, потребно је да се региструјете како бисте могли да примате ажурирања путем е-поште о статусу ваше грешке. Ако већ немате налог, само кликните на везу <gui>Пријави се/Региструј се</gui> да бисте га направили."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:36
+msgid ""
+"Once you have an account, log in, click on <gui>New Issue</gui>. Before "
+"reporting a bug, please read the <link href=\"https://wiki.gnome.org/"
+"GettingInTouch/BugReportingGuidelines\">bug writing guidelines</link>, and "
+"please <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/"
+"issues\">browse</link> for the bug to see if it already exists."
+msgstr "Када направите налог, пријавите се и кликните на <gui>Нови проблем</gui>. Пре пријављивања грешке, прочитајте <link href=\"https://wiki.gnome.org/GettingInTouch/BugReportingGuidelines\">смернице за писање грешака</link> и <link href=\"https://gitlab.gnome.org/GNOME/lightsoff/issues\">претражите</link> грешку да видите да ли већ постоји."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:43
+msgid ""
+"If you are requesting a new feature, choose <gui>Feature</gui> in the "
+"<gui>Labels</gui> menu. Fill in the Title and Description sections and click "
+"<gui>Submit issue</gui>."
+msgstr "Ако захтевате нову функцију, изаберите <gui>Функција</gui> у менију <gui>Ознаке</gui>. Попуните одељке Наслов и Опис и кликните на <gui>Пошаљи проблем</gui>."
+
+#. (itstool) path: section/p
+#: C/bug-filing.page:47
+msgid ""
+"Your report will be given an ID number, and its status will be updated as it "
+"is being dealt with. Thanks for helping make <app>Lights Off</app> better!"
+msgstr "Вашем извештају ће бити додељен ИД број, а његов статус ће бити ажуриран како се буде решавао. Хвала што помажете да <app>Искључи светла</app> буде бољи!"
+
+#. (itstool) path: page/title
+#: C/develop.page:23
+msgid "Help develop"
+msgstr "Помозите програмирању"
+
+#. (itstool) path: page/p
+#: C/develop.page:24
+msgid ""
+"The <app>GNOME Games</app> are developed and maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr "<app>Гномове игре</app> развија и одржава заједница волонтера. Добро дошли сте да учествујете."
+
+#. (itstool) path: page/p
+#: C/develop.page:27
+msgid ""
+"If you would like to <link href=\"https://wiki.gnome.org/Apps/Games/"
+"Contribute\">help develop <app>GNOME Games</app></link>, you can get in "
+"touch with the developers at <link href=\"https://matrix.to/#/#gnome-"
+"games:gnome.org\">#gnome-games:gnome.org</link> on <link xref=\"help:gnome-"
+"help/help-matrix\">Matrix</link> or <link href=\"https://web.libera.chat/"
+"#gnome-games\">#gnome-games</link> on irc.libera.chat, or via <link "
+"href=\"https://discourse.gnome.org/tag/games\">GNOME Discourse</link>."
+msgstr "Ако желите да <link href=\"https://wiki.gnome.org/Apps/Games/Contribute\">помогнете развоју <app>Гномових игара</app></link>, можете ступити у контакт са програмерима на <link href=\"https://matrix.to/#/#gnome-games:gnome.org\">#gnome-games:gnome.org</link> преко <link xref=\"help:gnome-help/help-matrix\">Matrix-а</link> или на <link href=\"https://web.libera.chat/#gnome-games\">#gnome-games</link> на irc.libera.chat, или путем <link href=\"https://discourse.gnome.org/tag/games\">Гномовог Discourse-а</link>."
+
+#. (itstool) path: page/title
+#: C/documentation.page:21
+msgid "Help write documentation"
+msgstr "Помозите у писању документације"
+
+#. (itstool) path: page/p
+#: C/documentation.page:23
+msgid ""
+"The <app>GNOME Games</app> documentation is maintained by a volunteer "
+"community. You are welcome to participate."
+msgstr "Документацију <app>Гномових игара</app> одржава заједница волонтера. Добро дошли сте да учествујете."
+
+#. (itstool) path: page/p
+#: C/documentation.page:26
+msgid ""
+"To contribute to the Documentation Project, feel free to get in touch with "
+"us in <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:gnome.org</"
+"link> on <link xref=\"help:gnome-help/help-matrix\">Matrix</link> or <link "
+"href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> on "
+"irc.libera.chat, or via <link href=\"https://discourse.gnome.org/tag/"
+"documentation\">GNOME Discourse</link>."
+msgstr "Да бисте допринели пројекту документације, слободно ступите у контакт са нама на <link href=\"https://matrix.to/#/#docs:gnome.org\">#docs:gnome.org</link> преко <link xref=\"help:gnome-help/help-matrix\">Matrix-а</link> или на <link href=\"https://web.libera.chat/#gnome-docs\">#gnome-docs</link> на irc.libera.chat, или путем <link href=\"https://discourse.gnome.org/tag/documentation\">Гномовог Discourse-а</link>."
+
+#. (itstool) path: page/p
+#: C/documentation.page:33
+msgid ""
+"Our <link href=\"https://wiki.gnome.org/DocumentationProject/"
+"Contributing\">wiki</link> page contains useful information."
+msgstr "Наша <link href=\"https://wiki.gnome.org/DocumentationProject/Contributing\">вики</link> страница садржи корисне информације."
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "Lights Off"
+msgstr "Погаси светла"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "Lights Off"
+msgstr "Погаси светла"
+
+#. (itstool) path: media/span
+#: C/index.page:21
+msgid "Lights Off logo"
+msgstr "Логотип за Погаси светла"
+
+#. (itstool) path: page/title
+#: C/index.page:21
+msgid "<_:media-1/> Lights Off"
+msgstr "<_:media-1/> Погаси светла"
+
+#. (itstool) path: page/p
+#: C/index.page:23
+msgid ""
+"<app>Lights Off</app> is a puzzle played on an 5X5 grid with the aim to turn "
+"off all the lights. Each click on a tile toggles the state of the clicked "
+"tile and its non-diagonal neighbors."
+msgstr "<app>Погаси светла</app> је слагалица која се игра на мрежи 5x5 са циљем да се угасе сва светла. Сваки клик на поље мења стање тог поља и његових суседа који нису на дијагонали."
+
+#. (itstool) path: section/title
+#: C/index.page:27
+msgid "Game Play"
+msgstr "Играње игре"
+
+#. (itstool) path: section/title
+#: C/index.page:31
+msgid "Get Involved"
+msgstr "Укључите се"
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Ауторство—Истоветно дељење 3.0 нелокализована лиценца"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Овај рад је лиценциран под <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Правне информације."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Лиценца"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr "Овај рад се расподељује под условима лиценце CreativeCommons Attribution-Share Alike 3.0 Unported."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Слободни сте:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Да делите</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Да умножавате, расподељујете и преносите рад."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Да прерађујете</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Да прилагођавате рад."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Под следећим условима:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Приписивање</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr "Морате приписати рад на начин који је навео аутор или давалац лиценце (али не на начин који сугерише да они подржавају вас или ваше коришћење рада)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Дељење под истим условима</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr "Ако мењате, преобликујете или користите овај рад као основу за свој, резултујући рад можете дистрибуирати само под истом, сличном или компатибилном лиценцом."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr "За пун текст лиценце, погледајте <link href=\"http://creativecommons.org/licenses/by-sa/3.0/legalcode\">веб страницу CreativeCommons-а</link>, или прочитајте целу <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Commons Deed</link>."
+
+#. (itstool) path: page/title
+#: C/rules.page:16
+msgid "Rules"
+msgstr "Rules"
+
+#. (itstool) path: page/p
+#: C/rules.page:18
+msgid ""
+"In order to complete the <app>Lights Off</app> puzzle, you must turn off all "
+"the lights in the board. This will get you to advance to the next level."
+msgstr "Да бисте завршили слагалицу <app>Искључи светла</app>, морате искључити сва светла на табли. То ће вам омогућити да пређете на следећи ниво."
+
+#. (itstool) path: item/p
+#: C/rules.page:20
+msgid "The game begins with a pattern of lights on the 5x5 grid."
+msgstr "Игра почиње са обрасцем светала на мрежи 5x5."
+
+#. (itstool) path: item/p
+#: C/rules.page:21
+msgid "Select a tile to toggle its state and its non-diagonal neighbors state."
+msgstr "Изаберите поље да бисте променили његово стање и стање његових недијагоналних суседа."
+
+#. (itstool) path: item/p
+#: C/rules.page:22
+msgid ""
+"Once you have successfully turned off all the lights, you complete that "
+"level and move on to the next."
+msgstr "Када успешно искључите сва светла, завршавате тај ниво и прелазите на следећи."
+
+#. (itstool) path: page/title
+#: C/strategy.page:17
+msgid "Strategy"
+msgstr "Стратегија"
+
+#. (itstool) path: page/p
+#: C/strategy.page:18
+msgid ""
+"This is a simple strategy to solve the <app>Lights Off</app> puzzle by using "
+"the method called \"Chase the Lights\"."
+msgstr "Ово је једноставна стратегија за решавање слагалице <app>Искључи светла</app> коришћењем методе зване „Јури светла“."
+
+#. (itstool) path: item/p
+#: C/strategy.page:20
+msgid ""
+"Chase the lights starting from the first row. To chase the lights in the "
+"first row, click the tile on the second row corresponding to the light in "
+"the first row. This will turn off that light in the first row."
+msgstr "Јурите светла почевши од првог реда. Да бисте јурили светла у првом реду, кликните на поље у другом реду које одговара светлу у првом реду. Ово ће искључити то светло у првом реду."
+
+#. (itstool) path: note/p
+#: C/strategy.page:21
+msgid ""
+"This method can be used in the same way to chase the lights in other rows as "
+"well, i.e., if you want to chase the lights in the second row, click the "
+"corresponding tile in the third row."
+msgstr "Овај метод се може користити на исти начин и за јурење светала у осталим редовима, тј. ако желите да јурите светла у другом реду, кликните на одговарајуће поље у трећем реду."
+
+#. (itstool) path: item/p
+#: C/strategy.page:23
+msgid ""
+"In the same way continue to chase the lights in the second, third and fourth "
+"row. At the end of this you will be only left with the lights in the fifth "
+"row."
+msgstr "На исти начин наставите да јурите светла у другом, трећем и четвртом реду. На крају ће вам преостати само светла у петом реду."
+
+#. (itstool) path: item/p
+#: C/strategy.page:25
+msgid ""
+"Now depending on which lights are remaining in the fifth row, click the "
+"tiles in the first row using the table given below."
+msgstr "Сада, у зависности од тога која су светла преостала у петом реду, кликните на поља у првом реду користећи доле наведену табелу."
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Lights Left on the fifth Row"
+msgstr "Преостала светла у петом реду"
+
+#. (itstool) path: td/p
+#: C/strategy.page:29
+msgid "Tiles to Click on the First Row"
+msgstr "Поља за кликање у првом реду"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "1, 2, 3"
+msgstr "1, 2, 3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:32
+msgid "2"
+msgstr "2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "1, 2, 4, 5"
+msgstr "1, 2, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:34
+msgid "3"
+msgstr "3"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "1, 3, 4"
+msgstr "1, 3, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:36
+msgid "5"
+msgstr "5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 5"
+msgstr "1, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:38
+msgid "1, 2"
+msgstr "1, 2"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "2, 3, 5"
+msgstr "2, 3, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:40
+msgid "1"
+msgstr "1"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "2, 4"
+msgstr "2, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:42
+msgid "1, 4"
+msgstr "1, 4"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "3, 4, 5"
+msgstr "3, 4, 5"
+
+#. (itstool) path: td/p
+#: C/strategy.page:44
+msgid "4"
+msgstr "4"
+
+#. (itstool) path: item/p
+#: C/strategy.page:48
+msgid ""
+"Now again chase the lights starting from the first row. After chasing the "
+"lights this time your puzzle will be solved."
+msgstr "Сада поново јурите светла почевши од првог реда. Након јурења светала овог пута, ваша слагалица ће бити решена."
+
+#. (itstool) path: note/p
+#: C/strategy.page:50
+msgid ""
+"This strategy doesn't always produce the optimal solution, it may take more "
+"moves."
+msgstr "Ова стратегија не даје увек најбоље решење, може захтевати више потеза."
+
+#. (itstool) path: page/title
+#: C/translate.page:23
+msgid "Help translate"
+msgstr "Помозите у превођењу"
+
+#. (itstool) path: page/p
+#: C/translate.page:24
+msgid ""
+"The <app>GNOME Games</app> user interface and documentation is being "
+"translated by a world-wide volunteer community. You are welcome to "
+"participate."
+msgstr "Корисничко сучеље и документацију за <app>Гномове игре</app> преводи заједница волонтера из целог света. Добродошли сте да учествујете."
+
+#. (itstool) path: page/p
+#: C/translate.page:27
+msgid ""
+"There are <link href=\"https://l10n.gnome.org/module/lightsoff/\">many "
+"languages</link> for which translations are still needed."
+msgstr "Постоје <link href=\"https://l10n.gnome.org/module/lightsoff/\">многи језици</link> за које су преводи још увек потребни."
+
+#. (itstool) path: page/p
+#: C/translate.page:30
+msgid ""
+"To start translating you will need to <link href=\"https://"
+"l10n.gnome.org\">create an account</link> and join the <link href=\"https://"
+"l10n.gnome.org/teams/\">translation team</link> for your language. This will "
+"give you the ability to upload new translations."
+msgstr "Да бисте започели превођење, мораћете да <link href=\"https://l10n.gnome.org\">направите налог</link> и да се придружите <link href=\"https://l10n.gnome.org/teams/\">преводилачком тиму</link> за ваш језик. Ово ће вам омогућити да отпремате нове преводе."
+
+#. (itstool) path: page/p
+#: C/translate.page:34
+msgid ""
+"You can chat with GNOME translators in <link href=\"https://matrix.to/#/"
+"#i18n:gnome.org\">#i18n:gnome.org</link> on <link xref=\"help:gnome-help/"
+"help-matrix\">Matrix</link> or <link href=\"https://web.libera.chat/#gnome-"
+"i18n\">#gnome-i18n</link> on irc.libera.chat. People on the channel are "
+"located worldwide, so you may not get an immediate response as a result of "
+"timezone differences."
+msgstr "Можете ћаскати са Гномовим преводиоцима на <link href=\"https://matrix.to/#/#i18n:gnome.org\">#i18n:gnome.org</link> на <link xref=\"help:gnome-help/help-matrix\">Матриксу</link> или на <link href=\"https://web.libera.chat/#gnome-i18n\">#gnome-i18n</link> на irc.libera.chat. Људи на каналу се налазе широм света, тако да можда нећете добити тренутни одговор због разлика у временским зонама."
+
+#. (itstool) path: page/p
+#: C/translate.page:41
+msgid ""
+"Alternatively, you can contact the Internationalization Team using <link "
+"href=\"https://discourse.gnome.org/tag/i18n\">GNOME Discourse</link>."
+msgstr "Алтернативно, можете контактирати тим за интернационализацију користећи <link href=\"https://discourse.gnome.org/tag/i18n\">Гномов Дискурс</link>."
