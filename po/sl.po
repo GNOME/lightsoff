@@ -12,18 +12,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2025-02-01 09:14+0000\n"
-"PO-Revision-Date: 2025-02-02 10:09+0100\n"
+"POT-Creation-Date: 2026-03-14 21:02+0000\n"
+"PO-Revision-Date: 2026-08-12 21:41+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.8\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restart first puzzle
 #: data/lightsoff-menus.ui:8
@@ -56,13 +56,13 @@ msgstr "Ponovno zaženi uganko"
 
 #. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.metainfo.xml.in:7
-#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
+#: data/org.gnome.LightsOff.desktop.in:2 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Ugasni luči"
 
 #. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.metainfo.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:138
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:140
 msgid "Turn off all the lights"
 msgstr "Ugasnite vse luči"
 
@@ -82,8 +82,12 @@ msgid ""
 "levels."
 msgstr "Pri igri je na voljo veliko število postavitev različne zahtevnosti."
 
+#: data/org.gnome.LightsOff.metainfo.xml.in:50
+msgid "The Lightsoff Team"
+msgstr "Ekipa Ugasni luči"
+
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.LightsOff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:5
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr "igra;logika;tabla;ploščki;uganke;"
 
@@ -133,16 +137,16 @@ msgid "Display version number"
 msgstr "Pokaži različico"
 
 #. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
-#: src/lightsoff.vala:72
+#: src/lightsoff.vala:71
 msgid "Failed to parse command-line arguments."
 msgstr "Razčlenjevanje argumentov ukazne vrstice je spodletelo."
 
-#: src/lightsoff.vala:143
+#: src/lightsoff.vala:145
 msgid "The GNOME Project"
 msgstr "Projekt GNOME"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/lightsoff.vala:151
+#: src/lightsoff.vala:153
 msgid "translator-credits"
 msgstr ""
 "Matej Urbančič <mateju@svn.gnome.org>\n"
