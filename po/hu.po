@@ -1,5 +1,5 @@
 # Hungarian translation for lightsoff.
-# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2015, 2016, 2018, 2019, 2021, 2023, 2025 Free Software Foundation, Inc.
+# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2015, 2016, 2018, 2019, 2021, 2023, 2025, 2026 Free Software Foundation, Inc.
 # This file is distributed under the same license as the lightsoff package.
 #
 # Szabolcs Ban <shooby at gnome dot hu>, 1999, 2000, 2001.
@@ -9,13 +9,13 @@
 # Laszlo Dvornik <dvornik at gnome dot hu>, 2004.
 # Szabolcs Varga <shirokuma at shirokuma dot hu>, 2005.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2016.
-# Balázs Úr <ur.balazs at fsf dot hu>, 2013, 2014, 2015, 2016, 2018, 2019, 2021, 2023, 2025.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2013, 2014, 2015, 2016, 2018, 2019, 2021, 2023, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: lightsoff master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/lightsoff/issues\n"
-"POT-Creation-Date: 2025-02-13 03:35+0000\n"
-"PO-Revision-Date: 2025-03-05 21:05+0100\n"
+"POT-Creation-Date: 2026-03-14 21:02+0000\n"
+"PO-Revision-Date: 2026-09-07 11:01+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restart first puzzle
 #: data/lightsoff-menus.ui:8
@@ -37,7 +37,6 @@ msgstr "_Előző feladvány"
 
 #. Translators: entry of the window menu (with a mnemonic that appears when pressing Alt); restart next puzzle
 #: data/lightsoff-menus.ui:18
-#| msgid "Ne_xt puzzle"
 msgid "_Next puzzle"
 msgstr "_Következő feladvány"
 
@@ -52,19 +51,18 @@ msgid "_About Lights Off"
 msgstr "A Fények le _névjegye"
 
 #: data/lightsoff.ui:15
-#| msgid "Ne_xt puzzle"
 msgid "Restart puzzle"
 msgstr "Feladvány újrakezdése"
 
 #. Translators: name of the program, as seen in the headerbar, in GNOME Shell, or in the about dialog
 #: data/org.gnome.LightsOff.metainfo.xml.in:7
-#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:18
+#: data/org.gnome.LightsOff.desktop.in:2 src/lightsoff.vala:18
 msgid "Lights Off"
 msgstr "Fények le"
 
 #. Translators: short description of the application, seen in the About dialog
 #: data/org.gnome.LightsOff.metainfo.xml.in:8
-#: data/org.gnome.LightsOff.desktop.in:4 src/lightsoff.vala:138
+#: data/org.gnome.LightsOff.desktop.in:3 src/lightsoff.vala:140
 msgid "Turn off all the lights"
 msgstr "Kapcsolja le az összes lámpát"
 
@@ -85,8 +83,12 @@ msgid ""
 msgstr ""
 "A fények lekapcsolását élvező játékosoknak tetszeni fog a nagyszámú szint."
 
+#: data/org.gnome.LightsOff.metainfo.xml.in:50
+msgid "The Lightsoff Team"
+msgstr "A Fények le csapata"
+
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.LightsOff.desktop.in:6
+#: data/org.gnome.LightsOff.desktop.in:5
 msgid "game;logic;board;tiles;adjacent;puzzle;"
 msgstr ""
 "játék;logika;logikai;tábla;csempék;szomszédos;feladvány;fejtörő;puzzle;"
@@ -137,16 +139,16 @@ msgid "Display version number"
 msgstr "Verziószám megjelenítése"
 
 #. Translators: command-line error message, displayed for an invalid CLI command; see 'lightsoff unparsed'
-#: src/lightsoff.vala:72
+#: src/lightsoff.vala:71
 msgid "Failed to parse command-line arguments."
 msgstr "A parancssori argumentumok feldolgozása sikertelen."
 
-#: src/lightsoff.vala:143
+#: src/lightsoff.vala:145
 msgid "The GNOME Project"
 msgstr "A GNOME projekt"
 
 #. Translators: about dialog text; this string should be replaced by a text crediting yourselves and your translation team, or should be left empty. Do not translate literally!
-#: src/lightsoff.vala:151
+#: src/lightsoff.vala:153
 msgid "translator-credits"
 msgstr ""
 "Bán Szabolcs <shooby at gnome dot hu>\n"
